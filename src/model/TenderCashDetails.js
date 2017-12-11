@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The TenderCashDetails model module.
  * @module model/TenderCashDetails
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

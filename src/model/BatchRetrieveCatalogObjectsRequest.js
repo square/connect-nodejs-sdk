@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The BatchRetrieveCatalogObjectsRequest model module.
  * @module model/BatchRetrieveCatalogObjectsRequest
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

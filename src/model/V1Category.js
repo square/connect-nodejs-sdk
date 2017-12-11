@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1Category model module.
  * @module model/V1Category
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

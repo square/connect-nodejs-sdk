@@ -21,7 +21,7 @@ var V1TimecardEvent = require('../model/V1TimecardEvent');
 /**
  * V1Employees service.
  * @module api/V1EmployeesApi
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

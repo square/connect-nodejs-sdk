@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The ListCatalogResponse model module.
  * @module model/ListCatalogResponse
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

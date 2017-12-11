@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryItemsForModifierList model module.
  * @module model/CatalogQueryItemsForModifierList
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

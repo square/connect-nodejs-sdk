@@ -23,7 +23,7 @@ var Money = require('./Money');
 /**
  * The CreateOrderRequestLineItem model module.
  * @module model/CreateOrderRequestLineItem
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

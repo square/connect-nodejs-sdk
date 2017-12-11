@@ -20,7 +20,7 @@ var Error = require('./Error');
 /**
  * The BatchDeleteCatalogObjectsResponse model module.
  * @module model/BatchDeleteCatalogObjectsResponse
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

@@ -20,7 +20,7 @@ var Error = require('./Error');
 /**
  * The VoidTransactionResponse model module.
  * @module model/VoidTransactionResponse
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

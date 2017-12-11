@@ -22,7 +22,7 @@ var Error = require('./Error');
 /**
  * The UpsertCatalogObjectResponse model module.
  * @module model/UpsertCatalogObjectResponse
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

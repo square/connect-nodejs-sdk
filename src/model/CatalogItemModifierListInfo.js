@@ -20,7 +20,7 @@ var CatalogModifierOverride = require('./CatalogModifierOverride');
 /**
  * The CatalogItemModifierListInfo model module.
  * @module model/CatalogItemModifierListInfo
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

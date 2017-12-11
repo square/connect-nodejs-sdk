@@ -18,7 +18,7 @@ var ListAdditionalRecipientReceivablesResponse = require('../model/ListAdditiona
 /**
  * Reporting service.
  * @module api/ReportingApi
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

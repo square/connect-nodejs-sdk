@@ -20,7 +20,7 @@ var V1Money = require('./V1Money');
 /**
  * The V1Refund model module.
  * @module model/V1Refund
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

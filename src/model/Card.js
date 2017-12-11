@@ -20,7 +20,7 @@ var Address = require('./Address');
 /**
  * The Card model module.
  * @module model/Card
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

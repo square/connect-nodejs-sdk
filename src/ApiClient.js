@@ -16,7 +16,7 @@ var querystring = require('querystring');
 
   /**
  * @module ApiClient
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

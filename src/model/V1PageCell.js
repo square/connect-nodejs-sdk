@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1PageCell model module.
  * @module model/V1PageCell
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**
