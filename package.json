@@ -1,0 +1,23 @@
+{
+  "name": "square-connect",
+  "version": "2.5.1",
+  "description": "JavaScript client library for the Square Connect v2 API",
+  "license": "Apache 2.0",
+  "main": "src/index.js",
+  "scripts": {
+      "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "superagent": "3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "*",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  },
+  "engines": {
+    "node": ">=6.0"
+  }
+}

@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '6'
+- '6.1'
+before_install:
+- openssl aes-256-cbc -K $encrypted_0dfb31adf922_key -iv $encrypted_0dfb31adf922_iv
+  -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: devplat-external-sdk-accounts+npm@squareup.com
+  api_key:
+    secure: lyO2l+dDZ9Pb0rYtrojKBbOQ6YI494wCp2ho0FcTJgnaD/SgIeo44Th2rNevDrtVjm/OGl7XwgaokU5+KiQN1lvWhLlM2ds2V6tahJh7tCsmMa+5oHPlTRoj593u9EWCpgwsG5pAsIE2amZHDBVDxtTt4ZigeHwp99S6zRHLTeHBXYSHraTWDHX4tWdN6hnR2jFhp5aQW4bmlBORbTRpRlSrZFUVSHVssoaBOqdYurDGs59SH9Xb6604xCak/WV/UjyCCY+If3D9sBAVCJ+rcVxE/yYu18BpzXuo0r8TlxT6UR79Lf/KVuZHdPMWIAE6lae8RABpDwGacOiBzkAr9PwfMMBxeXIPPIwn/zwKcljHIOthoGEyvnrmUmv+0NN35ryzeLg3SzbiYO5cRLRLj0Tizowf6EhvQFvfGh2FDMLcGCDX4jS9bVT19OIl/eZG7TBtpcrjBVGM+Q8Xe7sWh5WqTy3O1doHm8xNSTCRVBob5ATnt9HjDfWd0k6Nl7lPfJPvtWFlQpSK2oPP6MOhnv0tUpFB4EKIPSurtL55OVhnQwMneBZaF1/SvGTgMvMp1zsdOGEOIwxE6N6sa3jTjOC8bZ2oglXN6jB8tNjnZmuqapwQTme2FeFdBRmQWgel6JApUX/OmAM4nxn90xXwSdwRwu/PpF+NuxoYvShma/c=
+  on:
+    repo: square/connect-javascript-sdk
+    branch: master

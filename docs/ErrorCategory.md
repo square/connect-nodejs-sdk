@@ -1,0 +1,18 @@
+# SquareConnect.ErrorCategory
+
+## Enum
+
+
+* `API_ERROR` (value: `"API_ERROR"`)
+
+* `AUTHENTICATION_ERROR` (value: `"AUTHENTICATION_ERROR"`)
+
+* `INVALID_REQUEST_ERROR` (value: `"INVALID_REQUEST_ERROR"`)
+
+* `RATE_LIMIT_ERROR` (value: `"RATE_LIMIT_ERROR"`)
+
+* `PAYMENT_METHOD_ERROR` (value: `"PAYMENT_METHOD_ERROR"`)
+
+* `REFUND_ERROR` (value: `"REFUND_ERROR"`)
+
+
