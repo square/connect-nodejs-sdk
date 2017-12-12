@@ -5,7 +5,7 @@
   "license": "Apache 2.0",
   "main": "src/index.js",
   "scripts": {
-      "test": "mocha --recursive"
+    "test": "mocha --recursive"
   },
   "dependencies": {
     "superagent": "3.5.2"
