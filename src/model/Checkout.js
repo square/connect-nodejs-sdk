@@ -22,7 +22,7 @@ var Order = require('./Order');
 /**
  * The Checkout model module.
  * @module model/Checkout
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

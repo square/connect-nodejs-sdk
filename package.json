@@ -1,6 +1,6 @@
 {
   "name": "square-connect",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "JavaScript client library for the Square Connect v2 API",
   "license": "Apache 2.0",
   "main": "src/index.js",

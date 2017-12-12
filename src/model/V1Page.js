@@ -20,7 +20,7 @@ var V1PageCell = require('./V1PageCell');
 /**
  * The V1Page model module.
  * @module model/V1Page
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

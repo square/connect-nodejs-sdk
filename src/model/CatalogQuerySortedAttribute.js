@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQuerySortedAttribute model module.
  * @module model/CatalogQuerySortedAttribute
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

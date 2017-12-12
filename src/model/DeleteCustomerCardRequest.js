@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The DeleteCustomerCardRequest model module.
  * @module model/DeleteCustomerCardRequest
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

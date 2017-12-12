@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryExact model module.
  * @module model/CatalogQueryExact
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

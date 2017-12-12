@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The Address model module.
  * @module model/Address
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

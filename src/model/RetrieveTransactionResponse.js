@@ -21,7 +21,7 @@ var Transaction = require('./Transaction');
 /**
  * The RetrieveTransactionResponse model module.
  * @module model/RetrieveTransactionResponse
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

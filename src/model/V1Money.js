@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1Money model module.
  * @module model/V1Money
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

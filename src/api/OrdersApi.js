@@ -20,7 +20,7 @@ var CreateOrderResponse = require('../model/CreateOrderResponse');
 /**
  * Orders service.
  * @module api/OrdersApi
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**

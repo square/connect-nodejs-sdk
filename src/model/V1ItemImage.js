@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1ItemImage model module.
  * @module model/V1ItemImage
- * @version 2.5.1
+ * @version 2.5.2
  */
 
 /**
