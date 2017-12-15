@@ -20,7 +20,7 @@ var Error = require('./Error');
 /**
  * The UpdateItemTaxesResponse model module.
  * @module model/UpdateItemTaxesResponse
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

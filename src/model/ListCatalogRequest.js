@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListCatalogRequest model module.
  * @module model/ListCatalogRequest
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

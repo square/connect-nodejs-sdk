@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogIdMapping model module.
  * @module model/CatalogIdMapping
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

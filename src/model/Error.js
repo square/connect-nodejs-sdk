@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The Error model module.
  * @module model/Error
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

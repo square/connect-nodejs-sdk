@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListLocationsRequest model module.
  * @module model/ListLocationsRequest
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

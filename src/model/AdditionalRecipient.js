@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The AdditionalRecipient model module.
  * @module model/AdditionalRecipient
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

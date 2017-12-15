@@ -20,7 +20,7 @@ var Address = require('./Address');
 /**
  * The CreateCustomerCardRequest model module.
  * @module model/CreateCustomerCardRequest
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

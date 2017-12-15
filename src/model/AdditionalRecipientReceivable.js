@@ -21,7 +21,7 @@ var Money = require('./Money');
 /**
  * The AdditionalRecipientReceivable model module.
  * @module model/AdditionalRecipientReceivable
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

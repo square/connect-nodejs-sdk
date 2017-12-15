@@ -27,7 +27,7 @@ var CatalogV1Id = require('./CatalogV1Id');
 /**
  * The CatalogObject model module.
  * @module model/CatalogObject
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**
