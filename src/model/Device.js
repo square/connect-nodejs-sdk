@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The Device model module.
  * @module model/Device
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

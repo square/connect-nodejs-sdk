@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryText model module.
  * @module model/CatalogQueryText
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

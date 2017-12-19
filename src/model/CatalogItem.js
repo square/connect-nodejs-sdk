@@ -21,7 +21,7 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The CatalogItem model module.
  * @module model/CatalogItem
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

@@ -22,7 +22,7 @@ var V1PhoneNumber = require('./V1PhoneNumber');
 /**
  * The V1Merchant model module.
  * @module model/V1Merchant
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

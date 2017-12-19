@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1PaymentItemDetail model module.
  * @module model/V1PaymentItemDetail
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

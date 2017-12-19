@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogInfoResponseLimits model module.
  * @module model/CatalogInfoResponseLimits
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

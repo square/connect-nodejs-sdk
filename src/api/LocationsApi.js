@@ -17,7 +17,7 @@ var ListLocationsResponse = require('../model/ListLocationsResponse');
 /**
  * Locations service.
  * @module api/LocationsApi
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

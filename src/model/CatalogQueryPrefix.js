@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryPrefix model module.
  * @module model/CatalogQueryPrefix
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

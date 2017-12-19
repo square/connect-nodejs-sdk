@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CustomerPreferences model module.
  * @module model/CustomerPreferences
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

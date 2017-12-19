@@ -21,7 +21,7 @@ var Order = require('./Order');
 /**
  * The CreateOrderResponse model module.
  * @module model/CreateOrderResponse
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

@@ -17,7 +17,7 @@ var V1Merchant = require('../model/V1Merchant');
 /**
  * V1Locations service.
  * @module api/V1LocationsApi
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

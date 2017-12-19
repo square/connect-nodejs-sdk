@@ -20,7 +20,7 @@ var CatalogObjectBatch = require('./CatalogObjectBatch');
 /**
  * The BatchUpsertCatalogObjectsRequest model module.
  * @module model/BatchUpsertCatalogObjectsRequest
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

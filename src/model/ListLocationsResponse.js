@@ -21,7 +21,7 @@ var Location = require('./Location');
 /**
  * The ListLocationsResponse model module.
  * @module model/ListLocationsResponse
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**

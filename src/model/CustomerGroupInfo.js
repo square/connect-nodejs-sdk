@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CustomerGroupInfo model module.
  * @module model/CustomerGroupInfo
- * @version 2.5.2
+ * @version 2.5.3
  */
 
 /**
