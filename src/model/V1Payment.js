@@ -25,7 +25,7 @@ var V1Tender = require('./V1Tender');
 /**
  * The V1Payment model module.
  * @module model/V1Payment
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

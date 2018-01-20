@@ -34,7 +34,7 @@ var UpsertCatalogObjectResponse = require('../model/UpsertCatalogObjectResponse'
 /**
  * Catalog service.
  * @module api/CatalogApi
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

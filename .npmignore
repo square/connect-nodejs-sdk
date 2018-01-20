@@ -1,0 +1,9 @@
+# Exclude docs to reduce package footprint
+docs/
+
+# Exclude test-related files
+test/
+.babelrc
+mocha.opts
+.travis.yml
+travis-ci/

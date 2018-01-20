@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The BatchDeleteCatalogObjectsRequest model module.
  * @module model/BatchDeleteCatalogObjectsRequest
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

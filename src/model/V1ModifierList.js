@@ -20,7 +20,7 @@ var V1ModifierOption = require('./V1ModifierOption');
 /**
  * The V1ModifierList model module.
  * @module model/V1ModifierList
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

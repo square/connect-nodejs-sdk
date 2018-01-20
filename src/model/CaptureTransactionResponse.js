@@ -20,7 +20,7 @@ var Error = require('./Error');
 /**
  * The CaptureTransactionResponse model module.
  * @module model/CaptureTransactionResponse
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

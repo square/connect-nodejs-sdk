@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1EmployeeRole model module.
  * @module model/V1EmployeeRole
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

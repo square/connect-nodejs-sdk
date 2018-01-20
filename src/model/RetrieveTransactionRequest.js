@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The RetrieveTransactionRequest model module.
  * @module model/RetrieveTransactionRequest
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**
