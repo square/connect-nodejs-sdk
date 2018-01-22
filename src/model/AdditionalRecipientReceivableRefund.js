@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The AdditionalRecipientReceivableRefund model module.
  * @module model/AdditionalRecipientReceivableRefund
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

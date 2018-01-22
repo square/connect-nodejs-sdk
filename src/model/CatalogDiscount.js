@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The CatalogDiscount model module.
  * @module model/CatalogDiscount
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

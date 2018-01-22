@@ -28,7 +28,7 @@ var V1Variation = require('../model/V1Variation');
 /**
  * V1Items service.
  * @module api/V1ItemsApi
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

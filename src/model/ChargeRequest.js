@@ -22,7 +22,7 @@ var Money = require('./Money');
 /**
  * The ChargeRequest model module.
  * @module model/ChargeRequest
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

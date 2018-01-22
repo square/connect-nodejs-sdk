@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The ChargeRequestAdditionalRecipient model module.
  * @module model/ChargeRequestAdditionalRecipient
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

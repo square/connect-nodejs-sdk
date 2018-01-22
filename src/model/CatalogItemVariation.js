@@ -21,7 +21,7 @@ var Money = require('./Money');
 /**
  * The CatalogItemVariation model module.
  * @module model/CatalogItemVariation
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

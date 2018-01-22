@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The CatalogModifier model module.
  * @module model/CatalogModifier
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

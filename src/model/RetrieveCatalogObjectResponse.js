@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The RetrieveCatalogObjectResponse model module.
  * @module model/RetrieveCatalogObjectResponse
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

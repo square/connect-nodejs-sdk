@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1TimecardEvent model module.
  * @module model/V1TimecardEvent
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

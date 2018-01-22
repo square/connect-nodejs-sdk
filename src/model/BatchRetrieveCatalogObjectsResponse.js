@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The BatchRetrieveCatalogObjectsResponse model module.
  * @module model/BatchRetrieveCatalogObjectsResponse
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

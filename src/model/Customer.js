@@ -23,7 +23,7 @@ var CustomerPreferences = require('./CustomerPreferences');
 /**
  * The Customer model module.
  * @module model/Customer
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

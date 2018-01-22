@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogCategory model module.
  * @module model/CatalogCategory
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

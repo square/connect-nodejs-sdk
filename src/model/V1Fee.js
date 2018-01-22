@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1Fee model module.
  * @module model/V1Fee
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

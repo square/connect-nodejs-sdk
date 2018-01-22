@@ -21,7 +21,7 @@ var Refund = require('./Refund');
 /**
  * The CreateRefundResponse model module.
  * @module model/CreateRefundResponse
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**

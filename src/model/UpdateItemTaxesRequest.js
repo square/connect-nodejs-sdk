@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The UpdateItemTaxesRequest model module.
  * @module model/UpdateItemTaxesRequest
- * @version 2.5.3
+ * @version 2.5.4
  */
 
 /**
