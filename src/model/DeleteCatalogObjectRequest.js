@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The DeleteCatalogObjectRequest model module.
  * @module model/DeleteCatalogObjectRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>DeleteCatalogObjectRequest</code>.
- * 
+ *
  * @alias module:model/DeleteCatalogObjectRequest
  * @class
  */

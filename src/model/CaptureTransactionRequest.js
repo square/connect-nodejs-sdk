@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CaptureTransactionRequest model module.
  * @module model/CaptureTransactionRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CaptureTransactionRequest</code>.
- * 
+ *
  * @alias module:model/CaptureTransactionRequest
  * @class
  */

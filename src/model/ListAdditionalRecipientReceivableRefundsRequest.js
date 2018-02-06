@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListAdditionalRecipientReceivableRefundsRequest model module.
  * @module model/ListAdditionalRecipientReceivableRefundsRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

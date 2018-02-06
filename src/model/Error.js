@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The Error model module.
  * @module model/Error
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -442,6 +442,11 @@ exports.prototype['field'] = undefined;
      */
     "INVALID_CARD_DATA": "INVALID_CARD_DATA",
     /**
+     * value: "LOCATION_MISMATCH"
+     * @const
+     */
+    "LOCATION_MISMATCH": "LOCATION_MISMATCH",
+    /**
      * value: "IDEMPOTENCY_KEY_REUSED"
      * @const
      */
@@ -530,7 +535,12 @@ exports.prototype['field'] = undefined;
      * value: "SERVICE_UNAVAILABLE"
      * @const
      */
-    "SERVICE_UNAVAILABLE": "SERVICE_UNAVAILABLE"  };
+    "SERVICE_UNAVAILABLE": "SERVICE_UNAVAILABLE",
+    /**
+     * value: "GATEWAY_TIMEOUT"
+     * @const
+     */
+    "GATEWAY_TIMEOUT": "GATEWAY_TIMEOUT"  };
 
 
 module.exports = exports;

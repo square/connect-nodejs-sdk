@@ -20,11 +20,11 @@ var CreateOrderResponse = require('../model/CreateOrderResponse');
 /**
  * Orders service.
  * @module api/OrdersApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new OrdersApi. 
+ * Constructs a new OrdersApi.
  * @alias module:api/OrdersApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

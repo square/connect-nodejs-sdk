@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1UpdateModifierListRequest model module.
  * @module model/V1UpdateModifierListRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

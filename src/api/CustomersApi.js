@@ -26,11 +26,11 @@ var UpdateCustomerResponse = require('../model/UpdateCustomerResponse');
 /**
  * Customers service.
  * @module api/CustomersApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new CustomersApi. 
+ * Constructs a new CustomersApi.
  * @alias module:api/CustomersApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

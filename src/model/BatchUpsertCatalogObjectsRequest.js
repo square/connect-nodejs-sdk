@@ -20,12 +20,12 @@ var CatalogObjectBatch = require('./CatalogObjectBatch');
 /**
  * The BatchUpsertCatalogObjectsRequest model module.
  * @module model/BatchUpsertCatalogObjectsRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>BatchUpsertCatalogObjectsRequest</code>.
- * 
+ *
  * @alias module:model/BatchUpsertCatalogObjectsRequest
  * @class
  * @param idempotencyKey {String} A value you specify that uniquely identifies this request among all your requests. A common way to create a valid idempotency key is to use a Universally unique identifier (UUID).  If you're unsure whether a particular request was successful, you can reattempt it with the same idempotency key without worrying about creating duplicate objects.  See [Idempotency keys](#idempotencykeys) for more information.

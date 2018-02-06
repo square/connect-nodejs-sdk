@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The CreateCustomerCardResponse model module.
  * @module model/CreateCustomerCardResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

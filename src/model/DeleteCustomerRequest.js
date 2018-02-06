@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The DeleteCustomerRequest model module.
  * @module model/DeleteCustomerRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>DeleteCustomerRequest</code>.
- * 
+ *
  * @alias module:model/DeleteCustomerRequest
  * @class
  */

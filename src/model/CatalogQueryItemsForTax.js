@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryItemsForTax model module.
  * @module model/CatalogQueryItemsForTax
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CatalogQueryItemsForTax</code>.
- * 
+ *
  * @alias module:model/CatalogQueryItemsForTax
  * @class
  * @param taxIds {Array.<String>} A set of [CatalogTax](#type-catalogtax) IDs to be used to find associated [CatalogItem](#type-catalogitem)s.

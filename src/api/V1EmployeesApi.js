@@ -21,11 +21,11 @@ var V1TimecardEvent = require('../model/V1TimecardEvent');
 /**
  * V1Employees service.
  * @module api/V1EmployeesApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new V1EmployeesApi. 
+ * Constructs a new V1EmployeesApi.
  * @alias module:api/V1EmployeesApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -304,7 +304,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all of a business&#39;s employee roles.
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1EmployeeRole>} and HTTP response
@@ -342,7 +342,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all of a business&#39;s employee roles.
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1EmployeeRole>}
@@ -359,7 +359,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all of a business&#39;s employees.
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
@@ -409,7 +409,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all of a business&#39;s employees.
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.

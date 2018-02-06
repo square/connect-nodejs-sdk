@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | The item&#39;s name. Searchable. | 
+**name** | **String** | The item&#39;s name. Searchable. | [optional] 
 **description** | **String** | The item&#39;s description. Searchable. | [optional] 
 **abbreviation** | **String** | The text of the item&#39;s display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable. | [optional] 
 **labelColor** | **String** | The color of the item&#39;s display label in the Square Point of Sale app. | [optional] 

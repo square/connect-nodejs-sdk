@@ -331,6 +331,11 @@ var exports = {
    */
   "INVALID_CARD_DATA": "INVALID_CARD_DATA",
   /**
+   * value: "LOCATION_MISMATCH"
+   * @const
+   */
+  "LOCATION_MISMATCH": "LOCATION_MISMATCH",
+  /**
    * value: "IDEMPOTENCY_KEY_REUSED"
    * @const
    */
@@ -419,7 +424,12 @@ var exports = {
    * value: "SERVICE_UNAVAILABLE"
    * @const
    */
-  "SERVICE_UNAVAILABLE": "SERVICE_UNAVAILABLE"};
+  "SERVICE_UNAVAILABLE": "SERVICE_UNAVAILABLE",
+  /**
+   * value: "GATEWAY_TIMEOUT"
+   * @const
+   */
+  "GATEWAY_TIMEOUT": "GATEWAY_TIMEOUT"};
 
 /**
  * Returns a <code>ErrorCode</code> enum value from a Javascript object name.

@@ -23,7 +23,7 @@ var Money = require('./Money');
 /**
  * The CreateOrderRequestLineItem model module.
  * @module model/CreateOrderRequestLineItem
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -115,7 +115,7 @@ exports.prototype['variation_name'] = undefined;
  */
 exports.prototype['note'] = undefined;
 /**
- * Only used for Catalog line items. The catalog object ID from existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
+ * Only used for Catalog line items. The catalog object ID for an existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;

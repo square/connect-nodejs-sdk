@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1PhoneNumber model module.
  * @module model/V1PhoneNumber
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

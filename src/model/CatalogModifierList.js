@@ -20,7 +20,7 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The CatalogModifierList model module.
  * @module model/CatalogModifierList
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -28,12 +28,11 @@ var CatalogObject = require('./CatalogObject');
  * A modifier list in the Catalog object model. A [CatalogModifierList](#type-catalogmodifierlist) contains [Modifier](#type-catalogmodifier)s that can be applied to a [CatalogItem](#type-catalogitem) at the time of sale.  For example, a modifier list \&quot;Condiments\&quot; that would apply to a \&quot;Hot Dog\&quot; [CatalogItem](#type-catalogitem) might contain [CatalogModifier](#type-catalogmodifier)s \&quot;Ketchup\&quot;, \&quot;Mustard\&quot;, and \&quot;Relish\&quot;. The &#x60;selection_type&#x60; field specifies whether or not multiple selections from the modifier list are allowed.
  * @alias module:model/CatalogModifierList
  * @class
- * @param name {String} The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 
 
 };

@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogTax model module.
  * @module model/CatalogTax
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -27,12 +27,11 @@ var ApiClient = require('../ApiClient');
  * A tax in the Catalog object model.
  * @alias module:model/CatalogTax
  * @class
- * @param name {String} The tax's name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 
 
 

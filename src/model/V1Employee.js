@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1Employee model module.
  * @module model/V1Employee
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -121,7 +121,7 @@ exports.prototype['authorized_location_ids'] = undefined;
  */
 exports.prototype['email'] = undefined;
 /**
- * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. 
+ * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard.
  * @member {module:model/V1Employee.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

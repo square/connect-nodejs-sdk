@@ -21,12 +21,12 @@ var Error = require('./Error');
 /**
  * The BatchRetrieveCatalogObjectsResponse model module.
  * @module model/BatchRetrieveCatalogObjectsResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>BatchRetrieveCatalogObjectsResponse</code>.
- * 
+ *
  * @alias module:model/BatchRetrieveCatalogObjectsResponse
  * @class
  */

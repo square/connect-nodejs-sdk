@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The CatalogDiscount model module.
  * @module model/CatalogDiscount
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -28,12 +28,11 @@ var Money = require('./Money');
  * A discount in the Catalog object model.
  * @alias module:model/CatalogDiscount
  * @class
- * @param name {String} The discount's name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 
 
 

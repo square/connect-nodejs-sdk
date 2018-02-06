@@ -20,7 +20,7 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The CatalogObjectBatch model module.
  * @module model/CatalogObjectBatch
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

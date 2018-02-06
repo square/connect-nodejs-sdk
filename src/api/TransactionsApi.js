@@ -25,11 +25,11 @@ var VoidTransactionResponse = require('../model/VoidTransactionResponse');
 /**
  * Transactions service.
  * @module api/TransactionsApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new TransactionsApi. 
+ * Constructs a new TransactionsApi.
  * @alias module:api/TransactionsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -43,8 +43,8 @@ module.exports = function(apiClient) {
   /**
    * CaptureTransaction
    * Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId 
-   * @param {String} transactionId 
+   * @param {String} locationId
+   * @param {String} transactionId
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CaptureTransactionResponse} and HTTP response
    */
   this.captureTransactionWithHttpInfo = function(locationId, transactionId) {
@@ -87,8 +87,8 @@ module.exports = function(apiClient) {
   /**
    * CaptureTransaction
    * Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId 
-   * @param {String} transactionId 
+   * @param {String} locationId
+   * @param {String} transactionId
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CaptureTransactionResponse}
    */
   this.captureTransaction = function(locationId, transactionId) {
@@ -101,7 +101,7 @@ module.exports = function(apiClient) {
 
   /**
    * Charge
-   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  In order for an e-commerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - &#x60;buyer_email_address&#x60; - At least one of &#x60;billing_address&#x60; or &#x60;shipping_address&#x60;  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
+   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - &#x60;buyer_email_address&#x60; - At least one of &#x60;billing_address&#x60; or &#x60;shipping_address&#x60;  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
    * @param {String} locationId The ID of the location to associate the created transaction with.
    * @param {module:model/ChargeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ChargeResponse} and HTTP response
@@ -144,7 +144,7 @@ module.exports = function(apiClient) {
 
   /**
    * Charge
-   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  In order for an e-commerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - &#x60;buyer_email_address&#x60; - At least one of &#x60;billing_address&#x60; or &#x60;shipping_address&#x60;  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
+   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - &#x60;buyer_email_address&#x60; - At least one of &#x60;billing_address&#x60; or &#x60;shipping_address&#x60;  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
    * @param {String} locationId The ID of the location to associate the created transaction with.
    * @param {module:model/ChargeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ChargeResponse}
@@ -417,8 +417,8 @@ module.exports = function(apiClient) {
   /**
    * VoidTransaction
    * Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId 
-   * @param {String} transactionId 
+   * @param {String} locationId
+   * @param {String} transactionId
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoidTransactionResponse} and HTTP response
    */
   this.voidTransactionWithHttpInfo = function(locationId, transactionId) {
@@ -461,8 +461,8 @@ module.exports = function(apiClient) {
   /**
    * VoidTransaction
    * Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId 
-   * @param {String} transactionId 
+   * @param {String} locationId
+   * @param {String} transactionId
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoidTransactionResponse}
    */
   this.voidTransaction = function(locationId, transactionId) {

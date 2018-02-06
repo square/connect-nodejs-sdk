@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The BatchRetrieveOrdersRequest model module.
  * @module model/BatchRetrieveOrdersRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>BatchRetrieveOrdersRequest</code>.
- * 
+ *
  * @alias module:model/BatchRetrieveOrdersRequest
  * @class
  * @param orderIds {Array.<String>} The IDs of the orders to retrieve. A maximum of 100 orders can be retrieved per request.

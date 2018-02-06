@@ -22,12 +22,12 @@ var CreateOrderRequestTax = require('./CreateOrderRequestTax');
 /**
  * The CreateOrderRequest model module.
  * @module model/CreateOrderRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CreateOrderRequest</code>.
- * 
+ *
  * @alias module:model/CreateOrderRequest
  * @class
  * @param lineItems {Array.<module:model/CreateOrderRequestLineItem>} The line items to associate with this order.  Each line item represents a different product to include in a purchase.

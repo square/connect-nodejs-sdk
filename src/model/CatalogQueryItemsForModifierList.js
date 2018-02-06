@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryItemsForModifierList model module.
  * @module model/CatalogQueryItemsForModifierList
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CatalogQueryItemsForModifierList</code>.
- * 
+ *
  * @alias module:model/CatalogQueryItemsForModifierList
  * @class
  * @param modifierListIds {Array.<String>} A set of [CatalogModifierList](#type-catalogmodifierlist) IDs to be used to find associated [CatalogItem](#type-catalogitem)s.
