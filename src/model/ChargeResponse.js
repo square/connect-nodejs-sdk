@@ -21,7 +21,7 @@ var Transaction = require('./Transaction');
 /**
  * The ChargeResponse model module.
  * @module model/ChargeResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

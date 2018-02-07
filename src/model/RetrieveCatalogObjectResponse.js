@@ -21,12 +21,12 @@ var Error = require('./Error');
 /**
  * The RetrieveCatalogObjectResponse model module.
  * @module model/RetrieveCatalogObjectResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>RetrieveCatalogObjectResponse</code>.
- * 
+ *
  * @alias module:model/RetrieveCatalogObjectResponse
  * @class
  */

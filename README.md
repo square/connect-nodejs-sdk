@@ -31,7 +31,7 @@ oauth2.accessToken = "YOUR ACCESS TOKEN";
 
 var api = new SquareConnect.LocationsApi();
 
-api.listLocations().then(function(data) {
+api.listLocations.then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);

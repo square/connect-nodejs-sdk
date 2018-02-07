@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The CatalogModifier model module.
  * @module model/CatalogModifier
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -28,12 +28,11 @@ var Money = require('./Money');
  * A modifier in the Catalog object model.
  * @alias module:model/CatalogModifier
  * @class
- * @param name {String} The modifier's name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 
 };
 

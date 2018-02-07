@@ -20,7 +20,7 @@ var V1Money = require('./V1Money');
 /**
  * The V1PaymentModifier model module.
  * @module model/V1PaymentModifier
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

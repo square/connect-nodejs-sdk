@@ -18,11 +18,11 @@ var RegisterDomainResponse = require('../model/RegisterDomainResponse');
 /**
  * ApplePay service.
  * @module api/ApplePayApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new ApplePayApi. 
+ * Constructs a new ApplePayApi.
  * @alias module:api/ApplePayApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

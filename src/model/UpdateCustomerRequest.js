@@ -20,7 +20,7 @@ var Address = require('./Address');
 /**
  * The UpdateCustomerRequest model module.
  * @module model/UpdateCustomerRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

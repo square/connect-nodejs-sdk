@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogModifierOverride model module.
  * @module model/CatalogModifierOverride
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CatalogModifierOverride</code>.
- * 
+ *
  * @alias module:model/CatalogModifierOverride
  * @class
  * @param modifierId {String} The ID of the [CatalogModifier](#type-catalogmodifier) whose default behavior is being overridden.

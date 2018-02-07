@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The CreateOrderRequestDiscount model module.
  * @module model/CreateOrderRequestDiscount
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Only used for catalog taxes. The catalog object ID from exsiting [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
+ * Only used for catalog discounts. The catalog object ID for an existing [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;

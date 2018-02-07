@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CreateOrderRequestModifier model module.
  * @module model/CreateOrderRequestModifier
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

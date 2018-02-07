@@ -26,7 +26,7 @@ var CatalogQueryText = require('./CatalogQueryText');
 /**
  * The CatalogQuery model module.
  * @module model/CatalogQuery
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

@@ -21,7 +21,7 @@ var Money = require('./Money');
 /**
  * The Refund model module.
  * @module model/Refund
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

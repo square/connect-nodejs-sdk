@@ -21,7 +21,7 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The CatalogItem model module.
  * @module model/CatalogItem
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -29,12 +29,11 @@ var CatalogObject = require('./CatalogObject');
  * An item (i.e., product family) in the Catalog object model.
  * @alias module:model/CatalogItem
  * @class
- * @param name {String} The item's name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 
 
 

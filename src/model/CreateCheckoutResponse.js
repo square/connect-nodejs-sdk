@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The CreateCheckoutResponse model module.
  * @module model/CreateCheckoutResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

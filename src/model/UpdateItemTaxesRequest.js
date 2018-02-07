@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The UpdateItemTaxesRequest model module.
  * @module model/UpdateItemTaxesRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>UpdateItemTaxesRequest</code>.
- * 
+ *
  * @alias module:model/UpdateItemTaxesRequest
  * @class
  * @param itemIds {Array.<String>} The [CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax](#type-catalogtax)es are being updated.

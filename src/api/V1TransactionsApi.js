@@ -23,11 +23,11 @@ var V1UpdateOrderRequest = require('../model/V1UpdateOrderRequest');
 /**
  * V1Transactions service.
  * @module api/V1TransactionsApi
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
- * Constructs a new V1TransactionsApi. 
+ * Constructs a new V1TransactionsApi.
  * @alias module:api/V1TransactionsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -350,7 +350,7 @@ module.exports = function(apiClient) {
 
   /**
    * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length.
-   * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length. 
+   * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length.
    * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
    * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
@@ -401,7 +401,7 @@ module.exports = function(apiClient) {
 
   /**
    * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length.
-   * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length. 
+   * Provides summary information for all deposits and withdrawals initiated by Square to a merchant&#39;s bank account during a date range. Date ranges cannot exceed one year in length.
    * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
    * @param {module:model/String} opts.order TThe order in which payments are listed in the response.

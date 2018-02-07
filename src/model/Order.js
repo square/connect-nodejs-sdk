@@ -21,7 +21,7 @@ var OrderLineItem = require('./OrderLineItem');
 /**
  * The Order model module.
  * @module model/Order
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The RegisterDomainRequest model module.
  * @module model/RegisterDomainRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

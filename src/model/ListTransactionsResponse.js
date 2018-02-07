@@ -21,7 +21,7 @@ var Transaction = require('./Transaction');
 /**
  * The ListTransactionsResponse model module.
  * @module model/ListTransactionsResponse
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

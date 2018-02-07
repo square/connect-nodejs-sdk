@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogCategory model module.
  * @module model/CatalogCategory
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
@@ -27,12 +27,11 @@ var ApiClient = require('../ApiClient');
  * A category to which an [CatalogItem](#type-catalogitem) belongs in the Catalog object model.
  * @alias module:model/CatalogCategory
  * @class
- * @param name {String} The category's name. Searchable.
  */
-var exports = function(name) {
+var exports = function() {
   var _this = this;
 
-  _this['name'] = name;
+
 };
 
 /**

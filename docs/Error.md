@@ -156,6 +156,8 @@ Name | Type | Description | Notes
 
 * `INVALID_CARD_DATA` (value: `"INVALID_CARD_DATA"`)
 
+* `LOCATION_MISMATCH` (value: `"LOCATION_MISMATCH"`)
+
 * `IDEMPOTENCY_KEY_REUSED` (value: `"IDEMPOTENCY_KEY_REUSED"`)
 
 * `UNEXPECTED_VALUE` (value: `"UNEXPECTED_VALUE"`)
@@ -191,6 +193,8 @@ Name | Type | Description | Notes
 * `NOT_IMPLEMENTED` (value: `"NOT_IMPLEMENTED"`)
 
 * `SERVICE_UNAVAILABLE` (value: `"SERVICE_UNAVAILABLE"`)
+
+* `GATEWAY_TIMEOUT` (value: `"GATEWAY_TIMEOUT"`)
 
 
 

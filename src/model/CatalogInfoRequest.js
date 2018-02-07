@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogInfoRequest model module.
  * @module model/CatalogInfoRequest
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**
  * Constructs a new <code>CatalogInfoRequest</code>.
- * 
+ *
  * @alias module:model/CatalogInfoRequest
  * @class
  */

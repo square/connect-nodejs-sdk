@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The ItemVariationLocationOverrides model module.
  * @module model/ItemVariationLocationOverrides
- * @version 2.5.4
+ * @version 2.5.5
  */
 
 /**

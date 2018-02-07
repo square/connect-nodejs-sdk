@@ -45,6 +45,8 @@ Name | Type | Description | Notes
 
 * `INCENTED_PAYMENT` (value: `"INCENTED_PAYMENT"`)
 
+* `OTHER` (value: `"OTHER"`)
+
 * `RETURNED_ACH_ENTRY` (value: `"RETURNED_ACH_ENTRY"`)
 
 * `RETURNED_SQUARE_275` (value: `"RETURNED_SQUARE_275"`)
