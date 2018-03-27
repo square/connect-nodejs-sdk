@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1BankAccount model module.
  * @module model/V1BankAccount
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

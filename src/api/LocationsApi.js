@@ -17,11 +17,11 @@ var ListLocationsResponse = require('../model/ListLocationsResponse');
 /**
  * Locations service.
  * @module api/LocationsApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new LocationsApi.
+ * Constructs a new LocationsApi. 
  * @alias module:api/LocationsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

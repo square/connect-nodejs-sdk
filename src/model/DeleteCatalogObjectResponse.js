@@ -20,12 +20,12 @@ var Error = require('./Error');
 /**
  * The DeleteCatalogObjectResponse model module.
  * @module model/DeleteCatalogObjectResponse
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>DeleteCatalogObjectResponse</code>.
- *
+ * 
  * @alias module:model/DeleteCatalogObjectResponse
  * @class
  */

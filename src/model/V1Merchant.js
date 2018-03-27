@@ -22,7 +22,7 @@ var V1PhoneNumber = require('./V1PhoneNumber');
 /**
  * The V1Merchant model module.
  * @module model/V1Merchant
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
@@ -173,7 +173,7 @@ exports.prototype['business_phone'] = undefined;
 exports.prototype['business_type'] = undefined;
 /**
  * The merchant's shipping address.
- * @member {module:model/Address} shipping_address
+ * @member {module:model/Address} shipping_address 
  */
 exports.prototype['shipping_address '] = undefined;
 /**

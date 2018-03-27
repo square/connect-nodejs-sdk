@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1Money model module.
  * @module model/V1Money
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>V1Money</code>.
- *
+ * 
  * @alias module:model/V1Money
  * @class
  */
@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['amount'] = undefined;
 /**
- *
+ * 
  * @member {module:model/V1Money.CurrencyCodeEnum} currency_code
  */
 exports.prototype['currency_code'] = undefined;

@@ -23,7 +23,7 @@ var OrderLineItemTax = require('./OrderLineItemTax');
 /**
  * The OrderLineItem model module.
  * @module model/OrderLineItem
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
@@ -31,12 +31,13 @@ var OrderLineItemTax = require('./OrderLineItemTax');
  * Represents a line item in an order. Each line item describes a different product to purchase, with its own quantity and price details.
  * @alias module:model/OrderLineItem
  * @class
+ * @param quantity {String} The quantity purchased, as a string representation of a number.
  */
-var exports = function() {
+var exports = function(quantity) {
   var _this = this;
 
 
-
+  _this['quantity'] = quantity;
 
 
 

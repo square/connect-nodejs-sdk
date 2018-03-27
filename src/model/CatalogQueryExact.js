@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryExact model module.
  * @module model/CatalogQueryExact
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>CatalogQueryExact</code>.
- *
+ * 
  * @alias module:model/CatalogQueryExact
  * @class
  * @param attributeName {String} The name of the attribute to be searched.

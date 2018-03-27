@@ -18,11 +18,11 @@ var CreateCheckoutResponse = require('../model/CreateCheckoutResponse');
 /**
  * Checkout service.
  * @module api/CheckoutApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new CheckoutApi.
+ * Constructs a new CheckoutApi. 
  * @alias module:api/CheckoutApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListRefundsRequest model module.
  * @module model/ListRefundsRequest
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

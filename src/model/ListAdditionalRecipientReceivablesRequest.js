@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListAdditionalRecipientReceivablesRequest model module.
  * @module model/ListAdditionalRecipientReceivablesRequest
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

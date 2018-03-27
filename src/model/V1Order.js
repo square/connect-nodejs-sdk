@@ -24,7 +24,7 @@ var V1Tender = require('./V1Tender');
 /**
  * The V1Order model module.
  * @module model/V1Order
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

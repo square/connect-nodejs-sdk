@@ -22,12 +22,12 @@ var Error = require('./Error');
 /**
  * The BatchUpsertCatalogObjectsResponse model module.
  * @module model/BatchUpsertCatalogObjectsResponse
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>BatchUpsertCatalogObjectsResponse</code>.
- *
+ * 
  * @alias module:model/BatchUpsertCatalogObjectsResponse
  * @class
  */
