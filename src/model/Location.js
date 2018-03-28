@@ -20,7 +20,7 @@ var Address = require('./Address');
 /**
  * The Location model module.
  * @module model/Location
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

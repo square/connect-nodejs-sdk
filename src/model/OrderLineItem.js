@@ -23,7 +23,7 @@ var OrderLineItemTax = require('./OrderLineItemTax');
 /**
  * The OrderLineItem model module.
  * @module model/OrderLineItem
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

@@ -26,7 +26,7 @@ var UpdateCustomerResponse = require('../model/UpdateCustomerResponse');
 /**
  * Customers service.
  * @module api/CustomersApi
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

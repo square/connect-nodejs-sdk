@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1MerchantLocationDetails model module.
  * @module model/V1MerchantLocationDetails
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

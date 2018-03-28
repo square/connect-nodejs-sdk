@@ -22,7 +22,7 @@ var CreateOrderRequest = require('./CreateOrderRequest');
 /**
  * The CreateCheckoutRequest model module.
  * @module model/CreateCheckoutRequest
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

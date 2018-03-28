@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 2.6.1 (2018-03-28)
+
+* Updates user-agent header
+
 ## Version 2.6.0 (2018-03-27)
 
 ### Improvements: Orders API

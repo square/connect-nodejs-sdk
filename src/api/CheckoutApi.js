@@ -18,7 +18,7 @@ var CreateCheckoutResponse = require('../model/CreateCheckoutResponse');
 /**
  * Checkout service.
  * @module api/CheckoutApi
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

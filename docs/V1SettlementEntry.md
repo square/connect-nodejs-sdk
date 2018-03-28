@@ -43,9 +43,9 @@ Name | Type | Description | Notes
 
 * `SUBSCRIPTION_FEE_REFUND` (value: `"SUBSCRIPTION_FEE_REFUND"`)
 
-* `INCENTED_PAYMENT` (value: `"INCENTED_PAYMENT"`)
-
 * `OTHER` (value: `"OTHER"`)
+
+* `INCENTED_PAYMENT` (value: `"INCENTED_PAYMENT"`)
 
 * `RETURNED_ACH_ENTRY` (value: `"RETURNED_ACH_ENTRY"`)
 
