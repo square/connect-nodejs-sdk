@@ -20,11 +20,11 @@ var CreateOrderResponse = require('../model/CreateOrderResponse');
 /**
  * Orders service.
  * @module api/OrdersApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new OrdersApi.
+ * Constructs a new OrdersApi. 
  * @alias module:api/OrdersApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -37,7 +37,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveOrders
-   * Retrieves a set of [Order](#type-order)s by their IDs. Only orders that have been successfully charged are included in the response.  If any of the order IDs in the request do not exist, or are associated with uncharged orders, then those orders will not be included in the set of orders in the response.  Note that in the future, uncharged orders may be returned by this endpoint.
+   * Retrieves a set of [Order](#type-order)s by their IDs.  If a provided Order ID does not exist, it is ignored instead of resulting in an error.
    * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BatchRetrieveOrdersResponse} and HTTP response
@@ -80,7 +80,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveOrders
-   * Retrieves a set of [Order](#type-order)s by their IDs. Only orders that have been successfully charged are included in the response.  If any of the order IDs in the request do not exist, or are associated with uncharged orders, then those orders will not be included in the set of orders in the response.  Note that in the future, uncharged orders may be returned by this endpoint.
+   * Retrieves a set of [Order](#type-order)s by their IDs.  If a provided Order ID does not exist, it is ignored instead of resulting in an error.
    * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BatchRetrieveOrdersResponse}

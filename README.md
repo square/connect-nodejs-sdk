@@ -31,7 +31,7 @@ oauth2.accessToken = "YOUR ACCESS TOKEN";
 
 var api = new SquareConnect.LocationsApi();
 
-api.listLocations().then(function(data) {
+api.listLocations.then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -338,7 +338,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: accessCode
 - **Authorization URL**: https://connect.squareup.com/oauth2/authorize
-- **Scopes**:
+- **Scopes**: 
   - MERCHANT_PROFILE_READ: GET endpoints related to a merchant&#39;s business and location entities. Almost all Connect API applications need this permission in order to obtain a merchant&#39;s location IDs
   - PAYMENTS_READ: GET endpoints related to transactions and refunds
   - PAYMENTS_WRITE: POST, PUT, and DELETE endpoints related to transactions and refunds. E-commerce applications must request this permission

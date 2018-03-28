@@ -17,11 +17,11 @@ var V1Merchant = require('../model/V1Merchant');
 /**
  * V1Locations service.
  * @module api/V1LocationsApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new V1LocationsApi.
+ * Constructs a new V1LocationsApi. 
  * @alias module:api/V1LocationsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

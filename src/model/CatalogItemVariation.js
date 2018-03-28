@@ -21,7 +21,7 @@ var Money = require('./Money');
 /**
  * The CatalogItemVariation model module.
  * @module model/CatalogItemVariation
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
@@ -118,7 +118,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['sku'] = undefined;
 /**
- * The item variation's UPC, if any. Searchable.
+ * The item variation's UPC, if any. Searchable in the Connect API. This field is only exposed in the Connect API. It is not exposed in Square's Dashboard, Square Point of Sale app or Retail Point of Sale app.
  * @member {String} upc
  */
 exports.prototype['upc'] = undefined;

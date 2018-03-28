@@ -22,7 +22,7 @@ var Tender = require('./Tender');
 /**
  * The Transaction model module.
  * @module model/Transaction
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

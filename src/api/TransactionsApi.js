@@ -25,11 +25,11 @@ var VoidTransactionResponse = require('../model/VoidTransactionResponse');
 /**
  * Transactions service.
  * @module api/TransactionsApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new TransactionsApi.
+ * Constructs a new TransactionsApi. 
  * @alias module:api/TransactionsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -43,8 +43,8 @@ module.exports = function(apiClient) {
   /**
    * CaptureTransaction
    * Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId
-   * @param {String} transactionId
+   * @param {String} locationId 
+   * @param {String} transactionId 
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CaptureTransactionResponse} and HTTP response
    */
   this.captureTransactionWithHttpInfo = function(locationId, transactionId) {
@@ -87,8 +87,8 @@ module.exports = function(apiClient) {
   /**
    * CaptureTransaction
    * Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId
-   * @param {String} transactionId
+   * @param {String} locationId 
+   * @param {String} transactionId 
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CaptureTransactionResponse}
    */
   this.captureTransaction = function(locationId, transactionId) {
@@ -417,8 +417,8 @@ module.exports = function(apiClient) {
   /**
    * VoidTransaction
    * Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId
-   * @param {String} transactionId
+   * @param {String} locationId 
+   * @param {String} transactionId 
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoidTransactionResponse} and HTTP response
    */
   this.voidTransactionWithHttpInfo = function(locationId, transactionId) {
@@ -461,8 +461,8 @@ module.exports = function(apiClient) {
   /**
    * VoidTransaction
    * Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
-   * @param {String} locationId
-   * @param {String} transactionId
+   * @param {String} locationId 
+   * @param {String} transactionId 
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoidTransactionResponse}
    */
   this.voidTransaction = function(locationId, transactionId) {

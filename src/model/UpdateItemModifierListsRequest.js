@@ -19,12 +19,12 @@ var ApiClient = require('../ApiClient');
 /**
  * The UpdateItemModifierListsRequest model module.
  * @module model/UpdateItemModifierListsRequest
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>UpdateItemModifierListsRequest</code>.
- *
+ * 
  * @alias module:model/UpdateItemModifierListsRequest
  * @class
  * @param itemIds {Array.<String>} The [CatalogItem](#type-catalogitem)s whose [CatalogModifierList](#type-catalogmodifierlist)s are being updated.

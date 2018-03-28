@@ -28,11 +28,11 @@ var V1Variation = require('../model/V1Variation');
 /**
  * V1Items service.
  * @module api/V1ItemsApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
- * Constructs a new V1ItemsApi.
+ * Constructs a new V1ItemsApi. 
  * @alias module:api/V1ItemsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

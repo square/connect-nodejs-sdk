@@ -19,7 +19,7 @@ var ApiClient = require('../ApiClient');
 /**
  * The CreateOrderRequestTax model module.
  * @module model/CreateOrderRequestTax
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
@@ -70,7 +70,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['catalog_object_id'] = undefined;
 /**
- * Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set catalog_object_id.
+ * Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set `catalog_object_id`.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

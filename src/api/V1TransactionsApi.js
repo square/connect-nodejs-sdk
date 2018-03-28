@@ -23,7 +23,7 @@ var V1UpdateOrderRequest = require('../model/V1UpdateOrderRequest');
 /**
  * V1Transactions service.
  * @module api/V1TransactionsApi
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**

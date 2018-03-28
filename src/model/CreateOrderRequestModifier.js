@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var Money = require('./Money');
 
 
 
@@ -19,20 +20,21 @@ var ApiClient = require('../ApiClient');
 /**
  * The CreateOrderRequestModifier model module.
  * @module model/CreateOrderRequestModifier
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>CreateOrderRequestModifier</code>.
- * Represents a modifier applied to a single line item.
+ * Represents a modifier applied to a single line item.  Modifiers can reference existing objects in a merchant catalog or be constructed ad hoc at the time of purchase by providing a name and price.
  * @alias module:model/CreateOrderRequestModifier
  * @class
- * @param catalogObjectId {String} The catalog object ID of a [CatalogModifier](#type-catalogmodifier).
  */
-var exports = function(catalogObjectId) {
+var exports = function() {
   var _this = this;
 
-  _this['catalog_object_id'] = catalogObjectId;
+
+
+
 };
 
 /**
@@ -49,6 +51,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('catalog_object_id')) {
       obj['catalog_object_id'] = ApiClient.convertToType(data['catalog_object_id'], 'String');
     }
+      if (data.hasOwnProperty('name')) {
+      obj['name'] = ApiClient.convertToType(data['name'], 'String');
+    }
+      if (data.hasOwnProperty('base_price_money')) {
+      obj['base_price_money'] = Money.constructFromObject(data['base_price_money']);
+    }
     }
   return obj;
 }
@@ -58,6 +66,16 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
+/**
+ * Only used for ad hoc modifiers. The name of the modifier. `name` cannot exceed 255 characters.  Do not provide a value for `name` if you provide a value for `catalog_object_id`.
+ * @member {String} name
+ */
+exports.prototype['name'] = undefined;
+/**
+ * Only used for ad hoc modifiers. The base price for the modifier.  Do not provide a value for `base_price_money` if you provide a value for `catalog_object_id`.
+ * @member {module:model/Money} base_price_money
+ */
+exports.prototype['base_price_money'] = undefined;
 
 
 

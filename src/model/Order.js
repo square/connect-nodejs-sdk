@@ -21,7 +21,7 @@ var OrderLineItem = require('./OrderLineItem');
 /**
  * The Order model module.
  * @module model/Order
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
@@ -29,14 +29,16 @@ var OrderLineItem = require('./OrderLineItem');
  * Contains all information related to a single order to process with Square, including line items that specify the products to purchase
  * @alias module:model/Order
  * @class
+ * @param locationId {String} The ID of the merchant location this order is associated with.
+ * @param lineItems {Array.<module:model/OrderLineItem>} The line items included in the order. Every order has at least one line item.
  */
-var exports = function() {
+var exports = function(locationId, lineItems) {
   var _this = this;
 
 
+  _this['location_id'] = locationId;
 
-
-
+  _this['line_items'] = lineItems;
 
 
 

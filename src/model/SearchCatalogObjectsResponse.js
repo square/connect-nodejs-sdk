@@ -21,12 +21,12 @@ var Error = require('./Error');
 /**
  * The SearchCatalogObjectsResponse model module.
  * @module model/SearchCatalogObjectsResponse
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>SearchCatalogObjectsResponse</code>.
- *
+ * 
  * @alias module:model/SearchCatalogObjectsResponse
  * @class
  */

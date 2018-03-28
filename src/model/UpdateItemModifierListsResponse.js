@@ -20,12 +20,12 @@ var Error = require('./Error');
 /**
  * The UpdateItemModifierListsResponse model module.
  * @module model/UpdateItemModifierListsResponse
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
  * Constructs a new <code>UpdateItemModifierListsResponse</code>.
- *
+ * 
  * @alias module:model/UpdateItemModifierListsResponse
  * @class
  */

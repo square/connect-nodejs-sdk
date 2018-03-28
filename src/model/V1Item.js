@@ -23,7 +23,7 @@ var V1Variation = require('./V1Variation');
 /**
  * The V1Item model module.
  * @module model/V1Item
- * @version 2.5.5
+ * @version 2.6.0
  */
 
 /**
