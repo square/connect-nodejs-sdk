@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The OrderLineItemTax model module.
  * @module model/OrderLineItemTax
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

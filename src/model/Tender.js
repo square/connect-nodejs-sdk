@@ -23,7 +23,7 @@ var TenderCashDetails = require('./TenderCashDetails');
 /**
  * The Tender model module.
  * @module model/Tender
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

@@ -20,7 +20,7 @@ var V1Money = require('./V1Money');
 /**
  * The V1Refund model module.
  * @module model/V1Refund
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**
@@ -77,7 +77,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The type of refund
+ * The type of refund 
  * @member {module:model/V1Refund.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
@@ -107,7 +107,7 @@ exports.prototype['processed_at'] = undefined;
  */
 exports.prototype['payment_id'] = undefined;
 /**
- *
+ * 
  * @member {String} merchant_id
  */
 exports.prototype['merchant_id'] = undefined;

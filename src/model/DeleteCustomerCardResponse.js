@@ -20,7 +20,7 @@ var Error = require('./Error');
 /**
  * The DeleteCustomerCardResponse model module.
  * @module model/DeleteCustomerCardResponse
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

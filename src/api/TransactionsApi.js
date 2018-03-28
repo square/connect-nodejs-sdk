@@ -25,7 +25,7 @@ var VoidTransactionResponse = require('../model/VoidTransactionResponse');
 /**
  * Transactions service.
  * @module api/TransactionsApi
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

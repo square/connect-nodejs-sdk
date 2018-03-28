@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The ListCustomersResponse model module.
  * @module model/ListCustomersResponse
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

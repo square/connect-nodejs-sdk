@@ -21,7 +21,7 @@ var Error = require('./Error');
 /**
  * The CatalogInfoResponse model module.
  * @module model/CatalogInfoResponse
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

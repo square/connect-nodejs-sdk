@@ -20,7 +20,7 @@ var V1Money = require('./V1Money');
 /**
  * The V1SettlementEntry model module.
  * @module model/V1SettlementEntry
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**
@@ -168,15 +168,15 @@ exports.prototype['fee_money'] = undefined;
      */
     "SUBSCRIPTION_FEE_REFUND": "SUBSCRIPTION_FEE_REFUND",
     /**
-     * value: "INCENTED_PAYMENT"
-     * @const
-     */
-    "INCENTED_PAYMENT": "INCENTED_PAYMENT",
-    /**
      * value: "OTHER"
      * @const
      */
     "OTHER": "OTHER",
+    /**
+     * value: "INCENTED_PAYMENT"
+     * @const
+     */
+    "INCENTED_PAYMENT": "INCENTED_PAYMENT",
     /**
      * value: "RETURNED_ACH_ENTRY"
      * @const

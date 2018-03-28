@@ -20,7 +20,7 @@ var Money = require('./Money');
 /**
  * The OrderLineItemModifier model module.
  * @module model/OrderLineItemModifier
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**

@@ -20,7 +20,7 @@ var CreateOrderResponse = require('../model/CreateOrderResponse');
 /**
  * Orders service.
  * @module api/OrdersApi
- * @version 2.6.0
+ * @version 2.6.1
  */
 
 /**
@@ -37,7 +37,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveOrders
-   * Retrieves a set of [Order](#type-order)s by their IDs.  If a provided Order ID does not exist, it is ignored instead of resulting in an error.
+   * Retrieves a set of [Order](#type-order)s by their IDs.  If a given Order ID does not exist, the ID is ignored instead of generating an error.
    * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BatchRetrieveOrdersResponse} and HTTP response
@@ -80,7 +80,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveOrders
-   * Retrieves a set of [Order](#type-order)s by their IDs.  If a provided Order ID does not exist, it is ignored instead of resulting in an error.
+   * Retrieves a set of [Order](#type-order)s by their IDs.  If a given Order ID does not exist, the ID is ignored instead of generating an error.
    * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BatchRetrieveOrdersResponse}
