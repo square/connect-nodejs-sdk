@@ -20,7 +20,6 @@ var Error = require('./Error');
 /**
  * The RegisterDomainResponse model module.
  * @module model/RegisterDomainResponse
- * @version 2.6.1
  */
 
 /**

@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The RetrieveCatalogObjectRequest model module.
  * @module model/RetrieveCatalogObjectRequest
- * @version 2.6.1
  */
 
 /**

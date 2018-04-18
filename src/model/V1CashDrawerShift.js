@@ -22,7 +22,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1CashDrawerShift model module.
  * @module model/V1CashDrawerShift
- * @version 2.6.1
  */
 
 /**

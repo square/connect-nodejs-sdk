@@ -20,7 +20,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1Tender model module.
  * @module model/V1Tender
- * @version 2.6.1
  */
 
 /**
@@ -30,6 +29,7 @@ var V1Money = require('./V1Money');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -95,6 +95,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('refunded_money')) {
       obj['refunded_money'] = V1Money.constructFromObject(data['refunded_money']);
+    }
+      if (data.hasOwnProperty('is_exchange')) {
+      obj['is_exchange'] = ApiClient.convertToType(data['is_exchange'], 'Boolean');
     }
     }
   return obj;
@@ -165,6 +168,11 @@ exports.prototype['change_back_money'] = undefined;
  * @member {module:model/V1Money} refunded_money
  */
 exports.prototype['refunded_money'] = undefined;
+/**
+ * Indicates whether or not the tender is associated with an exchange. If is_exchange is true, the tender represents the value of goods returned in an exchange not the actual money paid. The exchange value reduces the tender amounts needed to pay for items purchased in the exchange.
+ * @member {Boolean} is_exchange
+ */
+exports.prototype['is_exchange'] = undefined;
 
 
   /**

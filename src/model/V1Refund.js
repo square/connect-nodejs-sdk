@@ -20,7 +20,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1Refund model module.
  * @module model/V1Refund
- * @version 2.6.1
  */
 
 /**
@@ -30,6 +29,7 @@ var V1Money = require('./V1Money');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -72,6 +72,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('merchant_id')) {
       obj['merchant_id'] = ApiClient.convertToType(data['merchant_id'], 'String');
     }
+      if (data.hasOwnProperty('is_exchange')) {
+      obj['is_exchange'] = ApiClient.convertToType(data['is_exchange'], 'Boolean');
+    }
     }
   return obj;
 }
@@ -92,7 +95,7 @@ exports.prototype['reason'] = undefined;
  */
 exports.prototype['refunded_money'] = undefined;
 /**
- * The time when the merchant initiated the refund for Square to process, in ISO 8601 format..
+ * The time when the merchant initiated the refund for Square to process, in ISO 8601 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
@@ -102,7 +105,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['processed_at'] = undefined;
 /**
- * The Square-issued ID of the payment the refund is applied to.
+ * A Square-issued ID associated with the refund. For single-tender refunds, payment_id is the ID of the original payment ID. For split-tender refunds, payment_id is the ID of the original tender. For exchange-based refunds (is_exchange == true), payment_id is the ID of the original payment ID even if the payment includes other tenders.
  * @member {String} payment_id
  */
 exports.prototype['payment_id'] = undefined;
@@ -111,6 +114,11 @@ exports.prototype['payment_id'] = undefined;
  * @member {String} merchant_id
  */
 exports.prototype['merchant_id'] = undefined;
+/**
+ * Indicates whether or not the refund is associated with an exchange. If is_exchange is true, the refund reflects the value of goods returned in the exchange not the total money refunded.
+ * @member {Boolean} is_exchange
+ */
+exports.prototype['is_exchange'] = undefined;
 
 
   /**

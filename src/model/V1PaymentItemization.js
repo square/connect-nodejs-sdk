@@ -24,7 +24,6 @@ var V1PaymentTax = require('./V1PaymentTax');
 /**
  * The V1PaymentItemization model module.
  * @module model/V1PaymentItemization
- * @version 2.6.1
  */
 
 /**

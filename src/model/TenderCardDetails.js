@@ -20,7 +20,6 @@ var Card = require('./Card');
 /**
  * The TenderCardDetails model module.
  * @module model/TenderCardDetails
- * @version 2.6.1
  */
 
 /**

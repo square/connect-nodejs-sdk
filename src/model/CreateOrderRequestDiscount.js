@@ -20,7 +20,6 @@ var Money = require('./Money');
 /**
  * The CreateOrderRequestDiscount model module.
  * @module model/CreateOrderRequestDiscount
- * @version 2.6.1
  */
 
 /**

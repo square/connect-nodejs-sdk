@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogTax model module.
  * @module model/CatalogTax
- * @version 2.6.1
  */
 
 /**

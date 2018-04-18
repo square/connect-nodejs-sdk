@@ -20,7 +20,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1CashDrawerEvent model module.
  * @module model/V1CashDrawerEvent
- * @version 2.6.1
  */
 
 /**

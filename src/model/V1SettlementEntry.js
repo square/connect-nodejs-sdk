@@ -20,7 +20,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1SettlementEntry model module.
  * @module model/V1SettlementEntry
- * @version 2.6.1
  */
 
 /**

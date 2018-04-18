@@ -21,7 +21,6 @@ var Order = require('./Order');
 /**
  * The BatchRetrieveOrdersResponse model module.
  * @module model/BatchRetrieveOrdersResponse
- * @version 2.6.1
  */
 
 /**

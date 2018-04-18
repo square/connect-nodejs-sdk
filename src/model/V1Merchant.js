@@ -22,7 +22,6 @@ var V1PhoneNumber = require('./V1PhoneNumber');
 /**
  * The V1Merchant model module.
  * @module model/V1Merchant
- * @version 2.6.1
  */
 
 /**

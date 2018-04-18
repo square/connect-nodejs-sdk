@@ -21,7 +21,6 @@ var V1SettlementEntry = require('./V1SettlementEntry');
 /**
  * The V1Settlement model module.
  * @module model/V1Settlement
- * @version 2.6.1
  */
 
 /**

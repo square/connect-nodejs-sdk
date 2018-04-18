@@ -25,7 +25,6 @@ var V1Tender = require('./V1Tender');
 /**
  * The V1Payment model module.
  * @module model/V1Payment
- * @version 2.6.1
  */
 
 /**
@@ -260,7 +259,7 @@ exports.prototype['additive_tax'] = undefined;
  */
 exports.prototype['tender'] = undefined;
 /**
- * All of the refunds applied to the payment.
+ * All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value of all tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as part of an exchange.
  * @member {Array.<module:model/V1Refund>} refunds
  */
 exports.prototype['refunds'] = undefined;

@@ -21,7 +21,6 @@ var V1Money = require('./V1Money');
 /**
  * The V1PaymentTax model module.
  * @module model/V1PaymentTax
- * @version 2.6.1
  */
 
 /**

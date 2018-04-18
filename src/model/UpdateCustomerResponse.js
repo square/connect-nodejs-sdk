@@ -21,7 +21,6 @@ var Error = require('./Error');
 /**
  * The UpdateCustomerResponse model module.
  * @module model/UpdateCustomerResponse
- * @version 2.6.1
  */
 
 /**

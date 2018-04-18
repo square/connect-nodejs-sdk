@@ -20,7 +20,6 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The CatalogModifierList model module.
  * @module model/CatalogModifierList
- * @version 2.6.1
  */
 
 /**

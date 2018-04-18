@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1AdjustInventoryRequest model module.
  * @module model/V1AdjustInventoryRequest
- * @version 2.6.1
  */
 
 /**
