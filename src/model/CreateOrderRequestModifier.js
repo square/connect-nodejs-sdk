@@ -20,7 +20,6 @@ var Money = require('./Money');
 /**
  * The CreateOrderRequestModifier model module.
  * @module model/CreateOrderRequestModifier
- * @version 2.6.1
  */
 
 /**

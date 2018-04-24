@@ -22,7 +22,6 @@ var CreateOrderRequestTax = require('./CreateOrderRequestTax');
 /**
  * The CreateOrderRequest model module.
  * @module model/CreateOrderRequest
- * @version 2.6.1
  */
 
 /**

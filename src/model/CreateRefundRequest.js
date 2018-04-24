@@ -20,7 +20,6 @@ var Money = require('./Money');
 /**
  * The CreateRefundRequest model module.
  * @module model/CreateRefundRequest
- * @version 2.6.1
  */
 
 /**

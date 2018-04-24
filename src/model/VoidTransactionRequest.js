@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The VoidTransactionRequest model module.
  * @module model/VoidTransactionRequest
- * @version 2.6.1
  */
 
 /**

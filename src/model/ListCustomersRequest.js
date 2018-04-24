@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListCustomersRequest model module.
  * @module model/ListCustomersRequest
- * @version 2.6.1
  */
 
 /**

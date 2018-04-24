@@ -25,7 +25,6 @@ var VoidTransactionResponse = require('../model/VoidTransactionResponse');
 /**
  * Transactions service.
  * @module api/TransactionsApi
- * @version 2.6.1
  */
 
 /**
@@ -225,7 +224,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListRefunds
-   * Lists refunds for one of a business&#39;s locations.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
+   * Lists refunds for one of a business&#39;s locations.  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -272,7 +271,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListRefunds
-   * Lists refunds for one of a business&#39;s locations.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
+   * Lists refunds for one of a business&#39;s locations.  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -291,7 +290,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTransactions
-   * Lists transactions for a particular location.  Max results per [page](#paginatingresults): 50
+   * Lists transactions for a particular location.  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list transactions for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -338,7 +337,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTransactions
-   * Lists transactions for a particular location.  Max results per [page](#paginatingresults): 50
+   * Lists transactions for a particular location.  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list transactions for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.

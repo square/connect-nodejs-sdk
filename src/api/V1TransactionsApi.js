@@ -23,7 +23,6 @@ var V1UpdateOrderRequest = require('../model/V1UpdateOrderRequest');
 /**
  * V1Transactions service.
  * @module api/V1TransactionsApi
- * @version 2.6.1
  */
 
 /**
@@ -287,7 +286,7 @@ module.exports = function(apiClient) {
    * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-   * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
+   * @param {Number} opts.limit The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Refund>} and HTTP response
    */
@@ -336,7 +335,7 @@ module.exports = function(apiClient) {
    * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-   * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
+   * @param {Number} opts.limit The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Refund>}
    */
@@ -542,7 +541,7 @@ module.exports = function(apiClient) {
    * Provides comprehensive information for a single payment.
    * Provides comprehensive information for a single payment.
    * @param {String} locationId The ID of the payment&#39;s associated location.
-   * @param {String} paymentId The payment&#39;s Square-issued ID. You obtain this value from Payment objects returned by the List Payments endpoint, or Settlement objects returned by the List Settlements endpoint.
+   * @param {String} paymentId The Square-issued payment ID. payment_id comes from Payment objects returned by the List Payments endpoint, Settlement objects returned by the List Settlements endpoint, or Refund objects returned by the List Refunds endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Payment} and HTTP response
    */
   this.retrievePaymentWithHttpInfo = function(locationId, paymentId) {
@@ -586,7 +585,7 @@ module.exports = function(apiClient) {
    * Provides comprehensive information for a single payment.
    * Provides comprehensive information for a single payment.
    * @param {String} locationId The ID of the payment&#39;s associated location.
-   * @param {String} paymentId The payment&#39;s Square-issued ID. You obtain this value from Payment objects returned by the List Payments endpoint, or Settlement objects returned by the List Settlements endpoint.
+   * @param {String} paymentId The Square-issued payment ID. payment_id comes from Payment objects returned by the List Payments endpoint, Settlement objects returned by the List Settlements endpoint, or Refund objects returned by the List Refunds endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Payment}
    */
   this.retrievePayment = function(locationId, paymentId) {

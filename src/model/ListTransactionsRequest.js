@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The ListTransactionsRequest model module.
  * @module model/ListTransactionsRequest
- * @version 2.6.1
  */
 
 /**

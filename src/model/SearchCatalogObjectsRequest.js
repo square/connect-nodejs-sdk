@@ -20,7 +20,6 @@ var CatalogQuery = require('./CatalogQuery');
 /**
  * The SearchCatalogObjectsRequest model module.
  * @module model/SearchCatalogObjectsRequest
- * @version 2.6.1
  */
 
 /**

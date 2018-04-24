@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryItemsForTax model module.
  * @module model/CatalogQueryItemsForTax
- * @version 2.6.1
  */
 
 /**

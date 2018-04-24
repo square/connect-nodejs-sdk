@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1InventoryEntry model module.
  * @module model/V1InventoryEntry
- * @version 2.6.1
  */
 
 /**

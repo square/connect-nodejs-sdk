@@ -22,7 +22,6 @@ var Error = require('./Error');
 /**
  * The BatchUpsertCatalogObjectsResponse model module.
  * @module model/BatchUpsertCatalogObjectsResponse
- * @version 2.6.1
  */
 
 /**

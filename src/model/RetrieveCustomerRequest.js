@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The RetrieveCustomerRequest model module.
  * @module model/RetrieveCustomerRequest
- * @version 2.6.1
  */
 
 /**

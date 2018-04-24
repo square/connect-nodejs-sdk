@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogV1Id model module.
  * @module model/CatalogV1Id
- * @version 2.6.1
  */
 
 /**

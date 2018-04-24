@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogModifierOverride model module.
  * @module model/CatalogModifierOverride
- * @version 2.6.1
  */
 
 /**

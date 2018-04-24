@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The V1OrderHistoryEntry model module.
  * @module model/V1OrderHistoryEntry
- * @version 2.6.1
  */
 
 /**

@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The Money model module.
  * @module model/Money
- * @version 2.6.1
  */
 
 /**

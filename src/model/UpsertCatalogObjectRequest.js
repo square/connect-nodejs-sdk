@@ -20,7 +20,6 @@ var CatalogObject = require('./CatalogObject');
 /**
  * The UpsertCatalogObjectRequest model module.
  * @module model/UpsertCatalogObjectRequest
- * @version 2.6.1
  */
 
 /**

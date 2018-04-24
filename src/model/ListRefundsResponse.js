@@ -21,7 +21,6 @@ var Refund = require('./Refund');
 /**
  * The ListRefundsResponse model module.
  * @module model/ListRefundsResponse
- * @version 2.6.1
  */
 
 /**

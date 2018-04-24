@@ -19,7 +19,6 @@ var ApiClient = require('../ApiClient');
 /**
  * The CatalogQueryRange model module.
  * @module model/CatalogQueryRange
- * @version 2.6.1
  */
 
 /**

@@ -20,7 +20,6 @@ var Money = require('./Money');
 /**
  * The OrderLineItemDiscount model module.
  * @module model/OrderLineItemDiscount
- * @version 2.6.1
  */
 
 /**
