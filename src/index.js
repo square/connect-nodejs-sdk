@@ -81,6 +81,7 @@ var Currency = require('./model/Currency');
 var Customer = require('./model/Customer');
 var CustomerGroupInfo = require('./model/CustomerGroupInfo');
 var CustomerPreferences = require('./model/CustomerPreferences');
+var CustomerSortField = require('./model/CustomerSortField');
 var DeleteCatalogObjectRequest = require('./model/DeleteCatalogObjectRequest');
 var DeleteCatalogObjectResponse = require('./model/DeleteCatalogObjectResponse');
 var DeleteCustomerCardRequest = require('./model/DeleteCustomerCardRequest');
@@ -179,6 +180,7 @@ var V1PaymentDiscount = require('./model/V1PaymentDiscount');
 var V1PaymentItemDetail = require('./model/V1PaymentItemDetail');
 var V1PaymentItemization = require('./model/V1PaymentItemization');
 var V1PaymentModifier = require('./model/V1PaymentModifier');
+var V1PaymentSurcharge = require('./model/V1PaymentSurcharge');
 var V1PaymentTax = require('./model/V1PaymentTax');
 var V1PhoneNumber = require('./model/V1PhoneNumber');
 var V1Refund = require('./model/V1Refund');
@@ -236,7 +238,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.7.0
+ * @version 2.8.0
  */
   module.exports = {
   /**
@@ -584,6 +586,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CustomerPreferences}
    */
   CustomerPreferences: CustomerPreferences,
+  /**
+   * The CustomerSortField model constructor.
+   * @property {module:model/CustomerSortField}
+   */
+  CustomerSortField: CustomerSortField,
   /**
    * The DeleteCatalogObjectRequest model constructor.
    * @property {module:model/DeleteCatalogObjectRequest}
@@ -1074,6 +1081,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1PaymentModifier}
    */
   V1PaymentModifier: V1PaymentModifier,
+  /**
+   * The V1PaymentSurcharge model constructor.
+   * @property {module:model/V1PaymentSurcharge}
+   */
+  V1PaymentSurcharge: V1PaymentSurcharge,
   /**
    * The V1PaymentTax model constructor.
    * @property {module:model/V1PaymentTax}
