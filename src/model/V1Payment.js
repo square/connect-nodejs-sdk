@@ -12,10 +12,10 @@
  *
  */
 var ApiClient = require('../ApiClient');
-var Definitionsv1PaymentSurcharge = require('./Definitionsv1PaymentSurcharge');
 var Device = require('./Device');
 var V1Money = require('./V1Money');
 var V1PaymentItemization = require('./V1PaymentItemization');
+var V1PaymentSurcharge = require('./V1PaymentSurcharge');
 var V1PaymentTax = require('./V1PaymentTax');
 var V1Refund = require('./V1Refund');
 var V1Tender = require('./V1Tender');
@@ -151,7 +151,7 @@ exports.constructFromObject = function(data, obj) {
       obj['surcharge_money'] = V1Money.constructFromObject(data['surcharge_money']);
     }
       if (data.hasOwnProperty('surcharges')) {
-      obj['surcharges'] = ApiClient.convertToType(data['surcharges'], [Definitionsv1PaymentSurcharge]);
+      obj['surcharges'] = ApiClient.convertToType(data['surcharges'], [V1PaymentSurcharge]);
     }
     }
   return obj;
@@ -284,7 +284,7 @@ exports.prototype['itemizations'] = undefined;
 exports.prototype['surcharge_money'] = undefined;
 /**
  * A list of all surcharges associated with the payment.
- * @member {Array.<module:model/Definitionsv1PaymentSurcharge>} surcharges
+ * @member {Array.<module:model/V1PaymentSurcharge>} surcharges
  */
 exports.prototype['surcharges'] = undefined;
 
