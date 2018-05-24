@@ -71,7 +71,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Only used for ad hoc modifiers. The base price for the modifier.  Do not provide a value for `base_price_money` if you provide a value for `catalog_object_id`.
+ * The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
  * @member {module:model/Money} base_price_money
  */
 exports.prototype['base_price_money'] = undefined;

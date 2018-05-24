@@ -15,6 +15,7 @@ var ApiClient = require('../ApiClient');
 var Device = require('./Device');
 var V1Money = require('./V1Money');
 var V1PaymentItemization = require('./V1PaymentItemization');
+var V1PaymentSurcharge = require('./V1PaymentSurcharge');
 var V1PaymentTax = require('./V1PaymentTax');
 var V1Refund = require('./V1Refund');
 var V1Tender = require('./V1Tender');
@@ -34,6 +35,8 @@ var V1Tender = require('./V1Tender');
  */
 var exports = function() {
   var _this = this;
+
+
 
 
 
@@ -143,6 +146,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('itemizations')) {
       obj['itemizations'] = ApiClient.convertToType(data['itemizations'], [V1PaymentItemization]);
+    }
+      if (data.hasOwnProperty('surcharge_money')) {
+      obj['surcharge_money'] = V1Money.constructFromObject(data['surcharge_money']);
+    }
+      if (data.hasOwnProperty('surcharges')) {
+      obj['surcharges'] = ApiClient.convertToType(data['surcharges'], [V1PaymentSurcharge]);
     }
     }
   return obj;
@@ -268,6 +277,16 @@ exports.prototype['refunds'] = undefined;
  * @member {Array.<module:model/V1PaymentItemization>} itemizations
  */
 exports.prototype['itemizations'] = undefined;
+/**
+ * The total of all surcharges applied to the payment.
+ * @member {module:model/V1Money} surcharge_money
+ */
+exports.prototype['surcharge_money'] = undefined;
+/**
+ * A list of all surcharges associated with the payment.
+ * @member {Array.<module:model/V1PaymentSurcharge>} surcharges
+ */
+exports.prototype['surcharges'] = undefined;
 
 
 

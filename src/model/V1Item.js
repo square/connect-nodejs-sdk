@@ -47,6 +47,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -101,6 +103,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('taxable')) {
       obj['taxable'] = ApiClient.convertToType(data['taxable'], 'Boolean');
+    }
+      if (data.hasOwnProperty('category_id')) {
+      obj['category_id'] = ApiClient.convertToType(data['category_id'], 'String');
+    }
+      if (data.hasOwnProperty('available_for_pickup')) {
+      obj['available_for_pickup'] = ApiClient.convertToType(data['available_for_pickup'], 'Boolean');
     }
     }
   return obj;
@@ -176,6 +184,16 @@ exports.prototype['fees'] = undefined;
  * @member {Boolean} taxable
  */
 exports.prototype['taxable'] = undefined;
+/**
+ * The ID of the item's category, if any.
+ * @member {String} category_id
+ */
+exports.prototype['category_id'] = undefined;
+/**
+ * If true, the item can be added to pickup orders from the merchant's online store. Default value: false
+ * @member {Boolean} available_for_pickup
+ */
+exports.prototype['available_for_pickup'] = undefined;
 
 
   /**

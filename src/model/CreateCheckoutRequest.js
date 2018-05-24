@@ -43,6 +43,7 @@ var exports = function(idempotencyKey, order) {
 
 
 
+
 };
 
 /**
@@ -79,6 +80,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('additional_recipients')) {
       obj['additional_recipients'] = ApiClient.convertToType(data['additional_recipients'], [ChargeRequestAdditionalRecipient]);
+    }
+      if (data.hasOwnProperty('note')) {
+      obj['note'] = ApiClient.convertToType(data['note'], 'String');
     }
     }
   return obj;
@@ -124,6 +128,11 @@ exports.prototype['redirect_url'] = undefined;
  * @member {Array.<module:model/ChargeRequestAdditionalRecipient>} additional_recipients
  */
 exports.prototype['additional_recipients'] = undefined;
+/**
+ * An optional note to associate with the checkout object.  This value cannot exceed 60 characters.
+ * @member {String} note
+ */
+exports.prototype['note'] = undefined;
 
 
 

@@ -263,6 +263,8 @@ module.exports = function(apiClient) {
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
+   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListCustomersResponse} and HTTP response
    */
   this.listCustomersWithHttpInfo = function(opts) {
@@ -273,7 +275,9 @@ module.exports = function(apiClient) {
     var pathParams = {
     };
     var queryParams = {
-      'cursor': opts['cursor']
+      'cursor': opts['cursor'],
+      'sort_field': opts['sortField'],
+      'sort_order': opts['sortOrder']
     };
     var headerParams = {
     };
@@ -297,6 +301,8 @@ module.exports = function(apiClient) {
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
+   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListCustomersResponse}
    */
   this.listCustomers = function(opts) {

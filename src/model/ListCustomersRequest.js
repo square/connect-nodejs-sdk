@@ -31,6 +31,8 @@ var exports = function() {
   var _this = this;
 
 
+
+
 };
 
 /**
@@ -47,6 +49,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('cursor')) {
       obj['cursor'] = ApiClient.convertToType(data['cursor'], 'String');
     }
+      if (data.hasOwnProperty('sort_field')) {
+      obj['sort_field'] = ApiClient.convertToType(data['sort_field'], 'String');
+    }
+      if (data.hasOwnProperty('sort_order')) {
+      obj['sort_order'] = ApiClient.convertToType(data['sort_order'], 'String');
+    }
     }
   return obj;
 }
@@ -56,7 +64,51 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
+/**
+ * Indicates how Customers should be sorted. Default: `DEFAULT`.
+ * @member {module:model/ListCustomersRequest.SortFieldEnum} sort_field
+ */
+exports.prototype['sort_field'] = undefined;
+/**
+ * Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`.
+ * @member {module:model/ListCustomersRequest.SortOrderEnum} sort_order
+ */
+exports.prototype['sort_order'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>sort_field</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.SortFieldEnum = {
+    /**
+     * value: "DEFAULT"
+     * @const
+     */
+    "DEFAULT": "DEFAULT",
+    /**
+     * value: "CREATED_AT"
+     * @const
+     */
+    "CREATED_AT": "CREATED_AT"  };
+
+  /**
+   * Allowed values for the <code>sort_order</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.SortOrderEnum = {
+    /**
+     * value: "DESC"
+     * @const
+     */
+    "DESC": "DESC",
+    /**
+     * value: "ASC"
+     * @const
+     */
+    "ASC": "ASC"  };
 
 
 module.exports = exports;

@@ -109,7 +109,7 @@ exports.prototype['base_price_money'] = undefined;
  */
 exports.prototype['variation_name'] = undefined;
 /**
- * The note of the line item. This value cannot exceed 50 characters.
+ * The note of the line item. This value cannot exceed 500 characters.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;

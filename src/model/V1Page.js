@@ -74,7 +74,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The page's position in the merchant's list of pages. Always an integer between 0 and 4, inclusive.
+ * The page's position in the merchant's list of pages. Always an integer between 0 and 6, inclusive.
  * @member {Number} page_index
  */
 exports.prototype['page_index'] = undefined;
