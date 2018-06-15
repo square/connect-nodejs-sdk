@@ -3,7 +3,7 @@ node_js:
 - '6'
 - '6.1'
 before_install:
-- openssl aes-256-cbc -K $encrypted_0dfb31adf922_key -iv $encrypted_0dfb31adf922_iv
+- openssl aes-256-cbc -K $encrypted_17d5860a9a31_key -iv $encrypted_17d5860a9a31_iv
   -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
 cache:
   directories:
