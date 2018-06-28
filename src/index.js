@@ -79,8 +79,14 @@ var CreateRefundRequest = require('./model/CreateRefundRequest');
 var CreateRefundResponse = require('./model/CreateRefundResponse');
 var Currency = require('./model/Currency');
 var Customer = require('./model/Customer');
+var CustomerCreationSource = require('./model/CustomerCreationSource');
+var CustomerCreationSourceFilter = require('./model/CustomerCreationSourceFilter');
+var CustomerFilter = require('./model/CustomerFilter');
 var CustomerGroupInfo = require('./model/CustomerGroupInfo');
+var CustomerInclusionExclusion = require('./model/CustomerInclusionExclusion');
 var CustomerPreferences = require('./model/CustomerPreferences');
+var CustomerQuery = require('./model/CustomerQuery');
+var CustomerSort = require('./model/CustomerSort');
 var CustomerSortField = require('./model/CustomerSortField');
 var DeleteCatalogObjectRequest = require('./model/DeleteCatalogObjectRequest');
 var DeleteCatalogObjectResponse = require('./model/DeleteCatalogObjectResponse');
@@ -134,6 +140,8 @@ var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
 var RetrieveTransactionResponse = require('./model/RetrieveTransactionResponse');
 var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest');
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
+var SearchCustomersRequest = require('./model/SearchCustomersRequest');
+var SearchCustomersResponse = require('./model/SearchCustomersResponse');
 var SortOrder = require('./model/SortOrder');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
 var TaxInclusionType = require('./model/TaxInclusionType');
@@ -143,6 +151,7 @@ var TenderCardDetailsEntryMethod = require('./model/TenderCardDetailsEntryMethod
 var TenderCardDetailsStatus = require('./model/TenderCardDetailsStatus');
 var TenderCashDetails = require('./model/TenderCashDetails');
 var TenderType = require('./model/TenderType');
+var TimeRange = require('./model/TimeRange');
 var Transaction = require('./model/Transaction');
 var TransactionProduct = require('./model/TransactionProduct');
 var UpdateCustomerRequest = require('./model/UpdateCustomerRequest');
@@ -238,7 +247,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.8.0
+ * @version 2.9.0
  */
   module.exports = {
   /**
@@ -577,15 +586,45 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Customer: Customer,
   /**
+   * The CustomerCreationSource model constructor.
+   * @property {module:model/CustomerCreationSource}
+   */
+  CustomerCreationSource: CustomerCreationSource,
+  /**
+   * The CustomerCreationSourceFilter model constructor.
+   * @property {module:model/CustomerCreationSourceFilter}
+   */
+  CustomerCreationSourceFilter: CustomerCreationSourceFilter,
+  /**
+   * The CustomerFilter model constructor.
+   * @property {module:model/CustomerFilter}
+   */
+  CustomerFilter: CustomerFilter,
+  /**
    * The CustomerGroupInfo model constructor.
    * @property {module:model/CustomerGroupInfo}
    */
   CustomerGroupInfo: CustomerGroupInfo,
   /**
+   * The CustomerInclusionExclusion model constructor.
+   * @property {module:model/CustomerInclusionExclusion}
+   */
+  CustomerInclusionExclusion: CustomerInclusionExclusion,
+  /**
    * The CustomerPreferences model constructor.
    * @property {module:model/CustomerPreferences}
    */
   CustomerPreferences: CustomerPreferences,
+  /**
+   * The CustomerQuery model constructor.
+   * @property {module:model/CustomerQuery}
+   */
+  CustomerQuery: CustomerQuery,
+  /**
+   * The CustomerSort model constructor.
+   * @property {module:model/CustomerSort}
+   */
+  CustomerSort: CustomerSort,
   /**
    * The CustomerSortField model constructor.
    * @property {module:model/CustomerSortField}
@@ -852,6 +891,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchCatalogObjectsResponse: SearchCatalogObjectsResponse,
   /**
+   * The SearchCustomersRequest model constructor.
+   * @property {module:model/SearchCustomersRequest}
+   */
+  SearchCustomersRequest: SearchCustomersRequest,
+  /**
+   * The SearchCustomersResponse model constructor.
+   * @property {module:model/SearchCustomersResponse}
+   */
+  SearchCustomersResponse: SearchCustomersResponse,
+  /**
    * The SortOrder model constructor.
    * @property {module:model/SortOrder}
    */
@@ -896,6 +945,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/TenderType}
    */
   TenderType: TenderType,
+  /**
+   * The TimeRange model constructor.
+   * @property {module:model/TimeRange}
+   */
+  TimeRange: TimeRange,
   /**
    * The Transaction model constructor.
    * @property {module:model/Transaction}

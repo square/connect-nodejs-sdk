@@ -65,12 +65,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['cursor'] = undefined;
 /**
- * Indicates how Customers should be sorted. Default: `DEFAULT`.
+ * Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values.
  * @member {module:model/ListCustomersRequest.SortFieldEnum} sort_field
  */
 exports.prototype['sort_field'] = undefined;
 /**
- * Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`.
+ * Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values.
  * @member {module:model/ListCustomersRequest.SortOrderEnum} sort_order
  */
 exports.prototype['sort_order'] = undefined;

@@ -30,7 +30,7 @@ var OrderLineItemTax = require('./OrderLineItemTax');
  * Represents a line item in an order. Each line item describes a different product to purchase, with its own quantity and price details.
  * @alias module:model/OrderLineItem
  * @class
- * @param quantity {String} The quantity purchased, as a string representation of a number.
+ * @param quantity {String} The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
  */
 var exports = function(quantity) {
   var _this = this;
@@ -110,7 +110,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['name'] = undefined;
 /**
- * The quantity purchased, as a string representation of a number.
+ * The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
  * @member {String} quantity
  */
 exports.prototype['quantity'] = undefined;

@@ -52,6 +52,7 @@ var exports = function(id, createdAt, updatedAt) {
 
 
 
+
 };
 
 /**
@@ -109,6 +110,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('groups')) {
       obj['groups'] = ApiClient.convertToType(data['groups'], [CustomerGroupInfo]);
+    }
+      if (data.hasOwnProperty('creation_source')) {
+      obj['creation_source'] = ApiClient.convertToType(data['creation_source'], 'String');
     }
     }
   return obj;
@@ -189,7 +193,114 @@ exports.prototype['preferences'] = undefined;
  * @member {Array.<module:model/CustomerGroupInfo>} groups
  */
 exports.prototype['groups'] = undefined;
+/**
+ * A creation source represents the method used to create the customer profile.
+ * @member {module:model/Customer.CreationSourceEnum} creation_source
+ */
+exports.prototype['creation_source'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>creation_source</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.CreationSourceEnum = {
+    /**
+     * value: "OTHER"
+     * @const
+     */
+    "OTHER": "OTHER",
+    /**
+     * value: "APPOINTMENTS"
+     * @const
+     */
+    "APPOINTMENTS": "APPOINTMENTS",
+    /**
+     * value: "COUPON"
+     * @const
+     */
+    "COUPON": "COUPON",
+    /**
+     * value: "DELETION_RECOVERY"
+     * @const
+     */
+    "DELETION_RECOVERY": "DELETION_RECOVERY",
+    /**
+     * value: "DIRECTORY"
+     * @const
+     */
+    "DIRECTORY": "DIRECTORY",
+    /**
+     * value: "EGIFTING"
+     * @const
+     */
+    "EGIFTING": "EGIFTING",
+    /**
+     * value: "EMAIL_COLLECTION"
+     * @const
+     */
+    "EMAIL_COLLECTION": "EMAIL_COLLECTION",
+    /**
+     * value: "FEEDBACK"
+     * @const
+     */
+    "FEEDBACK": "FEEDBACK",
+    /**
+     * value: "IMPORT"
+     * @const
+     */
+    "IMPORT": "IMPORT",
+    /**
+     * value: "INVOICES"
+     * @const
+     */
+    "INVOICES": "INVOICES",
+    /**
+     * value: "LOYALTY"
+     * @const
+     */
+    "LOYALTY": "LOYALTY",
+    /**
+     * value: "MARKETING"
+     * @const
+     */
+    "MARKETING": "MARKETING",
+    /**
+     * value: "MERGE"
+     * @const
+     */
+    "MERGE": "MERGE",
+    /**
+     * value: "ONLINE_STORE"
+     * @const
+     */
+    "ONLINE_STORE": "ONLINE_STORE",
+    /**
+     * value: "INSTANT_PROFILE"
+     * @const
+     */
+    "INSTANT_PROFILE": "INSTANT_PROFILE",
+    /**
+     * value: "TERMINAL"
+     * @const
+     */
+    "TERMINAL": "TERMINAL",
+    /**
+     * value: "THIRD_PARTY"
+     * @const
+     */
+    "THIRD_PARTY": "THIRD_PARTY",
+    /**
+     * value: "THIRD_PARTY_IMPORT"
+     * @const
+     */
+    "THIRD_PARTY_IMPORT": "THIRD_PARTY_IMPORT",
+    /**
+     * value: "UNMERGE_RECOVERY"
+     * @const
+     */
+    "UNMERGE_RECOVERY": "UNMERGE_RECOVERY"  };
 
 
 module.exports = exports;

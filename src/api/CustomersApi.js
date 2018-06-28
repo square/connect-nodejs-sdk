@@ -20,6 +20,8 @@ var DeleteCustomerCardResponse = require('../model/DeleteCustomerCardResponse');
 var DeleteCustomerResponse = require('../model/DeleteCustomerResponse');
 var ListCustomersResponse = require('../model/ListCustomersResponse');
 var RetrieveCustomerResponse = require('../model/RetrieveCustomerResponse');
+var SearchCustomersRequest = require('../model/SearchCustomersRequest');
+var SearchCustomersResponse = require('../model/SearchCustomersResponse');
 var UpdateCustomerRequest = require('../model/UpdateCustomerRequest');
 var UpdateCustomerResponse = require('../model/UpdateCustomerResponse');
 
@@ -263,8 +265,8 @@ module.exports = function(apiClient) {
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
-   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
-   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
+   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;. See [CustomerSortField](#type-customersortfield) for possible values.
+   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;. See [SortOrder](#type-sortorder) for possible values.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListCustomersResponse} and HTTP response
    */
   this.listCustomersWithHttpInfo = function(opts) {
@@ -301,8 +303,8 @@ module.exports = function(apiClient) {
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
-   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
-   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
+   * @param {module:model/String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;. See [CustomerSortField](#type-customersortfield) for possible values.
+   * @param {module:model/String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;. See [SortOrder](#type-sortorder) for possible values.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListCustomersResponse}
    */
   this.listCustomers = function(opts) {
@@ -358,6 +360,56 @@ module.exports = function(apiClient) {
    */
   this.retrieveCustomer = function(customerId) {
     return this.retrieveCustomerWithHttpInfo(customerId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * SearchCustomers
+   * Searches a business&#39;s customers.
+   * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCustomersResponse} and HTTP response
+   */
+  this.searchCustomersWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling searchCustomers");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = SearchCustomersResponse;
+
+    return this.apiClient.callApi(
+      '/v2/customers/search', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * SearchCustomers
+   * Searches a business&#39;s customers.
+   * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCustomersResponse}
+   */
+  this.searchCustomers = function(body) {
+    return this.searchCustomersWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
