@@ -118,6 +118,8 @@ Name | Type | Description | Notes
 
 * `NO_FIELDS_SET` (value: `"NO_FIELDS_SET"`)
 
+* `DEPRECATED_FIELD_SET` (value: `"DEPRECATED_FIELD_SET"`)
+
 * `CARD_EXPIRED` (value: `"CARD_EXPIRED"`)
 
 * `INVALID_EXPIRATION` (value: `"INVALID_EXPIRATION"`)
@@ -179,6 +181,8 @@ Name | Type | Description | Notes
 * `CARD_DECLINED_CALL_ISSUER` (value: `"CARD_DECLINED_CALL_ISSUER"`)
 
 * `NOT_FOUND` (value: `"NOT_FOUND"`)
+
+* `METHOD_NOT_ALLOWED` (value: `"METHOD_NOT_ALLOWED"`)
 
 * `REQUEST_TIMEOUT` (value: `"REQUEST_TIMEOUT"`)
 

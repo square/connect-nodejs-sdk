@@ -346,6 +346,11 @@ exports.prototype['field'] = undefined;
      */
     "NO_FIELDS_SET": "NO_FIELDS_SET",
     /**
+     * value: "DEPRECATED_FIELD_SET"
+     * @const
+     */
+    "DEPRECATED_FIELD_SET": "DEPRECATED_FIELD_SET",
+    /**
      * value: "CARD_EXPIRED"
      * @const
      */
@@ -500,6 +505,11 @@ exports.prototype['field'] = undefined;
      * @const
      */
     "NOT_FOUND": "NOT_FOUND",
+    /**
+     * value: "METHOD_NOT_ALLOWED"
+     * @const
+     */
+    "METHOD_NOT_ALLOWED": "METHOD_NOT_ALLOWED",
     /**
      * value: "REQUEST_TIMEOUT"
      * @const
