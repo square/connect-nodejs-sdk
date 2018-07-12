@@ -63,6 +63,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -120,6 +122,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -172,6 +176,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -230,6 +236,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -283,6 +291,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -337,6 +347,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -368,7 +380,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCustomers
-   * Searches a business&#39;s customers.
+   * Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
    * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCustomersResponse} and HTTP response
    */
@@ -387,6 +399,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -404,7 +418,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCustomers
-   * Searches a business&#39;s customers.
+   * Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
    * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCustomersResponse}
    */
@@ -444,6 +458,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 

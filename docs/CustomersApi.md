@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 SearchCustomers
 
-Searches a business&#39;s customers.
+Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
 
 ### Example
 ```javascript

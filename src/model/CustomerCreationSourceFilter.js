@@ -56,7 +56,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The list of creation sources used as filtering criteria.
+ * The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values.
  * @member {Array.<module:model/CustomerCreationSourceFilter.ValuesEnum>} values
  */
 exports.prototype['values'] = undefined;
