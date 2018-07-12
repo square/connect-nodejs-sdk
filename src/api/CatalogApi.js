@@ -69,6 +69,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -119,6 +121,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -169,6 +173,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -213,6 +219,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -263,6 +271,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -313,6 +323,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -370,6 +382,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -422,6 +436,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -472,6 +488,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -522,6 +540,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
@@ -572,6 +592,8 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2018-07-12';
+
     var formParams = {
     };
 
