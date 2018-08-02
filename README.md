@@ -66,6 +66,7 @@ Class | Method | HTTP request | Description
 *SquareConnect.CustomersApi* | [**searchCustomers**](docs/CustomersApi.md#searchCustomers) | **POST** /v2/customers/search | SearchCustomers
 *SquareConnect.CustomersApi* | [**updateCustomer**](docs/CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
+*SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
 *SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
 *SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
 *SquareConnect.ReportingApi* | [**listAdditionalRecipientReceivableRefunds**](docs/ReportingApi.md#listAdditionalRecipientReceivableRefunds) | **GET** /v2/locations/{location_id}/additional-recipient-receivable-refunds | ListAdditionalRecipientReceivableRefunds
@@ -206,6 +207,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
  - [SquareConnect.CreateCustomerRequest](docs/CreateCustomerRequest.md)
  - [SquareConnect.CreateCustomerResponse](docs/CreateCustomerResponse.md)
+ - [SquareConnect.CreateMobileAuthorizationCodeRequest](docs/CreateMobileAuthorizationCodeRequest.md)
+ - [SquareConnect.CreateMobileAuthorizationCodeResponse](docs/CreateMobileAuthorizationCodeResponse.md)
  - [SquareConnect.CreateOrderRequest](docs/CreateOrderRequest.md)
  - [SquareConnect.CreateOrderRequestDiscount](docs/CreateOrderRequestDiscount.md)
  - [SquareConnect.CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)

@@ -69,6 +69,8 @@ var CreateCustomerCardRequest = require('./model/CreateCustomerCardRequest');
 var CreateCustomerCardResponse = require('./model/CreateCustomerCardResponse');
 var CreateCustomerRequest = require('./model/CreateCustomerRequest');
 var CreateCustomerResponse = require('./model/CreateCustomerResponse');
+var CreateMobileAuthorizationCodeRequest = require('./model/CreateMobileAuthorizationCodeRequest');
+var CreateMobileAuthorizationCodeResponse = require('./model/CreateMobileAuthorizationCodeResponse');
 var CreateOrderRequest = require('./model/CreateOrderRequest');
 var CreateOrderRequestDiscount = require('./model/CreateOrderRequestDiscount');
 var CreateOrderRequestLineItem = require('./model/CreateOrderRequestLineItem');
@@ -209,6 +211,7 @@ var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
 var CustomersApi = require('./api/CustomersApi');
 var LocationsApi = require('./api/LocationsApi');
+var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
 var OrdersApi = require('./api/OrdersApi');
 var ReportingApi = require('./api/ReportingApi');
 var TransactionsApi = require('./api/TransactionsApi');
@@ -247,7 +250,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20180712.0
+ * @version 2.20180712.1
  */
   module.exports = {
   /**
@@ -535,6 +538,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateCustomerResponse}
    */
   CreateCustomerResponse: CreateCustomerResponse,
+  /**
+   * The CreateMobileAuthorizationCodeRequest model constructor.
+   * @property {module:model/CreateMobileAuthorizationCodeRequest}
+   */
+  CreateMobileAuthorizationCodeRequest: CreateMobileAuthorizationCodeRequest,
+  /**
+   * The CreateMobileAuthorizationCodeResponse model constructor.
+   * @property {module:model/CreateMobileAuthorizationCodeResponse}
+   */
+  CreateMobileAuthorizationCodeResponse: CreateMobileAuthorizationCodeResponse,
   /**
    * The CreateOrderRequest model constructor.
    * @property {module:model/CreateOrderRequest}
@@ -1230,6 +1243,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/LocationsApi}
    */
   LocationsApi: LocationsApi,
+  /**
+   * The MobileAuthorizationApi service constructor.
+   * @property {module:api/MobileAuthorizationApi}
+   */
+  MobileAuthorizationApi: MobileAuthorizationApi,
   /**
    * The OrdersApi service constructor.
    * @property {module:api/OrdersApi}
