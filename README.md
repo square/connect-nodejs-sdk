@@ -67,6 +67,9 @@ Class | Method | HTTP request | Description
 *SquareConnect.CustomersApi* | [**updateCustomer**](docs/CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
 *SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
+*SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
+*SquareConnect.OAuthApi* | [**renewToken**](docs/OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
+*SquareConnect.OAuthApi* | [**revokeToken**](docs/OAuthApi.md#revokeToken) | **POST** /oauth2/revoke | RevokeToken
 *SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
 *SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
 *SquareConnect.ReportingApi* | [**listAdditionalRecipientReceivableRefunds**](docs/ReportingApi.md#listAdditionalRecipientReceivableRefunds) | **GET** /v2/locations/{location_id}/additional-recipient-receivable-refunds | ListAdditionalRecipientReceivableRefunds
@@ -259,6 +262,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.LocationStatus](docs/LocationStatus.md)
  - [SquareConnect.LocationType](docs/LocationType.md)
  - [SquareConnect.Money](docs/Money.md)
+ - [SquareConnect.ObtainTokenRequest](docs/ObtainTokenRequest.md)
+ - [SquareConnect.ObtainTokenResponse](docs/ObtainTokenResponse.md)
  - [SquareConnect.Order](docs/Order.md)
  - [SquareConnect.OrderLineItem](docs/OrderLineItem.md)
  - [SquareConnect.OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
@@ -272,12 +277,16 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RegisterDomainRequest](docs/RegisterDomainRequest.md)
  - [SquareConnect.RegisterDomainResponse](docs/RegisterDomainResponse.md)
  - [SquareConnect.RegisterDomainResponseStatus](docs/RegisterDomainResponseStatus.md)
+ - [SquareConnect.RenewTokenRequest](docs/RenewTokenRequest.md)
+ - [SquareConnect.RenewTokenResponse](docs/RenewTokenResponse.md)
  - [SquareConnect.RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
  - [SquareConnect.RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [SquareConnect.RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
  - [SquareConnect.RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
  - [SquareConnect.RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [SquareConnect.RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
+ - [SquareConnect.RevokeTokenRequest](docs/RevokeTokenRequest.md)
+ - [SquareConnect.RevokeTokenResponse](docs/RevokeTokenResponse.md)
  - [SquareConnect.SearchCatalogObjectsRequest](docs/SearchCatalogObjectsRequest.md)
  - [SquareConnect.SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
  - [SquareConnect.SearchCustomersRequest](docs/SearchCustomersRequest.md)
