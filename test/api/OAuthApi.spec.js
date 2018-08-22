@@ -11,6 +11,12 @@
  * Swagger Codegen version: 2.3.0-SNAPSHOT
  *
  */
+const SquareConnect = require('../../src/index');
+const {
+  accounts,
+  expect,
+  handleUnexpectedError
+} = require('../support/setup');
 
 describe('OAuthApi', function() {
   beforeEach(function() {
@@ -20,39 +26,4 @@ describe('OAuthApi', function() {
     oauth2.accessToken = accounts.sandbox.access_token;
     this.api  = new SquareConnect.OAuthApi();
   });
-
-  afterEach(function(){
-  });
-
-  describe('OAuthApi', function() {
-    describe('obtainToken', function() {
-      it('should call obtainToken successfully', function(done) {
-        //uncomment below and update the code to test obtainToken
-        //instance.obtainToken(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('renewToken', function() {
-      it('should call renewToken successfully', function(done) {
-        //uncomment below and update the code to test renewToken
-        //instance.renewToken(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('revokeToken', function() {
-      it('should call revokeToken successfully', function(done) {
-        //uncomment below and update the code to test revokeToken
-        //instance.revokeToken(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
 });
