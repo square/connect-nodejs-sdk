@@ -121,6 +121,8 @@ var LocationCapability = require('./model/LocationCapability');
 var LocationStatus = require('./model/LocationStatus');
 var LocationType = require('./model/LocationType');
 var Money = require('./model/Money');
+var ObtainTokenRequest = require('./model/ObtainTokenRequest');
+var ObtainTokenResponse = require('./model/ObtainTokenResponse');
 var Order = require('./model/Order');
 var OrderLineItem = require('./model/OrderLineItem');
 var OrderLineItemDiscount = require('./model/OrderLineItemDiscount');
@@ -134,12 +136,16 @@ var RefundStatus = require('./model/RefundStatus');
 var RegisterDomainRequest = require('./model/RegisterDomainRequest');
 var RegisterDomainResponse = require('./model/RegisterDomainResponse');
 var RegisterDomainResponseStatus = require('./model/RegisterDomainResponseStatus');
+var RenewTokenRequest = require('./model/RenewTokenRequest');
+var RenewTokenResponse = require('./model/RenewTokenResponse');
 var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest');
 var RetrieveCatalogObjectResponse = require('./model/RetrieveCatalogObjectResponse');
 var RetrieveCustomerRequest = require('./model/RetrieveCustomerRequest');
 var RetrieveCustomerResponse = require('./model/RetrieveCustomerResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
 var RetrieveTransactionResponse = require('./model/RetrieveTransactionResponse');
+var RevokeTokenRequest = require('./model/RevokeTokenRequest');
+var RevokeTokenResponse = require('./model/RevokeTokenResponse');
 var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest');
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
@@ -212,6 +218,7 @@ var CheckoutApi = require('./api/CheckoutApi');
 var CustomersApi = require('./api/CustomersApi');
 var LocationsApi = require('./api/LocationsApi');
 var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
+var OAuthApi = require('./api/OAuthApi');
 var OrdersApi = require('./api/OrdersApi');
 var ReportingApi = require('./api/ReportingApi');
 var TransactionsApi = require('./api/TransactionsApi');
@@ -250,7 +257,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20180712.1
+ * @version 2.20180712.2
  */
   module.exports = {
   /**
@@ -799,6 +806,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Money: Money,
   /**
+   * The ObtainTokenRequest model constructor.
+   * @property {module:model/ObtainTokenRequest}
+   */
+  ObtainTokenRequest: ObtainTokenRequest,
+  /**
+   * The ObtainTokenResponse model constructor.
+   * @property {module:model/ObtainTokenResponse}
+   */
+  ObtainTokenResponse: ObtainTokenResponse,
+  /**
    * The Order model constructor.
    * @property {module:model/Order}
    */
@@ -864,6 +881,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RegisterDomainResponseStatus: RegisterDomainResponseStatus,
   /**
+   * The RenewTokenRequest model constructor.
+   * @property {module:model/RenewTokenRequest}
+   */
+  RenewTokenRequest: RenewTokenRequest,
+  /**
+   * The RenewTokenResponse model constructor.
+   * @property {module:model/RenewTokenResponse}
+   */
+  RenewTokenResponse: RenewTokenResponse,
+  /**
    * The RetrieveCatalogObjectRequest model constructor.
    * @property {module:model/RetrieveCatalogObjectRequest}
    */
@@ -893,6 +920,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RetrieveTransactionResponse}
    */
   RetrieveTransactionResponse: RetrieveTransactionResponse,
+  /**
+   * The RevokeTokenRequest model constructor.
+   * @property {module:model/RevokeTokenRequest}
+   */
+  RevokeTokenRequest: RevokeTokenRequest,
+  /**
+   * The RevokeTokenResponse model constructor.
+   * @property {module:model/RevokeTokenResponse}
+   */
+  RevokeTokenResponse: RevokeTokenResponse,
   /**
    * The SearchCatalogObjectsRequest model constructor.
    * @property {module:model/SearchCatalogObjectsRequest}
@@ -1248,6 +1285,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/MobileAuthorizationApi}
    */
   MobileAuthorizationApi: MobileAuthorizationApi,
+  /**
+   * The OAuthApi service constructor.
+   * @property {module:api/OAuthApi}
+   */
+  OAuthApi: OAuthApi,
   /**
    * The OrdersApi service constructor.
    * @property {module:api/OrdersApi}
