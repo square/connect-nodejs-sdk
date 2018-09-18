@@ -69,7 +69,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -121,7 +121,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -173,7 +173,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -219,7 +219,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -271,7 +271,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -323,7 +323,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -382,7 +382,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -436,7 +436,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -488,7 +488,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -540,7 +540,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -592,7 +592,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
