@@ -11,6 +11,14 @@
  * Swagger Codegen version: 2.3.0-SNAPSHOT
  *
  */
+const SquareConnect = require('../../src/index');
+const {
+  accounts,
+  expect,
+  assert,
+  handleUnexpectedError,
+  generateIdempotencyKey
+} = require('../support/setup');
 
 describe('InventoryApi', function() {
   beforeEach(function() {
@@ -95,4 +103,5 @@ describe('InventoryApi', function() {
         done();
       });
     });
+  });
 });
