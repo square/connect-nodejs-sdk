@@ -40,6 +40,9 @@ var exports = function(employeeId) {
 
 
 
+
+
+
 };
 
 /**
@@ -80,6 +83,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('updated_at')) {
       obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
     }
+      if (data.hasOwnProperty('regular_seconds_worked')) {
+      obj['regular_seconds_worked'] = ApiClient.convertToType(data['regular_seconds_worked'], 'Number');
+    }
+      if (data.hasOwnProperty('overtime_seconds_worked')) {
+      obj['overtime_seconds_worked'] = ApiClient.convertToType(data['overtime_seconds_worked'], 'Number');
+    }
+      if (data.hasOwnProperty('doubletime_seconds_worked')) {
+      obj['doubletime_seconds_worked'] = ApiClient.convertToType(data['doubletime_seconds_worked'], 'Number');
+    }
     }
   return obj;
 }
@@ -110,7 +122,7 @@ exports.prototype['clockin_time'] = undefined;
  */
 exports.prototype['clockout_time'] = undefined;
 /**
- * The ID of the location the employee clocked in from, if any.
+ * The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard’s timezone and overtime rules.
  * @member {String} clockin_location_id
  */
 exports.prototype['clockin_location_id'] = undefined;
@@ -129,6 +141,21 @@ exports.prototype['created_at'] = undefined;
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
+/**
+ * The total number of regular (non-overtime) seconds worked in the timecard.
+ * @member {Number} regular_seconds_worked
+ */
+exports.prototype['regular_seconds_worked'] = undefined;
+/**
+ * The total number of overtime seconds worked in the timecard.
+ * @member {Number} overtime_seconds_worked
+ */
+exports.prototype['overtime_seconds_worked'] = undefined;
+/**
+ * The total number of doubletime seconds worked in the timecard.
+ * @member {Number} doubletime_seconds_worked
+ */
+exports.prototype['doubletime_seconds_worked'] = undefined;
 
 
 

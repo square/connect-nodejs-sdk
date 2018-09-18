@@ -53,6 +53,7 @@ var exports = function(id, createdAt, updatedAt) {
 
 
 
+
 };
 
 /**
@@ -98,6 +99,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('phone_number')) {
       obj['phone_number'] = ApiClient.convertToType(data['phone_number'], 'String');
+    }
+      if (data.hasOwnProperty('birthday')) {
+      obj['birthday'] = ApiClient.convertToType(data['birthday'], 'String');
     }
       if (data.hasOwnProperty('reference_id')) {
       obj['reference_id'] = ApiClient.convertToType(data['reference_id'], 'String');
@@ -173,6 +177,11 @@ exports.prototype['address'] = undefined;
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
+/**
+ * The customer's birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example: `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on September 1st 1998.
+ * @member {String} birthday
+ */
+exports.prototype['birthday'] = undefined;
 /**
  * A second ID you can set to associate the customer with an entity in another system.
  * @member {String} reference_id

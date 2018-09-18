@@ -40,6 +40,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -79,6 +80,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('note')) {
       obj['note'] = ApiClient.convertToType(data['note'], 'String');
+    }
+      if (data.hasOwnProperty('birthday')) {
+      obj['birthday'] = ApiClient.convertToType(data['birthday'], 'String');
     }
     }
   return obj;
@@ -129,6 +133,11 @@ exports.prototype['reference_id'] = undefined;
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
+/**
+ * The customer birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example: `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on September 1st 1998.
+ * @member {String} birthday
+ */
+exports.prototype['birthday'] = undefined;
 
 
 

@@ -17,10 +17,16 @@ var AdditionalRecipient = require('./model/AdditionalRecipient');
 var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
 var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
 var Address = require('./model/Address');
+var BatchChangeInventoryRequest = require('./model/BatchChangeInventoryRequest');
+var BatchChangeInventoryResponse = require('./model/BatchChangeInventoryResponse');
 var BatchDeleteCatalogObjectsRequest = require('./model/BatchDeleteCatalogObjectsRequest');
 var BatchDeleteCatalogObjectsResponse = require('./model/BatchDeleteCatalogObjectsResponse');
 var BatchRetrieveCatalogObjectsRequest = require('./model/BatchRetrieveCatalogObjectsRequest');
 var BatchRetrieveCatalogObjectsResponse = require('./model/BatchRetrieveCatalogObjectsResponse');
+var BatchRetrieveInventoryChangesRequest = require('./model/BatchRetrieveInventoryChangesRequest');
+var BatchRetrieveInventoryChangesResponse = require('./model/BatchRetrieveInventoryChangesResponse');
+var BatchRetrieveInventoryCountsRequest = require('./model/BatchRetrieveInventoryCountsRequest');
+var BatchRetrieveInventoryCountsResponse = require('./model/BatchRetrieveInventoryCountsResponse');
 var BatchRetrieveOrdersRequest = require('./model/BatchRetrieveOrdersRequest');
 var BatchRetrieveOrdersResponse = require('./model/BatchRetrieveOrdersResponse');
 var BatchUpsertCatalogObjectsRequest = require('./model/BatchUpsertCatalogObjectsRequest');
@@ -100,7 +106,14 @@ var Device = require('./model/Device');
 var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
+var InventoryAdjustment = require('./model/InventoryAdjustment');
 var InventoryAlertType = require('./model/InventoryAlertType');
+var InventoryChange = require('./model/InventoryChange');
+var InventoryChangeType = require('./model/InventoryChangeType');
+var InventoryCount = require('./model/InventoryCount');
+var InventoryPhysicalCount = require('./model/InventoryPhysicalCount');
+var InventoryState = require('./model/InventoryState');
+var InventoryTransfer = require('./model/InventoryTransfer');
 var ItemVariationLocationOverrides = require('./model/ItemVariationLocationOverrides');
 var ListAdditionalRecipientReceivableRefundsRequest = require('./model/ListAdditionalRecipientReceivableRefundsRequest');
 var ListAdditionalRecipientReceivableRefundsResponse = require('./model/ListAdditionalRecipientReceivableRefundsResponse');
@@ -131,6 +144,7 @@ var OrderLineItemDiscountType = require('./model/OrderLineItemDiscountType');
 var OrderLineItemModifier = require('./model/OrderLineItemModifier');
 var OrderLineItemTax = require('./model/OrderLineItemTax');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
+var Product = require('./model/Product');
 var Refund = require('./model/Refund');
 var RefundStatus = require('./model/RefundStatus');
 var RegisterDomainRequest = require('./model/RegisterDomainRequest');
@@ -142,6 +156,14 @@ var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest
 var RetrieveCatalogObjectResponse = require('./model/RetrieveCatalogObjectResponse');
 var RetrieveCustomerRequest = require('./model/RetrieveCustomerRequest');
 var RetrieveCustomerResponse = require('./model/RetrieveCustomerResponse');
+var RetrieveInventoryAdjustmentRequest = require('./model/RetrieveInventoryAdjustmentRequest');
+var RetrieveInventoryAdjustmentResponse = require('./model/RetrieveInventoryAdjustmentResponse');
+var RetrieveInventoryChangesRequest = require('./model/RetrieveInventoryChangesRequest');
+var RetrieveInventoryChangesResponse = require('./model/RetrieveInventoryChangesResponse');
+var RetrieveInventoryCountRequest = require('./model/RetrieveInventoryCountRequest');
+var RetrieveInventoryCountResponse = require('./model/RetrieveInventoryCountResponse');
+var RetrieveInventoryPhysicalCountRequest = require('./model/RetrieveInventoryPhysicalCountRequest');
+var RetrieveInventoryPhysicalCountResponse = require('./model/RetrieveInventoryPhysicalCountResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
 var RetrieveTransactionResponse = require('./model/RetrieveTransactionResponse');
 var RevokeTokenRequest = require('./model/RevokeTokenRequest');
@@ -151,6 +173,7 @@ var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
 var SearchCustomersResponse = require('./model/SearchCustomersResponse');
 var SortOrder = require('./model/SortOrder');
+var SourceApplication = require('./model/SourceApplication');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
 var TaxInclusionType = require('./model/TaxInclusionType');
 var Tender = require('./model/Tender');
@@ -216,6 +239,7 @@ var ApplePayApi = require('./api/ApplePayApi');
 var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
 var CustomersApi = require('./api/CustomersApi');
+var InventoryApi = require('./api/InventoryApi');
 var LocationsApi = require('./api/LocationsApi');
 var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
 var OAuthApi = require('./api/OAuthApi');
@@ -257,7 +281,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20180712.2
+ * @version 2.20180918.0
  */
   module.exports = {
   /**
@@ -286,6 +310,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Address: Address,
   /**
+   * The BatchChangeInventoryRequest model constructor.
+   * @property {module:model/BatchChangeInventoryRequest}
+   */
+  BatchChangeInventoryRequest: BatchChangeInventoryRequest,
+  /**
+   * The BatchChangeInventoryResponse model constructor.
+   * @property {module:model/BatchChangeInventoryResponse}
+   */
+  BatchChangeInventoryResponse: BatchChangeInventoryResponse,
+  /**
    * The BatchDeleteCatalogObjectsRequest model constructor.
    * @property {module:model/BatchDeleteCatalogObjectsRequest}
    */
@@ -305,6 +339,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BatchRetrieveCatalogObjectsResponse}
    */
   BatchRetrieveCatalogObjectsResponse: BatchRetrieveCatalogObjectsResponse,
+  /**
+   * The BatchRetrieveInventoryChangesRequest model constructor.
+   * @property {module:model/BatchRetrieveInventoryChangesRequest}
+   */
+  BatchRetrieveInventoryChangesRequest: BatchRetrieveInventoryChangesRequest,
+  /**
+   * The BatchRetrieveInventoryChangesResponse model constructor.
+   * @property {module:model/BatchRetrieveInventoryChangesResponse}
+   */
+  BatchRetrieveInventoryChangesResponse: BatchRetrieveInventoryChangesResponse,
+  /**
+   * The BatchRetrieveInventoryCountsRequest model constructor.
+   * @property {module:model/BatchRetrieveInventoryCountsRequest}
+   */
+  BatchRetrieveInventoryCountsRequest: BatchRetrieveInventoryCountsRequest,
+  /**
+   * The BatchRetrieveInventoryCountsResponse model constructor.
+   * @property {module:model/BatchRetrieveInventoryCountsResponse}
+   */
+  BatchRetrieveInventoryCountsResponse: BatchRetrieveInventoryCountsResponse,
   /**
    * The BatchRetrieveOrdersRequest model constructor.
    * @property {module:model/BatchRetrieveOrdersRequest}
@@ -701,10 +755,45 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ErrorCode: ErrorCode,
   /**
+   * The InventoryAdjustment model constructor.
+   * @property {module:model/InventoryAdjustment}
+   */
+  InventoryAdjustment: InventoryAdjustment,
+  /**
    * The InventoryAlertType model constructor.
    * @property {module:model/InventoryAlertType}
    */
   InventoryAlertType: InventoryAlertType,
+  /**
+   * The InventoryChange model constructor.
+   * @property {module:model/InventoryChange}
+   */
+  InventoryChange: InventoryChange,
+  /**
+   * The InventoryChangeType model constructor.
+   * @property {module:model/InventoryChangeType}
+   */
+  InventoryChangeType: InventoryChangeType,
+  /**
+   * The InventoryCount model constructor.
+   * @property {module:model/InventoryCount}
+   */
+  InventoryCount: InventoryCount,
+  /**
+   * The InventoryPhysicalCount model constructor.
+   * @property {module:model/InventoryPhysicalCount}
+   */
+  InventoryPhysicalCount: InventoryPhysicalCount,
+  /**
+   * The InventoryState model constructor.
+   * @property {module:model/InventoryState}
+   */
+  InventoryState: InventoryState,
+  /**
+   * The InventoryTransfer model constructor.
+   * @property {module:model/InventoryTransfer}
+   */
+  InventoryTransfer: InventoryTransfer,
   /**
    * The ItemVariationLocationOverrides model constructor.
    * @property {module:model/ItemVariationLocationOverrides}
@@ -856,6 +945,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderLineItemTaxType: OrderLineItemTaxType,
   /**
+   * The Product model constructor.
+   * @property {module:model/Product}
+   */
+  Product: Product,
+  /**
    * The Refund model constructor.
    * @property {module:model/Refund}
    */
@@ -911,6 +1005,46 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveCustomerResponse: RetrieveCustomerResponse,
   /**
+   * The RetrieveInventoryAdjustmentRequest model constructor.
+   * @property {module:model/RetrieveInventoryAdjustmentRequest}
+   */
+  RetrieveInventoryAdjustmentRequest: RetrieveInventoryAdjustmentRequest,
+  /**
+   * The RetrieveInventoryAdjustmentResponse model constructor.
+   * @property {module:model/RetrieveInventoryAdjustmentResponse}
+   */
+  RetrieveInventoryAdjustmentResponse: RetrieveInventoryAdjustmentResponse,
+  /**
+   * The RetrieveInventoryChangesRequest model constructor.
+   * @property {module:model/RetrieveInventoryChangesRequest}
+   */
+  RetrieveInventoryChangesRequest: RetrieveInventoryChangesRequest,
+  /**
+   * The RetrieveInventoryChangesResponse model constructor.
+   * @property {module:model/RetrieveInventoryChangesResponse}
+   */
+  RetrieveInventoryChangesResponse: RetrieveInventoryChangesResponse,
+  /**
+   * The RetrieveInventoryCountRequest model constructor.
+   * @property {module:model/RetrieveInventoryCountRequest}
+   */
+  RetrieveInventoryCountRequest: RetrieveInventoryCountRequest,
+  /**
+   * The RetrieveInventoryCountResponse model constructor.
+   * @property {module:model/RetrieveInventoryCountResponse}
+   */
+  RetrieveInventoryCountResponse: RetrieveInventoryCountResponse,
+  /**
+   * The RetrieveInventoryPhysicalCountRequest model constructor.
+   * @property {module:model/RetrieveInventoryPhysicalCountRequest}
+   */
+  RetrieveInventoryPhysicalCountRequest: RetrieveInventoryPhysicalCountRequest,
+  /**
+   * The RetrieveInventoryPhysicalCountResponse model constructor.
+   * @property {module:model/RetrieveInventoryPhysicalCountResponse}
+   */
+  RetrieveInventoryPhysicalCountResponse: RetrieveInventoryPhysicalCountResponse,
+  /**
    * The RetrieveTransactionRequest model constructor.
    * @property {module:model/RetrieveTransactionRequest}
    */
@@ -955,6 +1089,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SortOrder}
    */
   SortOrder: SortOrder,
+  /**
+   * The SourceApplication model constructor.
+   * @property {module:model/SourceApplication}
+   */
+  SourceApplication: SourceApplication,
   /**
    * The TaxCalculationPhase model constructor.
    * @property {module:model/TaxCalculationPhase}
@@ -1275,6 +1414,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/CustomersApi}
    */
   CustomersApi: CustomersApi,
+  /**
+   * The InventoryApi service constructor.
+   * @property {module:api/InventoryApi}
+   */
+  InventoryApi: InventoryApi,
   /**
    * The LocationsApi service constructor.
    * @property {module:api/LocationsApi}

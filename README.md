@@ -65,6 +65,13 @@ Class | Method | HTTP request | Description
 *SquareConnect.CustomersApi* | [**retrieveCustomer**](docs/CustomersApi.md#retrieveCustomer) | **GET** /v2/customers/{customer_id} | RetrieveCustomer
 *SquareConnect.CustomersApi* | [**searchCustomers**](docs/CustomersApi.md#searchCustomers) | **POST** /v2/customers/search | SearchCustomers
 *SquareConnect.CustomersApi* | [**updateCustomer**](docs/CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
+*SquareConnect.InventoryApi* | [**batchChangeInventory**](docs/InventoryApi.md#batchChangeInventory) | **POST** /v2/inventory/batch-change | BatchChangeInventory
+*SquareConnect.InventoryApi* | [**batchRetrieveInventoryChanges**](docs/InventoryApi.md#batchRetrieveInventoryChanges) | **POST** /v2/inventory/batch-retrieve-changes | BatchRetrieveInventoryChanges
+*SquareConnect.InventoryApi* | [**batchRetrieveInventoryCounts**](docs/InventoryApi.md#batchRetrieveInventoryCounts) | **POST** /v2/inventory/batch-retrieve-counts | BatchRetrieveInventoryCounts
+*SquareConnect.InventoryApi* | [**retrieveInventoryAdjustment**](docs/InventoryApi.md#retrieveInventoryAdjustment) | **GET** /v2/inventory/adjustment/{adjustment_id} | RetrieveInventoryAdjustment
+*SquareConnect.InventoryApi* | [**retrieveInventoryChanges**](docs/InventoryApi.md#retrieveInventoryChanges) | **GET** /v2/inventory/{catalog_object_id}/changes | RetrieveInventoryChanges
+*SquareConnect.InventoryApi* | [**retrieveInventoryCount**](docs/InventoryApi.md#retrieveInventoryCount) | **GET** /v2/inventory/{catalog_object_id} | RetrieveInventoryCount
+*SquareConnect.InventoryApi* | [**retrieveInventoryPhysicalCount**](docs/InventoryApi.md#retrieveInventoryPhysicalCount) | **GET** /v2/inventory/physical-count/{physical_count_id} | RetrieveInventoryPhysicalCount
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
 *SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
 *SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
@@ -158,10 +165,16 @@ Class | Method | HTTP request | Description
  - [SquareConnect.AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
  - [SquareConnect.AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [SquareConnect.Address](docs/Address.md)
+ - [SquareConnect.BatchChangeInventoryRequest](docs/BatchChangeInventoryRequest.md)
+ - [SquareConnect.BatchChangeInventoryResponse](docs/BatchChangeInventoryResponse.md)
  - [SquareConnect.BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)
  - [SquareConnect.BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
  - [SquareConnect.BatchRetrieveCatalogObjectsRequest](docs/BatchRetrieveCatalogObjectsRequest.md)
  - [SquareConnect.BatchRetrieveCatalogObjectsResponse](docs/BatchRetrieveCatalogObjectsResponse.md)
+ - [SquareConnect.BatchRetrieveInventoryChangesRequest](docs/BatchRetrieveInventoryChangesRequest.md)
+ - [SquareConnect.BatchRetrieveInventoryChangesResponse](docs/BatchRetrieveInventoryChangesResponse.md)
+ - [SquareConnect.BatchRetrieveInventoryCountsRequest](docs/BatchRetrieveInventoryCountsRequest.md)
+ - [SquareConnect.BatchRetrieveInventoryCountsResponse](docs/BatchRetrieveInventoryCountsResponse.md)
  - [SquareConnect.BatchRetrieveOrdersRequest](docs/BatchRetrieveOrdersRequest.md)
  - [SquareConnect.BatchRetrieveOrdersResponse](docs/BatchRetrieveOrdersResponse.md)
  - [SquareConnect.BatchUpsertCatalogObjectsRequest](docs/BatchUpsertCatalogObjectsRequest.md)
@@ -241,7 +254,14 @@ Class | Method | HTTP request | Description
  - [SquareConnect.Error](docs/Error.md)
  - [SquareConnect.ErrorCategory](docs/ErrorCategory.md)
  - [SquareConnect.ErrorCode](docs/ErrorCode.md)
+ - [SquareConnect.InventoryAdjustment](docs/InventoryAdjustment.md)
  - [SquareConnect.InventoryAlertType](docs/InventoryAlertType.md)
+ - [SquareConnect.InventoryChange](docs/InventoryChange.md)
+ - [SquareConnect.InventoryChangeType](docs/InventoryChangeType.md)
+ - [SquareConnect.InventoryCount](docs/InventoryCount.md)
+ - [SquareConnect.InventoryPhysicalCount](docs/InventoryPhysicalCount.md)
+ - [SquareConnect.InventoryState](docs/InventoryState.md)
+ - [SquareConnect.InventoryTransfer](docs/InventoryTransfer.md)
  - [SquareConnect.ItemVariationLocationOverrides](docs/ItemVariationLocationOverrides.md)
  - [SquareConnect.ListAdditionalRecipientReceivableRefundsRequest](docs/ListAdditionalRecipientReceivableRefundsRequest.md)
  - [SquareConnect.ListAdditionalRecipientReceivableRefundsResponse](docs/ListAdditionalRecipientReceivableRefundsResponse.md)
@@ -272,6 +292,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.OrderLineItemModifier](docs/OrderLineItemModifier.md)
  - [SquareConnect.OrderLineItemTax](docs/OrderLineItemTax.md)
  - [SquareConnect.OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
+ - [SquareConnect.Product](docs/Product.md)
  - [SquareConnect.Refund](docs/Refund.md)
  - [SquareConnect.RefundStatus](docs/RefundStatus.md)
  - [SquareConnect.RegisterDomainRequest](docs/RegisterDomainRequest.md)
@@ -283,6 +304,14 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [SquareConnect.RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
  - [SquareConnect.RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
+ - [SquareConnect.RetrieveInventoryAdjustmentRequest](docs/RetrieveInventoryAdjustmentRequest.md)
+ - [SquareConnect.RetrieveInventoryAdjustmentResponse](docs/RetrieveInventoryAdjustmentResponse.md)
+ - [SquareConnect.RetrieveInventoryChangesRequest](docs/RetrieveInventoryChangesRequest.md)
+ - [SquareConnect.RetrieveInventoryChangesResponse](docs/RetrieveInventoryChangesResponse.md)
+ - [SquareConnect.RetrieveInventoryCountRequest](docs/RetrieveInventoryCountRequest.md)
+ - [SquareConnect.RetrieveInventoryCountResponse](docs/RetrieveInventoryCountResponse.md)
+ - [SquareConnect.RetrieveInventoryPhysicalCountRequest](docs/RetrieveInventoryPhysicalCountRequest.md)
+ - [SquareConnect.RetrieveInventoryPhysicalCountResponse](docs/RetrieveInventoryPhysicalCountResponse.md)
  - [SquareConnect.RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [SquareConnect.RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
  - [SquareConnect.RevokeTokenRequest](docs/RevokeTokenRequest.md)
@@ -292,6 +321,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.SearchCustomersRequest](docs/SearchCustomersRequest.md)
  - [SquareConnect.SearchCustomersResponse](docs/SearchCustomersResponse.md)
  - [SquareConnect.SortOrder](docs/SortOrder.md)
+ - [SquareConnect.SourceApplication](docs/SourceApplication.md)
  - [SquareConnect.TaxCalculationPhase](docs/TaxCalculationPhase.md)
  - [SquareConnect.TaxInclusionType](docs/TaxInclusionType.md)
  - [SquareConnect.Tender](docs/Tender.md)
@@ -380,6 +410,8 @@ Class | Method | HTTP request | Description
   - TIMECARDS_WRITE: POST, PUT, and DELETE endpoints related to employee timecards
   - PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS: Allow third party applications to deduct a portion of each transaction amount.
   - PAYMENTS_WRITE_IN_PERSON: POST, PUT, and DELETE endpoints. Grants write access to transaction and refunds information.
+  - INVENTORY_READ: GET endpoints related to a merchant&#39;s inventory
+  - INVENTORY_WRITE: POST, PUT, and DELETE endpoints related to a merchant&#39;s inventory
 
 ### oauth2ClientSecret
 

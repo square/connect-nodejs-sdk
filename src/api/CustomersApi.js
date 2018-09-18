@@ -63,7 +63,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -122,7 +122,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -156,7 +156,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteCustomer
-   * Deletes a customer from a business, along with any linked cards on file.
+   * Deletes a customer from a business, along with any linked cards on file. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to delete merged profiles.
    * @param {String} customerId The ID of the customer to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteCustomerResponse} and HTTP response
    */
@@ -176,7 +176,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -195,7 +195,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteCustomer
-   * Deletes a customer from a business, along with any linked cards on file.
+   * Deletes a customer from a business, along with any linked cards on file. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to delete merged profiles.
    * @param {String} customerId The ID of the customer to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteCustomerResponse}
    */
@@ -236,7 +236,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -291,7 +291,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -347,7 +347,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -399,7 +399,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -432,7 +432,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCustomer
-   * Updates the details of an existing customer. The ID of the customer may change if the customer has been merged into another customer.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
+   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
    * @param {String} customerId The ID of the customer to update.
    * @param {module:model/UpdateCustomerRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateCustomerResponse} and HTTP response
@@ -458,7 +458,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-07-12';
+    headerParams['Square-Version'] = '2018-09-18';
 
     var formParams = {
     };
@@ -477,7 +477,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCustomer
-   * Updates the details of an existing customer. The ID of the customer may change if the customer has been merged into another customer.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
+   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
    * @param {String} customerId The ID of the customer to update.
    * @param {module:model/UpdateCustomerRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateCustomerResponse}
