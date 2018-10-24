@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | The modifier&#39;s name. Searchable. | [optional] 
-**priceMoney** | [**Money**](Money.md) | The modifier&#39;s price. | [optional] 
+**price_money** | [**Money**](Money.md) | The modifier&#39;s price. | [optional] 
 
 

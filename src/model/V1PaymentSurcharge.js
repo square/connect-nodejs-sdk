@@ -116,6 +116,7 @@ exports.prototype['taxable'] = undefined;
  */
 exports.prototype['taxes'] = undefined;
 /**
+ * A Square-issued unique identifier associated with the surcharge.
  * @member {String} surcharge_id
  */
 exports.prototype['surcharge_id'] = undefined;

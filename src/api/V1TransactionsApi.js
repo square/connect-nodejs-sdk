@@ -222,6 +222,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+   * @param {Boolean} opts.includePartial Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Payment>} and HTTP response
    */
   this.listPaymentsWithHttpInfo = function(locationId, opts) {
@@ -242,7 +243,8 @@ module.exports = function(apiClient) {
       'begin_time': opts['beginTime'],
       'end_time': opts['endTime'],
       'limit': opts['limit'],
-      'batch_token': opts['batchToken']
+      'batch_token': opts['batchToken'],
+      'include_partial': opts['includePartial']
     };
     var headerParams = {
     };
@@ -272,6 +274,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+   * @param {Boolean} opts.includePartial Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Payment>}
    */
   this.listPayments = function(locationId, opts) {

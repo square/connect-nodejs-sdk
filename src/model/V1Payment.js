@@ -62,6 +62,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -152,6 +153,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('surcharges')) {
       obj['surcharges'] = ApiClient.convertToType(data['surcharges'], [V1PaymentSurcharge]);
+    }
+      if (data.hasOwnProperty('is_partial')) {
+      obj['is_partial'] = ApiClient.convertToType(data['is_partial'], 'Boolean');
     }
     }
   return obj;
@@ -287,6 +291,11 @@ exports.prototype['surcharge_money'] = undefined;
  * @member {Array.<module:model/V1PaymentSurcharge>} surcharges
  */
 exports.prototype['surcharges'] = undefined;
+/**
+ * Indicates whether or not the payment is only partially paid for. If true, this payment will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
+ * @member {Boolean} is_partial
+ */
+exports.prototype['is_partial'] = undefined;
 
 
 
