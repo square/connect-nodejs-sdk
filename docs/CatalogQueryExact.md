@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attributeName** | **String** | The name of the attribute to be searched. | 
-**attributeValue** | **String** | The desired value of the search attribute. | 
+**attribute_name** | **String** | The name of the attribute to be searched. | 
+**attribute_value** | **String** | The desired value of the search attribute. | 
 
 

@@ -44,6 +44,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -89,6 +91,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('tendered_money')) {
       obj['tendered_money'] = V1Money.constructFromObject(data['tendered_money']);
+    }
+      if (data.hasOwnProperty('tendered_at')) {
+      obj['tendered_at'] = ApiClient.convertToType(data['tendered_at'], 'String');
+    }
+      if (data.hasOwnProperty('settled_at')) {
+      obj['settled_at'] = ApiClient.convertToType(data['settled_at'], 'String');
     }
       if (data.hasOwnProperty('change_back_money')) {
       obj['change_back_money'] = V1Money.constructFromObject(data['change_back_money']);
@@ -158,6 +166,16 @@ exports.prototype['total_money'] = undefined;
  * @member {module:model/V1Money} tendered_money
  */
 exports.prototype['tendered_money'] = undefined;
+/**
+ * The time when the tender was created, in ISO 8601 format.
+ * @member {String} tendered_at
+ */
+exports.prototype['tendered_at'] = undefined;
+/**
+ * The time when the tender was settled, in ISO 8601 format.
+ * @member {String} settled_at
+ */
+exports.prototype['settled_at'] = undefined;
 /**
  * The amount of total_money returned to the buyer as change.
  * @member {module:model/V1Money} change_back_money

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**buyerTenderedMoney** | [**Money**](Money.md) | The total amount of cash provided by the buyer, before change is given. | [optional] 
-**changeBackMoney** | [**Money**](Money.md) | The amount of change returned to the buyer. | [optional] 
+**buyer_tendered_money** | [**Money**](Money.md) | The total amount of cash provided by the buyer, before change is given. | [optional] 
+**change_back_money** | [**Money**](Money.md) | The amount of change returned to the buyer. | [optional] 
 
 

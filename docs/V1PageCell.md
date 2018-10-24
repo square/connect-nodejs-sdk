@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pageId** | **String** | The unique identifier of the page the cell is included on. | [optional] 
+**page_id** | **String** | The unique identifier of the page the cell is included on. | [optional] 
 **row** | **Number** | The row of the cell. Always an integer between 0 and 4, inclusive. | [optional] 
 **column** | **Number** | The column of the cell. Always an integer between 0 and 4, inclusive. | [optional] 
-**objectType** | **String** | The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER). | [optional] 
-**objectId** | **String** | The unique identifier of the entity represented in the cell. Not present for cells with an object_type of PLACEHOLDER. | [optional] 
-**placeholderType** | **String** | For a cell with an object_type of PLACEHOLDER, this value indicates the cell&#39;s special behavior. | [optional] 
+**object_type** | **String** | The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER). | [optional] 
+**object_id** | **String** | The unique identifier of the entity represented in the cell. Not present for cells with an object_type of PLACEHOLDER. | [optional] 
+**placeholder_type** | **String** | For a cell with an object_type of PLACEHOLDER, this value indicates the cell&#39;s special behavior. | [optional] 
 
 
 <a name="ObjectTypeEnum"></a>

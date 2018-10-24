@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attributeName** | **String** | The name of the attribute to be searched. | 
-**attributeMinValue** | **Number** | The desired minimum value for the search attribute (inclusive). | [optional] 
-**attributeMaxValue** | **Number** | The desired maximum value for the search attribute (inclusive). | [optional] 
+**attribute_name** | **String** | The name of the attribute to be searched. | 
+**attribute_min_value** | **Number** | The desired minimum value for the search attribute (inclusive). | [optional] 
+**attribute_max_value** | **Number** | The desired maximum value for the search attribute (inclusive). | [optional] 
 
 
