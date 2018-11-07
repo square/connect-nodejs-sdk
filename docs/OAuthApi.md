@@ -68,8 +68,7 @@ var defaultClient = SquareConnect.ApiClient.instance;
 // Configure API key authorization: oauth2ClientSecret
 var oauth2ClientSecret = defaultClient.authentications['oauth2ClientSecret'];
 oauth2ClientSecret.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//oauth2ClientSecret.apiKeyPrefix = 'Token';
+oauth2ClientSecret.apiKeyPrefix = 'Client';
 
 var apiInstance = new SquareConnect.OAuthApi();
 
@@ -121,8 +120,7 @@ var defaultClient = SquareConnect.ApiClient.instance;
 // Configure API key authorization: oauth2ClientSecret
 var oauth2ClientSecret = defaultClient.authentications['oauth2ClientSecret'];
 oauth2ClientSecret.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//oauth2ClientSecret.apiKeyPrefix = 'Token';
+oauth2ClientSecret.apiKeyPrefix = 'Client';
 
 var apiInstance = new SquareConnect.OAuthApi();
 
