@@ -118,6 +118,16 @@ exports.prototype['name'] = undefined;
      */
     "PAYROLL": "PAYROLL",
     /**
+     * value: "DASHBOARD"
+     * @const
+     */
+    "DASHBOARD": "DASHBOARD",
+    /**
+     * value: "ITEM_LIBRARY_IMPORT"
+     * @const
+     */
+    "ITEM_LIBRARY_IMPORT": "ITEM_LIBRARY_IMPORT",
+    /**
      * value: "OTHER"
      * @const
      */

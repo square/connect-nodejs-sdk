@@ -13,6 +13,8 @@
  */
 var ApiClient = require('../ApiClient');
 var V1Money = require('./V1Money');
+var V1PaymentSurcharge = require('./V1PaymentSurcharge');
+var V1PaymentTax = require('./V1PaymentTax');
 
 
 
@@ -29,6 +31,16 @@ var V1Money = require('./V1Money');
  */
 var exports = function() {
   var _this = this;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +71,36 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('refunded_money')) {
       obj['refunded_money'] = V1Money.constructFromObject(data['refunded_money']);
+    }
+      if (data.hasOwnProperty('refunded_processing_fee_money')) {
+      obj['refunded_processing_fee_money'] = V1Money.constructFromObject(data['refunded_processing_fee_money']);
+    }
+      if (data.hasOwnProperty('refunded_tax_money')) {
+      obj['refunded_tax_money'] = V1Money.constructFromObject(data['refunded_tax_money']);
+    }
+      if (data.hasOwnProperty('refunded_additive_tax_money')) {
+      obj['refunded_additive_tax_money'] = V1Money.constructFromObject(data['refunded_additive_tax_money']);
+    }
+      if (data.hasOwnProperty('refunded_additive_tax')) {
+      obj['refunded_additive_tax'] = ApiClient.convertToType(data['refunded_additive_tax'], [V1PaymentTax]);
+    }
+      if (data.hasOwnProperty('refunded_inclusive_tax_money')) {
+      obj['refunded_inclusive_tax_money'] = V1Money.constructFromObject(data['refunded_inclusive_tax_money']);
+    }
+      if (data.hasOwnProperty('refunded_inclusive_tax')) {
+      obj['refunded_inclusive_tax'] = ApiClient.convertToType(data['refunded_inclusive_tax'], [V1PaymentTax]);
+    }
+      if (data.hasOwnProperty('refunded_tip_money')) {
+      obj['refunded_tip_money'] = V1Money.constructFromObject(data['refunded_tip_money']);
+    }
+      if (data.hasOwnProperty('refunded_discount_money')) {
+      obj['refunded_discount_money'] = V1Money.constructFromObject(data['refunded_discount_money']);
+    }
+      if (data.hasOwnProperty('refunded_surcharge_money')) {
+      obj['refunded_surcharge_money'] = V1Money.constructFromObject(data['refunded_surcharge_money']);
+    }
+      if (data.hasOwnProperty('refunded_surcharges')) {
+      obj['refunded_surcharges'] = ApiClient.convertToType(data['refunded_surcharges'], [V1PaymentSurcharge]);
     }
       if (data.hasOwnProperty('created_at')) {
       obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
@@ -94,6 +136,56 @@ exports.prototype['reason'] = undefined;
  * @member {module:model/V1Money} refunded_money
  */
 exports.prototype['refunded_money'] = undefined;
+/**
+ * The amount of processing fee money refunded. This amount is always positive.
+ * @member {module:model/V1Money} refunded_processing_fee_money
+ */
+exports.prototype['refunded_processing_fee_money'] = undefined;
+/**
+ * The total amount of tax money refunded. This amount is always negative.
+ * @member {module:model/V1Money} refunded_tax_money
+ */
+exports.prototype['refunded_tax_money'] = undefined;
+/**
+ * The amount of additive tax money refunded. This amount is always negative.
+ * @member {module:model/V1Money} refunded_additive_tax_money
+ */
+exports.prototype['refunded_additive_tax_money'] = undefined;
+/**
+ * All of the additive taxes associated with the refund.
+ * @member {Array.<module:model/V1PaymentTax>} refunded_additive_tax
+ */
+exports.prototype['refunded_additive_tax'] = undefined;
+/**
+ * The amount of inclusive tax money refunded. This amount is always negative.
+ * @member {module:model/V1Money} refunded_inclusive_tax_money
+ */
+exports.prototype['refunded_inclusive_tax_money'] = undefined;
+/**
+ * All of the inclusive taxes associated with the refund.
+ * @member {Array.<module:model/V1PaymentTax>} refunded_inclusive_tax
+ */
+exports.prototype['refunded_inclusive_tax'] = undefined;
+/**
+ * The amount of tip money refunded. This amount is always negative.
+ * @member {module:model/V1Money} refunded_tip_money
+ */
+exports.prototype['refunded_tip_money'] = undefined;
+/**
+ * The amount of discount money refunded. This amount is always positive.
+ * @member {module:model/V1Money} refunded_discount_money
+ */
+exports.prototype['refunded_discount_money'] = undefined;
+/**
+ * The amount of surcharge money refunded. This amount is always negative.
+ * @member {module:model/V1Money} refunded_surcharge_money
+ */
+exports.prototype['refunded_surcharge_money'] = undefined;
+/**
+ * A list of all surcharges associated with the refund.
+ * @member {Array.<module:model/V1PaymentSurcharge>} refunded_surcharges
+ */
+exports.prototype['refunded_surcharges'] = undefined;
 /**
  * The time when the merchant initiated the refund for Square to process, in ISO 8601 format.
  * @member {String} created_at

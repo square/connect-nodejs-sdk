@@ -138,7 +138,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The non-confidential details of the customer's cards on file.
+ * The payment details of the customer's cards on file.
  * @member {Array.<module:model/Card>} cards
  */
 exports.prototype['cards'] = undefined;
