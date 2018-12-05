@@ -63,7 +63,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -96,7 +96,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerCard
-   * Adds a card on file to an existing customer. In the United States Square takes care of automatically updating any cards on file that might have expired since you first attached them to a customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
+   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
    * @param {String} customerId The ID of the customer to link the card on file to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCustomerCardResponse} and HTTP response
@@ -122,7 +122,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -141,7 +141,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerCard
-   * Adds a card on file to an existing customer. In the United States Square takes care of automatically updating any cards on file that might have expired since you first attached them to a customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
+   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
    * @param {String} customerId The ID of the customer to link the card on file to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCustomerCardResponse}
@@ -176,7 +176,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -236,7 +236,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -291,7 +291,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -347,7 +347,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -399,7 +399,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -458,7 +458,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };

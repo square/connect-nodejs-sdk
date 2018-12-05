@@ -62,7 +62,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -122,7 +122,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };

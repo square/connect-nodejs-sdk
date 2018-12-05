@@ -61,7 +61,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -113,7 +113,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -146,7 +146,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveInventoryCounts
-   * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;calculated_at&#x60; timestamp (newest first).  When &#x60;updated_at&#x60; is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \&quot;sync\&quot; operation, for example in response to receiving a Webhook notification.
+   * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;calculated_at&#x60; timestamp (newest first).  When &#x60;updated_after&#x60; is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \&quot;sync\&quot; operation, for example in response to receiving a Webhook notification.
    * @param {module:model/BatchRetrieveInventoryCountsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BatchRetrieveInventoryCountsResponse} and HTTP response
    */
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -184,7 +184,7 @@ module.exports = function(apiClient) {
 
   /**
    * BatchRetrieveInventoryCounts
-   * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;calculated_at&#x60; timestamp (newest first).  When &#x60;updated_at&#x60; is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \&quot;sync\&quot; operation, for example in response to receiving a Webhook notification.
+   * Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;calculated_at&#x60; timestamp (newest first).  When &#x60;updated_after&#x60; is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \&quot;sync\&quot; operation, for example in response to receiving a Webhook notification.
    * @param {module:model/BatchRetrieveInventoryCountsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BatchRetrieveInventoryCountsResponse}
    */
@@ -218,7 +218,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -277,7 +277,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -339,7 +339,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
@@ -395,7 +395,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-09-18';
+    headerParams['Square-Version'] = '2018-12-05';
 
     var formParams = {
     };
