@@ -41,6 +41,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -54,6 +55,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('idempotency_key')) {
+      obj['idempotency_key'] = ApiClient.convertToType(data['idempotency_key'], 'String');
+    }
       if (data.hasOwnProperty('given_name')) {
       obj['given_name'] = ApiClient.convertToType(data['given_name'], 'String');
     }
@@ -88,6 +92,11 @@ exports.constructFromObject = function(data, obj) {
   return obj;
 }
 
+/**
+ * The idempotency key for the request. See the [Idempotency](/basics/api101/idempotency) guide for more information.
+ * @member {String} idempotency_key
+ */
+exports.prototype['idempotency_key'] = undefined;
 /**
  * The customer's given (i.e., first) name.
  * @member {String} given_name

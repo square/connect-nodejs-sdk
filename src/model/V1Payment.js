@@ -172,7 +172,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * The time when the payment was created, in ISO 8601 format.
+ * The time when the payment was created, in ISO 8601 format. Reflects the time of the first payment if the object represents an incomplete partial payment, and the time of the last or complete payment otherwise.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;

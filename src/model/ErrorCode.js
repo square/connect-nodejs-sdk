@@ -201,6 +201,11 @@ var exports = {
    */
   "EXPECTED_ARRAY": "EXPECTED_ARRAY",
   /**
+   * value: "EXPECTED_MAP"
+   * @const
+   */
+  "EXPECTED_MAP": "EXPECTED_MAP",
+  /**
    * value: "EXPECTED_BASE64_ENCODED_BYTE_ARRAY"
    * @const
    */
@@ -270,6 +275,11 @@ var exports = {
    * @const
    */
   "UNSUPPORTED_ENTRY_METHOD": "UNSUPPORTED_ENTRY_METHOD",
+  /**
+   * value: "INVALID_ENCRYPTED_CARD"
+   * @const
+   */
+  "INVALID_ENCRYPTED_CARD": "INVALID_ENCRYPTED_CARD",
   /**
    * value: "INVALID_CARD"
    * @const
