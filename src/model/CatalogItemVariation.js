@@ -107,7 +107,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['item_id'] = undefined;
 /**
- * The item variation's name. Searchable.
+ * The item variation's name. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -157,7 +157,7 @@ exports.prototype['inventory_alert_type'] = undefined;
  */
 exports.prototype['inventory_alert_threshold'] = undefined;
 /**
- * Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable.
+ * Arbitrary user metadata to associate with the item variation. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} user_data
  */
 exports.prototype['user_data'] = undefined;

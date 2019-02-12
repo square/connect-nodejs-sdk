@@ -135,12 +135,12 @@ exports.prototype['variation_name'] = undefined;
  */
 exports.prototype['modifiers'] = undefined;
 /**
- * The taxes applied to this line item.
+ * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.
  * @member {Array.<module:model/OrderLineItemTax>} taxes
  */
 exports.prototype['taxes'] = undefined;
 /**
- * The discounts applied to this line item.
+ * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.
  * @member {Array.<module:model/OrderLineItemDiscount>} discounts
  */
 exports.prototype['discounts'] = undefined;

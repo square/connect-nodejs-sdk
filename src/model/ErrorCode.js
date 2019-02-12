@@ -421,6 +421,11 @@ var exports = {
    */
   "METHOD_NOT_ALLOWED": "METHOD_NOT_ALLOWED",
   /**
+   * value: "NOT_ACCEPTABLE"
+   * @const
+   */
+  "NOT_ACCEPTABLE": "NOT_ACCEPTABLE",
+  /**
    * value: "REQUEST_TIMEOUT"
    * @const
    */

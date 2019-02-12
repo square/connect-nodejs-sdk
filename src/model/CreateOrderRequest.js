@@ -15,6 +15,7 @@ var ApiClient = require('../ApiClient');
 var CreateOrderRequestDiscount = require('./CreateOrderRequestDiscount');
 var CreateOrderRequestLineItem = require('./CreateOrderRequestLineItem');
 var CreateOrderRequestTax = require('./CreateOrderRequestTax');
+var Order = require('./Order');
 
 
 
@@ -29,14 +30,14 @@ var CreateOrderRequestTax = require('./CreateOrderRequestTax');
  * 
  * @alias module:model/CreateOrderRequest
  * @class
- * @param lineItems {Array.<module:model/CreateOrderRequestLineItem>} The line items to associate with this order.  Each line item represents a different product to include in a purchase.
  */
-var exports = function(lineItems) {
+var exports = function() {
   var _this = this;
 
 
 
-  _this['line_items'] = lineItems;
+
+
 
 
 };
@@ -52,6 +53,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('order')) {
+      obj['order'] = Order.constructFromObject(data['order']);
+    }
       if (data.hasOwnProperty('idempotency_key')) {
       obj['idempotency_key'] = ApiClient.convertToType(data['idempotency_key'], 'String');
     }
@@ -72,27 +76,32 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
+ * The order to create. If this field is set, then the only other top-level field that can be set is the idempotency_key.
+ * @member {module:model/Order} order
+ */
+exports.prototype['order'] = undefined;
+/**
  * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
+ * __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * The line items to associate with this order.  Each line item represents a different product to include in a purchase.
+ * __Deprecated__: Please set the line_items on the nested [order](#type-order) field instead.  The line items to associate with this order.  Each line item represents a different product to include in a purchase.
  * @member {Array.<module:model/CreateOrderRequestLineItem>} line_items
  */
 exports.prototype['line_items'] = undefined;
 /**
- * The taxes to include on the order.
+ * __Deprecated__: Please set the taxes on the nested [order](#type-order) field instead.  The taxes to include on the order.
  * @member {Array.<module:model/CreateOrderRequestTax>} taxes
  */
 exports.prototype['taxes'] = undefined;
 /**
- * The discounts to include on the order.
+ * __Deprecated__: Please set the discounts on the nested [order](#type-order) field instead.  The discounts to include on the order.
  * @member {Array.<module:model/CreateOrderRequestDiscount>} discounts
  */
 exports.prototype['discounts'] = undefined;

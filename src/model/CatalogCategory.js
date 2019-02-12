@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The category's name. Searchable.
+ * The category's name. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

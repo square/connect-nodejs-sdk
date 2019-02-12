@@ -106,22 +106,22 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The item's name. Searchable.
+ * The item's name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The item's description. Searchable.
+ * The item's description. Searchable. This field has max length of 4096 Unicode code points.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
 /**
- * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable.
+ * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
  * @member {String} abbreviation
  */
 exports.prototype['abbreviation'] = undefined;
 /**
- * The color of the item's display label in the Square Point of Sale app.
+ * The color of the item's display label in the Square Point of Sale app. This must be a valid hex color code.
  * @member {String} label_color
  */
 exports.prototype['label_color'] = undefined;

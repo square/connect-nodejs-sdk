@@ -137,12 +137,19 @@ var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
 var ObtainTokenResponse = require('./model/ObtainTokenResponse');
 var Order = require('./model/Order');
+var OrderFulfillment = require('./model/OrderFulfillment');
+var OrderFulfillmentPickupDetails = require('./model/OrderFulfillmentPickupDetails');
+var OrderFulfillmentPickupDetailsScheduleType = require('./model/OrderFulfillmentPickupDetailsScheduleType');
+var OrderFulfillmentRecipient = require('./model/OrderFulfillmentRecipient');
+var OrderFulfillmentState = require('./model/OrderFulfillmentState');
+var OrderFulfillmentType = require('./model/OrderFulfillmentType');
 var OrderLineItem = require('./model/OrderLineItem');
 var OrderLineItemDiscount = require('./model/OrderLineItemDiscount');
 var OrderLineItemDiscountScope = require('./model/OrderLineItemDiscountScope');
 var OrderLineItemDiscountType = require('./model/OrderLineItemDiscountType');
 var OrderLineItemModifier = require('./model/OrderLineItemModifier');
 var OrderLineItemTax = require('./model/OrderLineItemTax');
+var OrderLineItemTaxScope = require('./model/OrderLineItemTaxScope');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
 var Product = require('./model/Product');
 var Refund = require('./model/Refund');
@@ -281,7 +288,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20181212.0
+ * @version 2.20190213.0
  */
   module.exports = {
   /**
@@ -910,6 +917,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Order: Order,
   /**
+   * The OrderFulfillment model constructor.
+   * @property {module:model/OrderFulfillment}
+   */
+  OrderFulfillment: OrderFulfillment,
+  /**
+   * The OrderFulfillmentPickupDetails model constructor.
+   * @property {module:model/OrderFulfillmentPickupDetails}
+   */
+  OrderFulfillmentPickupDetails: OrderFulfillmentPickupDetails,
+  /**
+   * The OrderFulfillmentPickupDetailsScheduleType model constructor.
+   * @property {module:model/OrderFulfillmentPickupDetailsScheduleType}
+   */
+  OrderFulfillmentPickupDetailsScheduleType: OrderFulfillmentPickupDetailsScheduleType,
+  /**
+   * The OrderFulfillmentRecipient model constructor.
+   * @property {module:model/OrderFulfillmentRecipient}
+   */
+  OrderFulfillmentRecipient: OrderFulfillmentRecipient,
+  /**
+   * The OrderFulfillmentState model constructor.
+   * @property {module:model/OrderFulfillmentState}
+   */
+  OrderFulfillmentState: OrderFulfillmentState,
+  /**
+   * The OrderFulfillmentType model constructor.
+   * @property {module:model/OrderFulfillmentType}
+   */
+  OrderFulfillmentType: OrderFulfillmentType,
+  /**
    * The OrderLineItem model constructor.
    * @property {module:model/OrderLineItem}
    */
@@ -939,6 +976,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderLineItemTax}
    */
   OrderLineItemTax: OrderLineItemTax,
+  /**
+   * The OrderLineItemTaxScope model constructor.
+   * @property {module:model/OrderLineItemTaxScope}
+   */
+  OrderLineItemTaxScope: OrderLineItemTaxScope,
   /**
    * The OrderLineItemTaxType model constructor.
    * @property {module:model/OrderLineItemTaxType}
