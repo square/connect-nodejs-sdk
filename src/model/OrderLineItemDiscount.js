@@ -107,7 +107,7 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the discount applies. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
+ * Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
  * @member {module:model/OrderLineItemDiscount.ScopeEnum} scope
  */
 exports.prototype['scope'] = undefined;

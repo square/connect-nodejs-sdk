@@ -36,6 +36,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -63,6 +64,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('applied_money')) {
       obj['applied_money'] = Money.constructFromObject(data['applied_money']);
+    }
+      if (data.hasOwnProperty('scope')) {
+      obj['scope'] = ApiClient.convertToType(data['scope'], 'String');
     }
     }
   return obj;
@@ -93,6 +97,11 @@ exports.prototype['percentage'] = undefined;
  * @member {module:model/Money} applied_money
  */
 exports.prototype['applied_money'] = undefined;
+/**
+ * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
+ * @member {module:model/OrderLineItemTax.ScopeEnum} scope
+ */
+exports.prototype['scope'] = undefined;
 
 
   /**
@@ -116,6 +125,28 @@ exports.prototype['applied_money'] = undefined;
      * @const
      */
     "INCLUSIVE": "INCLUSIVE"  };
+
+  /**
+   * Allowed values for the <code>scope</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.ScopeEnum = {
+    /**
+     * value: "OTHER_TAX_SCOPE"
+     * @const
+     */
+    "OTHER_TAX_SCOPE": "OTHER_TAX_SCOPE",
+    /**
+     * value: "LINE_ITEM"
+     * @const
+     */
+    "LINE_ITEM": "LINE_ITEM",
+    /**
+     * value: "ORDER"
+     * @const
+     */
+    "ORDER": "ORDER"  };
 
 
 module.exports = exports;

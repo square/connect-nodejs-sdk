@@ -27,7 +27,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CreateOrderRequestLineItem</code>.
- * Represents a line item to include in an order. Each line item describes a different product to purchase, with its own quantity and price details.  Line items can either reference objects from the merchant&#39;s catalog, or can alternatively specify a name and price instead.
+ * __Deprecated__: Please use the [OrderLineItem](#type-orderlineitem) type in the order field of [CreateOrderRequest](#type-createorderrequest) instead.  Represents a line item to include in an order. Each line item describes a different product to purchase, with its own quantity and price details.  Line items can either reference objects from the merchant&#39;s catalog, or can alternatively specify a name and price instead.
  * @alias module:model/CreateOrderRequestLineItem
  * @class
  * @param quantity {String} The quantity to purchase, as a string representation of a number.  This string must have a positive integer value.

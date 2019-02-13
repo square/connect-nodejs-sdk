@@ -192,6 +192,8 @@ Name | Type | Description | Notes
 
 * `METHOD_NOT_ALLOWED` (value: `"METHOD_NOT_ALLOWED"`)
 
+* `NOT_ACCEPTABLE` (value: `"NOT_ACCEPTABLE"`)
+
 * `REQUEST_TIMEOUT` (value: `"REQUEST_TIMEOUT"`)
 
 * `CONFLICT` (value: `"CONFLICT"`)

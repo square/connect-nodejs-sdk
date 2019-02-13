@@ -34,7 +34,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCheckout
-   * Creates a [Checkout](#type-checkout) response that links a &#x60;checkoutId&#x60; and &#x60;checkout_page_url&#x60; that customers can be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
+   * Links a &#x60;checkoutId&#x60; to a &#x60;checkout_page_url&#x60; that customers will be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
    * @param {String} locationId The ID of the business location to associate the checkout with.
    * @param {module:model/CreateCheckoutRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCheckoutResponse} and HTTP response
@@ -60,7 +60,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2018-12-12';
+    headerParams['Square-Version'] = '2019-02-13';
 
     var formParams = {
     };
@@ -79,7 +79,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCheckout
-   * Creates a [Checkout](#type-checkout) response that links a &#x60;checkoutId&#x60; and &#x60;checkout_page_url&#x60; that customers can be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
+   * Links a &#x60;checkoutId&#x60; to a &#x60;checkout_page_url&#x60; that customers will be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
    * @param {String} locationId The ID of the business location to associate the checkout with.
    * @param {module:model/CreateCheckoutRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCheckoutResponse}

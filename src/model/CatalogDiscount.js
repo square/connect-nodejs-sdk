@@ -73,7 +73,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The discount's name. Searchable.
+ * The discount's name. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -98,7 +98,7 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['pin_required'] = undefined;
 /**
- * The color of the discount's display label in the Square Point of Sale app.
+ * The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
  * @member {String} label_color
  */
 exports.prototype['label_color'] = undefined;

@@ -13,7 +13,10 @@
  */
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
+var OrderFulfillment = require('./OrderFulfillment');
 var OrderLineItem = require('./OrderLineItem');
+var OrderLineItemDiscount = require('./OrderLineItemDiscount');
+var OrderLineItemTax = require('./OrderLineItemTax');
 
 
 
@@ -29,15 +32,17 @@ var OrderLineItem = require('./OrderLineItem');
  * @alias module:model/Order
  * @class
  * @param locationId {String} The ID of the merchant location this order is associated with.
- * @param lineItems {Array.<module:model/OrderLineItem>} The line items included in the order. Every order has at least one line item.
  */
-var exports = function(locationId, lineItems) {
+var exports = function(locationId) {
   var _this = this;
 
 
   _this['location_id'] = locationId;
 
-  _this['line_items'] = lineItems;
+
+
+
+
 
 
 
@@ -65,6 +70,15 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('line_items')) {
       obj['line_items'] = ApiClient.convertToType(data['line_items'], [OrderLineItem]);
+    }
+      if (data.hasOwnProperty('taxes')) {
+      obj['taxes'] = ApiClient.convertToType(data['taxes'], [OrderLineItemTax]);
+    }
+      if (data.hasOwnProperty('discounts')) {
+      obj['discounts'] = ApiClient.convertToType(data['discounts'], [OrderLineItemDiscount]);
+    }
+      if (data.hasOwnProperty('fulfillments')) {
+      obj['fulfillments'] = ApiClient.convertToType(data['fulfillments'], [OrderFulfillment]);
     }
       if (data.hasOwnProperty('total_money')) {
       obj['total_money'] = Money.constructFromObject(data['total_money']);
@@ -95,10 +109,25 @@ exports.prototype['location_id'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * The line items included in the order. Every order has at least one line item.
+ * The line items included in the order.
  * @member {Array.<module:model/OrderLineItem>} line_items
  */
 exports.prototype['line_items'] = undefined;
+/**
+ * A list of taxes applied to this order. On read or retrieve, this list includes both order-level and item-level taxes. When creating an Order, set your order-level taxes in this list.
+ * @member {Array.<module:model/OrderLineItemTax>} taxes
+ */
+exports.prototype['taxes'] = undefined;
+/**
+ * A list of discounts applied to this order. On read or retrieve, this list includes both order-level and item-level discounts. When creating an Order, set your order-level discounts in this list.
+ * @member {Array.<module:model/OrderLineItemDiscount>} discounts
+ */
+exports.prototype['discounts'] = undefined;
+/**
+ * Details on order fulfillment.  Orders can only be created with at most one fulfillment. However, orders returned by the API may contain multiple fulfillments.
+ * @member {Array.<module:model/OrderFulfillment>} fulfillments
+ */
+exports.prototype['fulfillments'] = undefined;
 /**
  * The total amount of money to collect for the order.
  * @member {module:model/Money} total_money

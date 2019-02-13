@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CreateOrderRequestDiscount</code>.
- * Represents a discount that can apply to either a single line item or an entire order.
+ * __Deprecated__: Please use the [OrderLineItemDiscount](#type-orderlineitemdiscount) type in the order field of [CreateOrderRequest](#type-createorderrequest) instead.  Represents a discount that can apply to either a single line item or an entire order.
  * @alias module:model/CreateOrderRequestDiscount
  * @class
  */
