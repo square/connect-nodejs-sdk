@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1UpdateModifierListRequest</code>.
+ * V1UpdateModifierListRequest
  * @alias module:model/V1UpdateModifierListRequest
  * @class
  */
@@ -60,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['name'] = undefined;
 /**
- * Indicates whether multiple options from the modifier list can be applied to a single item.
+ * Indicates whether multiple options from the modifier list can be applied to a single item. See [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values
  * @member {module:model/V1UpdateModifierListRequest.SelectionTypeEnum} selection_type
  */
 exports.prototype['selection_type'] = undefined;

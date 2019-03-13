@@ -23,9 +23,10 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1UpdateOrderRequest</code>.
+ * V1UpdateOrderRequest
  * @alias module:model/V1UpdateOrderRequest
  * @class
- * @param action {module:model/V1UpdateOrderRequest.ActionEnum} The action to perform on the order (COMPLETE, CANCEL, or REFUND).
+ * @param action {module:model/V1UpdateOrderRequest.ActionEnum} The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
  */
 var exports = function(action) {
   var _this = this;
@@ -68,7 +69,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The action to perform on the order (COMPLETE, CANCEL, or REFUND).
+ * The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
  * @member {module:model/V1UpdateOrderRequest.ActionEnum} action
  */
 exports.prototype['action'] = undefined;

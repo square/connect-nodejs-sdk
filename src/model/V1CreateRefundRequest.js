@@ -24,10 +24,11 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1CreateRefundRequest</code>.
+ * V1CreateRefundRequest
  * @alias module:model/V1CreateRefundRequest
  * @class
- * @param paymentId {String} The ID of the payment to refund. If you're creating a PARTIAL refund for a split tender payment, instead provide the id of the particular tender you want to refund. See Split Tender Payments for details.
- * @param type {module:model/V1CreateRefundRequest.TypeEnum} TThe type of refund (FULL or PARTIAL).
+ * @param paymentId {String} The ID of the payment to refund. If you are creating a `PARTIAL` refund for a split tender payment, instead provide the id of the particular tender you want to refund.
+ * @param type {module:model/V1CreateRefundRequest.TypeEnum} TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
  * @param reason {String} The reason for the refund.
  */
 var exports = function(paymentId, type, reason) {
@@ -71,12 +72,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the payment to refund. If you're creating a PARTIAL refund for a split tender payment, instead provide the id of the particular tender you want to refund. See Split Tender Payments for details.
+ * The ID of the payment to refund. If you are creating a `PARTIAL` refund for a split tender payment, instead provide the id of the particular tender you want to refund.
  * @member {String} payment_id
  */
 exports.prototype['payment_id'] = undefined;
 /**
- * TThe type of refund (FULL or PARTIAL).
+ * TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
  * @member {module:model/V1CreateRefundRequest.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

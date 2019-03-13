@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1Category</code>.
+ * V1Category
  * @alias module:model/V1Category
  * @class
  */

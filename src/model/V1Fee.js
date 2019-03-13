@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1Fee</code>.
+ * V1Fee
  * @alias module:model/V1Fee
  * @class
  */
@@ -98,12 +99,12 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['rate'] = undefined;
 /**
- * Forthcoming
+ * Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values
  * @member {module:model/V1Fee.CalculationPhaseEnum} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
 /**
- * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees.
+ * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees. See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values
  * @member {module:model/V1Fee.AdjustmentTypeEnum} adjustment_type
  */
 exports.prototype['adjustment_type'] = undefined;
@@ -118,12 +119,12 @@ exports.prototype['applies_to_custom_amounts'] = undefined;
  */
 exports.prototype['enabled'] = undefined;
 /**
- * Whether the fee is ADDITIVE or INCLUSIVE.
+ * Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values
  * @member {module:model/V1Fee.InclusionTypeEnum} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;
 /**
- * In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants.
+ * In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values
  * @member {module:model/V1Fee.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

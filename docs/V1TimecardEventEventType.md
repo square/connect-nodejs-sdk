@@ -1,0 +1,22 @@
+# SquareConnect.V1TimecardEventEventType
+
+## Enum
+
+
+* `API_CREATE` (value: `"API_CREATE"`)
+
+* `API_EDIT` (value: `"API_EDIT"`)
+
+* `API_DELETE` (value: `"API_DELETE"`)
+
+* `REGISTER_CLOCKIN` (value: `"REGISTER_CLOCKIN"`)
+
+* `REGISTER_CLOCKOUT` (value: `"REGISTER_CLOCKOUT"`)
+
+* `DASHBOARD_SUPERVISOR_CLOSE` (value: `"DASHBOARD_SUPERVISOR_CLOSE"`)
+
+* `DASHBOARD_EDIT` (value: `"DASHBOARD_EDIT"`)
+
+* `DASHBOARD_DELETE` (value: `"DASHBOARD_DELETE"`)
+
+

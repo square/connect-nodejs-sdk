@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1PaymentItemDetail</code>.
+ * V1PaymentItemDetail
  * @alias module:model/V1PaymentItemDetail
  * @class
  */

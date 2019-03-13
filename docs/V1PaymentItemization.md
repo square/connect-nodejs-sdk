@@ -1,11 +1,15 @@
 # SquareConnect.V1PaymentItemization
 
+### Description
+
+Payment include an` itemizations` field that lists the items purchased, along with associated fees, modifiers, and discounts. Each itemization has an `itemization_type` field that indicates which of the following the itemization represents:  <ul> <li>An item variation from the merchant's item library</li> <li>A custom monetary amount</li> <li> An action performed on a Square gift card, such as activating or reloading it. </li> </ul>  *Note**: itemization information included in a `Payment` object reflects details collected **at the time of the payment**. Details such as the name or price of items might have changed since the payment was processed.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | The item&#39;s name. | [optional] 
 **quantity** | **Number** | The quantity of the item purchased. This can be a decimal value. | [optional] 
-**itemization_type** | **String** | The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT | [optional] 
+**itemization_type** | **String** | The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT See [V1PaymentItemizationItemizationType](#type-v1paymentitemizationitemizationtype) for possible values | [optional] 
 **item_detail** | [**V1PaymentItemDetail**](V1PaymentItemDetail.md) | Details of the item, including its unique identifier and the identifier of the item variation purchased. | [optional] 
 **notes** | **String** | Notes entered by the merchant about the item at the time of payment, if any. | [optional] 
 **item_variation_name** | **String** | The name of the item variation purchased, if any. | [optional] 

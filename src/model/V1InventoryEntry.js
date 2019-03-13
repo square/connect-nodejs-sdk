@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1InventoryEntry</code>.
+ * V1InventoryEntry
  * @alias module:model/V1InventoryEntry
  * @class
  */

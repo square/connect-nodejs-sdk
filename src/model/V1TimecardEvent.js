@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1TimecardEvent</code>.
+ * V1TimecardEvent
  * @alias module:model/V1TimecardEvent
  * @class
  */
@@ -72,7 +73,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The ID of the timecard to list events for.
+ * The ID of the timecard to list events for. See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for possible values
  * @member {module:model/V1TimecardEvent.EventTypeEnum} event_type
  */
 exports.prototype['event_type'] = undefined;

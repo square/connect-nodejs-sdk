@@ -28,6 +28,7 @@ var V1Tender = require('./V1Tender');
 
 /**
  * Constructs a new <code>V1Order</code>.
+ * V1Order
  * @alias module:model/V1Order
  * @class
  */
@@ -177,7 +178,7 @@ exports.prototype['recipient_name'] = undefined;
  */
 exports.prototype['recipient_phone_number'] = undefined;
 /**
- * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+ * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible values
  * @member {module:model/V1Order.StateEnum} state
  */
 exports.prototype['state'] = undefined;

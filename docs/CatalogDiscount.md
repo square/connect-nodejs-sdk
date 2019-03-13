@@ -1,5 +1,9 @@
 # SquareConnect.CatalogDiscount
 
+### Description
+
+A discount in the Catalog object model.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,9 @@
 # SquareConnect.UpsertCatalogObjectResponse
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -122,7 +122,7 @@ exports.prototype['clockin_time'] = undefined;
  */
 exports.prototype['clockout_time'] = undefined;
 /**
- * The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard���s timezone and overtime rules.
+ * The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard’s timezone and overtime rules.
  * @member {String} clockin_location_id
  */
 exports.prototype['clockin_location_id'] = undefined;

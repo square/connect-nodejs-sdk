@@ -1,5 +1,9 @@
 # SquareConnect.CatalogModifier
 
+### Description
+
+A modifier in the Catalog object model.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

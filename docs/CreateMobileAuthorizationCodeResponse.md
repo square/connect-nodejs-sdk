@@ -1,5 +1,9 @@
 # SquareConnect.CreateMobileAuthorizationCodeResponse
 
+### Description
+
+Defines the fields that are included in the response body of a request to the [CreateMobileAuthorizationCode](#endpoint-createmobileauthorizationcode) endpoint.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -120,7 +120,7 @@ exports.prototype['authorized_location_ids'] = undefined;
  */
 exports.prototype['email'] = undefined;
 /**
- * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. 
+ * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values
  * @member {module:model/V1Employee.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

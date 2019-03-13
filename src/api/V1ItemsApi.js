@@ -43,7 +43,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Adjusts an item variation&#39;s current available inventory.
+   * AdjustInventory
    * Adjusts an item variation&#39;s current available inventory.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} variationId The ID of the variation to adjust inventory information for.
@@ -77,6 +77,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -94,7 +95,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Adjusts an item variation&#39;s current available inventory.
+   * AdjustInventory
    * Adjusts an item variation&#39;s current available inventory.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} variationId The ID of the variation to adjust inventory information for.
@@ -110,7 +111,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+   * ApplyFee
    * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
@@ -145,6 +146,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -162,7 +164,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+   * ApplyFee
    * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
@@ -178,7 +180,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+   * ApplyModifierList
    * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to apply.
@@ -213,6 +215,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -230,7 +233,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+   * ApplyModifierList
    * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to apply.
@@ -246,7 +249,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an item category.
+   * CreateCategory
    * Creates an item category.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -273,6 +276,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -290,7 +294,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an item category.
+   * CreateCategory
    * Creates an item category.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -305,7 +309,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates a discount.
+   * CreateDiscount
    * Creates a discount.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -332,6 +336,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -349,7 +354,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates a discount.
+   * CreateDiscount
    * Creates a discount.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -364,7 +369,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates a fee (tax).
+   * CreateFee
    * Creates a fee (tax).
    * @param {String} locationId The ID of the location to create a fee for.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -391,6 +396,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -408,7 +414,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates a fee (tax).
+   * CreateFee
    * Creates a fee (tax).
    * @param {String} locationId The ID of the location to create a fee for.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -423,8 +429,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an item and at least one variation for it.
-   * Creates an item and at least one variation for it.
+   * CreateItem
+   * Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
@@ -450,6 +456,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -467,8 +474,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an item and at least one variation for it.
-   * Creates an item and at least one variation for it.
+   * CreateItem
+   * Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Item}
@@ -482,7 +489,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an item modifier list and at least one modifier option for it.
+   * CreateModifierList
    * Creates an item modifier list and at least one modifier option for it.
    * @param {String} locationId The ID of the location to create a modifier list for.
    * @param {module:model/V1ModifierList} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -509,6 +516,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -526,7 +534,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an item modifier list and at least one modifier option for it.
+   * CreateModifierList
    * Creates an item modifier list and at least one modifier option for it.
    * @param {String} locationId The ID of the location to create a modifier list for.
    * @param {module:model/V1ModifierList} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -541,7 +549,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an item modifier option and adds it to a modifier list.
+   * CreateModifierOption
    * Creates an item modifier option and adds it to a modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -575,6 +583,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -592,7 +601,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an item modifier option and adds it to a modifier list.
+   * CreateModifierOption
    * Creates an item modifier option and adds it to a modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -608,7 +617,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates a Favorites page in Square Register.
+   * CreatePage
    * Creates a Favorites page in Square Register.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -635,6 +644,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -652,7 +662,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates a Favorites page in Square Register.
+   * CreatePage
    * Creates a Favorites page in Square Register.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -667,7 +677,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an item variation for an existing item.
+   * CreateVariation
    * Creates an item variation for an existing item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
@@ -701,6 +711,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -718,7 +729,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an item variation for an existing item.
+   * CreateVariation
    * Creates an item variation for an existing item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
@@ -734,8 +745,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing item category.
-   * Deletes an existing item category.
+   * DeleteCategory
+   * Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} categoryId The ID of the category to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Category} and HTTP response
@@ -762,6 +773,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -779,8 +791,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing item category.
-   * Deletes an existing item category.
+   * DeleteCategory
+   * Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} categoryId The ID of the category to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Category}
@@ -794,8 +806,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing discount.
-   * Deletes an existing discount.
+   * DeleteDiscount
+   * Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} discountId The ID of the discount to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Discount} and HTTP response
@@ -822,6 +834,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -839,8 +852,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing discount.
-   * Deletes an existing discount.
+   * DeleteDiscount
+   * Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} discountId The ID of the discount to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Discount}
@@ -854,8 +867,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing fee (tax).
-   * Deletes an existing fee (tax).
+   * DeleteFee
+   * Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Fee} and HTTP response
@@ -882,6 +895,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -899,8 +913,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing fee (tax).
-   * Deletes an existing fee (tax).
+   * DeleteFee
+   * Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Fee}
@@ -914,8 +928,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing item and all item variations associated with it.
-   * Deletes an existing item and all item variations associated with it.
+   * DeleteItem
+   * Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
@@ -942,6 +956,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -959,8 +974,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing item and all item variations associated with it.
-   * Deletes an existing item and all item variations associated with it.
+   * DeleteItem
+   * Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Item}
@@ -974,8 +989,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing item modifier list and all modifier options associated with it.
-   * Deletes an existing item modifier list and all modifier options associated with it.
+   * DeleteModifierList
+   * Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierList} and HTTP response
@@ -1002,6 +1017,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1019,8 +1035,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing item modifier list and all modifier options associated with it.
-   * Deletes an existing item modifier list and all modifier options associated with it.
+   * DeleteModifierList
+   * Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1ModifierList}
@@ -1034,8 +1050,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing item modifier option from a modifier list.
-   * Deletes an existing item modifier option from a modifier list.
+   * DeleteModifierOption
+   * Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
@@ -1069,6 +1085,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1086,8 +1103,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing item modifier option from a modifier list.
-   * Deletes an existing item modifier option from a modifier list.
+   * DeleteModifierOption
+   * Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
@@ -1102,8 +1119,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing Favorites page and all of its cells.
-   * Deletes an existing Favorites page and all of its cells.
+   * DeletePage
+   * Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
@@ -1130,6 +1147,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1147,8 +1165,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing Favorites page and all of its cells.
-   * Deletes an existing Favorites page and all of its cells.
+   * DeletePage
+   * Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Page}
@@ -1162,8 +1180,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes a cell from a Favorites page in Square Register.
-   * Deletes a cell from a Favorites page in Square Register.
+   * DeletePageCell
+   * Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @param {Object} opts Optional parameters
@@ -1196,6 +1214,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1213,8 +1232,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes a cell from a Favorites page in Square Register.
-   * Deletes a cell from a Favorites page in Square Register.
+   * DeletePageCell
+   * Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @param {Object} opts Optional parameters
@@ -1231,8 +1250,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes an existing item variation from an item.
-   * Deletes an existing item variation from an item.
+   * DeleteVariation
+   * Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to delete.
    * @param {String} variationId The ID of the variation to delete.
@@ -1266,6 +1285,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1283,8 +1303,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes an existing item variation from an item.
-   * Deletes an existing item variation from an item.
+   * DeleteVariation
+   * Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to delete.
    * @param {String} variationId The ID of the variation to delete.
@@ -1299,7 +1319,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Lists all of a location&#39;s item categories.
+   * ListCategories
    * Lists all of a location&#39;s item categories.
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Category>} and HTTP response
@@ -1320,6 +1340,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1337,7 +1358,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Lists all of a location&#39;s item categories.
+   * ListCategories
    * Lists all of a location&#39;s item categories.
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Category>}
@@ -1351,7 +1372,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Lists all of a location&#39;s discounts.
+   * ListDiscounts
    * Lists all of a location&#39;s discounts.
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Discount>} and HTTP response
@@ -1372,6 +1393,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1389,7 +1411,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Lists all of a location&#39;s discounts.
+   * ListDiscounts
    * Lists all of a location&#39;s discounts.
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Discount>}
@@ -1403,7 +1425,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Lists all of a location&#39;s fees (taxes).
+   * ListFees
    * Lists all of a location&#39;s fees (taxes).
    * @param {String} locationId The ID of the location to list fees for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Fee>} and HTTP response
@@ -1424,6 +1446,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1441,7 +1464,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Lists all of a location&#39;s fees (taxes).
+   * ListFees
    * Lists all of a location&#39;s fees (taxes).
    * @param {String} locationId The ID of the location to list fees for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Fee>}
@@ -1455,7 +1478,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
+   * ListInventory
    * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {Object} opts Optional parameters
@@ -1482,6 +1505,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1499,7 +1523,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
+   * ListInventory
    * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {Object} opts Optional parameters
@@ -1516,7 +1540,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides summary information for all of a location&#39;s items.
+   * ListItems
    * Provides summary information for all of a location&#39;s items.
    * @param {String} locationId The ID of the location to list items for.
    * @param {Object} opts Optional parameters
@@ -1541,6 +1565,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1558,7 +1583,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides summary information for all of a location&#39;s items.
+   * ListItems
    * Provides summary information for all of a location&#39;s items.
    * @param {String} locationId The ID of the location to list items for.
    * @param {Object} opts Optional parameters
@@ -1574,7 +1599,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Lists all of a location&#39;s modifier lists.
+   * ListModifierLists
    * Lists all of a location&#39;s modifier lists.
    * @param {String} locationId The ID of the location to list modifier lists for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1ModifierList>} and HTTP response
@@ -1595,6 +1620,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1612,7 +1638,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Lists all of a location&#39;s modifier lists.
+   * ListModifierLists
    * Lists all of a location&#39;s modifier lists.
    * @param {String} locationId The ID of the location to list modifier lists for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1ModifierList>}
@@ -1626,7 +1652,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Lists all of a location&#39;s Favorites pages in Square Register.
+   * ListPages
    * Lists all of a location&#39;s Favorites pages in Square Register.
    * @param {String} locationId The ID of the location to list Favorites pages for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Page>} and HTTP response
@@ -1647,6 +1673,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1664,7 +1691,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Lists all of a location&#39;s Favorites pages in Square Register.
+   * ListPages
    * Lists all of a location&#39;s Favorites pages in Square Register.
    * @param {String} locationId The ID of the location to list Favorites pages for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Page>}
@@ -1678,7 +1705,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+   * RemoveFee
    * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
@@ -1713,6 +1740,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1730,7 +1758,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+   * RemoveFee
    * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
@@ -1746,7 +1774,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+   * RemoveModifierList
    * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to remove.
@@ -1781,6 +1809,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1798,7 +1827,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+   * RemoveModifierList
    * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to remove.
@@ -1814,7 +1843,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single item, including associated modifier lists and fees.
+   * RetrieveItem
    * Provides the details for a single item, including associated modifier lists and fees.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
@@ -1842,6 +1871,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1859,7 +1889,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single item, including associated modifier lists and fees.
+   * RetrieveItem
    * Provides the details for a single item, including associated modifier lists and fees.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
@@ -1874,7 +1904,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single modifier list.
+   * RetrieveModifierList
    * Provides the details for a single modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The modifier list&#39;s ID.
@@ -1902,6 +1932,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1919,7 +1950,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single modifier list.
+   * RetrieveModifierList
    * Provides the details for a single modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The modifier list&#39;s ID.
@@ -1934,7 +1965,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing item category.
+   * UpdateCategory
    * Modifies the details of an existing item category.
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} categoryId The ID of the category to edit.
@@ -1968,6 +1999,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -1985,7 +2017,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing item category.
+   * UpdateCategory
    * Modifies the details of an existing item category.
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} categoryId The ID of the category to edit.
@@ -2001,7 +2033,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing discount.
+   * UpdateDiscount
    * Modifies the details of an existing discount.
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} discountId The ID of the discount to edit.
@@ -2035,6 +2067,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2052,7 +2085,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing discount.
+   * UpdateDiscount
    * Modifies the details of an existing discount.
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} discountId The ID of the discount to edit.
@@ -2068,7 +2101,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing fee (tax).
+   * UpdateFee
    * Modifies the details of an existing fee (tax).
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to edit.
@@ -2102,6 +2135,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2119,7 +2153,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing fee (tax).
+   * UpdateFee
    * Modifies the details of an existing fee (tax).
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to edit.
@@ -2135,7 +2169,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the core details of an existing item.
+   * UpdateItem
    * Modifies the core details of an existing item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
@@ -2169,6 +2203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2186,7 +2221,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the core details of an existing item.
+   * UpdateItem
    * Modifies the core details of an existing item.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
@@ -2202,7 +2237,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing item modifier list.
+   * UpdateModifierList
    * Modifies the details of an existing item modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -2236,6 +2271,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2253,7 +2289,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing item modifier list.
+   * UpdateModifierList
    * Modifies the details of an existing item modifier list.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -2269,7 +2305,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing item modifier option.
+   * UpdateModifierOption
    * Modifies the details of an existing item modifier option.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -2310,6 +2346,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2327,7 +2364,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing item modifier option.
+   * UpdateModifierOption
    * Modifies the details of an existing item modifier option.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
@@ -2344,7 +2381,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of a Favorites page in Square Register.
+   * UpdatePage
    * Modifies the details of a Favorites page in Square Register.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location
    * @param {String} pageId The ID of the page to modify.
@@ -2378,6 +2415,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2395,7 +2433,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of a Favorites page in Square Register.
+   * UpdatePage
    * Modifies the details of a Favorites page in Square Register.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location
    * @param {String} pageId The ID of the page to modify.
@@ -2411,7 +2449,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies a cell of a Favorites page in Square Register.
+   * UpdatePageCell
    * Modifies a cell of a Favorites page in Square Register.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page the cell belongs to.
@@ -2445,6 +2483,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2462,7 +2501,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies a cell of a Favorites page in Square Register.
+   * UpdatePageCell
    * Modifies a cell of a Favorites page in Square Register.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page the cell belongs to.
@@ -2478,7 +2517,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an existing item variation.
+   * UpdateVariation
    * Modifies the details of an existing item variation.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
@@ -2519,6 +2558,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -2536,7 +2576,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an existing item variation.
+   * UpdateVariation
    * Modifies the details of an existing item variation.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.

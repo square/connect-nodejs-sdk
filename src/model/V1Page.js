@@ -24,6 +24,7 @@ var V1PageCell = require('./V1PageCell');
 
 /**
  * Constructs a new <code>V1Page</code>.
+ * V1Page
  * @alias module:model/V1Page
  * @class
  */

@@ -1,5 +1,9 @@
 # SquareConnect.V1MerchantLocationDetails
 
+### Description
+
+Additional information for a single-location account specified by its associated business account, if it has one.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

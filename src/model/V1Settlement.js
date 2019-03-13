@@ -25,6 +25,7 @@ var V1SettlementEntry = require('./V1SettlementEntry');
 
 /**
  * Constructs a new <code>V1Settlement</code>.
+ * V1Settlement
  * @alias module:model/V1Settlement
  * @class
  */
@@ -78,7 +79,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The settlement's current status.
+ * The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values
  * @member {module:model/V1Settlement.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

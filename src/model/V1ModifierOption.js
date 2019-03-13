@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1ModifierOption</code>.
+ * V1ModifierOption
  * @alias module:model/V1ModifierOption
  * @class
  */

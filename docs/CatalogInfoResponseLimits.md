@@ -1,5 +1,9 @@
 # SquareConnect.CatalogInfoResponseLimits
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

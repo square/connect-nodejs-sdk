@@ -1,5 +1,9 @@
 # SquareConnect.BatchRetrieveOrdersRequest
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -4,15 +4,15 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listLocations**](V1LocationsApi.md#listLocations) | **GET** /v1/me/locations | Provides details for a business&#39;s locations, including their IDs.
-[**retrieveBusiness**](V1LocationsApi.md#retrieveBusiness) | **GET** /v1/me | Get a business&#39;s information.
+[**listLocations**](V1LocationsApi.md#listLocations) | **GET** /v1/me/locations | ListLocations
+[**retrieveBusiness**](V1LocationsApi.md#retrieveBusiness) | **GET** /v1/me | RetrieveBusiness
 
 
 <a name="listLocations"></a>
 # **listLocations**
 > [V1Merchant] listLocations()
 
-Provides details for a business&#39;s locations, including their IDs.
+ListLocations
 
 Provides details for a business&#39;s locations, including their IDs.
 
@@ -54,7 +54,7 @@ This endpoint does not need any parameter.
 # **retrieveBusiness**
 > V1Merchant retrieveBusiness()
 
-Get a business&#39;s information.
+RetrieveBusiness
 
 Get a business&#39;s information.
 

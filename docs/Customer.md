@@ -1,5 +1,9 @@
 # SquareConnect.Customer
 
+### Description
+
+Represents one of a business's customers, which can have one or more cards on file associated with it.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

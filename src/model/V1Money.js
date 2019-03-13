@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['amount'] = undefined;
 /**
- * 
+ *  See [Currency](#type-currency) for possible values
  * @member {module:model/V1Money.CurrencyCodeEnum} currency_code
  */
 exports.prototype['currency_code'] = undefined;
@@ -73,6 +73,11 @@ exports.prototype['currency_code'] = undefined;
    * @readonly
    */
   exports.CurrencyCodeEnum = {
+    /**
+     * value: "UNKNOWN_CURRENCY"
+     * @const
+     */
+    "UNKNOWN_CURRENCY": "UNKNOWN_CURRENCY",
     /**
      * value: "AED"
      * @const

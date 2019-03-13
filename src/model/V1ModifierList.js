@@ -24,6 +24,7 @@ var V1ModifierOption = require('./V1ModifierOption');
 
 /**
  * Constructs a new <code>V1ModifierList</code>.
+ * V1ModifierList
  * @alias module:model/V1ModifierList
  * @class
  */
@@ -74,7 +75,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item.
+ * Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item. See [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values
  * @member {module:model/V1ModifierList.SelectionTypeEnum} selection_type
  */
 exports.prototype['selection_type'] = undefined;

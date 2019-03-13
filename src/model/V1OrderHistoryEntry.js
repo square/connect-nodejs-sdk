@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1OrderHistoryEntry</code>.
+ * V1OrderHistoryEntry
  * @alias module:model/V1OrderHistoryEntry
  * @class
  */
@@ -55,7 +56,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The type of action performed on the order.
+ * The type of action performed on the order. See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for possible values
  * @member {module:model/V1OrderHistoryEntry.ActionEnum} action
  */
 exports.prototype['action'] = undefined;

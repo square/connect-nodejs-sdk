@@ -97,8 +97,8 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('business_type')) {
       obj['business_type'] = ApiClient.convertToType(data['business_type'], 'String');
     }
-      if (data.hasOwnProperty('shipping_address ')) {
-      obj['shipping_address '] = Address.constructFromObject(data['shipping_address ']);
+      if (data.hasOwnProperty('shipping_address')) {
+      obj['shipping_address'] = Address.constructFromObject(data['shipping_address']);
     }
       if (data.hasOwnProperty('location_details')) {
       obj['location_details'] = V1MerchantLocationDetails.constructFromObject(data['location_details']);
@@ -126,7 +126,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['email'] = undefined;
 /**
- * Indicates whether the merchant account corresponds to a single-location account (LOCATION) or a business account (BUSINESS). This value is almost always LOCATION.
+ * Indicates whether the merchant account corresponds to a single-location account (LOCATION) or a business account (BUSINESS). This value is almost always LOCATION. See [V1MerchantAccountType](#type-v1merchantaccounttype) for possible values
  * @member {module:model/V1Merchant.AccountTypeEnum} account_type
  */
 exports.prototype['account_type'] = undefined;
@@ -166,16 +166,17 @@ exports.prototype['business_address'] = undefined;
  */
 exports.prototype['business_phone'] = undefined;
 /**
- * The type of business operated by the merchant.
+ * The type of business operated by the merchant. See [V1MerchantBusinessType](#type-v1merchantbusinesstype) for possible values
  * @member {module:model/V1Merchant.BusinessTypeEnum} business_type
  */
 exports.prototype['business_type'] = undefined;
 /**
  * The merchant's shipping address.
- * @member {module:model/Address} shipping_address 
+ * @member {module:model/Address} shipping_address
  */
-exports.prototype['shipping_address '] = undefined;
+exports.prototype['shipping_address'] = undefined;
 /**
+ * Additional information for a single-location account specified by its associated business account, if it has one.
  * @member {module:model/V1MerchantLocationDetails} location_details
  */
 exports.prototype['location_details'] = undefined;
