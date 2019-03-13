@@ -26,6 +26,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1CashDrawerShift</code>.
+ * V1CashDrawerShift
  * @alias module:model/V1CashDrawerShift
  * @class
  */
@@ -131,7 +132,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The shift's current state.
+ * The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values
  * @member {module:model/V1CashDrawerShift.EventTypeEnum} event_type
  */
 exports.prototype['event_type'] = undefined;

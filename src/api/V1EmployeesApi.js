@@ -36,8 +36,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an employee for a business.
-   * Creates an employee for a business.
+   * CreateEmployee
+   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Employee} and HTTP response
    */
@@ -56,6 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -73,8 +74,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an employee for a business.
-   * Creates an employee for a business.
+   * CreateEmployee
+   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Employee}
    */
@@ -87,8 +88,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates an employee role you can then assign to employees.
-   * Creates an employee role you can then assign to employees.
+   * CreateEmployeeRole
+   * Creates an employee role you can then assign to employees.  Square accounts can include any number of roles that can be assigned to employees. These roles define the actions and permissions granted to an employee with that role. For example, an employee with a \&quot;Shift Manager\&quot; role might be able to issue refunds in Square Point of Sale, whereas an employee with a \&quot;Clerk\&quot; role might not.  Roles are assigned with the [V1UpdateEmployee](#endpoint-v1updateemployee) endpoint. An employee can have only one role at a time.  If an employee has no role, they have none of the permissions associated with roles. All employees can accept payments with Square Point of Sale.
    * @param {module:model/V1EmployeeRole} employeeRole An EmployeeRole object with a name and permissions, and an optional owner flag.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1EmployeeRole} and HTTP response
    */
@@ -107,6 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -124,8 +126,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates an employee role you can then assign to employees.
-   * Creates an employee role you can then assign to employees.
+   * CreateEmployeeRole
+   * Creates an employee role you can then assign to employees.  Square accounts can include any number of roles that can be assigned to employees. These roles define the actions and permissions granted to an employee with that role. For example, an employee with a \&quot;Shift Manager\&quot; role might be able to issue refunds in Square Point of Sale, whereas an employee with a \&quot;Clerk\&quot; role might not.  Roles are assigned with the [V1UpdateEmployee](#endpoint-v1updateemployee) endpoint. An employee can have only one role at a time.  If an employee has no role, they have none of the permissions associated with roles. All employees can accept payments with Square Point of Sale.
    * @param {module:model/V1EmployeeRole} employeeRole An EmployeeRole object with a name and permissions, and an optional owner flag.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1EmployeeRole}
    */
@@ -138,8 +140,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Creates a timecard for an employee. Each timecard corresponds to a single shift.
-   * Creates a timecard for an employee. Each timecard corresponds to a single shift.
+   * CreateTimecard
+   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value. To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
    */
@@ -158,6 +160,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -175,8 +178,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Creates a timecard for an employee. Each timecard corresponds to a single shift.
-   * Creates a timecard for an employee. Each timecard corresponds to a single shift.
+   * CreateTimecard
+   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value. To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}
    */
@@ -189,8 +192,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
-   * Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+   * DeleteTimecard
+   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object} and HTTP response
    */
@@ -210,6 +213,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -227,8 +231,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
-   * Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+   * DeleteTimecard
+   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object}
    */
@@ -241,7 +245,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
+   * ListCashDrawerShifts
    * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
@@ -270,6 +274,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -287,7 +292,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
+   * ListCashDrawerShifts
    * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
@@ -305,10 +310,10 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides summary information for all of a business&#39;s employee roles.
+   * ListEmployeeRoles
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1EmployeeRole>} and HTTP response
@@ -327,6 +332,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -344,10 +350,10 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides summary information for all of a business&#39;s employee roles.
+   * ListEmployeeRoles
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1EmployeeRole>}
@@ -361,10 +367,10 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides summary information for all of a business&#39;s employees.
+   * ListEmployees
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
@@ -395,6 +401,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -412,10 +419,10 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides summary information for all of a business&#39;s employees.
+   * ListEmployees
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
@@ -435,8 +442,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides summary information for all events associated with a particular timecard.
-   * Provides summary information for all events associated with a particular timecard.
+   * ListTimecardEvents
+   * Provides summary information for all events associated with a particular timecard.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1TimecardEvent>} and HTTP response
    */
@@ -450,12 +457,13 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
-      'timecard_id': timecardId
     };
     var queryParams = {
+      'timecard_id': timecardId
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -473,8 +481,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides summary information for all events associated with a particular timecard.
-   * Provides summary information for all events associated with a particular timecard.
+   * ListTimecardEvents
+   * Provides summary information for all events associated with a particular timecard.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1TimecardEvent>}
    */
@@ -487,7 +495,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides summary information for all of a business&#39;s employee timecards.
+   * ListTimecards
    * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
    * @param {module:model/String} opts.order The order in which timecards are listed in the response, based on their created_at field.
@@ -525,6 +533,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -542,7 +551,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides summary information for all of a business&#39;s employee timecards.
+   * ListTimecards
    * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
    * @param {module:model/String} opts.order The order in which timecards are listed in the response, based on their created_at field.
@@ -567,7 +576,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
+   * RetrieveCashDrawerShift
    * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {String} shiftId The shift&#39;s ID.
@@ -595,6 +604,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -612,7 +622,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
+   * RetrieveCashDrawerShift
    * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {String} shiftId The shift&#39;s ID.
@@ -627,7 +637,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single employee.
+   * RetrieveEmployee
    * Provides the details for a single employee.
    * @param {String} employeeId The employee&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Employee} and HTTP response
@@ -648,6 +658,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -665,7 +676,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single employee.
+   * RetrieveEmployee
    * Provides the details for a single employee.
    * @param {String} employeeId The employee&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Employee}
@@ -679,7 +690,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single employee role.
+   * RetrieveEmployeeRole
    * Provides the details for a single employee role.
    * @param {String} roleId The role&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1EmployeeRole} and HTTP response
@@ -700,6 +711,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -717,7 +729,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single employee role.
+   * RetrieveEmployeeRole
    * Provides the details for a single employee role.
    * @param {String} roleId The role&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1EmployeeRole}
@@ -731,8 +743,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides the details for a single timecard.
-   * Provides the details for a single timecard.
+   * RetrieveTimecard
+   * Provides the details for a single timecard. &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The timecard&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
    */
@@ -752,6 +764,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -769,8 +782,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides the details for a single timecard.
-   * Provides the details for a single timecard.
+   * RetrieveTimecard
+   * Provides the details for a single timecard. &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The timecard&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}
    */
@@ -783,7 +796,8 @@ module.exports = function(apiClient) {
 
 
   /**
-   * V1 UpdateEmployee
+   * UpdateEmployee
+   * 
    * @param {String} employeeId The ID of the role to modify.
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Employee} and HTTP response
@@ -809,6 +823,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -826,7 +841,8 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * V1 UpdateEmployee
+   * UpdateEmployee
+   * 
    * @param {String} employeeId The ID of the role to modify.
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Employee}
@@ -840,7 +856,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies the details of an employee role.
+   * UpdateEmployeeRole
    * Modifies the details of an employee role.
    * @param {String} roleId The ID of the role to modify.
    * @param {module:model/V1EmployeeRole} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -867,6 +883,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -884,7 +901,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies the details of an employee role.
+   * UpdateEmployeeRole
    * Modifies the details of an employee role.
    * @param {String} roleId The ID of the role to modify.
    * @param {module:model/V1EmployeeRole} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -899,10 +916,10 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
-   * Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
+   * UpdateTimecard
+   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
    * @param {String} timecardId TThe ID of the timecard to modify.
-   * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @param {module:model/V1Timecard} body An object containing the fields to POST for the request. See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
    */
   this.updateTimecardWithHttpInfo = function(timecardId, body) {
@@ -926,6 +943,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -943,10 +961,10 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
-   * Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
+   * UpdateTimecard
+   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
    * @param {String} timecardId TThe ID of the timecard to modify.
-   * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @param {module:model/V1Timecard} body An object containing the fields to POST for the request. See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}
    */
   this.updateTimecard = function(timecardId, body) {

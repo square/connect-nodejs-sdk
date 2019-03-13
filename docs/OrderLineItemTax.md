@@ -1,5 +1,9 @@
 # SquareConnect.OrderLineItemTax
 
+### Description
+
+Represents a tax that applies to one or more line items in an order.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

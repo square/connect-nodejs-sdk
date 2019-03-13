@@ -116,7 +116,7 @@ exports.prototype['cardholder_name'] = undefined;
  */
 exports.prototype['billing_address'] = undefined;
 /**
- * __Not currently set.__ Intended as a Square-assigned identifier, based  on the card number, to identify the card across multiple locations within a single application.
+ * __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application.
  * @member {String} fingerprint
  */
 exports.prototype['fingerprint'] = undefined;

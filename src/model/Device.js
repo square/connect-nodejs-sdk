@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>Device</code>.
+ * 
  * @alias module:model/Device
  * @class
  */

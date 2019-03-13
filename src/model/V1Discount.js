@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1Discount</code>.
+ * V1Discount
  * @alias module:model/V1Discount
  * @class
  */
@@ -96,7 +97,7 @@ exports.prototype['rate'] = undefined;
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * Indicates whether the discount is a FIXED value or entered at the time of sale.
+ * Indicates whether the discount is a FIXED value or entered at the time of sale. See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values
  * @member {module:model/V1Discount.DiscountTypeEnum} discount_type
  */
 exports.prototype['discount_type'] = undefined;
@@ -106,7 +107,7 @@ exports.prototype['discount_type'] = undefined;
  */
 exports.prototype['pin_required'] = undefined;
 /**
- * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+ * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
  * @member {module:model/V1Discount.ColorEnum} color
  */
 exports.prototype['color'] = undefined;

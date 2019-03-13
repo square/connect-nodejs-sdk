@@ -1,5 +1,9 @@
 # SquareConnect.OrderLineItemModifier
 
+### Description
+
+A [CatalogModifier](#type-catalogmodifier).
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

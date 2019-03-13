@@ -26,6 +26,7 @@ var V1PaymentTax = require('./V1PaymentTax');
 
 /**
  * Constructs a new <code>V1Refund</code>.
+ * V1Refund
  * @alias module:model/V1Refund
  * @class
  */
@@ -122,7 +123,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The type of refund 
+ * The type of refund See [V1RefundType](#type-v1refundtype) for possible values
  * @member {module:model/V1Refund.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

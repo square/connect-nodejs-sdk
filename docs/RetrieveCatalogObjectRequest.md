@@ -1,5 +1,9 @@
 # SquareConnect.RetrieveCatalogObjectRequest
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

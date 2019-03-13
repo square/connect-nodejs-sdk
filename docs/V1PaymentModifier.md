@@ -1,5 +1,9 @@
 # SquareConnect.V1PaymentModifier
 
+### Description
+
+V1PaymentModifier
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

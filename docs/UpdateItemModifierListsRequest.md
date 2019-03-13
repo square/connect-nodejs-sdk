@@ -1,5 +1,9 @@
 # SquareConnect.UpdateItemModifierListsRequest
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1BankAccount</code>.
+ * V1BankAccount
  * @alias module:model/V1BankAccount
  * @class
  */
@@ -114,7 +115,7 @@ exports.prototype['account_number_suffix'] = undefined;
  */
 exports.prototype['currency_code'] = undefined;
 /**
- * The bank account's type (for example, savings or checking).
+ * The bank account's type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for possible values
  * @member {module:model/V1BankAccount.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

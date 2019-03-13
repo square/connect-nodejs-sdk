@@ -1,10 +1,14 @@
 # SquareConnect.V1CashDrawerShift
 
+### Description
+
+V1CashDrawerShift
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | The shift&#39;s unique ID. | [optional] 
-**event_type** | **String** | The shift&#39;s current state. | [optional] 
+**event_type** | **String** | The shift&#39;s current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values | [optional] 
 **opened_at** | **String** | The time when the shift began, in ISO 8601 format. | [optional] 
 **ended_at** | **Boolean** | The time when the shift ended, in ISO 8601 format. | [optional] 
 **closed_at** | **String** | The time when the shift was closed, in ISO 8601 format. | [optional] 

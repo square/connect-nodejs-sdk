@@ -31,6 +31,7 @@ var BatchRetrieveOrdersRequest = require('./model/BatchRetrieveOrdersRequest');
 var BatchRetrieveOrdersResponse = require('./model/BatchRetrieveOrdersResponse');
 var BatchUpsertCatalogObjectsRequest = require('./model/BatchUpsertCatalogObjectsRequest');
 var BatchUpsertCatalogObjectsResponse = require('./model/BatchUpsertCatalogObjectsResponse');
+var BreakType = require('./model/BreakType');
 var CaptureTransactionRequest = require('./model/CaptureTransactionRequest');
 var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
@@ -69,6 +70,8 @@ var ChargeRequestAdditionalRecipient = require('./model/ChargeRequestAdditionalR
 var ChargeResponse = require('./model/ChargeResponse');
 var Checkout = require('./model/Checkout');
 var Country = require('./model/Country');
+var CreateBreakTypeRequest = require('./model/CreateBreakTypeRequest');
+var CreateBreakTypeResponse = require('./model/CreateBreakTypeResponse');
 var CreateCheckoutRequest = require('./model/CreateCheckoutRequest');
 var CreateCheckoutResponse = require('./model/CreateCheckoutResponse');
 var CreateCustomerCardRequest = require('./model/CreateCustomerCardRequest');
@@ -85,6 +88,8 @@ var CreateOrderRequestTax = require('./model/CreateOrderRequestTax');
 var CreateOrderResponse = require('./model/CreateOrderResponse');
 var CreateRefundRequest = require('./model/CreateRefundRequest');
 var CreateRefundResponse = require('./model/CreateRefundResponse');
+var CreateShiftRequest = require('./model/CreateShiftRequest');
+var CreateShiftResponse = require('./model/CreateShiftResponse');
 var Currency = require('./model/Currency');
 var Customer = require('./model/Customer');
 var CustomerCreationSource = require('./model/CustomerCreationSource');
@@ -96,16 +101,30 @@ var CustomerPreferences = require('./model/CustomerPreferences');
 var CustomerQuery = require('./model/CustomerQuery');
 var CustomerSort = require('./model/CustomerSort');
 var CustomerSortField = require('./model/CustomerSortField');
+var DateRange = require('./model/DateRange');
+var DeleteBreakTypeRequest = require('./model/DeleteBreakTypeRequest');
+var DeleteBreakTypeResponse = require('./model/DeleteBreakTypeResponse');
 var DeleteCatalogObjectRequest = require('./model/DeleteCatalogObjectRequest');
 var DeleteCatalogObjectResponse = require('./model/DeleteCatalogObjectResponse');
 var DeleteCustomerCardRequest = require('./model/DeleteCustomerCardRequest');
 var DeleteCustomerCardResponse = require('./model/DeleteCustomerCardResponse');
 var DeleteCustomerRequest = require('./model/DeleteCustomerRequest');
 var DeleteCustomerResponse = require('./model/DeleteCustomerResponse');
+var DeleteShiftRequest = require('./model/DeleteShiftRequest');
+var DeleteShiftResponse = require('./model/DeleteShiftResponse');
 var Device = require('./model/Device');
+var Employee = require('./model/Employee');
+var EmployeeStatus = require('./model/EmployeeStatus');
+var EmployeeWage = require('./model/EmployeeWage');
 var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
+var GetBreakTypeRequest = require('./model/GetBreakTypeRequest');
+var GetBreakTypeResponse = require('./model/GetBreakTypeResponse');
+var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
+var GetEmployeeWageResponse = require('./model/GetEmployeeWageResponse');
+var GetShiftRequest = require('./model/GetShiftRequest');
+var GetShiftResponse = require('./model/GetShiftResponse');
 var InventoryAdjustment = require('./model/InventoryAdjustment');
 var InventoryAlertType = require('./model/InventoryAlertType');
 var InventoryChange = require('./model/InventoryChange');
@@ -119,20 +138,29 @@ var ListAdditionalRecipientReceivableRefundsRequest = require('./model/ListAddit
 var ListAdditionalRecipientReceivableRefundsResponse = require('./model/ListAdditionalRecipientReceivableRefundsResponse');
 var ListAdditionalRecipientReceivablesRequest = require('./model/ListAdditionalRecipientReceivablesRequest');
 var ListAdditionalRecipientReceivablesResponse = require('./model/ListAdditionalRecipientReceivablesResponse');
+var ListBreakTypesRequest = require('./model/ListBreakTypesRequest');
+var ListBreakTypesResponse = require('./model/ListBreakTypesResponse');
 var ListCatalogRequest = require('./model/ListCatalogRequest');
 var ListCatalogResponse = require('./model/ListCatalogResponse');
 var ListCustomersRequest = require('./model/ListCustomersRequest');
 var ListCustomersResponse = require('./model/ListCustomersResponse');
+var ListEmployeeWagesRequest = require('./model/ListEmployeeWagesRequest');
+var ListEmployeeWagesResponse = require('./model/ListEmployeeWagesResponse');
+var ListEmployeesRequest = require('./model/ListEmployeesRequest');
+var ListEmployeesResponse = require('./model/ListEmployeesResponse');
 var ListLocationsRequest = require('./model/ListLocationsRequest');
 var ListLocationsResponse = require('./model/ListLocationsResponse');
 var ListRefundsRequest = require('./model/ListRefundsRequest');
 var ListRefundsResponse = require('./model/ListRefundsResponse');
 var ListTransactionsRequest = require('./model/ListTransactionsRequest');
 var ListTransactionsResponse = require('./model/ListTransactionsResponse');
+var ListWorkweekConfigsRequest = require('./model/ListWorkweekConfigsRequest');
+var ListWorkweekConfigsResponse = require('./model/ListWorkweekConfigsResponse');
 var Location = require('./model/Location');
 var LocationCapability = require('./model/LocationCapability');
 var LocationStatus = require('./model/LocationStatus');
 var LocationType = require('./model/LocationType');
+var ModelBreak = require('./model/ModelBreak');
 var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
 var ObtainTokenResponse = require('./model/ObtainTokenResponse');
@@ -163,6 +191,8 @@ var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest
 var RetrieveCatalogObjectResponse = require('./model/RetrieveCatalogObjectResponse');
 var RetrieveCustomerRequest = require('./model/RetrieveCustomerRequest');
 var RetrieveCustomerResponse = require('./model/RetrieveCustomerResponse');
+var RetrieveEmployeeRequest = require('./model/RetrieveEmployeeRequest');
+var RetrieveEmployeeResponse = require('./model/RetrieveEmployeeResponse');
 var RetrieveInventoryAdjustmentRequest = require('./model/RetrieveInventoryAdjustmentRequest');
 var RetrieveInventoryAdjustmentResponse = require('./model/RetrieveInventoryAdjustmentResponse');
 var RetrieveInventoryChangesRequest = require('./model/RetrieveInventoryChangesRequest');
@@ -179,6 +209,18 @@ var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest')
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
 var SearchCustomersResponse = require('./model/SearchCustomersResponse');
+var SearchShiftsRequest = require('./model/SearchShiftsRequest');
+var SearchShiftsResponse = require('./model/SearchShiftsResponse');
+var Shift = require('./model/Shift');
+var ShiftFilter = require('./model/ShiftFilter');
+var ShiftFilterStatus = require('./model/ShiftFilterStatus');
+var ShiftQuery = require('./model/ShiftQuery');
+var ShiftSort = require('./model/ShiftSort');
+var ShiftSortField = require('./model/ShiftSortField');
+var ShiftStatus = require('./model/ShiftStatus');
+var ShiftWage = require('./model/ShiftWage');
+var ShiftWorkday = require('./model/ShiftWorkday');
+var ShiftWorkdayMatcher = require('./model/ShiftWorkdayMatcher');
 var SortOrder = require('./model/SortOrder');
 var SourceApplication = require('./model/SourceApplication');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
@@ -192,61 +234,191 @@ var TenderType = require('./model/TenderType');
 var TimeRange = require('./model/TimeRange');
 var Transaction = require('./model/Transaction');
 var TransactionProduct = require('./model/TransactionProduct');
+var UpdateBreakTypeRequest = require('./model/UpdateBreakTypeRequest');
+var UpdateBreakTypeResponse = require('./model/UpdateBreakTypeResponse');
 var UpdateCustomerRequest = require('./model/UpdateCustomerRequest');
 var UpdateCustomerResponse = require('./model/UpdateCustomerResponse');
 var UpdateItemModifierListsRequest = require('./model/UpdateItemModifierListsRequest');
 var UpdateItemModifierListsResponse = require('./model/UpdateItemModifierListsResponse');
 var UpdateItemTaxesRequest = require('./model/UpdateItemTaxesRequest');
 var UpdateItemTaxesResponse = require('./model/UpdateItemTaxesResponse');
+var UpdateShiftRequest = require('./model/UpdateShiftRequest');
+var UpdateShiftResponse = require('./model/UpdateShiftResponse');
+var UpdateWorkweekConfigRequest = require('./model/UpdateWorkweekConfigRequest');
+var UpdateWorkweekConfigResponse = require('./model/UpdateWorkweekConfigResponse');
 var UpsertCatalogObjectRequest = require('./model/UpsertCatalogObjectRequest');
 var UpsertCatalogObjectResponse = require('./model/UpsertCatalogObjectResponse');
 var V1AdjustInventoryRequest = require('./model/V1AdjustInventoryRequest');
+var V1AdjustInventoryRequestAdjustmentType = require('./model/V1AdjustInventoryRequestAdjustmentType');
+var V1ApplyFeeRequest = require('./model/V1ApplyFeeRequest');
+var V1ApplyModifierListRequest = require('./model/V1ApplyModifierListRequest');
 var V1BankAccount = require('./model/V1BankAccount');
+var V1BankAccountType = require('./model/V1BankAccountType');
 var V1CashDrawerEvent = require('./model/V1CashDrawerEvent');
+var V1CashDrawerEventEventType = require('./model/V1CashDrawerEventEventType');
 var V1CashDrawerShift = require('./model/V1CashDrawerShift');
+var V1CashDrawerShiftEventType = require('./model/V1CashDrawerShiftEventType');
 var V1Category = require('./model/V1Category');
+var V1CreateCategoryRequest = require('./model/V1CreateCategoryRequest');
+var V1CreateDiscountRequest = require('./model/V1CreateDiscountRequest');
+var V1CreateEmployeeRoleRequest = require('./model/V1CreateEmployeeRoleRequest');
+var V1CreateFeeRequest = require('./model/V1CreateFeeRequest');
+var V1CreateItemRequest = require('./model/V1CreateItemRequest');
+var V1CreateModifierListRequest = require('./model/V1CreateModifierListRequest');
+var V1CreateModifierOptionRequest = require('./model/V1CreateModifierOptionRequest');
+var V1CreatePageRequest = require('./model/V1CreatePageRequest');
 var V1CreateRefundRequest = require('./model/V1CreateRefundRequest');
+var V1CreateRefundRequestType = require('./model/V1CreateRefundRequestType');
+var V1CreateVariationRequest = require('./model/V1CreateVariationRequest');
+var V1DeleteCategoryRequest = require('./model/V1DeleteCategoryRequest');
+var V1DeleteDiscountRequest = require('./model/V1DeleteDiscountRequest');
+var V1DeleteFeeRequest = require('./model/V1DeleteFeeRequest');
+var V1DeleteItemRequest = require('./model/V1DeleteItemRequest');
+var V1DeleteModifierListRequest = require('./model/V1DeleteModifierListRequest');
+var V1DeleteModifierOptionRequest = require('./model/V1DeleteModifierOptionRequest');
+var V1DeletePageCellRequest = require('./model/V1DeletePageCellRequest');
+var V1DeletePageRequest = require('./model/V1DeletePageRequest');
+var V1DeleteTimecardRequest = require('./model/V1DeleteTimecardRequest');
+var V1DeleteTimecardResponse = require('./model/V1DeleteTimecardResponse');
+var V1DeleteVariationRequest = require('./model/V1DeleteVariationRequest');
 var V1Discount = require('./model/V1Discount');
+var V1DiscountColor = require('./model/V1DiscountColor');
+var V1DiscountDiscountType = require('./model/V1DiscountDiscountType');
 var V1Employee = require('./model/V1Employee');
 var V1EmployeeRole = require('./model/V1EmployeeRole');
+var V1EmployeeRolePermissions = require('./model/V1EmployeeRolePermissions');
+var V1EmployeeStatus = require('./model/V1EmployeeStatus');
 var V1Fee = require('./model/V1Fee');
+var V1FeeAdjustmentType = require('./model/V1FeeAdjustmentType');
+var V1FeeCalculationPhase = require('./model/V1FeeCalculationPhase');
+var V1FeeInclusionType = require('./model/V1FeeInclusionType');
+var V1FeeType = require('./model/V1FeeType');
 var V1InventoryEntry = require('./model/V1InventoryEntry');
 var V1Item = require('./model/V1Item');
+var V1ItemColor = require('./model/V1ItemColor');
 var V1ItemImage = require('./model/V1ItemImage');
+var V1ItemType = require('./model/V1ItemType');
+var V1ItemVisibility = require('./model/V1ItemVisibility');
+var V1ListBankAccountsRequest = require('./model/V1ListBankAccountsRequest');
+var V1ListBankAccountsResponse = require('./model/V1ListBankAccountsResponse');
+var V1ListCashDrawerShiftsRequest = require('./model/V1ListCashDrawerShiftsRequest');
+var V1ListCashDrawerShiftsResponse = require('./model/V1ListCashDrawerShiftsResponse');
+var V1ListCategoriesRequest = require('./model/V1ListCategoriesRequest');
+var V1ListCategoriesResponse = require('./model/V1ListCategoriesResponse');
+var V1ListDiscountsRequest = require('./model/V1ListDiscountsRequest');
+var V1ListDiscountsResponse = require('./model/V1ListDiscountsResponse');
+var V1ListEmployeeRolesRequest = require('./model/V1ListEmployeeRolesRequest');
+var V1ListEmployeeRolesResponse = require('./model/V1ListEmployeeRolesResponse');
+var V1ListEmployeesRequest = require('./model/V1ListEmployeesRequest');
+var V1ListEmployeesRequestStatus = require('./model/V1ListEmployeesRequestStatus');
+var V1ListEmployeesResponse = require('./model/V1ListEmployeesResponse');
+var V1ListFeesRequest = require('./model/V1ListFeesRequest');
+var V1ListFeesResponse = require('./model/V1ListFeesResponse');
+var V1ListInventoryRequest = require('./model/V1ListInventoryRequest');
+var V1ListInventoryResponse = require('./model/V1ListInventoryResponse');
+var V1ListItemsRequest = require('./model/V1ListItemsRequest');
+var V1ListItemsResponse = require('./model/V1ListItemsResponse');
+var V1ListLocationsRequest = require('./model/V1ListLocationsRequest');
+var V1ListLocationsResponse = require('./model/V1ListLocationsResponse');
+var V1ListModifierListsRequest = require('./model/V1ListModifierListsRequest');
+var V1ListModifierListsResponse = require('./model/V1ListModifierListsResponse');
+var V1ListOrdersRequest = require('./model/V1ListOrdersRequest');
+var V1ListOrdersResponse = require('./model/V1ListOrdersResponse');
+var V1ListPagesRequest = require('./model/V1ListPagesRequest');
+var V1ListPagesResponse = require('./model/V1ListPagesResponse');
+var V1ListPaymentsRequest = require('./model/V1ListPaymentsRequest');
+var V1ListPaymentsResponse = require('./model/V1ListPaymentsResponse');
+var V1ListRefundsRequest = require('./model/V1ListRefundsRequest');
+var V1ListRefundsResponse = require('./model/V1ListRefundsResponse');
+var V1ListSettlementsRequest = require('./model/V1ListSettlementsRequest');
+var V1ListSettlementsRequestStatus = require('./model/V1ListSettlementsRequestStatus');
+var V1ListSettlementsResponse = require('./model/V1ListSettlementsResponse');
+var V1ListTimecardEventsRequest = require('./model/V1ListTimecardEventsRequest');
+var V1ListTimecardEventsResponse = require('./model/V1ListTimecardEventsResponse');
+var V1ListTimecardsRequest = require('./model/V1ListTimecardsRequest');
+var V1ListTimecardsResponse = require('./model/V1ListTimecardsResponse');
 var V1Merchant = require('./model/V1Merchant');
+var V1MerchantAccountType = require('./model/V1MerchantAccountType');
+var V1MerchantBusinessType = require('./model/V1MerchantBusinessType');
 var V1MerchantLocationDetails = require('./model/V1MerchantLocationDetails');
 var V1ModifierList = require('./model/V1ModifierList');
+var V1ModifierListSelectionType = require('./model/V1ModifierListSelectionType');
 var V1ModifierOption = require('./model/V1ModifierOption');
 var V1Money = require('./model/V1Money');
 var V1Order = require('./model/V1Order');
 var V1OrderHistoryEntry = require('./model/V1OrderHistoryEntry');
+var V1OrderHistoryEntryAction = require('./model/V1OrderHistoryEntryAction');
+var V1OrderState = require('./model/V1OrderState');
 var V1Page = require('./model/V1Page');
 var V1PageCell = require('./model/V1PageCell');
+var V1PageCellObjectType = require('./model/V1PageCellObjectType');
+var V1PageCellPlaceholderType = require('./model/V1PageCellPlaceholderType');
 var V1Payment = require('./model/V1Payment');
 var V1PaymentDiscount = require('./model/V1PaymentDiscount');
 var V1PaymentItemDetail = require('./model/V1PaymentItemDetail');
 var V1PaymentItemization = require('./model/V1PaymentItemization');
+var V1PaymentItemizationItemizationType = require('./model/V1PaymentItemizationItemizationType');
 var V1PaymentModifier = require('./model/V1PaymentModifier');
 var V1PaymentSurcharge = require('./model/V1PaymentSurcharge');
+var V1PaymentSurchargeType = require('./model/V1PaymentSurchargeType');
 var V1PaymentTax = require('./model/V1PaymentTax');
+var V1PaymentTaxInclusionType = require('./model/V1PaymentTaxInclusionType');
 var V1PhoneNumber = require('./model/V1PhoneNumber');
 var V1Refund = require('./model/V1Refund');
+var V1RefundType = require('./model/V1RefundType');
+var V1RemoveFeeRequest = require('./model/V1RemoveFeeRequest');
+var V1RemoveModifierListRequest = require('./model/V1RemoveModifierListRequest');
+var V1RetrieveBankAccountRequest = require('./model/V1RetrieveBankAccountRequest');
+var V1RetrieveBusinessRequest = require('./model/V1RetrieveBusinessRequest');
+var V1RetrieveCashDrawerShiftRequest = require('./model/V1RetrieveCashDrawerShiftRequest');
+var V1RetrieveEmployeeRequest = require('./model/V1RetrieveEmployeeRequest');
+var V1RetrieveEmployeeRoleRequest = require('./model/V1RetrieveEmployeeRoleRequest');
+var V1RetrieveItemRequest = require('./model/V1RetrieveItemRequest');
+var V1RetrieveModifierListRequest = require('./model/V1RetrieveModifierListRequest');
+var V1RetrieveOrderRequest = require('./model/V1RetrieveOrderRequest');
+var V1RetrievePaymentRequest = require('./model/V1RetrievePaymentRequest');
+var V1RetrieveSettlementRequest = require('./model/V1RetrieveSettlementRequest');
+var V1RetrieveTimecardRequest = require('./model/V1RetrieveTimecardRequest');
 var V1Settlement = require('./model/V1Settlement');
 var V1SettlementEntry = require('./model/V1SettlementEntry');
+var V1SettlementEntryType = require('./model/V1SettlementEntryType');
+var V1SettlementStatus = require('./model/V1SettlementStatus');
 var V1Tender = require('./model/V1Tender');
+var V1TenderEntryMethod = require('./model/V1TenderEntryMethod');
+var V1TenderType = require('./model/V1TenderType');
 var V1Timecard = require('./model/V1Timecard');
 var V1TimecardEvent = require('./model/V1TimecardEvent');
+var V1TimecardEventEventType = require('./model/V1TimecardEventEventType');
+var V1UpdateCategoryRequest = require('./model/V1UpdateCategoryRequest');
+var V1UpdateDiscountRequest = require('./model/V1UpdateDiscountRequest');
+var V1UpdateEmployeeRequest = require('./model/V1UpdateEmployeeRequest');
+var V1UpdateEmployeeRoleRequest = require('./model/V1UpdateEmployeeRoleRequest');
+var V1UpdateFeeRequest = require('./model/V1UpdateFeeRequest');
+var V1UpdateItemRequest = require('./model/V1UpdateItemRequest');
 var V1UpdateModifierListRequest = require('./model/V1UpdateModifierListRequest');
+var V1UpdateModifierListRequestSelectionType = require('./model/V1UpdateModifierListRequestSelectionType');
+var V1UpdateModifierOptionRequest = require('./model/V1UpdateModifierOptionRequest');
 var V1UpdateOrderRequest = require('./model/V1UpdateOrderRequest');
+var V1UpdateOrderRequestAction = require('./model/V1UpdateOrderRequestAction');
+var V1UpdatePageCellRequest = require('./model/V1UpdatePageCellRequest');
+var V1UpdatePageRequest = require('./model/V1UpdatePageRequest');
+var V1UpdateTimecardRequest = require('./model/V1UpdateTimecardRequest');
+var V1UpdateVariationRequest = require('./model/V1UpdateVariationRequest');
 var V1Variation = require('./model/V1Variation');
+var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertType');
+var V1VariationPricingType = require('./model/V1VariationPricingType');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
+var Weekday = require('./model/Weekday');
+var WorkweekConfig = require('./model/WorkweekConfig');
 
 var ApplePayApi = require('./api/ApplePayApi');
 var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
 var CustomersApi = require('./api/CustomersApi');
+var EmployeesApi = require('./api/EmployeesApi');
 var InventoryApi = require('./api/InventoryApi');
+var LaborApi = require('./api/LaborApi');
 var LocationsApi = require('./api/LocationsApi');
 var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
 var OAuthApi = require('./api/OAuthApi');
@@ -288,7 +460,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190213.0
+ * @version 2.20190313.0
  */
   module.exports = {
   /**
@@ -386,6 +558,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BatchUpsertCatalogObjectsResponse}
    */
   BatchUpsertCatalogObjectsResponse: BatchUpsertCatalogObjectsResponse,
+  /**
+   * The BreakType model constructor.
+   * @property {module:model/BreakType}
+   */
+  BreakType: BreakType,
   /**
    * The CaptureTransactionRequest model constructor.
    * @property {module:model/CaptureTransactionRequest}
@@ -577,6 +754,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Country: Country,
   /**
+   * The CreateBreakTypeRequest model constructor.
+   * @property {module:model/CreateBreakTypeRequest}
+   */
+  CreateBreakTypeRequest: CreateBreakTypeRequest,
+  /**
+   * The CreateBreakTypeResponse model constructor.
+   * @property {module:model/CreateBreakTypeResponse}
+   */
+  CreateBreakTypeResponse: CreateBreakTypeResponse,
+  /**
    * The CreateCheckoutRequest model constructor.
    * @property {module:model/CreateCheckoutRequest}
    */
@@ -657,6 +844,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateRefundResponse: CreateRefundResponse,
   /**
+   * The CreateShiftRequest model constructor.
+   * @property {module:model/CreateShiftRequest}
+   */
+  CreateShiftRequest: CreateShiftRequest,
+  /**
+   * The CreateShiftResponse model constructor.
+   * @property {module:model/CreateShiftResponse}
+   */
+  CreateShiftResponse: CreateShiftResponse,
+  /**
    * The Currency model constructor.
    * @property {module:model/Currency}
    */
@@ -712,6 +909,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CustomerSortField: CustomerSortField,
   /**
+   * The DateRange model constructor.
+   * @property {module:model/DateRange}
+   */
+  DateRange: DateRange,
+  /**
+   * The DeleteBreakTypeRequest model constructor.
+   * @property {module:model/DeleteBreakTypeRequest}
+   */
+  DeleteBreakTypeRequest: DeleteBreakTypeRequest,
+  /**
+   * The DeleteBreakTypeResponse model constructor.
+   * @property {module:model/DeleteBreakTypeResponse}
+   */
+  DeleteBreakTypeResponse: DeleteBreakTypeResponse,
+  /**
    * The DeleteCatalogObjectRequest model constructor.
    * @property {module:model/DeleteCatalogObjectRequest}
    */
@@ -742,10 +954,35 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   DeleteCustomerResponse: DeleteCustomerResponse,
   /**
+   * The DeleteShiftRequest model constructor.
+   * @property {module:model/DeleteShiftRequest}
+   */
+  DeleteShiftRequest: DeleteShiftRequest,
+  /**
+   * The DeleteShiftResponse model constructor.
+   * @property {module:model/DeleteShiftResponse}
+   */
+  DeleteShiftResponse: DeleteShiftResponse,
+  /**
    * The Device model constructor.
    * @property {module:model/Device}
    */
   Device: Device,
+  /**
+   * The Employee model constructor.
+   * @property {module:model/Employee}
+   */
+  Employee: Employee,
+  /**
+   * The EmployeeStatus model constructor.
+   * @property {module:model/EmployeeStatus}
+   */
+  EmployeeStatus: EmployeeStatus,
+  /**
+   * The EmployeeWage model constructor.
+   * @property {module:model/EmployeeWage}
+   */
+  EmployeeWage: EmployeeWage,
   /**
    * The Error model constructor.
    * @property {module:model/Error}
@@ -761,6 +998,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ErrorCode}
    */
   ErrorCode: ErrorCode,
+  /**
+   * The GetBreakTypeRequest model constructor.
+   * @property {module:model/GetBreakTypeRequest}
+   */
+  GetBreakTypeRequest: GetBreakTypeRequest,
+  /**
+   * The GetBreakTypeResponse model constructor.
+   * @property {module:model/GetBreakTypeResponse}
+   */
+  GetBreakTypeResponse: GetBreakTypeResponse,
+  /**
+   * The GetEmployeeWageRequest model constructor.
+   * @property {module:model/GetEmployeeWageRequest}
+   */
+  GetEmployeeWageRequest: GetEmployeeWageRequest,
+  /**
+   * The GetEmployeeWageResponse model constructor.
+   * @property {module:model/GetEmployeeWageResponse}
+   */
+  GetEmployeeWageResponse: GetEmployeeWageResponse,
+  /**
+   * The GetShiftRequest model constructor.
+   * @property {module:model/GetShiftRequest}
+   */
+  GetShiftRequest: GetShiftRequest,
+  /**
+   * The GetShiftResponse model constructor.
+   * @property {module:model/GetShiftResponse}
+   */
+  GetShiftResponse: GetShiftResponse,
   /**
    * The InventoryAdjustment model constructor.
    * @property {module:model/InventoryAdjustment}
@@ -827,6 +1094,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ListAdditionalRecipientReceivablesResponse: ListAdditionalRecipientReceivablesResponse,
   /**
+   * The ListBreakTypesRequest model constructor.
+   * @property {module:model/ListBreakTypesRequest}
+   */
+  ListBreakTypesRequest: ListBreakTypesRequest,
+  /**
+   * The ListBreakTypesResponse model constructor.
+   * @property {module:model/ListBreakTypesResponse}
+   */
+  ListBreakTypesResponse: ListBreakTypesResponse,
+  /**
    * The ListCatalogRequest model constructor.
    * @property {module:model/ListCatalogRequest}
    */
@@ -846,6 +1123,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListCustomersResponse}
    */
   ListCustomersResponse: ListCustomersResponse,
+  /**
+   * The ListEmployeeWagesRequest model constructor.
+   * @property {module:model/ListEmployeeWagesRequest}
+   */
+  ListEmployeeWagesRequest: ListEmployeeWagesRequest,
+  /**
+   * The ListEmployeeWagesResponse model constructor.
+   * @property {module:model/ListEmployeeWagesResponse}
+   */
+  ListEmployeeWagesResponse: ListEmployeeWagesResponse,
+  /**
+   * The ListEmployeesRequest model constructor.
+   * @property {module:model/ListEmployeesRequest}
+   */
+  ListEmployeesRequest: ListEmployeesRequest,
+  /**
+   * The ListEmployeesResponse model constructor.
+   * @property {module:model/ListEmployeesResponse}
+   */
+  ListEmployeesResponse: ListEmployeesResponse,
   /**
    * The ListLocationsRequest model constructor.
    * @property {module:model/ListLocationsRequest}
@@ -877,6 +1174,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ListTransactionsResponse: ListTransactionsResponse,
   /**
+   * The ListWorkweekConfigsRequest model constructor.
+   * @property {module:model/ListWorkweekConfigsRequest}
+   */
+  ListWorkweekConfigsRequest: ListWorkweekConfigsRequest,
+  /**
+   * The ListWorkweekConfigsResponse model constructor.
+   * @property {module:model/ListWorkweekConfigsResponse}
+   */
+  ListWorkweekConfigsResponse: ListWorkweekConfigsResponse,
+  /**
    * The Location model constructor.
    * @property {module:model/Location}
    */
@@ -896,6 +1203,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/LocationType}
    */
   LocationType: LocationType,
+  /**
+   * The ModelBreak model constructor.
+   * @property {module:model/ModelBreak}
+   */
+  ModelBreak: ModelBreak,
   /**
    * The Money model constructor.
    * @property {module:model/Money}
@@ -1047,6 +1359,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveCustomerResponse: RetrieveCustomerResponse,
   /**
+   * The RetrieveEmployeeRequest model constructor.
+   * @property {module:model/RetrieveEmployeeRequest}
+   */
+  RetrieveEmployeeRequest: RetrieveEmployeeRequest,
+  /**
+   * The RetrieveEmployeeResponse model constructor.
+   * @property {module:model/RetrieveEmployeeResponse}
+   */
+  RetrieveEmployeeResponse: RetrieveEmployeeResponse,
+  /**
    * The RetrieveInventoryAdjustmentRequest model constructor.
    * @property {module:model/RetrieveInventoryAdjustmentRequest}
    */
@@ -1127,6 +1449,66 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchCustomersResponse: SearchCustomersResponse,
   /**
+   * The SearchShiftsRequest model constructor.
+   * @property {module:model/SearchShiftsRequest}
+   */
+  SearchShiftsRequest: SearchShiftsRequest,
+  /**
+   * The SearchShiftsResponse model constructor.
+   * @property {module:model/SearchShiftsResponse}
+   */
+  SearchShiftsResponse: SearchShiftsResponse,
+  /**
+   * The Shift model constructor.
+   * @property {module:model/Shift}
+   */
+  Shift: Shift,
+  /**
+   * The ShiftFilter model constructor.
+   * @property {module:model/ShiftFilter}
+   */
+  ShiftFilter: ShiftFilter,
+  /**
+   * The ShiftFilterStatus model constructor.
+   * @property {module:model/ShiftFilterStatus}
+   */
+  ShiftFilterStatus: ShiftFilterStatus,
+  /**
+   * The ShiftQuery model constructor.
+   * @property {module:model/ShiftQuery}
+   */
+  ShiftQuery: ShiftQuery,
+  /**
+   * The ShiftSort model constructor.
+   * @property {module:model/ShiftSort}
+   */
+  ShiftSort: ShiftSort,
+  /**
+   * The ShiftSortField model constructor.
+   * @property {module:model/ShiftSortField}
+   */
+  ShiftSortField: ShiftSortField,
+  /**
+   * The ShiftStatus model constructor.
+   * @property {module:model/ShiftStatus}
+   */
+  ShiftStatus: ShiftStatus,
+  /**
+   * The ShiftWage model constructor.
+   * @property {module:model/ShiftWage}
+   */
+  ShiftWage: ShiftWage,
+  /**
+   * The ShiftWorkday model constructor.
+   * @property {module:model/ShiftWorkday}
+   */
+  ShiftWorkday: ShiftWorkday,
+  /**
+   * The ShiftWorkdayMatcher model constructor.
+   * @property {module:model/ShiftWorkdayMatcher}
+   */
+  ShiftWorkdayMatcher: ShiftWorkdayMatcher,
+  /**
    * The SortOrder model constructor.
    * @property {module:model/SortOrder}
    */
@@ -1192,6 +1574,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   TransactionProduct: TransactionProduct,
   /**
+   * The UpdateBreakTypeRequest model constructor.
+   * @property {module:model/UpdateBreakTypeRequest}
+   */
+  UpdateBreakTypeRequest: UpdateBreakTypeRequest,
+  /**
+   * The UpdateBreakTypeResponse model constructor.
+   * @property {module:model/UpdateBreakTypeResponse}
+   */
+  UpdateBreakTypeResponse: UpdateBreakTypeResponse,
+  /**
    * The UpdateCustomerRequest model constructor.
    * @property {module:model/UpdateCustomerRequest}
    */
@@ -1222,6 +1614,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   UpdateItemTaxesResponse: UpdateItemTaxesResponse,
   /**
+   * The UpdateShiftRequest model constructor.
+   * @property {module:model/UpdateShiftRequest}
+   */
+  UpdateShiftRequest: UpdateShiftRequest,
+  /**
+   * The UpdateShiftResponse model constructor.
+   * @property {module:model/UpdateShiftResponse}
+   */
+  UpdateShiftResponse: UpdateShiftResponse,
+  /**
+   * The UpdateWorkweekConfigRequest model constructor.
+   * @property {module:model/UpdateWorkweekConfigRequest}
+   */
+  UpdateWorkweekConfigRequest: UpdateWorkweekConfigRequest,
+  /**
+   * The UpdateWorkweekConfigResponse model constructor.
+   * @property {module:model/UpdateWorkweekConfigResponse}
+   */
+  UpdateWorkweekConfigResponse: UpdateWorkweekConfigResponse,
+  /**
    * The UpsertCatalogObjectRequest model constructor.
    * @property {module:model/UpsertCatalogObjectRequest}
    */
@@ -1237,35 +1649,180 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1AdjustInventoryRequest: V1AdjustInventoryRequest,
   /**
+   * The V1AdjustInventoryRequestAdjustmentType model constructor.
+   * @property {module:model/V1AdjustInventoryRequestAdjustmentType}
+   */
+  V1AdjustInventoryRequestAdjustmentType: V1AdjustInventoryRequestAdjustmentType,
+  /**
+   * The V1ApplyFeeRequest model constructor.
+   * @property {module:model/V1ApplyFeeRequest}
+   */
+  V1ApplyFeeRequest: V1ApplyFeeRequest,
+  /**
+   * The V1ApplyModifierListRequest model constructor.
+   * @property {module:model/V1ApplyModifierListRequest}
+   */
+  V1ApplyModifierListRequest: V1ApplyModifierListRequest,
+  /**
    * The V1BankAccount model constructor.
    * @property {module:model/V1BankAccount}
    */
   V1BankAccount: V1BankAccount,
+  /**
+   * The V1BankAccountType model constructor.
+   * @property {module:model/V1BankAccountType}
+   */
+  V1BankAccountType: V1BankAccountType,
   /**
    * The V1CashDrawerEvent model constructor.
    * @property {module:model/V1CashDrawerEvent}
    */
   V1CashDrawerEvent: V1CashDrawerEvent,
   /**
+   * The V1CashDrawerEventEventType model constructor.
+   * @property {module:model/V1CashDrawerEventEventType}
+   */
+  V1CashDrawerEventEventType: V1CashDrawerEventEventType,
+  /**
    * The V1CashDrawerShift model constructor.
    * @property {module:model/V1CashDrawerShift}
    */
   V1CashDrawerShift: V1CashDrawerShift,
+  /**
+   * The V1CashDrawerShiftEventType model constructor.
+   * @property {module:model/V1CashDrawerShiftEventType}
+   */
+  V1CashDrawerShiftEventType: V1CashDrawerShiftEventType,
   /**
    * The V1Category model constructor.
    * @property {module:model/V1Category}
    */
   V1Category: V1Category,
   /**
+   * The V1CreateCategoryRequest model constructor.
+   * @property {module:model/V1CreateCategoryRequest}
+   */
+  V1CreateCategoryRequest: V1CreateCategoryRequest,
+  /**
+   * The V1CreateDiscountRequest model constructor.
+   * @property {module:model/V1CreateDiscountRequest}
+   */
+  V1CreateDiscountRequest: V1CreateDiscountRequest,
+  /**
+   * The V1CreateEmployeeRoleRequest model constructor.
+   * @property {module:model/V1CreateEmployeeRoleRequest}
+   */
+  V1CreateEmployeeRoleRequest: V1CreateEmployeeRoleRequest,
+  /**
+   * The V1CreateFeeRequest model constructor.
+   * @property {module:model/V1CreateFeeRequest}
+   */
+  V1CreateFeeRequest: V1CreateFeeRequest,
+  /**
+   * The V1CreateItemRequest model constructor.
+   * @property {module:model/V1CreateItemRequest}
+   */
+  V1CreateItemRequest: V1CreateItemRequest,
+  /**
+   * The V1CreateModifierListRequest model constructor.
+   * @property {module:model/V1CreateModifierListRequest}
+   */
+  V1CreateModifierListRequest: V1CreateModifierListRequest,
+  /**
+   * The V1CreateModifierOptionRequest model constructor.
+   * @property {module:model/V1CreateModifierOptionRequest}
+   */
+  V1CreateModifierOptionRequest: V1CreateModifierOptionRequest,
+  /**
+   * The V1CreatePageRequest model constructor.
+   * @property {module:model/V1CreatePageRequest}
+   */
+  V1CreatePageRequest: V1CreatePageRequest,
+  /**
    * The V1CreateRefundRequest model constructor.
    * @property {module:model/V1CreateRefundRequest}
    */
   V1CreateRefundRequest: V1CreateRefundRequest,
   /**
+   * The V1CreateRefundRequestType model constructor.
+   * @property {module:model/V1CreateRefundRequestType}
+   */
+  V1CreateRefundRequestType: V1CreateRefundRequestType,
+  /**
+   * The V1CreateVariationRequest model constructor.
+   * @property {module:model/V1CreateVariationRequest}
+   */
+  V1CreateVariationRequest: V1CreateVariationRequest,
+  /**
+   * The V1DeleteCategoryRequest model constructor.
+   * @property {module:model/V1DeleteCategoryRequest}
+   */
+  V1DeleteCategoryRequest: V1DeleteCategoryRequest,
+  /**
+   * The V1DeleteDiscountRequest model constructor.
+   * @property {module:model/V1DeleteDiscountRequest}
+   */
+  V1DeleteDiscountRequest: V1DeleteDiscountRequest,
+  /**
+   * The V1DeleteFeeRequest model constructor.
+   * @property {module:model/V1DeleteFeeRequest}
+   */
+  V1DeleteFeeRequest: V1DeleteFeeRequest,
+  /**
+   * The V1DeleteItemRequest model constructor.
+   * @property {module:model/V1DeleteItemRequest}
+   */
+  V1DeleteItemRequest: V1DeleteItemRequest,
+  /**
+   * The V1DeleteModifierListRequest model constructor.
+   * @property {module:model/V1DeleteModifierListRequest}
+   */
+  V1DeleteModifierListRequest: V1DeleteModifierListRequest,
+  /**
+   * The V1DeleteModifierOptionRequest model constructor.
+   * @property {module:model/V1DeleteModifierOptionRequest}
+   */
+  V1DeleteModifierOptionRequest: V1DeleteModifierOptionRequest,
+  /**
+   * The V1DeletePageCellRequest model constructor.
+   * @property {module:model/V1DeletePageCellRequest}
+   */
+  V1DeletePageCellRequest: V1DeletePageCellRequest,
+  /**
+   * The V1DeletePageRequest model constructor.
+   * @property {module:model/V1DeletePageRequest}
+   */
+  V1DeletePageRequest: V1DeletePageRequest,
+  /**
+   * The V1DeleteTimecardRequest model constructor.
+   * @property {module:model/V1DeleteTimecardRequest}
+   */
+  V1DeleteTimecardRequest: V1DeleteTimecardRequest,
+  /**
+   * The V1DeleteTimecardResponse model constructor.
+   * @property {module:model/V1DeleteTimecardResponse}
+   */
+  V1DeleteTimecardResponse: V1DeleteTimecardResponse,
+  /**
+   * The V1DeleteVariationRequest model constructor.
+   * @property {module:model/V1DeleteVariationRequest}
+   */
+  V1DeleteVariationRequest: V1DeleteVariationRequest,
+  /**
    * The V1Discount model constructor.
    * @property {module:model/V1Discount}
    */
   V1Discount: V1Discount,
+  /**
+   * The V1DiscountColor model constructor.
+   * @property {module:model/V1DiscountColor}
+   */
+  V1DiscountColor: V1DiscountColor,
+  /**
+   * The V1DiscountDiscountType model constructor.
+   * @property {module:model/V1DiscountDiscountType}
+   */
+  V1DiscountDiscountType: V1DiscountDiscountType,
   /**
    * The V1Employee model constructor.
    * @property {module:model/V1Employee}
@@ -1277,10 +1834,40 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1EmployeeRole: V1EmployeeRole,
   /**
+   * The V1EmployeeRolePermissions model constructor.
+   * @property {module:model/V1EmployeeRolePermissions}
+   */
+  V1EmployeeRolePermissions: V1EmployeeRolePermissions,
+  /**
+   * The V1EmployeeStatus model constructor.
+   * @property {module:model/V1EmployeeStatus}
+   */
+  V1EmployeeStatus: V1EmployeeStatus,
+  /**
    * The V1Fee model constructor.
    * @property {module:model/V1Fee}
    */
   V1Fee: V1Fee,
+  /**
+   * The V1FeeAdjustmentType model constructor.
+   * @property {module:model/V1FeeAdjustmentType}
+   */
+  V1FeeAdjustmentType: V1FeeAdjustmentType,
+  /**
+   * The V1FeeCalculationPhase model constructor.
+   * @property {module:model/V1FeeCalculationPhase}
+   */
+  V1FeeCalculationPhase: V1FeeCalculationPhase,
+  /**
+   * The V1FeeInclusionType model constructor.
+   * @property {module:model/V1FeeInclusionType}
+   */
+  V1FeeInclusionType: V1FeeInclusionType,
+  /**
+   * The V1FeeType model constructor.
+   * @property {module:model/V1FeeType}
+   */
+  V1FeeType: V1FeeType,
   /**
    * The V1InventoryEntry model constructor.
    * @property {module:model/V1InventoryEntry}
@@ -1292,15 +1879,230 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1Item: V1Item,
   /**
+   * The V1ItemColor model constructor.
+   * @property {module:model/V1ItemColor}
+   */
+  V1ItemColor: V1ItemColor,
+  /**
    * The V1ItemImage model constructor.
    * @property {module:model/V1ItemImage}
    */
   V1ItemImage: V1ItemImage,
   /**
+   * The V1ItemType model constructor.
+   * @property {module:model/V1ItemType}
+   */
+  V1ItemType: V1ItemType,
+  /**
+   * The V1ItemVisibility model constructor.
+   * @property {module:model/V1ItemVisibility}
+   */
+  V1ItemVisibility: V1ItemVisibility,
+  /**
+   * The V1ListBankAccountsRequest model constructor.
+   * @property {module:model/V1ListBankAccountsRequest}
+   */
+  V1ListBankAccountsRequest: V1ListBankAccountsRequest,
+  /**
+   * The V1ListBankAccountsResponse model constructor.
+   * @property {module:model/V1ListBankAccountsResponse}
+   */
+  V1ListBankAccountsResponse: V1ListBankAccountsResponse,
+  /**
+   * The V1ListCashDrawerShiftsRequest model constructor.
+   * @property {module:model/V1ListCashDrawerShiftsRequest}
+   */
+  V1ListCashDrawerShiftsRequest: V1ListCashDrawerShiftsRequest,
+  /**
+   * The V1ListCashDrawerShiftsResponse model constructor.
+   * @property {module:model/V1ListCashDrawerShiftsResponse}
+   */
+  V1ListCashDrawerShiftsResponse: V1ListCashDrawerShiftsResponse,
+  /**
+   * The V1ListCategoriesRequest model constructor.
+   * @property {module:model/V1ListCategoriesRequest}
+   */
+  V1ListCategoriesRequest: V1ListCategoriesRequest,
+  /**
+   * The V1ListCategoriesResponse model constructor.
+   * @property {module:model/V1ListCategoriesResponse}
+   */
+  V1ListCategoriesResponse: V1ListCategoriesResponse,
+  /**
+   * The V1ListDiscountsRequest model constructor.
+   * @property {module:model/V1ListDiscountsRequest}
+   */
+  V1ListDiscountsRequest: V1ListDiscountsRequest,
+  /**
+   * The V1ListDiscountsResponse model constructor.
+   * @property {module:model/V1ListDiscountsResponse}
+   */
+  V1ListDiscountsResponse: V1ListDiscountsResponse,
+  /**
+   * The V1ListEmployeeRolesRequest model constructor.
+   * @property {module:model/V1ListEmployeeRolesRequest}
+   */
+  V1ListEmployeeRolesRequest: V1ListEmployeeRolesRequest,
+  /**
+   * The V1ListEmployeeRolesResponse model constructor.
+   * @property {module:model/V1ListEmployeeRolesResponse}
+   */
+  V1ListEmployeeRolesResponse: V1ListEmployeeRolesResponse,
+  /**
+   * The V1ListEmployeesRequest model constructor.
+   * @property {module:model/V1ListEmployeesRequest}
+   */
+  V1ListEmployeesRequest: V1ListEmployeesRequest,
+  /**
+   * The V1ListEmployeesRequestStatus model constructor.
+   * @property {module:model/V1ListEmployeesRequestStatus}
+   */
+  V1ListEmployeesRequestStatus: V1ListEmployeesRequestStatus,
+  /**
+   * The V1ListEmployeesResponse model constructor.
+   * @property {module:model/V1ListEmployeesResponse}
+   */
+  V1ListEmployeesResponse: V1ListEmployeesResponse,
+  /**
+   * The V1ListFeesRequest model constructor.
+   * @property {module:model/V1ListFeesRequest}
+   */
+  V1ListFeesRequest: V1ListFeesRequest,
+  /**
+   * The V1ListFeesResponse model constructor.
+   * @property {module:model/V1ListFeesResponse}
+   */
+  V1ListFeesResponse: V1ListFeesResponse,
+  /**
+   * The V1ListInventoryRequest model constructor.
+   * @property {module:model/V1ListInventoryRequest}
+   */
+  V1ListInventoryRequest: V1ListInventoryRequest,
+  /**
+   * The V1ListInventoryResponse model constructor.
+   * @property {module:model/V1ListInventoryResponse}
+   */
+  V1ListInventoryResponse: V1ListInventoryResponse,
+  /**
+   * The V1ListItemsRequest model constructor.
+   * @property {module:model/V1ListItemsRequest}
+   */
+  V1ListItemsRequest: V1ListItemsRequest,
+  /**
+   * The V1ListItemsResponse model constructor.
+   * @property {module:model/V1ListItemsResponse}
+   */
+  V1ListItemsResponse: V1ListItemsResponse,
+  /**
+   * The V1ListLocationsRequest model constructor.
+   * @property {module:model/V1ListLocationsRequest}
+   */
+  V1ListLocationsRequest: V1ListLocationsRequest,
+  /**
+   * The V1ListLocationsResponse model constructor.
+   * @property {module:model/V1ListLocationsResponse}
+   */
+  V1ListLocationsResponse: V1ListLocationsResponse,
+  /**
+   * The V1ListModifierListsRequest model constructor.
+   * @property {module:model/V1ListModifierListsRequest}
+   */
+  V1ListModifierListsRequest: V1ListModifierListsRequest,
+  /**
+   * The V1ListModifierListsResponse model constructor.
+   * @property {module:model/V1ListModifierListsResponse}
+   */
+  V1ListModifierListsResponse: V1ListModifierListsResponse,
+  /**
+   * The V1ListOrdersRequest model constructor.
+   * @property {module:model/V1ListOrdersRequest}
+   */
+  V1ListOrdersRequest: V1ListOrdersRequest,
+  /**
+   * The V1ListOrdersResponse model constructor.
+   * @property {module:model/V1ListOrdersResponse}
+   */
+  V1ListOrdersResponse: V1ListOrdersResponse,
+  /**
+   * The V1ListPagesRequest model constructor.
+   * @property {module:model/V1ListPagesRequest}
+   */
+  V1ListPagesRequest: V1ListPagesRequest,
+  /**
+   * The V1ListPagesResponse model constructor.
+   * @property {module:model/V1ListPagesResponse}
+   */
+  V1ListPagesResponse: V1ListPagesResponse,
+  /**
+   * The V1ListPaymentsRequest model constructor.
+   * @property {module:model/V1ListPaymentsRequest}
+   */
+  V1ListPaymentsRequest: V1ListPaymentsRequest,
+  /**
+   * The V1ListPaymentsResponse model constructor.
+   * @property {module:model/V1ListPaymentsResponse}
+   */
+  V1ListPaymentsResponse: V1ListPaymentsResponse,
+  /**
+   * The V1ListRefundsRequest model constructor.
+   * @property {module:model/V1ListRefundsRequest}
+   */
+  V1ListRefundsRequest: V1ListRefundsRequest,
+  /**
+   * The V1ListRefundsResponse model constructor.
+   * @property {module:model/V1ListRefundsResponse}
+   */
+  V1ListRefundsResponse: V1ListRefundsResponse,
+  /**
+   * The V1ListSettlementsRequest model constructor.
+   * @property {module:model/V1ListSettlementsRequest}
+   */
+  V1ListSettlementsRequest: V1ListSettlementsRequest,
+  /**
+   * The V1ListSettlementsRequestStatus model constructor.
+   * @property {module:model/V1ListSettlementsRequestStatus}
+   */
+  V1ListSettlementsRequestStatus: V1ListSettlementsRequestStatus,
+  /**
+   * The V1ListSettlementsResponse model constructor.
+   * @property {module:model/V1ListSettlementsResponse}
+   */
+  V1ListSettlementsResponse: V1ListSettlementsResponse,
+  /**
+   * The V1ListTimecardEventsRequest model constructor.
+   * @property {module:model/V1ListTimecardEventsRequest}
+   */
+  V1ListTimecardEventsRequest: V1ListTimecardEventsRequest,
+  /**
+   * The V1ListTimecardEventsResponse model constructor.
+   * @property {module:model/V1ListTimecardEventsResponse}
+   */
+  V1ListTimecardEventsResponse: V1ListTimecardEventsResponse,
+  /**
+   * The V1ListTimecardsRequest model constructor.
+   * @property {module:model/V1ListTimecardsRequest}
+   */
+  V1ListTimecardsRequest: V1ListTimecardsRequest,
+  /**
+   * The V1ListTimecardsResponse model constructor.
+   * @property {module:model/V1ListTimecardsResponse}
+   */
+  V1ListTimecardsResponse: V1ListTimecardsResponse,
+  /**
    * The V1Merchant model constructor.
    * @property {module:model/V1Merchant}
    */
   V1Merchant: V1Merchant,
+  /**
+   * The V1MerchantAccountType model constructor.
+   * @property {module:model/V1MerchantAccountType}
+   */
+  V1MerchantAccountType: V1MerchantAccountType,
+  /**
+   * The V1MerchantBusinessType model constructor.
+   * @property {module:model/V1MerchantBusinessType}
+   */
+  V1MerchantBusinessType: V1MerchantBusinessType,
   /**
    * The V1MerchantLocationDetails model constructor.
    * @property {module:model/V1MerchantLocationDetails}
@@ -1311,6 +2113,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1ModifierList}
    */
   V1ModifierList: V1ModifierList,
+  /**
+   * The V1ModifierListSelectionType model constructor.
+   * @property {module:model/V1ModifierListSelectionType}
+   */
+  V1ModifierListSelectionType: V1ModifierListSelectionType,
   /**
    * The V1ModifierOption model constructor.
    * @property {module:model/V1ModifierOption}
@@ -1332,6 +2139,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1OrderHistoryEntry: V1OrderHistoryEntry,
   /**
+   * The V1OrderHistoryEntryAction model constructor.
+   * @property {module:model/V1OrderHistoryEntryAction}
+   */
+  V1OrderHistoryEntryAction: V1OrderHistoryEntryAction,
+  /**
+   * The V1OrderState model constructor.
+   * @property {module:model/V1OrderState}
+   */
+  V1OrderState: V1OrderState,
+  /**
    * The V1Page model constructor.
    * @property {module:model/V1Page}
    */
@@ -1341,6 +2158,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1PageCell}
    */
   V1PageCell: V1PageCell,
+  /**
+   * The V1PageCellObjectType model constructor.
+   * @property {module:model/V1PageCellObjectType}
+   */
+  V1PageCellObjectType: V1PageCellObjectType,
+  /**
+   * The V1PageCellPlaceholderType model constructor.
+   * @property {module:model/V1PageCellPlaceholderType}
+   */
+  V1PageCellPlaceholderType: V1PageCellPlaceholderType,
   /**
    * The V1Payment model constructor.
    * @property {module:model/V1Payment}
@@ -1362,6 +2189,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1PaymentItemization: V1PaymentItemization,
   /**
+   * The V1PaymentItemizationItemizationType model constructor.
+   * @property {module:model/V1PaymentItemizationItemizationType}
+   */
+  V1PaymentItemizationItemizationType: V1PaymentItemizationItemizationType,
+  /**
    * The V1PaymentModifier model constructor.
    * @property {module:model/V1PaymentModifier}
    */
@@ -1372,10 +2204,20 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1PaymentSurcharge: V1PaymentSurcharge,
   /**
+   * The V1PaymentSurchargeType model constructor.
+   * @property {module:model/V1PaymentSurchargeType}
+   */
+  V1PaymentSurchargeType: V1PaymentSurchargeType,
+  /**
    * The V1PaymentTax model constructor.
    * @property {module:model/V1PaymentTax}
    */
   V1PaymentTax: V1PaymentTax,
+  /**
+   * The V1PaymentTaxInclusionType model constructor.
+   * @property {module:model/V1PaymentTaxInclusionType}
+   */
+  V1PaymentTaxInclusionType: V1PaymentTaxInclusionType,
   /**
    * The V1PhoneNumber model constructor.
    * @property {module:model/V1PhoneNumber}
@@ -1387,6 +2229,76 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1Refund: V1Refund,
   /**
+   * The V1RefundType model constructor.
+   * @property {module:model/V1RefundType}
+   */
+  V1RefundType: V1RefundType,
+  /**
+   * The V1RemoveFeeRequest model constructor.
+   * @property {module:model/V1RemoveFeeRequest}
+   */
+  V1RemoveFeeRequest: V1RemoveFeeRequest,
+  /**
+   * The V1RemoveModifierListRequest model constructor.
+   * @property {module:model/V1RemoveModifierListRequest}
+   */
+  V1RemoveModifierListRequest: V1RemoveModifierListRequest,
+  /**
+   * The V1RetrieveBankAccountRequest model constructor.
+   * @property {module:model/V1RetrieveBankAccountRequest}
+   */
+  V1RetrieveBankAccountRequest: V1RetrieveBankAccountRequest,
+  /**
+   * The V1RetrieveBusinessRequest model constructor.
+   * @property {module:model/V1RetrieveBusinessRequest}
+   */
+  V1RetrieveBusinessRequest: V1RetrieveBusinessRequest,
+  /**
+   * The V1RetrieveCashDrawerShiftRequest model constructor.
+   * @property {module:model/V1RetrieveCashDrawerShiftRequest}
+   */
+  V1RetrieveCashDrawerShiftRequest: V1RetrieveCashDrawerShiftRequest,
+  /**
+   * The V1RetrieveEmployeeRequest model constructor.
+   * @property {module:model/V1RetrieveEmployeeRequest}
+   */
+  V1RetrieveEmployeeRequest: V1RetrieveEmployeeRequest,
+  /**
+   * The V1RetrieveEmployeeRoleRequest model constructor.
+   * @property {module:model/V1RetrieveEmployeeRoleRequest}
+   */
+  V1RetrieveEmployeeRoleRequest: V1RetrieveEmployeeRoleRequest,
+  /**
+   * The V1RetrieveItemRequest model constructor.
+   * @property {module:model/V1RetrieveItemRequest}
+   */
+  V1RetrieveItemRequest: V1RetrieveItemRequest,
+  /**
+   * The V1RetrieveModifierListRequest model constructor.
+   * @property {module:model/V1RetrieveModifierListRequest}
+   */
+  V1RetrieveModifierListRequest: V1RetrieveModifierListRequest,
+  /**
+   * The V1RetrieveOrderRequest model constructor.
+   * @property {module:model/V1RetrieveOrderRequest}
+   */
+  V1RetrieveOrderRequest: V1RetrieveOrderRequest,
+  /**
+   * The V1RetrievePaymentRequest model constructor.
+   * @property {module:model/V1RetrievePaymentRequest}
+   */
+  V1RetrievePaymentRequest: V1RetrievePaymentRequest,
+  /**
+   * The V1RetrieveSettlementRequest model constructor.
+   * @property {module:model/V1RetrieveSettlementRequest}
+   */
+  V1RetrieveSettlementRequest: V1RetrieveSettlementRequest,
+  /**
+   * The V1RetrieveTimecardRequest model constructor.
+   * @property {module:model/V1RetrieveTimecardRequest}
+   */
+  V1RetrieveTimecardRequest: V1RetrieveTimecardRequest,
+  /**
    * The V1Settlement model constructor.
    * @property {module:model/V1Settlement}
    */
@@ -1397,10 +2309,30 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1SettlementEntry: V1SettlementEntry,
   /**
+   * The V1SettlementEntryType model constructor.
+   * @property {module:model/V1SettlementEntryType}
+   */
+  V1SettlementEntryType: V1SettlementEntryType,
+  /**
+   * The V1SettlementStatus model constructor.
+   * @property {module:model/V1SettlementStatus}
+   */
+  V1SettlementStatus: V1SettlementStatus,
+  /**
    * The V1Tender model constructor.
    * @property {module:model/V1Tender}
    */
   V1Tender: V1Tender,
+  /**
+   * The V1TenderEntryMethod model constructor.
+   * @property {module:model/V1TenderEntryMethod}
+   */
+  V1TenderEntryMethod: V1TenderEntryMethod,
+  /**
+   * The V1TenderType model constructor.
+   * @property {module:model/V1TenderType}
+   */
+  V1TenderType: V1TenderType,
   /**
    * The V1Timecard model constructor.
    * @property {module:model/V1Timecard}
@@ -1412,20 +2344,100 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1TimecardEvent: V1TimecardEvent,
   /**
+   * The V1TimecardEventEventType model constructor.
+   * @property {module:model/V1TimecardEventEventType}
+   */
+  V1TimecardEventEventType: V1TimecardEventEventType,
+  /**
+   * The V1UpdateCategoryRequest model constructor.
+   * @property {module:model/V1UpdateCategoryRequest}
+   */
+  V1UpdateCategoryRequest: V1UpdateCategoryRequest,
+  /**
+   * The V1UpdateDiscountRequest model constructor.
+   * @property {module:model/V1UpdateDiscountRequest}
+   */
+  V1UpdateDiscountRequest: V1UpdateDiscountRequest,
+  /**
+   * The V1UpdateEmployeeRequest model constructor.
+   * @property {module:model/V1UpdateEmployeeRequest}
+   */
+  V1UpdateEmployeeRequest: V1UpdateEmployeeRequest,
+  /**
+   * The V1UpdateEmployeeRoleRequest model constructor.
+   * @property {module:model/V1UpdateEmployeeRoleRequest}
+   */
+  V1UpdateEmployeeRoleRequest: V1UpdateEmployeeRoleRequest,
+  /**
+   * The V1UpdateFeeRequest model constructor.
+   * @property {module:model/V1UpdateFeeRequest}
+   */
+  V1UpdateFeeRequest: V1UpdateFeeRequest,
+  /**
+   * The V1UpdateItemRequest model constructor.
+   * @property {module:model/V1UpdateItemRequest}
+   */
+  V1UpdateItemRequest: V1UpdateItemRequest,
+  /**
    * The V1UpdateModifierListRequest model constructor.
    * @property {module:model/V1UpdateModifierListRequest}
    */
   V1UpdateModifierListRequest: V1UpdateModifierListRequest,
+  /**
+   * The V1UpdateModifierListRequestSelectionType model constructor.
+   * @property {module:model/V1UpdateModifierListRequestSelectionType}
+   */
+  V1UpdateModifierListRequestSelectionType: V1UpdateModifierListRequestSelectionType,
+  /**
+   * The V1UpdateModifierOptionRequest model constructor.
+   * @property {module:model/V1UpdateModifierOptionRequest}
+   */
+  V1UpdateModifierOptionRequest: V1UpdateModifierOptionRequest,
   /**
    * The V1UpdateOrderRequest model constructor.
    * @property {module:model/V1UpdateOrderRequest}
    */
   V1UpdateOrderRequest: V1UpdateOrderRequest,
   /**
+   * The V1UpdateOrderRequestAction model constructor.
+   * @property {module:model/V1UpdateOrderRequestAction}
+   */
+  V1UpdateOrderRequestAction: V1UpdateOrderRequestAction,
+  /**
+   * The V1UpdatePageCellRequest model constructor.
+   * @property {module:model/V1UpdatePageCellRequest}
+   */
+  V1UpdatePageCellRequest: V1UpdatePageCellRequest,
+  /**
+   * The V1UpdatePageRequest model constructor.
+   * @property {module:model/V1UpdatePageRequest}
+   */
+  V1UpdatePageRequest: V1UpdatePageRequest,
+  /**
+   * The V1UpdateTimecardRequest model constructor.
+   * @property {module:model/V1UpdateTimecardRequest}
+   */
+  V1UpdateTimecardRequest: V1UpdateTimecardRequest,
+  /**
+   * The V1UpdateVariationRequest model constructor.
+   * @property {module:model/V1UpdateVariationRequest}
+   */
+  V1UpdateVariationRequest: V1UpdateVariationRequest,
+  /**
    * The V1Variation model constructor.
    * @property {module:model/V1Variation}
    */
   V1Variation: V1Variation,
+  /**
+   * The V1VariationInventoryAlertType model constructor.
+   * @property {module:model/V1VariationInventoryAlertType}
+   */
+  V1VariationInventoryAlertType: V1VariationInventoryAlertType,
+  /**
+   * The V1VariationPricingType model constructor.
+   * @property {module:model/V1VariationPricingType}
+   */
+  V1VariationPricingType: V1VariationPricingType,
   /**
    * The VoidTransactionRequest model constructor.
    * @property {module:model/VoidTransactionRequest}
@@ -1436,6 +2448,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/VoidTransactionResponse}
    */
   VoidTransactionResponse: VoidTransactionResponse,
+  /**
+   * The Weekday model constructor.
+   * @property {module:model/Weekday}
+   */
+  Weekday: Weekday,
+  /**
+   * The WorkweekConfig model constructor.
+   * @property {module:model/WorkweekConfig}
+   */
+  WorkweekConfig: WorkweekConfig,
   /**
    * The ApplePayApi service constructor.
    * @property {module:api/ApplePayApi}
@@ -1457,10 +2479,20 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CustomersApi: CustomersApi,
   /**
+   * The EmployeesApi service constructor.
+   * @property {module:api/EmployeesApi}
+   */
+  EmployeesApi: EmployeesApi,
+  /**
    * The InventoryApi service constructor.
    * @property {module:api/InventoryApi}
    */
   InventoryApi: InventoryApi,
+  /**
+   * The LaborApi service constructor.
+   * @property {module:api/LaborApi}
+   */
+  LaborApi: LaborApi,
   /**
    * The LocationsApi service constructor.
    * @property {module:api/LocationsApi}

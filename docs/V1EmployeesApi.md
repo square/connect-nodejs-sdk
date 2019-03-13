@@ -4,31 +4,31 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createEmployee**](V1EmployeesApi.md#createEmployee) | **POST** /v1/me/employees | Creates an employee for a business.
-[**createEmployeeRole**](V1EmployeesApi.md#createEmployeeRole) | **POST** /v1/me/roles | Creates an employee role you can then assign to employees.
-[**createTimecard**](V1EmployeesApi.md#createTimecard) | **POST** /v1/me/timecards | Creates a timecard for an employee. Each timecard corresponds to a single shift.
-[**deleteTimecard**](V1EmployeesApi.md#deleteTimecard) | **DELETE** /v1/me/timecards/{timecard_id} | Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
-[**listCashDrawerShifts**](V1EmployeesApi.md#listCashDrawerShifts) | **GET** /v1/{location_id}/cash-drawer-shifts | Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
-[**listEmployeeRoles**](V1EmployeesApi.md#listEmployeeRoles) | **GET** /v1/me/roles | Provides summary information for all of a business&#39;s employee roles.
-[**listEmployees**](V1EmployeesApi.md#listEmployees) | **GET** /v1/me/employees | Provides summary information for all of a business&#39;s employees.
-[**listTimecardEvents**](V1EmployeesApi.md#listTimecardEvents) | **GET** /v1/me/timecards/{timecard_id}/events | Provides summary information for all events associated with a particular timecard.
-[**listTimecards**](V1EmployeesApi.md#listTimecards) | **GET** /v1/me/timecards | Provides summary information for all of a business&#39;s employee timecards.
-[**retrieveCashDrawerShift**](V1EmployeesApi.md#retrieveCashDrawerShift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id} | Provides the details for a single cash drawer shift, including all events that occurred during the shift.
-[**retrieveEmployee**](V1EmployeesApi.md#retrieveEmployee) | **GET** /v1/me/employees/{employee_id} | Provides the details for a single employee.
-[**retrieveEmployeeRole**](V1EmployeesApi.md#retrieveEmployeeRole) | **GET** /v1/me/roles/{role_id} | Provides the details for a single employee role.
-[**retrieveTimecard**](V1EmployeesApi.md#retrieveTimecard) | **GET** /v1/me/timecards/{timecard_id} | Provides the details for a single timecard.
-[**updateEmployee**](V1EmployeesApi.md#updateEmployee) | **PUT** /v1/me/employees/{employee_id} | V1 UpdateEmployee
-[**updateEmployeeRole**](V1EmployeesApi.md#updateEmployeeRole) | **PUT** /v1/me/roles/{role_id} | Modifies the details of an employee role.
-[**updateTimecard**](V1EmployeesApi.md#updateTimecard) | **PUT** /v1/me/timecards/{timecard_id} | Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
+[**createEmployee**](V1EmployeesApi.md#createEmployee) | **POST** /v1/me/employees | CreateEmployee
+[**createEmployeeRole**](V1EmployeesApi.md#createEmployeeRole) | **POST** /v1/me/roles | CreateEmployeeRole
+[**createTimecard**](V1EmployeesApi.md#createTimecard) | **POST** /v1/me/timecards | CreateTimecard
+[**deleteTimecard**](V1EmployeesApi.md#deleteTimecard) | **DELETE** /v1/me/timecards/{timecard_id} | DeleteTimecard
+[**listCashDrawerShifts**](V1EmployeesApi.md#listCashDrawerShifts) | **GET** /v1/{location_id}/cash-drawer-shifts | ListCashDrawerShifts
+[**listEmployeeRoles**](V1EmployeesApi.md#listEmployeeRoles) | **GET** /v1/me/roles | ListEmployeeRoles
+[**listEmployees**](V1EmployeesApi.md#listEmployees) | **GET** /v1/me/employees | ListEmployees
+[**listTimecardEvents**](V1EmployeesApi.md#listTimecardEvents) | **GET** /v1/me/timecards/{timecard_id}/events | ListTimecardEvents
+[**listTimecards**](V1EmployeesApi.md#listTimecards) | **GET** /v1/me/timecards | ListTimecards
+[**retrieveCashDrawerShift**](V1EmployeesApi.md#retrieveCashDrawerShift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id} | RetrieveCashDrawerShift
+[**retrieveEmployee**](V1EmployeesApi.md#retrieveEmployee) | **GET** /v1/me/employees/{employee_id} | RetrieveEmployee
+[**retrieveEmployeeRole**](V1EmployeesApi.md#retrieveEmployeeRole) | **GET** /v1/me/roles/{role_id} | RetrieveEmployeeRole
+[**retrieveTimecard**](V1EmployeesApi.md#retrieveTimecard) | **GET** /v1/me/timecards/{timecard_id} | RetrieveTimecard
+[**updateEmployee**](V1EmployeesApi.md#updateEmployee) | **PUT** /v1/me/employees/{employee_id} | UpdateEmployee
+[**updateEmployeeRole**](V1EmployeesApi.md#updateEmployeeRole) | **PUT** /v1/me/roles/{role_id} | UpdateEmployeeRole
+[**updateTimecard**](V1EmployeesApi.md#updateTimecard) | **PUT** /v1/me/timecards/{timecard_id} | UpdateTimecard
 
 
 <a name="createEmployee"></a>
 # **createEmployee**
 > V1Employee createEmployee(body)
 
-Creates an employee for a business.
+CreateEmployee
 
-Creates an employee for a business.
+ Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -74,9 +74,9 @@ Name | Type | Description  | Notes
 # **createEmployeeRole**
 > V1EmployeeRole createEmployeeRole(employeeRole)
 
-Creates an employee role you can then assign to employees.
+CreateEmployeeRole
 
-Creates an employee role you can then assign to employees.
+Creates an employee role you can then assign to employees.  Square accounts can include any number of roles that can be assigned to employees. These roles define the actions and permissions granted to an employee with that role. For example, an employee with a \&quot;Shift Manager\&quot; role might be able to issue refunds in Square Point of Sale, whereas an employee with a \&quot;Clerk\&quot; role might not.  Roles are assigned with the [V1UpdateEmployee](#endpoint-v1updateemployee) endpoint. An employee can have only one role at a time.  If an employee has no role, they have none of the permissions associated with roles. All employees can accept payments with Square Point of Sale.
 
 ### Example
 ```javascript
@@ -122,9 +122,9 @@ Name | Type | Description  | Notes
 # **createTimecard**
 > V1Timecard createTimecard(body)
 
-Creates a timecard for an employee. Each timecard corresponds to a single shift.
+CreateTimecard
 
-Creates a timecard for an employee. Each timecard corresponds to a single shift.
+Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value. To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
 
 ### Example
 ```javascript
@@ -170,9 +170,9 @@ Name | Type | Description  | Notes
 # **deleteTimecard**
 > Object deleteTimecard(timecardId)
 
-Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+DeleteTimecard
 
-Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 # **listCashDrawerShifts**
 > [V1CashDrawerShift] listCashDrawerShifts(locationId, opts)
 
-Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
+ListCashDrawerShifts
 
 Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 # **listEmployeeRoles**
 > [V1EmployeeRole] listEmployeeRoles(opts)
 
-Provides summary information for all of a business&#39;s employee roles.
+ListEmployeeRoles
 
 Provides summary information for all of a business&#39;s employee roles.
 
@@ -290,7 +290,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var opts = { 
-  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.Default value: ASC
   'limit': 56, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
   'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
@@ -306,7 +306,7 @@ apiInstance.listEmployeeRoles(opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **order** | **String**| The order in which employees are listed in the response, based on their created_at field.Default value: ASC  | [optional] 
+ **order** | **String**| The order in which employees are listed in the response, based on their created_at field.Default value: ASC | [optional] 
  **limit** | **Number**| The maximum integer number of employee entities to return in a single response. Default 100, maximum 200. | [optional] 
  **batchToken** | **String**| A pagination cursor to retrieve the next set of results for your original query to the endpoint. | [optional] 
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 # **listEmployees**
 > [V1Employee] listEmployees(opts)
 
-Provides summary information for all of a business&#39;s employees.
+ListEmployees
 
 Provides summary information for all of a business&#39;s employees.
 
@@ -343,7 +343,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var opts = { 
-  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
   'beginUpdatedAt': "beginUpdatedAt_example", // String | If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
   'endUpdatedAt': "endUpdatedAt_example", // String | If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
   'beginCreatedAt': "beginCreatedAt_example", // String | If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
@@ -365,7 +365,7 @@ apiInstance.listEmployees(opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **order** | **String**| The order in which employees are listed in the response, based on their created_at field.      Default value: ASC  | [optional] 
+ **order** | **String**| The order in which employees are listed in the response, based on their created_at field.      Default value: ASC | [optional] 
  **beginUpdatedAt** | **String**| If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format | [optional] 
  **endUpdatedAt** | **String**| If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format. | [optional] 
  **beginCreatedAt** | **String**| If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format. | [optional] 
@@ -392,9 +392,9 @@ Name | Type | Description  | Notes
 # **listTimecardEvents**
 > [V1TimecardEvent] listTimecardEvents(timecardId)
 
-Provides summary information for all events associated with a particular timecard.
+ListTimecardEvents
 
-Provides summary information for all events associated with a particular timecard.
+Provides summary information for all events associated with a particular timecard.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -440,7 +440,7 @@ Name | Type | Description  | Notes
 # **listTimecards**
 > [V1Timecard] listTimecards(opts)
 
-Provides summary information for all of a business&#39;s employee timecards.
+ListTimecards
 
 Provides summary information for all of a business&#39;s employee timecards.
 
@@ -509,7 +509,7 @@ Name | Type | Description  | Notes
 # **retrieveCashDrawerShift**
 > V1CashDrawerShift retrieveCashDrawerShift(locationId, shiftId)
 
-Provides the details for a single cash drawer shift, including all events that occurred during the shift.
+RetrieveCashDrawerShift
 
 Provides the details for a single cash drawer shift, including all events that occurred during the shift.
 
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 # **retrieveEmployee**
 > V1Employee retrieveEmployee(employeeId)
 
-Provides the details for a single employee.
+RetrieveEmployee
 
 Provides the details for a single employee.
 
@@ -608,7 +608,7 @@ Name | Type | Description  | Notes
 # **retrieveEmployeeRole**
 > V1EmployeeRole retrieveEmployeeRole(roleId)
 
-Provides the details for a single employee role.
+RetrieveEmployeeRole
 
 Provides the details for a single employee role.
 
@@ -656,9 +656,9 @@ Name | Type | Description  | Notes
 # **retrieveTimecard**
 > V1Timecard retrieveTimecard(timecardId)
 
-Provides the details for a single timecard.
+RetrieveTimecard
 
-Provides the details for a single timecard.
+Provides the details for a single timecard. &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -704,7 +704,9 @@ Name | Type | Description  | Notes
 # **updateEmployee**
 > V1Employee updateEmployee(employeeId, body)
 
-V1 UpdateEmployee
+UpdateEmployee
+
+
 
 ### Example
 ```javascript
@@ -753,7 +755,7 @@ Name | Type | Description  | Notes
 # **updateEmployeeRole**
 > V1EmployeeRole updateEmployeeRole(roleId, body)
 
-Modifies the details of an employee role.
+UpdateEmployeeRole
 
 Modifies the details of an employee role.
 
@@ -804,9 +806,9 @@ Name | Type | Description  | Notes
 # **updateTimecard**
 > V1Timecard updateTimecard(timecardId, body)
 
-Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
+UpdateTimecard
 
-Modifies a timecard&#39;s details. This creates an API_EDIT event for the timecard. You can view a timecard&#39;s event history with the List Timecard Events endpoint.
+Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
 
 ### Example
 ```javascript
@@ -821,7 +823,7 @@ var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var timecardId = "timecardId_example"; // String | TThe ID of the timecard to modify.
 
-var body = new SquareConnect.V1Timecard(); // V1Timecard | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = new SquareConnect.V1Timecard(); // V1Timecard | An object containing the fields to POST for the request. See the corresponding object definition for field details.
 
 apiInstance.updateTimecard(timecardId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -836,7 +838,7 @@ apiInstance.updateTimecard(timecardId, body).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **timecardId** | **String**| TThe ID of the timecard to modify. | 
- **body** | [**V1Timecard**](V1Timecard.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
+ **body** | [**V1Timecard**](V1Timecard.md)| An object containing the fields to POST for the request. See the corresponding object definition for field details. | 
 
 ### Return type
 

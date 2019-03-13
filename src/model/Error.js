@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>Error</code>.
- * Represents an error encountered during a request to the Connect API.  See [Handling errors](#handlingerrors) for more information.
+ * Represents an error encountered during a request to the Connect API.
  * @alias module:model/Error
  * @class
  * @param category {module:model/Error.CategoryEnum} The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.

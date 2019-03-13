@@ -1,5 +1,9 @@
 # SquareConnect.AdditionalRecipient
 
+### Description
+
+Represents an additional recipient (other than the merchant) receiving a portion of this tender.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -23,10 +23,11 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1EmployeeRole</code>.
+ * V1EmployeeRole
  * @alias module:model/V1EmployeeRole
  * @class
  * @param name {String} The role's merchant-defined name.
- * @param permissions {Array.<module:model/V1EmployeeRole.PermissionsEnum>} The role's permissions.
+ * @param permissions {Array.<module:model/V1EmployeeRole.PermissionsEnum>} The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
  */
 var exports = function(name, permissions) {
   var _this = this;
@@ -83,7 +84,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The role's permissions.
+ * The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
  * @member {Array.<module:model/V1EmployeeRole.PermissionsEnum>} permissions
  */
 exports.prototype['permissions'] = undefined;

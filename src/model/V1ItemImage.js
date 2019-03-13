@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ItemImage</code>.
+ * V1ItemImage
  * @alias module:model/V1ItemImage
  * @class
  */

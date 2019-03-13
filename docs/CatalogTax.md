@@ -1,5 +1,9 @@
 # SquareConnect.CatalogTax
 
+### Description
+
+A tax in the Catalog object model.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

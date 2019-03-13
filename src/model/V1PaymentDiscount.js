@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1PaymentDiscount</code>.
+ * V1PaymentDiscount
  * @alias module:model/V1PaymentDiscount
  * @class
  */

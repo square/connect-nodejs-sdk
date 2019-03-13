@@ -37,6 +37,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -71,12 +72,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('id_token')) {
       obj['id_token'] = ApiClient.convertToType(data['id_token'], 'String');
     }
+      if (data.hasOwnProperty('refresh_token')) {
+      obj['refresh_token'] = ApiClient.convertToType(data['refresh_token'], 'String');
+    }
     }
   return obj;
 }
 
 /**
- * Your application's access token. You provide this token in a header with every request to Connect API endpoints. See [Request and response headers](https://docs.connect.squareup.com/api/connect/v2/#requestandresponseheaders) for the format of this header.
+ * A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
  * @member {String} access_token
  */
 exports.prototype['access_token'] = undefined;
@@ -96,7 +100,7 @@ exports.prototype['expires_at'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * The ID of the merchant [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
+ * __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if  the merchant signed up for a subscription during authorization.
  * @member {String} subscription_id
  */
 exports.prototype['subscription_id'] = undefined;
@@ -110,6 +114,11 @@ exports.prototype['plan_id'] = undefined;
  * @member {String} id_token
  */
 exports.prototype['id_token'] = undefined;
+/**
+ * A refresh token.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
+ * @member {String} refresh_token
+ */
+exports.prototype['refresh_token'] = undefined;
 
 
 

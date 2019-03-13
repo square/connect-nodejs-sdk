@@ -1,5 +1,9 @@
 # SquareConnect.UpdateItemTaxesRequest
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

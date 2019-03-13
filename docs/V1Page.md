@@ -1,5 +1,9 @@
 # SquareConnect.V1Page
 
+### Description
+
+V1Page
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

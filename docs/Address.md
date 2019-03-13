@@ -1,5 +1,9 @@
 # SquareConnect.Address
 
+### Description
+
+Represents a physical address.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

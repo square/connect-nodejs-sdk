@@ -1,5 +1,9 @@
 # SquareConnect.TenderCardDetails
 
+### Description
+
+Represents additional details of a tender with `type` `CARD` or `SQUARE_GIFT_CARD`
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

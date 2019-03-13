@@ -25,6 +25,7 @@ var V1PaymentTax = require('./V1PaymentTax');
 
 /**
  * Constructs a new <code>V1PaymentSurcharge</code>.
+ * V1PaymentSurcharge
  * @alias module:model/V1PaymentSurcharge
  * @class
  */
@@ -101,7 +102,7 @@ exports.prototype['rate'] = undefined;
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group.
+ * Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group. See [V1PaymentSurchargeType](#type-v1paymentsurchargetype) for possible values
  * @member {module:model/V1PaymentSurcharge.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

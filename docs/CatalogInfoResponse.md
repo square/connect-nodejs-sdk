@@ -1,5 +1,9 @@
 # SquareConnect.CatalogInfoResponse
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

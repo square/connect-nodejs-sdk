@@ -1,5 +1,9 @@
 # SquareConnect.CustomerPreferences
 
+### Description
+
+Represents a particular customer's preferences.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

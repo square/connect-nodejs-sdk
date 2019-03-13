@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1SettlementEntry</code>.
+ * V1SettlementEntry
  * @alias module:model/V1SettlementEntry
  * @class
  */
@@ -69,7 +70,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['payment_id'] = undefined;
 /**
- * The settlement's current status.
+ * The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values
  * @member {module:model/V1SettlementEntry.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
@@ -190,7 +191,12 @@ exports.prototype['fee_money'] = undefined;
      * value: "SQUARE_275"
      * @const
      */
-    "SQUARE_275": "SQUARE_275"  };
+    "SQUARE_275": "SQUARE_275",
+    /**
+     * value: "SQUARE_CARD"
+     * @const
+     */
+    "SQUARE_CARD": "SQUARE_CARD"  };
 
 
 module.exports = exports;

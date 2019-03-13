@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1CashDrawerEvent</code>.
+ * V1CashDrawerEvent
  * @alias module:model/V1CashDrawerEvent
  * @class
  */
@@ -82,7 +83,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['employee_id'] = undefined;
 /**
- * The type of event that occurred.
+ * The type of event that occurred. See [V1CashDrawerEventEventType](#type-v1cashdrawereventeventtype) for possible values
  * @member {module:model/V1CashDrawerEvent.EventTypeEnum} event_type
  */
 exports.prototype['event_type'] = undefined;

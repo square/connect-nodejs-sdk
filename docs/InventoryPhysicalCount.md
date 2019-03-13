@@ -1,5 +1,9 @@
 # SquareConnect.InventoryPhysicalCount
 
+### Description
+
+Represents a verified (re)count of items in a given state at a specific location. For example, the quantity of items currently on hand at a physical store).
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -81,7 +81,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['order'] = undefined;
 /**
- * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information.
+ * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency](/basics/api101/idempotency) for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

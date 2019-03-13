@@ -25,6 +25,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1PaymentTax</code>.
+ * V1PaymentTax
  * @alias module:model/V1PaymentTax
  * @class
  */
@@ -93,7 +94,7 @@ exports.prototype['applied_money'] = undefined;
  */
 exports.prototype['rate'] = undefined;
 /**
- * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+ * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values
  * @member {module:model/V1PaymentTax.InclusionTypeEnum} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;

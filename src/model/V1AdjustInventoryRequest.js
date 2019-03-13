@@ -23,6 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1AdjustInventoryRequest</code>.
+ * V1AdjustInventoryRequest
  * @alias module:model/V1AdjustInventoryRequest
  * @class
  */
@@ -64,7 +65,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['quantity_delta'] = undefined;
 /**
- * The reason for the inventory adjustment.
+ * The reason for the inventory adjustment. See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values
  * @member {module:model/V1AdjustInventoryRequest.AdjustmentTypeEnum} adjustment_type
  */
 exports.prototype['adjustment_type'] = undefined;

@@ -32,7 +32,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Provides details for a business&#39;s locations, including their IDs.
+   * ListLocations
    * Provides details for a business&#39;s locations, including their IDs.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Merchant>} and HTTP response
    */
@@ -46,6 +46,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -63,7 +64,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Provides details for a business&#39;s locations, including their IDs.
+   * ListLocations
    * Provides details for a business&#39;s locations, including their IDs.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Merchant>}
    */
@@ -76,7 +77,7 @@ module.exports = function(apiClient) {
 
 
   /**
-   * Get a business&#39;s information.
+   * RetrieveBusiness
    * Get a business&#39;s information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Merchant} and HTTP response
    */
@@ -90,6 +91,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
+    headerParams['Square-Version'] = '2019-03-13';
 
     var formParams = {
     };
@@ -107,7 +109,7 @@ module.exports = function(apiClient) {
   }
 
   /**
-   * Get a business&#39;s information.
+   * RetrieveBusiness
    * Get a business&#39;s information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Merchant}
    */

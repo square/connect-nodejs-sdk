@@ -1,11 +1,15 @@
 # SquareConnect.CatalogItem
 
+### Description
+
+An item (i.e., product family) in the Catalog object model.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | The item&#39;s name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points. | [optional] 
 **description** | **String** | The item&#39;s description. Searchable. This field has max length of 4096 Unicode code points. | [optional] 
-**abbreviation** | **String** | The text of the item&#39;s display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points. | [optional] 
+**abbreviation** | **String** | The text of the item&#39;s display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable. This field has max length of 24 Unicode code points. | [optional] 
 **label_color** | **String** | The color of the item&#39;s display label in the Square Point of Sale app. This must be a valid hex color code. | [optional] 
 **available_online** | **Boolean** | If &#x60;true&#x60;, the item can be added to shipping orders from the merchant&#39;s online store. | [optional] 
 **available_for_pickup** | **Boolean** | If &#x60;true&#x60;, the item can be added to pickup orders from the merchant&#39;s online store. | [optional] 

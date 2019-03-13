@@ -24,6 +24,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1Variation</code>.
+ * V1Variation
  * @alias module:model/V1Variation
  * @class
  */
@@ -112,7 +113,7 @@ exports.prototype['item_id'] = undefined;
  */
 exports.prototype['ordinal'] = undefined;
 /**
- * Indicates whether the item variation's price is fixed or determined at the time of sale.
+ * Indicates whether the item variation's price is fixed or determined at the time of sale. See [V1VariationPricingType](#type-v1variationpricingtype) for possible values
  * @member {module:model/V1Variation.PricingTypeEnum} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
@@ -132,7 +133,7 @@ exports.prototype['sku'] = undefined;
  */
 exports.prototype['track_inventory'] = undefined;
 /**
- * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold.
+ * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values
  * @member {module:model/V1Variation.InventoryAlertTypeEnum} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;

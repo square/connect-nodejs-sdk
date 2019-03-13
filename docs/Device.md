@@ -1,5 +1,9 @@
 # SquareConnect.Device
 
+### Description
+
+
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

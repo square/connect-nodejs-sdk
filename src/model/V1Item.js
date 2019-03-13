@@ -27,6 +27,7 @@ var V1Variation = require('./V1Variation');
 
 /**
  * Constructs a new <code>V1Item</code>.
+ * V1Item
  * @alias module:model/V1Item
  * @class
  */
@@ -130,12 +131,12 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['description'] = undefined;
 /**
- * The item's type. This value is NORMAL for almost all items.
+ * The item's type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values
  * @member {module:model/V1Item.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
 /**
- * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+ * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values
  * @member {module:model/V1Item.ColorEnum} color
  */
 exports.prototype['color'] = undefined;
@@ -145,7 +146,7 @@ exports.prototype['color'] = undefined;
  */
 exports.prototype['abbreviation'] = undefined;
 /**
- * Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE.
+ * Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE. See [V1ItemVisibility](#type-v1itemvisibility) for possible values
  * @member {module:model/V1Item.VisibilityEnum} visibility
  */
 exports.prototype['visibility'] = undefined;

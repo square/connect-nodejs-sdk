@@ -4,53 +4,53 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**adjustInventory**](V1ItemsApi.md#adjustInventory) | **POST** /v1/{location_id}/inventory/{variation_id} | Adjusts an item variation&#39;s current available inventory.
-[**applyFee**](V1ItemsApi.md#applyFee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id} | Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
-[**applyModifierList**](V1ItemsApi.md#applyModifierList) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
-[**createCategory**](V1ItemsApi.md#createCategory) | **POST** /v1/{location_id}/categories | Creates an item category.
-[**createDiscount**](V1ItemsApi.md#createDiscount) | **POST** /v1/{location_id}/discounts | Creates a discount.
-[**createFee**](V1ItemsApi.md#createFee) | **POST** /v1/{location_id}/fees | Creates a fee (tax).
-[**createItem**](V1ItemsApi.md#createItem) | **POST** /v1/{location_id}/items | Creates an item and at least one variation for it.
-[**createModifierList**](V1ItemsApi.md#createModifierList) | **POST** /v1/{location_id}/modifier-lists | Creates an item modifier list and at least one modifier option for it.
-[**createModifierOption**](V1ItemsApi.md#createModifierOption) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options | Creates an item modifier option and adds it to a modifier list.
-[**createPage**](V1ItemsApi.md#createPage) | **POST** /v1/{location_id}/pages | Creates a Favorites page in Square Register.
-[**createVariation**](V1ItemsApi.md#createVariation) | **POST** /v1/{location_id}/items/{item_id}/variations | Creates an item variation for an existing item.
-[**deleteCategory**](V1ItemsApi.md#deleteCategory) | **DELETE** /v1/{location_id}/categories/{category_id} | Deletes an existing item category.
-[**deleteDiscount**](V1ItemsApi.md#deleteDiscount) | **DELETE** /v1/{location_id}/discounts/{discount_id} | Deletes an existing discount.
-[**deleteFee**](V1ItemsApi.md#deleteFee) | **DELETE** /v1/{location_id}/fees/{fee_id} | Deletes an existing fee (tax).
-[**deleteItem**](V1ItemsApi.md#deleteItem) | **DELETE** /v1/{location_id}/items/{item_id} | Deletes an existing item and all item variations associated with it.
-[**deleteModifierList**](V1ItemsApi.md#deleteModifierList) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id} | Deletes an existing item modifier list and all modifier options associated with it.
-[**deleteModifierOption**](V1ItemsApi.md#deleteModifierOption) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | Deletes an existing item modifier option from a modifier list.
-[**deletePage**](V1ItemsApi.md#deletePage) | **DELETE** /v1/{location_id}/pages/{page_id} | Deletes an existing Favorites page and all of its cells.
-[**deletePageCell**](V1ItemsApi.md#deletePageCell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells | Deletes a cell from a Favorites page in Square Register.
-[**deleteVariation**](V1ItemsApi.md#deleteVariation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id} | Deletes an existing item variation from an item.
-[**listCategories**](V1ItemsApi.md#listCategories) | **GET** /v1/{location_id}/categories | Lists all of a location&#39;s item categories.
-[**listDiscounts**](V1ItemsApi.md#listDiscounts) | **GET** /v1/{location_id}/discounts | Lists all of a location&#39;s discounts.
-[**listFees**](V1ItemsApi.md#listFees) | **GET** /v1/{location_id}/fees | Lists all of a location&#39;s fees (taxes).
-[**listInventory**](V1ItemsApi.md#listInventory) | **GET** /v1/{location_id}/inventory | Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
-[**listItems**](V1ItemsApi.md#listItems) | **GET** /v1/{location_id}/items | Provides summary information for all of a location&#39;s items.
-[**listModifierLists**](V1ItemsApi.md#listModifierLists) | **GET** /v1/{location_id}/modifier-lists | Lists all of a location&#39;s modifier lists.
-[**listPages**](V1ItemsApi.md#listPages) | **GET** /v1/{location_id}/pages | Lists all of a location&#39;s Favorites pages in Square Register.
-[**removeFee**](V1ItemsApi.md#removeFee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id} | Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
-[**removeModifierList**](V1ItemsApi.md#removeModifierList) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
-[**retrieveItem**](V1ItemsApi.md#retrieveItem) | **GET** /v1/{location_id}/items/{item_id} | Provides the details for a single item, including associated modifier lists and fees.
-[**retrieveModifierList**](V1ItemsApi.md#retrieveModifierList) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id} | Provides the details for a single modifier list.
-[**updateCategory**](V1ItemsApi.md#updateCategory) | **PUT** /v1/{location_id}/categories/{category_id} | Modifies the details of an existing item category.
-[**updateDiscount**](V1ItemsApi.md#updateDiscount) | **PUT** /v1/{location_id}/discounts/{discount_id} | Modifies the details of an existing discount.
-[**updateFee**](V1ItemsApi.md#updateFee) | **PUT** /v1/{location_id}/fees/{fee_id} | Modifies the details of an existing fee (tax).
-[**updateItem**](V1ItemsApi.md#updateItem) | **PUT** /v1/{location_id}/items/{item_id} | Modifies the core details of an existing item.
-[**updateModifierList**](V1ItemsApi.md#updateModifierList) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id} | Modifies the details of an existing item modifier list.
-[**updateModifierOption**](V1ItemsApi.md#updateModifierOption) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | Modifies the details of an existing item modifier option.
-[**updatePage**](V1ItemsApi.md#updatePage) | **PUT** /v1/{location_id}/pages/{page_id} | Modifies the details of a Favorites page in Square Register.
-[**updatePageCell**](V1ItemsApi.md#updatePageCell) | **PUT** /v1/{location_id}/pages/{page_id}/cells | Modifies a cell of a Favorites page in Square Register.
-[**updateVariation**](V1ItemsApi.md#updateVariation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id} | Modifies the details of an existing item variation.
+[**adjustInventory**](V1ItemsApi.md#adjustInventory) | **POST** /v1/{location_id}/inventory/{variation_id} | AdjustInventory
+[**applyFee**](V1ItemsApi.md#applyFee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id} | ApplyFee
+[**applyModifierList**](V1ItemsApi.md#applyModifierList) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | ApplyModifierList
+[**createCategory**](V1ItemsApi.md#createCategory) | **POST** /v1/{location_id}/categories | CreateCategory
+[**createDiscount**](V1ItemsApi.md#createDiscount) | **POST** /v1/{location_id}/discounts | CreateDiscount
+[**createFee**](V1ItemsApi.md#createFee) | **POST** /v1/{location_id}/fees | CreateFee
+[**createItem**](V1ItemsApi.md#createItem) | **POST** /v1/{location_id}/items | CreateItem
+[**createModifierList**](V1ItemsApi.md#createModifierList) | **POST** /v1/{location_id}/modifier-lists | CreateModifierList
+[**createModifierOption**](V1ItemsApi.md#createModifierOption) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options | CreateModifierOption
+[**createPage**](V1ItemsApi.md#createPage) | **POST** /v1/{location_id}/pages | CreatePage
+[**createVariation**](V1ItemsApi.md#createVariation) | **POST** /v1/{location_id}/items/{item_id}/variations | CreateVariation
+[**deleteCategory**](V1ItemsApi.md#deleteCategory) | **DELETE** /v1/{location_id}/categories/{category_id} | DeleteCategory
+[**deleteDiscount**](V1ItemsApi.md#deleteDiscount) | **DELETE** /v1/{location_id}/discounts/{discount_id} | DeleteDiscount
+[**deleteFee**](V1ItemsApi.md#deleteFee) | **DELETE** /v1/{location_id}/fees/{fee_id} | DeleteFee
+[**deleteItem**](V1ItemsApi.md#deleteItem) | **DELETE** /v1/{location_id}/items/{item_id} | DeleteItem
+[**deleteModifierList**](V1ItemsApi.md#deleteModifierList) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id} | DeleteModifierList
+[**deleteModifierOption**](V1ItemsApi.md#deleteModifierOption) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | DeleteModifierOption
+[**deletePage**](V1ItemsApi.md#deletePage) | **DELETE** /v1/{location_id}/pages/{page_id} | DeletePage
+[**deletePageCell**](V1ItemsApi.md#deletePageCell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells | DeletePageCell
+[**deleteVariation**](V1ItemsApi.md#deleteVariation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id} | DeleteVariation
+[**listCategories**](V1ItemsApi.md#listCategories) | **GET** /v1/{location_id}/categories | ListCategories
+[**listDiscounts**](V1ItemsApi.md#listDiscounts) | **GET** /v1/{location_id}/discounts | ListDiscounts
+[**listFees**](V1ItemsApi.md#listFees) | **GET** /v1/{location_id}/fees | ListFees
+[**listInventory**](V1ItemsApi.md#listInventory) | **GET** /v1/{location_id}/inventory | ListInventory
+[**listItems**](V1ItemsApi.md#listItems) | **GET** /v1/{location_id}/items | ListItems
+[**listModifierLists**](V1ItemsApi.md#listModifierLists) | **GET** /v1/{location_id}/modifier-lists | ListModifierLists
+[**listPages**](V1ItemsApi.md#listPages) | **GET** /v1/{location_id}/pages | ListPages
+[**removeFee**](V1ItemsApi.md#removeFee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id} | RemoveFee
+[**removeModifierList**](V1ItemsApi.md#removeModifierList) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | RemoveModifierList
+[**retrieveItem**](V1ItemsApi.md#retrieveItem) | **GET** /v1/{location_id}/items/{item_id} | RetrieveItem
+[**retrieveModifierList**](V1ItemsApi.md#retrieveModifierList) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id} | RetrieveModifierList
+[**updateCategory**](V1ItemsApi.md#updateCategory) | **PUT** /v1/{location_id}/categories/{category_id} | UpdateCategory
+[**updateDiscount**](V1ItemsApi.md#updateDiscount) | **PUT** /v1/{location_id}/discounts/{discount_id} | UpdateDiscount
+[**updateFee**](V1ItemsApi.md#updateFee) | **PUT** /v1/{location_id}/fees/{fee_id} | UpdateFee
+[**updateItem**](V1ItemsApi.md#updateItem) | **PUT** /v1/{location_id}/items/{item_id} | UpdateItem
+[**updateModifierList**](V1ItemsApi.md#updateModifierList) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id} | UpdateModifierList
+[**updateModifierOption**](V1ItemsApi.md#updateModifierOption) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | UpdateModifierOption
+[**updatePage**](V1ItemsApi.md#updatePage) | **PUT** /v1/{location_id}/pages/{page_id} | UpdatePage
+[**updatePageCell**](V1ItemsApi.md#updatePageCell) | **PUT** /v1/{location_id}/pages/{page_id}/cells | UpdatePageCell
+[**updateVariation**](V1ItemsApi.md#updateVariation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id} | UpdateVariation
 
 
 <a name="adjustInventory"></a>
 # **adjustInventory**
 > V1InventoryEntry adjustInventory(locationId, variationId, body)
 
-Adjusts an item variation&#39;s current available inventory.
+AdjustInventory
 
 Adjusts an item variation&#39;s current available inventory.
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 # **applyFee**
 > V1Item applyFee(locationId, itemId, feeId)
 
-Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+ApplyFee
 
 Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 # **applyModifierList**
 > V1Item applyModifierList(locationId, modifierListId, itemId)
 
-Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+ApplyModifierList
 
 Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 # **createCategory**
 > V1Category createCategory(locationId, body)
 
-Creates an item category.
+CreateCategory
 
 Creates an item category.
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 # **createDiscount**
 > V1Discount createDiscount(locationId, body)
 
-Creates a discount.
+CreateDiscount
 
 Creates a discount.
 
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 # **createFee**
 > V1Fee createFee(locationId, body)
 
-Creates a fee (tax).
+CreateFee
 
 Creates a fee (tax).
 
@@ -365,9 +365,9 @@ Name | Type | Description  | Notes
 # **createItem**
 > V1Item createItem(locationId, body)
 
-Creates an item and at least one variation for it.
+CreateItem
 
-Creates an item and at least one variation for it.
+Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
 
 ### Example
 ```javascript
@@ -416,7 +416,7 @@ Name | Type | Description  | Notes
 # **createModifierList**
 > V1ModifierList createModifierList(locationId, body)
 
-Creates an item modifier list and at least one modifier option for it.
+CreateModifierList
 
 Creates an item modifier list and at least one modifier option for it.
 
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 # **createModifierOption**
 > V1ModifierOption createModifierOption(locationId, modifierListId, body)
 
-Creates an item modifier option and adds it to a modifier list.
+CreateModifierOption
 
 Creates an item modifier option and adds it to a modifier list.
 
@@ -521,7 +521,7 @@ Name | Type | Description  | Notes
 # **createPage**
 > V1Page createPage(locationId, body)
 
-Creates a Favorites page in Square Register.
+CreatePage
 
 Creates a Favorites page in Square Register.
 
@@ -572,7 +572,7 @@ Name | Type | Description  | Notes
 # **createVariation**
 > V1Variation createVariation(locationId, itemId, body)
 
-Creates an item variation for an existing item.
+CreateVariation
 
 Creates an item variation for an existing item.
 
@@ -626,9 +626,9 @@ Name | Type | Description  | Notes
 # **deleteCategory**
 > V1Category deleteCategory(locationId, categoryId)
 
-Deletes an existing item category.
+DeleteCategory
 
-Deletes an existing item category.
+Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -677,9 +677,9 @@ Name | Type | Description  | Notes
 # **deleteDiscount**
 > V1Discount deleteDiscount(locationId, discountId)
 
-Deletes an existing discount.
+DeleteDiscount
 
-Deletes an existing discount.
+Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -728,9 +728,9 @@ Name | Type | Description  | Notes
 # **deleteFee**
 > V1Fee deleteFee(locationId, feeId)
 
-Deletes an existing fee (tax).
+DeleteFee
 
-Deletes an existing fee (tax).
+Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -779,9 +779,9 @@ Name | Type | Description  | Notes
 # **deleteItem**
 > V1Item deleteItem(locationId, itemId)
 
-Deletes an existing item and all item variations associated with it.
+DeleteItem
 
-Deletes an existing item and all item variations associated with it.
+Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -830,9 +830,9 @@ Name | Type | Description  | Notes
 # **deleteModifierList**
 > V1ModifierList deleteModifierList(locationId, modifierListId)
 
-Deletes an existing item modifier list and all modifier options associated with it.
+DeleteModifierList
 
-Deletes an existing item modifier list and all modifier options associated with it.
+Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -881,9 +881,9 @@ Name | Type | Description  | Notes
 # **deleteModifierOption**
 > V1ModifierOption deleteModifierOption(locationId, modifierListId, modifierOptionId)
 
-Deletes an existing item modifier option from a modifier list.
+DeleteModifierOption
 
-Deletes an existing item modifier option from a modifier list.
+Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -935,9 +935,9 @@ Name | Type | Description  | Notes
 # **deletePage**
 > V1Page deletePage(locationId, pageId)
 
-Deletes an existing Favorites page and all of its cells.
+DeletePage
 
-Deletes an existing Favorites page and all of its cells.
+Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -986,9 +986,9 @@ Name | Type | Description  | Notes
 # **deletePageCell**
 > V1Page deletePageCell(locationId, pageId, opts)
 
-Deletes a cell from a Favorites page in Square Register.
+DeletePageCell
 
-Deletes a cell from a Favorites page in Square Register.
+Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -1043,9 +1043,9 @@ Name | Type | Description  | Notes
 # **deleteVariation**
 > V1Variation deleteVariation(locationId, itemId, variationId)
 
-Deletes an existing item variation from an item.
+DeleteVariation
 
-Deletes an existing item variation from an item.
+Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
 
 ### Example
 ```javascript
@@ -1097,7 +1097,7 @@ Name | Type | Description  | Notes
 # **listCategories**
 > [V1Category] listCategories(locationId)
 
-Lists all of a location&#39;s item categories.
+ListCategories
 
 Lists all of a location&#39;s item categories.
 
@@ -1145,7 +1145,7 @@ Name | Type | Description  | Notes
 # **listDiscounts**
 > [V1Discount] listDiscounts(locationId)
 
-Lists all of a location&#39;s discounts.
+ListDiscounts
 
 Lists all of a location&#39;s discounts.
 
@@ -1193,7 +1193,7 @@ Name | Type | Description  | Notes
 # **listFees**
 > [V1Fee] listFees(locationId)
 
-Lists all of a location&#39;s fees (taxes).
+ListFees
 
 Lists all of a location&#39;s fees (taxes).
 
@@ -1241,7 +1241,7 @@ Name | Type | Description  | Notes
 # **listInventory**
 > [V1InventoryEntry] listInventory(locationId, opts)
 
-Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
+ListInventory
 
 Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
 
@@ -1295,7 +1295,7 @@ Name | Type | Description  | Notes
 # **listItems**
 > [V1Item] listItems(locationId, opts)
 
-Provides summary information for all of a location&#39;s items.
+ListItems
 
 Provides summary information for all of a location&#39;s items.
 
@@ -1347,7 +1347,7 @@ Name | Type | Description  | Notes
 # **listModifierLists**
 > [V1ModifierList] listModifierLists(locationId)
 
-Lists all of a location&#39;s modifier lists.
+ListModifierLists
 
 Lists all of a location&#39;s modifier lists.
 
@@ -1395,7 +1395,7 @@ Name | Type | Description  | Notes
 # **listPages**
 > [V1Page] listPages(locationId)
 
-Lists all of a location&#39;s Favorites pages in Square Register.
+ListPages
 
 Lists all of a location&#39;s Favorites pages in Square Register.
 
@@ -1443,7 +1443,7 @@ Name | Type | Description  | Notes
 # **removeFee**
 > V1Item removeFee(locationId, itemId, feeId)
 
-Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+RemoveFee
 
 Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
 
@@ -1497,7 +1497,7 @@ Name | Type | Description  | Notes
 # **removeModifierList**
 > V1Item removeModifierList(locationId, modifierListId, itemId)
 
-Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+RemoveModifierList
 
 Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
 
@@ -1551,7 +1551,7 @@ Name | Type | Description  | Notes
 # **retrieveItem**
 > V1Item retrieveItem(locationId, itemId)
 
-Provides the details for a single item, including associated modifier lists and fees.
+RetrieveItem
 
 Provides the details for a single item, including associated modifier lists and fees.
 
@@ -1602,7 +1602,7 @@ Name | Type | Description  | Notes
 # **retrieveModifierList**
 > V1ModifierList retrieveModifierList(locationId, modifierListId)
 
-Provides the details for a single modifier list.
+RetrieveModifierList
 
 Provides the details for a single modifier list.
 
@@ -1653,7 +1653,7 @@ Name | Type | Description  | Notes
 # **updateCategory**
 > V1Category updateCategory(locationId, categoryId, body)
 
-Modifies the details of an existing item category.
+UpdateCategory
 
 Modifies the details of an existing item category.
 
@@ -1707,7 +1707,7 @@ Name | Type | Description  | Notes
 # **updateDiscount**
 > V1Discount updateDiscount(locationId, discountId, body)
 
-Modifies the details of an existing discount.
+UpdateDiscount
 
 Modifies the details of an existing discount.
 
@@ -1761,7 +1761,7 @@ Name | Type | Description  | Notes
 # **updateFee**
 > V1Fee updateFee(locationId, feeId, body)
 
-Modifies the details of an existing fee (tax).
+UpdateFee
 
 Modifies the details of an existing fee (tax).
 
@@ -1815,7 +1815,7 @@ Name | Type | Description  | Notes
 # **updateItem**
 > V1Item updateItem(locationId, itemId, body)
 
-Modifies the core details of an existing item.
+UpdateItem
 
 Modifies the core details of an existing item.
 
@@ -1869,7 +1869,7 @@ Name | Type | Description  | Notes
 # **updateModifierList**
 > V1ModifierList updateModifierList(locationId, modifierListId, body)
 
-Modifies the details of an existing item modifier list.
+UpdateModifierList
 
 Modifies the details of an existing item modifier list.
 
@@ -1923,7 +1923,7 @@ Name | Type | Description  | Notes
 # **updateModifierOption**
 > V1ModifierOption updateModifierOption(locationId, modifierListId, modifierOptionId, body)
 
-Modifies the details of an existing item modifier option.
+UpdateModifierOption
 
 Modifies the details of an existing item modifier option.
 
@@ -1980,7 +1980,7 @@ Name | Type | Description  | Notes
 # **updatePage**
 > V1Page updatePage(locationId, pageId, body)
 
-Modifies the details of a Favorites page in Square Register.
+UpdatePage
 
 Modifies the details of a Favorites page in Square Register.
 
@@ -2034,7 +2034,7 @@ Name | Type | Description  | Notes
 # **updatePageCell**
 > V1Page updatePageCell(locationId, pageId, body)
 
-Modifies a cell of a Favorites page in Square Register.
+UpdatePageCell
 
 Modifies a cell of a Favorites page in Square Register.
 
@@ -2088,7 +2088,7 @@ Name | Type | Description  | Notes
 # **updateVariation**
 > V1Variation updateVariation(locationId, itemId, variationId, body)
 
-Modifies the details of an existing item variation.
+UpdateVariation
 
 Modifies the details of an existing item variation.
 
