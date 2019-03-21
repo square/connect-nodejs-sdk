@@ -75,7 +75,7 @@ exports.constructFromObject = function(data, obj) {
       obj['opened_at'] = ApiClient.convertToType(data['opened_at'], 'String');
     }
       if (data.hasOwnProperty('ended_at')) {
-      obj['ended_at'] = ApiClient.convertToType(data['ended_at'], 'Boolean');
+      obj['ended_at'] = ApiClient.convertToType(data['ended_at'], 'String');
     }
       if (data.hasOwnProperty('closed_at')) {
       obj['closed_at'] = ApiClient.convertToType(data['closed_at'], 'String');
@@ -143,7 +143,7 @@ exports.prototype['event_type'] = undefined;
 exports.prototype['opened_at'] = undefined;
 /**
  * The time when the shift ended, in ISO 8601 format.
- * @member {Boolean} ended_at
+ * @member {String} ended_at
  */
 exports.prototype['ended_at'] = undefined;
 /**
