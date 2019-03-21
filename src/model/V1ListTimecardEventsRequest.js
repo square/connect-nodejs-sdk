@@ -26,12 +26,10 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/V1ListTimecardEventsRequest
  * @class
- * @param timecardId {String} The ID of the timecard to list events for.
  */
-var exports = function(timecardId) {
+var exports = function() {
   var _this = this;
 
-  _this['timecard_id'] = timecardId;
 };
 
 /**
@@ -45,18 +43,10 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
-      if (data.hasOwnProperty('timecard_id')) {
-      obj['timecard_id'] = ApiClient.convertToType(data['timecard_id'], 'String');
-    }
     }
   return obj;
 }
 
-/**
- * The ID of the timecard to list events for.
- * @member {String} timecard_id
- */
-exports.prototype['timecard_id'] = undefined;
 
 
 

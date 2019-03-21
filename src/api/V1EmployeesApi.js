@@ -457,9 +457,9 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
+      'timecard_id': timecardId
     };
     var queryParams = {
-      'timecard_id': timecardId
     };
     var headerParams = {
     };
