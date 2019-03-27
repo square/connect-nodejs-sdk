@@ -40,6 +40,7 @@ var CatalogCategory = require('./model/CatalogCategory');
 var CatalogDiscount = require('./model/CatalogDiscount');
 var CatalogDiscountType = require('./model/CatalogDiscountType');
 var CatalogIdMapping = require('./model/CatalogIdMapping');
+var CatalogImage = require('./model/CatalogImage');
 var CatalogInfoRequest = require('./model/CatalogInfoRequest');
 var CatalogInfoResponse = require('./model/CatalogInfoResponse');
 var CatalogInfoResponseLimits = require('./model/CatalogInfoResponseLimits');
@@ -460,7 +461,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190313.1
+ * @version 2.20190327.0
  */
   module.exports = {
   /**
@@ -603,6 +604,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogIdMapping}
    */
   CatalogIdMapping: CatalogIdMapping,
+  /**
+   * The CatalogImage model constructor.
+   * @property {module:model/CatalogImage}
+   */
+  CatalogImage: CatalogImage,
   /**
    * The CatalogInfoRequest model constructor.
    * @property {module:model/CatalogInfoRequest}

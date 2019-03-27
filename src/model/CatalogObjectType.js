@@ -26,6 +26,11 @@ var exports = {
    */
   "ITEM": "ITEM",
   /**
+   * value: "IMAGE"
+   * @const
+   */
+  "IMAGE": "IMAGE",
+  /**
    * value: "CATEGORY"
    * @const
    */

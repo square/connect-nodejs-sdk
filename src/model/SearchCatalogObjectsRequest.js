@@ -82,7 +82,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The desired set of object types to appear in the search results. The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`.
+ * The desired set of object types to appear in the search results. The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @member {Array.<module:model/SearchCatalogObjectsRequest.ObjectTypesEnum>} object_types
  */
 exports.prototype['object_types'] = undefined;
@@ -124,6 +124,11 @@ exports.prototype['limit'] = undefined;
      * @const
      */
     "ITEM": "ITEM",
+    /**
+     * value: "IMAGE"
+     * @const
+     */
+    "IMAGE": "IMAGE",
     /**
      * value: "CATEGORY"
      * @const

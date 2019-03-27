@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
+ * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
  * @member {module:model/TenderCardDetails.StatusEnum} status
  */
 exports.prototype['status'] = undefined;
@@ -71,7 +71,7 @@ exports.prototype['status'] = undefined;
  */
 exports.prototype['card'] = undefined;
 /**
- * The method used to enter the card's details for the transaction.
+ * The method used to enter the card's details for the transaction. See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values
  * @member {module:model/TenderCardDetails.EntryMethodEnum} entry_method
  */
 exports.prototype['entry_method'] = undefined;

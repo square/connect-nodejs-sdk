@@ -30,7 +30,7 @@ var TenderCashDetails = require('./TenderCashDetails');
  * Represents a tender (i.e., a method of payment) used in a Square transaction.
  * @alias module:model/Tender
  * @class
- * @param type {module:model/Tender.TypeEnum} The type of tender, such as `CARD` or `CASH`.
+ * @param type {module:model/Tender.TypeEnum} The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
  */
 var exports = function(type) {
   var _this = this;
@@ -150,7 +150,7 @@ exports.prototype['processing_fee_money'] = undefined;
  */
 exports.prototype['customer_id'] = undefined;
 /**
- * The type of tender, such as `CARD` or `CASH`.
+ * The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
  * @member {module:model/Tender.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

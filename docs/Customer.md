@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **note** | **String** | A note to associate with the customer. | [optional] 
 **preferences** | [**CustomerPreferences**](CustomerPreferences.md) | The customer&#39;s preferences. | [optional] 
 **groups** | [**[CustomerGroupInfo]**](CustomerGroupInfo.md) | The groups the customer belongs to. | [optional] 
-**creation_source** | **String** | A creation source represents the method used to create the customer profile. | [optional] 
+**creation_source** | **String** | A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values | [optional] 
 
 
 <a name="CreationSourceEnum"></a>

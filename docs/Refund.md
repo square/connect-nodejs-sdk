@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **created_at** | **String** | The time when the refund was created, in RFC 3339 format. | [optional] 
 **reason** | **String** | The reason for the refund being issued. | 
 **amount_money** | [**Money**](Money.md) | The amount of money refunded to the buyer. | 
-**status** | **String** | The current status of the refund (&#x60;PENDING&#x60;, &#x60;APPROVED&#x60;, &#x60;REJECTED&#x60;, or &#x60;FAILED&#x60;). | 
+**status** | **String** | The current status of the refund (&#x60;PENDING&#x60;, &#x60;APPROVED&#x60;, &#x60;REJECTED&#x60;, or &#x60;FAILED&#x60;). See [RefundStatus](#type-refundstatus) for possible values | 
 **processing_fee_money** | [**Money**](Money.md) | The amount of Square processing fee money refunded to the *merchant*. | [optional] 
 **additional_recipients** | [**[AdditionalRecipient]**](AdditionalRecipient.md) | Additional recipients (other than the merchant) receiving a portion of this refund. For example, fees assessed on a refund of a purchase by a third party integration. | [optional] 
 

@@ -84,7 +84,7 @@ exports.prototype['location_id'] = undefined;
  */
 exports.prototype['employee_id'] = undefined;
 /**
- * Fetch a `Shift` instance by `Shift.status`.
+ * Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values
  * @member {module:model/ShiftFilter.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

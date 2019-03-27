@@ -107,7 +107,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * The [InventoryState](#type-inventorystate) for the quantity of items being transfered.
+ * The [InventoryState](#type-inventorystate) for the quantity of items being transfered. See [InventoryState](#type-inventorystate) for possible values
  * @member {module:model/InventoryTransfer.StateEnum} state
  */
 exports.prototype['state'] = undefined;

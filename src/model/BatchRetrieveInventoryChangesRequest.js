@@ -86,12 +86,12 @@ exports.prototype['catalog_object_ids'] = undefined;
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter.
+ * Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values
  * @member {Array.<module:model/BatchRetrieveInventoryChangesRequest.TypesEnum>} types
  */
 exports.prototype['types'] = undefined;
 /**
- * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset.
+ * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset. See [InventoryState](#type-inventorystate) for possible values
  * @member {Array.<module:model/BatchRetrieveInventoryChangesRequest.StatesEnum>} states
  */
 exports.prototype['states'] = undefined;

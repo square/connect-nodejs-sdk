@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Represents an error encountered during a request to the Connect API.
  * @alias module:model/Error
  * @class
- * @param category {module:model/Error.CategoryEnum} The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
+ * @param category {module:model/Error.CategoryEnum} The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
  * @param code {module:model/Error.CodeEnum} The error's specific code. See [ErrorCode](#type-errorcode) for possible values
  */
 var exports = function(category, code) {
@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
+ * The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
  * @member {module:model/Error.CategoryEnum} category
  */
 exports.prototype['category'] = undefined;

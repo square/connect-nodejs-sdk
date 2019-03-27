@@ -204,6 +204,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogDiscount](docs/CatalogDiscount.md)
  - [SquareConnect.CatalogDiscountType](docs/CatalogDiscountType.md)
  - [SquareConnect.CatalogIdMapping](docs/CatalogIdMapping.md)
+ - [SquareConnect.CatalogImage](docs/CatalogImage.md)
  - [SquareConnect.CatalogInfoRequest](docs/CatalogInfoRequest.md)
  - [SquareConnect.CatalogInfoResponse](docs/CatalogInfoResponse.md)
  - [SquareConnect.CatalogInfoResponseLimits](docs/CatalogInfoResponseLimits.md)

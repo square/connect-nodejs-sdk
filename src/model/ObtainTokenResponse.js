@@ -100,7 +100,7 @@ exports.prototype['expires_at'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if  the merchant signed up for a subscription during authorization.
+ * __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
  * @member {String} subscription_id
  */
 exports.prototype['subscription_id'] = undefined;
@@ -115,7 +115,7 @@ exports.prototype['plan_id'] = undefined;
  */
 exports.prototype['id_token'] = undefined;
 /**
- * A refresh token.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
+ * A refresh token. For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
  * @member {String} refresh_token
  */
 exports.prototype['refresh_token'] = undefined;

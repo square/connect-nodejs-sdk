@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['date_range'] = undefined;
 /**
- * The strategy on which the dates are applied.
+ * The strategy on which the dates are applied. See [ShiftWorkdayMatcher](#type-shiftworkdaymatcher) for possible values
  * @member {module:model/ShiftWorkday.MatchShiftsByEnum} match_shifts_by
  */
 exports.prototype['match_shifts_by'] = undefined;

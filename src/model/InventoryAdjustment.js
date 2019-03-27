@@ -128,12 +128,12 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
+ * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment. See [InventoryState](#type-inventorystate) for possible values
  * @member {module:model/InventoryAdjustment.FromStateEnum} from_state
  */
 exports.prototype['from_state'] = undefined;
 /**
- * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
+ * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment. See [InventoryState](#type-inventorystate) for possible values
  * @member {module:model/InventoryAdjustment.ToStateEnum} to_state
  */
 exports.prototype['to_state'] = undefined;

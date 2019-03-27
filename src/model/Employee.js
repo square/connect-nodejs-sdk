@@ -96,7 +96,7 @@ exports.prototype['last_name'] = undefined;
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * Specifies the status of the employee being fetched.
+ * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
  * @member {module:model/Employee.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

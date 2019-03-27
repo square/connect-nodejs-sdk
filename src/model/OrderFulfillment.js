@@ -61,12 +61,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The type of the fulfillment.
+ * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
  * @member {module:model/OrderFulfillment.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
 /**
- * The state of the fulfillment.
+ * The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
  * @member {module:model/OrderFulfillment.StateEnum} state
  */
 exports.prototype['state'] = undefined;

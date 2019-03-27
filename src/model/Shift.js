@@ -140,7 +140,7 @@ exports.prototype['wage'] = undefined;
  */
 exports.prototype['breaks'] = undefined;
 /**
- * Describes working state of the current `Shift`.
+ * Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values
  * @member {module:model/Shift.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

@@ -127,7 +127,7 @@ exports.prototype['upc'] = undefined;
  */
 exports.prototype['ordinal'] = undefined;
 /**
- * Indicates whether the item variation's price is fixed or determined at the time of sale. See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+ * Indicates whether the item variation's price is fixed or determined at the time of sale. See [CatalogPricingType](#type-catalogpricingtype) for possible values
  * @member {module:model/CatalogItemVariation.PricingTypeEnum} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
@@ -147,7 +147,7 @@ exports.prototype['location_overrides'] = undefined;
  */
 exports.prototype['track_inventory'] = undefined;
 /**
- * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+ * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
  * @member {module:model/CatalogItemVariation.InventoryAlertTypeEnum} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;

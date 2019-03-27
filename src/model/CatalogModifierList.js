@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['name'] = undefined;
 /**
- * Indicates whether multiple options from the [CatalogModifierList](#type-catalogmodifierlist) can be applied to a single [CatalogItem](#type-catalogitem). See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for all possible values.
+ * Indicates whether multiple options from the [CatalogModifierList](#type-catalogmodifierlist) can be applied to a single [CatalogItem](#type-catalogitem). See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values
  * @member {module:model/CatalogModifierList.SelectionTypeEnum} selection_type
  */
 exports.prototype['selection_type'] = undefined;
