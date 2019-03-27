@@ -83,7 +83,7 @@ exports.prototype['location_id'] = undefined;
  */
 exports.prototype['price_money'] = undefined;
 /**
- * The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+ * The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for possible values
  * @member {module:model/ItemVariationLocationOverrides.PricingTypeEnum} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
@@ -93,7 +93,7 @@ exports.prototype['pricing_type'] = undefined;
  */
 exports.prototype['track_inventory'] = undefined;
 /**
- * Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+ * Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
  * @member {module:model/ItemVariationLocationOverrides.InventoryAlertTypeEnum} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;

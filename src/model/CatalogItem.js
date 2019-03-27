@@ -156,7 +156,7 @@ exports.prototype['tax_ids'] = undefined;
  */
 exports.prototype['modifier_list_info'] = undefined;
 /**
- * The URL of an image representing this item.
+ * __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
  * @member {String} image_url
  */
 exports.prototype['image_url'] = undefined;
@@ -166,7 +166,7 @@ exports.prototype['image_url'] = undefined;
  */
 exports.prototype['variations'] = undefined;
 /**
- * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for all possible values.
+ * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
  * @member {module:model/CatalogItem.ProductTypeEnum} product_type
  */
 exports.prototype['product_type'] = undefined;

@@ -60,7 +60,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Read-only [Product](#type-product) type for the application.
+ * Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values
  * @member {module:model/SourceApplication.ProductEnum} product
  */
 exports.prototype['product'] = undefined;

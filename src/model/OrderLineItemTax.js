@@ -83,7 +83,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
+ * Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
  * @member {module:model/OrderLineItemTax.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
@@ -98,7 +98,7 @@ exports.prototype['percentage'] = undefined;
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
+ * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
  * @member {module:model/OrderLineItemTax.ScopeEnum} scope
  */
 exports.prototype['scope'] = undefined;

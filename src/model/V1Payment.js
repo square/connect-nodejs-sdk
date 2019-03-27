@@ -268,7 +268,7 @@ exports.prototype['inclusive_tax'] = undefined;
  */
 exports.prototype['additive_tax'] = undefined;
 /**
- * All of the additive taxes associated with the payment.
+ * All of the tenders associated with the payment.
  * @member {Array.<module:model/V1Tender>} tender
  */
 exports.prototype['tender'] = undefined;

@@ -69,7 +69,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['location_id'] = undefined;
 /**
- * Specifies the EmployeeStatus to filter the employee by.
+ * Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values
  * @member {module:model/ListEmployeesRequest.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

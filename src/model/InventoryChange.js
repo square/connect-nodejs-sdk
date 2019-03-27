@@ -67,7 +67,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for all possible values.
+ * Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for possible values
  * @member {module:model/InventoryChange.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

@@ -34,7 +34,7 @@ var Money = require('./Money');
  * @param tenderId {String} The ID of the refunded tender.
  * @param reason {String} The reason for the refund being issued.
  * @param amountMoney {module:model/Money} The amount of money refunded to the buyer.
- * @param status {module:model/Refund.StatusEnum} The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
+ * @param status {module:model/Refund.StatusEnum} The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
  */
 var exports = function(id, locationId, transactionId, tenderId, reason, amountMoney, status) {
   var _this = this;
@@ -132,7 +132,7 @@ exports.prototype['reason'] = undefined;
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
+ * The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
  * @member {module:model/Refund.StatusEnum} status
  */
 exports.prototype['status'] = undefined;

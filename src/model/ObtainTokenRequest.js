@@ -26,15 +26,18 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/ObtainTokenRequest
  * @class
+ * @param clientId {String} The Square-issued ID of your application, available from the [application dashboard](https://connect.squareup.com/apps).
+ * @param clientSecret {String} The Square-issued application secret for your application, available from the [application dashboard](https://connect.squareup.com/apps).
+ * @param grantType {String} Specifies the method to request an OAuth access token. Valid values are: `authorization_code`, `refresh_token`, and `migration_token`
  */
-var exports = function() {
+var exports = function(clientId, clientSecret, grantType) {
   var _this = this;
 
+  _this['client_id'] = clientId;
+  _this['client_secret'] = clientSecret;
 
 
-
-
-
+  _this['grant_type'] = grantType;
 
 
 };
@@ -81,12 +84,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['client_id'] = undefined;
 /**
- * The Square-issued application secret for your application,  available from the [application dashboard](https://connect.squareup.com/apps).
+ * The Square-issued application secret for your application, available from the [application dashboard](https://connect.squareup.com/apps).
  * @member {String} client_secret
  */
 exports.prototype['client_secret'] = undefined;
 /**
- * The authorization code to exchange.  This is required if `grant_type` is set to `authorization_code`, to indicate that  the application wants to exchange an authorization code for an OAuth access token.
+ * The authorization code to exchange. This is required if `grant_type` is set to `authorization_code`, to indicate that the application wants to exchange an authorization code for an OAuth access token.
  * @member {String} code
  */
 exports.prototype['code'] = undefined;
@@ -96,17 +99,17 @@ exports.prototype['code'] = undefined;
  */
 exports.prototype['redirect_uri'] = undefined;
 /**
- * Specifies the method to request an OAuth access token.  Valid values are: `authorization_code`, `refresh_token`, and `migration_token`
+ * Specifies the method to request an OAuth access token. Valid values are: `authorization_code`, `refresh_token`, and `migration_token`
  * @member {String} grant_type
  */
 exports.prototype['grant_type'] = undefined;
 /**
- * A valid refresh token for generating a new OAuth access token.  A valid refresh token is required if `grant_type` is set to `refresh_token` ,   to indicate the application wants a replacement for an expired OAuth access token.
+ * A valid refresh token for generating a new OAuth access token. A valid refresh token is required if `grant_type` is set to `refresh_token` , to indicate the application wants a replacement for an expired OAuth access token.
  * @member {String} refresh_token
  */
 exports.prototype['refresh_token'] = undefined;
 /**
- * Legacy OAuth access token obtained using a Connect API version prior  to 2019-03-13. This parameter is required if `grant_type` is set to  `migration_token` to indicate that the application wants to get a replacement   OAuth access token. The response also returns a refresh token.  For more information, see [Migrate to Using Refresh Tokens](/authz/oauth/migration).
+ * Legacy OAuth access token obtained using a Connect API version prior to 2019-03-13. This parameter is required if `grant_type` is set to `migration_token` to indicate that the application wants to get a replacement OAuth access token. The response also returns a refresh token. For more information, see [Migrate to Using Refresh Tokens](/authz/oauth/migration).
  * @member {String} migration_token
  */
 exports.prototype['migration_token'] = undefined;

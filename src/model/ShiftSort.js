@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The field to sort on.
+ * The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values
  * @member {module:model/ShiftSort.FieldEnum} field
  */
 exports.prototype['field'] = undefined;
 /**
- * The order in which results are returned. Defaults to DESC.
+ * The order in which results are returned. Defaults to DESC. See [SortOrder](#type-sortorder) for possible values
  * @member {module:model/ShiftSort.OrderEnum} order
  */
 exports.prototype['order'] = undefined;

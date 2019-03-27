@@ -86,7 +86,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
+ * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values
  * @member {module:model/Card.CardBrandEnum} card_brand
  */
 exports.prototype['card_brand'] = undefined;

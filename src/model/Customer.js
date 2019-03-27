@@ -203,7 +203,7 @@ exports.prototype['preferences'] = undefined;
  */
 exports.prototype['groups'] = undefined;
 /**
- * A creation source represents the method used to create the customer profile.
+ * A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values
  * @member {module:model/Customer.CreationSourceEnum} creation_source
  */
 exports.prototype['creation_source'] = undefined;

@@ -121,7 +121,7 @@ exports.prototype['refunds'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * The Square product that processed the transaction.
+ * The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values
  * @member {module:model/Transaction.ProductEnum} product
  */
 exports.prototype['product'] = undefined;

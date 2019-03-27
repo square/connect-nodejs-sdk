@@ -128,7 +128,7 @@ exports.prototype['expires_at'] = undefined;
  */
 exports.prototype['auto_complete_duration'] = undefined;
 /**
- * The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`.
+ * The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`. See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values
  * @member {module:model/OrderFulfillmentPickupDetails.ScheduleTypeEnum} schedule_type
  */
 exports.prototype['schedule_type'] = undefined;

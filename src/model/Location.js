@@ -129,12 +129,12 @@ exports.prototype['address'] = undefined;
  */
 exports.prototype['timezone'] = undefined;
 /**
- * Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
+ * Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability) for possible values
  * @member {Array.<module:model/Location.CapabilitiesEnum>} capabilities
  */
 exports.prototype['capabilities'] = undefined;
 /**
- * The location's status  See [LocationStatus](#type-locationstatus) for possible values.
+ * The location's status See [LocationStatus](#type-locationstatus) for possible values
  * @member {module:model/Location.StatusEnum} status
  */
 exports.prototype['status'] = undefined;
@@ -149,7 +149,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * The location's country, in ISO 3166-1-alpha-2 format.  See [Country](#type-country) for possible values.
+ * The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
  * @member {module:model/Location.CountryEnum} country
  */
 exports.prototype['country'] = undefined;
@@ -159,7 +159,7 @@ exports.prototype['country'] = undefined;
  */
 exports.prototype['language_code'] = undefined;
 /**
- * The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'.  See [Currency](#type-currency) for possible values.
+ * The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency) for possible values
  * @member {module:model/Location.CurrencyEnum} currency
  */
 exports.prototype['currency'] = undefined;
@@ -174,7 +174,7 @@ exports.prototype['phone_number'] = undefined;
  */
 exports.prototype['business_name'] = undefined;
 /**
- * The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space.  See [LocationType](#type-locationtype) for possible values.
+ * The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space. See [LocationType](#type-locationtype) for possible values
  * @member {module:model/Location.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

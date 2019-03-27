@@ -74,7 +74,7 @@ exports.prototype['begin_time'] = undefined;
  */
 exports.prototype['end_time'] = undefined;
 /**
- * The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+ * The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC` See [SortOrder](#type-sortorder) for possible values
  * @member {module:model/ListTransactionsRequest.SortOrderEnum} sort_order
  */
 exports.prototype['sort_order'] = undefined;

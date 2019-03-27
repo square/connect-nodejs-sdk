@@ -163,7 +163,7 @@ exports.prototype['administrative_district_level_3'] = undefined;
  */
 exports.prototype['postal_code'] = undefined;
 /**
- * The address's country, in ISO 3166-1-alpha-2 format.
+ * The address's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
  * @member {module:model/Address.CountryEnum} country
  */
 exports.prototype['country'] = undefined;

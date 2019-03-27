@@ -71,7 +71,7 @@ exports.prototype['attribute_name'] = undefined;
  */
 exports.prototype['initial_attribute_value'] = undefined;
 /**
- * The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending).
+ * The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending). See [SortOrder](#type-sortorder) for possible values
  * @member {module:model/CatalogQuerySortedAttribute.SortOrderEnum} sort_order
  */
 exports.prototype['sort_order'] = undefined;

@@ -82,7 +82,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['catalog_object_type'] = undefined;
 /**
- * The current [InventoryState](#type-inventorystate) for the related quantity of items.
+ * The current [InventoryState](#type-inventorystate) for the related quantity of items. See [InventoryState](#type-inventorystate) for possible values
  * @member {module:model/InventoryCount.StateEnum} state
  */
 exports.prototype['state'] = undefined;

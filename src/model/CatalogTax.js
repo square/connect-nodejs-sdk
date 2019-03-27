@@ -77,12 +77,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['name'] = undefined;
 /**
- * Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for all possible values.
+ * Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for possible values
  * @member {module:model/CatalogTax.CalculationPhaseEnum} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
 /**
- * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for all possible values.
+ * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values
  * @member {module:model/CatalogTax.InclusionTypeEnum} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;

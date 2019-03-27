@@ -78,7 +78,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['name'] = undefined;
 /**
- * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for all possible values.
+ * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for possible values
  * @member {module:model/CatalogDiscount.DiscountTypeEnum} discount_type
  */
 exports.prototype['discount_type'] = undefined;
