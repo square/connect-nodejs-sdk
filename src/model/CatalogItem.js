@@ -156,7 +156,7 @@ exports.prototype['tax_ids'] = undefined;
  */
 exports.prototype['modifier_list_info'] = undefined;
 /**
- * __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
+ * __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_id` in [`CatalogObject`](#type-catalogobject).
  * @member {String} image_url
  */
 exports.prototype['image_url'] = undefined;

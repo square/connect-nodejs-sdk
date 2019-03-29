@@ -58,6 +58,7 @@ var exports = function(type, id) {
 
 
 
+
 };
 
 /**
@@ -97,6 +98,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('absent_at_location_ids')) {
       obj['absent_at_location_ids'] = ApiClient.convertToType(data['absent_at_location_ids'], ['String']);
+    }
+      if (data.hasOwnProperty('image_id')) {
+      obj['image_id'] = ApiClient.convertToType(data['image_id'], 'String');
     }
       if (data.hasOwnProperty('item_data')) {
       obj['item_data'] = CatalogItem.constructFromObject(data['item_data']);
@@ -171,6 +175,11 @@ exports.prototype['present_at_location_ids'] = undefined;
  * @member {Array.<String>} absent_at_location_ids
  */
 exports.prototype['absent_at_location_ids'] = undefined;
+/**
+ * Identifies the `CatalogImage` attached to this `CatalogObject`.
+ * @member {String} image_id
+ */
+exports.prototype['image_id'] = undefined;
 /**
  * Structured data for a [CatalogItem](#type-catalogitem), set for CatalogObjects of type `ITEM`.
  * @member {module:model/CatalogItem} item_data
