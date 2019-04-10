@@ -35,6 +35,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -60,6 +61,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('modifier_options')) {
       obj['modifier_options'] = ApiClient.convertToType(data['modifier_options'], [V1ModifierOption]);
     }
+      if (data.hasOwnProperty('v2_id')) {
+      obj['v2_id'] = ApiClient.convertToType(data['v2_id'], 'String');
+    }
     }
   return obj;
 }
@@ -84,6 +88,11 @@ exports.prototype['selection_type'] = undefined;
  * @member {Array.<module:model/V1ModifierOption>} modifier_options
  */
 exports.prototype['modifier_options'] = undefined;
+/**
+ * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+ * @member {String} v2_id
+ */
+exports.prototype['v2_id'] = undefined;
 
 
   /**

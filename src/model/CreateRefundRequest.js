@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CreateRefundRequest</code>.
- * Defines the body parameters that can be included in a request to the [CreateRefund](#endpoint-createrefund) endpoint.
+ * Defines the body parameters that can be included in a request to the CreateRefund endpoint.
  * @alias module:model/CreateRefundRequest
  * @class
  * @param idempotencyKey {String} A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency](/basics/api101/idempotency) for more information.

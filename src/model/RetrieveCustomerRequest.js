@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveCustomerRequest</code>.
- * 
+ * Defines the fields that are included in requests to the RetrieveCustomer endpoint.
  * @alias module:model/RetrieveCustomerRequest
  * @class
  */

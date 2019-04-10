@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListLocationsRequest</code>.
- * 
+ * Defines the fields that are included in requests to the ListLocations endpoint.
  * @alias module:model/ListLocationsRequest
  * @class
  */

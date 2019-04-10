@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>UpdateCustomerResponse</code>.
- * Defines the fields that are included in the response body of a request to the [UpdateCustomer](#endpoint-updatecustomer) endpoint.  One of &#x60;errors&#x60; or &#x60;customer&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the UpdateCustomer endpoint.  One of &#x60;errors&#x60; or &#x60;customer&#x60; is present in a given response (never both).
  * @alias module:model/UpdateCustomerResponse
  * @class
  */

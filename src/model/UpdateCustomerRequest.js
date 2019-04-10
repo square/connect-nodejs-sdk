@@ -24,7 +24,7 @@ var Address = require('./Address');
 
 /**
  * Constructs a new <code>UpdateCustomerRequest</code>.
- * Defines the body parameters that can be provided in a request to the [UpdateCustomer](#endpoint-updatecustomer) endpoint.
+ * Defines the body parameters that can be provided in a request to the UpdateCustomer endpoint.
  * @alias module:model/UpdateCustomerRequest
  * @class
  */

@@ -2,7 +2,7 @@
 
 ### Description
 
-Defines the fields included in the request body for the [SearchCustomers](#endpoint-searchcustomer) endpoint.
+Defines the fields included in the request body for the SearchCustomers endpoint.
 
 ## Properties
 Name | Type | Description | Notes

@@ -25,7 +25,7 @@ var Refund = require('./Refund');
 
 /**
  * Constructs a new <code>CreateRefundResponse</code>.
- * Defines the fields that are included in the response body of a request to the [CreateRefund](#endpoint-createrefund) endpoint.  One of &#x60;errors&#x60; or &#x60;refund&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the CreateRefund endpoint.  One of &#x60;errors&#x60; or &#x60;refund&#x60; is present in a given response (never both).
  * @alias module:model/CreateRefundResponse
  * @class
  */

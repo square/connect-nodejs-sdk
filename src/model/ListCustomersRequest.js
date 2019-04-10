@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListCustomersRequest</code>.
- * Defines the query parameters that can be provided in a request to the [ListCustomers](#endpoint-listcustomers) endpoint.
+ * Defines the query parameters that can be provided in a request to the ListCustomers endpoint.
  * @alias module:model/ListCustomersRequest
  * @class
  */
