@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveTransactionRequest</code>.
- * 
+ * Defines the request body fields for calls to the RetrieveTransaction endpoint.
  * @alias module:model/RetrieveTransactionRequest
  * @class
  */

@@ -2,7 +2,7 @@
 
 ### Description
 
-
+Defines the fields that are included in requests to the BatchRetrieveOrders endpoint.
 
 ## Properties
 Name | Type | Description | Notes

@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CreateMobileAuthorizationCodeResponse</code>.
- * Defines the fields that are included in the response body of a request to the [CreateMobileAuthorizationCode](#endpoint-createmobileauthorizationcode) endpoint.
+ * Defines the fields that are included in the response body of a request to the CreateMobileAuthorizationCode endpoint.
  * @alias module:model/CreateMobileAuthorizationCodeResponse
  * @class
  */

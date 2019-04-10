@@ -25,7 +25,7 @@ var TimeRange = require('./TimeRange');
 
 /**
  * Constructs a new <code>CustomerFilter</code>.
- * Represents a set of [&#x60;CustomerQuery&#x60;](#type-customerquery) filters used to limit the set of Customers returned by [&#x60;SearchCustomers&#x60;](#endpoint-seachcustomers).
+ * Represents a set of [&#x60;CustomerQuery&#x60;](#type-customerquery) filters used to limit the set of Customers returned by [&#x60;SearchCustomers&#x60;](#endpoint-customers-seachcustomers).
  * @alias module:model/CustomerFilter
  * @class
  */

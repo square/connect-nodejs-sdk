@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListAdditionalRecipientReceivablesRequest</code>.
- * Defines the query parameters that can be included in a request to the [ListAdditionalRecipientReceivables](#endpoint-listadditionalrecipientreceivables) endpoint.
+ * Defines the query parameters that can be included in a request to the ListAdditionalRecipientReceivables endpoint.
  * @alias module:model/ListAdditionalRecipientReceivablesRequest
  * @class
  */

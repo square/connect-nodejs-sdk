@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>SearchCustomersResponse</code>.
- * Defines the fields that are included in the response body of a request to the [SearchCustomers](#endpoint-searchcustomers) endpoint.  One of &#x60;errors&#x60; or &#x60;customers&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the SearchCustomers endpoint.  One of &#x60;errors&#x60; or &#x60;customers&#x60; is present in a given response (never both).
  * @alias module:model/SearchCustomersResponse
  * @class
  */

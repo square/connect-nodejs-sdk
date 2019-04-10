@@ -25,7 +25,7 @@ var Order = require('./Order');
 
 /**
  * Constructs a new <code>BatchRetrieveOrdersResponse</code>.
- * Defines the fields that are included in the response body of a request to the [BatchRetrieveOrders](#endpoint-batchretrieveorders) endpoint.
+ * Defines the fields that are included in the response body of a request to the BatchRetrieveOrders endpoint.
  * @alias module:model/BatchRetrieveOrdersResponse
  * @class
  */

@@ -24,7 +24,7 @@ var CustomerQuery = require('./CustomerQuery');
 
 /**
  * Constructs a new <code>SearchCustomersRequest</code>.
- * Defines the fields included in the request body for the [SearchCustomers](#endpoint-searchcustomer) endpoint.
+ * Defines the fields included in the request body for the SearchCustomers endpoint.
  * @alias module:model/SearchCustomersRequest
  * @class
  */

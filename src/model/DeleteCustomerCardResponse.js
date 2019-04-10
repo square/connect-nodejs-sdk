@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>DeleteCustomerCardResponse</code>.
- * Defines the fields that are included in the response body of a request to the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint.
+ * Defines the fields that are included in the response body of a request to the DeleteCustomerCard endpoint.
  * @alias module:model/DeleteCustomerCardResponse
  * @class
  */

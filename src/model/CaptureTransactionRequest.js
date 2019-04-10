@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CaptureTransactionRequest</code>.
- * 
+ * Defines the query parameters for calls to the CaptureTransaction endpoint.
  * @alias module:model/CaptureTransactionRequest
  * @class
  */

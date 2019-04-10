@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>DeleteCustomerCardRequest</code>.
- * 
+ * Defines the fields that are included in requests to the DeleteCustomerCard endpoint.
  * @alias module:model/DeleteCustomerCardRequest
  * @class
  */

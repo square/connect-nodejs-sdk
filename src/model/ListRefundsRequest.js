@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListRefundsRequest</code>.
- * Defines the query parameters that can be included in a request to the [ListRefunds](#endpoint-listrefunds) endpoint.
+ * Defines the query parameters that can be included in a request to the ListRefunds endpoint.
  * @alias module:model/ListRefundsRequest
  * @class
  */

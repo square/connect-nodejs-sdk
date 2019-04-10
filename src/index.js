@@ -180,6 +180,7 @@ var OrderLineItemModifier = require('./model/OrderLineItemModifier');
 var OrderLineItemTax = require('./model/OrderLineItemTax');
 var OrderLineItemTaxScope = require('./model/OrderLineItemTaxScope');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
+var OrderSource = require('./model/OrderSource');
 var Product = require('./model/Product');
 var Refund = require('./model/Refund');
 var RefundStatus = require('./model/RefundStatus');
@@ -461,7 +462,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190327.1
+ * @version 2.20190410.0
  */
   module.exports = {
   /**
@@ -1304,6 +1305,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderLineItemTaxType}
    */
   OrderLineItemTaxType: OrderLineItemTaxType,
+  /**
+   * The OrderSource model constructor.
+   * @property {module:model/OrderSource}
+   */
+  OrderSource: OrderSource,
   /**
    * The Product model constructor.
    * @property {module:model/Product}

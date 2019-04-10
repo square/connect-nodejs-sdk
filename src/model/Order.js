@@ -17,6 +17,7 @@ var OrderFulfillment = require('./OrderFulfillment');
 var OrderLineItem = require('./OrderLineItem');
 var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemTax = require('./OrderLineItemTax');
+var OrderSource = require('./OrderSource');
 
 
 
@@ -38,6 +39,7 @@ var exports = function(locationId) {
 
 
   _this['location_id'] = locationId;
+
 
 
 
@@ -68,6 +70,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('reference_id')) {
       obj['reference_id'] = ApiClient.convertToType(data['reference_id'], 'String');
     }
+      if (data.hasOwnProperty('source')) {
+      obj['source'] = OrderSource.constructFromObject(data['source']);
+    }
       if (data.hasOwnProperty('line_items')) {
       obj['line_items'] = ApiClient.convertToType(data['line_items'], [OrderLineItem]);
     }
@@ -94,7 +99,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The order's unique ID.  This value is only present for Order objects created by the Orders API through the [CreateOrder](#endpoint-createorder) endpoint.
+ * The order's unique ID.  This value is only present for Order objects created by the Orders API through the [CreateOrder](#endpoint-orders-createorder) endpoint.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
@@ -108,6 +113,11 @@ exports.prototype['location_id'] = undefined;
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;
+/**
+ * The origination details of the order.
+ * @member {module:model/OrderSource} source
+ */
+exports.prototype['source'] = undefined;
 /**
  * The line items included in the order.
  * @member {Array.<module:model/OrderLineItem>} line_items

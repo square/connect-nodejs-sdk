@@ -25,7 +25,7 @@ var Transaction = require('./Transaction');
 
 /**
  * Constructs a new <code>ChargeResponse</code>.
- * Defines the fields that are included in the response body of a request to the [Charge](#endpoint-charge) endpoint.  One of &#x60;errors&#x60; or &#x60;transaction&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the Charge endpoint.  One of &#x60;errors&#x60; or &#x60;transaction&#x60; is present in a given response (never both).
  * @alias module:model/ChargeResponse
  * @class
  */

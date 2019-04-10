@@ -39,6 +39,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -78,6 +79,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('type')) {
       obj['type'] = ApiClient.convertToType(data['type'], 'String');
+    }
+      if (data.hasOwnProperty('v2_id')) {
+      obj['v2_id'] = ApiClient.convertToType(data['v2_id'], 'String');
     }
     }
   return obj;
@@ -128,6 +132,11 @@ exports.prototype['inclusion_type'] = undefined;
  * @member {module:model/V1Fee.TypeEnum} type
  */
 exports.prototype['type'] = undefined;
+/**
+ * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+ * @member {String} v2_id
+ */
+exports.prototype['v2_id'] = undefined;
 
 
   /**
