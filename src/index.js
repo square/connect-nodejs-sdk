@@ -386,6 +386,7 @@ var V1SettlementEntry = require('./model/V1SettlementEntry');
 var V1SettlementEntryType = require('./model/V1SettlementEntryType');
 var V1SettlementStatus = require('./model/V1SettlementStatus');
 var V1Tender = require('./model/V1Tender');
+var V1TenderCardBrand = require('./model/V1TenderCardBrand');
 var V1TenderEntryMethod = require('./model/V1TenderEntryMethod');
 var V1TenderType = require('./model/V1TenderType');
 var V1Timecard = require('./model/V1Timecard');
@@ -462,7 +463,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190410.0
+ * @version 2.20190410.1
  */
   module.exports = {
   /**
@@ -2335,6 +2336,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1Tender}
    */
   V1Tender: V1Tender,
+  /**
+   * The V1TenderCardBrand model constructor.
+   * @property {module:model/V1TenderCardBrand}
+   */
+  V1TenderCardBrand: V1TenderCardBrand,
   /**
    * The V1TenderEntryMethod model constructor.
    * @property {module:model/V1TenderEntryMethod}

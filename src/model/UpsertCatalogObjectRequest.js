@@ -28,7 +28,7 @@ var CatalogObject = require('./CatalogObject');
  * @alias module:model/UpsertCatalogObjectRequest
  * @class
  * @param idempotencyKey {String} A value you specify that uniquely identifies this request among all your requests. A common way to create a valid idempotency key is to use a Universally unique identifier (UUID).  If you're unsure whether a particular request was successful, you can reattempt it with the same idempotency key without worrying about creating duplicate objects.  See [Idempotency](/basics/api101/idempotency) for more information.
- * @param _object {module:model/CatalogObject} A [CatalogObject](#type-catalogobject) to be created or updated. The object's `is_deleted` field must not be set to `true`. When creating a new object, the object's ID must either start with a `#` character or be left blank. In either case it will be replaced with a server-generated ID.
+ * @param _object {module:model/CatalogObject} A [CatalogObject](#type-catalogobject) to be created or updated. - For updates, the object must be active (the `is_deleted` field is not `true`). - For creates, the object ID must start with `#`. The provided ID is replaced with a server-generated ID.
  */
 var exports = function(idempotencyKey, _object) {
   var _this = this;
@@ -64,7 +64,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * A [CatalogObject](#type-catalogobject) to be created or updated. The object's `is_deleted` field must not be set to `true`. When creating a new object, the object's ID must either start with a `#` character or be left blank. In either case it will be replaced with a server-generated ID.
+ * A [CatalogObject](#type-catalogobject) to be created or updated. - For updates, the object must be active (the `is_deleted` field is not `true`). - For creates, the object ID must start with `#`. The provided ID is replaced with a server-generated ID.
  * @member {module:model/CatalogObject} object
  */
 exports.prototype['object'] = undefined;

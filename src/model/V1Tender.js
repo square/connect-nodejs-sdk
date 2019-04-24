@@ -138,7 +138,7 @@ exports.prototype['employee_id'] = undefined;
  */
 exports.prototype['receipt_url'] = undefined;
 /**
- * The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
+ * The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values
  * @member {module:model/V1Tender.CardBrandEnum} card_brand
  */
 exports.prototype['card_brand'] = undefined;
@@ -258,10 +258,10 @@ exports.prototype['is_exchange'] = undefined;
      */
     "VISA": "VISA",
     /**
-     * value: "MASTERCARD"
+     * value: "MASTER_CARD"
      * @const
      */
-    "MASTERCARD": "MASTERCARD",
+    "MASTER_CARD": "MASTER_CARD",
     /**
      * value: "AMERICAN_EXPRESS"
      * @const

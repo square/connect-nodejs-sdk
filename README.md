@@ -550,6 +550,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.V1SettlementEntryType](docs/V1SettlementEntryType.md)
  - [SquareConnect.V1SettlementStatus](docs/V1SettlementStatus.md)
  - [SquareConnect.V1Tender](docs/V1Tender.md)
+ - [SquareConnect.V1TenderCardBrand](docs/V1TenderCardBrand.md)
  - [SquareConnect.V1TenderEntryMethod](docs/V1TenderEntryMethod.md)
  - [SquareConnect.V1TenderType](docs/V1TenderType.md)
  - [SquareConnect.V1Timecard](docs/V1Timecard.md)
