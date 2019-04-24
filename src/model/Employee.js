@@ -37,6 +37,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -58,6 +60,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('last_name')) {
       obj['last_name'] = ApiClient.convertToType(data['last_name'], 'String');
+    }
+      if (data.hasOwnProperty('email')) {
+      obj['email'] = ApiClient.convertToType(data['email'], 'String');
+    }
+      if (data.hasOwnProperty('phone_number')) {
+      obj['phone_number'] = ApiClient.convertToType(data['phone_number'], 'String');
     }
       if (data.hasOwnProperty('location_ids')) {
       obj['location_ids'] = ApiClient.convertToType(data['location_ids'], ['String']);
@@ -90,6 +98,16 @@ exports.prototype['first_name'] = undefined;
  * @member {String} last_name
  */
 exports.prototype['last_name'] = undefined;
+/**
+ * Email of the employee
+ * @member {String} email
+ */
+exports.prototype['email'] = undefined;
+/**
+ * Phone number of the employee in E.164 format, i.e. \"+12125554250\"
+ * @member {String} phone_number
+ */
+exports.prototype['phone_number'] = undefined;
 /**
  * A list of location IDs where this employee has access.
  * @member {Array.<String>} location_ids

@@ -135,7 +135,7 @@ exports.prototype['delay_capture'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * 
+ * An optional note to associate with the transaction.  This value cannot exceed 60 characters.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;

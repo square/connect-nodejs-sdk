@@ -80,7 +80,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
+ * A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
  * @member {String} access_token
  */
 exports.prototype['access_token'] = undefined;
