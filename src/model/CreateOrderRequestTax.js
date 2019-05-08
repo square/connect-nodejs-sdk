@@ -74,7 +74,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
+ * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
  * @member {module:model/CreateOrderRequestTax.TypeEnum} type
  */
 exports.prototype['type'] = undefined;

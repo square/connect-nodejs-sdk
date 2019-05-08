@@ -35,6 +35,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -48,6 +49,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('uid')) {
+      obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+    }
       if (data.hasOwnProperty('catalog_object_id')) {
       obj['catalog_object_id'] = ApiClient.convertToType(data['catalog_object_id'], 'String');
     }
@@ -65,6 +69,11 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
+ * The modifier's Unique identifier, unique only within this order. This field is read-only.
+ * @member {String} uid
+ */
+exports.prototype['uid'] = undefined;
+/**
  * The catalog object id referencing [CatalogModifier](#type-catalogmodifier).
  * @member {String} catalog_object_id
  */
@@ -80,7 +89,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['base_price_money'] = undefined;
 /**
- * The total price of the item modifier for its line item. This is the modifier's base_price_money multiplied by the line item's quantity.
+ * The total price of the item modifier for its line item. This is the modifier's `base_price_money` multiplied by the line item's quantity.
  * @member {module:model/Money} total_price_money
  */
 exports.prototype['total_price_money'] = undefined;

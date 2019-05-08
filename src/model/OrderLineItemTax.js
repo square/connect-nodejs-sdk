@@ -37,6 +37,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -50,6 +51,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('uid')) {
+      obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+    }
       if (data.hasOwnProperty('catalog_object_id')) {
       obj['catalog_object_id'] = ApiClient.convertToType(data['catalog_object_id'], 'String');
     }
@@ -72,6 +76,11 @@ exports.constructFromObject = function(data, obj) {
   return obj;
 }
 
+/**
+ * The tax's Unique identifier, unique only within this order. This field is read-only.
+ * @member {String} uid
+ */
+exports.prototype['uid'] = undefined;
 /**
  * The catalog object id referencing [CatalogTax](#type-catalogtax).
  * @member {String} catalog_object_id

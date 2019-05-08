@@ -38,6 +38,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -51,6 +52,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('uid')) {
+      obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+    }
       if (data.hasOwnProperty('catalog_object_id')) {
       obj['catalog_object_id'] = ApiClient.convertToType(data['catalog_object_id'], 'String');
     }
@@ -77,6 +81,11 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
+ * The discount's Unique identifier, unique only within this order. This field is read-only.
+ * @member {String} uid
+ */
+exports.prototype['uid'] = undefined;
+/**
  * The catalog object id referencing [CatalogDiscount](#type-catalogdiscount).
  * @member {String} catalog_object_id
  */
@@ -92,7 +101,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['type'] = undefined;
 /**
- * The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.  The percentage won't be set for an amount-based discount.
+ * The percentage of the discount, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.  The percentage won't be set for an amount-based discount.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;

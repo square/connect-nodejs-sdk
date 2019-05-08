@@ -145,17 +145,17 @@ exports.prototype['note'] = undefined;
  */
 exports.prototype['customer_id'] = undefined;
 /**
- * The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.
+ * The buyer's billing address.
  * @member {module:model/Address} billing_address
  */
 exports.prototype['billing_address'] = undefined;
 /**
- * The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.
+ * The buyer's shipping address, if available.
  * @member {module:model/Address} shipping_address
  */
 exports.prototype['shipping_address'] = undefined;
 /**
- * The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.
+ * The buyer's email address, if available.
  * @member {String} buyer_email_address
  */
 exports.prototype['buyer_email_address'] = undefined;

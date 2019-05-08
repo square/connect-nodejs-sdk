@@ -32,6 +32,8 @@ var BatchRetrieveOrdersResponse = require('./model/BatchRetrieveOrdersResponse')
 var BatchUpsertCatalogObjectsRequest = require('./model/BatchUpsertCatalogObjectsRequest');
 var BatchUpsertCatalogObjectsResponse = require('./model/BatchUpsertCatalogObjectsResponse');
 var BreakType = require('./model/BreakType');
+var BusinessHours = require('./model/BusinessHours');
+var BusinessHoursPeriod = require('./model/BusinessHoursPeriod');
 var CaptureTransactionRequest = require('./model/CaptureTransactionRequest');
 var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
@@ -103,6 +105,7 @@ var CustomerQuery = require('./model/CustomerQuery');
 var CustomerSort = require('./model/CustomerSort');
 var CustomerSortField = require('./model/CustomerSortField');
 var DateRange = require('./model/DateRange');
+var DayOfWeek = require('./model/DayOfWeek');
 var DeleteBreakTypeRequest = require('./model/DeleteBreakTypeRequest');
 var DeleteBreakTypeResponse = require('./model/DeleteBreakTypeResponse');
 var DeleteCatalogObjectRequest = require('./model/DeleteCatalogObjectRequest');
@@ -161,11 +164,18 @@ var Location = require('./model/Location');
 var LocationCapability = require('./model/LocationCapability');
 var LocationStatus = require('./model/LocationStatus');
 var LocationType = require('./model/LocationType');
+var MeasurementUnit = require('./model/MeasurementUnit');
+var MeasurementUnitArea = require('./model/MeasurementUnitArea');
+var MeasurementUnitCustom = require('./model/MeasurementUnitCustom');
+var MeasurementUnitLength = require('./model/MeasurementUnitLength');
+var MeasurementUnitVolume = require('./model/MeasurementUnitVolume');
+var MeasurementUnitWeight = require('./model/MeasurementUnitWeight');
 var ModelBreak = require('./model/ModelBreak');
 var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
 var ObtainTokenResponse = require('./model/ObtainTokenResponse');
 var Order = require('./model/Order');
+var OrderEntry = require('./model/OrderEntry');
 var OrderFulfillment = require('./model/OrderFulfillment');
 var OrderFulfillmentPickupDetails = require('./model/OrderFulfillmentPickupDetails');
 var OrderFulfillmentPickupDetailsScheduleType = require('./model/OrderFulfillmentPickupDetailsScheduleType');
@@ -180,7 +190,16 @@ var OrderLineItemModifier = require('./model/OrderLineItemModifier');
 var OrderLineItemTax = require('./model/OrderLineItemTax');
 var OrderLineItemTaxScope = require('./model/OrderLineItemTaxScope');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
+var OrderMoneyAmounts = require('./model/OrderMoneyAmounts');
+var OrderQuantityUnit = require('./model/OrderQuantityUnit');
+var OrderReturn = require('./model/OrderReturn');
+var OrderReturnDiscount = require('./model/OrderReturnDiscount');
+var OrderReturnLineItem = require('./model/OrderReturnLineItem');
+var OrderReturnLineItemModifier = require('./model/OrderReturnLineItemModifier');
+var OrderReturnTax = require('./model/OrderReturnTax');
+var OrderRoundingAdjustment = require('./model/OrderRoundingAdjustment');
 var OrderSource = require('./model/OrderSource');
+var OrderState = require('./model/OrderState');
 var Product = require('./model/Product');
 var Refund = require('./model/Refund');
 var RefundStatus = require('./model/RefundStatus');
@@ -211,6 +230,17 @@ var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest')
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
 var SearchCustomersResponse = require('./model/SearchCustomersResponse');
+var SearchOrdersCustomerFilter = require('./model/SearchOrdersCustomerFilter');
+var SearchOrdersDateTimeFilter = require('./model/SearchOrdersDateTimeFilter');
+var SearchOrdersFilter = require('./model/SearchOrdersFilter');
+var SearchOrdersFulfillmentFilter = require('./model/SearchOrdersFulfillmentFilter');
+var SearchOrdersQuery = require('./model/SearchOrdersQuery');
+var SearchOrdersRequest = require('./model/SearchOrdersRequest');
+var SearchOrdersResponse = require('./model/SearchOrdersResponse');
+var SearchOrdersSort = require('./model/SearchOrdersSort');
+var SearchOrdersSortField = require('./model/SearchOrdersSortField');
+var SearchOrdersSourceFilter = require('./model/SearchOrdersSourceFilter');
+var SearchOrdersStateFilter = require('./model/SearchOrdersStateFilter');
 var SearchShiftsRequest = require('./model/SearchShiftsRequest');
 var SearchShiftsResponse = require('./model/SearchShiftsResponse');
 var Shift = require('./model/Shift');
@@ -463,7 +493,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190410.1
+ * @version 2.20190508.0
  */
   module.exports = {
   /**
@@ -566,6 +596,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BreakType}
    */
   BreakType: BreakType,
+  /**
+   * The BusinessHours model constructor.
+   * @property {module:model/BusinessHours}
+   */
+  BusinessHours: BusinessHours,
+  /**
+   * The BusinessHoursPeriod model constructor.
+   * @property {module:model/BusinessHoursPeriod}
+   */
+  BusinessHoursPeriod: BusinessHoursPeriod,
   /**
    * The CaptureTransactionRequest model constructor.
    * @property {module:model/CaptureTransactionRequest}
@@ -922,6 +962,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   DateRange: DateRange,
   /**
+   * The DayOfWeek model constructor.
+   * @property {module:model/DayOfWeek}
+   */
+  DayOfWeek: DayOfWeek,
+  /**
    * The DeleteBreakTypeRequest model constructor.
    * @property {module:model/DeleteBreakTypeRequest}
    */
@@ -1212,6 +1257,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   LocationType: LocationType,
   /**
+   * The MeasurementUnit model constructor.
+   * @property {module:model/MeasurementUnit}
+   */
+  MeasurementUnit: MeasurementUnit,
+  /**
+   * The MeasurementUnitArea model constructor.
+   * @property {module:model/MeasurementUnitArea}
+   */
+  MeasurementUnitArea: MeasurementUnitArea,
+  /**
+   * The MeasurementUnitCustom model constructor.
+   * @property {module:model/MeasurementUnitCustom}
+   */
+  MeasurementUnitCustom: MeasurementUnitCustom,
+  /**
+   * The MeasurementUnitLength model constructor.
+   * @property {module:model/MeasurementUnitLength}
+   */
+  MeasurementUnitLength: MeasurementUnitLength,
+  /**
+   * The MeasurementUnitVolume model constructor.
+   * @property {module:model/MeasurementUnitVolume}
+   */
+  MeasurementUnitVolume: MeasurementUnitVolume,
+  /**
+   * The MeasurementUnitWeight model constructor.
+   * @property {module:model/MeasurementUnitWeight}
+   */
+  MeasurementUnitWeight: MeasurementUnitWeight,
+  /**
    * The ModelBreak model constructor.
    * @property {module:model/ModelBreak}
    */
@@ -1236,6 +1311,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Order}
    */
   Order: Order,
+  /**
+   * The OrderEntry model constructor.
+   * @property {module:model/OrderEntry}
+   */
+  OrderEntry: OrderEntry,
   /**
    * The OrderFulfillment model constructor.
    * @property {module:model/OrderFulfillment}
@@ -1307,10 +1387,55 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderLineItemTaxType: OrderLineItemTaxType,
   /**
+   * The OrderMoneyAmounts model constructor.
+   * @property {module:model/OrderMoneyAmounts}
+   */
+  OrderMoneyAmounts: OrderMoneyAmounts,
+  /**
+   * The OrderQuantityUnit model constructor.
+   * @property {module:model/OrderQuantityUnit}
+   */
+  OrderQuantityUnit: OrderQuantityUnit,
+  /**
+   * The OrderReturn model constructor.
+   * @property {module:model/OrderReturn}
+   */
+  OrderReturn: OrderReturn,
+  /**
+   * The OrderReturnDiscount model constructor.
+   * @property {module:model/OrderReturnDiscount}
+   */
+  OrderReturnDiscount: OrderReturnDiscount,
+  /**
+   * The OrderReturnLineItem model constructor.
+   * @property {module:model/OrderReturnLineItem}
+   */
+  OrderReturnLineItem: OrderReturnLineItem,
+  /**
+   * The OrderReturnLineItemModifier model constructor.
+   * @property {module:model/OrderReturnLineItemModifier}
+   */
+  OrderReturnLineItemModifier: OrderReturnLineItemModifier,
+  /**
+   * The OrderReturnTax model constructor.
+   * @property {module:model/OrderReturnTax}
+   */
+  OrderReturnTax: OrderReturnTax,
+  /**
+   * The OrderRoundingAdjustment model constructor.
+   * @property {module:model/OrderRoundingAdjustment}
+   */
+  OrderRoundingAdjustment: OrderRoundingAdjustment,
+  /**
    * The OrderSource model constructor.
    * @property {module:model/OrderSource}
    */
   OrderSource: OrderSource,
+  /**
+   * The OrderState model constructor.
+   * @property {module:model/OrderState}
+   */
+  OrderState: OrderState,
   /**
    * The Product model constructor.
    * @property {module:model/Product}
@@ -1461,6 +1586,61 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SearchCustomersResponse}
    */
   SearchCustomersResponse: SearchCustomersResponse,
+  /**
+   * The SearchOrdersCustomerFilter model constructor.
+   * @property {module:model/SearchOrdersCustomerFilter}
+   */
+  SearchOrdersCustomerFilter: SearchOrdersCustomerFilter,
+  /**
+   * The SearchOrdersDateTimeFilter model constructor.
+   * @property {module:model/SearchOrdersDateTimeFilter}
+   */
+  SearchOrdersDateTimeFilter: SearchOrdersDateTimeFilter,
+  /**
+   * The SearchOrdersFilter model constructor.
+   * @property {module:model/SearchOrdersFilter}
+   */
+  SearchOrdersFilter: SearchOrdersFilter,
+  /**
+   * The SearchOrdersFulfillmentFilter model constructor.
+   * @property {module:model/SearchOrdersFulfillmentFilter}
+   */
+  SearchOrdersFulfillmentFilter: SearchOrdersFulfillmentFilter,
+  /**
+   * The SearchOrdersQuery model constructor.
+   * @property {module:model/SearchOrdersQuery}
+   */
+  SearchOrdersQuery: SearchOrdersQuery,
+  /**
+   * The SearchOrdersRequest model constructor.
+   * @property {module:model/SearchOrdersRequest}
+   */
+  SearchOrdersRequest: SearchOrdersRequest,
+  /**
+   * The SearchOrdersResponse model constructor.
+   * @property {module:model/SearchOrdersResponse}
+   */
+  SearchOrdersResponse: SearchOrdersResponse,
+  /**
+   * The SearchOrdersSort model constructor.
+   * @property {module:model/SearchOrdersSort}
+   */
+  SearchOrdersSort: SearchOrdersSort,
+  /**
+   * The SearchOrdersSortField model constructor.
+   * @property {module:model/SearchOrdersSortField}
+   */
+  SearchOrdersSortField: SearchOrdersSortField,
+  /**
+   * The SearchOrdersSourceFilter model constructor.
+   * @property {module:model/SearchOrdersSourceFilter}
+   */
+  SearchOrdersSourceFilter: SearchOrdersSourceFilter,
+  /**
+   * The SearchOrdersStateFilter model constructor.
+   * @property {module:model/SearchOrdersStateFilter}
+   */
+  SearchOrdersStateFilter: SearchOrdersStateFilter,
   /**
    * The SearchShiftsRequest model constructor.
    * @property {module:model/SearchShiftsRequest}

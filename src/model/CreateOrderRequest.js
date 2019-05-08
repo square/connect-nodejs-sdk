@@ -86,7 +86,7 @@ exports.prototype['order'] = undefined;
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
+ * __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters. -- Top-level fields necessary to support the connect v2 CreateOrderRequest shape.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;

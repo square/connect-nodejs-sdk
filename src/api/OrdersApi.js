@@ -16,6 +16,8 @@ var BatchRetrieveOrdersRequest = require('../model/BatchRetrieveOrdersRequest');
 var BatchRetrieveOrdersResponse = require('../model/BatchRetrieveOrdersResponse');
 var CreateOrderRequest = require('../model/CreateOrderRequest');
 var CreateOrderResponse = require('../model/CreateOrderResponse');
+var SearchOrdersRequest = require('../model/SearchOrdersRequest');
+var SearchOrdersResponse = require('../model/SearchOrdersResponse');
 
 /**
  * Orders service.
@@ -62,7 +64,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-04-10';
+    headerParams['Square-Version'] = '2019-05-08';
 
     var formParams = {
     };
@@ -96,7 +98,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateOrder
-   * Creates an [Order](#type-order) that can then be referenced as &#x60;order_id&#x60; in a request to the [Charge](#endpoint-transactions-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order&#39;s &#x60;id&#x60; in the &#x60;order_id&#x60; field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
+   * Creates an [Order](#type-order) that can then be referenced as &#x60;order_id&#x60; in a request to the [Charge](#endpoint-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order&#39;s &#x60;id&#x60; in the &#x60;order_id&#x60; field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
    * @param {String} locationId The ID of the business location to associate the order with.
    * @param {module:model/CreateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateOrderResponse} and HTTP response
@@ -122,7 +124,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-04-10';
+    headerParams['Square-Version'] = '2019-05-08';
 
     var formParams = {
     };
@@ -141,13 +143,65 @@ module.exports = function(apiClient) {
 
   /**
    * CreateOrder
-   * Creates an [Order](#type-order) that can then be referenced as &#x60;order_id&#x60; in a request to the [Charge](#endpoint-transactions-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order&#39;s &#x60;id&#x60; in the &#x60;order_id&#x60; field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
+   * Creates an [Order](#type-order) that can then be referenced as &#x60;order_id&#x60; in a request to the [Charge](#endpoint-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order&#39;s &#x60;id&#x60; in the &#x60;order_id&#x60; field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
    * @param {String} locationId The ID of the business location to associate the order with.
    * @param {module:model/CreateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateOrderResponse}
    */
   this.createOrder = function(locationId, body) {
     return this.createOrderWithHttpInfo(locationId, body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * SearchOrders
+   * Search all Orders for a merchant and return either [Orders](#type-order) or [OrderEntries](#type-orderentry).  Note that details for orders processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline orders have a &#x60;created_at&#x60; value that reflects the time the order was originally processed, not the time it was subsequently transmitted to Square. Consequently, the SearchOrder endpoint might list an offline Order chronologically between online Orders that were seen in a previous request.  By default, SearchOrders will return all results for all of the merchant’s locations. When fetching additional pages using a &#x60;cursor&#x60;, the &#x60;query&#x60; must be equal to the &#x60;query&#x60; used to fetch the first page of results.
+   * @param {module:model/SearchOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchOrdersResponse} and HTTP response
+   */
+  this.searchOrdersWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling searchOrders");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2019-05-08';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = SearchOrdersResponse;
+
+    return this.apiClient.callApi(
+      '/v2/orders/search', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * SearchOrders
+   * Search all Orders for a merchant and return either [Orders](#type-order) or [OrderEntries](#type-orderentry).  Note that details for orders processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline orders have a &#x60;created_at&#x60; value that reflects the time the order was originally processed, not the time it was subsequently transmitted to Square. Consequently, the SearchOrder endpoint might list an offline Order chronologically between online Orders that were seen in a previous request.  By default, SearchOrders will return all results for all of the merchant’s locations. When fetching additional pages using a &#x60;cursor&#x60;, the &#x60;query&#x60; must be equal to the &#x60;query&#x60; used to fetch the first page of results.
+   * @param {module:model/SearchOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchOrdersResponse}
+   */
+  this.searchOrders = function(body) {
+    return this.searchOrdersWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
