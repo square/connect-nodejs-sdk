@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var Address = require('./Address');
+var BusinessHours = require('./BusinessHours');
 
 
 
@@ -30,6 +31,7 @@ var Address = require('./Address');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -103,6 +105,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('website_url')) {
       obj['website_url'] = ApiClient.convertToType(data['website_url'], 'String');
+    }
+      if (data.hasOwnProperty('business_hours')) {
+      obj['business_hours'] = BusinessHours.constructFromObject(data['business_hours']);
     }
     }
   return obj;
@@ -183,6 +188,11 @@ exports.prototype['type'] = undefined;
  * @member {String} website_url
  */
 exports.prototype['website_url'] = undefined;
+/**
+ *   The hours of operation for a business location.  Default: none; only exists if explicitly set.
+ * @member {module:model/BusinessHours} business_hours
+ */
+exports.prototype['business_hours'] = undefined;
 
 
   /**

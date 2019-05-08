@@ -16,6 +16,7 @@ var Money = require('./Money');
 var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemModifier = require('./OrderLineItemModifier');
 var OrderLineItemTax = require('./OrderLineItemTax');
+var OrderQuantityUnit = require('./OrderQuantityUnit');
 
 
 
@@ -30,13 +31,16 @@ var OrderLineItemTax = require('./OrderLineItemTax');
  * Represents a line item in an order. Each line item describes a different product to purchase, with its own quantity and price details.
  * @alias module:model/OrderLineItem
  * @class
- * @param quantity {String} The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
+ * @param quantity {String} The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
  */
 var exports = function(quantity) {
   var _this = this;
 
 
+
   _this['quantity'] = quantity;
+
+
 
 
 
@@ -61,11 +65,17 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('uid')) {
+      obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+    }
       if (data.hasOwnProperty('name')) {
       obj['name'] = ApiClient.convertToType(data['name'], 'String');
     }
       if (data.hasOwnProperty('quantity')) {
       obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
+    }
+      if (data.hasOwnProperty('quantity_unit')) {
+      obj['quantity_unit'] = OrderQuantityUnit.constructFromObject(data['quantity_unit']);
     }
       if (data.hasOwnProperty('note')) {
       obj['note'] = ApiClient.convertToType(data['note'], 'String');
@@ -88,6 +98,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('base_price_money')) {
       obj['base_price_money'] = Money.constructFromObject(data['base_price_money']);
     }
+      if (data.hasOwnProperty('variation_total_price_money')) {
+      obj['variation_total_price_money'] = Money.constructFromObject(data['variation_total_price_money']);
+    }
       if (data.hasOwnProperty('gross_sales_money')) {
       obj['gross_sales_money'] = Money.constructFromObject(data['gross_sales_money']);
     }
@@ -105,15 +118,25 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
+ * The line item's Unique identifier, unique only within this order. This field is read-only.
+ * @member {String} uid
+ */
+exports.prototype['uid'] = undefined;
+/**
  * The name of the line item.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
+ * The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
  * @member {String} quantity
  */
 exports.prototype['quantity'] = undefined;
+/**
+ * The unit and precision that this line item's quantity is measured in.
+ * @member {module:model/OrderQuantityUnit} quantity_unit
+ */
+exports.prototype['quantity_unit'] = undefined;
 /**
  * The note of the line item.
  * @member {String} note
@@ -150,7 +173,12 @@ exports.prototype['discounts'] = undefined;
  */
 exports.prototype['base_price_money'] = undefined;
 /**
- * The gross sales amount of money calculated as (item base price + modifiers price) * quantity.
+ * The total price of all item variations sold in this line item. Calculated as `base_price_money` multiplied by `quantity`. Does not include modifiers.
+ * @member {module:model/Money} variation_total_price_money
+ */
+exports.prototype['variation_total_price_money'] = undefined;
+/**
+ * The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.
  * @member {module:model/Money} gross_sales_money
  */
 exports.prototype['gross_sales_money'] = undefined;

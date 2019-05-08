@@ -1,0 +1,28 @@
+# SquareConnect.MeasurementUnitVolume
+
+## Enum
+
+
+* `GENERIC_FLUID_OUNCE` (value: `"GENERIC_FLUID_OUNCE"`)
+
+* `GENERIC_SHOT` (value: `"GENERIC_SHOT"`)
+
+* `GENERIC_CUP` (value: `"GENERIC_CUP"`)
+
+* `GENERIC_PINT` (value: `"GENERIC_PINT"`)
+
+* `GENERIC_QUART` (value: `"GENERIC_QUART"`)
+
+* `GENERIC_GALLON` (value: `"GENERIC_GALLON"`)
+
+* `IMPERIAL_CUBIC_INCH` (value: `"IMPERIAL_CUBIC_INCH"`)
+
+* `IMPERIAL_CUBIC_FOOT` (value: `"IMPERIAL_CUBIC_FOOT"`)
+
+* `IMPERIAL_CUBIC_YARD` (value: `"IMPERIAL_CUBIC_YARD"`)
+
+* `METRIC_MILLILITER` (value: `"METRIC_MILLILITER"`)
+
+* `METRIC_LITER` (value: `"METRIC_LITER"`)
+
+

@@ -17,7 +17,12 @@ var OrderFulfillment = require('./OrderFulfillment');
 var OrderLineItem = require('./OrderLineItem');
 var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemTax = require('./OrderLineItemTax');
+var OrderMoneyAmounts = require('./OrderMoneyAmounts');
+var OrderReturn = require('./OrderReturn');
+var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
 var OrderSource = require('./OrderSource');
+var Refund = require('./Refund');
+var Tender = require('./Tender');
 
 
 
@@ -29,7 +34,7 @@ var OrderSource = require('./OrderSource');
 
 /**
  * Constructs a new <code>Order</code>.
- * Contains all information related to a single order to process with Square, including line items that specify the products to purchase
+ * Contains all information related to a single order to process with Square, including line items that specify the products to purchase. Order objects also include information on any associated tenders, refunds, and returns.  All Connect V2 Transactions have all been converted to Orders including all associated itemization data.
  * @alias module:model/Order
  * @class
  * @param locationId {String} The ID of the merchant location this order is associated with.
@@ -39,6 +44,17 @@ var exports = function(locationId) {
 
 
   _this['location_id'] = locationId;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +89,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('source')) {
       obj['source'] = OrderSource.constructFromObject(data['source']);
     }
+      if (data.hasOwnProperty('customer_id')) {
+      obj['customer_id'] = ApiClient.convertToType(data['customer_id'], 'String');
+    }
       if (data.hasOwnProperty('line_items')) {
       obj['line_items'] = ApiClient.convertToType(data['line_items'], [OrderLineItem]);
     }
@@ -84,6 +103,36 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('fulfillments')) {
       obj['fulfillments'] = ApiClient.convertToType(data['fulfillments'], [OrderFulfillment]);
+    }
+      if (data.hasOwnProperty('returns')) {
+      obj['returns'] = ApiClient.convertToType(data['returns'], [OrderReturn]);
+    }
+      if (data.hasOwnProperty('return_amounts')) {
+      obj['return_amounts'] = OrderMoneyAmounts.constructFromObject(data['return_amounts']);
+    }
+      if (data.hasOwnProperty('net_amounts')) {
+      obj['net_amounts'] = OrderMoneyAmounts.constructFromObject(data['net_amounts']);
+    }
+      if (data.hasOwnProperty('rounding_adjustment')) {
+      obj['rounding_adjustment'] = OrderRoundingAdjustment.constructFromObject(data['rounding_adjustment']);
+    }
+      if (data.hasOwnProperty('tenders')) {
+      obj['tenders'] = ApiClient.convertToType(data['tenders'], [Tender]);
+    }
+      if (data.hasOwnProperty('refunds')) {
+      obj['refunds'] = ApiClient.convertToType(data['refunds'], [Refund]);
+    }
+      if (data.hasOwnProperty('created_at')) {
+      obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
+    }
+      if (data.hasOwnProperty('updated_at')) {
+      obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
+    }
+      if (data.hasOwnProperty('closed_at')) {
+      obj['closed_at'] = ApiClient.convertToType(data['closed_at'], 'String');
+    }
+      if (data.hasOwnProperty('state')) {
+      obj['state'] = ApiClient.convertToType(data['state'], 'String');
     }
       if (data.hasOwnProperty('total_money')) {
       obj['total_money'] = Money.constructFromObject(data['total_money']);
@@ -119,6 +168,11 @@ exports.prototype['reference_id'] = undefined;
  */
 exports.prototype['source'] = undefined;
 /**
+ * The [Customer](#type-customer) ID of the customer associated with the order.
+ * @member {String} customer_id
+ */
+exports.prototype['customer_id'] = undefined;
+/**
  * The line items included in the order.
  * @member {Array.<module:model/OrderLineItem>} line_items
  */
@@ -139,6 +193,56 @@ exports.prototype['discounts'] = undefined;
  */
 exports.prototype['fulfillments'] = undefined;
 /**
+ * Collection of items from sale Orders being returned in this one. Normally part of an Itemized Return or Exchange.  There will be exactly one `Return` object per sale Order being referenced.
+ * @member {Array.<module:model/OrderReturn>} returns
+ */
+exports.prototype['returns'] = undefined;
+/**
+ * Rollup of returned money amounts.
+ * @member {module:model/OrderMoneyAmounts} return_amounts
+ */
+exports.prototype['return_amounts'] = undefined;
+/**
+ * Net money amounts (sale money - return money).
+ * @member {module:model/OrderMoneyAmounts} net_amounts
+ */
+exports.prototype['net_amounts'] = undefined;
+/**
+ * A positive or negative rounding adjustment to the total of the order, commonly used to apply Cash Rounding when the minimum unit of account is smaller than the lowest physical denomination of currency.
+ * @member {module:model/OrderRoundingAdjustment} rounding_adjustment
+ */
+exports.prototype['rounding_adjustment'] = undefined;
+/**
+ * The Tenders which were used to pay for the Order. This field is read-only.
+ * @member {Array.<module:model/Tender>} tenders
+ */
+exports.prototype['tenders'] = undefined;
+/**
+ * The Refunds that are part of this Order. This field is read-only.
+ * @member {Array.<module:model/Refund>} refunds
+ */
+exports.prototype['refunds'] = undefined;
+/**
+ * Timestamp for when the order was created. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * @member {String} created_at
+ */
+exports.prototype['created_at'] = undefined;
+/**
+ * Timestamp for when the order was last updated. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * @member {String} updated_at
+ */
+exports.prototype['updated_at'] = undefined;
+/**
+ * Timestamp for when the order was closed. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * @member {String} closed_at
+ */
+exports.prototype['closed_at'] = undefined;
+/**
+ * The current state of the order. `OPEN`,`COMPLETED`,`CANCELED` See [OrderState](#type-orderstate) for possible values
+ * @member {module:model/Order.StateEnum} state
+ */
+exports.prototype['state'] = undefined;
+/**
  * The total amount of money to collect for the order.
  * @member {module:model/Money} total_money
  */
@@ -154,6 +258,28 @@ exports.prototype['total_tax_money'] = undefined;
  */
 exports.prototype['total_discount_money'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>state</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.StateEnum = {
+    /**
+     * value: "OPEN"
+     * @const
+     */
+    "OPEN": "OPEN",
+    /**
+     * value: "COMPLETED"
+     * @const
+     */
+    "COMPLETED": "COMPLETED",
+    /**
+     * value: "CANCELED"
+     * @const
+     */
+    "CANCELED": "CANCELED"  };
 
 
 module.exports = exports;

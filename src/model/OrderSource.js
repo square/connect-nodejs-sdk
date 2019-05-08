@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The name used to identify the place (physical or digital) that an order originates.  If unset, the name defaults to the name of the application that created the order.
+ * The name used to identify the place (physical or digital) that an order originates. If unset, the name defaults to the name of the application that created the order.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

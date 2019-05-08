@@ -496,6 +496,16 @@ exports.prototype['field'] = undefined;
      */
     "BAD_CERTIFICATE": "BAD_CERTIFICATE",
     /**
+     * value: "INVALID_SQUARE_VERSION_FORMAT"
+     * @const
+     */
+    "INVALID_SQUARE_VERSION_FORMAT": "INVALID_SQUARE_VERSION_FORMAT",
+    /**
+     * value: "API_VERSION_INCOMPATIBLE"
+     * @const
+     */
+    "API_VERSION_INCOMPATIBLE": "API_VERSION_INCOMPATIBLE",
+    /**
      * value: "CARD_DECLINED"
      * @const
      */
