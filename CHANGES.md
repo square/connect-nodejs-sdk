@@ -62,15 +62,15 @@
 ## New API: Labor API
 
 The Labor API now includes functionality
-that gives a Square account the ability to track and retrieve employee labor hours 
-including multiple hourly wage rates per employee, work shift break tracking, and 
+that gives a Square account the ability to track and retrieve employee labor hours
+including multiple hourly wage rates per employee, work shift break tracking, and
 standardized break templates.
 
 See the Connect v2 Technical Reference.
 
 ## New API: Employees API
 
-The Employees API includes the ability to list employees for a Square 
+The Employees API includes the ability to list employees for a Square
 account and retrieve a single employee by ID.
 
 See the Connect v2 Technical Reference.
@@ -312,7 +312,7 @@ represent the value of returned goods in an exchange, rather than actual money m
 ### New features: Orders API
 
 * For Catalog-backed line items, setting `CreateOrderRequestLineItem.base_price_money` will now override
-  the catalog item variation's price.  
+  the catalog item variation's price.
 * `CreateOrderRequestModifier`s may now be created ad hoc using the new `name` and `base_price_money` fields.
 
 ## Version 2.5.5 (2018-01-06)
