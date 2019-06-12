@@ -25,12 +25,14 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CatalogItemVariation</code>.
- * An item variation (i.e., product) in the Catalog object model.
+ * An item variation (i.e., product) in the Catalog object model. Each item may have a maximum of 250 item variations.
  * @alias module:model/CatalogItemVariation
  * @class
  */
 var exports = function() {
   var _this = this;
+
+
 
 
 
@@ -96,6 +98,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('service_duration')) {
       obj['service_duration'] = ApiClient.convertToType(data['service_duration'], 'Number');
+    }
+      if (data.hasOwnProperty('catalog_measurement_unit_id')) {
+      obj['catalog_measurement_unit_id'] = ApiClient.convertToType(data['catalog_measurement_unit_id'], 'String');
+    }
+      if (data.hasOwnProperty('measurement_unit_id')) {
+      obj['measurement_unit_id'] = ApiClient.convertToType(data['measurement_unit_id'], 'String');
     }
     }
   return obj;
@@ -166,6 +174,16 @@ exports.prototype['user_data'] = undefined;
  * @member {Number} service_duration
  */
 exports.prototype['service_duration'] = undefined;
+/**
+ * Represents the unit used to measure a [CatalogItemVariation](#type-catalogitemvariation) and specifies the precision for decimal quantities.
+ * @member {String} catalog_measurement_unit_id
+ */
+exports.prototype['catalog_measurement_unit_id'] = undefined;
+/**
+ * ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities.
+ * @member {String} measurement_unit_id
+ */
+exports.prototype['measurement_unit_id'] = undefined;
 
 
   /**

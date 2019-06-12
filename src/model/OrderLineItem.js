@@ -118,7 +118,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The line item's Unique identifier, unique only within this order. This field is read-only.
+ * Unique ID that identifies the line item only within this order.  This field is read-only.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -178,22 +178,22 @@ exports.prototype['base_price_money'] = undefined;
  */
 exports.prototype['variation_total_price_money'] = undefined;
 /**
- * The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.
+ * The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.  This field is read-only.
  * @member {module:model/Money} gross_sales_money
  */
 exports.prototype['gross_sales_money'] = undefined;
 /**
- * The total tax amount of money to collect for the line item.
+ * The total tax amount of money to collect for the line item.  This field is read-only.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to collect for the line item.
+ * The total discount amount of money to collect for the line item.  This field is read-only.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
 /**
- * The total amount of money to collect for this line item.
+ * The total amount of money to collect for this line item.  This field is read-only.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;

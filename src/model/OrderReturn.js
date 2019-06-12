@@ -15,6 +15,7 @@ var ApiClient = require('../ApiClient');
 var OrderMoneyAmounts = require('./OrderMoneyAmounts');
 var OrderReturnDiscount = require('./OrderReturnDiscount');
 var OrderReturnLineItem = require('./OrderReturnLineItem');
+var OrderReturnServiceCharge = require('./OrderReturnServiceCharge');
 var OrderReturnTax = require('./OrderReturnTax');
 var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
 
@@ -34,6 +35,7 @@ var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -64,6 +66,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('return_line_items')) {
       obj['return_line_items'] = ApiClient.convertToType(data['return_line_items'], [OrderReturnLineItem]);
     }
+      if (data.hasOwnProperty('return_service_charges')) {
+      obj['return_service_charges'] = ApiClient.convertToType(data['return_service_charges'], [OrderReturnServiceCharge]);
+    }
       if (data.hasOwnProperty('return_taxes')) {
       obj['return_taxes'] = ApiClient.convertToType(data['return_taxes'], [OrderReturnTax]);
     }
@@ -81,7 +86,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The return's Unique identifier, unique only within this order. This field is read-only.
+ * Unique ID that identifies the return only within this order.  This field is read-only.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -95,6 +100,11 @@ exports.prototype['source_order_id'] = undefined;
  * @member {Array.<module:model/OrderReturnLineItem>} return_line_items
  */
 exports.prototype['return_line_items'] = undefined;
+/**
+ * Collection of service charges which are being returned.  This field is read-only.
+ * @member {Array.<module:model/OrderReturnServiceCharge>} return_service_charges
+ */
+exports.prototype['return_service_charges'] = undefined;
 /**
  * Collection of taxes which are being returned.
  * @member {Array.<module:model/OrderReturnTax>} return_taxes

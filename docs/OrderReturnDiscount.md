@@ -7,7 +7,7 @@ The line item discount being returned.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uid** | **String** | The return discount&#39;s Unique identifier, unique only within this order. | [optional] 
+**uid** | **String** | Unique ID that identifies the return discount only within this order.  This field is read-only. | [optional] 
 **source_discount_uid** | **String** | &#x60;uid&#x60; of the Discount from the Order which contains the original application of this discount. | [optional] 
 **catalog_object_id** | **String** | The catalog object id referencing [CatalogDiscount](#type-catalogdiscount). | [optional] 
 **name** | **String** | The discount&#39;s name. | [optional] 

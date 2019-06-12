@@ -356,6 +356,11 @@ exports.prototype['field'] = undefined;
      */
     "DEPRECATED_FIELD_SET": "DEPRECATED_FIELD_SET",
     /**
+     * value: "RETIRED_FIELD_SET"
+     * @const
+     */
+    "RETIRED_FIELD_SET": "RETIRED_FIELD_SET",
+    /**
      * value: "CARD_EXPIRED"
      * @const
      */

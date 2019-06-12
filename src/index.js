@@ -17,6 +17,7 @@ var AdditionalRecipient = require('./model/AdditionalRecipient');
 var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
 var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
 var Address = require('./model/Address');
+var AggregationStrategy = require('./model/AggregationStrategy');
 var BatchChangeInventoryRequest = require('./model/BatchChangeInventoryRequest');
 var BatchChangeInventoryResponse = require('./model/BatchChangeInventoryResponse');
 var BatchDeleteCatalogObjectsRequest = require('./model/BatchDeleteCatalogObjectsRequest');
@@ -50,6 +51,7 @@ var CatalogItem = require('./model/CatalogItem');
 var CatalogItemModifierListInfo = require('./model/CatalogItemModifierListInfo');
 var CatalogItemProductType = require('./model/CatalogItemProductType');
 var CatalogItemVariation = require('./model/CatalogItemVariation');
+var CatalogMeasurementUnit = require('./model/CatalogMeasurementUnit');
 var CatalogModifier = require('./model/CatalogModifier');
 var CatalogModifierList = require('./model/CatalogModifierList');
 var CatalogModifierListSelectionType = require('./model/CatalogModifierListSelectionType');
@@ -57,7 +59,9 @@ var CatalogModifierOverride = require('./model/CatalogModifierOverride');
 var CatalogObject = require('./model/CatalogObject');
 var CatalogObjectBatch = require('./model/CatalogObjectBatch');
 var CatalogObjectType = require('./model/CatalogObjectType');
+var CatalogPricingRule = require('./model/CatalogPricingRule');
 var CatalogPricingType = require('./model/CatalogPricingType');
+var CatalogProductSet = require('./model/CatalogProductSet');
 var CatalogQuery = require('./model/CatalogQuery');
 var CatalogQueryExact = require('./model/CatalogQueryExact');
 var CatalogQueryItemsForModifierList = require('./model/CatalogQueryItemsForModifierList');
@@ -67,11 +71,13 @@ var CatalogQueryRange = require('./model/CatalogQueryRange');
 var CatalogQuerySortedAttribute = require('./model/CatalogQuerySortedAttribute');
 var CatalogQueryText = require('./model/CatalogQueryText');
 var CatalogTax = require('./model/CatalogTax');
+var CatalogTimePeriod = require('./model/CatalogTimePeriod');
 var CatalogV1Id = require('./model/CatalogV1Id');
 var ChargeRequest = require('./model/ChargeRequest');
 var ChargeRequestAdditionalRecipient = require('./model/ChargeRequestAdditionalRecipient');
 var ChargeResponse = require('./model/ChargeResponse');
 var Checkout = require('./model/Checkout');
+var Coordinates = require('./model/Coordinates');
 var Country = require('./model/Country');
 var CreateBreakTypeRequest = require('./model/CreateBreakTypeRequest');
 var CreateBreakTypeResponse = require('./model/CreateBreakTypeResponse');
@@ -167,6 +173,7 @@ var LocationType = require('./model/LocationType');
 var MeasurementUnit = require('./model/MeasurementUnit');
 var MeasurementUnitArea = require('./model/MeasurementUnitArea');
 var MeasurementUnitCustom = require('./model/MeasurementUnitCustom');
+var MeasurementUnitGeneric = require('./model/MeasurementUnitGeneric');
 var MeasurementUnitLength = require('./model/MeasurementUnitLength');
 var MeasurementUnitVolume = require('./model/MeasurementUnitVolume');
 var MeasurementUnitWeight = require('./model/MeasurementUnitWeight');
@@ -196,8 +203,11 @@ var OrderReturn = require('./model/OrderReturn');
 var OrderReturnDiscount = require('./model/OrderReturnDiscount');
 var OrderReturnLineItem = require('./model/OrderReturnLineItem');
 var OrderReturnLineItemModifier = require('./model/OrderReturnLineItemModifier');
+var OrderReturnServiceCharge = require('./model/OrderReturnServiceCharge');
 var OrderReturnTax = require('./model/OrderReturnTax');
 var OrderRoundingAdjustment = require('./model/OrderRoundingAdjustment');
+var OrderServiceCharge = require('./model/OrderServiceCharge');
+var OrderServiceChargeCalculationPhase = require('./model/OrderServiceChargeCalculationPhase');
 var OrderSource = require('./model/OrderSource');
 var OrderState = require('./model/OrderState');
 var Product = require('./model/Product');
@@ -255,6 +265,8 @@ var ShiftWorkday = require('./model/ShiftWorkday');
 var ShiftWorkdayMatcher = require('./model/ShiftWorkdayMatcher');
 var SortOrder = require('./model/SortOrder');
 var SourceApplication = require('./model/SourceApplication');
+var StandardUnitDescription = require('./model/StandardUnitDescription');
+var StandardUnitDescriptionGroup = require('./model/StandardUnitDescriptionGroup');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
 var TaxInclusionType = require('./model/TaxInclusionType');
 var Tender = require('./model/Tender');
@@ -493,7 +505,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190508.0
+ * @version 2.20190612.0
  */
   module.exports = {
   /**
@@ -521,6 +533,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Address}
    */
   Address: Address,
+  /**
+   * The AggregationStrategy model constructor.
+   * @property {module:model/AggregationStrategy}
+   */
+  AggregationStrategy: AggregationStrategy,
   /**
    * The BatchChangeInventoryRequest model constructor.
    * @property {module:model/BatchChangeInventoryRequest}
@@ -687,6 +704,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogItemVariation: CatalogItemVariation,
   /**
+   * The CatalogMeasurementUnit model constructor.
+   * @property {module:model/CatalogMeasurementUnit}
+   */
+  CatalogMeasurementUnit: CatalogMeasurementUnit,
+  /**
    * The CatalogModifier model constructor.
    * @property {module:model/CatalogModifier}
    */
@@ -722,10 +744,20 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogObjectType: CatalogObjectType,
   /**
+   * The CatalogPricingRule model constructor.
+   * @property {module:model/CatalogPricingRule}
+   */
+  CatalogPricingRule: CatalogPricingRule,
+  /**
    * The CatalogPricingType model constructor.
    * @property {module:model/CatalogPricingType}
    */
   CatalogPricingType: CatalogPricingType,
+  /**
+   * The CatalogProductSet model constructor.
+   * @property {module:model/CatalogProductSet}
+   */
+  CatalogProductSet: CatalogProductSet,
   /**
    * The CatalogQuery model constructor.
    * @property {module:model/CatalogQuery}
@@ -772,6 +804,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogTax: CatalogTax,
   /**
+   * The CatalogTimePeriod model constructor.
+   * @property {module:model/CatalogTimePeriod}
+   */
+  CatalogTimePeriod: CatalogTimePeriod,
+  /**
    * The CatalogV1Id model constructor.
    * @property {module:model/CatalogV1Id}
    */
@@ -796,6 +833,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Checkout}
    */
   Checkout: Checkout,
+  /**
+   * The Coordinates model constructor.
+   * @property {module:model/Coordinates}
+   */
+  Coordinates: Coordinates,
   /**
    * The Country model constructor.
    * @property {module:model/Country}
@@ -1272,6 +1314,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   MeasurementUnitCustom: MeasurementUnitCustom,
   /**
+   * The MeasurementUnitGeneric model constructor.
+   * @property {module:model/MeasurementUnitGeneric}
+   */
+  MeasurementUnitGeneric: MeasurementUnitGeneric,
+  /**
    * The MeasurementUnitLength model constructor.
    * @property {module:model/MeasurementUnitLength}
    */
@@ -1417,6 +1464,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderReturnLineItemModifier: OrderReturnLineItemModifier,
   /**
+   * The OrderReturnServiceCharge model constructor.
+   * @property {module:model/OrderReturnServiceCharge}
+   */
+  OrderReturnServiceCharge: OrderReturnServiceCharge,
+  /**
    * The OrderReturnTax model constructor.
    * @property {module:model/OrderReturnTax}
    */
@@ -1426,6 +1478,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderRoundingAdjustment}
    */
   OrderRoundingAdjustment: OrderRoundingAdjustment,
+  /**
+   * The OrderServiceCharge model constructor.
+   * @property {module:model/OrderServiceCharge}
+   */
+  OrderServiceCharge: OrderServiceCharge,
+  /**
+   * The OrderServiceChargeCalculationPhase model constructor.
+   * @property {module:model/OrderServiceChargeCalculationPhase}
+   */
+  OrderServiceChargeCalculationPhase: OrderServiceChargeCalculationPhase,
   /**
    * The OrderSource model constructor.
    * @property {module:model/OrderSource}
@@ -1711,6 +1773,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SourceApplication}
    */
   SourceApplication: SourceApplication,
+  /**
+   * The StandardUnitDescription model constructor.
+   * @property {module:model/StandardUnitDescription}
+   */
+  StandardUnitDescription: StandardUnitDescription,
+  /**
+   * The StandardUnitDescriptionGroup model constructor.
+   * @property {module:model/StandardUnitDescriptionGroup}
+   */
+  StandardUnitDescriptionGroup: StandardUnitDescriptionGroup,
   /**
    * The TaxCalculationPhase model constructor.
    * @property {module:model/TaxCalculationPhase}

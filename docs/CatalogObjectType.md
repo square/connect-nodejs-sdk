@@ -19,4 +19,10 @@
 
 * `MODIFIER` (value: `"MODIFIER"`)
 
+* `PRICING_RULE` (value: `"PRICING_RULE"`)
+
+* `PRODUCT_SET` (value: `"PRODUCT_SET"`)
+
+* `TIME_PERIOD` (value: `"TIME_PERIOD"`)
+
 

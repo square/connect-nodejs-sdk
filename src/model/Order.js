@@ -20,6 +20,7 @@ var OrderLineItemTax = require('./OrderLineItemTax');
 var OrderMoneyAmounts = require('./OrderMoneyAmounts');
 var OrderReturn = require('./OrderReturn');
 var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
+var OrderServiceCharge = require('./OrderServiceCharge');
 var OrderSource = require('./OrderSource');
 var Refund = require('./Refund');
 var Tender = require('./Tender');
@@ -44,6 +45,8 @@ var exports = function(locationId) {
 
 
   _this['location_id'] = locationId;
+
+
 
 
 
@@ -101,6 +104,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('discounts')) {
       obj['discounts'] = ApiClient.convertToType(data['discounts'], [OrderLineItemDiscount]);
     }
+      if (data.hasOwnProperty('service_charges')) {
+      obj['service_charges'] = ApiClient.convertToType(data['service_charges'], [OrderServiceCharge]);
+    }
       if (data.hasOwnProperty('fulfillments')) {
       obj['fulfillments'] = ApiClient.convertToType(data['fulfillments'], [OrderFulfillment]);
     }
@@ -143,12 +149,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('total_discount_money')) {
       obj['total_discount_money'] = Money.constructFromObject(data['total_discount_money']);
     }
+      if (data.hasOwnProperty('total_service_charge_money')) {
+      obj['total_service_charge_money'] = Money.constructFromObject(data['total_service_charge_money']);
+    }
     }
   return obj;
 }
 
 /**
- * The order's unique ID.  This value is only present for Order objects created by the Orders API through the [CreateOrder](#endpoint-orders-createorder) endpoint.
+ * The order's unique ID.  This field is read-only.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
@@ -188,27 +197,32 @@ exports.prototype['taxes'] = undefined;
  */
 exports.prototype['discounts'] = undefined;
 /**
+ * A list of service charges applied to the order.
+ * @member {Array.<module:model/OrderServiceCharge>} service_charges
+ */
+exports.prototype['service_charges'] = undefined;
+/**
  * Details on order fulfillment.  Orders can only be created with at most one fulfillment. However, orders returned by the API may contain multiple fulfillments.
  * @member {Array.<module:model/OrderFulfillment>} fulfillments
  */
 exports.prototype['fulfillments'] = undefined;
 /**
- * Collection of items from sale Orders being returned in this one. Normally part of an Itemized Return or Exchange.  There will be exactly one `Return` object per sale Order being referenced.
+ * Collection of items from sale Orders being returned in this one. Normally part of an Itemized Return or Exchange.  There will be exactly one `Return` object per sale Order being referenced.  This field is read-only.
  * @member {Array.<module:model/OrderReturn>} returns
  */
 exports.prototype['returns'] = undefined;
 /**
- * Rollup of returned money amounts.
+ * Rollup of returned money amounts.  This field is read-only.
  * @member {module:model/OrderMoneyAmounts} return_amounts
  */
 exports.prototype['return_amounts'] = undefined;
 /**
- * Net money amounts (sale money - return money).
+ * Net money amounts (sale money - return money).  This field is read-only.
  * @member {module:model/OrderMoneyAmounts} net_amounts
  */
 exports.prototype['net_amounts'] = undefined;
 /**
- * A positive or negative rounding adjustment to the total of the order, commonly used to apply Cash Rounding when the minimum unit of account is smaller than the lowest physical denomination of currency.
+ * A positive or negative rounding adjustment to the total of the order, commonly used to apply Cash Rounding when the minimum unit of account is smaller than the lowest physical denomination of currency.  This field is read-only.
  * @member {module:model/OrderRoundingAdjustment} rounding_adjustment
  */
 exports.prototype['rounding_adjustment'] = undefined;
@@ -223,17 +237,17 @@ exports.prototype['tenders'] = undefined;
  */
 exports.prototype['refunds'] = undefined;
 /**
- * Timestamp for when the order was created. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * Timestamp for when the order was created. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Timestamp for when the order was last updated. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * Timestamp for when the order was last updated. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * Timestamp for when the order was closed. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * Timestamp for when the order was closed. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
  * @member {String} closed_at
  */
 exports.prototype['closed_at'] = undefined;
@@ -243,20 +257,25 @@ exports.prototype['closed_at'] = undefined;
  */
 exports.prototype['state'] = undefined;
 /**
- * The total amount of money to collect for the order.
+ * The total amount of money to collect for the order.  This field is read-only.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The total tax amount of money to collect for the order.
+ * The total tax amount of money to collect for the order.  This field is read-only.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to collect for the order.
+ * The total discount amount of money to collect for the order.  This field is read-only.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
+/**
+ * The total amount of money collected in service charges for the order.  Note: `total_service_charge_money` is the sum of `applied_money` fields for each individual service charge. Therefore, `total_service_charge_money` will only include inclusive tax amounts, not additive tax amounts.  This field is read-only.
+ * @member {module:model/Money} total_service_charge_money
+ */
+exports.prototype['total_service_charge_money'] = undefined;
 
 
   /**

@@ -92,7 +92,7 @@ exports.prototype['object_types'] = undefined;
  */
 exports.prototype['include_deleted_objects'] = undefined;
 /**
- * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a [CatalogItem](#type-catalogitem) is returned in the object field of the response, its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, and [CatalogModifierList](#type-catalogmodifierlist)s will be included in the `related_objects` field of the response.  If a [CatalogItemVariation](#type-catalogitemvariation) is returned in the object field of the response, its parent [CatalogItem](#type-catalogitem) will be included in the `related_objects` field of the response.
+ * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a [CatalogItem](#type-catalogitem) is returned in the object field of the response, its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, [CatalogImage](#type-catalogimage)s and [CatalogModifierList](#type-catalogmodifierlist)s will be included in the `related_objects` field of the response.  If a [CatalogItemVariation](#type-catalogitemvariation) is returned in the object field of the response, its parent [CatalogItem](#type-catalogitem) will be included in the `related_objects` field of the response.
  * @member {Boolean} include_related_objects
  */
 exports.prototype['include_related_objects'] = undefined;
@@ -158,7 +158,22 @@ exports.prototype['limit'] = undefined;
      * value: "MODIFIER"
      * @const
      */
-    "MODIFIER": "MODIFIER"  };
+    "MODIFIER": "MODIFIER",
+    /**
+     * value: "PRICING_RULE"
+     * @const
+     */
+    "PRICING_RULE": "PRICING_RULE",
+    /**
+     * value: "PRODUCT_SET"
+     * @const
+     */
+    "PRODUCT_SET": "PRODUCT_SET",
+    /**
+     * value: "TIME_PERIOD"
+     * @const
+     */
+    "TIME_PERIOD": "TIME_PERIOD"  };
 
 
 module.exports = exports;

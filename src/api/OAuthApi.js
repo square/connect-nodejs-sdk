@@ -38,7 +38,7 @@ module.exports = function(apiClient) {
 
   /**
    * ObtainToken
-   * Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the &#x60;grant_type&#x60; parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   By default, the OAuth API lets up to 500 Square accounts authorize your application. Please [contact support](https://squareup.com/help/us/en/contact?prefill&#x3D;developer_api) if you are developing an application for a larger audience.  __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
+   * Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the &#x60;grant_type&#x60; parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
    * @param {module:model/ObtainTokenRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ObtainTokenResponse} and HTTP response
    */
@@ -57,7 +57,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-05-08';
+    headerParams['Square-Version'] = '2019-06-12';
 
     var formParams = {
     };
@@ -76,7 +76,7 @@ module.exports = function(apiClient) {
 
   /**
    * ObtainToken
-   * Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the &#x60;grant_type&#x60; parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   By default, the OAuth API lets up to 500 Square accounts authorize your application. Please [contact support](https://squareup.com/help/us/en/contact?prefill&#x3D;developer_api) if you are developing an application for a larger audience.  __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
+   * Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the &#x60;grant_type&#x60; parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
    * @param {module:model/ObtainTokenRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ObtainTokenResponse}
    */
@@ -116,7 +116,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-05-08';
+    headerParams['Square-Version'] = '2019-06-12';
 
     var formParams = {
     };
@@ -169,7 +169,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-05-08';
+    headerParams['Square-Version'] = '2019-06-12';
 
     var formParams = {
     };

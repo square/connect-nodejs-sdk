@@ -17,6 +17,7 @@ var CatalogDiscount = require('./CatalogDiscount');
 var CatalogImage = require('./CatalogImage');
 var CatalogItem = require('./CatalogItem');
 var CatalogItemVariation = require('./CatalogItemVariation');
+var CatalogMeasurementUnit = require('./CatalogMeasurementUnit');
 var CatalogModifier = require('./CatalogModifier');
 var CatalogModifierList = require('./CatalogModifierList');
 var CatalogTax = require('./CatalogTax');
@@ -43,6 +44,7 @@ var exports = function(type, id) {
 
   _this['type'] = type;
   _this['id'] = id;
+
 
 
 
@@ -125,6 +127,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('image_data')) {
       obj['image_data'] = CatalogImage.constructFromObject(data['image_data']);
+    }
+      if (data.hasOwnProperty('measurement_unit_data')) {
+      obj['measurement_unit_data'] = CatalogMeasurementUnit.constructFromObject(data['measurement_unit_data']);
     }
     }
   return obj;
@@ -220,6 +225,11 @@ exports.prototype['modifier_data'] = undefined;
  * @member {module:model/CatalogImage} image_data
  */
 exports.prototype['image_data'] = undefined;
+/**
+ * Structured data for a [CatalogMeasurementUnit](#type-catalogmeasurementunit), set for CatalogObjects of type `MEASUREMENT_UNIT`.
+ * @member {module:model/CatalogMeasurementUnit} measurement_unit_data
+ */
+exports.prototype['measurement_unit_data'] = undefined;
 
 
   /**
@@ -267,7 +277,22 @@ exports.prototype['image_data'] = undefined;
      * value: "MODIFIER"
      * @const
      */
-    "MODIFIER": "MODIFIER"  };
+    "MODIFIER": "MODIFIER",
+    /**
+     * value: "PRICING_RULE"
+     * @const
+     */
+    "PRICING_RULE": "PRICING_RULE",
+    /**
+     * value: "PRODUCT_SET"
+     * @const
+     */
+    "PRODUCT_SET": "PRODUCT_SET",
+    /**
+     * value: "TIME_PERIOD"
+     * @const
+     */
+    "TIME_PERIOD": "TIME_PERIOD"  };
 
 
 module.exports = exports;

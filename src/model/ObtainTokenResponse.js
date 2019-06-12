@@ -100,12 +100,12 @@ exports.prototype['expires_at'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+ * __LEGACY FIELD__. The ID of a subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
  * @member {String} subscription_id
  */
 exports.prototype['subscription_id'] = undefined;
 /**
- * The ID of the [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+ * __LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
  * @member {String} plan_id
  */
 exports.prototype['plan_id'] = undefined;
