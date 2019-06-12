@@ -36,6 +36,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -63,6 +64,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('weight_unit')) {
       obj['weight_unit'] = ApiClient.convertToType(data['weight_unit'], 'String');
+    }
+      if (data.hasOwnProperty('generic_unit')) {
+      obj['generic_unit'] = ApiClient.convertToType(data['generic_unit'], 'String');
     }
     }
   return obj;
@@ -93,6 +97,11 @@ exports.prototype['volume_unit'] = undefined;
  * @member {module:model/MeasurementUnit.WeightUnitEnum} weight_unit
  */
 exports.prototype['weight_unit'] = undefined;
+/**
+ * Reserved for API integrations that lack the ability to specify a real measurement unit See [MeasurementUnitGeneric](#type-measurementunitgeneric) for possible values
+ * @member {module:model/MeasurementUnit.GenericUnitEnum} generic_unit
+ */
+exports.prototype['generic_unit'] = undefined;
 
 
   /**
@@ -287,6 +296,23 @@ exports.prototype['weight_unit'] = undefined;
      * @const
      */
     "METRIC_KILOGRAM": "METRIC_KILOGRAM"  };
+
+  /**
+   * Allowed values for the <code>generic_unit</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.GenericUnitEnum = {
+    /**
+     * value: "INVALID_GENERIC_UNIT"
+     * @const
+     */
+    "INVALID_GENERIC_UNIT": "INVALID_GENERIC_UNIT",
+    /**
+     * value: "UNIT"
+     * @const
+     */
+    "UNIT": "UNIT"  };
 
 
 module.exports = exports;

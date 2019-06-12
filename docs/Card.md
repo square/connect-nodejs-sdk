@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **exp_year** | **Number** | The four-digit year of the card&#39;s expiration date. | [optional] 
 **cardholder_name** | **String** | The name of the cardholder. | [optional] 
 **billing_address** | [**Address**](Address.md) | The billing address for this card. | [optional] 
-**fingerprint** | **String** | __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application. | [optional] 
+**fingerprint** | **String** | A unique, Square-assigned ID that identifies the card across multiple locations and applications for a single Square account. | [optional] 
 
 
 <a name="CardBrandEnum"></a>

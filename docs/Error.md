@@ -126,6 +126,8 @@ Name | Type | Description | Notes
 
 * `DEPRECATED_FIELD_SET` (value: `"DEPRECATED_FIELD_SET"`)
 
+* `RETIRED_FIELD_SET` (value: `"RETIRED_FIELD_SET"`)
+
 * `CARD_EXPIRED` (value: `"CARD_EXPIRED"`)
 
 * `INVALID_EXPIRATION` (value: `"INVALID_EXPIRATION"`)

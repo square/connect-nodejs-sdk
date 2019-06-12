@@ -7,7 +7,7 @@ Represents a tax that applies to one or more line items in an order.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uid** | **String** | The tax&#39;s Unique identifier, unique only within this order. This field is read-only. | [optional] 
+**uid** | **String** | Unique ID that identifies the tax only within this order.  This field is read-only. | [optional] 
 **catalog_object_id** | **String** | The catalog object id referencing [CatalogTax](#type-catalogtax). | [optional] 
 **name** | **String** | The tax&#39;s name. | [optional] 
 **type** | **String** | Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values | [optional] 

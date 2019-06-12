@@ -187,22 +187,22 @@ exports.prototype['base_price_money'] = undefined;
  */
 exports.prototype['variation_total_price_money'] = undefined;
 /**
- * The gross return amount of money calculated as (item base price + modifiers price) * quantity.
+ * The gross return amount of money calculated as (item base price + modifiers price) * quantity.  This field is read-only.
  * @member {module:model/Money} gross_return_money
  */
 exports.prototype['gross_return_money'] = undefined;
 /**
- * The total tax amount of money to return for the line item.
+ * The total tax amount of money to return for the line item.  This field is read-only.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to return for the line item.
+ * The total discount amount of money to return for the line item.  This field is read-only.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
 /**
- * The total amount of money to return for this line item.
+ * The total amount of money to return for this line item.  This field is read-only.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;

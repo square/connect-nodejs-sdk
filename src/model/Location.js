@@ -14,6 +14,7 @@
 var ApiClient = require('../ApiClient');
 var Address = require('./Address');
 var BusinessHours = require('./BusinessHours');
+var Coordinates = require('./Coordinates');
 
 
 
@@ -31,6 +32,12 @@ var BusinessHours = require('./BusinessHours');
  */
 var exports = function() {
   var _this = this;
+
+
+
+
+
+
 
 
 
@@ -108,6 +115,24 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('business_hours')) {
       obj['business_hours'] = BusinessHours.constructFromObject(data['business_hours']);
+    }
+      if (data.hasOwnProperty('business_email')) {
+      obj['business_email'] = ApiClient.convertToType(data['business_email'], 'String');
+    }
+      if (data.hasOwnProperty('description')) {
+      obj['description'] = ApiClient.convertToType(data['description'], 'String');
+    }
+      if (data.hasOwnProperty('twitter_username')) {
+      obj['twitter_username'] = ApiClient.convertToType(data['twitter_username'], 'String');
+    }
+      if (data.hasOwnProperty('instagram_username')) {
+      obj['instagram_username'] = ApiClient.convertToType(data['instagram_username'], 'String');
+    }
+      if (data.hasOwnProperty('facebook_url')) {
+      obj['facebook_url'] = ApiClient.convertToType(data['facebook_url'], 'String');
+    }
+      if (data.hasOwnProperty('coordinates')) {
+      obj['coordinates'] = Coordinates.constructFromObject(data['coordinates']);
     }
     }
   return obj;
@@ -193,6 +218,36 @@ exports.prototype['website_url'] = undefined;
  * @member {module:model/BusinessHours} business_hours
  */
 exports.prototype['business_hours'] = undefined;
+/**
+ * The email of the location.
+ * @member {String} business_email
+ */
+exports.prototype['business_email'] = undefined;
+/**
+ * The business description of the location.
+ * @member {String} description
+ */
+exports.prototype['description'] = undefined;
+/**
+ * The Twitter username of the location without the '
+ * @member {String} twitter_username
+ */
+exports.prototype['twitter_username'] = undefined;
+/**
+ * The Instagram username of the location without the '
+ * @member {String} instagram_username
+ */
+exports.prototype['instagram_username'] = undefined;
+/**
+ * The Facebook profile URL of the location. The URL should begin with 'facebook.com/'.
+ * @member {String} facebook_url
+ */
+exports.prototype['facebook_url'] = undefined;
+/**
+ * The physical coordinates (latitude and longitude) of the location.
+ * @member {module:model/Coordinates} coordinates
+ */
+exports.prototype['coordinates'] = undefined;
 
 
   /**

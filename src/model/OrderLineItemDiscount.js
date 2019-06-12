@@ -81,7 +81,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The discount's Unique identifier, unique only within this order. This field is read-only.
+ * Unique ID that identifies the discount only within this order.  This field is read-only.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;

@@ -161,7 +161,7 @@ exports.prototype['modifier_list_info'] = undefined;
  */
 exports.prototype['image_url'] = undefined;
 /**
- * A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.
+ * A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.  Maximum: 250 item variations
  * @member {Array.<module:model/CatalogObject>} variations
  */
 exports.prototype['variations'] = undefined;

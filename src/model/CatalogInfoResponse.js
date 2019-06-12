@@ -14,6 +14,7 @@
 var ApiClient = require('../ApiClient');
 var CatalogInfoResponseLimits = require('./CatalogInfoResponseLimits');
 var Error = require('./Error');
+var StandardUnitDescriptionGroup = require('./StandardUnitDescriptionGroup');
 
 
 
@@ -31,6 +32,7 @@ var Error = require('./Error');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -53,6 +55,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('limits')) {
       obj['limits'] = CatalogInfoResponseLimits.constructFromObject(data['limits']);
     }
+      if (data.hasOwnProperty('standard_unit_description_group')) {
+      obj['standard_unit_description_group'] = StandardUnitDescriptionGroup.constructFromObject(data['standard_unit_description_group']);
+    }
     }
   return obj;
 }
@@ -67,6 +72,11 @@ exports.prototype['errors'] = undefined;
  * @member {module:model/CatalogInfoResponseLimits} limits
  */
 exports.prototype['limits'] = undefined;
+/**
+ * Names and abbreviations for standard units.
+ * @member {module:model/StandardUnitDescriptionGroup} standard_unit_description_group
+ */
+exports.prototype['standard_unit_description_group'] = undefined;
 
 
 
