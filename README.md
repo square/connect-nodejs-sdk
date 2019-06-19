@@ -32,7 +32,7 @@ oauth2.accessToken = "YOUR ACCESS TOKEN";
 var api = new SquareConnect.LocationsApi();
 
 api.listLocations().then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
+  console.log('API called successfully. Returned data: ' + JSON.stringify(data, 0, 1));
 }, function(error) {
   console.error(error);
 });
@@ -631,7 +631,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: accessCode
 - **Authorization URL**: https://connect.squareup.com/oauth2/authorize
-- **Scopes**: 
+- **Scopes**:
   - BANK_ACCOUNTS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to bank account information associated with the targeted Square account. For example, to call the Connect v1 ListBankAccounts endpoint.
   - CUSTOMERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to customer information. For example, to call the ListCustomers endpoint.
   - CUSTOMERS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to customer information. For example, to create and update customer profiles.
