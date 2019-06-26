@@ -619,6 +619,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.V1VariationPricingType](docs/V1VariationPricingType.md)
  - [SquareConnect.VoidTransactionRequest](docs/VoidTransactionRequest.md)
  - [SquareConnect.VoidTransactionResponse](docs/VoidTransactionResponse.md)
+ - [SquareConnect.WebhookEvents](docs/WebhookEvents.md)
  - [SquareConnect.Weekday](docs/Weekday.md)
  - [SquareConnect.WorkweekConfig](docs/WorkweekConfig.md)
 
@@ -631,7 +632,7 @@ Class | Method | HTTP request | Description
 - **Type**: OAuth
 - **Flow**: accessCode
 - **Authorization URL**: https://connect.squareup.com/oauth2/authorize
-- **Scopes**:
+- **Scopes**: 
   - BANK_ACCOUNTS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to bank account information associated with the targeted Square account. For example, to call the Connect v1 ListBankAccounts endpoint.
   - CUSTOMERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to customer information. For example, to call the ListCustomers endpoint.
   - CUSTOMERS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to customer information. For example, to create and update customer profiles.

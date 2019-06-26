@@ -454,6 +454,7 @@ var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertTy
 var V1VariationPricingType = require('./model/V1VariationPricingType');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
+var WebhookEvents = require('./model/WebhookEvents');
 var Weekday = require('./model/Weekday');
 var WorkweekConfig = require('./model/WorkweekConfig');
 
@@ -505,7 +506,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190612.0
+ * @version 2.20190612.1
  */
   module.exports = {
   /**
@@ -2718,6 +2719,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/VoidTransactionResponse}
    */
   VoidTransactionResponse: VoidTransactionResponse,
+  /**
+   * The WebhookEvents model constructor.
+   * @property {module:model/WebhookEvents}
+   */
+  WebhookEvents: WebhookEvents,
   /**
    * The Weekday model constructor.
    * @property {module:model/Weekday}

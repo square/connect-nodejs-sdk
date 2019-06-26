@@ -97,7 +97,7 @@ module.exports = function(apiClient) {
   /**
    * CreateCustomerCard
    * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.  Cards on file are automatically updated on a monthly basis to confirm they are still valid and can be charged.
-   * @param {String} customerId The ID of the customer to link the card on file to.
+   * @param {String} customerId The Square ID of the customer profile the card is linked to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCustomerCardResponse} and HTTP response
    */
@@ -142,7 +142,7 @@ module.exports = function(apiClient) {
   /**
    * CreateCustomerCard
    * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.  Cards on file are automatically updated on a monthly basis to confirm they are still valid and can be charged.
-   * @param {String} customerId The ID of the customer to link the card on file to.
+   * @param {String} customerId The Square ID of the customer profile the card is linked to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCustomerCardResponse}
    */

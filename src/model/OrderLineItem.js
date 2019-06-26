@@ -31,7 +31,7 @@ var OrderQuantityUnit = require('./OrderQuantityUnit');
  * Represents a line item in an order. Each line item describes a different product to purchase, with its own quantity and price details.
  * @alias module:model/OrderLineItem
  * @class
- * @param quantity {String} The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
+ * @param quantity {String} The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.
  */
 var exports = function(quantity) {
   var _this = this;
@@ -128,7 +128,7 @@ exports.prototype['uid'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
+ * The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.
  * @member {String} quantity
  */
 exports.prototype['quantity'] = undefined;

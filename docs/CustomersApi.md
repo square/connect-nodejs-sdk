@@ -81,7 +81,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to link the card on file to.
+var customerId = "customerId_example"; // String | The Square ID of the customer profile the card is linked to.
 
 var body = new SquareConnect.CreateCustomerCardRequest(); // CreateCustomerCardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
@@ -97,7 +97,7 @@ apiInstance.createCustomerCard(customerId, body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **String**| The ID of the customer to link the card on file to. | 
+ **customerId** | **String**| The Square ID of the customer profile the card is linked to. | 
  **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type

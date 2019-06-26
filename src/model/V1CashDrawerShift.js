@@ -26,7 +26,7 @@ var V1Money = require('./V1Money');
 
 /**
  * Constructs a new <code>V1CashDrawerShift</code>.
- * V1CashDrawerShift
+ * Contains details for a single cash drawer shift.
  * @alias module:model/V1CashDrawerShift
  * @class
  */
@@ -172,7 +172,7 @@ exports.prototype['ending_employee_id'] = undefined;
  */
 exports.prototype['closing_employee_id'] = undefined;
 /**
- * The time when the timecard was created, in ISO 8601 format.
+ * A description of the cash drawer shift.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
