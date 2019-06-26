@@ -15,6 +15,7 @@ var ApiClient = require('../ApiClient');
 var V1Category = require('./V1Category');
 var V1Fee = require('./V1Fee');
 var V1ItemImage = require('./V1ItemImage');
+var V1ModifierList = require('./V1ModifierList');
 var V1Variation = require('./V1Variation');
 
 
@@ -98,7 +99,7 @@ exports.constructFromObject = function(data, obj) {
       obj['variations'] = ApiClient.convertToType(data['variations'], [V1Variation]);
     }
       if (data.hasOwnProperty('modifier_lists')) {
-      obj['modifier_lists'] = ApiClient.convertToType(data['modifier_lists'], [V1Variation]);
+      obj['modifier_lists'] = ApiClient.convertToType(data['modifier_lists'], [V1ModifierList]);
     }
       if (data.hasOwnProperty('fees')) {
       obj['fees'] = ApiClient.convertToType(data['fees'], [V1Fee]);
@@ -176,7 +177,7 @@ exports.prototype['category'] = undefined;
 exports.prototype['variations'] = undefined;
 /**
  * The modifier lists that apply to the item, if any.
- * @member {Array.<module:model/V1Variation>} modifier_lists
+ * @member {Array.<module:model/V1ModifierList>} modifier_lists
  */
 exports.prototype['modifier_lists'] = undefined;
 /**
