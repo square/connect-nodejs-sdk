@@ -23,22 +23,3 @@ Name | Type | Description | Notes
 **modifiers** | [**[V1PaymentModifier]**](V1PaymentModifier.md) | All modifier options applied to this itemization. | [optional] 
 
 
-<a name="ItemizationTypeEnum"></a>
-## Enum: ItemizationTypeEnum
-
-
-* `ITEM` (value: `"ITEM"`)
-
-* `CUSTOM_AMOUNT` (value: `"CUSTOM_AMOUNT"`)
-
-* `GIFT_CARD_ACTIVATION` (value: `"GIFT_CARD_ACTIVATION"`)
-
-* `GIFT_CARD_RELOAD` (value: `"GIFT_CARD_RELOAD"`)
-
-* `GIFT_CARD_UNKNOWN` (value: `"GIFT_CARD_UNKNOWN"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-
-
-

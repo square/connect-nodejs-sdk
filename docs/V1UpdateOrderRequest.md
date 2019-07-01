@@ -14,16 +14,3 @@ Name | Type | Description | Notes
 **canceled_note** | **String** | A merchant-specified note about the canceling of the order. Only valid if action is CANCEL. | [optional] 
 
 
-<a name="ActionEnum"></a>
-## Enum: ActionEnum
-
-
-* `COMPLETE` (value: `"COMPLETE"`)
-
-* `CANCEL` (value: `"CANCEL"`)
-
-* `REFUND` (value: `"REFUND"`)
-
-
-
-

@@ -30,7 +30,7 @@ var TenderCashDetails = require('./TenderCashDetails');
  * Represents a tender (i.e., a method of payment) used in a Square transaction.
  * @alias module:model/Tender
  * @class
- * @param type {module:model/Tender.TypeEnum} The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
+ * @param type {String} The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
  */
 var exports = function(type) {
   var _this = this;
@@ -151,7 +151,7 @@ exports.prototype['processing_fee_money'] = undefined;
 exports.prototype['customer_id'] = undefined;
 /**
  * The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
- * @member {module:model/Tender.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -170,43 +170,6 @@ exports.prototype['cash_details'] = undefined;
  */
 exports.prototype['additional_recipients'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "CARD"
-     * @const
-     */
-    "CARD": "CARD",
-    /**
-     * value: "CASH"
-     * @const
-     */
-    "CASH": "CASH",
-    /**
-     * value: "THIRD_PARTY_CARD"
-     * @const
-     */
-    "THIRD_PARTY_CARD": "THIRD_PARTY_CARD",
-    /**
-     * value: "SQUARE_GIFT_CARD"
-     * @const
-     */
-    "SQUARE_GIFT_CARD": "SQUARE_GIFT_CARD",
-    /**
-     * value: "NO_SALE"
-     * @const
-     */
-    "NO_SALE": "NO_SALE",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

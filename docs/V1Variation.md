@@ -21,33 +21,3 @@ Name | Type | Description | Notes
 **v2_id** | **String** | The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID. | [optional] 
 
 
-<a name="PricingTypeEnum"></a>
-## Enum: PricingTypeEnum
-
-
-* `FIXED_PRICING` (value: `"FIXED_PRICING"`)
-
-* `VARIABLE_PRICING` (value: `"VARIABLE_PRICING"`)
-
-
-
-
-<a name="InventoryAlertTypeEnum"></a>
-## Enum: InventoryAlertTypeEnum
-
-
-* `LOW_QUANTITY` (value: `"LOW_QUANTITY"`)
-
-* `NONE` (value: `"NONE"`)
-
-* `INVESTMENT` (value: `"INVESTMENT"`)
-
-* `LOAN` (value: `"LOAN"`)
-
-* `SAVINGS` (value: `"SAVINGS"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-
-
-

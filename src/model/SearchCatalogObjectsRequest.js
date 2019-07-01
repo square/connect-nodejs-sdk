@@ -24,7 +24,7 @@ var CatalogQuery = require('./CatalogQuery');
 
 /**
  * Constructs a new <code>SearchCatalogObjectsRequest</code>.
- * 
+ *
  * @alias module:model/SearchCatalogObjectsRequest
  * @class
  */
@@ -83,7 +83,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['cursor'] = undefined;
 /**
  * The desired set of object types to appear in the search results. The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
- * @member {Array.<module:model/SearchCatalogObjectsRequest.ObjectTypesEnum>} object_types
+ * @member {Array.<String>} object_types
  */
 exports.prototype['object_types'] = undefined;
 /**
@@ -112,68 +112,6 @@ exports.prototype['query'] = undefined;
  */
 exports.prototype['limit'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>objectTypes</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ObjectTypesEnum = {
-    /**
-     * value: "ITEM"
-     * @const
-     */
-    "ITEM": "ITEM",
-    /**
-     * value: "IMAGE"
-     * @const
-     */
-    "IMAGE": "IMAGE",
-    /**
-     * value: "CATEGORY"
-     * @const
-     */
-    "CATEGORY": "CATEGORY",
-    /**
-     * value: "ITEM_VARIATION"
-     * @const
-     */
-    "ITEM_VARIATION": "ITEM_VARIATION",
-    /**
-     * value: "TAX"
-     * @const
-     */
-    "TAX": "TAX",
-    /**
-     * value: "DISCOUNT"
-     * @const
-     */
-    "DISCOUNT": "DISCOUNT",
-    /**
-     * value: "MODIFIER_LIST"
-     * @const
-     */
-    "MODIFIER_LIST": "MODIFIER_LIST",
-    /**
-     * value: "MODIFIER"
-     * @const
-     */
-    "MODIFIER": "MODIFIER",
-    /**
-     * value: "PRICING_RULE"
-     * @const
-     */
-    "PRICING_RULE": "PRICING_RULE",
-    /**
-     * value: "PRODUCT_SET"
-     * @const
-     */
-    "PRODUCT_SET": "PRODUCT_SET",
-    /**
-     * value: "TIME_PERIOD"
-     * @const
-     */
-    "TIME_PERIOD": "TIME_PERIOD"  };
 
 
 module.exports = exports;

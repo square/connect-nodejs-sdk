@@ -93,7 +93,7 @@ exports.prototype['catalog_object_id'] = undefined;
 exports.prototype['name'] = undefined;
 /**
  * Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
- * @member {module:model/OrderLineItemTax.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -108,54 +108,10 @@ exports.prototype['percentage'] = undefined;
 exports.prototype['applied_money'] = undefined;
 /**
  * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
- * @member {module:model/OrderLineItemTax.ScopeEnum} scope
+ * @member {String} scope
  */
 exports.prototype['scope'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "UNKNOWN_TAX"
-     * @const
-     */
-    "UNKNOWN_TAX": "UNKNOWN_TAX",
-    /**
-     * value: "ADDITIVE"
-     * @const
-     */
-    "ADDITIVE": "ADDITIVE",
-    /**
-     * value: "INCLUSIVE"
-     * @const
-     */
-    "INCLUSIVE": "INCLUSIVE"  };
-
-  /**
-   * Allowed values for the <code>scope</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ScopeEnum = {
-    /**
-     * value: "OTHER_TAX_SCOPE"
-     * @const
-     */
-    "OTHER_TAX_SCOPE": "OTHER_TAX_SCOPE",
-    /**
-     * value: "LINE_ITEM"
-     * @const
-     */
-    "LINE_ITEM": "LINE_ITEM",
-    /**
-     * value: "ORDER"
-     * @const
-     */
-    "ORDER": "ORDER"  };
 
 
 module.exports = exports;

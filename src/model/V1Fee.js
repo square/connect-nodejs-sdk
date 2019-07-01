@@ -104,12 +104,12 @@ exports.prototype['name'] = undefined;
 exports.prototype['rate'] = undefined;
 /**
  * Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values
- * @member {module:model/V1Fee.CalculationPhaseEnum} calculation_phase
+ * @member {String} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
 /**
  * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees. See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values
- * @member {module:model/V1Fee.AdjustmentTypeEnum} adjustment_type
+ * @member {String} adjustment_type
  */
 exports.prototype['adjustment_type'] = undefined;
 /**
@@ -124,12 +124,12 @@ exports.prototype['applies_to_custom_amounts'] = undefined;
 exports.prototype['enabled'] = undefined;
 /**
  * Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values
- * @member {module:model/V1Fee.InclusionTypeEnum} inclusion_type
+ * @member {String} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;
 /**
  * In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values
- * @member {module:model/V1Fee.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -138,104 +138,6 @@ exports.prototype['type'] = undefined;
  */
 exports.prototype['v2_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>calculation_phase</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.CalculationPhaseEnum = {
-    /**
-     * value: "FEE_SUBTOTAL_PHASE"
-     * @const
-     */
-    "FEE_SUBTOTAL_PHASE": "FEE_SUBTOTAL_PHASE",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER",
-    /**
-     * value: "FEE_TOTAL_PHASE"
-     * @const
-     */
-    "FEE_TOTAL_PHASE": "FEE_TOTAL_PHASE"  };
-
-  /**
-   * Allowed values for the <code>adjustment_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.AdjustmentTypeEnum = {
-    /**
-     * value: "TAX"
-     * @const
-     */
-    "TAX": "TAX"  };
-
-  /**
-   * Allowed values for the <code>inclusion_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.InclusionTypeEnum = {
-    /**
-     * value: "ADDITIVE"
-     * @const
-     */
-    "ADDITIVE": "ADDITIVE",
-    /**
-     * value: "INCLUSIVE"
-     * @const
-     */
-    "INCLUSIVE": "INCLUSIVE"  };
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "CA_GST"
-     * @const
-     */
-    "CA_GST": "CA_GST",
-    /**
-     * value: "CA_HST"
-     * @const
-     */
-    "CA_HST": "CA_HST",
-    /**
-     * value: "CA_PST"
-     * @const
-     */
-    "CA_PST": "CA_PST",
-    /**
-     * value: "CA_QST"
-     * @const
-     */
-    "CA_QST": "CA_QST",
-    /**
-     * value: "JP_CONSUMPTION_TAX"
-     * @const
-     */
-    "JP_CONSUMPTION_TAX": "JP_CONSUMPTION_TAX",
-    /**
-     * value: "CA_PEI_PST"
-     * @const
-     */
-    "CA_PEI_PST": "CA_PEI_PST",
-    /**
-     * value: "US_SALES_TAX"
-     * @const
-     */
-    "US_SALES_TAX": "US_SALES_TAX",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

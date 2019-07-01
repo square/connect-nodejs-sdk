@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Filter by current Order &#x60;state&#x60;.
  * @alias module:model/SearchOrdersStateFilter
  * @class
- * @param states {Array.<module:model/SearchOrdersStateFilter.StatesEnum>} States to filter for. See [OrderState](#type-orderstate) for possible values
+ * @param states {Array.<String>} States to filter for. See [OrderState](#type-orderstate) for possible values
  */
 var exports = function(states) {
   var _this = this;
@@ -54,32 +54,10 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * States to filter for. See [OrderState](#type-orderstate) for possible values
- * @member {Array.<module:model/SearchOrdersStateFilter.StatesEnum>} states
+ * @member {Array.<String>} states
  */
 exports.prototype['states'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>states</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatesEnum = {
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "COMPLETED"
-     * @const
-     */
-    "COMPLETED": "COMPLETED",
-    /**
-     * value: "CANCELED"
-     * @const
-     */
-    "CANCELED": "CANCELED"  };
 
 
 module.exports = exports;

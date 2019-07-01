@@ -167,7 +167,7 @@ exports.prototype['image_url'] = undefined;
 exports.prototype['variations'] = undefined;
 /**
  * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
- * @member {module:model/CatalogItem.ProductTypeEnum} product_type
+ * @member {String} product_type
  */
 exports.prototype['product_type'] = undefined;
 /**
@@ -176,38 +176,6 @@ exports.prototype['product_type'] = undefined;
  */
 exports.prototype['skip_modifier_screen'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>product_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ProductTypeEnum = {
-    /**
-     * value: "REGULAR"
-     * @const
-     */
-    "REGULAR": "REGULAR",
-    /**
-     * value: "GIFT_CARD"
-     * @const
-     */
-    "GIFT_CARD": "GIFT_CARD",
-    /**
-     * value: "APPOINTMENTS_SERVICE"
-     * @const
-     */
-    "APPOINTMENTS_SERVICE": "APPOINTMENTS_SERVICE",
-    /**
-     * value: "RETAIL_ITEM"
-     * @const
-     */
-    "RETAIL_ITEM": "RETAIL_ITEM",
-    /**
-     * value: "RESTAURANT_ITEM"
-     * @const
-     */
-    "RESTAURANT_ITEM": "RESTAURANT_ITEM"  };
 
 
 module.exports = exports;

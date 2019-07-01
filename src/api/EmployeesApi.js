@@ -21,7 +21,7 @@ var RetrieveEmployeeResponse = require('../model/RetrieveEmployeeResponse');
  */
 
 /**
- * Constructs a new EmployeesApi. 
+ * Constructs a new EmployeesApi.
  * @alias module:api/EmployeesApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -37,7 +37,7 @@ module.exports = function(apiClient) {
    * Gets a list of &#x60;Employee&#x60; objects for a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
-   * @param {module:model/String} opts.status Specifies the EmployeeStatus to filter the employee by.
+   * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
    * @param {Number} opts.limit The number of employees to be returned on each page.
    * @param {String} opts.cursor The token required to retrieve the specified page of results.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListEmployeesResponse} and HTTP response
@@ -79,7 +79,7 @@ module.exports = function(apiClient) {
    * Gets a list of &#x60;Employee&#x60; objects for a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
-   * @param {module:model/String} opts.status Specifies the EmployeeStatus to filter the employee by.
+   * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
    * @param {Number} opts.limit The number of employees to be returned on each page.
    * @param {String} opts.cursor The token required to retrieve the specified page of results.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListEmployeesResponse}

@@ -23,20 +23,3 @@ Name | Type | Description | Notes
 **skip_modifier_screen** | **Boolean** | If &#x60;false&#x60;, the Square Point of Sale app will present the [CatalogItem](#type-catalogitem)&#39;s details screen immediately, allowing the merchant to choose [CatalogModifier](#type-catalogmodifier)s before adding the item to the cart.  This is the default behavior.  If &#x60;true&#x60;, the Square Point of Sale app will immediately add the item to the cart with the pre-selected modifiers, and merchants can edit modifiers by drilling down onto the item&#39;s details.  Third-party clients are encouraged to implement similar behaviors. | [optional] 
 
 
-<a name="ProductTypeEnum"></a>
-## Enum: ProductTypeEnum
-
-
-* `REGULAR` (value: `"REGULAR"`)
-
-* `GIFT_CARD` (value: `"GIFT_CARD"`)
-
-* `APPOINTMENTS_SERVICE` (value: `"APPOINTMENTS_SERVICE"`)
-
-* `RETAIL_ITEM` (value: `"RETAIL_ITEM"`)
-
-* `RESTAURANT_ITEM` (value: `"RESTAURANT_ITEM"`)
-
-
-
-

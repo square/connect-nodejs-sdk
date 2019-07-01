@@ -12,14 +12,3 @@ Name | Type | Description | Notes
 **modifiers** | [**[CatalogObject]**](CatalogObject.md) | The options included in the [CatalogModifierList](#type-catalogmodifierlist). You must include at least one [CatalogModifier](#type-catalogmodifier). Each [CatalogObject](#type-catalogobject) must have type &#x60;MODIFIER&#x60; and contain [CatalogModifier](#type-catalogmodifier) data. | [optional] 
 
 
-<a name="SelectionTypeEnum"></a>
-## Enum: SelectionTypeEnum
-
-
-* `SINGLE` (value: `"SINGLE"`)
-
-* `MULTIPLE` (value: `"MULTIPLE"`)
-
-
-
-

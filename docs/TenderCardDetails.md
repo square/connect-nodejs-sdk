@@ -12,35 +12,3 @@ Name | Type | Description | Notes
 **entry_method** | **String** | The method used to enter the card&#39;s details for the transaction. See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `AUTHORIZED` (value: `"AUTHORIZED"`)
-
-* `CAPTURED` (value: `"CAPTURED"`)
-
-* `VOIDED` (value: `"VOIDED"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
-
-
-<a name="EntryMethodEnum"></a>
-## Enum: EntryMethodEnum
-
-
-* `SWIPED` (value: `"SWIPED"`)
-
-* `KEYED` (value: `"KEYED"`)
-
-* `EMV` (value: `"EMV"`)
-
-* `ON_FILE` (value: `"ON_FILE"`)
-
-* `CONTACTLESS` (value: `"CONTACTLESS"`)
-
-
-
-

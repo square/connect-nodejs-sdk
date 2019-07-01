@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQuerySortedAttribute</code>.
- * 
+ *
  * @alias module:model/CatalogQuerySortedAttribute
  * @class
  * @param attributeName {String} The attribute whose value should be used as the sort key.
@@ -72,27 +72,10 @@ exports.prototype['attribute_name'] = undefined;
 exports.prototype['initial_attribute_value'] = undefined;
 /**
  * The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending). See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/CatalogQuerySortedAttribute.SortOrderEnum} sort_order
+ * @member {String} sort_order
  */
 exports.prototype['sort_order'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>sort_order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.SortOrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

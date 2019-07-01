@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ListEmployeesRequest</code>.
- * 
+ *
  * @alias module:model/V1ListEmployeesRequest
  * @class
  */
@@ -85,7 +85,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The order in which employees are listed in the response, based on their created_at field.      Default value: ASC See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/V1ListEmployeesRequest.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 /**
@@ -110,7 +110,7 @@ exports.prototype['begin_created_at'] = undefined;
 exports.prototype['end_created_at'] = undefined;
 /**
  * If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE). See [V1ListEmployeesRequestStatus](#type-v1listemployeesrequeststatus) for possible values
- * @member {module:model/V1ListEmployeesRequest.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -129,40 +129,6 @@ exports.prototype['limit'] = undefined;
  */
 exports.prototype['batch_token'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "ACTIVE"
-     * @const
-     */
-    "ACTIVE": "ACTIVE",
-    /**
-     * value: "INACTIVE"
-     * @const
-     */
-    "INACTIVE": "INACTIVE"  };
 
 
 module.exports = exports;

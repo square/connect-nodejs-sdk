@@ -19,14 +19,3 @@ Name | Type | Description | Notes
 **updated_at** | **String** | The time when the employee entity was most recently updated, in ISO 8601 format. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `ACTIVE` (value: `"ACTIVE"`)
-
-* `INACTIVE` (value: `"INACTIVE"`)
-
-
-
-

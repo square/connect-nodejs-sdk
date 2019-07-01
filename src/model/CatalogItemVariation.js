@@ -136,7 +136,7 @@ exports.prototype['upc'] = undefined;
 exports.prototype['ordinal'] = undefined;
 /**
  * Indicates whether the item variation's price is fixed or determined at the time of sale. See [CatalogPricingType](#type-catalogpricingtype) for possible values
- * @member {module:model/CatalogItemVariation.PricingTypeEnum} pricing_type
+ * @member {String} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
 /**
@@ -156,7 +156,7 @@ exports.prototype['location_overrides'] = undefined;
 exports.prototype['track_inventory'] = undefined;
 /**
  * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
- * @member {module:model/CatalogItemVariation.InventoryAlertTypeEnum} inventory_alert_type
+ * @member {String} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;
 /**
@@ -185,40 +185,6 @@ exports.prototype['catalog_measurement_unit_id'] = undefined;
  */
 exports.prototype['measurement_unit_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>pricing_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.PricingTypeEnum = {
-    /**
-     * value: "FIXED_PRICING"
-     * @const
-     */
-    "FIXED_PRICING": "FIXED_PRICING",
-    /**
-     * value: "VARIABLE_PRICING"
-     * @const
-     */
-    "VARIABLE_PRICING": "VARIABLE_PRICING"  };
-
-  /**
-   * Allowed values for the <code>inventory_alert_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.InventoryAlertTypeEnum = {
-    /**
-     * value: "NONE"
-     * @const
-     */
-    "NONE": "NONE",
-    /**
-     * value: "LOW_QUANTITY"
-     * @const
-     */
-    "LOW_QUANTITY": "LOW_QUANTITY"  };
 
 
 module.exports = exports;

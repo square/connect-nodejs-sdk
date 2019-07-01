@@ -57,49 +57,15 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The field to sort the results on. It could be the total money spent at the merchant, the date of the first visit (etc). See [CustomerSortField](#type-customersortfield) for possible values
- * @member {module:model/CustomerSort.FieldEnum} field
+ * @member {String} field
  */
 exports.prototype['field'] = undefined;
 /**
  * Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings. See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/CustomerSort.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>field</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.FieldEnum = {
-    /**
-     * value: "DEFAULT"
-     * @const
-     */
-    "DEFAULT": "DEFAULT",
-    /**
-     * value: "CREATED_AT"
-     * @const
-     */
-    "CREATED_AT": "CREATED_AT"  };
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

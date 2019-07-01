@@ -21,14 +21,3 @@ Name | Type | Description | Notes
 **updated_at** | **String** | A read-only timestamp in RFC 3339 format; presented in UTC. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `OPEN` (value: `"OPEN"`)
-
-* `CLOSED` (value: `"CLOSED"`)
-
-
-
-

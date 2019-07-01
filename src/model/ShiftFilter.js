@@ -85,7 +85,7 @@ exports.prototype['location_id'] = undefined;
 exports.prototype['employee_id'] = undefined;
 /**
  * Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values
- * @member {module:model/ShiftFilter.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -104,23 +104,6 @@ exports.prototype['end'] = undefined;
  */
 exports.prototype['workday'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "CLOSED"
-     * @const
-     */
-    "CLOSED": "CLOSED"  };
 
 
 module.exports = exports;

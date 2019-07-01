@@ -16,29 +16,3 @@ Name | Type | Description | Notes
 **scope** | **String** | Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `UNKNOWN_TAX` (value: `"UNKNOWN_TAX"`)
-
-* `ADDITIVE` (value: `"ADDITIVE"`)
-
-* `INCLUSIVE` (value: `"INCLUSIVE"`)
-
-
-
-
-<a name="ScopeEnum"></a>
-## Enum: ScopeEnum
-
-
-* `OTHER_TAX_SCOPE` (value: `"OTHER_TAX_SCOPE"`)
-
-* `LINE_ITEM` (value: `"LINE_ITEM"`)
-
-* `ORDER` (value: `"ORDER"`)
-
-
-
-

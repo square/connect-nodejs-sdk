@@ -137,7 +137,7 @@ exports.prototype['match_products_id'] = undefined;
 exports.prototype['apply_products_id'] = undefined;
 /**
  * Describes how the pricing rule can be combined with other pricing rules. See [Stackable](#type-stackable) for all possible values. See [AggregationStrategy](#type-aggregationstrategy) for possible values
- * @member {module:model/CatalogPricingRule.StackableEnum} stackable
+ * @member {String} stackable
  */
 exports.prototype['stackable'] = undefined;
 /**
@@ -166,33 +166,6 @@ exports.prototype['valid_until_date'] = undefined;
  */
 exports.prototype['valid_until_local_time'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>stackable</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StackableEnum = {
-    /**
-     * value: "UNKNOWN"
-     * @const
-     */
-    "UNKNOWN": "UNKNOWN",
-    /**
-     * value: "BASE"
-     * @const
-     */
-    "BASE": "BASE",
-    /**
-     * value: "STACKABLE"
-     * @const
-     */
-    "STACKABLE": "STACKABLE",
-    /**
-     * value: "EXCLUSIVE"
-     * @const
-     */
-    "EXCLUSIVE": "EXCLUSIVE"  };
 
 
 module.exports = exports;

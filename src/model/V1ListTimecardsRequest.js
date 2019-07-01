@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ListTimecardsRequest</code>.
- * 
+ *
  * @alias module:model/V1ListTimecardsRequest
  * @class
  */
@@ -93,7 +93,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The order in which timecards are listed in the response, based on their created_at field. See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/V1ListTimecardsRequest.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 /**
@@ -147,23 +147,6 @@ exports.prototype['limit'] = undefined;
  */
 exports.prototype['batch_token'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

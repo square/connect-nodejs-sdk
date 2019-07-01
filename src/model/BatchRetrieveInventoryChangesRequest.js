@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>BatchRetrieveInventoryChangesRequest</code>.
- * 
+ *
  * @alias module:model/BatchRetrieveInventoryChangesRequest
  * @class
  */
@@ -87,12 +87,12 @@ exports.prototype['catalog_object_ids'] = undefined;
 exports.prototype['location_ids'] = undefined;
 /**
  * Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values
- * @member {Array.<module:model/BatchRetrieveInventoryChangesRequest.TypesEnum>} types
+ * @member {Array.<String>} types
  */
 exports.prototype['types'] = undefined;
 /**
  * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset. See [InventoryState](#type-inventorystate) for possible values
- * @member {Array.<module:model/BatchRetrieveInventoryChangesRequest.StatesEnum>} states
+ * @member {Array.<String>} states
  */
 exports.prototype['states'] = undefined;
 /**
@@ -111,95 +111,6 @@ exports.prototype['updated_before'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>types</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypesEnum = {
-    /**
-     * value: "PHYSICAL_COUNT"
-     * @const
-     */
-    "PHYSICAL_COUNT": "PHYSICAL_COUNT",
-    /**
-     * value: "ADJUSTMENT"
-     * @const
-     */
-    "ADJUSTMENT": "ADJUSTMENT",
-    /**
-     * value: "TRANSFER"
-     * @const
-     */
-    "TRANSFER": "TRANSFER"  };
-
-  /**
-   * Allowed values for the <code>states</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatesEnum = {
-    /**
-     * value: "CUSTOM"
-     * @const
-     */
-    "CUSTOM": "CUSTOM",
-    /**
-     * value: "IN_STOCK"
-     * @const
-     */
-    "IN_STOCK": "IN_STOCK",
-    /**
-     * value: "SOLD"
-     * @const
-     */
-    "SOLD": "SOLD",
-    /**
-     * value: "RETURNED_BY_CUSTOMER"
-     * @const
-     */
-    "RETURNED_BY_CUSTOMER": "RETURNED_BY_CUSTOMER",
-    /**
-     * value: "RESERVED_FOR_SALE"
-     * @const
-     */
-    "RESERVED_FOR_SALE": "RESERVED_FOR_SALE",
-    /**
-     * value: "SOLD_ONLINE"
-     * @const
-     */
-    "SOLD_ONLINE": "SOLD_ONLINE",
-    /**
-     * value: "ORDERED_FROM_VENDOR"
-     * @const
-     */
-    "ORDERED_FROM_VENDOR": "ORDERED_FROM_VENDOR",
-    /**
-     * value: "RECEIVED_FROM_VENDOR"
-     * @const
-     */
-    "RECEIVED_FROM_VENDOR": "RECEIVED_FROM_VENDOR",
-    /**
-     * value: "IN_TRANSIT_TO"
-     * @const
-     */
-    "IN_TRANSIT_TO": "IN_TRANSIT_TO",
-    /**
-     * value: "NONE"
-     * @const
-     */
-    "NONE": "NONE",
-    /**
-     * value: "WASTE"
-     * @const
-     */
-    "WASTE": "WASTE",
-    /**
-     * value: "UNLINKED_RETURN"
-     * @const
-     */
-    "UNLINKED_RETURN": "UNLINKED_RETURN"  };
 
 
 module.exports = exports;

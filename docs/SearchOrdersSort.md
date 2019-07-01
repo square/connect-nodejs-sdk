@@ -11,27 +11,3 @@ Name | Type | Description | Notes
 **sort_order** | **String** | The order in which results are returned. Defaults to &#x60;DESC&#x60;. See [SortOrder](#type-sortorder) for possible values | [optional] 
 
 
-<a name="SortFieldEnum"></a>
-## Enum: SortFieldEnum
-
-
-* `CREATED_AT` (value: `"CREATED_AT"`)
-
-* `UPDATED_AT` (value: `"UPDATED_AT"`)
-
-* `CLOSED_AT` (value: `"CLOSED_AT"`)
-
-
-
-
-<a name="SortOrderEnum"></a>
-## Enum: SortOrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

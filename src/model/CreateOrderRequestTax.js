@@ -75,7 +75,7 @@ exports.prototype['catalog_object_id'] = undefined;
 exports.prototype['name'] = undefined;
 /**
  * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
- * @member {module:model/CreateOrderRequestTax.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -84,28 +84,6 @@ exports.prototype['type'] = undefined;
  */
 exports.prototype['percentage'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "UNKNOWN_TAX"
-     * @const
-     */
-    "UNKNOWN_TAX": "UNKNOWN_TAX",
-    /**
-     * value: "ADDITIVE"
-     * @const
-     */
-    "ADDITIVE": "ADDITIVE",
-    /**
-     * value: "INCLUSIVE"
-     * @const
-     */
-    "INCLUSIVE": "INCLUSIVE"  };
 
 
 module.exports = exports;

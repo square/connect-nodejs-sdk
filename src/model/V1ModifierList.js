@@ -80,7 +80,7 @@ exports.prototype['id'] = undefined;
 exports.prototype['name'] = undefined;
 /**
  * Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item. See [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values
- * @member {module:model/V1ModifierList.SelectionTypeEnum} selection_type
+ * @member {String} selection_type
  */
 exports.prototype['selection_type'] = undefined;
 /**
@@ -94,23 +94,6 @@ exports.prototype['modifier_options'] = undefined;
  */
 exports.prototype['v2_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>selection_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.SelectionTypeEnum = {
-    /**
-     * value: "SINGLE"
-     * @const
-     */
-    "SINGLE": "SINGLE",
-    /**
-     * value: "MULTIPLE"
-     * @const
-     */
-    "MULTIPLE": "MULTIPLE"  };
 
 
 module.exports = exports;

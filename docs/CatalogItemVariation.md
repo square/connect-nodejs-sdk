@@ -24,25 +24,3 @@ Name | Type | Description | Notes
 **measurement_unit_id** | **String** | ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities. | [optional] 
 
 
-<a name="PricingTypeEnum"></a>
-## Enum: PricingTypeEnum
-
-
-* `FIXED_PRICING` (value: `"FIXED_PRICING"`)
-
-* `VARIABLE_PRICING` (value: `"VARIABLE_PRICING"`)
-
-
-
-
-<a name="InventoryAlertTypeEnum"></a>
-## Enum: InventoryAlertTypeEnum
-
-
-* `NONE` (value: `"NONE"`)
-
-* `LOW_QUANTITY` (value: `"LOW_QUANTITY"`)
-
-
-
-

@@ -70,7 +70,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['location_id'] = undefined;
 /**
  * Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values
- * @member {module:model/ListEmployeesRequest.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -84,23 +84,6 @@ exports.prototype['limit'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "ACTIVE"
-     * @const
-     */
-    "ACTIVE": "ACTIVE",
-    /**
-     * value: "INACTIVE"
-     * @const
-     */
-    "INACTIVE": "INACTIVE"  };
 
 
 module.exports = exports;

@@ -28,7 +28,7 @@ var V1Money = require('./V1Money');
  * @alias module:model/V1CreateRefundRequest
  * @class
  * @param paymentId {String} The ID of the payment to refund. If you are creating a `PARTIAL` refund for a split tender payment, instead provide the id of the particular tender you want to refund.
- * @param type {module:model/V1CreateRefundRequest.TypeEnum} TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
+ * @param type {String} TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
  * @param reason {String} The reason for the refund.
  */
 var exports = function(paymentId, type, reason) {
@@ -78,7 +78,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['payment_id'] = undefined;
 /**
  * TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
- * @member {module:model/V1CreateRefundRequest.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -97,23 +97,6 @@ exports.prototype['refunded_money'] = undefined;
  */
 exports.prototype['request_idempotence_key'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "FULL"
-     * @const
-     */
-    "FULL": "FULL",
-    /**
-     * value: "PARTIAL"
-     * @const
-     */
-    "PARTIAL": "PARTIAL"  };
 
 
 module.exports = exports;

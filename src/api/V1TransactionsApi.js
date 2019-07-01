@@ -26,7 +26,7 @@ var V1UpdateOrderRequest = require('../model/V1UpdateOrderRequest');
  */
 
 /**
- * Constructs a new V1TransactionsApi. 
+ * Constructs a new V1TransactionsApi.
  * @alias module:api/V1TransactionsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -155,7 +155,7 @@ module.exports = function(apiClient) {
    * Provides summary information for a merchant&#39;s online store orders.
    * @param {String} locationId The ID of the location to list online store orders for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Order>} and HTTP response
@@ -202,7 +202,7 @@ module.exports = function(apiClient) {
    * Provides summary information for a merchant&#39;s online store orders.
    * @param {String} locationId The ID of the location to list online store orders for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Order>}
@@ -220,7 +220,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all payments taken for a given Square account during a date range. Date ranges cannot exceed 1 year in length. See Date ranges for details of inclusive and exclusive dates.  *Note**: Details for payments processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline payments have a &#x60;created_at&#x60; value that reflects the time the payment was originally processed, not the time it was subsequently transmitted to Square. Consequently, the ListPayments endpoint might list an offline payment chronologically between online payments that were seen in a previous request.
    * @param {String} locationId The ID of the location to list payments for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which payments are listed in the response.
+   * @param {String} opts.order The order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
@@ -273,7 +273,7 @@ module.exports = function(apiClient) {
    * Provides summary information for all payments taken for a given Square account during a date range. Date ranges cannot exceed 1 year in length. See Date ranges for details of inclusive and exclusive dates.  *Note**: Details for payments processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline payments have a &#x60;created_at&#x60; value that reflects the time the payment was originally processed, not the time it was subsequently transmitted to Square. Consequently, the ListPayments endpoint might list an offline payment chronologically between online payments that were seen in a previous request.
    * @param {String} locationId The ID of the location to list payments for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which payments are listed in the response.
+   * @param {String} opts.order The order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
@@ -294,7 +294,7 @@ module.exports = function(apiClient) {
    * Provides the details for all refunds initiated by a merchant or any of the merchant&#39;s mobile staff during a date range. Date ranges cannot exceed one year in length.
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
@@ -345,7 +345,7 @@ module.exports = function(apiClient) {
    * Provides the details for all refunds initiated by a merchant or any of the merchant&#39;s mobile staff during a date range. Date ranges cannot exceed one year in length.
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
@@ -365,11 +365,11 @@ module.exports = function(apiClient) {
    * Provides summary information for all deposits and withdrawals initiated by Square to a linked bank account during a date range. Date ranges cannot exceed one year in length.  *Note**: the ListSettlements endpoint does not provide entry information.
    * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
-   * @param {module:model/String} opts.status Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
+   * @param {String} opts.status Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Settlement>} and HTTP response
    */
@@ -418,11 +418,11 @@ module.exports = function(apiClient) {
    * Provides summary information for all deposits and withdrawals initiated by Square to a linked bank account during a date range. Date ranges cannot exceed one year in length.  *Note**: the ListSettlements endpoint does not provide entry information.
    * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order TThe order in which payments are listed in the response.
+   * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
    * @param {String} opts.endTime The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
    * @param {Number} opts.limit The maximum number of payments to return in a single response. This value cannot exceed 200.
-   * @param {module:model/String} opts.status Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
+   * @param {String} opts.status Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Settlement>}
    */

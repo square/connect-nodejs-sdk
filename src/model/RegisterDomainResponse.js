@@ -63,27 +63,10 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['errors'] = undefined;
 /**
  * Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values
- * @member {module:model/RegisterDomainResponse.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "PENDING"
-     * @const
-     */
-    "PENDING": "PENDING",
-    /**
-     * value: "VERIFIED"
-     * @const
-     */
-    "VERIFIED": "VERIFIED"  };
 
 
 module.exports = exports;

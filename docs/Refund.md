@@ -19,18 +19,3 @@ Name | Type | Description | Notes
 **additional_recipients** | [**[AdditionalRecipient]**](AdditionalRecipient.md) | Additional recipients (other than the merchant) receiving a portion of this refund. For example, fees assessed on a refund of a purchase by a third party integration. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `PENDING` (value: `"PENDING"`)
-
-* `APPROVED` (value: `"APPROVED"`)
-
-* `REJECTED` (value: `"REJECTED"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
-
-

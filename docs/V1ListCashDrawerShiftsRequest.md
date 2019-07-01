@@ -12,14 +12,3 @@ Name | Type | Description | Notes
 **end_time** | **String** | The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time. | [optional] 
 
 
-<a name="OrderEnum"></a>
-## Enum: OrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

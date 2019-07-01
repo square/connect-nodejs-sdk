@@ -22,18 +22,3 @@ Name | Type | Description | Notes
 **valid_until_local_time** | **String** | Represents the local time at which the pricing rule will become inactive. Time zone is determined by the device running the Point of Sale app.  Represented in RFC3339 partial-time format (HH:MM:SS). Partial seconds will be truncated. | [optional] 
 
 
-<a name="StackableEnum"></a>
-## Enum: StackableEnum
-
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-* `BASE` (value: `"BASE"`)
-
-* `STACKABLE` (value: `"STACKABLE"`)
-
-* `EXCLUSIVE` (value: `"EXCLUSIVE"`)
-
-
-
-

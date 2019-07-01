@@ -103,7 +103,7 @@ exports.prototype['rate'] = undefined;
 exports.prototype['amount_money'] = undefined;
 /**
  * Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group. See [V1PaymentSurchargeType](#type-v1paymentsurchargetype) for possible values
- * @member {module:model/V1PaymentSurcharge.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -122,28 +122,6 @@ exports.prototype['taxes'] = undefined;
  */
 exports.prototype['surcharge_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "UNKNOWN"
-     * @const
-     */
-    "UNKNOWN": "UNKNOWN",
-    /**
-     * value: "AUTO_GRATUITY"
-     * @const
-     */
-    "AUTO_GRATUITY": "AUTO_GRATUITY",
-    /**
-     * value: "CUSTOM"
-     * @const
-     */
-    "CUSTOM": "CUSTOM"  };
 
 
 module.exports = exports;

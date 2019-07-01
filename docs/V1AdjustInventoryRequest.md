@@ -12,16 +12,3 @@ Name | Type | Description | Notes
 **memo** | **String** | A note about the inventory adjustment. | [optional] 
 
 
-<a name="AdjustmentTypeEnum"></a>
-## Enum: AdjustmentTypeEnum
-
-
-* `SALE` (value: `"SALE"`)
-
-* `RECEIVE_STOCK` (value: `"RECEIVE_STOCK"`)
-
-* `MANUAL_ADJUST` (value: `"MANUAL_ADJUST"`)
-
-
-
-

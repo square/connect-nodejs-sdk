@@ -14,14 +14,3 @@ Name | Type | Description | Notes
 **request_idempotence_key** | **String** | An optional key to ensure idempotence if you issue the same PARTIAL refund request more than once. | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `FULL` (value: `"FULL"`)
-
-* `PARTIAL` (value: `"PARTIAL"`)
-
-
-
-

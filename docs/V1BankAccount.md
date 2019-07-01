@@ -17,22 +17,3 @@ Name | Type | Description | Notes
 **type** | **String** | The bank account&#39;s type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for possible values | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `BUSINESS_CHECKING` (value: `"BUSINESS_CHECKING"`)
-
-* `CHECKING` (value: `"CHECKING"`)
-
-* `INVESTMENT` (value: `"INVESTMENT"`)
-
-* `LOAN` (value: `"LOAN"`)
-
-* `SAVINGS` (value: `"SAVINGS"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-
-
-
