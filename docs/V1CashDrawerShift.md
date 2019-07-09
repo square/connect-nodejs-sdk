@@ -28,16 +28,3 @@ Name | Type | Description | Notes
 **events** | [**[V1CashDrawerEvent]**](V1CashDrawerEvent.md) | All of the events (payments, refunds, and so on) that involved the cash drawer during the shift. | [optional] 
 
 
-<a name="EventTypeEnum"></a>
-## Enum: EventTypeEnum
-
-
-* `OPEN` (value: `"OPEN"`)
-
-* `ENDED` (value: `"ENDED"`)
-
-* `CLOSED` (value: `"CLOSED"`)
-
-
-
-

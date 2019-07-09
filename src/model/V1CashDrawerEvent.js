@@ -84,7 +84,7 @@ exports.prototype['id'] = undefined;
 exports.prototype['employee_id'] = undefined;
 /**
  * The type of event that occurred. See [V1CashDrawerEventEventType](#type-v1cashdrawereventeventtype) for possible values
- * @member {module:model/V1CashDrawerEvent.EventTypeEnum} event_type
+ * @member {String} event_type
  */
 exports.prototype['event_type'] = undefined;
 /**
@@ -103,58 +103,6 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['description'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>event_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.EventTypeEnum = {
-    /**
-     * value: "NO_SALE"
-     * @const
-     */
-    "NO_SALE": "NO_SALE",
-    /**
-     * value: "CASH_TENDER_PAYMENT"
-     * @const
-     */
-    "CASH_TENDER_PAYMENT": "CASH_TENDER_PAYMENT",
-    /**
-     * value: "OTHER_TENDER_PAYMENT"
-     * @const
-     */
-    "OTHER_TENDER_PAYMENT": "OTHER_TENDER_PAYMENT",
-    /**
-     * value: "CASH_TENDER_CANCELED_PAYMENT"
-     * @const
-     */
-    "CASH_TENDER_CANCELED_PAYMENT": "CASH_TENDER_CANCELED_PAYMENT",
-    /**
-     * value: "OTHER_TENDER_CANCELED_PAYMENT"
-     * @const
-     */
-    "OTHER_TENDER_CANCELED_PAYMENT": "OTHER_TENDER_CANCELED_PAYMENT",
-    /**
-     * value: "CASH_TENDER_REFUND"
-     * @const
-     */
-    "CASH_TENDER_REFUND": "CASH_TENDER_REFUND",
-    /**
-     * value: "OTHER_TENDER_REFUND"
-     * @const
-     */
-    "OTHER_TENDER_REFUND": "OTHER_TENDER_REFUND",
-    /**
-     * value: "PAID_IN"
-     * @const
-     */
-    "PAID_IN": "PAID_IN",
-    /**
-     * value: "PAID_OUT"
-     * @const
-     */
-    "PAID_OUT": "PAID_OUT"  };
 
 
 module.exports = exports;

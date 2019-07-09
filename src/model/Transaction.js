@@ -122,7 +122,7 @@ exports.prototype['refunds'] = undefined;
 exports.prototype['reference_id'] = undefined;
 /**
  * The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values
- * @member {module:model/Transaction.ProductEnum} product
+ * @member {String} product
  */
 exports.prototype['product'] = undefined;
 /**
@@ -141,53 +141,6 @@ exports.prototype['shipping_address'] = undefined;
  */
 exports.prototype['order_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>product</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ProductEnum = {
-    /**
-     * value: "REGISTER"
-     * @const
-     */
-    "REGISTER": "REGISTER",
-    /**
-     * value: "EXTERNAL_API"
-     * @const
-     */
-    "EXTERNAL_API": "EXTERNAL_API",
-    /**
-     * value: "BILLING"
-     * @const
-     */
-    "BILLING": "BILLING",
-    /**
-     * value: "APPOINTMENTS"
-     * @const
-     */
-    "APPOINTMENTS": "APPOINTMENTS",
-    /**
-     * value: "INVOICES"
-     * @const
-     */
-    "INVOICES": "INVOICES",
-    /**
-     * value: "ONLINE_STORE"
-     * @const
-     */
-    "ONLINE_STORE": "ONLINE_STORE",
-    /**
-     * value: "PAYROLL"
-     * @const
-     */
-    "PAYROLL": "PAYROLL",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

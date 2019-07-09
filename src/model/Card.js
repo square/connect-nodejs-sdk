@@ -87,7 +87,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values
- * @member {module:model/Card.CardBrandEnum} card_brand
+ * @member {String} card_brand
  */
 exports.prototype['card_brand'] = undefined;
 /**
@@ -121,58 +121,6 @@ exports.prototype['billing_address'] = undefined;
  */
 exports.prototype['fingerprint'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>card_brand</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.CardBrandEnum = {
-    /**
-     * value: "OTHER_BRAND"
-     * @const
-     */
-    "OTHER_BRAND": "OTHER_BRAND",
-    /**
-     * value: "VISA"
-     * @const
-     */
-    "VISA": "VISA",
-    /**
-     * value: "MASTERCARD"
-     * @const
-     */
-    "MASTERCARD": "MASTERCARD",
-    /**
-     * value: "AMERICAN_EXPRESS"
-     * @const
-     */
-    "AMERICAN_EXPRESS": "AMERICAN_EXPRESS",
-    /**
-     * value: "DISCOVER"
-     * @const
-     */
-    "DISCOVER": "DISCOVER",
-    /**
-     * value: "DISCOVER_DINERS"
-     * @const
-     */
-    "DISCOVER_DINERS": "DISCOVER_DINERS",
-    /**
-     * value: "JCB"
-     * @const
-     */
-    "JCB": "JCB",
-    /**
-     * value: "CHINA_UNIONPAY"
-     * @const
-     */
-    "CHINA_UNIONPAY": "CHINA_UNIONPAY",
-    /**
-     * value: "SQUARE_GIFT_CARD"
-     * @const
-     */
-    "SQUARE_GIFT_CARD": "SQUARE_GIFT_CARD"  };
 
 
 module.exports = exports;

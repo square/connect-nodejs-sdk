@@ -27,14 +27,3 @@ Name | Type | Description | Notes
 **is_exchange** | **Boolean** | Indicates whether or not the refund is associated with an exchange. If is_exchange is true, the refund reflects the value of goods returned in the exchange not the total money refunded. | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `FULL` (value: `"FULL"`)
-
-* `PARTIAL` (value: `"PARTIAL"`)
-
-
-
-

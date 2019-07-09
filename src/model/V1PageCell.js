@@ -88,7 +88,7 @@ exports.prototype['row'] = undefined;
 exports.prototype['column'] = undefined;
 /**
  * The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER). See [V1PageCellObjectType](#type-v1pagecellobjecttype) for possible values
- * @member {module:model/V1PageCell.ObjectTypeEnum} object_type
+ * @member {String} object_type
  */
 exports.prototype['object_type'] = undefined;
 /**
@@ -98,59 +98,10 @@ exports.prototype['object_type'] = undefined;
 exports.prototype['object_id'] = undefined;
 /**
  * For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior. See [V1PageCellPlaceholderType](#type-v1pagecellplaceholdertype) for possible values
- * @member {module:model/V1PageCell.PlaceholderTypeEnum} placeholder_type
+ * @member {String} placeholder_type
  */
 exports.prototype['placeholder_type'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>object_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ObjectTypeEnum = {
-    /**
-     * value: "ITEM"
-     * @const
-     */
-    "ITEM": "ITEM",
-    /**
-     * value: "DISCOUNT"
-     * @const
-     */
-    "DISCOUNT": "DISCOUNT",
-    /**
-     * value: "CATEGORY"
-     * @const
-     */
-    "CATEGORY": "CATEGORY",
-    /**
-     * value: "PLACEHOLDER"
-     * @const
-     */
-    "PLACEHOLDER": "PLACEHOLDER"  };
-
-  /**
-   * Allowed values for the <code>placeholder_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.PlaceholderTypeEnum = {
-    /**
-     * value: "ALL_ITEMS"
-     * @const
-     */
-    "ALL_ITEMS": "ALL_ITEMS",
-    /**
-     * value: "DISCOUNTS_CATEGORY"
-     * @const
-     */
-    "DISCOUNTS_CATEGORY": "DISCOUNTS_CATEGORY",
-    /**
-     * value: "REWARDS_FINDER"
-     * @const
-     */
-    "REWARDS_FINDER": "REWARDS_FINDER"  };
 
 
 module.exports = exports;

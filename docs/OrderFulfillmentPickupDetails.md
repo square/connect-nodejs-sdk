@@ -25,14 +25,3 @@ Name | Type | Description | Notes
 **cancel_reason** | **String** | A description of why the pickup was canceled. Max length is 100 characters. | [optional] 
 
 
-<a name="ScheduleTypeEnum"></a>
-## Enum: ScheduleTypeEnum
-
-
-* `SCHEDULED` (value: `"SCHEDULED"`)
-
-* `ASAP` (value: `"ASAP"`)
-
-
-
-

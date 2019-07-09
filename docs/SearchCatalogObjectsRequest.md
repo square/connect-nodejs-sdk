@@ -16,32 +16,3 @@ Name | Type | Description | Notes
 **limit** | **Number** | A limit on the number of results to be returned in a single page. The limit is advisory - the implementation may return more or fewer results. If the supplied limit is negative, zero, or is higher than the maximum limit of 1,000, it will be ignored. | [optional] 
 
 
-<a name="[ObjectTypesEnum]"></a>
-## Enum: [ObjectTypesEnum]
-
-
-* `ITEM` (value: `"ITEM"`)
-
-* `IMAGE` (value: `"IMAGE"`)
-
-* `CATEGORY` (value: `"CATEGORY"`)
-
-* `ITEM_VARIATION` (value: `"ITEM_VARIATION"`)
-
-* `TAX` (value: `"TAX"`)
-
-* `DISCOUNT` (value: `"DISCOUNT"`)
-
-* `MODIFIER_LIST` (value: `"MODIFIER_LIST"`)
-
-* `MODIFIER` (value: `"MODIFIER"`)
-
-* `PRICING_RULE` (value: `"PRICING_RULE"`)
-
-* `PRODUCT_SET` (value: `"PRODUCT_SET"`)
-
-* `TIME_PERIOD` (value: `"TIME_PERIOD"`)
-
-
-
-

@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/V1ListCashDrawerShiftsRequest.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 /**
@@ -75,23 +75,6 @@ exports.prototype['begin_time'] = undefined;
  */
 exports.prototype['end_time'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

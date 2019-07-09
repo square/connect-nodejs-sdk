@@ -95,7 +95,7 @@ exports.prototype['applied_money'] = undefined;
 exports.prototype['rate'] = undefined;
 /**
  * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values
- * @member {module:model/V1PaymentTax.InclusionTypeEnum} inclusion_type
+ * @member {String} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;
 /**
@@ -104,23 +104,6 @@ exports.prototype['inclusion_type'] = undefined;
  */
 exports.prototype['fee_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>inclusion_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.InclusionTypeEnum = {
-    /**
-     * value: "ADDITIVE"
-     * @const
-     */
-    "ADDITIVE": "ADDITIVE",
-    /**
-     * value: "INCLUSIVE"
-     * @const
-     */
-    "INCLUSIVE": "INCLUSIVE"  };
 
 
 module.exports = exports;

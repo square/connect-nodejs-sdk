@@ -133,7 +133,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values
- * @member {module:model/V1CashDrawerShift.EventTypeEnum} event_type
+ * @member {String} event_type
  */
 exports.prototype['event_type'] = undefined;
 /**
@@ -222,28 +222,6 @@ exports.prototype['device'] = undefined;
  */
 exports.prototype['events'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>event_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.EventTypeEnum = {
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "ENDED"
-     * @const
-     */
-    "ENDED": "ENDED",
-    /**
-     * value: "CLOSED"
-     * @const
-     */
-    "CLOSED": "CLOSED"  };
 
 
 module.exports = exports;

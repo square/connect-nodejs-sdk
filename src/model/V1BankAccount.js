@@ -116,47 +116,10 @@ exports.prototype['account_number_suffix'] = undefined;
 exports.prototype['currency_code'] = undefined;
 /**
  * The bank account's type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for possible values
- * @member {module:model/V1BankAccount.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "BUSINESS_CHECKING"
-     * @const
-     */
-    "BUSINESS_CHECKING": "BUSINESS_CHECKING",
-    /**
-     * value: "CHECKING"
-     * @const
-     */
-    "CHECKING": "CHECKING",
-    /**
-     * value: "INVESTMENT"
-     * @const
-     */
-    "INVESTMENT": "INVESTMENT",
-    /**
-     * value: "LOAN"
-     * @const
-     */
-    "LOAN": "LOAN",
-    /**
-     * value: "SAVINGS"
-     * @const
-     */
-    "SAVINGS": "SAVINGS",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

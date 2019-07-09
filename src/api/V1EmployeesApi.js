@@ -249,7 +249,7 @@ module.exports = function(apiClient) {
    * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
+   * @param {String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time minus 90 days.
    * @param {String} opts.endTime The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1CashDrawerShift>} and HTTP response
@@ -296,7 +296,7 @@ module.exports = function(apiClient) {
    * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
+   * @param {String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time minus 90 days.
    * @param {String} opts.endTime The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1CashDrawerShift>}
@@ -313,7 +313,7 @@ module.exports = function(apiClient) {
    * ListEmployeeRoles
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
+   * @param {String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1EmployeeRole>} and HTTP response
@@ -353,7 +353,7 @@ module.exports = function(apiClient) {
    * ListEmployeeRoles
    * Provides summary information for all of a business&#39;s employee roles.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
+   * @param {String} opts.order The order in which employees are listed in the response, based on their created_at field.Default value: ASC
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1EmployeeRole>}
@@ -370,12 +370,12 @@ module.exports = function(apiClient) {
    * ListEmployees
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
+   * @param {String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.endCreatedAt If filtering results by their created_at field, the end of the requested reporting period, in ISO 8601 format.
-   * @param {module:model/String} opts.status If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
+   * @param {String} opts.status If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
    * @param {String} opts.externalId If provided, the endpoint returns only employee entities with the specified external_id.
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
@@ -422,12 +422,12 @@ module.exports = function(apiClient) {
    * ListEmployees
    * Provides summary information for all of a business&#39;s employees.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
+   * @param {String} opts.order The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
    * @param {String} opts.beginUpdatedAt If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
    * @param {String} opts.endUpdatedAt If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.beginCreatedAt If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.endCreatedAt If filtering results by their created_at field, the end of the requested reporting period, in ISO 8601 format.
-   * @param {module:model/String} opts.status If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
+   * @param {String} opts.status If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
    * @param {String} opts.externalId If provided, the endpoint returns only employee entities with the specified external_id.
    * @param {Number} opts.limit The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
@@ -498,7 +498,7 @@ module.exports = function(apiClient) {
    * ListTimecards
    * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which timecards are listed in the response, based on their created_at field.
+   * @param {String} opts.order The order in which timecards are listed in the response, based on their created_at field.
    * @param {String} opts.employeeId If provided, the endpoint returns only timecards for the employee with the specified ID.
    * @param {String} opts.beginClockinTime If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.endClockinTime If filtering results by their clockin_time field, the end of the requested reporting period, in ISO 8601 format.
@@ -554,7 +554,7 @@ module.exports = function(apiClient) {
    * ListTimecards
    * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
-   * @param {module:model/String} opts.order The order in which timecards are listed in the response, based on their created_at field.
+   * @param {String} opts.order The order in which timecards are listed in the response, based on their created_at field.
    * @param {String} opts.employeeId If provided, the endpoint returns only timecards for the employee with the specified ID.
    * @param {String} opts.beginClockinTime If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601 format.
    * @param {String} opts.endClockinTime If filtering results by their clockin_time field, the end of the requested reporting period, in ISO 8601 format.

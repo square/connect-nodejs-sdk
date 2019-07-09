@@ -79,7 +79,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['name'] = undefined;
 /**
  * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for possible values
- * @member {module:model/CatalogDiscount.DiscountTypeEnum} discount_type
+ * @member {String} discount_type
  */
 exports.prototype['discount_type'] = undefined;
 /**
@@ -103,33 +103,6 @@ exports.prototype['pin_required'] = undefined;
  */
 exports.prototype['label_color'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>discount_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.DiscountTypeEnum = {
-    /**
-     * value: "FIXED_PERCENTAGE"
-     * @const
-     */
-    "FIXED_PERCENTAGE": "FIXED_PERCENTAGE",
-    /**
-     * value: "FIXED_AMOUNT"
-     * @const
-     */
-    "FIXED_AMOUNT": "FIXED_AMOUNT",
-    /**
-     * value: "VARIABLE_PERCENTAGE"
-     * @const
-     */
-    "VARIABLE_PERCENTAGE": "VARIABLE_PERCENTAGE",
-    /**
-     * value: "VARIABLE_AMOUNT"
-     * @const
-     */
-    "VARIABLE_AMOUNT": "VARIABLE_AMOUNT"  };
 
 
 module.exports = exports;

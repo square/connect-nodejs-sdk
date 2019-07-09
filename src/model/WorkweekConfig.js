@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Sets the Day of the week and hour of the day that a business starts a  work week. Used for the calculation of overtime pay.
  * @alias module:model/WorkweekConfig
  * @class
- * @param startOfWeek {module:model/WorkweekConfig.StartOfWeekEnum} The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values
+ * @param startOfWeek {String} The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values
  * @param startOfDayLocalTime {String} The local time at which a business week cuts over. Represented as a string in `HH:MM` format (`HH:MM:SS` is also accepted, but seconds are truncated).
  */
 var exports = function(startOfWeek, startOfDayLocalTime) {
@@ -80,7 +80,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values
- * @member {module:model/WorkweekConfig.StartOfWeekEnum} start_of_week
+ * @member {String} start_of_week
  */
 exports.prototype['start_of_week'] = undefined;
 /**
@@ -104,48 +104,6 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>start_of_week</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StartOfWeekEnum = {
-    /**
-     * value: "MON"
-     * @const
-     */
-    "MON": "MON",
-    /**
-     * value: "TUE"
-     * @const
-     */
-    "TUE": "TUE",
-    /**
-     * value: "WED"
-     * @const
-     */
-    "WED": "WED",
-    /**
-     * value: "THU"
-     * @const
-     */
-    "THU": "THU",
-    /**
-     * value: "FRI"
-     * @const
-     */
-    "FRI": "FRI",
-    /**
-     * value: "SAT"
-     * @const
-     */
-    "SAT": "SAT",
-    /**
-     * value: "SUN"
-     * @const
-     */
-    "SUN": "SUN"  };
 
 
 module.exports = exports;

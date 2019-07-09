@@ -15,14 +15,3 @@ Name | Type | Description | Notes
 **fee_id** | **String** | The ID of the tax, if available. Taxes applied in older versions of Square Register might not have an ID. | [optional] 
 
 
-<a name="InclusionTypeEnum"></a>
-## Enum: InclusionTypeEnum
-
-
-* `ADDITIVE` (value: `"ADDITIVE"`)
-
-* `INCLUSIVE` (value: `"INCLUSIVE"`)
-
-
-
-

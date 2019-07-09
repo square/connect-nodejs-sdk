@@ -141,7 +141,7 @@ exports.prototype['wage'] = undefined;
 exports.prototype['breaks'] = undefined;
 /**
  * Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values
- * @member {module:model/Shift.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -160,23 +160,6 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "CLOSED"
-     * @const
-     */
-    "CLOSED": "CLOSED"  };
 
 
 module.exports = exports;

@@ -12,24 +12,3 @@ Name | Type | Description | Notes
 **end_local_time** | **String** | The end time of a business hours period, specified in local time using partial-time RFC3339 format. | [optional] 
 
 
-<a name="DayOfWeekEnum"></a>
-## Enum: DayOfWeekEnum
-
-
-* `SUN` (value: `"SUN"`)
-
-* `MON` (value: `"MON"`)
-
-* `TUE` (value: `"TUE"`)
-
-* `WED` (value: `"WED"`)
-
-* `THU` (value: `"THU"`)
-
-* `FRI` (value: `"FRI"`)
-
-* `SAT` (value: `"SAT"`)
-
-
-
-

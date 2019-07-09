@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['quantity_delta'] = undefined;
 /**
  * The reason for the inventory adjustment. See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values
- * @member {module:model/V1AdjustInventoryRequest.AdjustmentTypeEnum} adjustment_type
+ * @member {String} adjustment_type
  */
 exports.prototype['adjustment_type'] = undefined;
 /**
@@ -75,28 +75,6 @@ exports.prototype['adjustment_type'] = undefined;
  */
 exports.prototype['memo'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>adjustment_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.AdjustmentTypeEnum = {
-    /**
-     * value: "SALE"
-     * @const
-     */
-    "SALE": "SALE",
-    /**
-     * value: "RECEIVE_STOCK"
-     * @const
-     */
-    "RECEIVE_STOCK": "RECEIVE_STOCK",
-    /**
-     * value: "MANUAL_ADJUST"
-     * @const
-     */
-    "MANUAL_ADJUST": "MANUAL_ADJUST"  };
 
 
 module.exports = exports;

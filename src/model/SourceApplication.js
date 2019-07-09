@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values
- * @member {module:model/SourceApplication.ProductEnum} product
+ * @member {String} product
  */
 exports.prototype['product'] = undefined;
 /**
@@ -75,63 +75,6 @@ exports.prototype['application_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>product</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ProductEnum = {
-    /**
-     * value: "SQUARE_POS"
-     * @const
-     */
-    "SQUARE_POS": "SQUARE_POS",
-    /**
-     * value: "EXTERNAL_API"
-     * @const
-     */
-    "EXTERNAL_API": "EXTERNAL_API",
-    /**
-     * value: "BILLING"
-     * @const
-     */
-    "BILLING": "BILLING",
-    /**
-     * value: "APPOINTMENTS"
-     * @const
-     */
-    "APPOINTMENTS": "APPOINTMENTS",
-    /**
-     * value: "INVOICES"
-     * @const
-     */
-    "INVOICES": "INVOICES",
-    /**
-     * value: "ONLINE_STORE"
-     * @const
-     */
-    "ONLINE_STORE": "ONLINE_STORE",
-    /**
-     * value: "PAYROLL"
-     * @const
-     */
-    "PAYROLL": "PAYROLL",
-    /**
-     * value: "DASHBOARD"
-     * @const
-     */
-    "DASHBOARD": "DASHBOARD",
-    /**
-     * value: "ITEM_LIBRARY_IMPORT"
-     * @const
-     */
-    "ITEM_LIBRARY_IMPORT": "ITEM_LIBRARY_IMPORT",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

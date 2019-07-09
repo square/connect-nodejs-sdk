@@ -15,31 +15,3 @@ Name | Type | Description | Notes
 **placeholder_type** | **String** | For a cell with an object_type of PLACEHOLDER, this value indicates the cell&#39;s special behavior. See [V1PageCellPlaceholderType](#type-v1pagecellplaceholdertype) for possible values | [optional] 
 
 
-<a name="ObjectTypeEnum"></a>
-## Enum: ObjectTypeEnum
-
-
-* `ITEM` (value: `"ITEM"`)
-
-* `DISCOUNT` (value: `"DISCOUNT"`)
-
-* `CATEGORY` (value: `"CATEGORY"`)
-
-* `PLACEHOLDER` (value: `"PLACEHOLDER"`)
-
-
-
-
-<a name="PlaceholderTypeEnum"></a>
-## Enum: PlaceholderTypeEnum
-
-
-* `ALL_ITEMS` (value: `"ALL_ITEMS"`)
-
-* `DISCOUNTS_CATEGORY` (value: `"DISCOUNTS_CATEGORY"`)
-
-* `REWARDS_FINDER` (value: `"REWARDS_FINDER"`)
-
-
-
-

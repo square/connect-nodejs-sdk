@@ -18,14 +18,3 @@ Name | Type | Description | Notes
 **updated_at** | **String** | A read-only timestamp in RFC 3339 format. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `ACTIVE` (value: `"ACTIVE"`)
-
-* `INACTIVE` (value: `"INACTIVE"`)
-
-
-
-

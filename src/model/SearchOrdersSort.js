@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Sorting options for a query. Returned Orders will always be sorted on a timestamp.
  * @alias module:model/SearchOrdersSort
  * @class
- * @param sortField {module:model/SearchOrdersSort.SortFieldEnum} The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the set time range field. If this field does not match the time range field in `DateTimeFilter`, SearchOrder will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
+ * @param sortField {String} The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the set time range field. If this field does not match the time range field in `DateTimeFilter`, SearchOrder will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
  */
 var exports = function(sortField) {
   var _this = this;
@@ -58,54 +58,15 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the set time range field. If this field does not match the time range field in `DateTimeFilter`, SearchOrder will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
- * @member {module:model/SearchOrdersSort.SortFieldEnum} sort_field
+ * @member {String} sort_field
  */
 exports.prototype['sort_field'] = undefined;
 /**
  * The order in which results are returned. Defaults to `DESC`. See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/SearchOrdersSort.SortOrderEnum} sort_order
+ * @member {String} sort_order
  */
 exports.prototype['sort_order'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>sort_field</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.SortFieldEnum = {
-    /**
-     * value: "CREATED_AT"
-     * @const
-     */
-    "CREATED_AT": "CREATED_AT",
-    /**
-     * value: "UPDATED_AT"
-     * @const
-     */
-    "UPDATED_AT": "UPDATED_AT",
-    /**
-     * value: "CLOSED_AT"
-     * @const
-     */
-    "CLOSED_AT": "CLOSED_AT"  };
-
-  /**
-   * Allowed values for the <code>sort_order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.SortOrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

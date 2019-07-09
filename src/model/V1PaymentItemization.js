@@ -120,7 +120,7 @@ exports.prototype['name'] = undefined;
 exports.prototype['quantity'] = undefined;
 /**
  * The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT See [V1PaymentItemizationItemizationType](#type-v1paymentitemizationitemizationtype) for possible values
- * @member {module:model/V1PaymentItemization.ItemizationTypeEnum} itemization_type
+ * @member {String} itemization_type
  */
 exports.prototype['itemization_type'] = undefined;
 /**
@@ -179,43 +179,6 @@ exports.prototype['discounts'] = undefined;
  */
 exports.prototype['modifiers'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>itemization_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ItemizationTypeEnum = {
-    /**
-     * value: "ITEM"
-     * @const
-     */
-    "ITEM": "ITEM",
-    /**
-     * value: "CUSTOM_AMOUNT"
-     * @const
-     */
-    "CUSTOM_AMOUNT": "CUSTOM_AMOUNT",
-    /**
-     * value: "GIFT_CARD_ACTIVATION"
-     * @const
-     */
-    "GIFT_CARD_ACTIVATION": "GIFT_CARD_ACTIVATION",
-    /**
-     * value: "GIFT_CARD_RELOAD"
-     * @const
-     */
-    "GIFT_CARD_RELOAD": "GIFT_CARD_RELOAD",
-    /**
-     * value: "GIFT_CARD_UNKNOWN"
-     * @const
-     */
-    "GIFT_CARD_UNKNOWN": "GIFT_CARD_UNKNOWN",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

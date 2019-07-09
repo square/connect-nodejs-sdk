@@ -106,7 +106,7 @@ exports.prototype['catalog_object_id'] = undefined;
 exports.prototype['name'] = undefined;
 /**
  * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values
- * @member {module:model/OrderReturnDiscount.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -126,64 +126,10 @@ exports.prototype['amount_money'] = undefined;
 exports.prototype['applied_money'] = undefined;
 /**
  * Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
- * @member {module:model/OrderReturnDiscount.ScopeEnum} scope
+ * @member {String} scope
  */
 exports.prototype['scope'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "UNKNOWN_DISCOUNT"
-     * @const
-     */
-    "UNKNOWN_DISCOUNT": "UNKNOWN_DISCOUNT",
-    /**
-     * value: "FIXED_PERCENTAGE"
-     * @const
-     */
-    "FIXED_PERCENTAGE": "FIXED_PERCENTAGE",
-    /**
-     * value: "FIXED_AMOUNT"
-     * @const
-     */
-    "FIXED_AMOUNT": "FIXED_AMOUNT",
-    /**
-     * value: "VARIABLE_PERCENTAGE"
-     * @const
-     */
-    "VARIABLE_PERCENTAGE": "VARIABLE_PERCENTAGE",
-    /**
-     * value: "VARIABLE_AMOUNT"
-     * @const
-     */
-    "VARIABLE_AMOUNT": "VARIABLE_AMOUNT"  };
-
-  /**
-   * Allowed values for the <code>scope</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ScopeEnum = {
-    /**
-     * value: "OTHER_DISCOUNT_SCOPE"
-     * @const
-     */
-    "OTHER_DISCOUNT_SCOPE": "OTHER_DISCOUNT_SCOPE",
-    /**
-     * value: "LINE_ITEM"
-     * @const
-     */
-    "LINE_ITEM": "LINE_ITEM",
-    /**
-     * value: "ORDER"
-     * @const
-     */
-    "ORDER": "ORDER"  };
 
 
 module.exports = exports;

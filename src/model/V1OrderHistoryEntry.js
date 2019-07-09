@@ -57,7 +57,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The type of action performed on the order. See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for possible values
- * @member {module:model/V1OrderHistoryEntry.ActionEnum} action
+ * @member {String} action
  */
 exports.prototype['action'] = undefined;
 /**
@@ -66,48 +66,6 @@ exports.prototype['action'] = undefined;
  */
 exports.prototype['created_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>action</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ActionEnum = {
-    /**
-     * value: "ORDER_PLACED"
-     * @const
-     */
-    "ORDER_PLACED": "ORDER_PLACED",
-    /**
-     * value: "DECLINED"
-     * @const
-     */
-    "DECLINED": "DECLINED",
-    /**
-     * value: "PAYMENT_RECEIVED"
-     * @const
-     */
-    "PAYMENT_RECEIVED": "PAYMENT_RECEIVED",
-    /**
-     * value: "CANCELED"
-     * @const
-     */
-    "CANCELED": "CANCELED",
-    /**
-     * value: "COMPLETED"
-     * @const
-     */
-    "COMPLETED": "COMPLETED",
-    /**
-     * value: "REFUNDED"
-     * @const
-     */
-    "REFUNDED": "REFUNDED",
-    /**
-     * value: "EXPIRED"
-     * @const
-     */
-    "EXPIRED": "EXPIRED"  };
 
 
 module.exports = exports;

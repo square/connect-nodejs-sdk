@@ -15,24 +15,3 @@ Name | Type | Description | Notes
 **updated_at** | **String** | A read-only timestamp in RFC 3339 format; presented in UTC | [optional] 
 
 
-<a name="StartOfWeekEnum"></a>
-## Enum: StartOfWeekEnum
-
-
-* `MON` (value: `"MON"`)
-
-* `TUE` (value: `"TUE"`)
-
-* `WED` (value: `"WED"`)
-
-* `THU` (value: `"THU"`)
-
-* `FRI` (value: `"FRI"`)
-
-* `SAT` (value: `"SAT"`)
-
-* `SUN` (value: `"SUN"`)
-
-
-
-

@@ -17,16 +17,3 @@ Name | Type | Description | Notes
 **surcharge_id** | **String** | A Square-issued unique identifier associated with the surcharge. | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-* `AUTO_GRATUITY` (value: `"AUTO_GRATUITY"`)
-
-* `CUSTOM` (value: `"CUSTOM"`)
-
-
-
-

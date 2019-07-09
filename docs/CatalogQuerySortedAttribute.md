@@ -12,14 +12,3 @@ Name | Type | Description | Notes
 **sort_order** | **String** | The desired [SortOrder](#type-sortorder), &#x60;\&quot;ASC\&quot;&#x60; (ascending) or &#x60;\&quot;DESC\&quot;&#x60; (descending). See [SortOrder](#type-sortorder) for possible values | [optional] 
 
 
-<a name="SortOrderEnum"></a>
-## Enum: SortOrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

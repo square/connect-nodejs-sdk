@@ -20,14 +20,3 @@ Name | Type | Description | Notes
 **taxes** | [**[OrderLineItemTax]**](OrderLineItemTax.md) | Taxes applied to the service charge. By default, order-level taxes apply to service charges calculated in the &#x60;SUBTOTAL_PHASE&#x60; if &#x60;taxable&#x60; is set to &#x60;true&#x60;. | [optional] 
 
 
-<a name="CalculationPhaseEnum"></a>
-## Enum: CalculationPhaseEnum
-
-
-* `SUBTOTAL_PHASE` (value: `"SUBTOTAL_PHASE"`)
-
-* `TOTAL_PHASE` (value: `"TOTAL_PHASE"`)
-
-
-
-

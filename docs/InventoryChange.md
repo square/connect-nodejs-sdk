@@ -13,16 +13,3 @@ Name | Type | Description | Notes
 **transfer** | [**InventoryTransfer**](InventoryTransfer.md) | Contains details about the inventory transfer when &#x60;type&#x60; is &#x60;TRANSFER&#x60; and unset for all other types. | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `PHYSICAL_COUNT` (value: `"PHYSICAL_COUNT"`)
-
-* `ADJUSTMENT` (value: `"ADJUSTMENT"`)
-
-* `TRANSFER` (value: `"TRANSFER"`)
-
-
-
-

@@ -15,14 +15,3 @@ Name | Type | Description | Notes
 **workday** | [**ShiftWorkday**](ShiftWorkday.md) | Fetch the &#x60;Shift&#x60;s based on workday date range. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `OPEN` (value: `"OPEN"`)
-
-* `CLOSED` (value: `"CLOSED"`)
-
-
-
-

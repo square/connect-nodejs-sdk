@@ -21,14 +21,3 @@ Name | Type | Description | Notes
 **return_taxes** | [**[OrderReturnTax]**](OrderReturnTax.md) | The taxes which apply to the service charge. Return-level taxes apply by default to service charge calculated in the &#x60;SUBTOTAL_PHASE&#x60; if the service charge is marked as taxable. | [optional] 
 
 
-<a name="CalculationPhaseEnum"></a>
-## Enum: CalculationPhaseEnum
-
-
-* `SUBTOTAL_PHASE` (value: `"SUBTOTAL_PHASE"`)
-
-* `TOTAL_PHASE` (value: `"TOTAL_PHASE"`)
-
-
-
-

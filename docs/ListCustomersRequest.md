@@ -12,25 +12,3 @@ Name | Type | Description | Notes
 **sort_order** | **String** | Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;. See [SortOrder](#type-sortorder) for possible values | [optional] 
 
 
-<a name="SortFieldEnum"></a>
-## Enum: SortFieldEnum
-
-
-* `DEFAULT` (value: `"DEFAULT"`)
-
-* `CREATED_AT` (value: `"CREATED_AT"`)
-
-
-
-
-<a name="SortOrderEnum"></a>
-## Enum: SortOrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

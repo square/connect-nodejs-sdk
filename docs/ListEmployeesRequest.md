@@ -13,14 +13,3 @@ Name | Type | Description | Notes
 **cursor** | **String** | The token required to retrieve the specified page of results. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `ACTIVE` (value: `"ACTIVE"`)
-
-* `INACTIVE` (value: `"INACTIVE"`)
-
-
-
-

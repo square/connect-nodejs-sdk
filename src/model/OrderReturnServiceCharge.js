@@ -144,7 +144,7 @@ exports.prototype['total_money'] = undefined;
 exports.prototype['total_tax_money'] = undefined;
 /**
  * The calculation phase after which to apply the service charge.  This field is read-only. See [OrderServiceChargeCalculationPhase](#type-orderservicechargecalculationphase) for possible values
- * @member {module:model/OrderReturnServiceCharge.CalculationPhaseEnum} calculation_phase
+ * @member {String} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
 /**
@@ -158,23 +158,6 @@ exports.prototype['taxable'] = undefined;
  */
 exports.prototype['return_taxes'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>calculation_phase</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.CalculationPhaseEnum = {
-    /**
-     * value: "SUBTOTAL_PHASE"
-     * @const
-     */
-    "SUBTOTAL_PHASE": "SUBTOTAL_PHASE",
-    /**
-     * value: "TOTAL_PHASE"
-     * @const
-     */
-    "TOTAL_PHASE": "TOTAL_PHASE"  };
 
 
 module.exports = exports;

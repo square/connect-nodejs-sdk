@@ -115,7 +115,7 @@ exports.prototype['phone_number'] = undefined;
 exports.prototype['location_ids'] = undefined;
 /**
  * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
- * @member {module:model/Employee.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -129,23 +129,6 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "ACTIVE"
-     * @const
-     */
-    "ACTIVE": "ACTIVE",
-    /**
-     * value: "INACTIVE"
-     * @const
-     */
-    "INACTIVE": "INACTIVE"  };
 
 
 module.exports = exports;
