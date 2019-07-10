@@ -73,7 +73,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * TThe order in which payments are listed in the response. See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/V1ListSettlementsRequest.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 /**
@@ -93,7 +93,7 @@ exports.prototype['end_time'] = undefined;
 exports.prototype['limit'] = undefined;
 /**
  * Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED). See [V1ListSettlementsRequestStatus](#type-v1listsettlementsrequeststatus) for possible values
- * @member {module:model/V1ListSettlementsRequest.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -102,40 +102,6 @@ exports.prototype['status'] = undefined;
  */
 exports.prototype['batch_token'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "SENT"
-     * @const
-     */
-    "SENT": "SENT",
-    /**
-     * value: "FAILED"
-     * @const
-     */
-    "FAILED": "FAILED"  };
 
 
 module.exports = exports;

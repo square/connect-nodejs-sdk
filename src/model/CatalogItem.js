@@ -45,7 +45,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -88,9 +87,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('modifier_list_info')) {
       obj['modifier_list_info'] = ApiClient.convertToType(data['modifier_list_info'], [CatalogItemModifierListInfo]);
-    }
-      if (data.hasOwnProperty('image_url')) {
-      obj['image_url'] = ApiClient.convertToType(data['image_url'], 'String');
     }
       if (data.hasOwnProperty('variations')) {
       obj['variations'] = ApiClient.convertToType(data['variations'], [CatalogObject]);
@@ -156,18 +152,13 @@ exports.prototype['tax_ids'] = undefined;
  */
 exports.prototype['modifier_list_info'] = undefined;
 /**
- * __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_id` in [`CatalogObject`](#type-catalogobject).
- * @member {String} image_url
- */
-exports.prototype['image_url'] = undefined;
-/**
  * A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.  Maximum: 250 item variations
  * @member {Array.<module:model/CatalogObject>} variations
  */
 exports.prototype['variations'] = undefined;
 /**
  * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
- * @member {module:model/CatalogItem.ProductTypeEnum} product_type
+ * @member {String} product_type
  */
 exports.prototype['product_type'] = undefined;
 /**
@@ -176,38 +167,6 @@ exports.prototype['product_type'] = undefined;
  */
 exports.prototype['skip_modifier_screen'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>product_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ProductTypeEnum = {
-    /**
-     * value: "REGULAR"
-     * @const
-     */
-    "REGULAR": "REGULAR",
-    /**
-     * value: "GIFT_CARD"
-     * @const
-     */
-    "GIFT_CARD": "GIFT_CARD",
-    /**
-     * value: "APPOINTMENTS_SERVICE"
-     * @const
-     */
-    "APPOINTMENTS_SERVICE": "APPOINTMENTS_SERVICE",
-    /**
-     * value: "RETAIL_ITEM"
-     * @const
-     */
-    "RETAIL_ITEM": "RETAIL_ITEM",
-    /**
-     * value: "RESTAURANT_ITEM"
-     * @const
-     */
-    "RESTAURANT_ITEM": "RESTAURANT_ITEM"  };
 
 
 module.exports = exports;

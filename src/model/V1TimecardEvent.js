@@ -74,7 +74,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The ID of the timecard to list events for. See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for possible values
- * @member {module:model/V1TimecardEvent.EventTypeEnum} event_type
+ * @member {String} event_type
  */
 exports.prototype['event_type'] = undefined;
 /**
@@ -93,53 +93,6 @@ exports.prototype['clockout_time'] = undefined;
  */
 exports.prototype['created_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>event_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.EventTypeEnum = {
-    /**
-     * value: "API_CREATE"
-     * @const
-     */
-    "API_CREATE": "API_CREATE",
-    /**
-     * value: "API_EDIT"
-     * @const
-     */
-    "API_EDIT": "API_EDIT",
-    /**
-     * value: "API_DELETE"
-     * @const
-     */
-    "API_DELETE": "API_DELETE",
-    /**
-     * value: "REGISTER_CLOCKIN"
-     * @const
-     */
-    "REGISTER_CLOCKIN": "REGISTER_CLOCKIN",
-    /**
-     * value: "REGISTER_CLOCKOUT"
-     * @const
-     */
-    "REGISTER_CLOCKOUT": "REGISTER_CLOCKOUT",
-    /**
-     * value: "DASHBOARD_SUPERVISOR_CLOSE"
-     * @const
-     */
-    "DASHBOARD_SUPERVISOR_CLOSE": "DASHBOARD_SUPERVISOR_CLOSE",
-    /**
-     * value: "DASHBOARD_EDIT"
-     * @const
-     */
-    "DASHBOARD_EDIT": "DASHBOARD_EDIT",
-    /**
-     * value: "DASHBOARD_DELETE"
-     * @const
-     */
-    "DASHBOARD_DELETE": "DASHBOARD_DELETE"  };
 
 
 module.exports = exports;

@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * V1UpdateOrderRequest
  * @alias module:model/V1UpdateOrderRequest
  * @class
- * @param action {module:model/V1UpdateOrderRequest.ActionEnum} The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
+ * @param action {String} The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
  */
 var exports = function(action) {
   var _this = this;
@@ -70,7 +70,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
- * @member {module:model/V1UpdateOrderRequest.ActionEnum} action
+ * @member {String} action
  */
 exports.prototype['action'] = undefined;
 /**
@@ -94,28 +94,6 @@ exports.prototype['refunded_note'] = undefined;
  */
 exports.prototype['canceled_note'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>action</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ActionEnum = {
-    /**
-     * value: "COMPLETE"
-     * @const
-     */
-    "COMPLETE": "COMPLETE",
-    /**
-     * value: "CANCEL"
-     * @const
-     */
-    "CANCEL": "CANCEL",
-    /**
-     * value: "REFUND"
-     * @const
-     */
-    "REFUND": "REFUND"  };
 
 
 module.exports = exports;

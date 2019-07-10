@@ -34,22 +34,3 @@ Name | Type | Description | Notes
 **btc_price_satoshi** | **Number** | For Bitcoin transactions, the price of the buyer&#39;s order in satoshi (100 million satoshi equals 1 BTC). | [optional] 
 
 
-<a name="StateEnum"></a>
-## Enum: StateEnum
-
-
-* `PENDING` (value: `"PENDING"`)
-
-* `OPEN` (value: `"OPEN"`)
-
-* `COMPLETED` (value: `"COMPLETED"`)
-
-* `CANCELED` (value: `"CANCELED"`)
-
-* `REFUNDED` (value: `"REFUNDED"`)
-
-* `REJECTED` (value: `"REJECTED"`)
-
-
-
-

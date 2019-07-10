@@ -11,14 +11,3 @@ Name | Type | Description | Notes
 **selection_type** | **String** | Indicates whether multiple options from the modifier list can be applied to a single item. See [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values | [optional] 
 
 
-<a name="SelectionTypeEnum"></a>
-## Enum: SelectionTypeEnum
-
-
-* `SINGLE` (value: `"SINGLE"`)
-
-* `MULTIPLE` (value: `"MULTIPLE"`)
-
-
-
-

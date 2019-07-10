@@ -27,7 +27,7 @@ var ApiClient = require('../ApiClient');
  * @alias module:model/V1EmployeeRole
  * @class
  * @param name {String} The role's merchant-defined name.
- * @param permissions {Array.<module:model/V1EmployeeRole.PermissionsEnum>} The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
+ * @param permissions {Array.<String>} The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
  */
 var exports = function(name, permissions) {
   var _this = this;
@@ -85,7 +85,7 @@ exports.prototype['id'] = undefined;
 exports.prototype['name'] = undefined;
 /**
  * The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
- * @member {Array.<module:model/V1EmployeeRole.PermissionsEnum>} permissions
+ * @member {Array.<String>} permissions
  */
 exports.prototype['permissions'] = undefined;
 /**
@@ -104,48 +104,6 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>permissions</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.PermissionsEnum = {
-    /**
-     * value: "REGISTER_ACCESS_SALES_HISTORY"
-     * @const
-     */
-    "ACCESS_SALES_HISTORY": "REGISTER_ACCESS_SALES_HISTORY",
-    /**
-     * value: "REGISTER_APPLY_RESTRICTED_DISCOUNTS"
-     * @const
-     */
-    "APPLY_RESTRICTED_DISCOUNTS": "REGISTER_APPLY_RESTRICTED_DISCOUNTS",
-    /**
-     * value: "REGISTER_CHANGE_SETTINGS"
-     * @const
-     */
-    "CHANGE_SETTINGS": "REGISTER_CHANGE_SETTINGS",
-    /**
-     * value: "REGISTER_EDIT_ITEM"
-     * @const
-     */
-    "EDIT_ITEM": "REGISTER_EDIT_ITEM",
-    /**
-     * value: "REGISTER_ISSUE_REFUNDS"
-     * @const
-     */
-    "ISSUE_REFUNDS": "REGISTER_ISSUE_REFUNDS",
-    /**
-     * value: "REGISTER_OPEN_CASH_DRAWER_OUTSIDE_SALE"
-     * @const
-     */
-    "OPEN_CASH_DRAWER_OUTSIDE_SALE": "REGISTER_OPEN_CASH_DRAWER_OUTSIDE_SALE",
-    /**
-     * value: "REGISTER_VIEW_SUMMARY_REPORTS"
-     * @const
-     */
-    "VIEW_SUMMARY_REPORTS": "REGISTER_VIEW_SUMMARY_REPORTS"  };
 
 
 module.exports = exports;

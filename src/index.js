@@ -17,7 +17,6 @@ var AdditionalRecipient = require('./model/AdditionalRecipient');
 var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
 var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
 var Address = require('./model/Address');
-var AggregationStrategy = require('./model/AggregationStrategy');
 var BatchChangeInventoryRequest = require('./model/BatchChangeInventoryRequest');
 var BatchChangeInventoryResponse = require('./model/BatchChangeInventoryResponse');
 var BatchDeleteCatalogObjectsRequest = require('./model/BatchDeleteCatalogObjectsRequest');
@@ -506,7 +505,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190612.1
+ * @version 2.20190710.0
  */
   module.exports = {
   /**
@@ -534,11 +533,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Address}
    */
   Address: Address,
-  /**
-   * The AggregationStrategy model constructor.
-   * @property {module:model/AggregationStrategy}
-   */
-  AggregationStrategy: AggregationStrategy,
   /**
    * The BatchChangeInventoryRequest model constructor.
    * @property {module:model/BatchChangeInventoryRequest}

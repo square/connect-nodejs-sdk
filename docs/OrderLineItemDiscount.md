@@ -17,33 +17,3 @@ Name | Type | Description | Notes
 **scope** | **String** | Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `UNKNOWN_DISCOUNT` (value: `"UNKNOWN_DISCOUNT"`)
-
-* `FIXED_PERCENTAGE` (value: `"FIXED_PERCENTAGE"`)
-
-* `FIXED_AMOUNT` (value: `"FIXED_AMOUNT"`)
-
-* `VARIABLE_PERCENTAGE` (value: `"VARIABLE_PERCENTAGE"`)
-
-* `VARIABLE_AMOUNT` (value: `"VARIABLE_AMOUNT"`)
-
-
-
-
-<a name="ScopeEnum"></a>
-## Enum: ScopeEnum
-
-
-* `OTHER_DISCOUNT_SCOPE` (value: `"OTHER_DISCOUNT_SCOPE"`)
-
-* `LINE_ITEM` (value: `"LINE_ITEM"`)
-
-* `ORDER` (value: `"ORDER"`)
-
-
-
-

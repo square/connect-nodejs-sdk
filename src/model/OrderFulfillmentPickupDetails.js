@@ -129,7 +129,7 @@ exports.prototype['expires_at'] = undefined;
 exports.prototype['auto_complete_duration'] = undefined;
 /**
  * The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`. See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values
- * @member {module:model/OrderFulfillmentPickupDetails.ScheduleTypeEnum} schedule_type
+ * @member {String} schedule_type
  */
 exports.prototype['schedule_type'] = undefined;
 /**
@@ -193,23 +193,6 @@ exports.prototype['canceled_at'] = undefined;
  */
 exports.prototype['cancel_reason'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>schedule_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ScheduleTypeEnum = {
-    /**
-     * value: "SCHEDULED"
-     * @const
-     */
-    "SCHEDULED": "SCHEDULED",
-    /**
-     * value: "ASAP"
-     * @const
-     */
-    "ASAP": "ASAP"  };
 
 
 module.exports = exports;

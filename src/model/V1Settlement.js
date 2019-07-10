@@ -80,7 +80,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values
- * @member {module:model/V1Settlement.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -104,23 +104,6 @@ exports.prototype['bank_account_id'] = undefined;
  */
 exports.prototype['entries'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "FAILED"
-     * @const
-     */
-    "FAILED": "FAILED",
-    /**
-     * value: "SENT"
-     * @const
-     */
-    "SENT": "SENT"  };
 
 
 module.exports = exports;

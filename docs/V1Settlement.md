@@ -15,14 +15,3 @@ Name | Type | Description | Notes
 **entries** | [**[V1SettlementEntry]**](V1SettlementEntry.md) | The entries included in this settlement. | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `FAILED` (value: `"FAILED"`)
-
-* `SENT` (value: `"SENT"`)
-
-
-
-

@@ -179,7 +179,7 @@ exports.prototype['recipient_name'] = undefined;
 exports.prototype['recipient_phone_number'] = undefined;
 /**
  * Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible values
- * @member {module:model/V1Order.StateEnum} state
+ * @member {String} state
  */
 exports.prototype['state'] = undefined;
 /**
@@ -278,43 +278,6 @@ exports.prototype['btc_receive_address'] = undefined;
  */
 exports.prototype['btc_price_satoshi'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>state</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StateEnum = {
-    /**
-     * value: "PENDING"
-     * @const
-     */
-    "PENDING": "PENDING",
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "COMPLETED"
-     * @const
-     */
-    "COMPLETED": "COMPLETED",
-    /**
-     * value: "CANCELED"
-     * @const
-     */
-    "CANCELED": "CANCELED",
-    /**
-     * value: "REFUNDED"
-     * @const
-     */
-    "REFUNDED": "REFUNDED",
-    /**
-     * value: "REJECTED"
-     * @const
-     */
-    "REJECTED": "REJECTED"  };
 
 
 module.exports = exports;

@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
- * @member {module:model/TenderCardDetails.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -72,69 +72,10 @@ exports.prototype['status'] = undefined;
 exports.prototype['card'] = undefined;
 /**
  * The method used to enter the card's details for the transaction. See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values
- * @member {module:model/TenderCardDetails.EntryMethodEnum} entry_method
+ * @member {String} entry_method
  */
 exports.prototype['entry_method'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "AUTHORIZED"
-     * @const
-     */
-    "AUTHORIZED": "AUTHORIZED",
-    /**
-     * value: "CAPTURED"
-     * @const
-     */
-    "CAPTURED": "CAPTURED",
-    /**
-     * value: "VOIDED"
-     * @const
-     */
-    "VOIDED": "VOIDED",
-    /**
-     * value: "FAILED"
-     * @const
-     */
-    "FAILED": "FAILED"  };
-
-  /**
-   * Allowed values for the <code>entry_method</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.EntryMethodEnum = {
-    /**
-     * value: "SWIPED"
-     * @const
-     */
-    "SWIPED": "SWIPED",
-    /**
-     * value: "KEYED"
-     * @const
-     */
-    "KEYED": "KEYED",
-    /**
-     * value: "EMV"
-     * @const
-     */
-    "EMV": "EMV",
-    /**
-     * value: "ON_FILE"
-     * @const
-     */
-    "ON_FILE": "ON_FILE",
-    /**
-     * value: "CONTACTLESS"
-     * @const
-     */
-    "CONTACTLESS": "CONTACTLESS"  };
 
 
 module.exports = exports;

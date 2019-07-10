@@ -15,25 +15,3 @@ Name | Type | Description | Notes
 **enabled** | **Boolean** | If &#x60;true&#x60;, the tax will be shown as enabled in the Square Point of Sale app. | [optional] 
 
 
-<a name="CalculationPhaseEnum"></a>
-## Enum: CalculationPhaseEnum
-
-
-* `SUBTOTAL_PHASE` (value: `"TAX_SUBTOTAL_PHASE"`)
-
-* `TOTAL_PHASE` (value: `"TAX_TOTAL_PHASE"`)
-
-
-
-
-<a name="InclusionTypeEnum"></a>
-## Enum: InclusionTypeEnum
-
-
-* `ADDITIVE` (value: `"ADDITIVE"`)
-
-* `INCLUSIVE` (value: `"INCLUSIVE"`)
-
-
-
-

@@ -11,25 +11,3 @@ Name | Type | Description | Notes
 **order** | **String** | Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings. See [SortOrder](#type-sortorder) for possible values | [optional] 
 
 
-<a name="FieldEnum"></a>
-## Enum: FieldEnum
-
-
-* `DEFAULT` (value: `"DEFAULT"`)
-
-* `CREATED_AT` (value: `"CREATED_AT"`)
-
-
-
-
-<a name="OrderEnum"></a>
-## Enum: OrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

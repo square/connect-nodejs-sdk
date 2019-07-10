@@ -15,14 +15,3 @@ Name | Type | Description | Notes
 **include_partial** | **Boolean** | Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed. | [optional] 
 
 
-<a name="OrderEnum"></a>
-## Enum: OrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-

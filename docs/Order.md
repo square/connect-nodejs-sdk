@@ -33,16 +33,3 @@ Name | Type | Description | Notes
 **total_service_charge_money** | [**Money**](Money.md) | The total amount of money collected in service charges for the order.  Note: &#x60;total_service_charge_money&#x60; is the sum of &#x60;applied_money&#x60; fields for each individual service charge. Therefore, &#x60;total_service_charge_money&#x60; will only include inclusive tax amounts, not additive tax amounts.  This field is read-only. | [optional] 
 
 
-<a name="StateEnum"></a>
-## Enum: StateEnum
-
-
-* `OPEN` (value: `"OPEN"`)
-
-* `COMPLETED` (value: `"COMPLETED"`)
-
-* `CANCELED` (value: `"CANCELED"`)
-
-
-
-

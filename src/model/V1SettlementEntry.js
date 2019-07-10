@@ -71,7 +71,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['payment_id'] = undefined;
 /**
  * The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values
- * @member {module:model/V1SettlementEntry.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -85,118 +85,6 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['fee_money'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "ADJUSTMENT"
-     * @const
-     */
-    "ADJUSTMENT": "ADJUSTMENT",
-    /**
-     * value: "BALANCE_CHARGE"
-     * @const
-     */
-    "BALANCE_CHARGE": "BALANCE_CHARGE",
-    /**
-     * value: "CHARGE"
-     * @const
-     */
-    "CHARGE": "CHARGE",
-    /**
-     * value: "FREE_PROCESSING"
-     * @const
-     */
-    "FREE_PROCESSING": "FREE_PROCESSING",
-    /**
-     * value: "HOLD_ADJUSTMENT"
-     * @const
-     */
-    "HOLD_ADJUSTMENT": "HOLD_ADJUSTMENT",
-    /**
-     * value: "PAID_SERVICE_FEE"
-     * @const
-     */
-    "PAID_SERVICE_FEE": "PAID_SERVICE_FEE",
-    /**
-     * value: "PAID_SERVICE_FEE_REFUND"
-     * @const
-     */
-    "PAID_SERVICE_FEE_REFUND": "PAID_SERVICE_FEE_REFUND",
-    /**
-     * value: "REDEMPTION_CODE"
-     * @const
-     */
-    "REDEMPTION_CODE": "REDEMPTION_CODE",
-    /**
-     * value: "REFUND"
-     * @const
-     */
-    "REFUND": "REFUND",
-    /**
-     * value: "RETURNED_PAYOUT"
-     * @const
-     */
-    "RETURNED_PAYOUT": "RETURNED_PAYOUT",
-    /**
-     * value: "SQUARE_CAPITAL_ADVANCE"
-     * @const
-     */
-    "SQUARE_CAPITAL_ADVANCE": "SQUARE_CAPITAL_ADVANCE",
-    /**
-     * value: "SQUARE_CAPITAL_PAYMENT"
-     * @const
-     */
-    "SQUARE_CAPITAL_PAYMENT": "SQUARE_CAPITAL_PAYMENT",
-    /**
-     * value: "SQUARE_CAPITAL_REVERSED_PAYMENT"
-     * @const
-     */
-    "SQUARE_CAPITAL_REVERSED_PAYMENT": "SQUARE_CAPITAL_REVERSED_PAYMENT",
-    /**
-     * value: "SUBSCRIPTION_FEE"
-     * @const
-     */
-    "SUBSCRIPTION_FEE": "SUBSCRIPTION_FEE",
-    /**
-     * value: "SUBSCRIPTION_FEE_REFUND"
-     * @const
-     */
-    "SUBSCRIPTION_FEE_REFUND": "SUBSCRIPTION_FEE_REFUND",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER",
-    /**
-     * value: "INCENTED_PAYMENT"
-     * @const
-     */
-    "INCENTED_PAYMENT": "INCENTED_PAYMENT",
-    /**
-     * value: "RETURNED_ACH_ENTRY"
-     * @const
-     */
-    "RETURNED_ACH_ENTRY": "RETURNED_ACH_ENTRY",
-    /**
-     * value: "RETURNED_SQUARE_275"
-     * @const
-     */
-    "RETURNED_SQUARE_275": "RETURNED_SQUARE_275",
-    /**
-     * value: "SQUARE_275"
-     * @const
-     */
-    "SQUARE_275": "SQUARE_275",
-    /**
-     * value: "SQUARE_CARD"
-     * @const
-     */
-    "SQUARE_CARD": "SQUARE_CARD"  };
 
 
 module.exports = exports;

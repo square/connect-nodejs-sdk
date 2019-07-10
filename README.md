@@ -182,7 +182,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
  - [SquareConnect.AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [SquareConnect.Address](docs/Address.md)
- - [SquareConnect.AggregationStrategy](docs/AggregationStrategy.md)
  - [SquareConnect.BatchChangeInventoryRequest](docs/BatchChangeInventoryRequest.md)
  - [SquareConnect.BatchChangeInventoryResponse](docs/BatchChangeInventoryResponse.md)
  - [SquareConnect.BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)

@@ -119,7 +119,7 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['id'] = undefined;
 /**
  * The type of tender. See [V1TenderType](#type-v1tendertype) for possible values
- * @member {module:model/V1Tender.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -139,7 +139,7 @@ exports.prototype['employee_id'] = undefined;
 exports.prototype['receipt_url'] = undefined;
 /**
  * The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values
- * @member {module:model/V1Tender.CardBrandEnum} card_brand
+ * @member {String} card_brand
  */
 exports.prototype['card_brand'] = undefined;
 /**
@@ -149,7 +149,7 @@ exports.prototype['card_brand'] = undefined;
 exports.prototype['pan_suffix'] = undefined;
 /**
  * The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values
- * @member {module:model/V1Tender.EntryMethodEnum} entry_method
+ * @member {String} entry_method
  */
 exports.prototype['entry_method'] = undefined;
 /**
@@ -193,147 +193,6 @@ exports.prototype['refunded_money'] = undefined;
  */
 exports.prototype['is_exchange'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "CREDIT_CARD"
-     * @const
-     */
-    "CREDIT_CARD": "CREDIT_CARD",
-    /**
-     * value: "CASH"
-     * @const
-     */
-    "CASH": "CASH",
-    /**
-     * value: "THIRD_PARTY_CARD"
-     * @const
-     */
-    "THIRD_PARTY_CARD": "THIRD_PARTY_CARD",
-    /**
-     * value: "NO_SALE"
-     * @const
-     */
-    "NO_SALE": "NO_SALE",
-    /**
-     * value: "SQUARE_WALLET"
-     * @const
-     */
-    "SQUARE_WALLET": "SQUARE_WALLET",
-    /**
-     * value: "SQUARE_GIFT_CARD"
-     * @const
-     */
-    "SQUARE_GIFT_CARD": "SQUARE_GIFT_CARD",
-    /**
-     * value: "UNKNOWN"
-     * @const
-     */
-    "UNKNOWN": "UNKNOWN",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
-
-  /**
-   * Allowed values for the <code>card_brand</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.CardBrandEnum = {
-    /**
-     * value: "OTHER_BRAND"
-     * @const
-     */
-    "OTHER_BRAND": "OTHER_BRAND",
-    /**
-     * value: "VISA"
-     * @const
-     */
-    "VISA": "VISA",
-    /**
-     * value: "MASTER_CARD"
-     * @const
-     */
-    "MASTER_CARD": "MASTER_CARD",
-    /**
-     * value: "AMERICAN_EXPRESS"
-     * @const
-     */
-    "AMERICAN_EXPRESS": "AMERICAN_EXPRESS",
-    /**
-     * value: "DISCOVER"
-     * @const
-     */
-    "DISCOVER": "DISCOVER",
-    /**
-     * value: "DISCOVER_DINERS"
-     * @const
-     */
-    "DISCOVER_DINERS": "DISCOVER_DINERS",
-    /**
-     * value: "JCB"
-     * @const
-     */
-    "JCB": "JCB",
-    /**
-     * value: "CHINA_UNIONPAY"
-     * @const
-     */
-    "CHINA_UNIONPAY": "CHINA_UNIONPAY",
-    /**
-     * value: "SQUARE_GIFT_CARD"
-     * @const
-     */
-    "SQUARE_GIFT_CARD": "SQUARE_GIFT_CARD"  };
-
-  /**
-   * Allowed values for the <code>entry_method</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.EntryMethodEnum = {
-    /**
-     * value: "MANUAL"
-     * @const
-     */
-    "MANUAL": "MANUAL",
-    /**
-     * value: "SCANNED"
-     * @const
-     */
-    "SCANNED": "SCANNED",
-    /**
-     * value: "SQUARE_CASH"
-     * @const
-     */
-    "SQUARE_CASH": "SQUARE_CASH",
-    /**
-     * value: "SQUARE_WALLET"
-     * @const
-     */
-    "SQUARE_WALLET": "SQUARE_WALLET",
-    /**
-     * value: "SWIPED"
-     * @const
-     */
-    "SWIPED": "SWIPED",
-    /**
-     * value: "WEB_FORM"
-     * @const
-     */
-    "WEB_FORM": "WEB_FORM",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

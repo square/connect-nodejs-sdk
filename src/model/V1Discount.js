@@ -102,7 +102,7 @@ exports.prototype['rate'] = undefined;
 exports.prototype['amount_money'] = undefined;
 /**
  * Indicates whether the discount is a FIXED value or entered at the time of sale. See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values
- * @member {module:model/V1Discount.DiscountTypeEnum} discount_type
+ * @member {String} discount_type
  */
 exports.prototype['discount_type'] = undefined;
 /**
@@ -112,7 +112,7 @@ exports.prototype['discount_type'] = undefined;
 exports.prototype['pin_required'] = undefined;
 /**
  * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
- * @member {module:model/V1Discount.ColorEnum} color
+ * @member {String} color
  */
 exports.prototype['color'] = undefined;
 /**
@@ -121,80 +121,6 @@ exports.prototype['color'] = undefined;
  */
 exports.prototype['v2_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>discount_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.DiscountTypeEnum = {
-    /**
-     * value: "FIXED"
-     * @const
-     */
-    "FIXED": "FIXED",
-    /**
-     * value: "VARIABLE_PERCENTAGE"
-     * @const
-     */
-    "VARIABLE_PERCENTAGE": "VARIABLE_PERCENTAGE",
-    /**
-     * value: "VARIABLE_AMOUNT"
-     * @const
-     */
-    "VARIABLE_AMOUNT": "VARIABLE_AMOUNT"  };
-
-  /**
-   * Allowed values for the <code>color</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ColorEnum = {
-    /**
-     * value: "9da2a6"
-     * @const
-     */
-    "9da2a6": "9da2a6",
-    /**
-     * value: "4ab200"
-     * @const
-     */
-    "4ab200": "4ab200",
-    /**
-     * value: "0b8000"
-     * @const
-     */
-    "0b8000": "0b8000",
-    /**
-     * value: "2952cc"
-     * @const
-     */
-    "2952cc": "2952cc",
-    /**
-     * value: "a82ee5"
-     * @const
-     */
-    "a82ee5": "a82ee5",
-    /**
-     * value: "e5457a"
-     * @const
-     */
-    "e5457a": "e5457a",
-    /**
-     * value: "b21212"
-     * @const
-     */
-    "b21212": "b21212",
-    /**
-     * value: "593c00"
-     * @const
-     */
-    "593c00": "593c00",
-    /**
-     * value: "e5BF00"
-     * @const
-     */
-    "e5BF00": "e5BF00"  };
 
 
 module.exports = exports;

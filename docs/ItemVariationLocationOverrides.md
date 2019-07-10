@@ -15,25 +15,3 @@ Name | Type | Description | Notes
 **inventory_alert_threshold** | **Number** | If the inventory quantity for the variation is less than or equal to this value and &#x60;inventory_alert_type&#x60; is &#x60;LOW_QUANTITY&#x60;, the variation displays an alert in the merchant dashboard.  This value is always an integer. | [optional] 
 
 
-<a name="PricingTypeEnum"></a>
-## Enum: PricingTypeEnum
-
-
-* `FIXED_PRICING` (value: `"FIXED_PRICING"`)
-
-* `VARIABLE_PRICING` (value: `"VARIABLE_PRICING"`)
-
-
-
-
-<a name="InventoryAlertTypeEnum"></a>
-## Enum: InventoryAlertTypeEnum
-
-
-* `NONE` (value: `"NONE"`)
-
-* `LOW_QUANTITY` (value: `"LOW_QUANTITY"`)
-
-
-
-

@@ -12,30 +12,3 @@ Name | Type | Description | Notes
 **name** | **String** | Read-only display name assigned to the application (e.g. &#x60;\&quot;Custom Application\&quot;&#x60;, &#x60;\&quot;Square POS 4.74 for Android\&quot;&#x60;). | [optional] 
 
 
-<a name="ProductEnum"></a>
-## Enum: ProductEnum
-
-
-* `SQUARE_POS` (value: `"SQUARE_POS"`)
-
-* `EXTERNAL_API` (value: `"EXTERNAL_API"`)
-
-* `BILLING` (value: `"BILLING"`)
-
-* `APPOINTMENTS` (value: `"APPOINTMENTS"`)
-
-* `INVOICES` (value: `"INVOICES"`)
-
-* `ONLINE_STORE` (value: `"ONLINE_STORE"`)
-
-* `PAYROLL` (value: `"PAYROLL"`)
-
-* `DASHBOARD` (value: `"DASHBOARD"`)
-
-* `ITEM_LIBRARY_IMPORT` (value: `"ITEM_LIBRARY_IMPORT"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-
-
-

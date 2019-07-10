@@ -137,12 +137,12 @@ exports.prototype['name'] = undefined;
 exports.prototype['description'] = undefined;
 /**
  * The item's type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values
- * @member {module:model/V1Item.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
  * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values
- * @member {module:model/V1Item.ColorEnum} color
+ * @member {String} color
  */
 exports.prototype['color'] = undefined;
 /**
@@ -152,7 +152,7 @@ exports.prototype['color'] = undefined;
 exports.prototype['abbreviation'] = undefined;
 /**
  * Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE. See [V1ItemVisibility](#type-v1itemvisibility) for possible values
- * @member {module:model/V1Item.VisibilityEnum} visibility
+ * @member {String} visibility
  */
 exports.prototype['visibility'] = undefined;
 /**
@@ -206,97 +206,6 @@ exports.prototype['available_for_pickup'] = undefined;
  */
 exports.prototype['v2_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "NORMAL"
-     * @const
-     */
-    "NORMAL": "NORMAL",
-    /**
-     * value: "GIFT_CARD"
-     * @const
-     */
-    "GIFT_CARD": "GIFT_CARD",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
-
-  /**
-   * Allowed values for the <code>color</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ColorEnum = {
-    /**
-     * value: "9da2a6"
-     * @const
-     */
-    "9da2a6": "9da2a6",
-    /**
-     * value: "4ab200"
-     * @const
-     */
-    "4ab200": "4ab200",
-    /**
-     * value: "0b8000"
-     * @const
-     */
-    "0b8000": "0b8000",
-    /**
-     * value: "2952cc"
-     * @const
-     */
-    "2952cc": "2952cc",
-    /**
-     * value: "a82ee5"
-     * @const
-     */
-    "a82ee5": "a82ee5",
-    /**
-     * value: "e5457a"
-     * @const
-     */
-    "e5457a": "e5457a",
-    /**
-     * value: "b21212"
-     * @const
-     */
-    "b21212": "b21212",
-    /**
-     * value: "593c00"
-     * @const
-     */
-    "593c00": "593c00",
-    /**
-     * value: "e5BF00"
-     * @const
-     */
-    "e5BF00": "e5BF00"  };
-
-  /**
-   * Allowed values for the <code>visibility</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.VisibilityEnum = {
-    /**
-     * value: "PUBLIC"
-     * @const
-     */
-    "PUBLIC": "PUBLIC",
-    /**
-     * value: "PRIVATE"
-     * @const
-     */
-    "PRIVATE": "PRIVATE"  };
 
 
 module.exports = exports;

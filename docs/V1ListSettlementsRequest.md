@@ -15,25 +15,3 @@ Name | Type | Description | Notes
 **batch_token** | **String** | A pagination cursor to retrieve the next set of results for your original query to the endpoint. | [optional] 
 
 
-<a name="OrderEnum"></a>
-## Enum: OrderEnum
-
-
-* `DESC` (value: `"DESC"`)
-
-* `ASC` (value: `"ASC"`)
-
-
-
-
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `SENT` (value: `"SENT"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
-
-

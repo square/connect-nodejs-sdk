@@ -62,12 +62,12 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
- * @member {module:model/OrderFulfillment.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
  * The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
- * @member {module:model/OrderFulfillment.StateEnum} state
+ * @member {String} state
  */
 exports.prototype['state'] = undefined;
 /**
@@ -76,55 +76,6 @@ exports.prototype['state'] = undefined;
  */
 exports.prototype['pickup_details'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "PICKUP"
-     * @const
-     */
-    "PICKUP": "PICKUP"  };
-
-  /**
-   * Allowed values for the <code>state</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StateEnum = {
-    /**
-     * value: "PROPOSED"
-     * @const
-     */
-    "PROPOSED": "PROPOSED",
-    /**
-     * value: "RESERVED"
-     * @const
-     */
-    "RESERVED": "RESERVED",
-    /**
-     * value: "PREPARED"
-     * @const
-     */
-    "PREPARED": "PREPARED",
-    /**
-     * value: "COMPLETED"
-     * @const
-     */
-    "COMPLETED": "COMPLETED",
-    /**
-     * value: "CANCELED"
-     * @const
-     */
-    "CANCELED": "CANCELED",
-    /**
-     * value: "FAILED"
-     * @const
-     */
-    "FAILED": "FAILED"  };
 
 
 module.exports = exports;

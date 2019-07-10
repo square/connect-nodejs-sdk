@@ -78,12 +78,12 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['name'] = undefined;
 /**
  * Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for possible values
- * @member {module:model/CatalogTax.CalculationPhaseEnum} calculation_phase
+ * @member {String} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
 /**
  * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values
- * @member {module:model/CatalogTax.InclusionTypeEnum} inclusion_type
+ * @member {String} inclusion_type
  */
 exports.prototype['inclusion_type'] = undefined;
 /**
@@ -102,40 +102,6 @@ exports.prototype['applies_to_custom_amounts'] = undefined;
  */
 exports.prototype['enabled'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>calculation_phase</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.CalculationPhaseEnum = {
-    /**
-     * value: "TAX_SUBTOTAL_PHASE"
-     * @const
-     */
-    "SUBTOTAL_PHASE": "TAX_SUBTOTAL_PHASE",
-    /**
-     * value: "TAX_TOTAL_PHASE"
-     * @const
-     */
-    "TOTAL_PHASE": "TAX_TOTAL_PHASE"  };
-
-  /**
-   * Allowed values for the <code>inclusion_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.InclusionTypeEnum = {
-    /**
-     * value: "ADDITIVE"
-     * @const
-     */
-    "ADDITIVE": "ADDITIVE",
-    /**
-     * value: "INCLUSIVE"
-     * @const
-     */
-    "INCLUSIVE": "INCLUSIVE"  };
 
 
 module.exports = exports;

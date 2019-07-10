@@ -68,7 +68,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for possible values
- * @member {module:model/InventoryChange.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -87,28 +87,6 @@ exports.prototype['adjustment'] = undefined;
  */
 exports.prototype['transfer'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "PHYSICAL_COUNT"
-     * @const
-     */
-    "PHYSICAL_COUNT": "PHYSICAL_COUNT",
-    /**
-     * value: "ADJUSTMENT"
-     * @const
-     */
-    "ADJUSTMENT": "ADJUSTMENT",
-    /**
-     * value: "TRANSFER"
-     * @const
-     */
-    "TRANSFER": "TRANSFER"  };
 
 
 module.exports = exports;

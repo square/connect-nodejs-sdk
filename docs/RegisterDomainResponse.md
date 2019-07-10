@@ -11,14 +11,3 @@ Name | Type | Description | Notes
 **status** | **String** | Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values | [optional] 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `PENDING` (value: `"PENDING"`)
-
-* `VERIFIED` (value: `"VERIFIED"`)
-
-
-
-

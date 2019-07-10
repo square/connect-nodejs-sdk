@@ -57,59 +57,15 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values
- * @member {module:model/ShiftSort.FieldEnum} field
+ * @member {String} field
  */
 exports.prototype['field'] = undefined;
 /**
  * The order in which results are returned. Defaults to DESC. See [SortOrder](#type-sortorder) for possible values
- * @member {module:model/ShiftSort.OrderEnum} order
+ * @member {String} order
  */
 exports.prototype['order'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>field</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.FieldEnum = {
-    /**
-     * value: "START_AT"
-     * @const
-     */
-    "START_AT": "START_AT",
-    /**
-     * value: "END_AT"
-     * @const
-     */
-    "END_AT": "END_AT",
-    /**
-     * value: "CREATED_AT"
-     * @const
-     */
-    "CREATED_AT": "CREATED_AT",
-    /**
-     * value: "UPDATED_AT"
-     * @const
-     */
-    "UPDATED_AT": "UPDATED_AT"  };
-
-  /**
-   * Allowed values for the <code>order</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.OrderEnum = {
-    /**
-     * value: "DESC"
-     * @const
-     */
-    "DESC": "DESC",
-    /**
-     * value: "ASC"
-     * @const
-     */
-    "ASC": "ASC"  };
 
 
 module.exports = exports;

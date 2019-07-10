@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The day of week for this time period. See [DayOfWeek](#type-dayofweek) for possible values
- * @member {module:model/BusinessHoursPeriod.DayOfWeekEnum} day_of_week
+ * @member {String} day_of_week
  */
 exports.prototype['day_of_week'] = undefined;
 /**
@@ -75,48 +75,6 @@ exports.prototype['start_local_time'] = undefined;
  */
 exports.prototype['end_local_time'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>day_of_week</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.DayOfWeekEnum = {
-    /**
-     * value: "SUN"
-     * @const
-     */
-    "SUN": "SUN",
-    /**
-     * value: "MON"
-     * @const
-     */
-    "MON": "MON",
-    /**
-     * value: "TUE"
-     * @const
-     */
-    "TUE": "TUE",
-    /**
-     * value: "WED"
-     * @const
-     */
-    "WED": "WED",
-    /**
-     * value: "THU"
-     * @const
-     */
-    "THU": "THU",
-    /**
-     * value: "FRI"
-     * @const
-     */
-    "FRI": "FRI",
-    /**
-     * value: "SAT"
-     * @const
-     */
-    "SAT": "SAT"  };
 
 
 module.exports = exports;

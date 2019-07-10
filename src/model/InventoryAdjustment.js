@@ -129,12 +129,12 @@ exports.prototype['id'] = undefined;
 exports.prototype['reference_id'] = undefined;
 /**
  * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment. See [InventoryState](#type-inventorystate) for possible values
- * @member {module:model/InventoryAdjustment.FromStateEnum} from_state
+ * @member {String} from_state
  */
 exports.prototype['from_state'] = undefined;
 /**
  * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment. See [InventoryState](#type-inventorystate) for possible values
- * @member {module:model/InventoryAdjustment.ToStateEnum} to_state
+ * @member {String} to_state
  */
 exports.prototype['to_state'] = undefined;
 /**
@@ -153,7 +153,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['catalog_object_type'] = undefined;
 /**
- * The number of items affected by the adjustment as a decimal string. Can support up to 5 digits after the decimal point.  _Important_: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`. Read [Decimal Quantities (BETA)](/more-apis/inventory/overview#decimal-quantities-beta) for more information.
+ * The number of items affected by the adjustment as a decimal string. Can support up to 5 digits after the decimal point.  _Important_: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.  Read [Decimal Quantities (BETA)](/orders-api/what-it-does#decimal-quantities) for more information.
  * @member {String} quantity
  */
 exports.prototype['quantity'] = undefined;
@@ -203,140 +203,6 @@ exports.prototype['purchase_order_id'] = undefined;
  */
 exports.prototype['goods_receipt_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>from_state</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.FromStateEnum = {
-    /**
-     * value: "CUSTOM"
-     * @const
-     */
-    "CUSTOM": "CUSTOM",
-    /**
-     * value: "IN_STOCK"
-     * @const
-     */
-    "IN_STOCK": "IN_STOCK",
-    /**
-     * value: "SOLD"
-     * @const
-     */
-    "SOLD": "SOLD",
-    /**
-     * value: "RETURNED_BY_CUSTOMER"
-     * @const
-     */
-    "RETURNED_BY_CUSTOMER": "RETURNED_BY_CUSTOMER",
-    /**
-     * value: "RESERVED_FOR_SALE"
-     * @const
-     */
-    "RESERVED_FOR_SALE": "RESERVED_FOR_SALE",
-    /**
-     * value: "SOLD_ONLINE"
-     * @const
-     */
-    "SOLD_ONLINE": "SOLD_ONLINE",
-    /**
-     * value: "ORDERED_FROM_VENDOR"
-     * @const
-     */
-    "ORDERED_FROM_VENDOR": "ORDERED_FROM_VENDOR",
-    /**
-     * value: "RECEIVED_FROM_VENDOR"
-     * @const
-     */
-    "RECEIVED_FROM_VENDOR": "RECEIVED_FROM_VENDOR",
-    /**
-     * value: "IN_TRANSIT_TO"
-     * @const
-     */
-    "IN_TRANSIT_TO": "IN_TRANSIT_TO",
-    /**
-     * value: "NONE"
-     * @const
-     */
-    "NONE": "NONE",
-    /**
-     * value: "WASTE"
-     * @const
-     */
-    "WASTE": "WASTE",
-    /**
-     * value: "UNLINKED_RETURN"
-     * @const
-     */
-    "UNLINKED_RETURN": "UNLINKED_RETURN"  };
-
-  /**
-   * Allowed values for the <code>to_state</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.ToStateEnum = {
-    /**
-     * value: "CUSTOM"
-     * @const
-     */
-    "CUSTOM": "CUSTOM",
-    /**
-     * value: "IN_STOCK"
-     * @const
-     */
-    "IN_STOCK": "IN_STOCK",
-    /**
-     * value: "SOLD"
-     * @const
-     */
-    "SOLD": "SOLD",
-    /**
-     * value: "RETURNED_BY_CUSTOMER"
-     * @const
-     */
-    "RETURNED_BY_CUSTOMER": "RETURNED_BY_CUSTOMER",
-    /**
-     * value: "RESERVED_FOR_SALE"
-     * @const
-     */
-    "RESERVED_FOR_SALE": "RESERVED_FOR_SALE",
-    /**
-     * value: "SOLD_ONLINE"
-     * @const
-     */
-    "SOLD_ONLINE": "SOLD_ONLINE",
-    /**
-     * value: "ORDERED_FROM_VENDOR"
-     * @const
-     */
-    "ORDERED_FROM_VENDOR": "ORDERED_FROM_VENDOR",
-    /**
-     * value: "RECEIVED_FROM_VENDOR"
-     * @const
-     */
-    "RECEIVED_FROM_VENDOR": "RECEIVED_FROM_VENDOR",
-    /**
-     * value: "IN_TRANSIT_TO"
-     * @const
-     */
-    "IN_TRANSIT_TO": "IN_TRANSIT_TO",
-    /**
-     * value: "NONE"
-     * @const
-     */
-    "NONE": "NONE",
-    /**
-     * value: "WASTE"
-     * @const
-     */
-    "WASTE": "WASTE",
-    /**
-     * value: "UNLINKED_RETURN"
-     * @const
-     */
-    "UNLINKED_RETURN": "UNLINKED_RETURN"  };
 
 
 module.exports = exports;

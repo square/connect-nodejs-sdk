@@ -20,7 +20,10 @@ var CatalogItemVariation = require('./CatalogItemVariation');
 var CatalogMeasurementUnit = require('./CatalogMeasurementUnit');
 var CatalogModifier = require('./CatalogModifier');
 var CatalogModifierList = require('./CatalogModifierList');
+var CatalogPricingRule = require('./CatalogPricingRule');
+var CatalogProductSet = require('./CatalogProductSet');
 var CatalogTax = require('./CatalogTax');
+var CatalogTimePeriod = require('./CatalogTimePeriod');
 var CatalogV1Id = require('./CatalogV1Id');
 
 
@@ -36,7 +39,7 @@ var CatalogV1Id = require('./CatalogV1Id');
  * The wrapper object for object types in the Catalog data model. The type of a particular &#x60;CatalogObject&#x60; is determined by the value of &#x60;type&#x60; and only the corresponding data field may be set.  - if type &#x3D; &#x60;ITEM&#x60;, only &#x60;item_data&#x60; will be populated and it will contain a valid [CatalogItem](#type-catalogitem) object. - if type &#x3D; &#x60;ITEM_VARIATION&#x60;, only &#x60;item_variation_data&#x60; will be populated and it will contain a valid [CatalogItemVariation](#type-catalogitemvariation) object. - if type &#x3D; &#x60;MODIFIER&#x60;, only &#x60;modifier_data&#x60; will be populated and it will contain a valid [CatalogModifier](#type-catalogmodifier) object. - if type &#x3D; &#x60;MODIFIER_LIST&#x60;, only &#x60;modifier_list_data&#x60; will be populated and it will contain a valid [CatalogModifierList](#type-catalogmodifierlist) object. - if type &#x3D; &#x60;CATEGORY&#x60;, only &#x60;category_data&#x60; will be populated and it will contain a valid [CatalogCategory](#type-catalogcategory) object. - if type &#x3D; &#x60;DISCOUNT&#x60;, only &#x60;discount_data&#x60; will be populated and it will contain a valid [CatalogDiscount](#type-catalogdiscount) object. - if type &#x3D; &#x60;TAX&#x60;, only &#x60;tax_data&#x60; will be populated and it will contain a valid [CatalogTax](#type-catalogtax) object. - if type &#x3D; &#x60;IMAGE&#x60;, only &#x60;image_data&#x60; will be populated and it will contain a valid [CatalogImage](#type-catalogimage) object.  For a more detailed discussion of the Catalog data model, please see the [Design a Catalog](/catalog-api/design-a-catalog) guide.
  * @alias module:model/CatalogObject
  * @class
- * @param type {module:model/CatalogObject.TypeEnum} The type of this object. Each object type has expected properties expressed in a structured format within its corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values
+ * @param type {String} The type of this object. Each object type has expected properties expressed in a structured format within its corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @param id {String} An identifier to reference this object in the catalog. When a new CatalogObject is inserted, the client should set the id to a temporary identifier starting with a `'#'` character. Other objects being inserted or updated within the same request may use this identifier to refer to the new object.  When the server receives the new object, it will supply a unique identifier that replaces the temporary identifier for all future references.
  */
 var exports = function(type, id) {
@@ -44,6 +47,9 @@ var exports = function(type, id) {
 
   _this['type'] = type;
   _this['id'] = id;
+
+
+
 
 
 
@@ -125,6 +131,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('modifier_data')) {
       obj['modifier_data'] = CatalogModifier.constructFromObject(data['modifier_data']);
     }
+      if (data.hasOwnProperty('time_period_data')) {
+      obj['time_period_data'] = CatalogTimePeriod.constructFromObject(data['time_period_data']);
+    }
+      if (data.hasOwnProperty('product_set_data')) {
+      obj['product_set_data'] = CatalogProductSet.constructFromObject(data['product_set_data']);
+    }
+      if (data.hasOwnProperty('pricing_rule_data')) {
+      obj['pricing_rule_data'] = CatalogPricingRule.constructFromObject(data['pricing_rule_data']);
+    }
       if (data.hasOwnProperty('image_data')) {
       obj['image_data'] = CatalogImage.constructFromObject(data['image_data']);
     }
@@ -137,7 +152,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The type of this object. Each object type has expected properties expressed in a structured format within its corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values
- * @member {module:model/CatalogObject.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -221,6 +236,21 @@ exports.prototype['modifier_list_data'] = undefined;
  */
 exports.prototype['modifier_data'] = undefined;
 /**
+ * Structured data for a [CatalogTimePeriod](#type-catalogtimeperiod), set for CatalogObjects of type `TIME_PERIOD`.
+ * @member {module:model/CatalogTimePeriod} time_period_data
+ */
+exports.prototype['time_period_data'] = undefined;
+/**
+ * Structured data for a [CatalogProductSet](#type-catalogproductset), set for CatalogObjects of type `PRODUCT_SET`.
+ * @member {module:model/CatalogProductSet} product_set_data
+ */
+exports.prototype['product_set_data'] = undefined;
+/**
+ * Structured data for a [CatalogPricingRule](#type-catalogpricingrule), set for CatalogObjects of type `PRICING_RULE`.
+ * @member {module:model/CatalogPricingRule} pricing_rule_data
+ */
+exports.prototype['pricing_rule_data'] = undefined;
+/**
  * Structured data for a [CatalogImage](#type-catalogimage), set for CatalogObjects of type `IMAGE`.
  * @member {module:model/CatalogImage} image_data
  */
@@ -231,68 +261,6 @@ exports.prototype['image_data'] = undefined;
  */
 exports.prototype['measurement_unit_data'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "ITEM"
-     * @const
-     */
-    "ITEM": "ITEM",
-    /**
-     * value: "IMAGE"
-     * @const
-     */
-    "IMAGE": "IMAGE",
-    /**
-     * value: "CATEGORY"
-     * @const
-     */
-    "CATEGORY": "CATEGORY",
-    /**
-     * value: "ITEM_VARIATION"
-     * @const
-     */
-    "ITEM_VARIATION": "ITEM_VARIATION",
-    /**
-     * value: "TAX"
-     * @const
-     */
-    "TAX": "TAX",
-    /**
-     * value: "DISCOUNT"
-     * @const
-     */
-    "DISCOUNT": "DISCOUNT",
-    /**
-     * value: "MODIFIER_LIST"
-     * @const
-     */
-    "MODIFIER_LIST": "MODIFIER_LIST",
-    /**
-     * value: "MODIFIER"
-     * @const
-     */
-    "MODIFIER": "MODIFIER",
-    /**
-     * value: "PRICING_RULE"
-     * @const
-     */
-    "PRICING_RULE": "PRICING_RULE",
-    /**
-     * value: "PRODUCT_SET"
-     * @const
-     */
-    "PRODUCT_SET": "PRODUCT_SET",
-    /**
-     * value: "TIME_PERIOD"
-     * @const
-     */
-    "TIME_PERIOD": "TIME_PERIOD"  };
 
 
 module.exports = exports;

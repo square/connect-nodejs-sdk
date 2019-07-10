@@ -13,16 +13,3 @@ Name | Type | Description | Notes
 **percentage** | **String** | Only used for ad hoc taxes. The percentage of the tax, as a string representation of a decimal number.  A value of &#x60;7.25&#x60; corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0 | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
-
-
-* `UNKNOWN_TAX` (value: `"UNKNOWN_TAX"`)
-
-* `ADDITIVE` (value: `"ADDITIVE"`)
-
-* `INCLUSIVE` (value: `"INCLUSIVE"`)
-
-
-
-

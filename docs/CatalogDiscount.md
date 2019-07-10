@@ -15,18 +15,3 @@ Name | Type | Description | Notes
 **label_color** | **String** | The color of the discount&#39;s display label in the Square Point of Sale app. This must be a valid hex color code. | [optional] 
 
 
-<a name="DiscountTypeEnum"></a>
-## Enum: DiscountTypeEnum
-
-
-* `FIXED_PERCENTAGE` (value: `"FIXED_PERCENTAGE"`)
-
-* `FIXED_AMOUNT` (value: `"FIXED_AMOUNT"`)
-
-* `VARIABLE_PERCENTAGE` (value: `"VARIABLE_PERCENTAGE"`)
-
-* `VARIABLE_AMOUNT` (value: `"VARIABLE_AMOUNT"`)
-
-
-
-

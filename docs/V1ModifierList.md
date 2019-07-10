@@ -14,14 +14,3 @@ Name | Type | Description | Notes
 **v2_id** | **String** | The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID. | [optional] 
 
 
-<a name="SelectionTypeEnum"></a>
-## Enum: SelectionTypeEnum
-
-
-* `SINGLE` (value: `"SINGLE"`)
-
-* `MULTIPLE` (value: `"MULTIPLE"`)
-
-
-
-

@@ -253,7 +253,7 @@ exports.prototype['updated_at'] = undefined;
 exports.prototype['closed_at'] = undefined;
 /**
  * The current state of the order. `OPEN`,`COMPLETED`,`CANCELED` See [OrderState](#type-orderstate) for possible values
- * @member {module:model/Order.StateEnum} state
+ * @member {String} state
  */
 exports.prototype['state'] = undefined;
 /**
@@ -277,28 +277,6 @@ exports.prototype['total_discount_money'] = undefined;
  */
 exports.prototype['total_service_charge_money'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>state</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StateEnum = {
-    /**
-     * value: "OPEN"
-     * @const
-     */
-    "OPEN": "OPEN",
-    /**
-     * value: "COMPLETED"
-     * @const
-     */
-    "COMPLETED": "COMPLETED",
-    /**
-     * value: "CANCELED"
-     * @const
-     */
-    "CANCELED": "CANCELED"  };
 
 
 module.exports = exports;

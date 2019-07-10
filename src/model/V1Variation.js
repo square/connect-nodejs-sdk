@@ -118,7 +118,7 @@ exports.prototype['item_id'] = undefined;
 exports.prototype['ordinal'] = undefined;
 /**
  * Indicates whether the item variation's price is fixed or determined at the time of sale. See [V1VariationPricingType](#type-v1variationpricingtype) for possible values
- * @member {module:model/V1Variation.PricingTypeEnum} pricing_type
+ * @member {String} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
 /**
@@ -138,7 +138,7 @@ exports.prototype['sku'] = undefined;
 exports.prototype['track_inventory'] = undefined;
 /**
  * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values
- * @member {module:model/V1Variation.InventoryAlertTypeEnum} inventory_alert_type
+ * @member {String} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;
 /**
@@ -157,60 +157,6 @@ exports.prototype['user_data'] = undefined;
  */
 exports.prototype['v2_id'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>pricing_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.PricingTypeEnum = {
-    /**
-     * value: "FIXED_PRICING"
-     * @const
-     */
-    "FIXED_PRICING": "FIXED_PRICING",
-    /**
-     * value: "VARIABLE_PRICING"
-     * @const
-     */
-    "VARIABLE_PRICING": "VARIABLE_PRICING"  };
-
-  /**
-   * Allowed values for the <code>inventory_alert_type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.InventoryAlertTypeEnum = {
-    /**
-     * value: "LOW_QUANTITY"
-     * @const
-     */
-    "LOW_QUANTITY": "LOW_QUANTITY",
-    /**
-     * value: "NONE"
-     * @const
-     */
-    "NONE": "NONE",
-    /**
-     * value: "INVESTMENT"
-     * @const
-     */
-    "INVESTMENT": "INVESTMENT",
-    /**
-     * value: "LOAN"
-     * @const
-     */
-    "LOAN": "LOAN",
-    /**
-     * value: "SAVINGS"
-     * @const
-     */
-    "SAVINGS": "SAVINGS",
-    /**
-     * value: "OTHER"
-     * @const
-     */
-    "OTHER": "OTHER"  };
 
 
 module.exports = exports;

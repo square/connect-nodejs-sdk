@@ -124,7 +124,7 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * The type of refund See [V1RefundType](#type-v1refundtype) for possible values
- * @member {module:model/V1Refund.TypeEnum} type
+ * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
@@ -213,23 +213,6 @@ exports.prototype['merchant_id'] = undefined;
  */
 exports.prototype['is_exchange'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>type</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.TypeEnum = {
-    /**
-     * value: "FULL"
-     * @const
-     */
-    "FULL": "FULL",
-    /**
-     * value: "PARTIAL"
-     * @const
-     */
-    "PARTIAL": "PARTIAL"  };
 
 
 module.exports = exports;

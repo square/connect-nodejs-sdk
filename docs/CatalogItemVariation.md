@@ -20,29 +20,6 @@ Name | Type | Description | Notes
 **inventory_alert_threshold** | **Number** | If the inventory quantity for the variation is less than or equal to this value and &#x60;inventory_alert_type&#x60; is &#x60;LOW_QUANTITY&#x60;, the variation displays an alert in the merchant dashboard.  This value is always an integer. | [optional] 
 **user_data** | **String** | Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable. | [optional] 
 **service_duration** | **Number** | If the [CatalogItem](#type-catalogitem) that owns this item variation is of type &#x60;APPOINTMENTS_SERVICE&#x60;, then this is the duration of the service in milliseconds. For example, a 30 minute appointment would have the value &#x60;1800000&#x60;, which is equal to 30 (minutes) * 60 (seconds per minute) * 1000 (milliseconds per second). | [optional] 
-**catalog_measurement_unit_id** | **String** | Represents the unit used to measure a [CatalogItemVariation](#type-catalogitemvariation) and specifies the precision for decimal quantities. | [optional] 
 **measurement_unit_id** | **String** | ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities. | [optional] 
-
-
-<a name="PricingTypeEnum"></a>
-## Enum: PricingTypeEnum
-
-
-* `FIXED_PRICING` (value: `"FIXED_PRICING"`)
-
-* `VARIABLE_PRICING` (value: `"VARIABLE_PRICING"`)
-
-
-
-
-<a name="InventoryAlertTypeEnum"></a>
-## Enum: InventoryAlertTypeEnum
-
-
-* `NONE` (value: `"NONE"`)
-
-* `LOW_QUANTITY` (value: `"LOW_QUANTITY"`)
-
-
 
 

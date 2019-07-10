@@ -79,240 +79,30 @@ exports.constructFromObject = function(data, obj) {
 exports.prototype['custom_unit'] = undefined;
 /**
  * Represents a standard area unit. See [MeasurementUnitArea](#type-measurementunitarea) for possible values
- * @member {module:model/MeasurementUnit.AreaUnitEnum} area_unit
+ * @member {String} area_unit
  */
 exports.prototype['area_unit'] = undefined;
 /**
  * Represents a standard length unit. See [MeasurementUnitLength](#type-measurementunitlength) for possible values
- * @member {module:model/MeasurementUnit.LengthUnitEnum} length_unit
+ * @member {String} length_unit
  */
 exports.prototype['length_unit'] = undefined;
 /**
  * Represents a standard volume unit. See [MeasurementUnitVolume](#type-measurementunitvolume) for possible values
- * @member {module:model/MeasurementUnit.VolumeUnitEnum} volume_unit
+ * @member {String} volume_unit
  */
 exports.prototype['volume_unit'] = undefined;
 /**
  * Represents a standard unit of weight or mass. See [MeasurementUnitWeight](#type-measurementunitweight) for possible values
- * @member {module:model/MeasurementUnit.WeightUnitEnum} weight_unit
+ * @member {String} weight_unit
  */
 exports.prototype['weight_unit'] = undefined;
 /**
  * Reserved for API integrations that lack the ability to specify a real measurement unit See [MeasurementUnitGeneric](#type-measurementunitgeneric) for possible values
- * @member {module:model/MeasurementUnit.GenericUnitEnum} generic_unit
+ * @member {String} generic_unit
  */
 exports.prototype['generic_unit'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>area_unit</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.AreaUnitEnum = {
-    /**
-     * value: "IMPERIAL_ACRE"
-     * @const
-     */
-    "IMPERIAL_ACRE": "IMPERIAL_ACRE",
-    /**
-     * value: "IMPERIAL_SQUARE_INCH"
-     * @const
-     */
-    "IMPERIAL_SQUARE_INCH": "IMPERIAL_SQUARE_INCH",
-    /**
-     * value: "IMPERIAL_SQUARE_FOOT"
-     * @const
-     */
-    "IMPERIAL_SQUARE_FOOT": "IMPERIAL_SQUARE_FOOT",
-    /**
-     * value: "IMPERIAL_SQUARE_YARD"
-     * @const
-     */
-    "IMPERIAL_SQUARE_YARD": "IMPERIAL_SQUARE_YARD",
-    /**
-     * value: "IMPERIAL_SQUARE_MILE"
-     * @const
-     */
-    "IMPERIAL_SQUARE_MILE": "IMPERIAL_SQUARE_MILE",
-    /**
-     * value: "METRIC_SQUARE_CENTIMETER"
-     * @const
-     */
-    "METRIC_SQUARE_CENTIMETER": "METRIC_SQUARE_CENTIMETER",
-    /**
-     * value: "METRIC_SQUARE_METER"
-     * @const
-     */
-    "METRIC_SQUARE_METER": "METRIC_SQUARE_METER",
-    /**
-     * value: "METRIC_SQUARE_KILOMETER"
-     * @const
-     */
-    "METRIC_SQUARE_KILOMETER": "METRIC_SQUARE_KILOMETER"  };
-
-  /**
-   * Allowed values for the <code>length_unit</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.LengthUnitEnum = {
-    /**
-     * value: "IMPERIAL_INCH"
-     * @const
-     */
-    "IMPERIAL_INCH": "IMPERIAL_INCH",
-    /**
-     * value: "IMPERIAL_FOOT"
-     * @const
-     */
-    "IMPERIAL_FOOT": "IMPERIAL_FOOT",
-    /**
-     * value: "IMPERIAL_YARD"
-     * @const
-     */
-    "IMPERIAL_YARD": "IMPERIAL_YARD",
-    /**
-     * value: "IMPERIAL_MILE"
-     * @const
-     */
-    "IMPERIAL_MILE": "IMPERIAL_MILE",
-    /**
-     * value: "METRIC_MILLIMETER"
-     * @const
-     */
-    "METRIC_MILLIMETER": "METRIC_MILLIMETER",
-    /**
-     * value: "METRIC_CENTIMETER"
-     * @const
-     */
-    "METRIC_CENTIMETER": "METRIC_CENTIMETER",
-    /**
-     * value: "METRIC_METER"
-     * @const
-     */
-    "METRIC_METER": "METRIC_METER",
-    /**
-     * value: "METRIC_KILOMETER"
-     * @const
-     */
-    "METRIC_KILOMETER": "METRIC_KILOMETER"  };
-
-  /**
-   * Allowed values for the <code>volume_unit</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.VolumeUnitEnum = {
-    /**
-     * value: "GENERIC_FLUID_OUNCE"
-     * @const
-     */
-    "GENERIC_FLUID_OUNCE": "GENERIC_FLUID_OUNCE",
-    /**
-     * value: "GENERIC_SHOT"
-     * @const
-     */
-    "GENERIC_SHOT": "GENERIC_SHOT",
-    /**
-     * value: "GENERIC_CUP"
-     * @const
-     */
-    "GENERIC_CUP": "GENERIC_CUP",
-    /**
-     * value: "GENERIC_PINT"
-     * @const
-     */
-    "GENERIC_PINT": "GENERIC_PINT",
-    /**
-     * value: "GENERIC_QUART"
-     * @const
-     */
-    "GENERIC_QUART": "GENERIC_QUART",
-    /**
-     * value: "GENERIC_GALLON"
-     * @const
-     */
-    "GENERIC_GALLON": "GENERIC_GALLON",
-    /**
-     * value: "IMPERIAL_CUBIC_INCH"
-     * @const
-     */
-    "IMPERIAL_CUBIC_INCH": "IMPERIAL_CUBIC_INCH",
-    /**
-     * value: "IMPERIAL_CUBIC_FOOT"
-     * @const
-     */
-    "IMPERIAL_CUBIC_FOOT": "IMPERIAL_CUBIC_FOOT",
-    /**
-     * value: "IMPERIAL_CUBIC_YARD"
-     * @const
-     */
-    "IMPERIAL_CUBIC_YARD": "IMPERIAL_CUBIC_YARD",
-    /**
-     * value: "METRIC_MILLILITER"
-     * @const
-     */
-    "METRIC_MILLILITER": "METRIC_MILLILITER",
-    /**
-     * value: "METRIC_LITER"
-     * @const
-     */
-    "METRIC_LITER": "METRIC_LITER"  };
-
-  /**
-   * Allowed values for the <code>weight_unit</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.WeightUnitEnum = {
-    /**
-     * value: "IMPERIAL_WEIGHT_OUNCE"
-     * @const
-     */
-    "IMPERIAL_WEIGHT_OUNCE": "IMPERIAL_WEIGHT_OUNCE",
-    /**
-     * value: "IMPERIAL_POUND"
-     * @const
-     */
-    "IMPERIAL_POUND": "IMPERIAL_POUND",
-    /**
-     * value: "IMPERIAL_STONE"
-     * @const
-     */
-    "IMPERIAL_STONE": "IMPERIAL_STONE",
-    /**
-     * value: "METRIC_MILLIGRAM"
-     * @const
-     */
-    "METRIC_MILLIGRAM": "METRIC_MILLIGRAM",
-    /**
-     * value: "METRIC_GRAM"
-     * @const
-     */
-    "METRIC_GRAM": "METRIC_GRAM",
-    /**
-     * value: "METRIC_KILOGRAM"
-     * @const
-     */
-    "METRIC_KILOGRAM": "METRIC_KILOGRAM"  };
-
-  /**
-   * Allowed values for the <code>generic_unit</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.GenericUnitEnum = {
-    /**
-     * value: "INVALID_GENERIC_UNIT"
-     * @const
-     */
-    "INVALID_GENERIC_UNIT": "INVALID_GENERIC_UNIT",
-    /**
-     * value: "UNIT"
-     * @const
-     */
-    "UNIT": "UNIT"  };
 
 
 module.exports = exports;

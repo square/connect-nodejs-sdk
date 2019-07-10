@@ -34,7 +34,7 @@ var Money = require('./Money');
  * @param tenderId {String} The ID of the refunded tender.
  * @param reason {String} The reason for the refund being issued.
  * @param amountMoney {module:model/Money} The amount of money refunded to the buyer.
- * @param status {module:model/Refund.StatusEnum} The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
+ * @param status {String} The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
  */
 var exports = function(id, locationId, transactionId, tenderId, reason, amountMoney, status) {
   var _this = this;
@@ -133,7 +133,7 @@ exports.prototype['reason'] = undefined;
 exports.prototype['amount_money'] = undefined;
 /**
  * The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
- * @member {module:model/Refund.StatusEnum} status
+ * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
@@ -147,33 +147,6 @@ exports.prototype['processing_fee_money'] = undefined;
  */
 exports.prototype['additional_recipients'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "PENDING"
-     * @const
-     */
-    "PENDING": "PENDING",
-    /**
-     * value: "APPROVED"
-     * @const
-     */
-    "APPROVED": "APPROVED",
-    /**
-     * value: "REJECTED"
-     * @const
-     */
-    "REJECTED": "REJECTED",
-    /**
-     * value: "FAILED"
-     * @const
-     */
-    "FAILED": "FAILED"  };
 
 
 module.exports = exports;
