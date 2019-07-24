@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var CatalogItemOptionValueForItemVariation = require('./CatalogItemOptionValueForItemVariation');
 var ItemVariationLocationOverrides = require('./ItemVariationLocationOverrides');
 var Money = require('./Money');
 
@@ -31,6 +32,7 @@ var Money = require('./Money');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -97,6 +99,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('service_duration')) {
       obj['service_duration'] = ApiClient.convertToType(data['service_duration'], 'Number');
+    }
+      if (data.hasOwnProperty('item_option_values')) {
+      obj['item_option_values'] = ApiClient.convertToType(data['item_option_values'], [CatalogItemOptionValueForItemVariation]);
     }
       if (data.hasOwnProperty('measurement_unit_id')) {
       obj['measurement_unit_id'] = ApiClient.convertToType(data['measurement_unit_id'], 'String');
@@ -170,6 +175,11 @@ exports.prototype['user_data'] = undefined;
  * @member {Number} service_duration
  */
 exports.prototype['service_duration'] = undefined;
+/**
+ * List of item option values associated with this item variation. Listed in the same order as the item options of the parent item.
+ * @member {Array.<module:model/CatalogItemOptionValueForItemVariation>} item_option_values
+ */
+exports.prototype['item_option_values'] = undefined;
 /**
  * ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities.
  * @member {String} measurement_unit_id

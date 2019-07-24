@@ -213,6 +213,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogInfoResponseLimits](docs/CatalogInfoResponseLimits.md)
  - [SquareConnect.CatalogItem](docs/CatalogItem.md)
  - [SquareConnect.CatalogItemModifierListInfo](docs/CatalogItemModifierListInfo.md)
+ - [SquareConnect.CatalogItemOption](docs/CatalogItemOption.md)
+ - [SquareConnect.CatalogItemOptionForItem](docs/CatalogItemOptionForItem.md)
+ - [SquareConnect.CatalogItemOptionValue](docs/CatalogItemOptionValue.md)
+ - [SquareConnect.CatalogItemOptionValueForItemVariation](docs/CatalogItemOptionValueForItemVariation.md)
  - [SquareConnect.CatalogItemProductType](docs/CatalogItemProductType.md)
  - [SquareConnect.CatalogItemVariation](docs/CatalogItemVariation.md)
  - [SquareConnect.CatalogMeasurementUnit](docs/CatalogMeasurementUnit.md)
@@ -228,6 +232,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogProductSet](docs/CatalogProductSet.md)
  - [SquareConnect.CatalogQuery](docs/CatalogQuery.md)
  - [SquareConnect.CatalogQueryExact](docs/CatalogQueryExact.md)
+ - [SquareConnect.CatalogQueryItemVariationsForItemOptionValues](docs/CatalogQueryItemVariationsForItemOptionValues.md)
+ - [SquareConnect.CatalogQueryItemsForItemOptions](docs/CatalogQueryItemsForItemOptions.md)
  - [SquareConnect.CatalogQueryItemsForModifierList](docs/CatalogQueryItemsForModifierList.md)
  - [SquareConnect.CatalogQueryItemsForTax](docs/CatalogQueryItemsForTax.md)
  - [SquareConnect.CatalogQueryPrefix](docs/CatalogQueryPrefix.md)
@@ -639,7 +645,7 @@ Class | Method | HTTP request | Description
   - EMPLOYEES_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to employee profile information. For example, to create and modify employee profiles.
   - INVENTORY_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to inventory information. For example, to call the RetrieveInventoryCount endpoint.
   - INVENTORY_WRITE: __HTTP Method__:  &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to inventory information. For example, to call the BatchChangeInventory endpoint.
-  - ITEMS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
+  - ITEMS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to product catalog information. For example, to get an  item or a list of items.
   - ITEMS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to product catalog information. For example, to modify or add to a product catalog.
   - MERCHANT_PROFILE_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
   - ORDERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to order information. For example, to call the BatchRetrieveOrders endpoint.

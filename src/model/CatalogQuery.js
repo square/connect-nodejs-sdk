@@ -13,6 +13,8 @@
  */
 var ApiClient = require('../ApiClient');
 var CatalogQueryExact = require('./CatalogQueryExact');
+var CatalogQueryItemVariationsForItemOptionValues = require('./CatalogQueryItemVariationsForItemOptionValues');
+var CatalogQueryItemsForItemOptions = require('./CatalogQueryItemsForItemOptions');
 var CatalogQueryItemsForModifierList = require('./CatalogQueryItemsForModifierList');
 var CatalogQueryItemsForTax = require('./CatalogQueryItemsForTax');
 var CatalogQueryPrefix = require('./CatalogQueryPrefix');
@@ -36,6 +38,8 @@ var CatalogQueryText = require('./CatalogQueryText');
  */
 var exports = function() {
   var _this = this;
+
+
 
 
 
@@ -78,6 +82,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('items_for_modifier_list_query')) {
       obj['items_for_modifier_list_query'] = CatalogQueryItemsForModifierList.constructFromObject(data['items_for_modifier_list_query']);
     }
+      if (data.hasOwnProperty('items_for_item_options_query')) {
+      obj['items_for_item_options_query'] = CatalogQueryItemsForItemOptions.constructFromObject(data['items_for_item_options_query']);
+    }
+      if (data.hasOwnProperty('item_variations_for_item_option_values_query')) {
+      obj['item_variations_for_item_option_values_query'] = CatalogQueryItemVariationsForItemOptionValues.constructFromObject(data['item_variations_for_item_option_values_query']);
+    }
     }
   return obj;
 }
@@ -117,6 +127,16 @@ exports.prototype['items_for_tax_query'] = undefined;
  * @member {module:model/CatalogQueryItemsForModifierList} items_for_modifier_list_query
  */
 exports.prototype['items_for_modifier_list_query'] = undefined;
+/**
+ * A query that returns all [CatalogItem](#type-catalogitem)s that have all of the given [CatalogItemOption](#type-catalogitemoption)s.
+ * @member {module:model/CatalogQueryItemsForItemOptions} items_for_item_options_query
+ */
+exports.prototype['items_for_item_options_query'] = undefined;
+/**
+ * A query that returns all [CatalogItemVariation](#type-catalogitemvariations)s that have all of the given [CatalogItemOption](#type-catalogitemoption) values.
+ * @member {module:model/CatalogQueryItemVariationsForItemOptionValues} item_variations_for_item_option_values_query
+ */
+exports.prototype['item_variations_for_item_option_values_query'] = undefined;
 
 
 

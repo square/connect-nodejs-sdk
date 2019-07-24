@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var CatalogItemModifierListInfo = require('./CatalogItemModifierListInfo');
+var CatalogItemOptionForItem = require('./CatalogItemOptionForItem');
 var CatalogObject = require('./CatalogObject');
 
 
@@ -31,6 +32,7 @@ var CatalogObject = require('./CatalogObject');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -97,6 +99,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('skip_modifier_screen')) {
       obj['skip_modifier_screen'] = ApiClient.convertToType(data['skip_modifier_screen'], 'Boolean');
     }
+      if (data.hasOwnProperty('item_options')) {
+      obj['item_options'] = ApiClient.convertToType(data['item_options'], [CatalogItemOptionForItem]);
+    }
     }
   return obj;
 }
@@ -157,7 +162,7 @@ exports.prototype['modifier_list_info'] = undefined;
  */
 exports.prototype['variations'] = undefined;
 /**
- * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
+ * The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` or `APPOINTMENTS_SERVICE` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
  * @member {String} product_type
  */
 exports.prototype['product_type'] = undefined;
@@ -166,6 +171,11 @@ exports.prototype['product_type'] = undefined;
  * @member {Boolean} skip_modifier_screen
  */
 exports.prototype['skip_modifier_screen'] = undefined;
+/**
+ * List of item options IDs for this item. Used to manage and group item variations in a specified order.  Maximum: 6 item options.
+ * @member {Array.<module:model/CatalogItemOptionForItem>} item_options
+ */
+exports.prototype['item_options'] = undefined;
 
 
 
