@@ -74,7 +74,22 @@ var exports = {
    * value: "TIME_PERIOD"
    * @const
    */
-  "TIME_PERIOD": "TIME_PERIOD"};
+  "TIME_PERIOD": "TIME_PERIOD",
+  /**
+   * value: "MEASUREMENT_UNIT"
+   * @const
+   */
+  "MEASUREMENT_UNIT": "MEASUREMENT_UNIT",
+  /**
+   * value: "ITEM_OPTION"
+   * @const
+   */
+  "ITEM_OPTION": "ITEM_OPTION",
+  /**
+   * value: "ITEM_OPTION_VAL"
+   * @const
+   */
+  "ITEM_OPTION_VAL": "ITEM_OPTION_VAL"};
 
 /**
  * Returns a <code>CatalogObjectType</code> enum value from a Javascript object name.

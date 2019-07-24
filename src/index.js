@@ -48,6 +48,10 @@ var CatalogInfoResponse = require('./model/CatalogInfoResponse');
 var CatalogInfoResponseLimits = require('./model/CatalogInfoResponseLimits');
 var CatalogItem = require('./model/CatalogItem');
 var CatalogItemModifierListInfo = require('./model/CatalogItemModifierListInfo');
+var CatalogItemOption = require('./model/CatalogItemOption');
+var CatalogItemOptionForItem = require('./model/CatalogItemOptionForItem');
+var CatalogItemOptionValue = require('./model/CatalogItemOptionValue');
+var CatalogItemOptionValueForItemVariation = require('./model/CatalogItemOptionValueForItemVariation');
 var CatalogItemProductType = require('./model/CatalogItemProductType');
 var CatalogItemVariation = require('./model/CatalogItemVariation');
 var CatalogMeasurementUnit = require('./model/CatalogMeasurementUnit');
@@ -63,6 +67,8 @@ var CatalogPricingType = require('./model/CatalogPricingType');
 var CatalogProductSet = require('./model/CatalogProductSet');
 var CatalogQuery = require('./model/CatalogQuery');
 var CatalogQueryExact = require('./model/CatalogQueryExact');
+var CatalogQueryItemVariationsForItemOptionValues = require('./model/CatalogQueryItemVariationsForItemOptionValues');
+var CatalogQueryItemsForItemOptions = require('./model/CatalogQueryItemsForItemOptions');
 var CatalogQueryItemsForModifierList = require('./model/CatalogQueryItemsForModifierList');
 var CatalogQueryItemsForTax = require('./model/CatalogQueryItemsForTax');
 var CatalogQueryPrefix = require('./model/CatalogQueryPrefix');
@@ -505,7 +511,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190710.0
+ * @version 2.20190724.0
  */
   module.exports = {
   /**
@@ -689,6 +695,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogItemModifierListInfo: CatalogItemModifierListInfo,
   /**
+   * The CatalogItemOption model constructor.
+   * @property {module:model/CatalogItemOption}
+   */
+  CatalogItemOption: CatalogItemOption,
+  /**
+   * The CatalogItemOptionForItem model constructor.
+   * @property {module:model/CatalogItemOptionForItem}
+   */
+  CatalogItemOptionForItem: CatalogItemOptionForItem,
+  /**
+   * The CatalogItemOptionValue model constructor.
+   * @property {module:model/CatalogItemOptionValue}
+   */
+  CatalogItemOptionValue: CatalogItemOptionValue,
+  /**
+   * The CatalogItemOptionValueForItemVariation model constructor.
+   * @property {module:model/CatalogItemOptionValueForItemVariation}
+   */
+  CatalogItemOptionValueForItemVariation: CatalogItemOptionValueForItemVariation,
+  /**
    * The CatalogItemProductType model constructor.
    * @property {module:model/CatalogItemProductType}
    */
@@ -763,6 +789,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogQueryExact}
    */
   CatalogQueryExact: CatalogQueryExact,
+  /**
+   * The CatalogQueryItemVariationsForItemOptionValues model constructor.
+   * @property {module:model/CatalogQueryItemVariationsForItemOptionValues}
+   */
+  CatalogQueryItemVariationsForItemOptionValues: CatalogQueryItemVariationsForItemOptionValues,
+  /**
+   * The CatalogQueryItemsForItemOptions model constructor.
+   * @property {module:model/CatalogQueryItemsForItemOptions}
+   */
+  CatalogQueryItemsForItemOptions: CatalogQueryItemsForItemOptions,
   /**
    * The CatalogQueryItemsForModifierList model constructor.
    * @property {module:model/CatalogQueryItemsForModifierList}

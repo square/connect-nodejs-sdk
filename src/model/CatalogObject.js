@@ -16,6 +16,8 @@ var CatalogCategory = require('./CatalogCategory');
 var CatalogDiscount = require('./CatalogDiscount');
 var CatalogImage = require('./CatalogImage');
 var CatalogItem = require('./CatalogItem');
+var CatalogItemOption = require('./CatalogItemOption');
+var CatalogItemOptionValue = require('./CatalogItemOptionValue');
 var CatalogItemVariation = require('./CatalogItemVariation');
 var CatalogMeasurementUnit = require('./CatalogMeasurementUnit');
 var CatalogModifier = require('./CatalogModifier');
@@ -47,6 +49,8 @@ var exports = function(type, id) {
 
   _this['type'] = type;
   _this['id'] = id;
+
+
 
 
 
@@ -145,6 +149,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('measurement_unit_data')) {
       obj['measurement_unit_data'] = CatalogMeasurementUnit.constructFromObject(data['measurement_unit_data']);
+    }
+      if (data.hasOwnProperty('item_option_data')) {
+      obj['item_option_data'] = CatalogItemOption.constructFromObject(data['item_option_data']);
+    }
+      if (data.hasOwnProperty('item_option_value_data')) {
+      obj['item_option_value_data'] = CatalogItemOptionValue.constructFromObject(data['item_option_value_data']);
     }
     }
   return obj;
@@ -260,6 +270,16 @@ exports.prototype['image_data'] = undefined;
  * @member {module:model/CatalogMeasurementUnit} measurement_unit_data
  */
 exports.prototype['measurement_unit_data'] = undefined;
+/**
+ * Structured data for a [CatalogItemOption](#type-catalogitemoption), set for CatalogObjects of type `ITEM_OPTION`.
+ * @member {module:model/CatalogItemOption} item_option_data
+ */
+exports.prototype['item_option_data'] = undefined;
+/**
+ * Structured data for a [CatalogItemOptionValue](#type-catalogitemoptionvalue), set for CatalogObjects of type `ITEM_OPTION_VAL`.
+ * @member {module:model/CatalogItemOptionValue} item_option_value_data
+ */
+exports.prototype['item_option_value_data'] = undefined;
 
 
 

@@ -25,4 +25,10 @@
 
 * `TIME_PERIOD` (value: `"TIME_PERIOD"`)
 
+* `MEASUREMENT_UNIT` (value: `"MEASUREMENT_UNIT"`)
+
+* `ITEM_OPTION` (value: `"ITEM_OPTION"`)
+
+* `ITEM_OPTION_VAL` (value: `"ITEM_OPTION_VAL"`)
+
 
