@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>SearchOrdersSourceFilter</code>.
- * Filter based on Order &#x60;source&#x60; information.
+ * Filter based on order &#x60;source&#x60; information.
  * @alias module:model/SearchOrdersSourceFilter
  * @class
  */
@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filters by [Source](#type-ordersource) `name`. Will return any orders with with `source.name`s that match any of the listed source names.  Max: 10 `source_names`.
+ * Filters by [Source](#type-ordersource) `name`. Will return any orders with with a `source.name` that matches any of the listed source names.  Max: 10 source names.
  * @member {Array.<String>} source_names
  */
 exports.prototype['source_names'] = undefined;

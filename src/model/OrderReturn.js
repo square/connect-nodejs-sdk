@@ -86,7 +86,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the return only within this order.  This field is read-only.
+ * Unique ID that identifies the return only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -101,17 +101,17 @@ exports.prototype['source_order_id'] = undefined;
  */
 exports.prototype['return_line_items'] = undefined;
 /**
- * Collection of service charges which are being returned.  This field is read-only.
+ * Collection of service charges which are being returned.
  * @member {Array.<module:model/OrderReturnServiceCharge>} return_service_charges
  */
 exports.prototype['return_service_charges'] = undefined;
 /**
- * Collection of taxes which are being returned.
+ * Collection of references to taxes being returned for an order, including the total applied tax amount to be returned. The taxes must reference a top-level tax ID from the source order.
  * @member {Array.<module:model/OrderReturnTax>} return_taxes
  */
 exports.prototype['return_taxes'] = undefined;
 /**
- * Collection of discounts which are being returned.
+ * Collection of references to discounts being returned for an order, including the total applied discount amount to be returned. The discounts must reference a top-level discount ID from the source order.
  * @member {Array.<module:model/OrderReturnDiscount>} return_discounts
  */
 exports.prototype['return_discounts'] = undefined;

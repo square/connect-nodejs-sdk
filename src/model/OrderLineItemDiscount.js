@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>OrderLineItemDiscount</code>.
- * Represents a discount that applies to one or more line items in an order.  Fixed-amount, order-level discounts are distributed across all non-zero line item totals. The amount distributed to each line item is relative to that item’s contribution to the order subtotal.
+ * Represents a discount that applies to one or more line items in an order.  Fixed-amount, order-scoped discounts are distributed across all non-zero line item totals. The amount distributed to each line item is relative to the amount contributed by the item to the order subtotal.
  * @alias module:model/OrderLineItemDiscount
  * @class
  */
@@ -81,7 +81,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the discount only within this order.  This field is read-only.
+ * Unique ID that identifies the discount only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -106,17 +106,17 @@ exports.prototype['type'] = undefined;
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The total monetary amount of the applicable discount. If it is at order level, it is the value of the order level discount. If it is at line item level, it is the value of the line item level discount.  The amount_money won't be set for a percentage-based discount.
+ * The total declared monetary amount of the discount.  `amount_money` is not set for percentage-based discounts.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * The amount of discount actually applied to this line item.  Represents the amount of money applied to a line item as a discount When an amount-based discount is at order-level, this value is different from `amount_money` because the discount is distributed across the line items.
+ * The amount of discount actually applied to the line item.  Represents the amount of money applied as a line item-scoped discount. When an amount-based discount is scoped to the entire order, the value of `applied_money` is different from `amount_money` because the total amount of the discount is distributed across all line items.
  * @member {module:model/Money} applied_money
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
+ * Indicates the level at which the discount applies. For `ORDER` scoped discounts, Square generates references in `applied_discounts` on all order line items that do not have them. For `LINE_ITEM` scoped discounts, the discount only applies to line items with a discount reference in their `applied_discounts` field.  This field is immutable. To change the scope of a discount you must delete the discount and re-add it as a new discount. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;

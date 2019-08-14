@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>Money</code>.
- * Represents an amount of money.  __Important:__ Unlike version 1 of the Connect API, __all monetary amounts returned by v2 endpoints are positive.__ (In v1, monetary amounts are negative if they represent money being paid _by_ a merchant, instead of money being paid _to_ a merchant.)
+ * Represents an amount of money. &#x60;Money&#x60; fields can be signed or unsigned.
  * @alias module:model/Money
  * @class
  */
@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.
+ * The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents. Monetary amounts can be positive or negative. See the specific API documentation to determine the meaning of the sign in a particular case.
  * @member {Number} amount
  */
 exports.prototype['amount'] = undefined;
 /**
- * The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`. See [Currency](#type-currency) for possible values
+ * The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values. See [Currency](#type-currency) for possible values
  * @member {String} currency
  */
 exports.prototype['currency'] = undefined;

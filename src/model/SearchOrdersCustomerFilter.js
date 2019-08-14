@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filter by orders with any of the listed `customer_id`s.  Max: 10 `customer_id`s.
+ * List of customer IDs to filter by.  Max: 10 customer IDs.
  * @member {Array.<String>} customer_ids
  */
 exports.prototype['customer_ids'] = undefined;

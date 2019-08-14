@@ -13,6 +13,8 @@
  */
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
+var OrderLineItemAppliedDiscount = require('./OrderLineItemAppliedDiscount');
+var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
 var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemModifier = require('./OrderLineItemModifier');
 var OrderLineItemTax = require('./OrderLineItemTax');
@@ -39,6 +41,8 @@ var exports = function(quantity) {
 
 
   _this['quantity'] = quantity;
+
+
 
 
 
@@ -95,6 +99,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('discounts')) {
       obj['discounts'] = ApiClient.convertToType(data['discounts'], [OrderLineItemDiscount]);
     }
+      if (data.hasOwnProperty('applied_taxes')) {
+      obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
+    }
+      if (data.hasOwnProperty('applied_discounts')) {
+      obj['applied_discounts'] = ApiClient.convertToType(data['applied_discounts'], [OrderLineItemAppliedDiscount]);
+    }
       if (data.hasOwnProperty('base_price_money')) {
       obj['base_price_money'] = Money.constructFromObject(data['base_price_money']);
     }
@@ -118,7 +128,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the line item only within this order.  This field is read-only.
+ * Unique ID that identifies the line item only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -158,15 +168,25 @@ exports.prototype['variation_name'] = undefined;
  */
 exports.prototype['modifiers'] = undefined;
 /**
- * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.
+ * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.  This field has been deprecated in favour of `applied_taxes`. Usage of both this field and `applied_taxes` when creating an order will result in an error. Usage of this field when sending requests to the UpdateOrder endpoint will result in an error.
  * @member {Array.<module:model/OrderLineItemTax>} taxes
  */
 exports.prototype['taxes'] = undefined;
 /**
- * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.
+ * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.  This field has been deprecated in favour of `applied_discounts`. Usage of both this field and `applied_discounts` when creating an order will result in an error. Usage of this field when sending requests to the UpdateOrder endpoint will result in an error.
  * @member {Array.<module:model/OrderLineItemDiscount>} discounts
  */
 exports.prototype['discounts'] = undefined;
+/**
+ * The list of references to taxes applied to this line item. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderLineItemTax` applied to the line item. On reads, the amount applied is populated.  An `OrderLineItemAppliedTax` will be automatically created on every line item for all `ORDER` scoped taxes added to the order. `OrderLineItemAppliedTax` records for `LINE_ITEM` scoped taxes must be added in requests for the tax to apply to any line items.  To change the amount of a tax, modify the referenced top-level tax.
+ * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes
+ */
+exports.prototype['applied_taxes'] = undefined;
+/**
+ * The list of references to discounts applied to this line item. Each `OrderLineItemAppliedDiscount` has a `discount_uid` that references the `uid` of a top-level `OrderLineItemDiscounts` applied to the line item. On reads, the amount applied is populated.  An `OrderLineItemAppliedDiscount` will be automatically created on every line item for all `ORDER` scoped discounts that are added to the order. `OrderLineItemAppliedDiscount` records for `LINE_ITEM` scoped discounts must be added in requests for the discount to apply to any line items.  To change the amount of a discount, modify the referenced top-level discount.
+ * @member {Array.<module:model/OrderLineItemAppliedDiscount>} applied_discounts
+ */
+exports.prototype['applied_discounts'] = undefined;
 /**
  * The base price for a single unit of the line item.
  * @member {module:model/Money} base_price_money
@@ -178,22 +198,22 @@ exports.prototype['base_price_money'] = undefined;
  */
 exports.prototype['variation_total_price_money'] = undefined;
 /**
- * The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.  This field is read-only.
+ * The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.
  * @member {module:model/Money} gross_sales_money
  */
 exports.prototype['gross_sales_money'] = undefined;
 /**
- * The total tax amount of money to collect for the line item.  This field is read-only.
+ * The total tax amount of money to collect for the line item.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to collect for the line item.  This field is read-only.
+ * The total discount amount of money to collect for the line item.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
 /**
- * The total amount of money to collect for this line item.  This field is read-only.
+ * The total amount of money to collect for this line item.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;

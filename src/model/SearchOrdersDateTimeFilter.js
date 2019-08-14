@@ -24,7 +24,7 @@ var TimeRange = require('./TimeRange');
 
 /**
  * Constructs a new <code>SearchOrdersDateTimeFilter</code>.
- * Filter for &#x60;Order&#x60; objects based on whether their &#x60;CREATED_AT&#x60;, &#x60;CLOSED_AT&#x60; or &#x60;UPDATED_AT&#x60; timestamps fall within a specified time range. You can specify the time range and which timestamp to filter for. You can filter for only one time range at a time.  For each time range, the start time and end time are inclusive. If the end time is absent, it defaults to the time of the first request for the cursor.  __Important:__ If you use the DateTimeFilter to filter for &#x60;CLOSED_AT&#x60; or &#x60;UPDATED_AT&#x60;, you must also set the [OrdersSort](#type-searchorderordersort). The TimeRange used in DateTimeFilter must correspond to the &#x60;sort_field&#x60; in the [OrdersSort](#type-searchorderordersort) object.
+ * Filter for &#x60;Order&#x60; objects based on whether their &#x60;CREATED_AT&#x60;, &#x60;CLOSED_AT&#x60; or &#x60;UPDATED_AT&#x60; timestamps fall within a specified time range. You can specify the time range and which timestamp to filter for. You can filter for only one time range at a time.  For each time range, the start time and end time are inclusive. If the end time is absent, it defaults to the time of the first request for the cursor.  __Important:__ If you use the DateTimeFilter in a SearchOrders query, you must also set the &#x60;sort_field&#x60; in [OrdersSort](#type-searchorderordersort) to the same field you filter for. For example, if you set the &#x60;CLOSED_AT&#x60; field in DateTimeFilter, you must also set the &#x60;sort_field&#x60; in SearchOrdersSort to &#x60;CLOSED_AT&#x60;. Otherwise, SearchOrders will throw an error. [Learn more about filtering orders by time range](/orders-api/manage-orders#important-note-on-filtering-orders-by-time-range).
  * @alias module:model/SearchOrdersDateTimeFilter
  * @class
  */
@@ -61,17 +61,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Time range for filtering on the `created_at` timestamp.
+ * Time range for filtering on the `created_at` timestamp. If you use this value, you must also set the `sort_field` in the OrdersSearchSort object to `CREATED_AT`.
  * @member {module:model/TimeRange} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Time range for filtering on the `updated_at` timestamp.
+ * Time range for filtering on the `updated_at` timestamp. If you use this value, you must also set the `sort_field` in the OrdersSearchSort object to `UPDATED_AT`.
  * @member {module:model/TimeRange} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * Time range for filtering on the `closed_at` timestamp.
+ * Time range for filtering on the `closed_at` timestamp. If you use this value, you must also set the `sort_field` in the OrdersSearchSort object to `CLOSED_AT`.
  * @member {module:model/TimeRange} closed_at
  */
 exports.prototype['closed_at'] = undefined;

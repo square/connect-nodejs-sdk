@@ -28,7 +28,7 @@ var SearchOrdersStateFilter = require('./SearchOrdersStateFilter');
 
 /**
  * Constructs a new <code>SearchOrdersFilter</code>.
- * Filter options to use for a query. Multiple filters will be ANDed together.
+ * Filtering criteria to use for a SearchOrders request. Multiple filters will be ANDed together.
  * @alias module:model/SearchOrdersFilter
  * @class
  */
@@ -78,7 +78,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['state_filter'] = undefined;
 /**
- * Filter for results within a time range.
+ * Filter for results within a time range.  __Important:__ If you filter for orders by time range, you must set SearchOrdersSort to sort by the same field. [Learn more about filtering orders by time range](/orders-api/manage-orders#important-note-on-filtering-orders-by-time-range)
  * @member {module:model/SearchOrdersDateTimeFilter} date_time_filter
  */
 exports.prototype['date_time_filter'] = undefined;

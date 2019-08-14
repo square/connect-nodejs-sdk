@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>OrderLineItemTax</code>.
- * Represents a tax that applies to one or more line items in an order.
+ * Represents a tax that applies to one or more line item in the order.  Fixed-amount, order-scoped taxes are distributed across all non-zero line item totals. The amount distributed to each line item is relative to the amount the item contributes to the order subtotal.
  * @alias module:model/OrderLineItemTax
  * @class
  */
@@ -77,7 +77,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the tax only within this order.  This field is read-only.
+ * Unique ID that identifies the tax only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -97,17 +97,17 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['type'] = undefined;
 /**
- * The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
+ * The percentage of the tax, as a string representation of a decimal number. For example, a value of `\"7.25\"` corresponds to a percentage of 7.25%.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The amount of the money applied by the tax in an order.
+ * The amount of the money applied by the tax in the order.
  * @member {module:model/Money} applied_money
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
+ * Indicates the level at which the tax applies. For `ORDER` scoped taxes, Square generates references in `applied_taxes` on all order line items that do not have them. For `LINE_ITEM` scoped taxes, the tax will only apply to line items with references in their `applied_taxes` field.  This field is immutable. To change the scope, you must delete the tax and re-add it as a new tax. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;

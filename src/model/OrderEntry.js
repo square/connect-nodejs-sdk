@@ -32,6 +32,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -48,6 +49,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('order_id')) {
       obj['order_id'] = ApiClient.convertToType(data['order_id'], 'String');
     }
+      if (data.hasOwnProperty('version')) {
+      obj['version'] = ApiClient.convertToType(data['version'], 'Number');
+    }
       if (data.hasOwnProperty('location_id')) {
       obj['location_id'] = ApiClient.convertToType(data['location_id'], 'String');
     }
@@ -60,6 +64,11 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} order_id
  */
 exports.prototype['order_id'] = undefined;
+/**
+ * Version number which is incremented each time an update is committed to the order. Orders that were not created through the API will not include a version and thus cannot be updated.  [Read more about working with versions](/orders-api/manage-orders#update-orders).
+ * @member {Number} version
+ */
+exports.prototype['version'] = undefined;
 /**
  * The location id the Order belongs to.
  * @member {String} location_id

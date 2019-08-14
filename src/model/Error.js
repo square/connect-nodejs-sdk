@@ -26,8 +26,8 @@ var ApiClient = require('../ApiClient');
  * Represents an error encountered during a request to the Connect API.
  * @alias module:model/Error
  * @class
- * @param category {String} The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
- * @param code {String} The error's specific code. See [ErrorCode](#type-errorcode) for possible values
+ * @param category {String} The high-level category for the error. See [ErrorCategory](#type-errorcategory) See [ErrorCategory](#type-errorcategory) for possible values
+ * @param code {String} The specific code of the error. See [ErrorCode](#type-errorcode) for possible See [ErrorCode](#type-errorcode) for possible values
  */
 var exports = function(category, code) {
   var _this = this;
@@ -66,12 +66,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
+ * The high-level category for the error. See [ErrorCategory](#type-errorcategory) See [ErrorCategory](#type-errorcategory) for possible values
  * @member {String} category
  */
 exports.prototype['category'] = undefined;
 /**
- * The error's specific code. See [ErrorCode](#type-errorcode) for possible values
+ * The specific code of the error. See [ErrorCode](#type-errorcode) for possible See [ErrorCode](#type-errorcode) for possible values
  * @member {String} code
  */
 exports.prototype['code'] = undefined;
@@ -81,7 +81,7 @@ exports.prototype['code'] = undefined;
  */
 exports.prototype['detail'] = undefined;
 /**
- * The name of the field provided in the original request that the error pertains to, if any.
+ * The name of the field provided in the original request (if any) that the error pertains to.
  * @member {String} field
  */
 exports.prototype['field'] = undefined;

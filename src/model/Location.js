@@ -55,6 +55,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -133,6 +135,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('coordinates')) {
       obj['coordinates'] = Coordinates.constructFromObject(data['coordinates']);
+    }
+      if (data.hasOwnProperty('logo_url')) {
+      obj['logo_url'] = ApiClient.convertToType(data['logo_url'], 'String');
+    }
+      if (data.hasOwnProperty('pos_background_url')) {
+      obj['pos_background_url'] = ApiClient.convertToType(data['pos_background_url'], 'String');
     }
     }
   return obj;
@@ -248,6 +256,16 @@ exports.prototype['facebook_url'] = undefined;
  * @member {module:model/Coordinates} coordinates
  */
 exports.prototype['coordinates'] = undefined;
+/**
+ * The logo image URL of the location.
+ * @member {String} logo_url
+ */
+exports.prototype['logo_url'] = undefined;
+/**
+ * The Point of Sale background image URL of the location.
+ * @member {String} pos_background_url
+ */
+exports.prototype['pos_background_url'] = undefined;
 
 
 

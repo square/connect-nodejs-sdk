@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CaptureTransactionResponse</code>.
- * Defines the fields that are included in the response body of a request to the CaptureTransaction endpoint.
+ * Defines the fields that are included in the response body of a request to the [CaptureTransaction](#endpoint-capturetransaction) endpoint.
  * @alias module:model/CaptureTransactionResponse
  * @class
  */
