@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>OrderReturnDiscount</code>.
- * The line item discount being returned.
+ * Represents a discount being returned that applies to one or more return line items in an order.  Fixed-amount, order-scoped discounts are distributed across all non-zero return line item totals. The amount distributed to each return line item is relative to that item’s contribution to the order subtotal.
  * @alias module:model/OrderReturnDiscount
  * @class
  */
@@ -85,7 +85,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the return discount only within this order.  This field is read-only.
+ * Unique ID that identifies the return discount only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -115,7 +115,7 @@ exports.prototype['type'] = undefined;
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The total monetary amount of the applicable discount. If it is at order level, it is the value of the order level discount. If it is at line item level, it is the value of the line item level discount.  The amount_money won't be set for a percentage-based discount.
+ * The total declared monetary amount of the discount. The amount_money won't be set for a percentage-based discount.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
@@ -125,7 +125,7 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
+ * Indicates the level at which the `OrderReturnDiscount` applies. For `ORDER` scoped discounts, the server will generate references in `applied_discounts` on all `OrderReturnLineItem`s. For `LINE_ITEM` scoped discounts, the discount will only apply to `OrderReturnLineItem`s with references in their `applied_discounts` field. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;

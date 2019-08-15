@@ -23,10 +23,10 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>SearchOrdersSort</code>.
- * Sorting options for a query. Returned Orders will always be sorted on a timestamp.
+ * Sorting criteria for a SearchOrders request. Results can only be sorted by a timestamp field.
  * @alias module:model/SearchOrdersSort
  * @class
- * @param sortField {String} The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the set time range field. If this field does not match the time range field in `DateTimeFilter`, SearchOrder will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
+ * @param sortField {String} The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the timestamp field that the DateTimeFilter uses to filter. For example, If you set your `sort_field` to `CLOSED_AT` and you use a DateTimeFilter, your DateTimeFilter must filter for orders by their `CLOSED_AT` date. If this field does not match the timestamp field in `DateTimeFilter`, SearchOrders will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
  */
 var exports = function(sortField) {
   var _this = this;
@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the set time range field. If this field does not match the time range field in `DateTimeFilter`, SearchOrder will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
+ * The field to sort by.  __Important:__ When using a [DateTimeFilter](#type-searchordersfilter), `sort_field` must match the timestamp field that the DateTimeFilter uses to filter. For example, If you set your `sort_field` to `CLOSED_AT` and you use a DateTimeFilter, your DateTimeFilter must filter for orders by their `CLOSED_AT` date. If this field does not match the timestamp field in `DateTimeFilter`, SearchOrders will return an error.  Default: `CREATED_AT`. See [SearchOrdersSortField](#type-searchorderssortfield) for possible values
  * @member {String} sort_field
  */
 exports.prototype['sort_field'] = undefined;
 /**
- * The order in which results are returned. Defaults to `DESC`. See [SortOrder](#type-sortorder) for possible values
+ * The chronological order in which results are returned. Defaults to `DESC`. See [SortOrder](#type-sortorder) for possible values
  * @member {String} sort_order
  */
 exports.prototype['sort_order'] = undefined;

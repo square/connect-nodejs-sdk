@@ -113,17 +113,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The recipient of this pickup fulfillment.
+ * Information on the person meant to pick up this fulfillment from a physical location.
  * @member {module:model/OrderFulfillmentRecipient} recipient
  */
 exports.prototype['recipient'] = undefined;
 /**
- * The expiry [timestamp](#workingwithdates) in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\". This timestamp indicates when the pickup fulfillment will expire if it is not accepted by the merchant. Expiration time can only be set up to 7 days in the future. If not set, this pickup fulfillment will be automatically accepted when placed.
+ * The [timestamp](#workingwithdates) indicating when this fulfillment will expire if it is not accepted. Must be in RFC 3339 format e.g., \"2016-09-04T23:59:33.123Z\". Expiration time can only be set up to 7 days in the future. If `expires_at` is not set, this pickup fulfillment will be automatically accepted when placed.
  * @member {String} expires_at
  */
 exports.prototype['expires_at'] = undefined;
 /**
- * The auto completion duration in RFC3339 duration format, e.g., \"P1W3D\". If set, an open and accepted pickup fulfillment will automatically move to the `COMPLETED` state after this period of time. If not set, this pickup fulfillment will remain accepted until it is canceled or completed.
+ * The duration of time after which an open and accepted pickup fulfillment will automatically move to the `COMPLETED` state. Must be in RFC3339 duration format e.g., \"P1W3D\".  If not set, this pickup fulfillment will remain accepted until it is canceled or completed.
  * @member {String} auto_complete_duration
  */
 exports.prototype['auto_complete_duration'] = undefined;
@@ -133,62 +133,62 @@ exports.prototype['auto_complete_duration'] = undefined;
  */
 exports.prototype['schedule_type'] = undefined;
 /**
- * The pickup [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\". For fulfillments with the schedule type `ASAP`, this is automatically set to the current time plus the expected duration to prepare the fulfillment. This represents the start of the pickup window.
+ * The [timestamp](#workingwithdates) that represents the start of the pickup window. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\". For fulfillments with the schedule type `ASAP`, this is automatically set to the current time plus the expected duration to prepare the fulfillment.
  * @member {String} pickup_at
  */
 exports.prototype['pickup_at'] = undefined;
 /**
- * The pickup window duration in RFC3339 duration format, e.g., \"P1W3D\". This duration represents the window of time for which the order should be picked up after the `pickup_at` time. Can be used as an informational guideline for merchants.
+ * The window of time in which the order should be picked up after the `pickup_at` timestamp. Must be in RFC3339 duration format, e.g., \"P1W3D\". Can be used as an informational guideline for merchants.
  * @member {String} pickup_window_duration
  */
 exports.prototype['pickup_window_duration'] = undefined;
 /**
- * The preparation time duration in RFC3339 duration format, e.g., \"P1W3D\". This duration indicates how long it takes the merchant to prepare this fulfillment.
+ * The duration of time it takes to prepare this fulfillment. Must be in RFC3339 duration format, e.g., \"P1W3D\".
  * @member {String} prep_time_duration
  */
 exports.prototype['prep_time_duration'] = undefined;
 /**
- * A general note about the pickup fulfillment.  Notes are useful for providing additional instructions and are displayed in Square apps.
+ * A note meant to provide additional instructions about the pickup fulfillment displayed in the Square Point of Sale and set by the API.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was placed.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment was placed. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} placed_at
  */
 exports.prototype['placed_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was accepted by the merchant.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment was accepted. In RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} accepted_at
  */
 exports.prototype['accepted_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was rejected.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment was rejected. In RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} rejected_at
  */
 exports.prototype['rejected_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the merchant set the fulfillment as ready for pickup.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment is marked as ready for pickup. In RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} ready_at
  */
 exports.prototype['ready_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment expired.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment expired. In RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} expired_at
  */
 exports.prototype['expired_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was picked up by the recipient.
+ * The [timestamp](#workingwithdates) indicating when the fulfillment was picked up by the recipient. In RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} picked_up_at
  */
 exports.prototype['picked_up_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was canceled by the merchant or buyer.
+ * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the fulfillment was canceled.
  * @member {String} canceled_at
  */
 exports.prototype['canceled_at'] = undefined;
 /**
- * A description of why the pickup was canceled. Max length is 100 characters.
+ * A description of why the pickup was canceled. Max length: 100 characters.
  * @member {String} cancel_reason
  */
 exports.prototype['cancel_reason'] = undefined;

@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>OrderReturnTax</code>.
- * The line item tax being returned.
+ * Represents a tax being returned that applies to one or more return line items in an order.  Fixed-amount, order-scoped taxes are distributed across all non-zero return line item totals. The amount distributed to each return line item is relative to that item’s contribution to the order subtotal.
  * @alias module:model/OrderReturnTax
  * @class
  */
@@ -81,7 +81,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the return tax only within this order.  This field is read-only.
+ * Unique ID that identifies the return tax only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -106,7 +106,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['type'] = undefined;
 /**
- * The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
+ * The percentage of the tax, as a string representation of a decimal number. For example, a value of `\"7.25\"` corresponds to a percentage of 7.25%.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;
@@ -116,7 +116,7 @@ exports.prototype['percentage'] = undefined;
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
+ * Indicates the level at which the `OrderReturnTax` applies. For `ORDER` scoped taxes, Square generates references in `applied_taxes` on all `OrderReturnLineItem`s. For `LINE_ITEM` scoped taxes, the tax will only apply to `OrderReturnLineItem`s with references in their `applied_discounts` field. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;

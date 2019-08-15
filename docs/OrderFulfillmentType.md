@@ -5,4 +5,6 @@
 
 * `PICKUP` (value: `"PICKUP"`)
 
+* `SHIPMENT` (value: `"SHIPMENT"`)
+
 

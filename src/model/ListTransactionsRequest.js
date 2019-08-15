@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListTransactionsRequest</code>.
- * Defines the query parameters that can be included in a request to the ListTransactions endpoint.
+ * Defines the query parameters that can be included in a request to the [ListTransactions](#endpoint-listtransactions) endpoint.  Deprecated - recommend using [SearchOrders](#endpoint-orders-searchorders)
  * @alias module:model/ListTransactionsRequest
  * @class
  */

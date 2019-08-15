@@ -40,6 +40,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CaptureTransaction
    * Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.
    * @param {String} locationId 
@@ -47,6 +48,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CaptureTransactionResponse} and HTTP response
    */
   this.captureTransactionWithHttpInfo = function(locationId, transactionId) {
+    console.warn("Calling deprecated API: TransactionsApi.captureTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -68,7 +70,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -101,13 +103,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * Charge
-   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
+   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Deprecated - recommend using [CreatePayment](#endpoint-payments-createpayment)  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
    * @param {String} locationId The ID of the location to associate the created transaction with.
    * @param {module:model/ChargeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ChargeResponse} and HTTP response
    */
   this.chargeWithHttpInfo = function(locationId, body) {
+    console.warn("Calling deprecated API: TransactionsApi.charge");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -128,7 +132,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -147,7 +151,7 @@ module.exports = function(apiClient) {
 
   /**
    * Charge
-   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
+   * Charges a card represented by a card nonce or a customer&#39;s card on file.  Deprecated - recommend using [CreatePayment](#endpoint-payments-createpayment)  Your request to this endpoint must include _either_:  - A value for the &#x60;card_nonce&#x60; parameter (to charge a card nonce generated with the &#x60;SqPaymentForm&#x60;) - Values for the &#x60;customer_card_id&#x60; and &#x60;customer_id&#x60; parameters (to charge a customer&#39;s card on file)  When this response is returned, the amount of Square&#39;s processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the &#x60;processing_fee_money&#x60; field of each [Tender included](#type-tender) in the transaction.
    * @param {String} locationId The ID of the location to associate the created transaction with.
    * @param {module:model/ChargeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ChargeResponse}
@@ -161,14 +165,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateRefund
-   * Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  NOTE: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
+   * Initiates a refund for a previously charged tender.  Deprecated - recommend using [RefundPayment](#endpoint-refunds-refundpayment)  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  NOTE: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
    * @param {String} locationId The ID of the original transaction&#39;s associated location.
    * @param {String} transactionId The ID of the original transaction that includes the tender to refund.
    * @param {module:model/CreateRefundRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateRefundResponse} and HTTP response
    */
   this.createRefundWithHttpInfo = function(locationId, transactionId, body) {
+    console.warn("Calling deprecated API: TransactionsApi.createRefund");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -195,7 +201,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -214,7 +220,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateRefund
-   * Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  NOTE: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
+   * Initiates a refund for a previously charged tender.  Deprecated - recommend using [RefundPayment](#endpoint-refunds-refundpayment)  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  NOTE: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
    * @param {String} locationId The ID of the original transaction&#39;s associated location.
    * @param {String} transactionId The ID of the original transaction that includes the tender to refund.
    * @param {module:model/CreateRefundRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -229,8 +235,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListRefunds
-   * Lists refunds for one of a business&#39;s locations.  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
+   * Lists refunds for one of a business&#39;s locations.  Deprecated - recommend using [SearchOrders](#endpoint-orders-searchorders)  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -240,6 +247,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListRefundsResponse} and HTTP response
    */
   this.listRefundsWithHttpInfo = function(locationId, opts) {
+    console.warn("Calling deprecated API: TransactionsApi.listRefunds");
     opts = opts || {};
     var postBody = null;
 
@@ -260,7 +268,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -279,7 +287,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListRefunds
-   * Lists refunds for one of a business&#39;s locations.  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
+   * Lists refunds for one of a business&#39;s locations.  Deprecated - recommend using [SearchOrders](#endpoint-orders-searchorders)  In addition to full or partial tender refunds processed through Square APIs, refunds may result from itemized returns or exchanges through Square&#39;s Point of Sale applications.  Refunds with a &#x60;status&#x60; of &#x60;PENDING&#x60; are not currently included in this endpoint&#39;s response.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list refunds for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -297,8 +305,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListTransactions
-   * Lists transactions for a particular location.  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
+   * Lists transactions for a particular location.  Deprecated - recommend using [SearchOrders](#endpoint-orders-searchorders)  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list transactions for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -308,6 +317,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTransactionsResponse} and HTTP response
    */
   this.listTransactionsWithHttpInfo = function(locationId, opts) {
+    console.warn("Calling deprecated API: TransactionsApi.listTransactions");
     opts = opts || {};
     var postBody = null;
 
@@ -328,7 +338,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -347,7 +357,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTransactions
-   * Lists transactions for a particular location.  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
+   * Lists transactions for a particular location.  Deprecated - recommend using [SearchOrders](#endpoint-orders-searchorders)  Transactions include payment information from sales and exchanges and refund information from returns and exchanges.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list transactions for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
@@ -365,13 +375,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RetrieveTransaction
-   * Retrieves details for a single transaction.
+   * Retrieves details for a single transaction.  Deprecated - recommend using [BatchRetrieveOrders](#endpoint-batchretrieveorders)
    * @param {String} locationId The ID of the transaction&#39;s associated location.
    * @param {String} transactionId The ID of the transaction to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveTransactionResponse} and HTTP response
    */
   this.retrieveTransactionWithHttpInfo = function(locationId, transactionId) {
+    console.warn("Calling deprecated API: TransactionsApi.retrieveTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -393,7 +405,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -412,7 +424,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveTransaction
-   * Retrieves details for a single transaction.
+   * Retrieves details for a single transaction.  Deprecated - recommend using [BatchRetrieveOrders](#endpoint-batchretrieveorders)
    * @param {String} locationId The ID of the transaction&#39;s associated location.
    * @param {String} transactionId The ID of the transaction to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveTransactionResponse}
@@ -426,6 +438,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * VoidTransaction
    * Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a &#x60;delay_capture&#x60; value of &#x60;true&#x60;.  See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.
    * @param {String} locationId 
@@ -433,6 +446,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoidTransactionResponse} and HTTP response
    */
   this.voidTransactionWithHttpInfo = function(locationId, transactionId) {
+    console.warn("Calling deprecated API: TransactionsApi.voidTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -454,7 +468,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };

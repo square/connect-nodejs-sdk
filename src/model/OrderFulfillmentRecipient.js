@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var Address = require('./Address');
 
 
 
@@ -23,12 +24,13 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>OrderFulfillmentRecipient</code>.
- * The recipient of a fulfillment.
+ * Contains information on the recipient of a fulfillment.
  * @alias module:model/OrderFulfillmentRecipient
  * @class
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -59,30 +61,38 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('phone_number')) {
       obj['phone_number'] = ApiClient.convertToType(data['phone_number'], 'String');
     }
+      if (data.hasOwnProperty('address')) {
+      obj['address'] = Address.constructFromObject(data['address']);
+    }
     }
   return obj;
 }
 
 /**
- * The Customer ID of the customer associated with the fulfillment.  If customer_id is provided, the corresponding recipient information fields (`display_name`, `email_address`, and `phone_number`) are automatically populated from the relevant customer profile. If the targeted profile information does not contain the necessary required information, the request will result in an error.
+ * The Customer ID of the customer associated with the fulfillment.  If `customer_id` is provided, the fulfillment recipient's `display_name`, `email_address`, and `phone_number` are automatically populated from the targeted customer profile. If these fields are set in the request, the request values will override the information from the customer profile. If the targeted customer profile does not contain the necessary information and these fields are left unset, the request will result in an error.
  * @member {String} customer_id
  */
 exports.prototype['customer_id'] = undefined;
 /**
- * The display name of the fulfillment recipient.  If provided, overrides the value from customer profile indicated by customer_id.
+ * The display name of the fulfillment recipient.  If provided, overrides the value pulled from the customer profile indicated by `customer_id`.
  * @member {String} display_name
  */
 exports.prototype['display_name'] = undefined;
 /**
- * The email address of the fulfillment recipient.  If provided, overrides the value from customer profile indicated by customer_id.
+ * The email address of the fulfillment recipient.  If provided, overrides the value pulled from the customer profile indicated by `customer_id`.
  * @member {String} email_address
  */
 exports.prototype['email_address'] = undefined;
 /**
- * The phone number of the fulfillment recipient.  If provided, overrides the value from customer profile indicated by customer_id.
+ * The phone number of the fulfillment recipient.  If provided, overrides the value pulled from the customer profile indicated by `customer_id`.
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
+/**
+ * The address of the fulfillment recipient.  If provided, overrides the value pulled from the customer profile indicated by `customer_id`.
+ * @member {module:model/Address} address
+ */
+exports.prototype['address'] = undefined;
 
 
 

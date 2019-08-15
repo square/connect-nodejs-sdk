@@ -37,7 +37,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -63,20 +62,17 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('errors')) {
       obj['errors'] = ApiClient.convertToType(data['errors'], [Error]);
     }
-      if (data.hasOwnProperty('unconvertible_transaction_ids')) {
-      obj['unconvertible_transaction_ids'] = ApiClient.convertToType(data['unconvertible_transaction_ids'], ['String']);
-    }
     }
   return obj;
 }
 
 /**
- * List of [OrderEntries](#type-orderentry) that fit the query conditions.  Populated only if `order_entries` was set to `true` in the request.
+ * List of [OrderEntries](#type-orderentry) that fit the query conditions. Populated only if `return_entries` was set to `true` in the request.
  * @member {Array.<module:model/OrderEntry>} order_entries
  */
 exports.prototype['order_entries'] = undefined;
 /**
- * List of [Orders](#type-order) that match query conditions. Populated only if `return_entries` in the request is set to `false`.
+ * List of [Order](#type-order) objects that match query conditions. Populated only if `return_entries` in the request is set to `false`.
  * @member {Array.<module:model/Order>} orders
  */
 exports.prototype['orders'] = undefined;
@@ -90,11 +86,6 @@ exports.prototype['cursor'] = undefined;
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
-/**
- * List of transaction IDs identifying transactions that could not be converted to an `Order`. Empty if `return_entries` is true, however, attempts to retrieve those orders may encounter subsequent `unconvertible_transcation_ids` Note that this field will not be present after SearchOrders moves from BETA to GA.
- * @member {Array.<String>} unconvertible_transaction_ids
- */
-exports.prototype['unconvertible_transaction_ids'] = undefined;
 
 
 

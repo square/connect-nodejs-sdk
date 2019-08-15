@@ -13,6 +13,8 @@
  */
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
+var OrderLineItemAppliedDiscount = require('./OrderLineItemAppliedDiscount');
+var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
 var OrderQuantityUnit = require('./OrderQuantityUnit');
 var OrderReturnDiscount = require('./OrderReturnDiscount');
 var OrderReturnLineItemModifier = require('./OrderReturnLineItemModifier');
@@ -40,6 +42,8 @@ var exports = function(quantity) {
 
 
   _this['quantity'] = quantity;
+
+
 
 
 
@@ -99,6 +103,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('return_discounts')) {
       obj['return_discounts'] = ApiClient.convertToType(data['return_discounts'], [OrderReturnDiscount]);
     }
+      if (data.hasOwnProperty('applied_taxes')) {
+      obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
+    }
+      if (data.hasOwnProperty('applied_discounts')) {
+      obj['applied_discounts'] = ApiClient.convertToType(data['applied_discounts'], [OrderLineItemAppliedDiscount]);
+    }
       if (data.hasOwnProperty('base_price_money')) {
       obj['base_price_money'] = Money.constructFromObject(data['base_price_money']);
     }
@@ -122,7 +132,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique identifier for this return line item entry. This is a read-only field.
+ * Unique identifier for this return line item entry.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
@@ -167,15 +177,25 @@ exports.prototype['variation_name'] = undefined;
  */
 exports.prototype['return_modifiers'] = undefined;
 /**
- * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.
+ * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of `applied_taxes`.
  * @member {Array.<module:model/OrderReturnTax>} return_taxes
  */
 exports.prototype['return_taxes'] = undefined;
 /**
- * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any return-level discounts apportioned to this item.
+ * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any return-level discounts apportioned to this item.  This field has been deprecated in favour of `applied_discounts`.
  * @member {Array.<module:model/OrderReturnDiscount>} return_discounts
  */
 exports.prototype['return_discounts'] = undefined;
+/**
+ * The list of references to `OrderReturnTax` entities applied to the returned line item. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderReturnTax` applied to the returned line item. On reads, the amount applied is populated.
+ * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes
+ */
+exports.prototype['applied_taxes'] = undefined;
+/**
+ * The list of references to `OrderReturnDiscount` entities applied to the returned line item. Each `OrderLineItemAppliedDiscount` has a `discount_uid` that references the `uid` of a top-level `OrderReturnDiscount` applied to the returned line item. On reads, the amount applied is populated.
+ * @member {Array.<module:model/OrderLineItemAppliedDiscount>} applied_discounts
+ */
+exports.prototype['applied_discounts'] = undefined;
 /**
  * The base price for a single unit of the line item.
  * @member {module:model/Money} base_price_money
@@ -187,22 +207,22 @@ exports.prototype['base_price_money'] = undefined;
  */
 exports.prototype['variation_total_price_money'] = undefined;
 /**
- * The gross return amount of money calculated as (item base price + modifiers price) * quantity.  This field is read-only.
+ * The gross return amount of money calculated as (item base price + modifiers price) * quantity.
  * @member {module:model/Money} gross_return_money
  */
 exports.prototype['gross_return_money'] = undefined;
 /**
- * The total tax amount of money to return for the line item.  This field is read-only.
+ * The total tax amount of money to return for the line item.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to return for the line item.  This field is read-only.
+ * The total discount amount of money to return for the line item.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
 /**
- * The total amount of money to return for this line item.  This field is read-only.
+ * The total amount of money to return for this line item.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;

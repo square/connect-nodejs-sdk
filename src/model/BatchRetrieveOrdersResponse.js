@@ -34,7 +34,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -54,9 +53,6 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('errors')) {
       obj['errors'] = ApiClient.convertToType(data['errors'], [Error]);
     }
-      if (data.hasOwnProperty('unconvertible_transaction_ids')) {
-      obj['unconvertible_transaction_ids'] = ApiClient.convertToType(data['unconvertible_transaction_ids'], ['String']);
-    }
     }
   return obj;
 }
@@ -71,11 +67,6 @@ exports.prototype['orders'] = undefined;
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
-/**
- * List of transaction ids within the requested set of ids that encountered transformation issues when being converted to an Order.
- * @member {Array.<String>} unconvertible_transaction_ids
- */
-exports.prototype['unconvertible_transaction_ids'] = undefined;
 
 
 

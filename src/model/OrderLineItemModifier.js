@@ -69,7 +69,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID that identifies the modifier only within this order.  This field is read-only.
+ * Unique ID that identifies the modifier only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;

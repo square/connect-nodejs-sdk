@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var OrderFulfillmentPickupDetails = require('./OrderFulfillmentPickupDetails');
+var OrderFulfillmentShipmentDetails = require('./OrderFulfillmentShipmentDetails');
 
 
 
@@ -34,6 +35,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -47,6 +50,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('uid')) {
+      obj['uid'] = ApiClient.convertToType(data['uid'], 'String');
+    }
       if (data.hasOwnProperty('type')) {
       obj['type'] = ApiClient.convertToType(data['type'], 'String');
     }
@@ -56,10 +62,18 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('pickup_details')) {
       obj['pickup_details'] = OrderFulfillmentPickupDetails.constructFromObject(data['pickup_details']);
     }
+      if (data.hasOwnProperty('shipment_details')) {
+      obj['shipment_details'] = OrderFulfillmentShipmentDetails.constructFromObject(data['shipment_details']);
+    }
     }
   return obj;
 }
 
+/**
+ * Unique ID that identifies the fulfillment only within this order.
+ * @member {String} uid
+ */
+exports.prototype['uid'] = undefined;
 /**
  * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
  * @member {String} type
@@ -71,10 +85,15 @@ exports.prototype['type'] = undefined;
  */
 exports.prototype['state'] = undefined;
 /**
- * Contains pickup-specific details. Required when fulfillment type is `PICKUP`.
+ * Contains details for a pickup fulfillment. Required when fulfillment type is `PICKUP`.
  * @member {module:model/OrderFulfillmentPickupDetails} pickup_details
  */
 exports.prototype['pickup_details'] = undefined;
+/**
+ * Contains details for a shipment fulfillment. Required when fulfillment type is `SHIPMENT`.  A shipment fulfillment's relationship to fulfillment `state`: `PROPOSED`: A shipment is requested. `RESERVED`: Fulfillment accepted. Shipment processing. `PREPARED`: Shipment packaged. Shipping label created. `COMPLETED`: Package has been shipped. `CANCELED`: Shipment has been canceled. `FAILED`: Shipment has failed.
+ * @member {module:model/OrderFulfillmentShipmentDetails} shipment_details
+ */
+exports.prototype['shipment_details'] = undefined;
 
 
 

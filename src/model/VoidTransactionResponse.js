@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>VoidTransactionResponse</code>.
- * Defines the fields that are included in the response body of a request to the VoidTransaction endpoint.
+ * Defines the fields that are included in the response body of a request to the [VoidTransaction](#endpoint-voidtransaction) endpoint.
  * @alias module:model/VoidTransactionResponse
  * @class
  */

@@ -13,5 +13,7 @@ Name | Type | Description | Notes
 **volume_unit** | **String** | Represents a standard volume unit. See [MeasurementUnitVolume](#type-measurementunitvolume) for possible values | [optional] 
 **weight_unit** | **String** | Represents a standard unit of weight or mass. See [MeasurementUnitWeight](#type-measurementunitweight) for possible values | [optional] 
 **generic_unit** | **String** | Reserved for API integrations that lack the ability to specify a real measurement unit See [MeasurementUnitGeneric](#type-measurementunitgeneric) for possible values | [optional] 
+**time_unit** | **String** | Represents a standard unit of time. See [MeasurementUnitTime](#type-measurementunittime) for possible values | [optional] 
+**type** | **String** | Represents the type of the measurement unit. See [MeasurementUnitUnitType](#type-measurementunitunittype) for possible values | [optional] 
 
 

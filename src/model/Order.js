@@ -67,6 +67,7 @@ var exports = function(locationId) {
 
 
 
+
 };
 
 /**
@@ -140,6 +141,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('state')) {
       obj['state'] = ApiClient.convertToType(data['state'], 'String');
     }
+      if (data.hasOwnProperty('version')) {
+      obj['version'] = ApiClient.convertToType(data['version'], 'Number');
+    }
       if (data.hasOwnProperty('total_money')) {
       obj['total_money'] = Money.constructFromObject(data['total_money']);
     }
@@ -157,7 +161,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The order's unique ID.  This field is read-only.
+ * The order's unique ID.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
@@ -187,12 +191,12 @@ exports.prototype['customer_id'] = undefined;
  */
 exports.prototype['line_items'] = undefined;
 /**
- * A list of taxes applied to this order. On read or retrieve, this list includes both order-level and item-level taxes. When creating an Order, set your order-level taxes in this list.
+ * The list of all taxes associated with the order.  Taxes can be scoped to either `ORDER` or `LINE_ITEM`. For taxes with `LINE_ITEM` scope, an `OrderLineItemAppliedTax` must be added to each line item that the tax applies to. For taxes with `ORDER` scope, the server will generate an `OrderLineItemAppliedTax` for every line item.  On reads, each tax in the list will include the total amount of that tax applied to the order.  __IMPORTANT__: If `LINE_ITEM` scope is set on any taxes in this field, usage of the deprecated `line_items.taxes` field will result in an error. Please use `line_items.applied_taxes` instead.
  * @member {Array.<module:model/OrderLineItemTax>} taxes
  */
 exports.prototype['taxes'] = undefined;
 /**
- * A list of discounts applied to this order. On read or retrieve, this list includes both order-level and item-level discounts. When creating an Order, set your order-level discounts in this list.
+ * The list of all discounts associated with the order.  Discounts can be scoped to either `ORDER` or `LINE_ITEM`. For discounts scoped to `LINE_ITEM`, an `OrderLineItemAppliedDiscount` must be added to each line item that the discount applies to. For discounts with `ORDER` scope, the server will generate an `OrderLineItemAppliedDiscount` for every line item.  __IMPORTANT__: If `LINE_ITEM` scope is set on any discounts in this field, usage of the deprecated `line_items.discounts` field will result in an error. Please use `line_items.applied_discounts` instead.
  * @member {Array.<module:model/OrderLineItemDiscount>} discounts
  */
 exports.prototype['discounts'] = undefined;
@@ -207,47 +211,47 @@ exports.prototype['service_charges'] = undefined;
  */
 exports.prototype['fulfillments'] = undefined;
 /**
- * Collection of items from sale Orders being returned in this one. Normally part of an Itemized Return or Exchange.  There will be exactly one `Return` object per sale Order being referenced.  This field is read-only.
+ * Collection of items from sale Orders being returned in this one. Normally part of an Itemized Return or Exchange.  There will be exactly one `Return` object per sale Order being referenced.
  * @member {Array.<module:model/OrderReturn>} returns
  */
 exports.prototype['returns'] = undefined;
 /**
- * Rollup of returned money amounts.  This field is read-only.
+ * Rollup of returned money amounts.
  * @member {module:model/OrderMoneyAmounts} return_amounts
  */
 exports.prototype['return_amounts'] = undefined;
 /**
- * Net money amounts (sale money - return money).  This field is read-only.
+ * Net money amounts (sale money - return money).
  * @member {module:model/OrderMoneyAmounts} net_amounts
  */
 exports.prototype['net_amounts'] = undefined;
 /**
- * A positive or negative rounding adjustment to the total of the order, commonly used to apply Cash Rounding when the minimum unit of account is smaller than the lowest physical denomination of currency.  This field is read-only.
+ * A positive or negative rounding adjustment to the total of the order, commonly used to apply Cash Rounding when the minimum unit of account is smaller than the lowest physical denomination of currency.
  * @member {module:model/OrderRoundingAdjustment} rounding_adjustment
  */
 exports.prototype['rounding_adjustment'] = undefined;
 /**
- * The Tenders which were used to pay for the Order. This field is read-only.
+ * The Tenders which were used to pay for the Order.
  * @member {Array.<module:model/Tender>} tenders
  */
 exports.prototype['tenders'] = undefined;
 /**
- * The Refunds that are part of this Order. This field is read-only.
+ * The Refunds that are part of this Order.
  * @member {Array.<module:model/Refund>} refunds
  */
 exports.prototype['refunds'] = undefined;
 /**
- * Timestamp for when the order was created. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
+ * Timestamp for when the order was created. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Timestamp for when the order was last updated. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
+ * Timestamp for when the order was last updated. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * Timestamp for when the order was closed. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".  This field is read-only.
+ * Timestamp for when the order was closed. In RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} closed_at
  */
 exports.prototype['closed_at'] = undefined;
@@ -257,22 +261,27 @@ exports.prototype['closed_at'] = undefined;
  */
 exports.prototype['state'] = undefined;
 /**
- * The total amount of money to collect for the order.  This field is read-only.
+ * Version number which is incremented each time an update is committed to the order. Orders that were not created through the API will not include a version and thus cannot be updated.  [Read more about working with versions](/orders-api/manage-orders#update-orders).
+ * @member {Number} version
+ */
+exports.prototype['version'] = undefined;
+/**
+ * The total amount of money to collect for the order.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The total tax amount of money to collect for the order.  This field is read-only.
+ * The total tax amount of money to collect for the order.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The total discount amount of money to collect for the order.  This field is read-only.
+ * The total discount amount of money to collect for the order.
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
 /**
- * The total amount of money collected in service charges for the order.  Note: `total_service_charge_money` is the sum of `applied_money` fields for each individual service charge. Therefore, `total_service_charge_money` will only include inclusive tax amounts, not additive tax amounts.  This field is read-only.
+ * The total amount of money collected in service charges for the order.  Note: `total_service_charge_money` is the sum of `applied_money` fields for each individual service charge. Therefore, `total_service_charge_money` will only include inclusive tax amounts, not additive tax amounts.
  * @member {module:model/Money} total_service_charge_money
  */
 exports.prototype['total_service_charge_money'] = undefined;

@@ -7,7 +7,7 @@ A line item modifier being returned.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uid** | **String** | Unique ID that identifies the return modifier only within this order.  This field is read-only. | [optional] 
+**uid** | **String** | Unique ID that identifies the return modifier only within this order. | [optional] 
 **source_modifier_uid** | **String** | &#x60;uid&#x60; of the Modifier from the LineItem from the Order which contains the original sale of this line item modifier. | [optional] 
 **catalog_object_id** | **String** | The catalog object id referencing [CatalogModifier](#type-catalogmodifier). | [optional] 
 **name** | **String** | The name of the item modifier. | [optional] 

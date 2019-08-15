@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
+var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
 var OrderReturnTax = require('./OrderReturnTax');
 
 
@@ -25,12 +26,13 @@ var OrderReturnTax = require('./OrderReturnTax');
 
 /**
  * Constructs a new <code>OrderReturnServiceCharge</code>.
- * The service charge applied to the original order.
+ * Represents the service charge applied to the original order.
  * @alias module:model/OrderReturnServiceCharge
  * @class
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -93,17 +95,20 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('return_taxes')) {
       obj['return_taxes'] = ApiClient.convertToType(data['return_taxes'], [OrderReturnTax]);
     }
+      if (data.hasOwnProperty('applied_taxes')) {
+      obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
+    }
     }
   return obj;
 }
 
 /**
- * Unique ID that identifies the return service charge only within this order.  This field is read-only.
+ * Unique ID that identifies the return service charge only within this order.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
 /**
- * `uid` of the Service Charge from the Order which contains the original charge of this service charge, null for unlinked returns.
+ * `uid` of the Service Charge from the Order containing the original charge of the service charge. `source_service_charge_uid` is `null` for unlinked returns.
  * @member {String} source_service_charge_uid
  */
 exports.prototype['source_service_charge_uid'] = undefined;
@@ -113,37 +118,37 @@ exports.prototype['source_service_charge_uid'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The ID referencing the service charge [CatalogObject](#type-catalogobject)
+ * The catalog object ID of the associated [CatalogServiceCharge](#type-catalogservicecharge).
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
 /**
- * The percentage of the service charge, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.  Exactly one of percentage or amount_money should be set.
+ * The percentage of the service charge, as a string representation of a decimal number. For example, a value of `\"7.25\"` corresponds to a percentage of 7.25%.  Exactly one of `percentage` or `amount_money` should be set.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The amount of a non-percentage based service charge.  Exactly one of percentage or amount_money should be set.
+ * The amount of a non-percentage based service charge.  Exactly one of `percentage` or `amount_money` should be set.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * The amount of money applied to the order by the service charge, as calculated by the server.  For fixed-amount service charges, `applied_money` is equal to `amount_money`.  For percentage-based service charges, `applied_money` is the money calculated using the percentage. The `applied_money` field will include any inclusive tax amounts as well.  This field is read-only.
+ * The amount of money applied to the order by the service charge, including any inclusive tax amounts, as calculated by Square.  - For fixed-amount service charges, `applied_money` is equal to `amount_money`. - For percentage-based service charges, `applied_money` is the money calculated using the percentage.
  * @member {module:model/Money} applied_money
  */
 exports.prototype['applied_money'] = undefined;
 /**
- * The total amount of money to collect for the service charge.  Note that `total_money` does not equal `applied_money` plus `total_tax_money` if an inclusive tax is applied to the service charge since the inclusive tax amount will be included in both `applied_money` and `total_tax_money`.  This field is read-only.
+ * The total amount of money to collect for the service charge.  __NOTE__: if an inclusive tax is applied to the service charge, `total_money` does not equal `applied_money` plus `total_tax_money` since the inclusive tax amount will already be included in both `applied_money` and `total_tax_money`.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The total amount of tax money to collect for the service charge.  This field is read-only.
+ * The total amount of tax money to collect for the service charge.
  * @member {module:model/Money} total_tax_money
  */
 exports.prototype['total_tax_money'] = undefined;
 /**
- * The calculation phase after which to apply the service charge.  This field is read-only. See [OrderServiceChargeCalculationPhase](#type-orderservicechargecalculationphase) for possible values
+ * The calculation phase after which to apply the service charge. See [OrderServiceChargeCalculationPhase](#type-orderservicechargecalculationphase) for possible values
  * @member {String} calculation_phase
  */
 exports.prototype['calculation_phase'] = undefined;
@@ -153,10 +158,15 @@ exports.prototype['calculation_phase'] = undefined;
  */
 exports.prototype['taxable'] = undefined;
 /**
- * The taxes which apply to the service charge. Return-level taxes apply by default to service charge calculated in the `SUBTOTAL_PHASE` if the service charge is marked as taxable.
+ * Taxes applied to the `OrderReturnServiceCharge`. By default, return-level taxes apply to `OrderReturnServiceCharge`s calculated in the `SUBTOTAL_PHASE` if `taxable` is set to `true`.  On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of `applied_taxes`.
  * @member {Array.<module:model/OrderReturnTax>} return_taxes
  */
 exports.prototype['return_taxes'] = undefined;
+/**
+ * The list of references to `OrderReturnTax` entities applied to the `OrderReturnServiceCharge`. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderReturnTax` that is being applied to the `OrderReturnServiceCharge`. On reads, the amount applied is populated.
+ * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes
+ */
+exports.prototype['applied_taxes'] = undefined;
 
 
 

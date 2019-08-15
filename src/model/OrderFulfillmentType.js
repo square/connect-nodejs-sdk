@@ -24,7 +24,12 @@ var exports = {
    * value: "PICKUP"
    * @const
    */
-  "PICKUP": "PICKUP"};
+  "PICKUP": "PICKUP",
+  /**
+   * value: "SHIPMENT"
+   * @const
+   */
+  "SHIPMENT": "SHIPMENT"};
 
 /**
  * Returns a <code>OrderFulfillmentType</code> enum value from a Javascript object name.

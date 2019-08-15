@@ -57,7 +57,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -89,6 +89,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RenewToken
    * &#x60;RenewToken&#x60; is deprecated. For information about refreshing OAuth access tokens, see  [Renew OAuth Token](https://developer.squareup.com/docs/oauth-api/cookbook/renew-oauth-tokens).   Renews an OAuth access token before it expires.  OAuth access tokens besides your application&#39;s personal access token expire after __30 days__. You can also renew expired tokens within __15 days__ of their expiration. You cannot renew an access token that has been expired for more than 15 days. Instead, the associated user must re-complete the OAuth flow from the beginning.  __Important:__ The &#x60;Authorization&#x60; header for this endpoint must have the following format:  &#x60;&#x60;&#x60; Authorization: Client APPLICATION_SECRET &#x60;&#x60;&#x60;  Replace &#x60;APPLICATION_SECRET&#x60; with the application secret on the Credentials page in the [application dashboard](https://connect.squareup.com/apps).
    * @param {String} clientId Your application&#39;s ID, available from the [application dashboard](https://connect.squareup.com/apps).
@@ -96,6 +97,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RenewTokenResponse} and HTTP response
    */
   this.renewTokenWithHttpInfo = function(clientId, body) {
+    console.warn("Calling deprecated API: OAuthApi.renewToken");
     var postBody = body;
 
     // verify the required parameter 'clientId' is set
@@ -116,7 +118,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };
@@ -169,7 +171,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-06-12';
+    headerParams['Square-Version'] = '2019-08-14';
 
     var formParams = {
     };

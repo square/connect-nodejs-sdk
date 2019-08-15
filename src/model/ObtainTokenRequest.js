@@ -26,18 +26,15 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/ObtainTokenRequest
  * @class
- * @param clientId {String} The Square-issued ID of your application, available from the [application dashboard](https://connect.squareup.com/apps).
- * @param clientSecret {String} The Square-issued application secret for your application, available from the [application dashboard](https://connect.squareup.com/apps).
- * @param grantType {String} Specifies the method to request an OAuth access token. Valid values are: `authorization_code`, `refresh_token`, and `migration_token`
  */
-var exports = function(clientId, clientSecret, grantType) {
+var exports = function() {
   var _this = this;
 
-  _this['client_id'] = clientId;
-  _this['client_secret'] = clientSecret;
 
 
-  _this['grant_type'] = grantType;
+
+
+
 
 
 };

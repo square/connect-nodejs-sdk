@@ -21,11 +21,6 @@ var ApiClient = require('../ApiClient');
  */
 var exports = {
   /**
-   * value: "INVALID_GENERIC_UNIT"
-   * @const
-   */
-  "INVALID_GENERIC_UNIT": "INVALID_GENERIC_UNIT",
-  /**
    * value: "UNIT"
    * @const
    */

@@ -241,16 +241,6 @@ var exports = {
    */
   "NO_FIELDS_SET": "NO_FIELDS_SET",
   /**
-   * value: "DEPRECATED_FIELD_SET"
-   * @const
-   */
-  "DEPRECATED_FIELD_SET": "DEPRECATED_FIELD_SET",
-  /**
-   * value: "RETIRED_FIELD_SET"
-   * @const
-   */
-  "RETIRED_FIELD_SET": "RETIRED_FIELD_SET",
-  /**
    * value: "CARD_EXPIRED"
    * @const
    */
@@ -290,6 +280,106 @@ var exports = {
    * @const
    */
   "INVALID_CARD": "INVALID_CARD",
+  /**
+   * value: "GENERIC_DECLINE"
+   * @const
+   */
+  "GENERIC_DECLINE": "GENERIC_DECLINE",
+  /**
+   * value: "CVV_FAILURE"
+   * @const
+   */
+  "CVV_FAILURE": "CVV_FAILURE",
+  /**
+   * value: "ADDRESS_VERIFICATION_FAILURE"
+   * @const
+   */
+  "ADDRESS_VERIFICATION_FAILURE": "ADDRESS_VERIFICATION_FAILURE",
+  /**
+   * value: "INVALID_ACCOUNT"
+   * @const
+   */
+  "INVALID_ACCOUNT": "INVALID_ACCOUNT",
+  /**
+   * value: "CURRENCY_MISMATCH"
+   * @const
+   */
+  "CURRENCY_MISMATCH": "CURRENCY_MISMATCH",
+  /**
+   * value: "INSUFFICIENT_FUNDS"
+   * @const
+   */
+  "INSUFFICIENT_FUNDS": "INSUFFICIENT_FUNDS",
+  /**
+   * value: "INSUFFICIENT_PERMISSIONS"
+   * @const
+   */
+  "INSUFFICIENT_PERMISSIONS": "INSUFFICIENT_PERMISSIONS",
+  /**
+   * value: "CARDHOLDER_INSUFFICIENT_PERMISSIONS"
+   * @const
+   */
+  "CARDHOLDER_INSUFFICIENT_PERMISSIONS": "CARDHOLDER_INSUFFICIENT_PERMISSIONS",
+  /**
+   * value: "INVALID_LOCATION"
+   * @const
+   */
+  "INVALID_LOCATION": "INVALID_LOCATION",
+  /**
+   * value: "TRANSACTION_LIMIT"
+   * @const
+   */
+  "TRANSACTION_LIMIT": "TRANSACTION_LIMIT",
+  /**
+   * value: "VOICE_FAILURE"
+   * @const
+   */
+  "VOICE_FAILURE": "VOICE_FAILURE",
+  /**
+   * value: "PAN_FAILURE"
+   * @const
+   */
+  "PAN_FAILURE": "PAN_FAILURE",
+  /**
+   * value: "EXPIRATION_FAILURE"
+   * @const
+   */
+  "EXPIRATION_FAILURE": "EXPIRATION_FAILURE",
+  /**
+   * value: "CARD_NOT_SUPPORTED"
+   * @const
+   */
+  "CARD_NOT_SUPPORTED": "CARD_NOT_SUPPORTED",
+  /**
+   * value: "INVALID_PIN"
+   * @const
+   */
+  "INVALID_PIN": "INVALID_PIN",
+  /**
+   * value: "INVALID_POSTAL_CODE"
+   * @const
+   */
+  "INVALID_POSTAL_CODE": "INVALID_POSTAL_CODE",
+  /**
+   * value: "INVALID_FEES"
+   * @const
+   */
+  "INVALID_FEES": "INVALID_FEES",
+  /**
+   * value: "MANUALLY_ENTERED_PAYMENT_NOT_SUPPORTED"
+   * @const
+   */
+  "MANUALLY_ENTERED_PAYMENT_NOT_SUPPORTED": "MANUALLY_ENTERED_PAYMENT_NOT_SUPPORTED",
+  /**
+   * value: "PAYMENT_LIMIT_EXCEEDED"
+   * @const
+   */
+  "PAYMENT_LIMIT_EXCEEDED": "PAYMENT_LIMIT_EXCEEDED",
+  /**
+   * value: "GIFT_CARD_AVAILABLE_AMOUNT"
+   * @const
+   */
+  "GIFT_CARD_AVAILABLE_AMOUNT": "GIFT_CARD_AVAILABLE_AMOUNT",
   /**
    * value: "DELAYED_TRANSACTION_EXPIRED"
    * @const
@@ -401,6 +491,16 @@ var exports = {
    */
   "API_VERSION_INCOMPATIBLE": "API_VERSION_INCOMPATIBLE",
   /**
+   * value: "INVALID_URL"
+   * @const
+   */
+  "INVALID_URL": "INVALID_URL",
+  /**
+   * value: "HTTPS_ONLY"
+   * @const
+   */
+  "HTTPS_ONLY": "HTTPS_ONLY",
+  /**
    * value: "CARD_DECLINED"
    * @const
    */
@@ -420,6 +520,31 @@ var exports = {
    * @const
    */
   "CARD_DECLINED_CALL_ISSUER": "CARD_DECLINED_CALL_ISSUER",
+  /**
+   * value: "CARD_DECLINED_VERIFICATION_REQUIRED"
+   * @const
+   */
+  "CARD_DECLINED_VERIFICATION_REQUIRED": "CARD_DECLINED_VERIFICATION_REQUIRED",
+  /**
+   * value: "BAD_EXPIRATION"
+   * @const
+   */
+  "BAD_EXPIRATION": "BAD_EXPIRATION",
+  /**
+   * value: "CHIP_INSERTION_REQUIRED"
+   * @const
+   */
+  "CHIP_INSERTION_REQUIRED": "CHIP_INSERTION_REQUIRED",
+  /**
+   * value: "ALLOWABLE_PIN_TRIES_EXCEEDED"
+   * @const
+   */
+  "ALLOWABLE_PIN_TRIES_EXCEEDED": "ALLOWABLE_PIN_TRIES_EXCEEDED",
+  /**
+   * value: "RESERVATION_DECLINED"
+   * @const
+   */
+  "RESERVATION_DECLINED": "RESERVATION_DECLINED",
   /**
    * value: "NOT_FOUND"
    * @const
@@ -475,6 +600,11 @@ var exports = {
    * @const
    */
   "SERVICE_UNAVAILABLE": "SERVICE_UNAVAILABLE",
+  /**
+   * value: "TEMPORARY_ERROR"
+   * @const
+   */
+  "TEMPORARY_ERROR": "TEMPORARY_ERROR",
   /**
    * value: "GATEWAY_TIMEOUT"
    * @const
