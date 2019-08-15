@@ -33,6 +33,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListAdditionalRecipientReceivableRefunds
    * Returns a list of refunded transactions (across all possible originating locations) relating to monies credited to the provided location ID by another Square account using the &#x60;additional_recipients&#x60; field in a transaction.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list AdditionalRecipientReceivableRefunds for.
@@ -44,6 +45,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAdditionalRecipientReceivableRefundsResponse} and HTTP response
    */
   this.listAdditionalRecipientReceivableRefundsWithHttpInfo = function(locationId, opts) {
+    console.warn("Calling deprecated API: ReportingApi.listAdditionalRecipientReceivableRefunds");
     opts = opts || {};
     var postBody = null;
 
@@ -101,6 +103,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListAdditionalRecipientReceivables
    * Returns a list of receivables (across all possible sending locations) representing monies credited to the provided location ID by another Square account using the &#x60;additional_recipients&#x60; field in a transaction.  Max results per [page](#paginatingresults): 50
    * @param {String} locationId The ID of the location to list AdditionalRecipientReceivables for.
@@ -112,6 +115,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAdditionalRecipientReceivablesResponse} and HTTP response
    */
   this.listAdditionalRecipientReceivablesWithHttpInfo = function(locationId, opts) {
+    console.warn("Calling deprecated API: ReportingApi.listAdditionalRecipientReceivables");
     opts = opts || {};
     var postBody = null;
 

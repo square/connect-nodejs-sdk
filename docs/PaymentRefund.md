@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **app_fee_money** | [**Money**](Money.md) | Amount of money the app developer contributed to help cover the refunded amount. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](/build-basics/working-with-monetary-amounts) for details. | [optional] 
 **processing_fee** | [**[ProcessingFee]**](ProcessingFee.md) | Processing fees and fee adjustments assessed by Square on this refund. | [optional] 
 **payment_id** | **String** | The ID of the payment assocated with this refund. | [optional] 
+**order_id** | **String** | The ID of the order associated with the refund. | [optional] 
 **reason** | **String** | The reason for the refund. | [optional] 
 **created_at** | **String** | Timestamp of when the refund was created, in RFC 3339 format. | [optional] 
 **updated_at** | **String** | Timestamp of when the refund was last updated, in RFC 3339 format. | [optional] 

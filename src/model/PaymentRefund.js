@@ -44,6 +44,7 @@ var exports = function(id, amountMoney) {
 
 
 
+
 };
 
 /**
@@ -77,6 +78,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('payment_id')) {
       obj['payment_id'] = ApiClient.convertToType(data['payment_id'], 'String');
+    }
+      if (data.hasOwnProperty('order_id')) {
+      obj['order_id'] = ApiClient.convertToType(data['order_id'], 'String');
     }
       if (data.hasOwnProperty('reason')) {
       obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
@@ -126,6 +130,11 @@ exports.prototype['processing_fee'] = undefined;
  * @member {String} payment_id
  */
 exports.prototype['payment_id'] = undefined;
+/**
+ * The ID of the order associated with the refund.
+ * @member {String} order_id
+ */
+exports.prototype['order_id'] = undefined;
 /**
  * The reason for the refund.
  * @member {String} reason
