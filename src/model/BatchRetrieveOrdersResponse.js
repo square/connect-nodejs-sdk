@@ -58,7 +58,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The requested orders. This will omit any requested orders that do not exist or are not charged.
+ * The requested orders. This will omit any requested orders that do not exist.
  * @member {Array.<module:model/Order>} orders
  */
 exports.prototype['orders'] = undefined;
