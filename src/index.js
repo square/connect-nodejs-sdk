@@ -198,7 +198,6 @@ var MeasurementUnitArea = require('./model/MeasurementUnitArea');
 var MeasurementUnitCustom = require('./model/MeasurementUnitCustom');
 var MeasurementUnitGeneric = require('./model/MeasurementUnitGeneric');
 var MeasurementUnitLength = require('./model/MeasurementUnitLength');
-var MeasurementUnitTime = require('./model/MeasurementUnitTime');
 var MeasurementUnitUnitType = require('./model/MeasurementUnitUnitType');
 var MeasurementUnitVolume = require('./model/MeasurementUnitVolume');
 var MeasurementUnitWeight = require('./model/MeasurementUnitWeight');
@@ -547,7 +546,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190814.0
+ * @version 2.20190814.1
  */
   module.exports = {
   /**
@@ -1480,11 +1479,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/MeasurementUnitLength}
    */
   MeasurementUnitLength: MeasurementUnitLength,
-  /**
-   * The MeasurementUnitTime model constructor.
-   * @property {module:model/MeasurementUnitTime}
-   */
-  MeasurementUnitTime: MeasurementUnitTime,
   /**
    * The MeasurementUnitUnitType model constructor.
    * @property {module:model/MeasurementUnitUnitType}

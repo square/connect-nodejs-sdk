@@ -38,7 +38,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -69,9 +68,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('generic_unit')) {
       obj['generic_unit'] = ApiClient.convertToType(data['generic_unit'], 'String');
-    }
-      if (data.hasOwnProperty('time_unit')) {
-      obj['time_unit'] = ApiClient.convertToType(data['time_unit'], 'String');
     }
       if (data.hasOwnProperty('type')) {
       obj['type'] = ApiClient.convertToType(data['type'], 'String');
@@ -110,11 +106,6 @@ exports.prototype['weight_unit'] = undefined;
  * @member {String} generic_unit
  */
 exports.prototype['generic_unit'] = undefined;
-/**
- * Represents a standard unit of time. See [MeasurementUnitTime](#type-measurementunittime) for possible values
- * @member {String} time_unit
- */
-exports.prototype['time_unit'] = undefined;
 /**
  * Represents the type of the measurement unit. See [MeasurementUnitUnitType](#type-measurementunitunittype) for possible values
  * @member {String} type

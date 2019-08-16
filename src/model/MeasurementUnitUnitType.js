@@ -46,11 +46,6 @@ var exports = {
    */
   "WEIGHT": "TYPE_WEIGHT",
   /**
-   * value: "TYPE_TIME"
-   * @const
-   */
-  "TIME": "TYPE_TIME",
-  /**
    * value: "TYPE_GENERIC"
    * @const
    */

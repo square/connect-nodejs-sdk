@@ -13,8 +13,6 @@
 
 * `WEIGHT` (value: `"TYPE_WEIGHT"`)
 
-* `TIME` (value: `"TYPE_TIME"`)
-
 * `GENERIC` (value: `"TYPE_GENERIC"`)
 
 

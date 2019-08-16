@@ -397,7 +397,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.MeasurementUnitCustom](docs/MeasurementUnitCustom.md)
  - [SquareConnect.MeasurementUnitGeneric](docs/MeasurementUnitGeneric.md)
  - [SquareConnect.MeasurementUnitLength](docs/MeasurementUnitLength.md)
- - [SquareConnect.MeasurementUnitTime](docs/MeasurementUnitTime.md)
  - [SquareConnect.MeasurementUnitUnitType](docs/MeasurementUnitUnitType.md)
  - [SquareConnect.MeasurementUnitVolume](docs/MeasurementUnitVolume.md)
  - [SquareConnect.MeasurementUnitWeight](docs/MeasurementUnitWeight.md)
