@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 <a name="updateOrder"></a>
 # **updateOrder**
-> UpdateOrderResponse updateOrder(body)
+> UpdateOrderResponse updateOrder(locationId, orderId, body)
 
 UpdateOrder
 
@@ -231,9 +231,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
+var locationId = "locationId_example"; // String | The ID of the order's associated location.
+
+var orderId = "orderId_example"; // String | The ID of the order to update.
+
 var body = new SquareConnect.UpdateOrderRequest(); // UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
-apiInstance.updateOrder(body).then(function(data) {
+apiInstance.updateOrder(locationId, orderId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -245,6 +249,8 @@ apiInstance.updateOrder(body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **locationId** | **String**| The ID of the order&#39;s associated location. | 
+ **orderId** | **String**| The ID of the order to update. | 
  **body** | [**UpdateOrderRequest**](UpdateOrderRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type

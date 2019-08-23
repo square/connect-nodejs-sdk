@@ -16,7 +16,7 @@ var querystring = require('querystring');
 
   /**
  * @module ApiClient
- * @version 2.20190814.1
+ * @version 2.20190814.2
  */
 
 /**
@@ -48,7 +48,7 @@ var exports = function() {
    * @default {}
    */
   this.defaultHeaders = {
-    'User-Agent': 'Square-Connect-Javascript/2.20190814.1'
+    'User-Agent': 'Square-Connect-Javascript/2.20190814.2'
   };
   /**
    * The default HTTP timeout for all API calls.
