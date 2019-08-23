@@ -275,11 +275,23 @@ module.exports = function(apiClient) {
   /**
    * UpdateOrder
    * Updates an open [Order](#type-order) by adding, replacing, or deleting fields. Orders with a &#x60;COMPLETED&#x60; or &#x60;CANCELED&#x60; state cannot be updated.  An UpdateOrder request requires the following:  - The &#x60;order_id&#x60; in the endpoint path, identifying the order to update. - The latest &#x60;version&#x60; of the order to update. - The [sparse order](/orders-api/manage-orders#sparse-order-objects) containing only the fields to update and the version the update is being applied to. - If deleting fields, the [dot notation paths](/orders-api/manage-orders#on-dot-notation) identifying fields to clear.  To pay for an order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
+   * @param {String} locationId The ID of the order&#39;s associated location.
+   * @param {String} orderId The ID of the order to update.
    * @param {module:model/UpdateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateOrderResponse} and HTTP response
    */
-  this.updateOrderWithHttpInfo = function(body) {
+  this.updateOrderWithHttpInfo = function(locationId, orderId, body) {
     var postBody = body;
+
+    // verify the required parameter 'locationId' is set
+    if (locationId === undefined || locationId === null) {
+      throw new Error("Missing the required parameter 'locationId' when calling updateOrder");
+    }
+
+    // verify the required parameter 'orderId' is set
+    if (orderId === undefined || orderId === null) {
+      throw new Error("Missing the required parameter 'orderId' when calling updateOrder");
+    }
 
     // verify the required parameter 'body' is set
     if (body === undefined || body === null) {
@@ -288,6 +300,8 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
+      'location_id': locationId,
+      'order_id': orderId
     };
     var queryParams = {
     };
@@ -313,11 +327,13 @@ module.exports = function(apiClient) {
   /**
    * UpdateOrder
    * Updates an open [Order](#type-order) by adding, replacing, or deleting fields. Orders with a &#x60;COMPLETED&#x60; or &#x60;CANCELED&#x60; state cannot be updated.  An UpdateOrder request requires the following:  - The &#x60;order_id&#x60; in the endpoint path, identifying the order to update. - The latest &#x60;version&#x60; of the order to update. - The [sparse order](/orders-api/manage-orders#sparse-order-objects) containing only the fields to update and the version the update is being applied to. - If deleting fields, the [dot notation paths](/orders-api/manage-orders#on-dot-notation) identifying fields to clear.  To pay for an order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
+   * @param {String} locationId The ID of the order&#39;s associated location.
+   * @param {String} orderId The ID of the order to update.
    * @param {module:model/UpdateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateOrderResponse}
    */
-  this.updateOrder = function(body) {
-    return this.updateOrderWithHttpInfo(body)
+  this.updateOrder = function(locationId, orderId, body) {
+    return this.updateOrderWithHttpInfo(locationId, orderId, body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
