@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The requested [InventoryAdjustment](#type-inventoryadjustment).
+ * The requested `InventoryAdjustment`.
  * @member {module:model/InventoryAdjustment} adjustment
  */
 exports.prototype['adjustment'] = undefined;

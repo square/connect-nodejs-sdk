@@ -7,6 +7,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tax_ids** | **[String]** | A set of [CatalogTax](#type-catalogtax) IDs to be used to find associated [CatalogItem](#type-catalogitem)s. | 
+**tax_ids** | **[String]** | A set of &#x60;CatalogTax](#type-catalogtax) IDs to be used to find associated [CatalogItem&#x60;s. | 
 
 

@@ -36,6 +36,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -61,30 +62,38 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('related_objects')) {
       obj['related_objects'] = ApiClient.convertToType(data['related_objects'], [CatalogObject]);
     }
+      if (data.hasOwnProperty('latest_time')) {
+      obj['latest_time'] = ApiClient.convertToType(data['latest_time'], 'String');
+    }
     }
   return obj;
 }
 
 /**
- * The set of [Error](#type-error)s encountered.
+ * The set of `Error`s encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
+ * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The [CatalogObject](#type-catalogobject)s returned.
+ * The `CatalogObject`s returned.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;
 /**
- * A list of [CatalogObject](#type-catalogobject)s referenced by the objects in the `objects` field.
+ * A list of `CatalogObject`s referenced by the objects in the `objects` field.
  * @member {Array.<module:model/CatalogObject>} related_objects
  */
 exports.prototype['related_objects'] = undefined;
+/**
+ *  When this merchant's catalog was last updated. Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
+ * @member {String} latest_time
+ */
+exports.prototype['latest_time'] = undefined;
 
 
 

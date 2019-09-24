@@ -62,17 +62,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of [Error](#type-error)s encountered.
+ * The set of `Error`s encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The [CatalogObject](#type-catalogobject)s returned.
+ * The `CatalogObject`s returned.
  * @member {module:model/CatalogObject} object
  */
 exports.prototype['object'] = undefined;
 /**
- * A list of [CatalogObject](#type-catalogobject)s referenced by the object in the `object` field.
+ * A list of `CatalogObject`s referenced by the object in the `object` field.
  * @member {Array.<module:model/CatalogObject>} related_objects
  */
 exports.prototype['related_objects'] = undefined;

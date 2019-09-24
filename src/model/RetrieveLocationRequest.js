@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveLocationRequest</code>.
- * 
+ * Defines the fields that are included in the request body for  the [RetrieveLocation](#endpoint-locations-retrievelocation) endpoint.
  * @alias module:model/RetrieveLocationRequest
  * @class
  */

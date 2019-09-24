@@ -67,22 +67,22 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * List of [OrderEntries](#type-orderentry) that fit the query conditions. Populated only if `return_entries` was set to `true` in the request.
+ * List of `OrderEntries` that fit the query conditions. Populated only if `return_entries` was set to `true` in the request.
  * @member {Array.<module:model/OrderEntry>} order_entries
  */
 exports.prototype['order_entries'] = undefined;
 /**
- * List of [Order](#type-order) objects that match query conditions. Populated only if `return_entries` in the request is set to `false`.
+ * List of `Order` objects that match query conditions. Populated only if `return_entries` in the request is set to `false`.
  * @member {Array.<module:model/Order>} orders
  */
 exports.prototype['orders'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
+ * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
 /**
- * [Errors](#type-error) encountered during the search.
+ * `Errors` encountered during the search.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

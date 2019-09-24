@@ -176,7 +176,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var adjustmentId = "adjustmentId_example"; // String | ID of the [InventoryAdjustment](#type-inventoryadjustment) to retrieve.
+var adjustmentId = "adjustmentId_example"; // String | ID of the `InventoryAdjustment` to retrieve.
 
 apiInstance.retrieveInventoryAdjustment(adjustmentId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -190,7 +190,7 @@ apiInstance.retrieveInventoryAdjustment(adjustmentId).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **adjustmentId** | **String**| ID of the [InventoryAdjustment](#type-inventoryadjustment) to retrieve. | 
+ **adjustmentId** | **String**| ID of the &#x60;InventoryAdjustment&#x60; to retrieve. | 
 
 ### Return type
 
@@ -224,11 +224,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var catalogObjectId = "catalogObjectId_example"; // String | ID of the [CatalogObject](#type-catalogobject) to retrieve.
+var catalogObjectId = "catalogObjectId_example"; // String | ID of the `CatalogObject` to retrieve.
 
 var opts = { 
-  'locationIds': "locationIds_example", // String | The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+  'locationIds': "locationIds_example", // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
+  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
 };
 apiInstance.retrieveInventoryChanges(catalogObjectId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -242,9 +242,9 @@ apiInstance.retrieveInventoryChanges(catalogObjectId, opts).then(function(data) 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **catalogObjectId** | **String**| ID of the [CatalogObject](#type-catalogobject) to retrieve. | 
- **locationIds** | **String**| The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations. | [optional] 
- **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information. | [optional] 
+ **catalogObjectId** | **String**| ID of the &#x60;CatalogObject&#x60; to retrieve. | 
+ **locationIds** | **String**| The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations. | [optional] 
+ **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information. | [optional] 
 
 ### Return type
 
@@ -278,11 +278,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var catalogObjectId = "catalogObjectId_example"; // String | ID of the [CatalogObject](#type-catalogobject) to retrieve.
+var catalogObjectId = "catalogObjectId_example"; // String | ID of the `CatalogObject` to retrieve.
 
 var opts = { 
-  'locationIds': "locationIds_example", // String | The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+  'locationIds': "locationIds_example", // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
+  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
 };
 apiInstance.retrieveInventoryCount(catalogObjectId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -296,9 +296,9 @@ apiInstance.retrieveInventoryCount(catalogObjectId, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **catalogObjectId** | **String**| ID of the [CatalogObject](#type-catalogobject) to retrieve. | 
- **locationIds** | **String**| The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations. | [optional] 
- **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information. | [optional] 
+ **catalogObjectId** | **String**| ID of the &#x60;CatalogObject&#x60; to retrieve. | 
+ **locationIds** | **String**| The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations. | [optional] 
+ **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information. | [optional] 
 
 ### Return type
 
@@ -332,7 +332,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var physicalCountId = "physicalCountId_example"; // String | ID of the [InventoryPhysicalCount](#type-inventoryphysicalcount) to retrieve.
+var physicalCountId = "physicalCountId_example"; // String | ID of the `InventoryPhysicalCount` to retrieve.
 
 apiInstance.retrieveInventoryPhysicalCount(physicalCountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -346,7 +346,7 @@ apiInstance.retrieveInventoryPhysicalCount(physicalCountId).then(function(data) 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **physicalCountId** | **String**| ID of the [InventoryPhysicalCount](#type-inventoryphysicalcount) to retrieve. | 
+ **physicalCountId** | **String**| ID of the &#x60;InventoryPhysicalCount&#x60; to retrieve. | 
 
 ### Return type
 

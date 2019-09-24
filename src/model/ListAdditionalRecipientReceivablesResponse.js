@@ -72,7 +72,7 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['receivables'] = undefined;
 /**
- * A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Pagination](/basics/api101/pagination) for more information.
+ * A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

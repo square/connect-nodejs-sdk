@@ -134,7 +134,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['note'] = undefined;
 /**
- * The total amount of the tender, including `tip_money`. If the tender has a `payment_id`, the `total_money` of the corresponding [Payment](#type-payment) will be equal to the `amount_money` of the tender.
+ * The total amount of the tender, including `tip_money`. If the tender has a `payment_id`, the `total_money` of the corresponding `Payment` will be equal to the `amount_money` of the tender.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
@@ -174,7 +174,7 @@ exports.prototype['cash_details'] = undefined;
  */
 exports.prototype['additional_recipients'] = undefined;
 /**
- * The ID of the [Payment](#type-payment) that corresponds to this tender. This value is only present for payments created with the v2 Payments API.
+ * The ID of the `Payment` that corresponds to this tender. This value is only present for payments created with the v2 Payments API.
  * @member {String} payment_id
  */
 exports.prototype['payment_id'] = undefined;

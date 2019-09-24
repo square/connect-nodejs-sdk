@@ -72,27 +72,27 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The Square generated ID of the [CatalogObject](#type-catalogobject) being tracked.
+ * The Square generated ID of the `CatalogObject` being tracked.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
 /**
- * The [CatalogObjectType](#type-catalogobjecttype) of the [CatalogObject](#type-catalogobject) being tracked. Tracking is only supported for the `ITEM_VARIATION` type.
+ * The `CatalogObjectType` of the `CatalogObject` being tracked. Tracking is only supported for the `ITEM_VARIATION` type.
  * @member {String} catalog_object_type
  */
 exports.prototype['catalog_object_type'] = undefined;
 /**
- * The current [InventoryState](#type-inventorystate) for the related quantity of items. See [InventoryState](#type-inventorystate) for possible values
+ * The current `InventoryState` for the related quantity of items. See [InventoryState](#type-inventorystate) for possible values
  * @member {String} state
  */
 exports.prototype['state'] = undefined;
 /**
- * The Square ID of the [Location](#type-location) where the related quantity of items are being tracked.
+ * The Square ID of the `Location` where the related quantity of items are being tracked.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
 /**
- * The number of items in the count as a decimal string. Can support up to 5 digits after the decimal point.  _Important_: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.  Read [Decimal Quantities (BETA)](/orders-api/what-it-does#decimal-quantities) for more information.
+ * The number of items in the count as a decimal string. Can support up to 5 digits after the decimal point.  _Important_: The Point of Sale app and Dashboard do not currently support decimal quantities. If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments, the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.  Read [Decimal Quantities (BETA)](https://developer.squareup.com/docs/orders-api/what-it-does#decimal-quantities) for more information.
  * @member {String} quantity
  */
 exports.prototype['quantity'] = undefined;

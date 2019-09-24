@@ -64,12 +64,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filters results by [CatalogObject](#type-catalogobject) ID. Only applied when set. Default: unset.
+ * Filters results by `CatalogObject` ID. Only applied when set. Default: unset.
  * @member {Array.<String>} catalog_object_ids
  */
 exports.prototype['catalog_object_ids'] = undefined;
 /**
- * Filters results by [Location](#type-location) ID. Only applied when set. Default: unset.
+ * Filters results by `Location` ID. Only applied when set. Default: unset.
  * @member {Array.<String>} location_ids
  */
 exports.prototype['location_ids'] = undefined;
@@ -79,7 +79,7 @@ exports.prototype['location_ids'] = undefined;
  */
 exports.prototype['updated_after'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

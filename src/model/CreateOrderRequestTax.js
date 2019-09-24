@@ -64,7 +64,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Only used for catalog taxes. The catalog object ID of an existing [CatalogTax](#type-catalogtax).  Do not provide a value for this field if you provide values in other fields for an ad hoc tax.
+ * Only used for catalog taxes. The catalog object ID of an existing `CatalogTax`.  Do not provide a value for this field if you provide values in other fields for an ad hoc tax.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
@@ -74,7 +74,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
+ * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See `OrderLineItemTaxType` for possible values. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
  * @member {String} type
  */
 exports.prototype['type'] = undefined;

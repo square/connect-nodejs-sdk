@@ -112,6 +112,9 @@ Class | Method | HTTP request | Description
 *SquareConnect.LaborApi* | [**updateShift**](docs/LaborApi.md#updateShift) | **PUT** /v2/labor/shifts/{id} | UpdateShift
 *SquareConnect.LaborApi* | [**updateWorkweekConfig**](docs/LaborApi.md#updateWorkweekConfig) | **PUT** /v2/labor/workweek-configs/{id} | UpdateWorkweekConfig
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
+*SquareConnect.LocationsApi* | [**retrieveLocation**](docs/LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
+*SquareConnect.LocationsApi* | [**updateLocation**](docs/LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
+*SquareConnect.MerchantsApi* | [**retrieveMerchant**](docs/MerchantsApi.md#retrieveMerchant) | **GET** /v2/merchants/{merchant_id} | RetrieveMerchant
 *SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
 *SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
 *SquareConnect.OAuthApi* | [**renewToken**](docs/OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
@@ -397,9 +400,12 @@ Class | Method | HTTP request | Description
  - [SquareConnect.MeasurementUnitCustom](docs/MeasurementUnitCustom.md)
  - [SquareConnect.MeasurementUnitGeneric](docs/MeasurementUnitGeneric.md)
  - [SquareConnect.MeasurementUnitLength](docs/MeasurementUnitLength.md)
+ - [SquareConnect.MeasurementUnitTime](docs/MeasurementUnitTime.md)
  - [SquareConnect.MeasurementUnitUnitType](docs/MeasurementUnitUnitType.md)
  - [SquareConnect.MeasurementUnitVolume](docs/MeasurementUnitVolume.md)
  - [SquareConnect.MeasurementUnitWeight](docs/MeasurementUnitWeight.md)
+ - [SquareConnect.Merchant](docs/Merchant.md)
+ - [SquareConnect.MerchantStatus](docs/MerchantStatus.md)
  - [SquareConnect.ModelBreak](docs/ModelBreak.md)
  - [SquareConnect.Money](docs/Money.md)
  - [SquareConnect.ObtainTokenRequest](docs/ObtainTokenRequest.md)
@@ -467,6 +473,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RetrieveInventoryPhysicalCountResponse](docs/RetrieveInventoryPhysicalCountResponse.md)
  - [SquareConnect.RetrieveLocationRequest](docs/RetrieveLocationRequest.md)
  - [SquareConnect.RetrieveLocationResponse](docs/RetrieveLocationResponse.md)
+ - [SquareConnect.RetrieveMerchantRequest](docs/RetrieveMerchantRequest.md)
+ - [SquareConnect.RetrieveMerchantResponse](docs/RetrieveMerchantResponse.md)
  - [SquareConnect.RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [SquareConnect.RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
  - [SquareConnect.RevokeTokenRequest](docs/RevokeTokenRequest.md)
@@ -521,6 +529,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.UpdateItemModifierListsResponse](docs/UpdateItemModifierListsResponse.md)
  - [SquareConnect.UpdateItemTaxesRequest](docs/UpdateItemTaxesRequest.md)
  - [SquareConnect.UpdateItemTaxesResponse](docs/UpdateItemTaxesResponse.md)
+ - [SquareConnect.UpdateLocationRequest](docs/UpdateLocationRequest.md)
+ - [SquareConnect.UpdateLocationResponse](docs/UpdateLocationResponse.md)
  - [SquareConnect.UpdateOrderRequest](docs/UpdateOrderRequest.md)
  - [SquareConnect.UpdateOrderResponse](docs/UpdateOrderResponse.md)
  - [SquareConnect.UpdateShiftRequest](docs/UpdateShiftRequest.md)

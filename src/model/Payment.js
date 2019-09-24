@@ -30,16 +30,15 @@ var ProcessingFee = require('./ProcessingFee');
  * Represents a payment processed by the Square API.
  * @alias module:model/Payment
  * @class
- * @param id {String} Unique ID for the payment.
- * @param amountMoney {module:model/Money} The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](/build-basics/working-with-monetary-amounts).
  */
-var exports = function(id, amountMoney) {
+var exports = function() {
   var _this = this;
 
-  _this['id'] = id;
 
 
-  _this['amount_money'] = amountMoney;
+
+
+
 
 
 
@@ -118,6 +117,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('customer_id')) {
       obj['customer_id'] = ApiClient.convertToType(data['customer_id'], 'String');
     }
+      if (data.hasOwnProperty('employee_id')) {
+      obj['employee_id'] = ApiClient.convertToType(data['employee_id'], 'String');
+    }
       if (data.hasOwnProperty('refund_ids')) {
       obj['refund_ids'] = ApiClient.convertToType(data['refund_ids'], ['String']);
     }
@@ -153,7 +155,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](/build-basics/working-with-monetary-amounts).
+ * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
@@ -168,7 +170,7 @@ exports.prototype['tip_money'] = undefined;
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  For more information, see [Take Payments and Collect Fees](/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
+ * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  For more information, see [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;
@@ -188,7 +190,7 @@ exports.prototype['refunded_money'] = undefined;
  */
 exports.prototype['status'] = undefined;
 /**
- * The source type for this payment
+ * The source type for this payment  Current values include: `CARD`
  * @member {String} source_type
  */
 exports.prototype['source_type'] = undefined;
@@ -217,6 +219,11 @@ exports.prototype['reference_id'] = undefined;
  * @member {String} customer_id
  */
 exports.prototype['customer_id'] = undefined;
+/**
+ * An optional ID of the employee associated with taking this payment.
+ * @member {String} employee_id
+ */
+exports.prototype['employee_id'] = undefined;
 /**
  * List of `refund_id`s identifying refunds for this payment.
  * @member {Array.<String>} refund_ids

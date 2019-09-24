@@ -60,12 +60,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values
+ * Read-only `Product` type for the application. See [Product](#type-product) for possible values
  * @member {String} product
  */
 exports.prototype['product'] = undefined;
 /**
- * Read-only Square ID assigned to the application. Only used for [Product](#type-product) type `EXTERNAL_API`.
+ * Read-only Square ID assigned to the application. Only used for `Product` type `EXTERNAL_API`.
  * @member {String} application_id
  */
 exports.prototype['application_id'] = undefined;

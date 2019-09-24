@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A set of [CatalogItemOptionValue](#type-catalogitemoptionvalue) IDs to be used to find associated [CatalogItemVariation](#type-catalogitemvariation)s. All ItemVariations that contain all of the given Item Option Values (in any order) will be returned.
+ * A set of `CatalogItemOptionValue` IDs to be used to find associated `CatalogItemVariation`s. All ItemVariations that contain all of the given Item Option Values (in any order) will be returned.
  * @member {Array.<String>} item_option_value_ids
  */
 exports.prototype['item_option_value_ids'] = undefined;

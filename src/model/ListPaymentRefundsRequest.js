@@ -91,7 +91,7 @@ exports.prototype['end_time'] = undefined;
  */
 exports.prototype['sort_order'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
@@ -101,7 +101,7 @@ exports.prototype['cursor'] = undefined;
  */
 exports.prototype['location_id'] = undefined;
 /**
- * If provided, only refunds with the given status are returned.  For a list of refund status values, see [PaymentRefund](#type-paymentrefund).  Default: If omitted refunds are returned regardless of status.
+ * If provided, only refunds with the given status are returned.  For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

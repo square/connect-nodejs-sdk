@@ -29,7 +29,7 @@ var CreateOrderRequest = require('./CreateOrderRequest');
  * Defines the parameters that can be included in the body of a request to the CreateCheckout endpoint.
  * @alias module:model/CreateCheckoutRequest
  * @class
- * @param idempotencyKey {String} A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency](/basics/api101/idempotency) for more information.
+ * @param idempotencyKey {String} A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
  * @param order {module:model/CreateOrderRequest} The order including line items to be checked out.
  */
 var exports = function(idempotencyKey, order) {
@@ -89,7 +89,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency](/basics/api101/idempotency) for more information.
+ * A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

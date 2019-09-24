@@ -95,7 +95,7 @@ exports.prototype['uid'] = undefined;
  */
 exports.prototype['source_discount_uid'] = undefined;
 /**
- * The catalog object id referencing [CatalogDiscount](#type-catalogdiscount).
+ * The catalog object id referencing `CatalogDiscount`.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
@@ -105,17 +105,17 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values
+ * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  Discounts that don't reference a catalog object ID must have a type of `FIXED_PERCENTAGE` or `FIXED_AMOUNT`. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values
  * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
- * The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.  The percentage won't be set for an amount-based discount.
+ * The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.  `percentage` is not set for amount-based discounts.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The total declared monetary amount of the discount. The amount_money won't be set for a percentage-based discount.
+ * The total declared monetary amount of the discount.  `amount_money` is not set for percentage-based discounts.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;

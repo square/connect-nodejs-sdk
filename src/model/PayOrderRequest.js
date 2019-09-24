@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Defines the fields that are included in requests to the [PayOrder](#endpoint-payorder) endpoint.
  * @alias module:model/PayOrderRequest
  * @class
- * @param idempotencyKey {String} A value you specify that uniquely identifies this request among requests you've sent. If you're unsure whether a particular payment request was completed successfully, you can reattempt it with the same idempotency key without worrying about duplicate payments.  See [Idempotency](/working-with-apis/idempotency) for more information.
+ * @param idempotencyKey {String} A value you specify that uniquely identifies this request among requests you've sent. If you're unsure whether a particular payment request was completed successfully, you can reattempt it with the same idempotency key without worrying about duplicate payments.  See [Idempotency](https://developer.squareup.com/docs/working-with-apis/idempotency) for more information.
  */
 var exports = function(idempotencyKey) {
   var _this = this;
@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A value you specify that uniquely identifies this request among requests you've sent. If you're unsure whether a particular payment request was completed successfully, you can reattempt it with the same idempotency key without worrying about duplicate payments.  See [Idempotency](/working-with-apis/idempotency) for more information.
+ * A value you specify that uniquely identifies this request among requests you've sent. If you're unsure whether a particular payment request was completed successfully, you can reattempt it with the same idempotency key without worrying about duplicate payments.  See [Idempotency](https://developer.squareup.com/docs/working-with-apis/idempotency) for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

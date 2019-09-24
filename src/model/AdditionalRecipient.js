@@ -83,7 +83,7 @@ exports.prototype['description'] = undefined;
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server.
+ * The unique ID for this `AdditionalRecipientReceivable`, assigned by the server.
  * @member {String} receivable_id
  */
 exports.prototype['receivable_id'] = undefined;

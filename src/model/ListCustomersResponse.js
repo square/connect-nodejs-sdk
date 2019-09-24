@@ -72,7 +72,7 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['customers'] = undefined;
 /**
- * A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Pagination](/basics/api101/pagination) for more information.
+ * A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

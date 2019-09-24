@@ -57,7 +57,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A [MeasurementUnit](#type-measurementunit) that represents the unit of measure for the quantity.
+ * A `MeasurementUnit` that represents the unit of measure for the quantity.
  * @member {module:model/MeasurementUnit} measurement_unit
  */
 exports.prototype['measurement_unit'] = undefined;

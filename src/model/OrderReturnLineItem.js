@@ -162,7 +162,7 @@ exports.prototype['quantity_unit'] = undefined;
  */
 exports.prototype['note'] = undefined;
 /**
- * The [CatalogItemVariation](#type-catalogitemvariation) id applied to this returned line item.
+ * The `CatalogItemVariation` id applied to this returned line item.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
@@ -172,7 +172,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['variation_name'] = undefined;
 /**
- * The [CatalogModifier](#type-catalogmodifier)s applied to this line item.
+ * The `CatalogModifier`s applied to this line item.
  * @member {Array.<module:model/OrderReturnLineItemModifier>} return_modifiers
  */
 exports.prototype['return_modifiers'] = undefined;

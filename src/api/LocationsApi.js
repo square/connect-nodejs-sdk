@@ -13,6 +13,9 @@
  */
 var ApiClient = require('../ApiClient');
 var ListLocationsResponse = require('../model/ListLocationsResponse');
+var RetrieveLocationResponse = require('../model/RetrieveLocationResponse');
+var UpdateLocationRequest = require('../model/UpdateLocationRequest');
+var UpdateLocationResponse = require('../model/UpdateLocationResponse');
 
 /**
  * Locations service.
@@ -46,7 +49,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -70,6 +73,119 @@ module.exports = function(apiClient) {
    */
   this.listLocations = function() {
     return this.listLocationsWithHttpInfo()
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * RetrieveLocation
+   * Retrieves details of a location.
+   * @param {String} locationId The ID of the location to retrieve.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveLocationResponse} and HTTP response
+   */
+  this.retrieveLocationWithHttpInfo = function(locationId) {
+    var postBody = null;
+
+    // verify the required parameter 'locationId' is set
+    if (locationId === undefined || locationId === null) {
+      throw new Error("Missing the required parameter 'locationId' when calling retrieveLocation");
+    }
+
+
+    var pathParams = {
+      'location_id': locationId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2019-09-25';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = RetrieveLocationResponse;
+
+    return this.apiClient.callApi(
+      '/v2/locations/{location_id}', 'GET',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * RetrieveLocation
+   * Retrieves details of a location.
+   * @param {String} locationId The ID of the location to retrieve.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveLocationResponse}
+   */
+  this.retrieveLocation = function(locationId) {
+    return this.retrieveLocationWithHttpInfo(locationId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * UpdateLocation
+   * Updates the &#x60;Location&#x60; specified by the given ID.
+   * @param {String} locationId The ID of the location to update.
+   * @param {module:model/UpdateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateLocationResponse} and HTTP response
+   */
+  this.updateLocationWithHttpInfo = function(locationId, body) {
+    var postBody = body;
+
+    // verify the required parameter 'locationId' is set
+    if (locationId === undefined || locationId === null) {
+      throw new Error("Missing the required parameter 'locationId' when calling updateLocation");
+    }
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling updateLocation");
+    }
+
+
+    var pathParams = {
+      'location_id': locationId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2019-09-25';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = UpdateLocationResponse;
+
+    return this.apiClient.callApi(
+      '/v2/locations/{location_id}', 'PUT',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * UpdateLocation
+   * Updates the &#x60;Location&#x60; specified by the given ID.
+   * @param {String} locationId The ID of the location to update.
+   * @param {module:model/UpdateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateLocationResponse}
+   */
+  this.updateLocation = function(locationId, body) {
+    return this.updateLocationWithHttpInfo(locationId, body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });

@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A list of [CatalogObject](#type-catalogobject)s belonging to this batch.
+ * A list of `CatalogObject`s belonging to this batch.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;

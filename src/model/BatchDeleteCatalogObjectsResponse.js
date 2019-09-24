@@ -61,12 +61,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of [Error](#type-error)s encountered.
+ * The set of `Error`s encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The IDs of all [CatalogObject](#type-catalogobject)s deleted by this request.
+ * The IDs of all `CatalogObject`s deleted by this request.
  * @member {Array.<String>} deleted_object_ids
  */
 exports.prototype['deleted_object_ids'] = undefined;

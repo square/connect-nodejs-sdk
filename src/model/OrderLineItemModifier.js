@@ -74,7 +74,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['uid'] = undefined;
 /**
- * The catalog object id referencing [CatalogModifier](#type-catalogmodifier).
+ * The catalog object id referencing `CatalogModifier`.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;
@@ -84,7 +84,7 @@ exports.prototype['catalog_object_id'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
+ * The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined `CatalogModifier` price.
  * @member {module:model/Money} base_price_money
  */
 exports.prototype['base_price_money'] = undefined;

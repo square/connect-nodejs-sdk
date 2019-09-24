@@ -93,12 +93,12 @@ exports.prototype['description'] = undefined;
  */
 exports.prototype['show_colors'] = undefined;
 /**
- * A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemOptionValue](#type-catalogitemoptionvalue)s for this item.
+ * A list of `CatalogObject`s containing the `CatalogItemOptionValue`s for this item.
  * @member {Array.<module:model/CatalogObject>} values
  */
 exports.prototype['values'] = undefined;
 /**
- * The number of [CatalogItem](#type-catalogitem)s currently associated with this item option. Present only if the `include_counts` was specified in the request. Any count over 100 will be returned as `100`.
+ * The number of `CatalogItem`s currently associated with this item option. Present only if the `include_counts` was specified in the request. Any count over 100 will be returned as `100`.
  * @member {Number} item_count
  */
 exports.prototype['item_count'] = undefined;

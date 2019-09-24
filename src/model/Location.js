@@ -57,6 +57,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -141,6 +142,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('pos_background_url')) {
       obj['pos_background_url'] = ApiClient.convertToType(data['pos_background_url'], 'String');
+    }
+      if (data.hasOwnProperty('mcc')) {
+      obj['mcc'] = ApiClient.convertToType(data['mcc'], 'String');
     }
     }
   return obj;
@@ -237,12 +241,12 @@ exports.prototype['business_email'] = undefined;
  */
 exports.prototype['description'] = undefined;
 /**
- * The Twitter username of the location without the '
+ * The Twitter username of the location without the '&#64;' symbol.
  * @member {String} twitter_username
  */
 exports.prototype['twitter_username'] = undefined;
 /**
- * The Instagram username of the location without the '
+ * The Instagram username of the location without the '&#64;' symbol.
  * @member {String} instagram_username
  */
 exports.prototype['instagram_username'] = undefined;
@@ -266,6 +270,11 @@ exports.prototype['logo_url'] = undefined;
  * @member {String} pos_background_url
  */
 exports.prototype['pos_background_url'] = undefined;
+/**
+ * The merchant category code (MCC) of the location, as standardized by ISO 18245. The MCC describes the kind of goods or services sold at the location.
+ * @member {String} mcc
+ */
+exports.prototype['mcc'] = undefined;
 
 
 

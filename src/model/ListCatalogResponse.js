@@ -62,17 +62,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of [Error](#type-error)s encountered.
+ * The set of `Error`s encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
+ * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The [CatalogObject](#type-catalogobject)s returned.
+ * The `CatalogObject`s returned.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;

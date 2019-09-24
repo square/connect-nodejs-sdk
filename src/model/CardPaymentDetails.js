@@ -42,6 +42,9 @@ var exports = function() {
 
 
 
+
+
+
 };
 
 /**
@@ -82,6 +85,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('application_cryptogram')) {
       obj['application_cryptogram'] = ApiClient.convertToType(data['application_cryptogram'], 'String');
     }
+      if (data.hasOwnProperty('verification_method')) {
+      obj['verification_method'] = ApiClient.convertToType(data['verification_method'], 'String');
+    }
+      if (data.hasOwnProperty('verification_results')) {
+      obj['verification_results'] = ApiClient.convertToType(data['verification_results'], 'String');
+    }
+      if (data.hasOwnProperty('statement_description')) {
+      obj['statement_description'] = ApiClient.convertToType(data['statement_description'], 'String');
+    }
       if (data.hasOwnProperty('errors')) {
       obj['errors'] = ApiClient.convertToType(data['errors'], [Error]);
     }
@@ -105,12 +117,12 @@ exports.prototype['card'] = undefined;
  */
 exports.prototype['entry_method'] = undefined;
 /**
- * Status code returned from the Card Verification Value (CVV) check.
+ * Status code returned from the Card Verification Value (CVV) check. Can be `CVV_ACCEPTED`, `CVV_REJECTED`, `CVV_NOT_CHECKED`.
  * @member {String} cvv_status
  */
 exports.prototype['cvv_status'] = undefined;
 /**
- * Status code returned from the Address Verification System (AVS) check.
+ * Status code returned from the Address Verification System (AVS) check. Can be `AVS_ACCEPTED`, `AVS_REJECTED`, `AVS_NOT_CHECKED`.
  * @member {String} avs_status
  */
 exports.prototype['avs_status'] = undefined;
@@ -120,7 +132,7 @@ exports.prototype['avs_status'] = undefined;
  */
 exports.prototype['auth_result_code'] = undefined;
 /**
- * For EMV payments, identifies the EMV application used for the payment
+ * For EMV payments, identifies the EMV application used for the payment.
  * @member {String} application_identifier
  */
 exports.prototype['application_identifier'] = undefined;
@@ -134,6 +146,21 @@ exports.prototype['application_name'] = undefined;
  * @member {String} application_cryptogram
  */
 exports.prototype['application_cryptogram'] = undefined;
+/**
+ * For EMV payments, method used to verify the cardholder's identity.  Can be one of `PIN`, `SIGNATURE`, `PIN_AND_SIGNATURE`, `ON_DEVICE`, or `NONE`.
+ * @member {String} verification_method
+ */
+exports.prototype['verification_method'] = undefined;
+/**
+ * For EMV payments, the results of the cardholder verification.  Can be one of `SUCCESS`, `FAILURE`, or `UNKNOWN`.
+ * @member {String} verification_results
+ */
+exports.prototype['verification_results'] = undefined;
+/**
+ * The statement description sent to the card networks.  Note: The actual statement description will vary and is likely to be truncated and appended with additional information on a per issuer basis.
+ * @member {String} statement_description
+ */
+exports.prototype['statement_description'] = undefined;
 /**
  * Information on errors encountered during the request.
  * @member {Array.<module:model/Error>} errors

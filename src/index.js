@@ -198,9 +198,12 @@ var MeasurementUnitArea = require('./model/MeasurementUnitArea');
 var MeasurementUnitCustom = require('./model/MeasurementUnitCustom');
 var MeasurementUnitGeneric = require('./model/MeasurementUnitGeneric');
 var MeasurementUnitLength = require('./model/MeasurementUnitLength');
+var MeasurementUnitTime = require('./model/MeasurementUnitTime');
 var MeasurementUnitUnitType = require('./model/MeasurementUnitUnitType');
 var MeasurementUnitVolume = require('./model/MeasurementUnitVolume');
 var MeasurementUnitWeight = require('./model/MeasurementUnitWeight');
+var Merchant = require('./model/Merchant');
+var MerchantStatus = require('./model/MerchantStatus');
 var ModelBreak = require('./model/ModelBreak');
 var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
@@ -268,6 +271,8 @@ var RetrieveInventoryPhysicalCountRequest = require('./model/RetrieveInventoryPh
 var RetrieveInventoryPhysicalCountResponse = require('./model/RetrieveInventoryPhysicalCountResponse');
 var RetrieveLocationRequest = require('./model/RetrieveLocationRequest');
 var RetrieveLocationResponse = require('./model/RetrieveLocationResponse');
+var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
+var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
 var RetrieveTransactionResponse = require('./model/RetrieveTransactionResponse');
 var RevokeTokenRequest = require('./model/RevokeTokenRequest');
@@ -322,6 +327,8 @@ var UpdateItemModifierListsRequest = require('./model/UpdateItemModifierListsReq
 var UpdateItemModifierListsResponse = require('./model/UpdateItemModifierListsResponse');
 var UpdateItemTaxesRequest = require('./model/UpdateItemTaxesRequest');
 var UpdateItemTaxesResponse = require('./model/UpdateItemTaxesResponse');
+var UpdateLocationRequest = require('./model/UpdateLocationRequest');
+var UpdateLocationResponse = require('./model/UpdateLocationResponse');
 var UpdateOrderRequest = require('./model/UpdateOrderRequest');
 var UpdateOrderResponse = require('./model/UpdateOrderResponse');
 var UpdateShiftRequest = require('./model/UpdateShiftRequest');
@@ -504,6 +511,7 @@ var EmployeesApi = require('./api/EmployeesApi');
 var InventoryApi = require('./api/InventoryApi');
 var LaborApi = require('./api/LaborApi');
 var LocationsApi = require('./api/LocationsApi');
+var MerchantsApi = require('./api/MerchantsApi');
 var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
 var OAuthApi = require('./api/OAuthApi');
 var OrdersApi = require('./api/OrdersApi');
@@ -546,7 +554,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190814.2
+ * @version 2.20190925.0
  */
   module.exports = {
   /**
@@ -1480,6 +1488,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   MeasurementUnitLength: MeasurementUnitLength,
   /**
+   * The MeasurementUnitTime model constructor.
+   * @property {module:model/MeasurementUnitTime}
+   */
+  MeasurementUnitTime: MeasurementUnitTime,
+  /**
    * The MeasurementUnitUnitType model constructor.
    * @property {module:model/MeasurementUnitUnitType}
    */
@@ -1494,6 +1507,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/MeasurementUnitWeight}
    */
   MeasurementUnitWeight: MeasurementUnitWeight,
+  /**
+   * The Merchant model constructor.
+   * @property {module:model/Merchant}
+   */
+  Merchant: Merchant,
+  /**
+   * The MerchantStatus model constructor.
+   * @property {module:model/MerchantStatus}
+   */
+  MerchantStatus: MerchantStatus,
   /**
    * The ModelBreak model constructor.
    * @property {module:model/ModelBreak}
@@ -1830,6 +1853,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveLocationResponse: RetrieveLocationResponse,
   /**
+   * The RetrieveMerchantRequest model constructor.
+   * @property {module:model/RetrieveMerchantRequest}
+   */
+  RetrieveMerchantRequest: RetrieveMerchantRequest,
+  /**
+   * The RetrieveMerchantResponse model constructor.
+   * @property {module:model/RetrieveMerchantResponse}
+   */
+  RetrieveMerchantResponse: RetrieveMerchantResponse,
+  /**
    * The RetrieveTransactionRequest model constructor.
    * @property {module:model/RetrieveTransactionRequest}
    */
@@ -2099,6 +2132,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/UpdateItemTaxesResponse}
    */
   UpdateItemTaxesResponse: UpdateItemTaxesResponse,
+  /**
+   * The UpdateLocationRequest model constructor.
+   * @property {module:model/UpdateLocationRequest}
+   */
+  UpdateLocationRequest: UpdateLocationRequest,
+  /**
+   * The UpdateLocationResponse model constructor.
+   * @property {module:model/UpdateLocationResponse}
+   */
+  UpdateLocationResponse: UpdateLocationResponse,
   /**
    * The UpdateOrderRequest model constructor.
    * @property {module:model/UpdateOrderRequest}
@@ -3004,6 +3047,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/LocationsApi}
    */
   LocationsApi: LocationsApi,
+  /**
+   * The MerchantsApi service constructor.
+   * @property {module:api/MerchantsApi}
+   */
+  MerchantsApi: MerchantsApi,
   /**
    * The MobileAuthorizationApi service constructor.
    * @property {module:api/MobileAuthorizationApi}
