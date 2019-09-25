@@ -25,7 +25,7 @@ var Location = require('./Location');
 
 /**
  * Constructs a new <code>RetrieveLocationResponse</code>.
- * Defines the fields that are included in the response body of a request to the [RetrieveLocation](#endpoint-retrievelocation) endpoint.  One of &#x60;errors&#x60; or &#x60;location&#x60; is present in a given response (never both).
+ * Defines the fields that the  [RetrieveLocation](#endpoint-retrievelocation) endpoint returns  in a response.
  * @alias module:model/RetrieveLocationResponse
  * @class
  */
@@ -58,7 +58,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Any errors that occurred during the request.
+ * Information on errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

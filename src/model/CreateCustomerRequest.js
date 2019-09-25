@@ -93,7 +93,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The idempotency key for the request. See the [Idempotency](/basics/api101/idempotency) guide for more information.
+ * The idempotency key for the request. See the [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) guide for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

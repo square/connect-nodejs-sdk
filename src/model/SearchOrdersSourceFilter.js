@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filters by [Source](#type-ordersource) `name`. Will return any orders with with a `source.name` that matches any of the listed source names.  Max: 10 source names.
+ * Filters by `Source` `name`. Will return any orders with with a `source.name` that matches any of the listed source names.  Max: 10 source names.
  * @member {Array.<String>} source_names
  */
 exports.prototype['source_names'] = undefined;

@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/CatalogModifierOverride
  * @class
- * @param modifierId {String} The ID of the [CatalogModifier](#type-catalogmodifier) whose default behavior is being overridden.
+ * @param modifierId {String} The ID of the `CatalogModifier` whose default behavior is being overridden.
  */
 var exports = function(modifierId) {
   var _this = this;
@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the [CatalogModifier](#type-catalogmodifier) whose default behavior is being overridden.
+ * The ID of the `CatalogModifier` whose default behavior is being overridden.
  * @member {String} modifier_id
  */
 exports.prototype['modifier_id'] = undefined;
 /**
- * If `true`, this [CatalogModifier](#type-catalogmodifier) should be selected by default for this [CatalogItem](#type-catalogitem).
+ * If `true`, this `CatalogModifier](#type-catalogmodifier) should be selected by default for this [CatalogItem`.
  * @member {Boolean} on_by_default
  */
 exports.prototype['on_by_default'] = undefined;

@@ -61,12 +61,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of [Error](#type-error)s encountered.
+ * The set of `Error`s encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The IDs of all [CatalogObject](#type-catalogobject)s deleted by this request. Multiple IDs may be returned when associated objects are also deleted, for example a [CatalogItemVariation](#type-catalogitemvariation) will be deleted (and its ID included in this field) when its parent [CatalogItem](#type-catalogitem) is deleted.
+ * The IDs of all `CatalogObject`s deleted by this request. Multiple IDs may be returned when associated objects are also deleted, for example a `CatalogItemVariation` when its parent `CatalogItem` is deleted.
  * @member {Array.<String>} deleted_object_ids
  */
 exports.prototype['deleted_object_ids'] = undefined;

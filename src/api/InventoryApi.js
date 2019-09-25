@@ -61,7 +61,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -113,7 +113,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -199,7 +199,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryAdjustment
    * Returns the [InventoryAdjustment](#type-inventoryadjustment) object with the provided &#x60;adjustment_id&#x60;.
-   * @param {String} adjustmentId ID of the [InventoryAdjustment](#type-inventoryadjustment) to retrieve.
+   * @param {String} adjustmentId ID of the &#x60;InventoryAdjustment&#x60; to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveInventoryAdjustmentResponse} and HTTP response
    */
   this.retrieveInventoryAdjustmentWithHttpInfo = function(adjustmentId) {
@@ -218,7 +218,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -238,7 +238,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryAdjustment
    * Returns the [InventoryAdjustment](#type-inventoryadjustment) object with the provided &#x60;adjustment_id&#x60;.
-   * @param {String} adjustmentId ID of the [InventoryAdjustment](#type-inventoryadjustment) to retrieve.
+   * @param {String} adjustmentId ID of the &#x60;InventoryAdjustment&#x60; to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveInventoryAdjustmentResponse}
    */
   this.retrieveInventoryAdjustment = function(adjustmentId) {
@@ -252,10 +252,10 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryChanges
    * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint is useful when displaying recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
-   * @param {String} catalogObjectId ID of the [CatalogObject](#type-catalogobject) to retrieve.
+   * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationIds The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveInventoryChangesResponse} and HTTP response
    */
   this.retrieveInventoryChangesWithHttpInfo = function(catalogObjectId, opts) {
@@ -277,7 +277,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -297,10 +297,10 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryChanges
    * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint is useful when displaying recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
-   * @param {String} catalogObjectId ID of the [CatalogObject](#type-catalogobject) to retrieve.
+   * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationIds The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveInventoryChangesResponse}
    */
   this.retrieveInventoryChanges = function(catalogObjectId, opts) {
@@ -314,10 +314,10 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryCount
    * Retrieves the current calculated stock count for a given [CatalogObject](#type-catalogobject) at a given set of [Location](#type-location)s. Responses are paginated and unsorted. For more sophisticated queries, use a batch endpoint.
-   * @param {String} catalogObjectId ID of the [CatalogObject](#type-catalogobject) to retrieve.
+   * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationIds The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveInventoryCountResponse} and HTTP response
    */
   this.retrieveInventoryCountWithHttpInfo = function(catalogObjectId, opts) {
@@ -339,7 +339,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -359,10 +359,10 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryCount
    * Retrieves the current calculated stock count for a given [CatalogObject](#type-catalogobject) at a given set of [Location](#type-location)s. Responses are paginated and unsorted. For more sophisticated queries, use a batch endpoint.
-   * @param {String} catalogObjectId ID of the [CatalogObject](#type-catalogobject) to retrieve.
+   * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationIds The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveInventoryCountResponse}
    */
   this.retrieveInventoryCount = function(catalogObjectId, opts) {
@@ -376,7 +376,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryPhysicalCount
    * Returns the [InventoryPhysicalCount](#type-inventoryphysicalcount) object with the provided &#x60;physical_count_id&#x60;.
-   * @param {String} physicalCountId ID of the [InventoryPhysicalCount](#type-inventoryphysicalcount) to retrieve.
+   * @param {String} physicalCountId ID of the &#x60;InventoryPhysicalCount&#x60; to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveInventoryPhysicalCountResponse} and HTTP response
    */
   this.retrieveInventoryPhysicalCountWithHttpInfo = function(physicalCountId) {
@@ -395,7 +395,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -415,7 +415,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveInventoryPhysicalCount
    * Returns the [InventoryPhysicalCount](#type-inventoryphysicalcount) object with the provided &#x60;physical_count_id&#x60;.
-   * @param {String} physicalCountId ID of the [InventoryPhysicalCount](#type-inventoryphysicalcount) to retrieve.
+   * @param {String} physicalCountId ID of the &#x60;InventoryPhysicalCount&#x60; to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveInventoryPhysicalCountResponse}
    */
   this.retrieveInventoryPhysicalCount = function(physicalCountId) {

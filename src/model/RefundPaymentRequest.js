@@ -27,8 +27,8 @@ var Money = require('./Money');
  * Refunds a payment.
  * @alias module:model/RefundPaymentRequest
  * @class
- * @param idempotencyKey {String}  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](/basics/api101/idempotency).
- * @param amountMoney {module:model/Money} The amount of money to refund.  Cannot be more than the `total_money` value of the payment minus the total amount of all previously completed refunds for this payment.  Must be specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](/build-basics/working-with-monetary-amounts) for details.  The currency code must match the currency associated with the business that is charging the card.
+ * @param idempotencyKey {String}  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency).
+ * @param amountMoney {module:model/Money} The amount of money to refund.  Cannot be more than the `total_money` value of the payment minus the total amount of all previously completed refunds for this payment.  Must be specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.  The currency code must match the currency associated with the business that is charging the card.
  */
 var exports = function(idempotencyKey, amountMoney) {
   var _this = this;
@@ -71,17 +71,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](/basics/api101/idempotency).
+ *  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency).
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * The amount of money to refund.  Cannot be more than the `total_money` value of the payment minus the total amount of all previously completed refunds for this payment.  Must be specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](/build-basics/working-with-monetary-amounts) for details.  The currency code must match the currency associated with the business that is charging the card.
+ * The amount of money to refund.  Cannot be more than the `total_money` value of the payment minus the total amount of all previously completed refunds for this payment.  Must be specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.  The currency code must match the currency associated with the business that is charging the card.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * Amount of money the developer will contribute to help cover the refunded amount. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  Value cannot be more than the `amount_money`.  You can specify this parameter in a refund request only if the  same parameter was also included when taking the payment. This is part of the application fee  scenario the API supports.  For more information, see  [Collect Fees](/payments-api/take-payments-and-collect-fees)
+ * Amount of money the developer will contribute to help cover the refunded amount. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  Value cannot be more than the `amount_money`.  You can specify this parameter in a refund request only if the  same parameter was also included when taking the payment. This is part of the application fee  scenario the API supports.  For more information, see  [Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees)
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;

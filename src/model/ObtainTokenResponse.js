@@ -80,7 +80,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
+ * A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](https://developer.squareup.com/docs/authz/oauth/build-with-the-api) guide for more information.
  * @member {String} access_token
  */
 exports.prototype['access_token'] = undefined;
@@ -115,7 +115,7 @@ exports.prototype['plan_id'] = undefined;
  */
 exports.prototype['id_token'] = undefined;
 /**
- * A refresh token. For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
+ * A refresh token. For more information, see [OAuth access token management](https://developer.squareup.com/docs/authz/oauth/how-it-works#oauth-access-token-management).
  * @member {String} refresh_token
  */
 exports.prototype['refresh_token'] = undefined;

@@ -65,7 +65,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Only used for catalog discounts. The catalog object ID for an existing [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
+ * Only used for catalog discounts. The catalog object ID for an existing `CatalogDiscount`.  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;

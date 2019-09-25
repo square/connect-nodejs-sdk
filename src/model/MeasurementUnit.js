@@ -24,12 +24,13 @@ var MeasurementUnitCustom = require('./MeasurementUnitCustom');
 
 /**
  * Constructs a new <code>MeasurementUnit</code>.
- * Represents a unit of measurement to use with a quantity, such as ounces or inches. Exactly one of the following fields are required: &#x60;custom_unit&#x60;, &#x60;area_unit&#x60;, &#x60;length_unit&#x60;, &#x60;volume_unit&#x60;, and &#x60;weight_unit&#x60;.  The &#x60;family&#x60; field describes the type of measurement. For example, ounces are in the weight family.
+ * Represents a unit of measurement to use with a quantity, such as ounces or inches. Exactly one of the following fields are required: &#x60;custom_unit&#x60;, &#x60;area_unit&#x60;, &#x60;length_unit&#x60;, &#x60;volume_unit&#x60;, and &#x60;weight_unit&#x60;.
  * @alias module:model/MeasurementUnit
  * @class
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -69,6 +70,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('generic_unit')) {
       obj['generic_unit'] = ApiClient.convertToType(data['generic_unit'], 'String');
     }
+      if (data.hasOwnProperty('time_unit')) {
+      obj['time_unit'] = ApiClient.convertToType(data['time_unit'], 'String');
+    }
       if (data.hasOwnProperty('type')) {
       obj['type'] = ApiClient.convertToType(data['type'], 'String');
     }
@@ -106,6 +110,11 @@ exports.prototype['weight_unit'] = undefined;
  * @member {String} generic_unit
  */
 exports.prototype['generic_unit'] = undefined;
+/**
+ * Represents a standard unit of time. See [MeasurementUnitTime](#type-measurementunittime) for possible values
+ * @member {String} time_unit
+ */
+exports.prototype['time_unit'] = undefined;
 /**
  * Represents the type of the measurement unit. See [MeasurementUnitUnitType](#type-measurementunitunittype) for possible values
  * @member {String} type

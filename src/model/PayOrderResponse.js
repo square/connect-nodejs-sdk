@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The paid, updated [order](#type-order).
+ * The paid, updated `order`.
  * @member {module:model/Order} order
  */
 exports.prototype['order'] = undefined;

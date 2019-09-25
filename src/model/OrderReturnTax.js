@@ -91,7 +91,7 @@ exports.prototype['uid'] = undefined;
  */
 exports.prototype['source_tax_uid'] = undefined;
 /**
- * The catalog object id referencing [CatalogTax](#type-catalogtax).
+ * The catalog object id referencing `CatalogTax`.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;

@@ -113,27 +113,27 @@ exports.prototype['prefix_query'] = undefined;
  */
 exports.prototype['range_query'] = undefined;
 /**
- * A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}`.
+ * A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a `CatalogItem` contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}`.
  * @member {module:model/CatalogQueryText} text_query
  */
 exports.prototype['text_query'] = undefined;
 /**
- * A query that returns all [CatalogItem](#type-catalogitem)s that have any of the given [CatalogTax](#type-catalogtax)es enabled.
+ * A query that returns all `CatalogItem](#type-catalogitem)s that have any of the given [CatalogTax`es enabled.
  * @member {module:model/CatalogQueryItemsForTax} items_for_tax_query
  */
 exports.prototype['items_for_tax_query'] = undefined;
 /**
- * A query that returns all [CatalogItem](#type-catalogitem)s that have any of the given [CatalogModifierList](#type-catalogmodifierlist)s enabled.
+ * A query that returns all `CatalogItem](#type-catalogitem)s that have any of the given [CatalogModifierList`s enabled.
  * @member {module:model/CatalogQueryItemsForModifierList} items_for_modifier_list_query
  */
 exports.prototype['items_for_modifier_list_query'] = undefined;
 /**
- * A query that returns all [CatalogItem](#type-catalogitem)s that have all of the given [CatalogItemOption](#type-catalogitemoption)s.
+ * A query that returns all `CatalogItem](#type-catalogitem)s that have all of the given [CatalogItemOption`s.
  * @member {module:model/CatalogQueryItemsForItemOptions} items_for_item_options_query
  */
 exports.prototype['items_for_item_options_query'] = undefined;
 /**
- * A query that returns all [CatalogItemVariation](#type-catalogitemvariations)s that have all of the given [CatalogItemOption](#type-catalogitemoption) values.
+ * A query that returns all `CatalogItemVariation](#type-catalogitemvariations)s that have all of the given [CatalogItemOption` values.
  * @member {module:model/CatalogQueryItemVariationsForItemOptionValues} item_variations_for_item_option_values_query
  */
 exports.prototype['item_variations_for_item_option_values_query'] = undefined;

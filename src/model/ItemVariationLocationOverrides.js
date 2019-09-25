@@ -73,27 +73,27 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the [location](#type-location).
+ * The ID of the `location`.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
 /**
- * The price of the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location), or blank for variable pricing.
+ * The price of the `CatalogItemVariation](#type-catalogitemvariation) at the given [location`, or blank for variable pricing.
  * @member {module:model/Money} price_money
  */
 exports.prototype['price_money'] = undefined;
 /**
- * The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for possible values
+ * The pricing type (fixed or variable) for the `CatalogItemVariation](#type-catalogitemvariation) at the given [location`. See [CatalogPricingType](#type-catalogpricingtype) for possible values
  * @member {String} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
 /**
- * If `true`, inventory tracking is active for the [CatalogItemVariation](#type-catalogitemvariation) at this [location](#type-location).
+ * If `true`, inventory tracking is active for the `CatalogItemVariation](#type-catalogitemvariation) at this [location`.
  * @member {Boolean} track_inventory
  */
 exports.prototype['track_inventory'] = undefined;
 /**
- * Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
+ * Indicates whether the `CatalogItemVariation` displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
  * @member {String} inventory_alert_type
  */
 exports.prototype['inventory_alert_type'] = undefined;

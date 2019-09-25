@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -94,9 +94,9 @@ module.exports = function(apiClient) {
    * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.locationId ID of location associated with payment.
-   * @param {String} opts.status If provided, only refunds with the given status are returned.  For a list of refund status values, see [PaymentRefund](#type-paymentrefund).  Default: If omitted refunds are returned regardless of status.
+   * @param {String} opts.status If provided, only refunds with the given status are returned.  For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
    * @param {String} opts.sourceType If provided, only refunds with the given source type are returned.  - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment  source.  Default: If omitted refunds are returned regardless of source type.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListPaymentRefundsResponse} and HTTP response
    */
@@ -118,7 +118,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -142,9 +142,9 @@ module.exports = function(apiClient) {
    * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.locationId ID of location associated with payment.
-   * @param {String} opts.status If provided, only refunds with the given status are returned.  For a list of refund status values, see [PaymentRefund](#type-paymentrefund).  Default: If omitted refunds are returned regardless of status.
+   * @param {String} opts.status If provided, only refunds with the given status are returned.  For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
    * @param {String} opts.sourceType If provided, only refunds with the given source type are returned.  - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment  source.  Default: If omitted refunds are returned regardless of source type.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListPaymentRefundsResponse}
    */
@@ -177,7 +177,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };

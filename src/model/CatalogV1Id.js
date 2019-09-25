@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['catalog_v1_id'] = undefined;
 /**
- * The ID of the [location](#type-location) this Connect V1 ID is associated with.
+ * The ID of the `location` this Connect V1 ID is associated with.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;

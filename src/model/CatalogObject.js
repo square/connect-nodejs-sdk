@@ -186,7 +186,7 @@ exports.prototype['version'] = undefined;
  */
 exports.prototype['is_deleted'] = undefined;
 /**
- * The Connect V1 IDs for this object at each [location](#type-location) where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
+ * The Connect V1 IDs for this object at each `location` where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
  * @member {Array.<module:model/CatalogV1Id>} catalog_v1_ids
  */
 exports.prototype['catalog_v1_ids'] = undefined;
@@ -211,72 +211,72 @@ exports.prototype['absent_at_location_ids'] = undefined;
  */
 exports.prototype['image_id'] = undefined;
 /**
- * Structured data for a [CatalogItem](#type-catalogitem), set for CatalogObjects of type `ITEM`.
+ * Structured data for a `CatalogItem`, set for CatalogObjects of type `ITEM`.
  * @member {module:model/CatalogItem} item_data
  */
 exports.prototype['item_data'] = undefined;
 /**
- * Structured data for a [CatalogCategory](#type-catalogcategory), set for CatalogObjects of type `CATEGORY`.
+ * Structured data for a `CatalogCategory`, set for CatalogObjects of type `CATEGORY`.
  * @member {module:model/CatalogCategory} category_data
  */
 exports.prototype['category_data'] = undefined;
 /**
- * Structured data for a [CatalogItemVariation](#type-catalogitemvariation), set for CatalogObjects of type `ITEM_VARIATION`.
+ * Structured data for a `CatalogItemVariation`, set for CatalogObjects of type `ITEM_VARIATION`.
  * @member {module:model/CatalogItemVariation} item_variation_data
  */
 exports.prototype['item_variation_data'] = undefined;
 /**
- * Structured data for a [CatalogTax](#type-catalogtax), set for CatalogObjects of type `TAX`.
+ * Structured data for a `CatalogTax`, set for CatalogObjects of type `TAX`.
  * @member {module:model/CatalogTax} tax_data
  */
 exports.prototype['tax_data'] = undefined;
 /**
- * Structured data for a [CatalogDiscount](#type-catalogdiscount), set for CatalogObjects of type `DISCOUNT`.
+ * Structured data for a `CatalogDiscount`, set for CatalogObjects of type `DISCOUNT`.
  * @member {module:model/CatalogDiscount} discount_data
  */
 exports.prototype['discount_data'] = undefined;
 /**
- * Structured data for a [CatalogModifierList](#type-catalogmodifierlist), set for CatalogObjects of type `MODIFIER_LIST`.
+ * Structured data for a `CatalogModifierList`, set for CatalogObjects of type `MODIFIER_LIST`.
  * @member {module:model/CatalogModifierList} modifier_list_data
  */
 exports.prototype['modifier_list_data'] = undefined;
 /**
- * Structured data for a [CatalogModifier](#type-catalogmodifier), set for CatalogObjects of type `MODIFIER`.
+ * Structured data for a `CatalogModifier`, set for CatalogObjects of type `MODIFIER`.
  * @member {module:model/CatalogModifier} modifier_data
  */
 exports.prototype['modifier_data'] = undefined;
 /**
- * Structured data for a [CatalogTimePeriod](#type-catalogtimeperiod), set for CatalogObjects of type `TIME_PERIOD`.
+ * Structured data for a `CatalogTimePeriod`, set for CatalogObjects of type `TIME_PERIOD`.
  * @member {module:model/CatalogTimePeriod} time_period_data
  */
 exports.prototype['time_period_data'] = undefined;
 /**
- * Structured data for a [CatalogProductSet](#type-catalogproductset), set for CatalogObjects of type `PRODUCT_SET`.
+ * Structured data for a `CatalogProductSet`, set for CatalogObjects of type `PRODUCT_SET`.
  * @member {module:model/CatalogProductSet} product_set_data
  */
 exports.prototype['product_set_data'] = undefined;
 /**
- * Structured data for a [CatalogPricingRule](#type-catalogpricingrule), set for CatalogObjects of type `PRICING_RULE`.
+ * Structured data for a `CatalogPricingRule`, set for CatalogObjects of type `PRICING_RULE`.
  * @member {module:model/CatalogPricingRule} pricing_rule_data
  */
 exports.prototype['pricing_rule_data'] = undefined;
 /**
- * Structured data for a [CatalogImage](#type-catalogimage), set for CatalogObjects of type `IMAGE`.
+ * Structured data for a `CatalogImage`, set for CatalogObjects of type `IMAGE`.
  * @member {module:model/CatalogImage} image_data
  */
 exports.prototype['image_data'] = undefined;
 /**
- * Structured data for a [CatalogMeasurementUnit](#type-catalogmeasurementunit), set for CatalogObjects of type `MEASUREMENT_UNIT`.
+ * Structured data for a `CatalogMeasurementUnit`, set for CatalogObjects of type `MEASUREMENT_UNIT`.
  * @member {module:model/CatalogMeasurementUnit} measurement_unit_data
  */
 exports.prototype['measurement_unit_data'] = undefined;
 /**
- * Structured data for a [CatalogItemOption](#type-catalogitemoption), set for CatalogObjects of type `ITEM_OPTION`.
+ * Structured data for a `CatalogItemOption`, set for CatalogObjects of type `ITEM_OPTION`.
  * @member {module:model/CatalogItemOption} item_option_data
  */
 exports.prototype['item_option_data'] = undefined;
 /**
- * Structured data for a [CatalogItemOptionValue](#type-catalogitemoptionvalue), set for CatalogObjects of type `ITEM_OPTION_VAL`.
+ * Structured data for a `CatalogItemOptionValue`, set for CatalogObjects of type `ITEM_OPTION_VAL`.
  * @member {module:model/CatalogItemOptionValue} item_option_value_data
  */
 exports.prototype['item_option_value_data'] = undefined;

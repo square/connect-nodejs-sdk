@@ -74,7 +74,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query. See [Pagination](/basics/api101/pagination) for more information.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
@@ -89,7 +89,7 @@ exports.prototype['query'] = undefined;
  */
 exports.prototype['limit'] = undefined;
 /**
- * Boolean that controls the format of the search results. If `true`, SearchOrders will return [`OrderEntry`](#type-orderentry) objects. If `false`, SearchOrders will return complete Order objects.  Default: `false`.
+ * Boolean that controls the format of the search results. If `true`, SearchOrders will return ``OrderEntry`` objects. If `false`, SearchOrders will return complete Order objects.  Default: `false`.
  * @member {Boolean} return_entries
  */
 exports.prototype['return_entries'] = undefined;

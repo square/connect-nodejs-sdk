@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/UpdateItemTaxesRequest
  * @class
- * @param itemIds {Array.<String>} The [CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax](#type-catalogtax)es are being updated.
+ * @param itemIds {Array.<String>} The `CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax`es are being updated.
  */
 var exports = function(itemIds) {
   var _this = this;
@@ -61,17 +61,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The [CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax](#type-catalogtax)es are being updated.
+ * The `CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax`es are being updated.
  * @member {Array.<String>} item_ids
  */
 exports.prototype['item_ids'] = undefined;
 /**
- * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to enable for the [CatalogItem](#type-catalogitem).
+ * The set of `CatalogTax](#type-catalogtax)es (referenced by ID) to enable for the [CatalogItem`.
  * @member {Array.<String>} taxes_to_enable
  */
 exports.prototype['taxes_to_enable'] = undefined;
 /**
- * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to disable for the [CatalogItem](#type-catalogitem).
+ * The set of `CatalogTax](#type-catalogtax)es (referenced by ID) to disable for the [CatalogItem`.
  * @member {Array.<String>} taxes_to_disable
  */
 exports.prototype['taxes_to_disable'] = undefined;

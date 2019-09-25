@@ -111,7 +111,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the [CatalogItem](#type-catalogitem) associated with this item variation. Searchable.
+ * The ID of the `CatalogItem` associated with this item variation. Searchable.
  * @member {String} item_id
  */
 exports.prototype['item_id'] = undefined;
@@ -131,7 +131,7 @@ exports.prototype['sku'] = undefined;
  */
 exports.prototype['upc'] = undefined;
 /**
- * The order in which this item variation should be displayed. This value is read-only. On writes, the ordinal for each item variation within a parent [CatalogItem](#type-catalogitem) is set according to the item variations's position. On reads, the value is not guaranteed to be sequential or unique.
+ * The order in which this item variation should be displayed. This value is read-only. On writes, the ordinal for each item variation within a parent `CatalogItem` is set according to the item variations's position. On reads, the value is not guaranteed to be sequential or unique.
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;
@@ -146,7 +146,7 @@ exports.prototype['pricing_type'] = undefined;
  */
 exports.prototype['price_money'] = undefined;
 /**
- * Per-[location](#type-location) price and inventory overrides.
+ * Per-`location` price and inventory overrides.
  * @member {Array.<module:model/ItemVariationLocationOverrides>} location_overrides
  */
 exports.prototype['location_overrides'] = undefined;
@@ -171,7 +171,7 @@ exports.prototype['inventory_alert_threshold'] = undefined;
  */
 exports.prototype['user_data'] = undefined;
 /**
- * If the [CatalogItem](#type-catalogitem) that owns this item variation is of type `APPOINTMENTS_SERVICE`, then this is the duration of the service in milliseconds. For example, a 30 minute appointment would have the value `1800000`, which is equal to 30 (minutes) * 60 (seconds per minute) * 1000 (milliseconds per second).
+ * If the `CatalogItem` that owns this item variation is of type `APPOINTMENTS_SERVICE`, then this is the duration of the service in milliseconds. For example, a 30 minute appointment would have the value `1800000`, which is equal to 30 (minutes) * 60 (seconds per minute) * 1000 (milliseconds per second).
  * @member {Number} service_duration
  */
 exports.prototype['service_duration'] = undefined;

@@ -40,7 +40,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment, you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentResponse} and HTTP response
    */
@@ -60,7 +60,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -79,7 +79,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment, you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentResponse}
    */
@@ -93,7 +93,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels a payment identified by the idenpotency key that is specified the request.  Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse} and HTTP response
    */
@@ -112,7 +112,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -131,7 +131,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels a payment identified by the idenpotency key that is specified the request.  Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse}
    */
@@ -145,7 +145,7 @@ module.exports = function(apiClient) {
 
   /**
    * CompletePayment
-   * Completes a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment,  you can complete the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId Unique ID identifying the payment to be completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CompletePaymentResponse} and HTTP response
    */
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -184,7 +184,7 @@ module.exports = function(apiClient) {
 
   /**
    * CompletePayment
-   * Completes a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment,  you can complete the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId Unique ID identifying the payment to be completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CompletePaymentResponse}
    */
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -270,7 +270,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -308,7 +308,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.beginTime Timestamp for the beginning of the reporting period, in RFC 3339 format. Inclusive. Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.locationId ID of location associated with payment
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.
@@ -334,7 +334,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-08-14';
+    headerParams['Square-Version'] = '2019-09-25';
 
     var formParams = {
     };
@@ -358,7 +358,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.beginTime Timestamp for the beginning of the reporting period, in RFC 3339 format. Inclusive. Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.locationId ID of location associated with payment
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.

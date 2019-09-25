@@ -73,12 +73,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filter by [`OrderState`](#type-orderstate).
+ * Filter by ``OrderState``.
  * @member {module:model/SearchOrdersStateFilter} state_filter
  */
 exports.prototype['state_filter'] = undefined;
 /**
- * Filter for results within a time range.  __Important:__ If you filter for orders by time range, you must set SearchOrdersSort to sort by the same field. [Learn more about filtering orders by time range](/orders-api/manage-orders#important-note-on-filtering-orders-by-time-range)
+ * Filter for results within a time range.  __Important:__ If you filter for orders by time range, you must set SearchOrdersSort to sort by the same field. [Learn more about filtering orders by time range](https://developer.squareup.com/docs/orders-api/manage-orders#important-note-on-filtering-orders-by-time-range)
  * @member {module:model/SearchOrdersDateTimeFilter} date_time_filter
  */
 exports.prototype['date_time_filter'] = undefined;

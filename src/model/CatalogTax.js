@@ -92,7 +92,7 @@ exports.prototype['inclusion_type'] = undefined;
  */
 exports.prototype['percentage'] = undefined;
 /**
- * If `true`, the fee applies to custom amounts entered into the Square Point of Sale app that are not associated with a particular [CatalogItem](#type-catalogitem).
+ * If `true`, the fee applies to custom amounts entered into the Square Point of Sale app that are not associated with a particular `CatalogItem`.
  * @member {Boolean} applies_to_custom_amounts
  */
 exports.prototype['applies_to_custom_amounts'] = undefined;

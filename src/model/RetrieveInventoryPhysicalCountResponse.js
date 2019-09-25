@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The requested [InventoryPhysicalCount](#type-inventoryphysicalcount).
+ * The requested `InventoryPhysicalCount`.
  * @member {module:model/InventoryPhysicalCount} count
  */
 exports.prototype['count'] = undefined;

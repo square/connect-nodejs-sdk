@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Filter based on [Order Fulfillment](#type-orderfulfillment) information.
  * @alias module:model/SearchOrdersFulfillmentFilter
  * @class
- * @param fulfillmentTypes {Array.<String>} List of [fulfillment types](#type-orderfulfillmenttype) to filter for. Will return orders if any of its fulfillments match any of the fulfillment types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
+ * @param fulfillmentTypes {Array.<String>} List of `fulfillment types` to filter for. Will return orders if any of its fulfillments match any of the fulfillment types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
  */
 var exports = function(fulfillmentTypes) {
   var _this = this;
@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * List of [fulfillment types](#type-orderfulfillmenttype) to filter for. Will return orders if any of its fulfillments match any of the fulfillment types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
+ * List of `fulfillment types` to filter for. Will return orders if any of its fulfillments match any of the fulfillment types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
  * @member {Array.<String>} fulfillment_types
  */
 exports.prototype['fulfillment_types'] = undefined;
 /**
- * List of [fulfillment states](#type-orderfulfillmentstate) to filter for. Will return orders if any of its fulfillments match any of the fulfillment states listed in this field. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
+ * List of `fulfillment states` to filter for. Will return orders if any of its fulfillments match any of the fulfillment states listed in this field. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
  * @member {Array.<String>} fulfillment_states
  */
 exports.prototype['fulfillment_states'] = undefined;

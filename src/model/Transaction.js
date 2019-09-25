@@ -116,7 +116,7 @@ exports.prototype['tenders'] = undefined;
  */
 exports.prototype['refunds'] = undefined;
 /**
- * If the transaction was created with the [Charge](#endpoint-transactions-charge) endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
+ * If the transaction was created with the `Charge` endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;

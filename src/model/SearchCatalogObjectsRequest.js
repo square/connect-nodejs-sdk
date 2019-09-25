@@ -77,12 +77,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](/basics/api101/pagination) for more information.
+ * The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The desired set of object types to appear in the search results. The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
+ * The desired set of object types to appear in the search results. The legal values are taken from the `CatalogObjectType` enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @member {Array.<String>} object_types
  */
 exports.prototype['object_types'] = undefined;
@@ -92,7 +92,7 @@ exports.prototype['object_types'] = undefined;
  */
 exports.prototype['include_deleted_objects'] = undefined;
 /**
- * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a [CatalogItem](#type-catalogitem) is returned in the object field of the response, its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, [CatalogImage](#type-catalogimage)s and [CatalogModifierList](#type-catalogmodifierlist)s will be included in the `related_objects` field of the response.  If a [CatalogItemVariation](#type-catalogitemvariation) is returned in the object field of the response, its parent [CatalogItem](#type-catalogitem) will be included in the `related_objects` field of the response.
+ * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a `CatalogItem` is returned in the object field of the response, its associated `CatalogCategory](#type-catalogcategory), [CatalogTax`es, `CatalogImage](#type-catalogimage)s and [CatalogModifierList`s will be included in the `related_objects` field of the response.  If a `CatalogItemVariation` is returned in the object field of the response, its parent `CatalogItem` will be included in the `related_objects` field of the response.
  * @member {Boolean} include_related_objects
  */
 exports.prototype['include_related_objects'] = undefined;

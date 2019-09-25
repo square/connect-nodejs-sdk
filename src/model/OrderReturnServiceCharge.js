@@ -118,7 +118,7 @@ exports.prototype['source_service_charge_uid'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * The catalog object ID of the associated [CatalogServiceCharge](#type-catalogservicecharge).
+ * The catalog object ID of the associated `CatalogServiceCharge`.
  * @member {String} catalog_object_id
  */
 exports.prototype['catalog_object_id'] = undefined;

@@ -39,6 +39,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -75,6 +76,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('fingerprint')) {
       obj['fingerprint'] = ApiClient.convertToType(data['fingerprint'], 'String');
+    }
+      if (data.hasOwnProperty('bin')) {
+      obj['bin'] = ApiClient.convertToType(data['bin'], 'String');
     }
     }
   return obj;
@@ -120,6 +124,11 @@ exports.prototype['billing_address'] = undefined;
  * @member {String} fingerprint
  */
 exports.prototype['fingerprint'] = undefined;
+/**
+ * The first six digits of the card number, known as the Bank Identification Number (BIN). Only the Payments API returns this field.
+ * @member {String} bin
+ */
+exports.prototype['bin'] = undefined;
 
 
 
