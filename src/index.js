@@ -180,6 +180,8 @@ var ListEmployeesRequest = require('./model/ListEmployeesRequest');
 var ListEmployeesResponse = require('./model/ListEmployeesResponse');
 var ListLocationsRequest = require('./model/ListLocationsRequest');
 var ListLocationsResponse = require('./model/ListLocationsResponse');
+var ListMerchantsRequest = require('./model/ListMerchantsRequest');
+var ListMerchantsResponse = require('./model/ListMerchantsResponse');
 var ListPaymentRefundsRequest = require('./model/ListPaymentRefundsRequest');
 var ListPaymentRefundsResponse = require('./model/ListPaymentRefundsResponse');
 var ListPaymentsRequest = require('./model/ListPaymentsRequest');
@@ -1398,6 +1400,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListLocationsResponse}
    */
   ListLocationsResponse: ListLocationsResponse,
+  /**
+   * The ListMerchantsRequest model constructor.
+   * @property {module:model/ListMerchantsRequest}
+   */
+  ListMerchantsRequest: ListMerchantsRequest,
+  /**
+   * The ListMerchantsResponse model constructor.
+   * @property {module:model/ListMerchantsResponse}
+   */
+  ListMerchantsResponse: ListMerchantsResponse,
   /**
    * The ListPaymentRefundsRequest model constructor.
    * @property {module:model/ListPaymentRefundsRequest}

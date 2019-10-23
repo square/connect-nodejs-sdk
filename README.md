@@ -383,6 +383,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ListEmployeesResponse](docs/ListEmployeesResponse.md)
  - [SquareConnect.ListLocationsRequest](docs/ListLocationsRequest.md)
  - [SquareConnect.ListLocationsResponse](docs/ListLocationsResponse.md)
+ - [SquareConnect.ListMerchantsRequest](docs/ListMerchantsRequest.md)
+ - [SquareConnect.ListMerchantsResponse](docs/ListMerchantsResponse.md)
  - [SquareConnect.ListPaymentRefundsRequest](docs/ListPaymentRefundsRequest.md)
  - [SquareConnect.ListPaymentRefundsResponse](docs/ListPaymentRefundsResponse.md)
  - [SquareConnect.ListPaymentsRequest](docs/ListPaymentsRequest.md)
