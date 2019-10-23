@@ -1,6 +1,7 @@
 # SquareConnect.OrderReturn
 
 ### Description
+**Note: This model is in beta.**
 
 The set of line items, service charges, taxes, discounts, tips, etc. being returned in an Order.
 

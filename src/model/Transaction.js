@@ -20,6 +20,7 @@ var Tender = require('./Tender');
 
 
 /**
+ * @deprecated
  * The Transaction model module.
  * @module model/Transaction
  */

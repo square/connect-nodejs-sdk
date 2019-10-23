@@ -18,6 +18,7 @@ var Error = require('./Error');
 
 
 /**
+ * @deprecated
  * The CaptureTransactionResponse model module.
  * @module model/CaptureTransactionResponse
  */

@@ -1,6 +1,7 @@
 # SquareConnect.UpdateLocationResponse
 
 ### Description
+**Note: This model is in beta.**
 
 Response object returned by the [UpdateLocation](#endpoint-updatelocation) endpoint.
 

@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The RenewTokenResponse model module.
  * @module model/RenewTokenResponse
  */

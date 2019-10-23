@@ -19,6 +19,7 @@ var Money = require('./Money');
 
 /**
  * The OrderRoundingAdjustment model module.
+ * Note: This model is in beta.
  * @module model/OrderRoundingAdjustment
  */
 

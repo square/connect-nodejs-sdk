@@ -18,6 +18,7 @@ var Money = require('./Money');
 
 
 /**
+ * @deprecated
  * The CreateOrderRequestModifier model module.
  * @module model/CreateOrderRequestModifier
  */

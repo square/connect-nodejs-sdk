@@ -18,6 +18,7 @@ var Money = require('./Money');
 
 
 /**
+ * @deprecated
  * The AdditionalRecipientReceivableRefund model module.
  * @module model/AdditionalRecipientReceivableRefund
  */

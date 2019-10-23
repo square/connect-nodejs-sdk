@@ -20,6 +20,7 @@ var Location = require('./Location');
 
 /**
  * The UpdateLocationResponse model module.
+ * Note: This model is in beta.
  * @module model/UpdateLocationResponse
  */
 

@@ -1,6 +1,7 @@
 # SquareConnect.ListAdditionalRecipientReceivableRefundsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 Defines the fields that are included in the response body of a request to the ListAdditionalRecipientReceivableRefunds endpoint.  One of `errors` or `additional_recipient_receivable_refunds` is present in a given response (never both).
 

@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The VoidTransactionRequest model module.
  * @module model/VoidTransactionRequest
  */

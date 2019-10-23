@@ -1,6 +1,7 @@
 # SquareConnect.OrderReturnLineItemModifier
 
 ### Description
+**Note: This model is in beta.**
 
 A line item modifier being returned.
 

@@ -1,6 +1,7 @@
 # SquareConnect.UpdateLocationRequest
 
 ### Description
+**Note: This model is in beta.**
 
 Request object for the [UpdateLocation](#endpoint-updatelocation) endpoint.
 

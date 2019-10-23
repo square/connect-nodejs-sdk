@@ -1,6 +1,7 @@
 # SquareConnect.CatalogItemOption
 
 ### Description
+**Note: This model is in beta.**
 
 A group of variations for a [CatalogItem](#type-catalogitem)'s.
 

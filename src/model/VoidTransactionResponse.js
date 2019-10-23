@@ -18,6 +18,7 @@ var Error = require('./Error');
 
 
 /**
+ * @deprecated
  * The VoidTransactionResponse model module.
  * @module model/VoidTransactionResponse
  */

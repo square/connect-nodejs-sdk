@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The ListTransactionsRequest model module.
  * @module model/ListTransactionsRequest
  */

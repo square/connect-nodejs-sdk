@@ -114,6 +114,7 @@ Class | Method | HTTP request | Description
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
 *SquareConnect.LocationsApi* | [**retrieveLocation**](docs/LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
 *SquareConnect.LocationsApi* | [**updateLocation**](docs/LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
+*SquareConnect.MerchantsApi* | [**listMerchants**](docs/MerchantsApi.md#listMerchants) | **GET** /v2/merchants | ListMerchants
 *SquareConnect.MerchantsApi* | [**retrieveMerchant**](docs/MerchantsApi.md#retrieveMerchant) | **GET** /v2/merchants/{merchant_id} | RetrieveMerchant
 *SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
 *SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
@@ -346,6 +347,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.Error](docs/Error.md)
  - [SquareConnect.ErrorCategory](docs/ErrorCategory.md)
  - [SquareConnect.ErrorCode](docs/ErrorCode.md)
+ - [SquareConnect.ExcludeStrategy](docs/ExcludeStrategy.md)
  - [SquareConnect.GetBreakTypeRequest](docs/GetBreakTypeRequest.md)
  - [SquareConnect.GetBreakTypeResponse](docs/GetBreakTypeResponse.md)
  - [SquareConnect.GetEmployeeWageRequest](docs/GetEmployeeWageRequest.md)

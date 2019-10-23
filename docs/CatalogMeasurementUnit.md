@@ -1,6 +1,7 @@
 # SquareConnect.CatalogMeasurementUnit
 
 ### Description
+**Note: This model is in beta.**
 
 Represents the unit used to measure a [CatalogItemVariation](#type-catalogitemvariation) and specifies the precision for decimal quantities.
 

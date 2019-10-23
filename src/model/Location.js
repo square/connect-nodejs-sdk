@@ -151,7 +151,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The location's unique ID.
+ * The Square-issued ID of the location.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
@@ -171,7 +171,7 @@ exports.prototype['address'] = undefined;
  */
 exports.prototype['timezone'] = undefined;
 /**
- * Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability) for possible values
+ * The Square features that are enabled for the location. See `LocationCapability` for possible values. See [LocationCapability](#type-locationcapability) for possible values
  * @member {Array.<String>} capabilities
  */
 exports.prototype['capabilities'] = undefined;
@@ -186,12 +186,12 @@ exports.prototype['status'] = undefined;
  */
 exports.prototype['created_at'] = undefined;
 /**
- * The identifier of the merchant that owns the location.
+ * The ID of the merchant that owns the location.
  * @member {String} merchant_id
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
+ * The country of the location, in ISO 3166-1-alpha-2 format.  See `Country` for possible values. See [Country](#type-country) for possible values
  * @member {String} country
  */
 exports.prototype['country'] = undefined;
@@ -201,7 +201,7 @@ exports.prototype['country'] = undefined;
  */
 exports.prototype['language_code'] = undefined;
 /**
- * The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency) for possible values
+ * The currency used for all transactions at this location, in ISO 4217 format.  See `Currency` for possible values. See [Currency](#type-currency) for possible values
  * @member {String} currency
  */
 exports.prototype['currency'] = undefined;

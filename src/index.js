@@ -144,6 +144,7 @@ var EmployeeWage = require('./model/EmployeeWage');
 var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
+var ExcludeStrategy = require('./model/ExcludeStrategy');
 var GetBreakTypeRequest = require('./model/GetBreakTypeRequest');
 var GetBreakTypeResponse = require('./model/GetBreakTypeResponse');
 var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
@@ -554,7 +555,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190925.0
+ * @version 2.20191023.0
  */
   module.exports = {
   /**
@@ -1217,6 +1218,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ErrorCode}
    */
   ErrorCode: ErrorCode,
+  /**
+   * The ExcludeStrategy model constructor.
+   * @property {module:model/ExcludeStrategy}
+   */
+  ExcludeStrategy: ExcludeStrategy,
   /**
    * The GetBreakTypeRequest model constructor.
    * @property {module:model/GetBreakTypeRequest}

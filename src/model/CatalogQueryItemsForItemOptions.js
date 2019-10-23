@@ -18,6 +18,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The CatalogQueryItemsForItemOptions model module.
+ * Note: This model is in beta.
  * @module model/CatalogQueryItemsForItemOptions
  */
 

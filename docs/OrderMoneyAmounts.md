@@ -1,6 +1,7 @@
 # SquareConnect.OrderMoneyAmounts
 
 ### Description
+**Note: This model is in beta.**
 
 A collection of various money amounts.
 

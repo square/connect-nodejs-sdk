@@ -90,7 +90,7 @@ exports.prototype['objects'] = undefined;
  */
 exports.prototype['related_objects'] = undefined;
 /**
- *  When this merchant's catalog was last updated. Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
+ *  When the associated product catalog was last updated. Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
  * @member {String} latest_time
  */
 exports.prototype['latest_time'] = undefined;

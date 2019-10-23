@@ -1,6 +1,7 @@
 # SquareConnect.ListRefundsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 Defines the fields that are included in the response body of a request to the [ListRefunds](#endpoint-listrefunds) endpoint.  One of `errors` or `refunds` is present in a given response (never both).
 

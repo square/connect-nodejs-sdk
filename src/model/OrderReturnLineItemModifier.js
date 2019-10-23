@@ -19,6 +19,7 @@ var Money = require('./Money');
 
 /**
  * The OrderReturnLineItemModifier model module.
+ * Note: This model is in beta.
  * @module model/OrderReturnLineItemModifier
  */
 

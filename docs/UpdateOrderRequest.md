@@ -1,6 +1,7 @@
 # SquareConnect.UpdateOrderRequest
 
 ### Description
+**Note: This model is in beta.**
 
 Defines the fields that are included in requests to the [UpdateOrder](#endpoint-orders-updateorder) endpoint.
 

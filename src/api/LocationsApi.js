@@ -49,7 +49,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -81,6 +81,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
+   * Note: This endpoint is in beta.
    * Retrieves details of a location.
    * @param {String} locationId The ID of the location to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveLocationResponse} and HTTP response
@@ -101,7 +102,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -134,6 +135,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateLocation
+   * Note: This endpoint is in beta.
    * Updates the &#x60;Location&#x60; specified by the given ID.
    * @param {String} locationId The ID of the location to update.
    * @param {module:model/UpdateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -160,7 +162,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };

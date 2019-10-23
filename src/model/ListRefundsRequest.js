@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The ListRefundsRequest model module.
  * @module model/ListRefundsRequest
  */

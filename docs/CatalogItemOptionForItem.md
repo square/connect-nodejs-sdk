@@ -1,6 +1,7 @@
 # SquareConnect.CatalogItemOptionForItem
 
 ### Description
+**Note: This model is in beta.**
 
  A list of item option values that can be assigned to item variations. For example, a t-shirt item may offer a color option or a size option.
 

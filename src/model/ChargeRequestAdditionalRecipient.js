@@ -18,6 +18,7 @@ var Money = require('./Money');
 
 
 /**
+ * @deprecated
  * The ChargeRequestAdditionalRecipient model module.
  * @module model/ChargeRequestAdditionalRecipient
  */

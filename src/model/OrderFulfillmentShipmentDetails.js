@@ -19,6 +19,7 @@ var OrderFulfillmentRecipient = require('./OrderFulfillmentRecipient');
 
 /**
  * The OrderFulfillmentShipmentDetails model module.
+ * Note: This model is in beta.
  * @module model/OrderFulfillmentShipmentDetails
  */
 

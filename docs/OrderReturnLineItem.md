@@ -1,6 +1,7 @@
 # SquareConnect.OrderReturnLineItem
 
 ### Description
+**Note: This model is in beta.**
 
 The line item being returned in an Order.
 
@@ -16,8 +17,8 @@ Name | Type | Description | Notes
 **catalog_object_id** | **String** | The &#x60;CatalogItemVariation&#x60; id applied to this returned line item. | [optional] 
 **variation_name** | **String** | The name of the variation applied to this returned line item. | [optional] 
 **return_modifiers** | [**[OrderReturnLineItemModifier]**](OrderReturnLineItemModifier.md) | The &#x60;CatalogModifier&#x60;s applied to this line item. | [optional] 
-**return_taxes** | [**[OrderReturnTax]**](OrderReturnTax.md) | A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of &#x60;applied_taxes&#x60;. | [optional] 
-**return_discounts** | [**[OrderReturnDiscount]**](OrderReturnDiscount.md) | A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any return-level discounts apportioned to this item.  This field has been deprecated in favour of &#x60;applied_discounts&#x60;. | [optional] 
+**return_taxes** | [**[OrderReturnTax]**](OrderReturnTax.md) | A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of &#x60;applied_taxes&#x60;. | [optional] [deprecated]
+**return_discounts** | [**[OrderReturnDiscount]**](OrderReturnDiscount.md) | A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any return-level discounts apportioned to this item.  This field has been deprecated in favour of &#x60;applied_discounts&#x60;. | [optional] [deprecated]
 **applied_taxes** | [**[OrderLineItemAppliedTax]**](OrderLineItemAppliedTax.md) | The list of references to &#x60;OrderReturnTax&#x60; entities applied to the returned line item. Each &#x60;OrderLineItemAppliedTax&#x60; has a &#x60;tax_uid&#x60; that references the &#x60;uid&#x60; of a top-level &#x60;OrderReturnTax&#x60; applied to the returned line item. On reads, the amount applied is populated. | [optional] 
 **applied_discounts** | [**[OrderLineItemAppliedDiscount]**](OrderLineItemAppliedDiscount.md) | The list of references to &#x60;OrderReturnDiscount&#x60; entities applied to the returned line item. Each &#x60;OrderLineItemAppliedDiscount&#x60; has a &#x60;discount_uid&#x60; that references the &#x60;uid&#x60; of a top-level &#x60;OrderReturnDiscount&#x60; applied to the returned line item. On reads, the amount applied is populated. | [optional] 
 **base_price_money** | [**Money**](Money.md) | The base price for a single unit of the line item. | [optional] 

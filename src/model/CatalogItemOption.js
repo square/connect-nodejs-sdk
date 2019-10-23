@@ -19,6 +19,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * The CatalogItemOption model module.
+ * Note: This model is in beta.
  * @module model/CatalogItemOption
  */
 

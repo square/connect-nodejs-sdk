@@ -45,7 +45,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAdditionalRecipientReceivableRefundsResponse} and HTTP response
    */
   this.listAdditionalRecipientReceivableRefundsWithHttpInfo = function(locationId, opts) {
-    console.warn("Calling deprecated API: ReportingApi.listAdditionalRecipientReceivableRefunds");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: ReportingApi.listAdditionalRecipientReceivableRefunds");
     opts = opts || {};
     var postBody = null;
 
@@ -66,7 +66,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -115,7 +115,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAdditionalRecipientReceivablesResponse} and HTTP response
    */
   this.listAdditionalRecipientReceivablesWithHttpInfo = function(locationId, opts) {
-    console.warn("Calling deprecated API: ReportingApi.listAdditionalRecipientReceivables");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: ReportingApi.listAdditionalRecipientReceivables");
     opts = opts || {};
     var postBody = null;
 
@@ -136,7 +136,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };

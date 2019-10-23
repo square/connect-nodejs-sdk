@@ -20,6 +20,7 @@ var Money = require('./Money');
 
 
 /**
+ * @deprecated
  * The ChargeRequest model module.
  * @module model/ChargeRequest
  */
@@ -30,7 +31,7 @@ var Money = require('./Money');
  * @alias module:model/ChargeRequest
  * @class
  * @param idempotencyKey {String} A value you specify that uniquely identifies this transaction among transactions you've created.  If you're unsure whether a particular transaction succeeded, you can reattempt it with the same idempotency key without worrying about double-charging the buyer.  See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
- * @param amountMoney {module:model/Money} The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.
+ * @param amountMoney {module:model/Money} The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.
  */
 var exports = function(idempotencyKey, amountMoney) {
   var _this = this;
@@ -114,7 +115,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.
+ * The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
