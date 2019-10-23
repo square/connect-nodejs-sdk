@@ -1,6 +1,7 @@
 # SquareConnect.PayOrderRequest
 
 ### Description
+**Note: This model is in beta.**
 
 Defines the fields that are included in requests to the [PayOrder](#endpoint-payorder) endpoint.
 

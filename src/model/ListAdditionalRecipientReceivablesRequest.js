@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The ListAdditionalRecipientReceivablesRequest model module.
  * @module model/ListAdditionalRecipientReceivablesRequest
  */

@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CustomerSort</code>.
- * Indicates the field to use for sorting customer profiles. For example, by total money spent with the merchant or the date of their first purchase.
+ * Indicates the field to use for sorting customer profiles.
  * @alias module:model/CustomerSort
  * @class
  */
@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The field to sort the results on. It could be the total money spent at the merchant, the date of the first visit (etc). See [CustomerSortField](#type-customersortfield) for possible values
+ * Indicates the information used to sort the results. For example, by creation date.  Default value: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values
  * @member {String} field
  */
 exports.prototype['field'] = undefined;
 /**
- * Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings. See [SortOrder](#type-sortorder) for possible values
+ * Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings.  Default value: `ASC`. See [SortOrder](#type-sortorder) for possible values
  * @member {String} order
  */
 exports.prototype['order'] = undefined;

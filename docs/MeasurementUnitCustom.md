@@ -1,6 +1,7 @@
 # SquareConnect.MeasurementUnitCustom
 
 ### Description
+**Note: This model is in beta.**
 
 The information needed to define a custom unit, provided by the seller.
 

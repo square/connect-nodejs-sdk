@@ -144,6 +144,7 @@ var EmployeeWage = require('./model/EmployeeWage');
 var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
+var ExcludeStrategy = require('./model/ExcludeStrategy');
 var GetBreakTypeRequest = require('./model/GetBreakTypeRequest');
 var GetBreakTypeResponse = require('./model/GetBreakTypeResponse');
 var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
@@ -179,6 +180,8 @@ var ListEmployeesRequest = require('./model/ListEmployeesRequest');
 var ListEmployeesResponse = require('./model/ListEmployeesResponse');
 var ListLocationsRequest = require('./model/ListLocationsRequest');
 var ListLocationsResponse = require('./model/ListLocationsResponse');
+var ListMerchantsRequest = require('./model/ListMerchantsRequest');
+var ListMerchantsResponse = require('./model/ListMerchantsResponse');
 var ListPaymentRefundsRequest = require('./model/ListPaymentRefundsRequest');
 var ListPaymentRefundsResponse = require('./model/ListPaymentRefundsResponse');
 var ListPaymentsRequest = require('./model/ListPaymentsRequest');
@@ -554,7 +557,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20190925.0
+ * @version 2.20191023.0
  */
   module.exports = {
   /**
@@ -1218,6 +1221,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ErrorCode: ErrorCode,
   /**
+   * The ExcludeStrategy model constructor.
+   * @property {module:model/ExcludeStrategy}
+   */
+  ExcludeStrategy: ExcludeStrategy,
+  /**
    * The GetBreakTypeRequest model constructor.
    * @property {module:model/GetBreakTypeRequest}
    */
@@ -1392,6 +1400,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListLocationsResponse}
    */
   ListLocationsResponse: ListLocationsResponse,
+  /**
+   * The ListMerchantsRequest model constructor.
+   * @property {module:model/ListMerchantsRequest}
+   */
+  ListMerchantsRequest: ListMerchantsRequest,
+  /**
+   * The ListMerchantsResponse model constructor.
+   * @property {module:model/ListMerchantsResponse}
+   */
+  ListMerchantsResponse: ListMerchantsResponse,
   /**
    * The ListPaymentRefundsRequest model constructor.
    * @property {module:model/ListPaymentRefundsRequest}

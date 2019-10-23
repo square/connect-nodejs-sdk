@@ -115,6 +115,7 @@ Name | Type | Description  | Notes
 
 <a name="payOrder"></a>
 # **payOrder**
+**Note: This endpoint is in beta.**
 > PayOrderResponse payOrder(orderId, body)
 
 PayOrder
@@ -214,6 +215,7 @@ Name | Type | Description  | Notes
 
 <a name="updateOrder"></a>
 # **updateOrder**
+**Note: This endpoint is in beta.**
 > UpdateOrderResponse updateOrder(locationId, orderId, body)
 
 UpdateOrder

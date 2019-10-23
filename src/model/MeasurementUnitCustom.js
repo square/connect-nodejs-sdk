@@ -18,6 +18,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The MeasurementUnitCustom model module.
+ * Note: This model is in beta.
  * @module model/MeasurementUnitCustom
  */
 

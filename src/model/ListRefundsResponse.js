@@ -19,6 +19,7 @@ var Refund = require('./Refund');
 
 
 /**
+ * @deprecated
  * The ListRefundsResponse model module.
  * @module model/ListRefundsResponse
  */

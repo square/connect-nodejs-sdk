@@ -25,6 +25,7 @@ var OrderReturnTax = require('./OrderReturnTax');
 
 /**
  * The OrderReturnLineItem model module.
+ * Note: This model is in beta.
  * @module model/OrderReturnLineItem
  */
 

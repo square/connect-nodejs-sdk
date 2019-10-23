@@ -1,6 +1,7 @@
 # SquareConnect.CaptureTransactionResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 Defines the fields that are included in the response body of a request to the [CaptureTransaction](#endpoint-capturetransaction) endpoint.
 

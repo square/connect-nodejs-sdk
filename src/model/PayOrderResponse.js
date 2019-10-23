@@ -20,6 +20,7 @@ var Order = require('./Order');
 
 /**
  * The PayOrderResponse model module.
+ * Note: This model is in beta.
  * @module model/PayOrderResponse
  */
 

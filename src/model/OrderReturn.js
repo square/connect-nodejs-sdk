@@ -24,6 +24,7 @@ var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
 
 /**
  * The OrderReturn model module.
+ * Note: This model is in beta.
  * @module model/OrderReturn
  */
 

@@ -1,6 +1,7 @@
 # SquareConnect.OrderReturnTax
 
 ### Description
+**Note: This model is in beta.**
 
 Represents a tax being returned that applies to one or more return line items in an order.  Fixed-amount, order-scoped taxes are distributed across all non-zero return line item totals. The amount distributed to each return line item is relative to that item’s contribution to the order subtotal.
 

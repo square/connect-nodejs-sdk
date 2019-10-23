@@ -1,6 +1,7 @@
 # SquareConnect.RenewTokenResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

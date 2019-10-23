@@ -1,6 +1,7 @@
 # SquareConnect.AdditionalRecipientReceivableRefund
 
 ### Description
+**Note: This model is deprecated.**
 
 A refund of an [AdditionalRecipientReceivable](#type-additionalrecipientreceivable). This includes the ID of the additional recipient receivable associated to this object, as well as a reference to the [Refund](#type-refund) that created this receivable refund.
 

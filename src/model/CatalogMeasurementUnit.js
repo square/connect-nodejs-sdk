@@ -19,6 +19,7 @@ var MeasurementUnit = require('./MeasurementUnit');
 
 /**
  * The CatalogMeasurementUnit model module.
+ * Note: This model is in beta.
  * @module model/CatalogMeasurementUnit
  */
 

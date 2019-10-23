@@ -48,7 +48,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CaptureTransactionResponse} and HTTP response
    */
   this.captureTransactionWithHttpInfo = function(locationId, transactionId) {
-    console.warn("Calling deprecated API: TransactionsApi.captureTransaction");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.captureTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -70,7 +70,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -111,7 +111,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ChargeResponse} and HTTP response
    */
   this.chargeWithHttpInfo = function(locationId, body) {
-    console.warn("Calling deprecated API: TransactionsApi.charge");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.charge");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -132,7 +132,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -174,7 +174,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateRefundResponse} and HTTP response
    */
   this.createRefundWithHttpInfo = function(locationId, transactionId, body) {
-    console.warn("Calling deprecated API: TransactionsApi.createRefund");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.createRefund");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -201,7 +201,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -247,7 +247,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListRefundsResponse} and HTTP response
    */
   this.listRefundsWithHttpInfo = function(locationId, opts) {
-    console.warn("Calling deprecated API: TransactionsApi.listRefunds");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.listRefunds");
     opts = opts || {};
     var postBody = null;
 
@@ -268,7 +268,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -317,7 +317,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTransactionsResponse} and HTTP response
    */
   this.listTransactionsWithHttpInfo = function(locationId, opts) {
-    console.warn("Calling deprecated API: TransactionsApi.listTransactions");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.listTransactions");
     opts = opts || {};
     var postBody = null;
 
@@ -338,7 +338,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -383,7 +383,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveTransactionResponse} and HTTP response
    */
   this.retrieveTransactionWithHttpInfo = function(locationId, transactionId) {
-    console.warn("Calling deprecated API: TransactionsApi.retrieveTransaction");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.retrieveTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -405,7 +405,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };
@@ -446,7 +446,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoidTransactionResponse} and HTTP response
    */
   this.voidTransactionWithHttpInfo = function(locationId, transactionId) {
-    console.warn("Calling deprecated API: TransactionsApi.voidTransaction");
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: TransactionsApi.voidTransaction");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -468,7 +468,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-09-25';
+    headerParams['Square-Version'] = '2019-10-23';
 
     var formParams = {
     };

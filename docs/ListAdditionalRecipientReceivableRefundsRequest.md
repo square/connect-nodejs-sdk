@@ -1,6 +1,7 @@
 # SquareConnect.ListAdditionalRecipientReceivableRefundsRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 Defines the query parameters that can be included in a request to the ListAdditionalRecipientReceivableRefunds endpoint.
 

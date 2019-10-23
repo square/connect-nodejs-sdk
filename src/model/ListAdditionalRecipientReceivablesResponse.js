@@ -19,6 +19,7 @@ var Error = require('./Error');
 
 
 /**
+ * @deprecated
  * The ListAdditionalRecipientReceivablesResponse model module.
  * @module model/ListAdditionalRecipientReceivablesResponse
  */

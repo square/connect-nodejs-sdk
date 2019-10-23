@@ -19,6 +19,7 @@ var MeasurementUnitCustom = require('./MeasurementUnitCustom');
 
 /**
  * The MeasurementUnit model module.
+ * Note: This model is in beta.
  * @module model/MeasurementUnit
  */
 

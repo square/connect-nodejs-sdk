@@ -1,6 +1,7 @@
 # SquareConnect.OrderFulfillmentShipmentDetails
 
 ### Description
+**Note: This model is in beta.**
 
 Contains details necessary to fulfill a shipment order.
 

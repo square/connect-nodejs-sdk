@@ -19,6 +19,7 @@ var Order = require('./Order');
 
 /**
  * The UpdateOrderRequest model module.
+ * Note: This model is in beta.
  * @module model/UpdateOrderRequest
  */
 

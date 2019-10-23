@@ -19,6 +19,7 @@ var Transaction = require('./Transaction');
 
 
 /**
+ * @deprecated
  * The ChargeResponse model module.
  * @module model/ChargeResponse
  */

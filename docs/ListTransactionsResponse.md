@@ -1,6 +1,7 @@
 # SquareConnect.ListTransactionsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 Defines the fields that are included in the response body of a request to the [ListTransactions](#endpoint-listtransactions) endpoint.  One of `errors` or `transactions` is present in a given response (never both).
 

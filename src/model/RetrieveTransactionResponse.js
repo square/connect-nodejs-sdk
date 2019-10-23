@@ -19,6 +19,7 @@ var Transaction = require('./Transaction');
 
 
 /**
+ * @deprecated
  * The RetrieveTransactionResponse model module.
  * @module model/RetrieveTransactionResponse
  */

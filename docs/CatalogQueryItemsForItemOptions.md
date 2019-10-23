@@ -1,6 +1,7 @@
 # SquareConnect.CatalogQueryItemsForItemOptions
 
 ### Description
+**Note: This model is in beta.**
 
 
 

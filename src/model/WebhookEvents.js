@@ -24,7 +24,12 @@ var exports = {
    * value: "inventory.count.updated"
    * @const
    */
-  "updated": "inventory.count.updated"};
+  "inventory.count.updated": "inventory.count.updated",
+  /**
+   * value: "catalog.version.updated"
+   * @const
+   */
+  "catalog.version.updated": "catalog.version.updated"};
 
 /**
  * Returns a <code>WebhookEvents</code> enum value from a Javascript object name.

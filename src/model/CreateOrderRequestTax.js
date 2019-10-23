@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The CreateOrderRequestTax model module.
  * @module model/CreateOrderRequestTax
  */
