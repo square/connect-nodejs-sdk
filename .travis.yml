@@ -15,3 +15,14 @@ deploy:
     secure: QsAC4FX9z2wiVLZSGnQOGDjES/Bu92TQwt2Kvtuybd+/8/bouwmyCfapI+SUiQO0w8azbw+Uf4Gopjg3XF43gMenfwqQcgFAMAx56in0kGx5PROHgleAcTvo9ncUPB7FeHNG/LZhDDqTjvDtH89dM3yjurtX4VIp5dDYQvvieLPHJELld+F+E26S3uRG4VHlr+o23wm65mJY0l8EPRp5NUcS/yRxw9N21ZfnMJvWgN+6m4ov0/WBwM0Fr7lLqBpvnVCWB0NqszEVEX89lqfl+FKHaaTNMpD0IdAg8sH4Gg8zkmw1+EvgW47dM+ipisZuxyq8CQkH/OiZoMDRnk+aObDmIzT5GV87OOICUCaMUgaa9OGdIfXjs3xiNJ2vEPEEcjqHu7v+DW6gM8wkaWwMr3eRj9wkkipPzhzoEDb/GSDgUxsa/1fwoQ1ovphX+V6EUvkXGAmVP/t3Jp21r+dE2tUE8Q2hqsJV31tmjJ+AXjeiqQuOpwODKWkGf0nr7zS1ddk3pdOS5KNsuBXtLWLXwghZO3p5At1xd9HWZ3xq0KEmBZqCUyXCeGP0/AjXZN4JurGRUosfjAe1XXg8gwEnZ+B1qe+di/sqqCGJCtSIB8jK3eE3Xz8LIH5JMzh9/N8bwnvOxgC0R8ZHGq6SJDcRjK8XmkGJOxR9PbaLiFrAVB8=
   on:
     branch: master
+notifications:
+  slack:
+    secure: pFDq5ZslMQiEpsAu7OpCyDeiprs4o6oUBXU2pD9/YLjA6Nym7UGVK31s+iWfWqNGUMx14MnVQjPeCb+UFcD/dhuCxfu/c7p9O/TKXmae+ZujTW6BIOnishRkpGcSlCLYbrjtPC/7l2A6LonmtWPTdhVhtoiUJA7nim6pr0FDSWk6wMLuoIKAzkZ0XbK8AyBhZa5w8KKw2B+yAqhZph0Bia0px8ZUK7NalIVSB10ad9MzIMB4YQbL53U+HRdJKjExvj/6HeHHGaZc1EA7M4Ns5V/NzFdMWR2UGjFFiybg7TVdDh/VAaupU2PHCxPSP456ObXiFVQMDjnc9ZiJ5uVYW/NFkbmgwcQ8SI7x220YcjCgn8QY/v9CW695qNsMpBQ1LP/aIuJ9RZZFJ5KzkPEp8RSdnnaGnvaqF5qBZdoy2OuQGeBclUGgycAHiptBhbTVnxoa8s0ynUZ4siMZBObitQAffxBYBdCAff7Ww6wAXo/Nkx4f7p4WNm5vQ91oN89RAaiiD6Omty6MsS5GeIqd+uwlzPufztW3gl+4vyKFIaGdfbZw4wpAoWWI9+BxbNLjUECLtr45mLIC837kreVT7tAJ7n4VKeQsLvx4uWhIBK11Cq5ZWGvuih0+rNsymL/p1c+HoQkLcW1i2z035eLTL2DmtqSxLClrnjoQz1YhbQ4=
+    on_success: change
+    template:
+      - "@oncall"
+      - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} in PR <%{pull_request_url}|#%{pull_request_number}> by %{author} %{result} in %{duration}"
+  email:
+    recipients:
+      - dexteam-external@squareup.com
+    on_success: change
