@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>BusinessHoursPeriod</code>.
- *  Represents a period of time during which a business location is open.
+ * Represents a period of time during which a business location is open.
  * @alias module:model/BusinessHoursPeriod
  * @class
  */

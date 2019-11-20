@@ -2,7 +2,7 @@
 
 ### Description
 
- Represents a period of time during which a business location is open.
+Represents a period of time during which a business location is open.
 
 ## Properties
 Name | Type | Description | Notes

@@ -18,6 +18,7 @@ var V1Fee = require('./V1Fee');
 
 
 /**
+ * @deprecated
  * The V1ListFeesResponse model module.
  * @module model/V1ListFeesResponse
  */

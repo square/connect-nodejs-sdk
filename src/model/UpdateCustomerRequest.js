@@ -89,52 +89,52 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The customer's given (i.e., first) name.
+ * The given (i.e., first) name associated with the customer profile.
  * @member {String} given_name
  */
 exports.prototype['given_name'] = undefined;
 /**
- * The customer's family (i.e., last) name.
+ * The family (i.e., last) name associated with the customer profile.
  * @member {String} family_name
  */
 exports.prototype['family_name'] = undefined;
 /**
- * The name of the customer's company.
+ * A business name associated with the customer profile.
  * @member {String} company_name
  */
 exports.prototype['company_name'] = undefined;
 /**
- * A nickname for the customer.
+ * A nickname for the customer profile.
  * @member {String} nickname
  */
 exports.prototype['nickname'] = undefined;
 /**
- * The customer's email address.
+ * The email address associated with the customer profile.
  * @member {String} email_address
  */
 exports.prototype['email_address'] = undefined;
 /**
- * The customer's physical address.
+ * The physical address associated with the customer profile.
  * @member {module:model/Address} address
  */
 exports.prototype['address'] = undefined;
 /**
- * The customer's phone number.
+ * The 11-digit phone number associated with the customer profile.
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
 /**
- * An optional second ID you can set to associate the customer with an entity in another system.
+ * An optional, second ID used to associate the customer profile with an entity in another system.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * An optional note to associate with the customer.
+ * A custom note associated with the customer profile.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
 /**
- * The customer birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example: `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on September 1st 1998.
+ * The birthday associated with the customer profile, in RFC-3339 format. Year is optional, timezone and times are not allowed. For example: `0000-09-01T00:00:00-00:00` indicates a birthday on September 1st. `1998-09-01T00:00:00-00:00` indications a birthday on September 1st __1998__.
  * @member {String} birthday
  */
 exports.prototype['birthday'] = undefined;

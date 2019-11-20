@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/CatalogQueryItemsForTax
  * @class
- * @param taxIds {Array.<String>} A set of `CatalogTax](#type-catalogtax) IDs to be used to find associated [CatalogItem`s.
+ * @param taxIds {Array.<String>} A set of `CatalogTax` IDs to be used to find associated `CatalogItem`s.
  */
 var exports = function(taxIds) {
   var _this = this;
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A set of `CatalogTax](#type-catalogtax) IDs to be used to find associated [CatalogItem`s.
+ * A set of `CatalogTax` IDs to be used to find associated `CatalogItem`s.
  * @member {Array.<String>} tax_ids
  */
 exports.prototype['tax_ids'] = undefined;

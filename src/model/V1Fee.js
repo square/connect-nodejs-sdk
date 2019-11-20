@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1Fee model module.
  * @module model/V1Fee
  */
@@ -113,7 +114,7 @@ exports.prototype['calculation_phase'] = undefined;
  */
 exports.prototype['adjustment_type'] = undefined;
 /**
- * If true, the fee applies to custom amounts entered into Square Register that are not associated with a particular item.
+ * If true, the fee applies to custom amounts entered into Square Point of Sale that are not associated with a particular item.
  * @member {Boolean} applies_to_custom_amounts
  */
 exports.prototype['applies_to_custom_amounts'] = undefined;

@@ -18,6 +18,7 @@ var V1ModifierList = require('./V1ModifierList');
 
 
 /**
+ * @deprecated
  * The V1ListModifierListsResponse model module.
  * @module model/V1ListModifierListsResponse
  */

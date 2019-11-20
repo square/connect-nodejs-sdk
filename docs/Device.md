@@ -1,6 +1,7 @@
 # SquareConnect.Device
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

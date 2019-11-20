@@ -1,6 +1,7 @@
 # SquareConnect.V1RetrieveBusinessRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

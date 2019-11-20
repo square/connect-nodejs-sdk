@@ -71,7 +71,7 @@ exports.prototype['attribute_name'] = undefined;
  */
 exports.prototype['initial_attribute_value'] = undefined;
 /**
- * The desired `SortOrder`. See [SortOrder](#type-sortorder) for possible values
+ * The desired sort order, `\"ASC\"` (ascending) or `\"DESC\"` (descending). See [SortOrder](#type-sortorder) for possible values
  * @member {String} sort_order
  */
 exports.prototype['sort_order'] = undefined;

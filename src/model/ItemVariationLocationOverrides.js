@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>ItemVariationLocationOverrides</code>.
- * Price and inventory alerting overrides for a [CatalogItemVariation](#type-catalogitemvariation) at a specific [location](#type-location).
+ * Price and inventory alerting overrides for a &#x60;CatalogItemVariation&#x60; at a specific &#x60;Location&#x60;.
  * @alias module:model/ItemVariationLocationOverrides
  * @class
  */
@@ -73,22 +73,22 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the `location`.
+ * The ID of the `Location`.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
 /**
- * The price of the `CatalogItemVariation](#type-catalogitemvariation) at the given [location`, or blank for variable pricing.
+ * The price of the `CatalogItemVariation` at the given `Location`, or blank for variable pricing.
  * @member {module:model/Money} price_money
  */
 exports.prototype['price_money'] = undefined;
 /**
- * The pricing type (fixed or variable) for the `CatalogItemVariation](#type-catalogitemvariation) at the given [location`. See [CatalogPricingType](#type-catalogpricingtype) for possible values
+ * The pricing type (fixed or variable) for the `CatalogItemVariation` at the given `Location`. See [CatalogPricingType](#type-catalogpricingtype) for possible values
  * @member {String} pricing_type
  */
 exports.prototype['pricing_type'] = undefined;
 /**
- * If `true`, inventory tracking is active for the `CatalogItemVariation](#type-catalogitemvariation) at this [location`.
+ * If `true`, inventory tracking is active for the `CatalogItemVariation` at this `Location`.
  * @member {Boolean} track_inventory
  */
 exports.prototype['track_inventory'] = undefined;

@@ -27,11 +27,12 @@ var WorkweekConfig = require('./WorkweekConfig');
  * A request to update a &#x60;WorkweekConfig&#x60; object
  * @alias module:model/UpdateWorkweekConfigRequest
  * @class
+ * @param workweekConfig {module:model/WorkweekConfig} The updated `WorkweekConfig` object.
  */
-var exports = function() {
+var exports = function(workweekConfig) {
   var _this = this;
 
-
+  _this['workweek_config'] = workweekConfig;
 };
 
 /**

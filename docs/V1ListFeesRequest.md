@@ -1,6 +1,7 @@
 # SquareConnect.V1ListFeesRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

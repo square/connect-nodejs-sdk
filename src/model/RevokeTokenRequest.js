@@ -60,7 +60,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Your application's ID, available from the [application dashboard](https://connect.squareup.com/apps).
+ * The Square issued ID for your application, available from the [application dashboard](https://connect.squareup.com/apps).
  * @member {String} client_id
  */
 exports.prototype['client_id'] = undefined;

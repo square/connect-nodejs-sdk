@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CreateMobileAuthorizationCodeRequest</code>.
- * Defines the body parameters that can be provided in a request to the CreateMobileAuthorizationCode endpoint.
+ * Defines the body parameters that can be provided in a request to the __CreateMobileAuthorizationCode__ endpoint.
  * @alias module:model/CreateMobileAuthorizationCodeRequest
  * @class
  */

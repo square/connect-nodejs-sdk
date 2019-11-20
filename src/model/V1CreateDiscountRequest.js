@@ -18,6 +18,7 @@ var V1Discount = require('./V1Discount');
 
 
 /**
+ * @deprecated
  * The V1CreateDiscountRequest model module.
  * @module model/V1CreateDiscountRequest
  */

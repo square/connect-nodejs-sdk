@@ -66,12 +66,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['unit'] = undefined;
 /**
- * Display name of the measurement unit. For example, 'Pound'.
+ * UI display name of the measurement unit. For example, 'Pound'.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * Abbreviation for the measurement unit. For example, 'lb'.
+ * UI display abbreviation for the measurement unit. For example, 'lb'.
  * @member {String} abbreviation
  */
 exports.prototype['abbreviation'] = undefined;

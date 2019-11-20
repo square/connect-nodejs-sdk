@@ -18,6 +18,7 @@ var V1Item = require('./V1Item');
 
 
 /**
+ * @deprecated
  * The V1CreateItemRequest model module.
  * @module model/V1CreateItemRequest
  */

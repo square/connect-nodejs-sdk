@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CustomerPreferences</code>.
- * Represents a particular customer&#39;s preferences.
+ * Represents communication preferences for the customer profile.
  * @alias module:model/CustomerPreferences
  * @class
  */

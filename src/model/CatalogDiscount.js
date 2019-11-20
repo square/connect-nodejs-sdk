@@ -37,6 +37,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -68,12 +69,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('label_color')) {
       obj['label_color'] = ApiClient.convertToType(data['label_color'], 'String');
     }
+      if (data.hasOwnProperty('modify_tax_basis')) {
+      obj['modify_tax_basis'] = ApiClient.convertToType(data['modify_tax_basis'], 'String');
+    }
     }
   return obj;
 }
 
 /**
- * The discount's name. Searchable. This field has max length of 255 Unicode code points.
+ * The discount name. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -98,10 +102,15 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['pin_required'] = undefined;
 /**
- * The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
+ * The color of the discount display label in the Square Point of Sale app. This must be a valid hex color code.
  * @member {String} label_color
  */
 exports.prototype['label_color'] = undefined;
+/**
+ * Indicates whether this discount should reduce the price used to calculate tax.  Most discounts should use `MODIFY_TAX_BASIS`. However, in some circumstances taxes must be calculated based on an item's price, ignoring a particular discount. For example, in many US jurisdictions, a manufacturer coupon or instant rebate reduces the price a customer pays but does not reduce the sale price used to calculate how much sales tax is due. In this case, the discount representing that manufacturer coupon should have `DO_NOT_MODIFY_TAX_BASIS` for this field.  If you are unsure whether you need to use this field, consult your tax professional. See [CatalogDiscountModifyTaxBasis](#type-catalogdiscountmodifytaxbasis) for possible values
+ * @member {String} modify_tax_basis
+ */
+exports.prototype['modify_tax_basis'] = undefined;
 
 
 

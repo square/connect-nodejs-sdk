@@ -18,6 +18,7 @@ var V1Money = require('./V1Money');
 
 
 /**
+ * @deprecated
  * The V1Discount model module.
  * @module model/V1Discount
  */
@@ -111,7 +112,7 @@ exports.prototype['discount_type'] = undefined;
  */
 exports.prototype['pin_required'] = undefined;
 /**
- * The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
+ * The color of the discount's display label in Square Point of Sale, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
  * @member {String} color
  */
 exports.prototype['color'] = undefined;

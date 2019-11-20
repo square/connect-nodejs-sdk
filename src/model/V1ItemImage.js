@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1ItemImage model module.
  * @module model/V1ItemImage
  */

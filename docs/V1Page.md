@@ -1,6 +1,7 @@
 # SquareConnect.V1Page
 
 ### Description
+**Note: This model is deprecated.**
 
 V1Page
 

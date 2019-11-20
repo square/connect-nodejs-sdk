@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListEmployeesRequest</code>.
- * Retrieve a paged-list of employees for a Square account
+ * 
  * @alias module:model/ListEmployeesRequest
  * @class
  */

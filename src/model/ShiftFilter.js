@@ -51,11 +51,11 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
-      if (data.hasOwnProperty('location_id')) {
-      obj['location_id'] = ApiClient.convertToType(data['location_id'], ['String']);
+      if (data.hasOwnProperty('location_ids')) {
+      obj['location_ids'] = ApiClient.convertToType(data['location_ids'], ['String']);
     }
-      if (data.hasOwnProperty('employee_id')) {
-      obj['employee_id'] = ApiClient.convertToType(data['employee_id'], ['String']);
+      if (data.hasOwnProperty('employee_ids')) {
+      obj['employee_ids'] = ApiClient.convertToType(data['employee_ids'], ['String']);
     }
       if (data.hasOwnProperty('status')) {
       obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -75,14 +75,14 @@ exports.constructFromObject = function(data, obj) {
 
 /**
  * Fetch shifts for the specified location.
- * @member {Array.<String>} location_id
+ * @member {Array.<String>} location_ids
  */
-exports.prototype['location_id'] = undefined;
+exports.prototype['location_ids'] = undefined;
 /**
  * Fetch shifts for the specified employee.
- * @member {Array.<String>} employee_id
+ * @member {Array.<String>} employee_ids
  */
-exports.prototype['employee_id'] = undefined;
+exports.prototype['employee_ids'] = undefined;
 /**
  * Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values
  * @member {String} status

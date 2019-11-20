@@ -27,11 +27,12 @@ var BreakType = require('./BreakType');
  * A request to update a &#x60;BreakType&#x60;
  * @alias module:model/UpdateBreakTypeRequest
  * @class
+ * @param breakType {module:model/BreakType} The updated `BreakType`.
  */
-var exports = function() {
+var exports = function(breakType) {
   var _this = this;
 
-
+  _this['break_type'] = breakType;
 };
 
 /**

@@ -24,7 +24,7 @@ var BusinessHoursPeriod = require('./BusinessHoursPeriod');
 
 /**
  * Constructs a new <code>BusinessHours</code>.
- *  Represents the hours of operation for a business location.
+ * Represents the hours of operation for a business location.
  * @alias module:model/BusinessHours
  * @class
  */

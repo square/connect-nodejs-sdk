@@ -1,6 +1,7 @@
 # SquareConnect.V1CreateItemRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

@@ -2,11 +2,11 @@
 
 ### Description
 
-A category to which an [CatalogItem](#type-catalogitem) belongs in the Catalog object model.
+A category to which a `CatalogItem` belongs in the `Catalog` object model.
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | The category&#39;s name. Searchable. This field has max length of 255 Unicode code points. | [optional] 
+**name** | **String** | The category name. Searchable. This field has max length of 255 Unicode code points. | [optional] 
 
 

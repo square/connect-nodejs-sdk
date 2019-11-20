@@ -1,6 +1,7 @@
 # SquareConnect.V1Item
 
 ### Description
+**Note: This model is deprecated.**
 
 V1Item
 
@@ -11,8 +12,8 @@ Name | Type | Description | Notes
 **name** | **String** | The item&#39;s name. | [optional] 
 **description** | **String** | The item&#39;s description. | [optional] 
 **type** | **String** | The item&#39;s type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values | [optional] 
-**color** | **String** | The color of the discount&#39;s display label in Square Register, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values | [optional] 
-**abbreviation** | **String** | The text of the item&#39;s display label in Square Register. Only up to the first five characters of the string are used. | [optional] 
+**color** | **String** | The color of the discount&#39;s display label in Square Point of Sale, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values | [optional] 
+**abbreviation** | **String** | The text of the item&#39;s display label in Square Point of Sale. Only up to the first five characters of the string are used. | [optional] 
 **visibility** | **String** | Indicates whether the item is viewable from the merchant&#39;s online store (PUBLIC) or PRIVATE. See [V1ItemVisibility](#type-v1itemvisibility) for possible values | [optional] 
 **available_online** | **Boolean** | If true, the item can be added to shipping orders from the merchant&#39;s online store. | [optional] 
 **master_image** | [**V1ItemImage**](V1ItemImage.md) | The item&#39;s master image, if any. | [optional] 

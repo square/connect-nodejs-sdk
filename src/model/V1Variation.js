@@ -18,6 +18,7 @@ var V1Money = require('./V1Money');
 
 
 /**
+ * @deprecated
  * The V1Variation model module.
  * @module model/V1Variation
  */
@@ -112,7 +113,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['item_id'] = undefined;
 /**
- * Indicates the variation's list position when displayed in Square Register and the merchant dashboard. If more than one variation for the same item has the same ordinal value, those variations are displayed in alphabetical order
+ * Indicates the variation's list position when displayed in Square Point of Sale and the merchant dashboard. If more than one variation for the same item has the same ordinal value, those variations are displayed in alphabetical order
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;

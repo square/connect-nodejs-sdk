@@ -1,6 +1,7 @@
 # SquareConnect.V1InventoryEntry
 
 ### Description
+**Note: This model is deprecated.**
 
 V1InventoryEntry
 

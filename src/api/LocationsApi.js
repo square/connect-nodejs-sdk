@@ -12,6 +12,8 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var CreateLocationRequest = require('../model/CreateLocationRequest');
+var CreateLocationResponse = require('../model/CreateLocationResponse');
 var ListLocationsResponse = require('../model/ListLocationsResponse');
 var RetrieveLocationResponse = require('../model/RetrieveLocationResponse');
 var UpdateLocationRequest = require('../model/UpdateLocationRequest');
@@ -35,8 +37,61 @@ module.exports = function(apiClient) {
 
 
   /**
+   * CreateLocation
+   * Note: This endpoint is in beta.
+   * Creates a location. For more information about locations, see [Locations API Overview](/locations-api).
+   * @param {module:model/CreateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateLocationResponse} and HTTP response
+   */
+  this.createLocationWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling createLocation");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2019-11-20';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = CreateLocationResponse;
+
+    return this.apiClient.callApi(
+      '/v2/locations', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * CreateLocation
+   * Creates a location. For more information about locations, see [Locations API Overview](/locations-api).
+   * @param {module:model/CreateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateLocationResponse}
+   */
+  this.createLocation = function(body) {
+    return this.createLocationWithHttpInfo(body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * ListLocations
-   * Provides the details for all of a business&#39;s locations.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
+   * Provides information of all locations of a business.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListLocationsResponse} and HTTP response
    */
   this.listLocationsWithHttpInfo = function() {
@@ -49,7 +104,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -68,7 +123,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListLocations
-   * Provides the details for all of a business&#39;s locations.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
+   * Provides information of all locations of a business.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListLocationsResponse}
    */
   this.listLocations = function() {
@@ -81,7 +136,6 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
-   * Note: This endpoint is in beta.
    * Retrieves details of a location.
    * @param {String} locationId The ID of the location to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveLocationResponse} and HTTP response
@@ -102,7 +156,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -136,7 +190,7 @@ module.exports = function(apiClient) {
   /**
    * UpdateLocation
    * Note: This endpoint is in beta.
-   * Updates the &#x60;Location&#x60; specified by the given ID.
+   * Updates a location.
    * @param {String} locationId The ID of the location to update.
    * @param {module:model/UpdateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateLocationResponse} and HTTP response
@@ -162,7 +216,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -181,7 +235,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateLocation
-   * Updates the &#x60;Location&#x60; specified by the given ID.
+   * Updates a location.
    * @param {String} locationId The ID of the location to update.
    * @param {module:model/UpdateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateLocationResponse}

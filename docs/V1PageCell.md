@@ -1,6 +1,7 @@
 # SquareConnect.V1PageCell
 
 ### Description
+**Note: This model is deprecated.**
 
 V1PageCell
 

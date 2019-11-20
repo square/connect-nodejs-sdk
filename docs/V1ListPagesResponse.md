@@ -1,6 +1,7 @@
 # SquareConnect.V1ListPagesResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

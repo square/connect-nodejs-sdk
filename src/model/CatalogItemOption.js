@@ -25,7 +25,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CatalogItemOption</code>.
- * A group of variations for a [CatalogItem](#type-catalogitem)&#39;s.
+ * A group of variations for a &#x60;CatalogItem&#x60;.
  * @alias module:model/CatalogItemOption
  * @class
  */
@@ -84,7 +84,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['display_name'] = undefined;
 /**
- * The item option's human-readable description. Displays for in the Square Point of Sale app for the seller and in the Online Store or on receipts for the buyer.
+ * The item option's human-readable description. Displayed in the Square Point of Sale app for the seller and in the Online Store or on receipts for the buyer.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
@@ -94,7 +94,7 @@ exports.prototype['description'] = undefined;
  */
 exports.prototype['show_colors'] = undefined;
 /**
- * A list of `CatalogObject`s containing the `CatalogItemOptionValue`s for this item.
+ * A list of CatalogObjects containing the `CatalogItemOptionValue`s for this item.
  * @member {Array.<module:model/CatalogObject>} values
  */
 exports.prototype['values'] = undefined;

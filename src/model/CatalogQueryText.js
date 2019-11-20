@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/CatalogQueryText
  * @class
- * @param keywords {Array.<String>} A list of one, two, or three search keywords. Keywords with fewer than three characters are ignored.
+ * @param keywords {Array.<String>} A list of 1, 2, or 3 search keywords. Keywords with fewer than 3 characters are ignored.
  */
 var exports = function(keywords) {
   var _this = this;
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A list of one, two, or three search keywords. Keywords with fewer than three characters are ignored.
+ * A list of 1, 2, or 3 search keywords. Keywords with fewer than 3 characters are ignored.
  * @member {Array.<String>} keywords
  */
 exports.prototype['keywords'] = undefined;

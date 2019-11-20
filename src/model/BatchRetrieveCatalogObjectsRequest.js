@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/BatchRetrieveCatalogObjectsRequest
  * @class
- * @param objectIds {Array.<String>} The IDs of the `CatalogObject`s to be retrieved.
+ * @param objectIds {Array.<String>} The IDs of the CatalogObjects to be retrieved.
  */
 var exports = function(objectIds) {
   var _this = this;
@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The IDs of the `CatalogObject`s to be retrieved.
+ * The IDs of the CatalogObjects to be retrieved.
  * @member {Array.<String>} object_ids
  */
 exports.prototype['object_ids'] = undefined;
 /**
- * If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a `CatalogItem`,  its associated `CatalogCategory](#type-catalogcategory), [CatalogTax`es, `CatalogImage](#type-catalogimage)s and [CatalogModifierList`s will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a `CatalogItemVariation`, its parent `CatalogItem` will be returned in the `related_objects` field of the response.
+ * If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a CatalogItem, its associated CatalogCategory objects, CatalogTax objects, CatalogImage objects and CatalogModifierLists will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a CatalogItemVariation, its parent CatalogItem will be returned in the `related_objects` field of the response.
  * @member {Boolean} include_related_objects
  */
 exports.prototype['include_related_objects'] = undefined;

@@ -1,6 +1,7 @@
 # SquareConnect.V1ListLocationsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

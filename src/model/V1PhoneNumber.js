@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1PhoneNumber model module.
  * @module model/V1PhoneNumber
  */

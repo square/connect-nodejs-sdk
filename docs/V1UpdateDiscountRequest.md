@@ -1,6 +1,7 @@
 # SquareConnect.V1UpdateDiscountRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

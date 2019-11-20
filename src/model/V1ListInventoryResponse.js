@@ -18,6 +18,7 @@ var V1InventoryEntry = require('./V1InventoryEntry');
 
 
 /**
+ * @deprecated
  * The V1ListInventoryResponse model module.
  * @module model/V1ListInventoryResponse
  */

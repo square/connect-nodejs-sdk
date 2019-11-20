@@ -18,6 +18,7 @@ var V1Item = require('./V1Item');
 
 
 /**
+ * @deprecated
  * The V1ListItemsResponse model module.
  * @module model/V1ListItemsResponse
  */

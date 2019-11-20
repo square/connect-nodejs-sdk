@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1ApplyFeeRequest model module.
  * @module model/V1ApplyFeeRequest
  */

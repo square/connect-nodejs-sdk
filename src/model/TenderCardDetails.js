@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
+ * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See `TenderCardDetailsStatus` for possible values. See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

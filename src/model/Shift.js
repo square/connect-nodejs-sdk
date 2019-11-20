@@ -130,7 +130,7 @@ exports.prototype['start_at'] = undefined;
  */
 exports.prototype['end_at'] = undefined;
 /**
- * Job and pay related information.
+ * Job and pay related information. If wage is not set on create, will default to a wage of zero money. If title is not set on create, will default to the name of the role the employee is assigned to, if any.
  * @member {module:model/ShiftWage} wage
  */
 exports.prototype['wage'] = undefined;

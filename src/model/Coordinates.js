@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The coordinate's latitude expressed in degrees.
+ * The latitude of the coordinate expressed in degrees.
  * @member {Number} latitude
  */
 exports.prototype['latitude'] = undefined;
 /**
- * The coordinate's longitude expressed in degrees.
+ * The longitude of the coordinate expressed in degrees.
  * @member {Number} longitude
  */
 exports.prototype['longitude'] = undefined;

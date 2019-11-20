@@ -1,6 +1,7 @@
 # SquareConnect.V1ListInventoryResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

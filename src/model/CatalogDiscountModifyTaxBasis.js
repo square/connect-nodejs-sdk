@@ -15,26 +15,26 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class WebhookEvents.
+ * Enum class CatalogDiscountModifyTaxBasis.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "inventory.count.updated"
+   * value: "MODIFY_TAX_BASIS"
    * @const
    */
-  "inventory.count.updated": "inventory.count.updated",
+  "MODIFY_TAX_BASIS": "MODIFY_TAX_BASIS",
   /**
-   * value: "catalog.version.updated"
+   * value: "DO_NOT_MODIFY_TAX_BASIS"
    * @const
    */
-  "catalog.version.updated": "catalog.version.updated"};
+  "DO_NOT_MODIFY_TAX_BASIS": "DO_NOT_MODIFY_TAX_BASIS"};
 
 /**
- * Returns a <code>WebhookEvents</code> enum value from a Javascript object name.
+ * Returns a <code>CatalogDiscountModifyTaxBasis</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/WebhookEvents} The enum <code>WebhookEvents</code> value.
+ * @return {module:model/CatalogDiscountModifyTaxBasis} The enum <code>CatalogDiscountModifyTaxBasis</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

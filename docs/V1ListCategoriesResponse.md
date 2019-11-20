@@ -1,6 +1,7 @@
 # SquareConnect.V1ListCategoriesResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

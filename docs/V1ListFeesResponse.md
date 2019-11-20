@@ -1,6 +1,7 @@
 # SquareConnect.V1ListFeesResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

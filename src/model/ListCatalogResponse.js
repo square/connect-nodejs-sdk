@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * Information on any errors encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
@@ -72,7 +72,7 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The `CatalogObject`s returned.
+ * The CatalogObjects returned.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;

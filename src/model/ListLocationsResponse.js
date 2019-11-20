@@ -25,7 +25,7 @@ var Location = require('./Location');
 
 /**
  * Constructs a new <code>ListLocationsResponse</code>.
- * Defines the fields that are included in the response body of a request to the ListLocations endpoint.  One of &#x60;errors&#x60; or &#x60;locations&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the __ListLocations__ endpoint.  One of &#x60;errors&#x60; or &#x60;locations&#x60; is present in a given response (never both).
  * @alias module:model/ListLocationsResponse
  * @class
  */
@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The business's locations.
+ * The business locations.
  * @member {Array.<module:model/Location>} locations
  */
 exports.prototype['locations'] = undefined;

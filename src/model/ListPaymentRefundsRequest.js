@@ -101,12 +101,12 @@ exports.prototype['cursor'] = undefined;
  */
 exports.prototype['location_id'] = undefined;
 /**
- * If provided, only refunds with the given status are returned.  For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
+ * If provided, only refunds with the given status are returned. For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
  * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
- * If provided, only refunds with the given source type are returned.  - `CARD` - List refunds only for payments where card was specified as payment  source.  Default: If omitted refunds are returned regardless of source type.
+ * If provided, only refunds with the given source type are returned. - `CARD` - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
  * @member {String} source_type
  */
 exports.prototype['source_type'] = undefined;

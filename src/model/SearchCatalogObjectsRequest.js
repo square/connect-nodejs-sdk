@@ -82,7 +82,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The desired set of object types to appear in the search results. The legal values are taken from the `CatalogObjectType` enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
+ * The desired set of object types to appear in the search results. The legal values are taken from the CatalogObjectType enum: `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @member {Array.<String>} object_types
  */
 exports.prototype['object_types'] = undefined;
@@ -92,12 +92,12 @@ exports.prototype['object_types'] = undefined;
  */
 exports.prototype['include_deleted_objects'] = undefined;
 /**
- * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a `CatalogItem` is returned in the object field of the response, its associated `CatalogCategory](#type-catalogcategory), [CatalogTax`es, `CatalogImage](#type-catalogimage)s and [CatalogModifierList`s will be included in the `related_objects` field of the response.  If a `CatalogItemVariation` is returned in the object field of the response, its parent `CatalogItem` will be included in the `related_objects` field of the response.
+ * If `true`, the response will include additional objects that are related to the requested object, as follows:  If a CatalogItem is returned in the object field of the response, its associated CatalogCategory, CatalogTax objects, CatalogImage objects and CatalogModifierList objects will be included in the `related_objects` field of the response.  If a CatalogItemVariation is returned in the object field of the response, its parent CatalogItem will be included in the `related_objects` field of the response.
  * @member {Boolean} include_related_objects
  */
 exports.prototype['include_related_objects'] = undefined;
 /**
- * Return objects modified after this [timestamp](#workingwithdates), in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\". The timestamp is exclusive - objects with a timestamp equal to `begin_time` will not be included in the response.
+ * Return objects modified after this [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates), in RFC 3339 format, e.g., `2016-09-04T23:59:33.123Z`. The timestamp is exclusive - objects with a timestamp equal to `begin_time` will not be included in the response.
  * @member {String} begin_time
  */
 exports.prototype['begin_time'] = undefined;

@@ -1,6 +1,7 @@
 # SquareConnect.V1RetrieveModifierListRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

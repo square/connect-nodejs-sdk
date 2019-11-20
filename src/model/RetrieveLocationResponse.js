@@ -25,7 +25,7 @@ var Location = require('./Location');
 
 /**
  * Constructs a new <code>RetrieveLocationResponse</code>.
- * Defines the fields that the  [RetrieveLocation](#endpoint-retrievelocation) endpoint returns  in a response.
+ * Defines the fields that the [RetrieveLocation](#endpoint-retrievelocation) endpoint returns in a response.
  * @alias module:model/RetrieveLocationResponse
  * @class
  */

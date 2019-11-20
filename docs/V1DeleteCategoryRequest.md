@@ -1,6 +1,7 @@
 # SquareConnect.V1DeleteCategoryRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

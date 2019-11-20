@@ -1,6 +1,7 @@
 # SquareConnect.V1PhoneNumber
 
 ### Description
+**Note: This model is deprecated.**
 
 Represents a phone number.
 

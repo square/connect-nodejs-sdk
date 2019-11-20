@@ -63,17 +63,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * Information on any errors encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The created `CatalogObject`.
+ * The successfully created or updated CatalogObject.
  * @member {module:model/CatalogObject} catalog_object
  */
 exports.prototype['catalog_object'] = undefined;
 /**
- * The mapping between client and server IDs for this Upsert.
+ * The mapping between client and server IDs for this upsert.
  * @member {Array.<module:model/CatalogIdMapping>} id_mappings
  */
 exports.prototype['id_mappings'] = undefined;
