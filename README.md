@@ -111,6 +111,7 @@ Class | Method | HTTP request | Description
 *SquareConnect.LaborApi* | [**updateBreakType**](docs/LaborApi.md#updateBreakType) | **PUT** /v2/labor/break-types/{id} | UpdateBreakType
 *SquareConnect.LaborApi* | [**updateShift**](docs/LaborApi.md#updateShift) | **PUT** /v2/labor/shifts/{id} | UpdateShift
 *SquareConnect.LaborApi* | [**updateWorkweekConfig**](docs/LaborApi.md#updateWorkweekConfig) | **PUT** /v2/labor/workweek-configs/{id} | UpdateWorkweekConfig
+*SquareConnect.LocationsApi* | [**createLocation**](docs/LocationsApi.md#createLocation) | **POST** /v2/locations | CreateLocation
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
 *SquareConnect.LocationsApi* | [**retrieveLocation**](docs/LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
 *SquareConnect.LocationsApi* | [**updateLocation**](docs/LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
@@ -247,8 +248,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.Card](docs/Card.md)
  - [SquareConnect.CardBrand](docs/CardBrand.md)
  - [SquareConnect.CardPaymentDetails](docs/CardPaymentDetails.md)
+ - [SquareConnect.CashPaymentDetails](docs/CashPaymentDetails.md)
  - [SquareConnect.CatalogCategory](docs/CatalogCategory.md)
  - [SquareConnect.CatalogDiscount](docs/CatalogDiscount.md)
+ - [SquareConnect.CatalogDiscountModifyTaxBasis](docs/CatalogDiscountModifyTaxBasis.md)
  - [SquareConnect.CatalogDiscountType](docs/CatalogDiscountType.md)
  - [SquareConnect.CatalogIdMapping](docs/CatalogIdMapping.md)
  - [SquareConnect.CatalogImage](docs/CatalogImage.md)
@@ -275,7 +278,13 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogPricingType](docs/CatalogPricingType.md)
  - [SquareConnect.CatalogProductSet](docs/CatalogProductSet.md)
  - [SquareConnect.CatalogQuery](docs/CatalogQuery.md)
+ - [SquareConnect.CatalogQueryCustomAttributeUsage](docs/CatalogQueryCustomAttributeUsage.md)
  - [SquareConnect.CatalogQueryExact](docs/CatalogQueryExact.md)
+ - [SquareConnect.CatalogQueryFilteredItems](docs/CatalogQueryFilteredItems.md)
+ - [SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter](docs/CatalogQueryFilteredItemsCustomAttributeFilter.md)
+ - [SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilterFilterType](docs/CatalogQueryFilteredItemsCustomAttributeFilterFilterType.md)
+ - [SquareConnect.CatalogQueryFilteredItemsNullableAttribute](docs/CatalogQueryFilteredItemsNullableAttribute.md)
+ - [SquareConnect.CatalogQueryFilteredItemsStockLevel](docs/CatalogQueryFilteredItemsStockLevel.md)
  - [SquareConnect.CatalogQueryItemVariationsForItemOptionValues](docs/CatalogQueryItemVariationsForItemOptionValues.md)
  - [SquareConnect.CatalogQueryItemsForItemOptions](docs/CatalogQueryItemsForItemOptions.md)
  - [SquareConnect.CatalogQueryItemsForModifierList](docs/CatalogQueryItemsForModifierList.md)
@@ -297,12 +306,16 @@ Class | Method | HTTP request | Description
  - [SquareConnect.Country](docs/Country.md)
  - [SquareConnect.CreateBreakTypeRequest](docs/CreateBreakTypeRequest.md)
  - [SquareConnect.CreateBreakTypeResponse](docs/CreateBreakTypeResponse.md)
+ - [SquareConnect.CreateCatalogImageRequest](docs/CreateCatalogImageRequest.md)
+ - [SquareConnect.CreateCatalogImageResponse](docs/CreateCatalogImageResponse.md)
  - [SquareConnect.CreateCheckoutRequest](docs/CreateCheckoutRequest.md)
  - [SquareConnect.CreateCheckoutResponse](docs/CreateCheckoutResponse.md)
  - [SquareConnect.CreateCustomerCardRequest](docs/CreateCustomerCardRequest.md)
  - [SquareConnect.CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
  - [SquareConnect.CreateCustomerRequest](docs/CreateCustomerRequest.md)
  - [SquareConnect.CreateCustomerResponse](docs/CreateCustomerResponse.md)
+ - [SquareConnect.CreateLocationRequest](docs/CreateLocationRequest.md)
+ - [SquareConnect.CreateLocationResponse](docs/CreateLocationResponse.md)
  - [SquareConnect.CreateMobileAuthorizationCodeRequest](docs/CreateMobileAuthorizationCodeRequest.md)
  - [SquareConnect.CreateMobileAuthorizationCodeResponse](docs/CreateMobileAuthorizationCodeResponse.md)
  - [SquareConnect.CreateOrderRequest](docs/CreateOrderRequest.md)
@@ -348,6 +361,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ErrorCategory](docs/ErrorCategory.md)
  - [SquareConnect.ErrorCode](docs/ErrorCode.md)
  - [SquareConnect.ExcludeStrategy](docs/ExcludeStrategy.md)
+ - [SquareConnect.ExternalPaymentDetails](docs/ExternalPaymentDetails.md)
  - [SquareConnect.GetBreakTypeRequest](docs/GetBreakTypeRequest.md)
  - [SquareConnect.GetBreakTypeResponse](docs/GetBreakTypeResponse.md)
  - [SquareConnect.GetEmployeeWageRequest](docs/GetEmployeeWageRequest.md)
@@ -705,7 +719,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.V1VariationPricingType](docs/V1VariationPricingType.md)
  - [SquareConnect.VoidTransactionRequest](docs/VoidTransactionRequest.md)
  - [SquareConnect.VoidTransactionResponse](docs/VoidTransactionResponse.md)
- - [SquareConnect.WebhookEvents](docs/WebhookEvents.md)
  - [SquareConnect.Weekday](docs/Weekday.md)
  - [SquareConnect.WorkweekConfig](docs/WorkweekConfig.md)
 
@@ -726,18 +739,18 @@ Class | Method | HTTP request | Description
   - EMPLOYEES_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to employee profile information. For example, to create and modify employee profiles.
   - INVENTORY_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to inventory information. For example, to call the RetrieveInventoryCount endpoint.
   - INVENTORY_WRITE: __HTTP Method__:  &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to inventory information. For example, to call the BatchChangeInventory endpoint.
-  - ITEMS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to product catalog information. For example, to get an  item or a list of items.
+  - ITEMS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
   - ITEMS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to product catalog information. For example, to modify or add to a product catalog.
   - MERCHANT_PROFILE_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
   - ORDERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to order information. For example, to call the BatchRetrieveOrders endpoint.
   - ORDERS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to order information. For example, to call the CreateCheckout endpoint.
   - PAYMENTS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to transaction and refund information. For example, to call the RetrieveTransaction endpoint.
-  - PAYMENTS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to transaction and refunds information. For example, to process payments with the Transactions or Checkout API.
-  - PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Allow third party applications to deduct a portion of each transaction amount. __Required__ to use multiparty transaction functionality with the Transactions API.
-  - PAYMENTS_WRITE_IN_PERSON: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to transaction and refunds information. For example, to process in-person payments.
+  - PAYMENTS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to transaction and refunds information. For example, to process payments with the Payments or Checkout API.
+  - PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Allow third party applications to deduct a portion of each transaction amount. __Required__ to use multiparty transaction functionality with the Payments API.
+  - PAYMENTS_WRITE_IN_PERSON: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to payments and refunds information. For example, to process in-person payments.
   - SETTLEMENTS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to settlement (deposit) information. For example, to call the Connect v1 ListSettlements endpoint.
-  - TIMECARDS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to employee timecard information. For example, to call the Connect v1 ListTimecards endpoint.
-  - TIMECARDS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to employee timecard information. For example, to create and modify timecards.
+  - TIMECARDS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to employee timecard information. For example, to call the Connect v2 SearchShifts endpoint.
+  - TIMECARDS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to employee shift information. For example, to create and modify employee shifts.
   - TIMECARDS_SETTINGS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to employee timecard settings information. For example, to call the GetBreakType endpoint.
   - TIMECARDS_SETTINGS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to employee timecard settings information. For example, to call the UpdateBreakType endpoint.
 

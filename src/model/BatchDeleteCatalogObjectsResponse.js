@@ -61,17 +61,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * The set of Errors encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The IDs of all `CatalogObject`s deleted by this request.
+ * The IDs of all CatalogObjects deleted by this request.
  * @member {Array.<String>} deleted_object_ids
  */
 exports.prototype['deleted_object_ids'] = undefined;
 /**
- * The database [timestamp](#workingwithdates) of this deletion in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The database [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates) of this deletion in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} deleted_at
  */
 exports.prototype['deleted_at'] = undefined;

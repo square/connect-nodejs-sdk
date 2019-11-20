@@ -146,7 +146,7 @@ exports.prototype['pricing_type'] = undefined;
  */
 exports.prototype['price_money'] = undefined;
 /**
- * Per-`location` price and inventory overrides.
+ * Per-location price and inventory overrides.
  * @member {Array.<module:model/ItemVariationLocationOverrides>} location_overrides
  */
 exports.prototype['location_overrides'] = undefined;
@@ -166,7 +166,7 @@ exports.prototype['inventory_alert_type'] = undefined;
  */
 exports.prototype['inventory_alert_threshold'] = undefined;
 /**
- * Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable.
+ * Arbitrary user metadata to associate with the item variation. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} user_data
  */
 exports.prototype['user_data'] = undefined;

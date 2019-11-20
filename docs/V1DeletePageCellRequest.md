@@ -1,6 +1,7 @@
 # SquareConnect.V1DeletePageCellRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

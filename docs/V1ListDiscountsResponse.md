@@ -1,6 +1,7 @@
 # SquareConnect.V1ListDiscountsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

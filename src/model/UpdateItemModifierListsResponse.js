@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * Information on any errors encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The database [timestamp](#workingwithdates) of this update in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * 
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;

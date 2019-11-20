@@ -7,8 +7,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**[Error]**](Error.md) | The set of &#x60;Error&#x60;s encountered. | [optional] 
-**catalog_object** | [**CatalogObject**](CatalogObject.md) | The created &#x60;CatalogObject&#x60;. | [optional] 
-**id_mappings** | [**[CatalogIdMapping]**](CatalogIdMapping.md) | The mapping between client and server IDs for this Upsert. | [optional] 
+**errors** | [**[Error]**](Error.md) | Information on any errors encountered. | [optional] 
+**catalog_object** | [**CatalogObject**](CatalogObject.md) | The successfully created or updated CatalogObject. | [optional] 
+**id_mappings** | [**[CatalogIdMapping]**](CatalogIdMapping.md) | The mapping between client and server IDs for this upsert. | [optional] 
 
 

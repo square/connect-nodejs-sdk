@@ -26,7 +26,7 @@ var Coordinates = require('./Coordinates');
 
 /**
  * Constructs a new <code>Location</code>.
- * Represents one of a business&#39;s locations.
+ * 
  * @alias module:model/Location
  * @class
  */
@@ -156,17 +156,17 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The location's name. Location names are set by the account owner and displayed in the dashboard as the location's nickname
+ * The name of the location. This information appears in the dashboard as the nickname.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The location's physical address.
+ * The physical address of the location.
  * @member {module:model/Address} address
  */
 exports.prototype['address'] = undefined;
 /**
- * The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.
+ * The [IANA Timezone](https://www.iana.org/time-zones) identifier for the timezone of the location.
  * @member {String} timezone
  */
 exports.prototype['timezone'] = undefined;
@@ -176,7 +176,7 @@ exports.prototype['timezone'] = undefined;
  */
 exports.prototype['capabilities'] = undefined;
 /**
- * The location's status See [LocationStatus](#type-locationstatus) for possible values
+ * The status of the location, either active or inactive. See [LocationStatus](#type-locationstatus) for possible values
  * @member {String} status
  */
 exports.prototype['status'] = undefined;
@@ -196,47 +196,47 @@ exports.prototype['merchant_id'] = undefined;
  */
 exports.prototype['country'] = undefined;
 /**
- * The language associated with the location in [BCP 47 format](https://tools.ietf.org/html/bcp47#appendix-A).
+ * The language associated with the location, in [BCP 47 format](https://tools.ietf.org/html/bcp47#appendix-A).
  * @member {String} language_code
  */
 exports.prototype['language_code'] = undefined;
 /**
- * The currency used for all transactions at this location, in ISO 4217 format.  See `Currency` for possible values. See [Currency](#type-currency) for possible values
+ * The currency used for all transactions at this location, in ISO 4217 format. See `Currency` for possible values. See [Currency](#type-currency) for possible values
  * @member {String} currency
  */
 exports.prototype['currency'] = undefined;
 /**
- * The location's phone_number.
+ * The phone number of the location in human readable format.
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
 /**
- * The location's business_name which is shown to its customers. For example, this is the name printed on its customer's receipts.
+ * The business name of the location This is the name visible to the customers of the location. For example, this name appears on customer receipts.
  * @member {String} business_name
  */
 exports.prototype['business_name'] = undefined;
 /**
- * The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space. See [LocationType](#type-locationtype) for possible values
+ * The type of the location, either physical or mobile. See [LocationType](#type-locationtype) for possible values
  * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
- * The location's website, as set by the account owner in the Square dashboard.  Default: none; only exists if explicitly set.
+ * The website URL of the location.
  * @member {String} website_url
  */
 exports.prototype['website_url'] = undefined;
 /**
- *   The hours of operation for a business location.  Default: none; only exists if explicitly set.
+ *  Represents the hours of operation for the location.
  * @member {module:model/BusinessHours} business_hours
  */
 exports.prototype['business_hours'] = undefined;
 /**
- * The email of the location.
+ * The email of the location. This email is visible to the customers of the location. For example, the email appears on customer receipts.
  * @member {String} business_email
  */
 exports.prototype['business_email'] = undefined;
 /**
- * The business description of the location.
+ * The description of the location.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
@@ -261,12 +261,12 @@ exports.prototype['facebook_url'] = undefined;
  */
 exports.prototype['coordinates'] = undefined;
 /**
- * The logo image URL of the location.
+ * The URL of the logo image for the location.
  * @member {String} logo_url
  */
 exports.prototype['logo_url'] = undefined;
 /**
- * The Point of Sale background image URL of the location.
+ * The URL of the Point of Sale background image for the location.
  * @member {String} pos_background_url
  */
 exports.prototype['pos_background_url'] = undefined;

@@ -1,6 +1,7 @@
 # SquareConnect.V1RetrieveItemRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

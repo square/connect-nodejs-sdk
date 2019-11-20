@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>VoidTransactionRequest</code>.
- * Defines the request body for calls to the VoidTransaction endpoint.
+ * 
  * @alias module:model/VoidTransactionRequest
  * @class
  */

@@ -67,22 +67,22 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * Information on any errors that encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The created `CatalogObject`s
+ * The created successfully created CatalogObjects.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;
 /**
- * The database [timestamp](#workingwithdates) of this update in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The database [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates) of this update in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The mapping between client and server IDs for this Upsert.
+ * The mapping between client and server IDs for this upsert.
  * @member {Array.<module:model/CatalogIdMapping>} id_mappings
  */
 exports.prototype['id_mappings'] = undefined;

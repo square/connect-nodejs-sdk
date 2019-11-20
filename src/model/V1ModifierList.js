@@ -18,6 +18,7 @@ var V1ModifierOption = require('./V1ModifierOption');
 
 
 /**
+ * @deprecated
  * The V1ModifierList model module.
  * @module model/V1ModifierList
  */

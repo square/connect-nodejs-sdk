@@ -73,7 +73,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The renewed access token. This value might be different from the `access_token` you provided in your request. You provide this token in a header with every request to Connect API endpoints. See [Request and response headers](https://docs.connect.squareup.com/api/connect/v2/#requestandresponseheaders) for the format of this header.
+ * The renewed access token. This value might be different from the `access_token` you provided in your request. You provide this token in a header with every request to Connect API endpoints. See [Request and response headers](https://developer.squareup.com/docs/api/connect/v2/#requestandresponseheaders) for the format of this header.
  * @member {String} access_token
  */
 exports.prototype['access_token'] = undefined;
@@ -93,7 +93,7 @@ exports.prototype['expires_at'] = undefined;
  */
 exports.prototype['merchant_id'] = undefined;
 /**
- * __LEGACY FIELD__. The ID of the merchant subscription associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
+ * __LEGACY FIELD__. The ID of the merchant subscription associated with the authorization. Only present if the merchant signed up for a subscription during authorization..
  * @member {String} subscription_id
  */
 exports.prototype['subscription_id'] = undefined;

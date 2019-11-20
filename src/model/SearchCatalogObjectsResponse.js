@@ -70,7 +70,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of `Error`s encountered.
+ * Information on any errors encountered.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
@@ -80,17 +80,17 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The `CatalogObject`s returned.
+ * The CatalogObjects returned.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;
 /**
- * A list of `CatalogObject`s referenced by the objects in the `objects` field.
+ * A list of CatalogObjects referenced by the objects in the `objects` field.
  * @member {Array.<module:model/CatalogObject>} related_objects
  */
 exports.prototype['related_objects'] = undefined;
 /**
- *  When the associated product catalog was last updated. Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
+ * When the associated product catalog was last updated. Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
  * @member {String} latest_time
  */
 exports.prototype['latest_time'] = undefined;

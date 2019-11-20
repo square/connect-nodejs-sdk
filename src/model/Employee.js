@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>Employee</code>.
- * An employee created in the **Square Dashboard** account of a business.  Used by the Labor API.
+ * An employee object that is used by the external API.
  * @alias module:model/Employee
  * @class
  */
@@ -84,37 +84,37 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * UUID for this `Employee`.
+ * UUID for this object.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
 /**
- * Given (first) name of the employee.
+ * The employee's first name.
  * @member {String} first_name
  */
 exports.prototype['first_name'] = undefined;
 /**
- * Family (last) name of the employee
+ * The employee's last name.
  * @member {String} last_name
  */
 exports.prototype['last_name'] = undefined;
 /**
- * Email of the employee
+ * The employee's email address
  * @member {String} email
  */
 exports.prototype['email'] = undefined;
 /**
- * Phone number of the employee in E.164 format, i.e. \"+12125554250\"
+ * The employee's phone number in E.164 format, i.e. \"+12125554250\"
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
 /**
- * A list of location IDs where this employee has access.
+ * A list of location IDs where this employee has access to.
  * @member {Array.<String>} location_ids
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
+ * Specifies the status of the employees being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

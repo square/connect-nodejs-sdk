@@ -25,7 +25,7 @@ var Merchant = require('./Merchant');
 
 /**
  * Constructs a new <code>RetrieveMerchantResponse</code>.
- * The response obeject returned by the [RetrieveMerchant](#endpoint-retrieveMerchant) endpoint.
+ * The response object returned by the [RetrieveMerchant](#endpoint-retrieveMerchant) endpoint.
  * @alias module:model/RetrieveMerchantResponse
  * @class
  */

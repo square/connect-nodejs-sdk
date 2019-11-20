@@ -18,6 +18,7 @@ var V1Category = require('./V1Category');
 
 
 /**
+ * @deprecated
  * The V1ListCategoriesResponse model module.
  * @module model/V1ListCategoriesResponse
  */

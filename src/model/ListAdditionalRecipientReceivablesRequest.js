@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListAdditionalRecipientReceivablesRequest</code>.
- * Defines the query parameters that can be included in a request to the ListAdditionalRecipientReceivables endpoint.
+ * Defines the query parameters that can be included in a request to the [ListAdditionalRecipientReceivables](#endpoint-listadditionalrecipientreceivables) endpoint.
  * @alias module:model/ListAdditionalRecipientReceivablesRequest
  * @class
  */
@@ -80,7 +80,7 @@ exports.prototype['end_time'] = undefined;
  */
 exports.prototype['sort_order'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

@@ -10,11 +10,12 @@ Method | HTTP request | Description
 
 <a name="listLocations"></a>
 # **listLocations**
+**Note: This endpoint is deprecated.**
 > [V1Merchant] listLocations()
 
 ListLocations
 
-Provides details for a business&#39;s locations, including their IDs.
+Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
 
 ### Example
 ```javascript
@@ -52,11 +53,12 @@ This endpoint does not need any parameter.
 
 <a name="retrieveBusiness"></a>
 # **retrieveBusiness**
+**Note: This endpoint is deprecated.**
 > V1Merchant retrieveBusiness()
 
 RetrieveBusiness
 
-Get a business&#39;s information.
+Get the general information for a business.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
 
 ### Example
 ```javascript

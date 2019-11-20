@@ -18,6 +18,7 @@ var V1Variation = require('./V1Variation');
 
 
 /**
+ * @deprecated
  * The V1UpdateVariationRequest model module.
  * @module model/V1UpdateVariationRequest
  */

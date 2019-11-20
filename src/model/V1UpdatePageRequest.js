@@ -18,6 +18,7 @@ var V1Page = require('./V1Page');
 
 
 /**
+ * @deprecated
  * The V1UpdatePageRequest model module.
  * @module model/V1UpdatePageRequest
  */

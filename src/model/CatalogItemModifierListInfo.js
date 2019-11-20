@@ -24,10 +24,10 @@ var CatalogModifierOverride = require('./CatalogModifierOverride');
 
 /**
  * Constructs a new <code>CatalogItemModifierListInfo</code>.
- * Controls the properties of a [CatalogModifierList](#type-catalogmodifierlist) as it applies to this [CatalogItem](#type-catalogitem).
+ * Controls the properties of a &#x60;CatalogModifierList&#x60; as it applies to this &#x60;CatalogItem&#x60;.
  * @alias module:model/CatalogItemModifierListInfo
  * @class
- * @param modifierListId {String} The ID of the `CatalogModifierList](#type-catalogmodifierlist) controlled by this [CatalogModifierListInfo`.
+ * @param modifierListId {String} The ID of the `CatalogModifierList` controlled by this `CatalogModifierListInfo`.
  */
 var exports = function(modifierListId) {
   var _this = this;
@@ -70,22 +70,22 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the `CatalogModifierList](#type-catalogmodifierlist) controlled by this [CatalogModifierListInfo`.
+ * The ID of the `CatalogModifierList` controlled by this `CatalogModifierListInfo`.
  * @member {String} modifier_list_id
  */
 exports.prototype['modifier_list_id'] = undefined;
 /**
- * A set of `CatalogModifierOverride](#type-catalogmodifieroverride) objects that override whether a given [CatalogModifier` is enabled by default.
+ * A set of `CatalogModifierOverride` objects that override whether a given `CatalogModifier` is enabled by default.
  * @member {Array.<module:model/CatalogModifierOverride>} modifier_overrides
  */
 exports.prototype['modifier_overrides'] = undefined;
 /**
- * If zero or larger, the smallest number of `CatalogModifier](#type-catalogmodifier)s that must be selected from this [CatalogModifierList`.
+ * If 0 or larger, the smallest number of `CatalogModifier`s that must be selected from this `CatalogModifierList`.
  * @member {Number} min_selected_modifiers
  */
 exports.prototype['min_selected_modifiers'] = undefined;
 /**
- * If zero or larger, the largest number of `CatalogModifier](#type-catalogmodifier)s that can be selected from this [CatalogModifierList`.
+ * If 0 or larger, the largest number of `CatalogModifier`s that can be selected from this `CatalogModifierList`.
  * @member {Number} max_selected_modifiers
  */
 exports.prototype['max_selected_modifiers'] = undefined;

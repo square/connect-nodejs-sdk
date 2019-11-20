@@ -18,6 +18,7 @@ var V1Money = require('./V1Money');
 
 
 /**
+ * @deprecated
  * The V1ModifierOption model module.
  * @module model/V1ModifierOption
  */
@@ -97,7 +98,7 @@ exports.prototype['price_money'] = undefined;
  */
 exports.prototype['on_by_default'] = undefined;
 /**
- * Indicates the modifier option's list position when displayed in Square Register and the merchant dashboard. If more than one modifier option in the same modifier list has the same ordinal value, those options are displayed in alphabetical order.
+ * Indicates the modifier option's list position when displayed in Square Point of Sale and the merchant dashboard. If more than one modifier option in the same modifier list has the same ordinal value, those options are displayed in alphabetical order.
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;

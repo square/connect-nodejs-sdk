@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RegisterDomainRequest</code>.
- * Defines the parameters that can be included in the body of a request to the RegisterDomain endpoint.
+ * Defines the parameters that can be included in the body of a request to the __RegisterDomain__ endpoint.
  * @alias module:model/RegisterDomainRequest
  * @class
  * @param domainName {String} A domain name as described in RFC-1034 that will be registered with ApplePay

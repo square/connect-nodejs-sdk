@@ -7,7 +7,7 @@ Latitude and longitude coordinates.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**latitude** | **Number** | The coordinate&#39;s latitude expressed in degrees. | [optional] 
-**longitude** | **Number** | The coordinate&#39;s longitude expressed in degrees. | [optional] 
+**latitude** | **Number** | The latitude of the coordinate expressed in degrees. | [optional] 
+**longitude** | **Number** | The longitude of the coordinate expressed in degrees. | [optional] 
 
 

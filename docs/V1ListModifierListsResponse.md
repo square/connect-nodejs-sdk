@@ -1,6 +1,7 @@
 # SquareConnect.V1ListModifierListsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

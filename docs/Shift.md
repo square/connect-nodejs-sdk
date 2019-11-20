@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **timezone** | **String** | Read-only convenience value that is calculated from the location based on &#x60;location_id&#x60;. Format: the IANA Timezone Database identifier for the location timezone. | [optional] 
 **start_at** | **String** | RFC 3339; shifted to location timezone + offset. Precision up to the minute is respected; seconds are truncated. | 
 **end_at** | **String** | RFC 3339; shifted to timezone + offset. Precision up to the minute is respected; seconds are truncated. The &#x60;end_at&#x60; minute is not counted when the shift length is calculated. For example, a shift from &#x60;00:00&#x60; to &#x60;08:01&#x60; is considered an 8 hour shift (midnight to 8am). | [optional] 
-**wage** | [**ShiftWage**](ShiftWage.md) | Job and pay related information. | [optional] 
+**wage** | [**ShiftWage**](ShiftWage.md) | Job and pay related information. If wage is not set on create, will default to a wage of zero money. If title is not set on create, will default to the name of the role the employee is assigned to, if any. | [optional] 
 **breaks** | [**[ModelBreak]**](ModelBreak.md) | A list of any paid or unpaid breaks that were taken during this shift. | [optional] 
 **status** | **String** | Describes working state of the current &#x60;Shift&#x60;. See [ShiftStatus](#type-shiftstatus) for possible values | [optional] 
 **version** | **Number** | Used for resolving concurrency issues; request will fail if version provided does not match server version at time of request. If not provided, Square executes a blind write; potentially overwriting data from another write. | [optional] 

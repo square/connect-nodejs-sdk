@@ -67,12 +67,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * An array of `Customer` objects that match your query.
+ * An array of `Customer` objects that match the provided query.
  * @member {Array.<module:model/Customer>} customers
  */
 exports.prototype['customers'] = undefined;
 /**
- * A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+ * A pagination cursor to retrieve the next set of results for the original query. Only present if the request succeeded and additional results are available.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

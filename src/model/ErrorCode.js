@@ -501,6 +501,11 @@ var exports = {
    */
   "HTTPS_ONLY": "HTTPS_ONLY",
   /**
+   * value: "UNREACHABLE_URL"
+   * @const
+   */
+  "UNREACHABLE_URL": "UNREACHABLE_URL",
+  /**
    * value: "CARD_DECLINED"
    * @const
    */
@@ -576,6 +581,11 @@ var exports = {
    */
   "CONFLICT": "CONFLICT",
   /**
+   * value: "GONE"
+   * @const
+   */
+  "GONE": "GONE",
+  /**
    * value: "REQUEST_ENTITY_TOO_LARGE"
    * @const
    */
@@ -586,6 +596,11 @@ var exports = {
    */
   "UNSUPPORTED_MEDIA_TYPE": "UNSUPPORTED_MEDIA_TYPE",
   /**
+   * value: "UNPROCESSABLE_ENTITY"
+   * @const
+   */
+  "UNPROCESSABLE_ENTITY": "UNPROCESSABLE_ENTITY",
+  /**
    * value: "RATE_LIMITED"
    * @const
    */
@@ -595,6 +610,11 @@ var exports = {
    * @const
    */
   "NOT_IMPLEMENTED": "NOT_IMPLEMENTED",
+  /**
+   * value: "BAD_GATEWAY"
+   * @const
+   */
+  "BAD_GATEWAY": "BAD_GATEWAY",
   /**
    * value: "SERVICE_UNAVAILABLE"
    * @const

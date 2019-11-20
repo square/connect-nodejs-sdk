@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogV1Id</code>.
- * An Items Connect V1 object ID along with its associated [location](#type-location) ID.
+ * An Items Connect V1 object ID along with its associated location ID.
  * @alias module:model/CatalogV1Id
  * @class
  */
@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['catalog_v1_id'] = undefined;
 /**
- * The ID of the `location` this Connect V1 ID is associated with.
+ * The ID of the `Location` this Connect V1 ID is associated with.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;

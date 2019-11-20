@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['modifier_id'] = undefined;
 /**
- * If `true`, this `CatalogModifier](#type-catalogmodifier) should be selected by default for this [CatalogItem`.
+ * If `true`, this `CatalogModifier` should be selected by default for this `CatalogItem`.
  * @member {Boolean} on_by_default
  */
 exports.prototype['on_by_default'] = undefined;

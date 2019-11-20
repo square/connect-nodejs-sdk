@@ -1,6 +1,7 @@
 # SquareConnect.V1AdjustInventoryRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 V1AdjustInventoryRequest
 

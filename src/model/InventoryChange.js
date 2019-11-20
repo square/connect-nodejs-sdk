@@ -26,7 +26,7 @@ var InventoryTransfer = require('./InventoryTransfer');
 
 /**
  * Constructs a new <code>InventoryChange</code>.
- * Represents a single physical count, inventory, adjustment, or transfer that is part of the history of inventory changes for a particular [CatalogObject](#type-catalogobject).
+ * Represents a single physical count, inventory, adjustment, or transfer that is part of the history of inventory changes for a particular &#x60;CatalogObject&#x60;.
  * @alias module:model/InventoryChange
  * @class
  */
@@ -67,7 +67,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for possible values
+ * Indicates how the inventory change was applied. See `InventoryChangeType` for all possible values. See [InventoryChangeType](#type-inventorychangetype) for possible values
  * @member {String} type
  */
 exports.prototype['type'] = undefined;

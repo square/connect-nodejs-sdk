@@ -32,7 +32,7 @@ var CatalogQueryText = require('./CatalogQueryText');
 
 /**
  * Constructs a new <code>CatalogQuery</code>.
- * A query to be applied to a [SearchCatalogObjectsRequest](#type-searchcatalogobjectsrequest). Only one query field may be present.  Where an attribute name is required, it should be specified as the name of any field marked \&quot;searchable\&quot; from the structured data types for the desired result object type(s) ([CatalogItem](#type-catalogitem), [CatalogItemVariation](#type-catalogitemvariation), [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax), [CatalogDiscount](#type-catalogdiscount), [CatalogModifierList](#type-catalogmodifierlist), [CatalogModifier](#type-catalogmodifier)).  For example, a query that should return Items may specify attribute names from any of the searchable fields of the [CatalogItem](#type-catalogitem) data type, namely &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, and &#x60;\&quot;abbreviation\&quot;&#x60;.
+ * A query to be applied to a &#x60;SearchCatalogObjectsRequest&#x60;. Only one query field may be present.  Where an attribute name is required, it should be specified as the name of any field marked \&quot;searchable\&quot; from the structured data types for the desired result object type(s) (&#x60;CatalogItem&#x60;, &#x60;CatalogItemVariation&#x60;, &#x60;CatalogCategory&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogDiscount&#x60;, &#x60;CatalogModifierList&#x60;, &#x60;CatalogModifier&#x60;).  For example, a query that should return Items may specify attribute names from any of the searchable fields of the &#x60;CatalogItem&#x60; data type, namely &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, and &#x60;\&quot;abbreviation\&quot;&#x60;.
  * @alias module:model/CatalogQuery
  * @class
  */
@@ -118,22 +118,22 @@ exports.prototype['range_query'] = undefined;
  */
 exports.prototype['text_query'] = undefined;
 /**
- * A query that returns all `CatalogItem](#type-catalogitem)s that have any of the given [CatalogTax`es enabled.
+ * A query that returns all `CatalogItem`s that have any of the given `CatalogTax`es enabled.
  * @member {module:model/CatalogQueryItemsForTax} items_for_tax_query
  */
 exports.prototype['items_for_tax_query'] = undefined;
 /**
- * A query that returns all `CatalogItem](#type-catalogitem)s that have any of the given [CatalogModifierList`s enabled.
+ * A query that returns all `CatalogItem`s that have any of the given `CatalogModifierList`s enabled.
  * @member {module:model/CatalogQueryItemsForModifierList} items_for_modifier_list_query
  */
 exports.prototype['items_for_modifier_list_query'] = undefined;
 /**
- * A query that returns all `CatalogItem](#type-catalogitem)s that have all of the given [CatalogItemOption`s.
+ * A query that returns all `CatalogItem`s that have all of the given `CatalogItemOption`s.
  * @member {module:model/CatalogQueryItemsForItemOptions} items_for_item_options_query
  */
 exports.prototype['items_for_item_options_query'] = undefined;
 /**
- * A query that returns all `CatalogItemVariation](#type-catalogitemvariations)s that have all of the given [CatalogItemOption` values.
+ * A query that returns all `CatalogItemVariation`s that have all of the given `CatalogItemOption` values.
  * @member {module:model/CatalogQueryItemVariationsForItemOptionValues} item_variations_for_item_option_values_query
  */
 exports.prototype['item_variations_for_item_option_values_query'] = undefined;

@@ -57,12 +57,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The modifier's name. Searchable. This field has max length of 255 Unicode code points.
+ * The modifier name. Searchable. This field has max length of 255 Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The modifier's price.
+ * The modifier price.
  * @member {module:model/Money} price_money
  */
 exports.prototype['price_money'] = undefined;

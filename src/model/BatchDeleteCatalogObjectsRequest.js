@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The IDs of the `CatalogObject`s to be deleted. When an object is deleted, other objects in the graph that depend on that object will be deleted as well (for example, deleting a `CatalogItem](#type-catalogitem) will delete its [CatalogItemVariation`.
+ * The IDs of the CatalogObjects to be deleted. When an object is deleted, other objects in the graph that depend on that object will be deleted as well (for example, deleting a CatalogItem will delete its CatalogItemVariation.
  * @member {Array.<String>} object_ids
  */
 exports.prototype['object_ids'] = undefined;

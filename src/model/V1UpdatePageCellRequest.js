@@ -18,6 +18,7 @@ var V1PageCell = require('./V1PageCell');
 
 
 /**
+ * @deprecated
  * The V1UpdatePageCellRequest model module.
  * @module model/V1UpdatePageCellRequest
  */

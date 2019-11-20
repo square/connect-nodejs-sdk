@@ -1,6 +1,7 @@
 # SquareConnect.V1UpdatePageRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

@@ -1,6 +1,7 @@
 # SquareConnect.V1Money
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

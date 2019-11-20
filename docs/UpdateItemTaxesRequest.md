@@ -7,8 +7,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**item_ids** | **[String]** | The &#x60;CatalogItem](#type-catalogitem)s whose enabled/disabled [CatalogTax&#x60;es are being updated. | 
-**taxes_to_enable** | **[String]** | The set of &#x60;CatalogTax](#type-catalogtax)es (referenced by ID) to enable for the [CatalogItem&#x60;. | [optional] 
-**taxes_to_disable** | **[String]** | The set of &#x60;CatalogTax](#type-catalogtax)es (referenced by ID) to disable for the [CatalogItem&#x60;. | [optional] 
+**item_ids** | **[String]** | IDs for the CatalogItems associated with the CatalogTax objects being updated. | 
+**taxes_to_enable** | **[String]** | IDs of the CatalogTax objects to enable. | [optional] 
+**taxes_to_disable** | **[String]** | IDs of the CatalogTax objects to disable. | [optional] 
 
 

@@ -43,14 +43,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * AdjustInventory
-   * Adjusts an item variation&#39;s current available inventory.
+   * Adjusts the current available inventory of an item variation.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} variationId The ID of the variation to adjust inventory information for.
    * @param {module:model/V1AdjustInventoryRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1InventoryEntry} and HTTP response
    */
   this.adjustInventoryWithHttpInfo = function(locationId, variationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.adjustInventory");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -77,7 +79,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -96,7 +98,7 @@ module.exports = function(apiClient) {
 
   /**
    * AdjustInventory
-   * Adjusts an item variation&#39;s current available inventory.
+   * Adjusts the current available inventory of an item variation.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} variationId The ID of the variation to adjust inventory information for.
    * @param {module:model/V1AdjustInventoryRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -111,14 +113,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ApplyFee
-   * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+   * Associates a fee with an item so the fee is automatically applied to the item in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
    * @param {String} feeId The ID of the fee to apply.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.applyFeeWithHttpInfo = function(locationId, itemId, feeId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.applyFee");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -146,7 +150,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -165,7 +169,7 @@ module.exports = function(apiClient) {
 
   /**
    * ApplyFee
-   * Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+   * Associates a fee with an item so the fee is automatically applied to the item in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
    * @param {String} feeId The ID of the fee to apply.
@@ -180,14 +184,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ApplyModifierList
-   * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+   * Associates a modifier list with an item so the associated modifier options can be applied to the item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to apply.
    * @param {String} itemId The ID of the item to add the modifier list to.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.applyModifierListWithHttpInfo = function(locationId, modifierListId, itemId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.applyModifierList");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -215,7 +221,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -234,7 +240,7 @@ module.exports = function(apiClient) {
 
   /**
    * ApplyModifierList
-   * Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+   * Associates a modifier list with an item so the associated modifier options can be applied to the item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to apply.
    * @param {String} itemId The ID of the item to add the modifier list to.
@@ -249,13 +255,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateCategory
-   * Creates an item category.
+   * Creates an item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Category} and HTTP response
    */
   this.createCategoryWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createCategory");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -276,7 +284,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -295,7 +303,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCategory
-   * Creates an item category.
+   * Creates an item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Category}
@@ -309,13 +317,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateDiscount
-   * Creates a discount.
+   * Creates a discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Discount} and HTTP response
    */
   this.createDiscountWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createDiscount");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -336,7 +346,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -355,7 +365,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateDiscount
-   * Creates a discount.
+   * Creates a discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Discount}
@@ -369,13 +379,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateFee
-   * Creates a fee (tax).
+   * Creates a fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create a fee for.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Fee} and HTTP response
    */
   this.createFeeWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createFee");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -396,7 +408,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -415,7 +427,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateFee
-   * Creates a fee (tax).
+   * Creates a fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create a fee for.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Fee}
@@ -429,13 +441,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateItem
-   * Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
+   * Creates an item and at least one variation for it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---   Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.createItemWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createItem");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -456,7 +470,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -475,7 +489,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateItem
-   * Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
+   * Creates an item and at least one variation for it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---   Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify &#x60;id&#x60;. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a &#x60;user_data&#x60; string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Item}
@@ -489,13 +503,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateModifierList
-   * Creates an item modifier list and at least one modifier option for it.
+   * Creates an item modifier list and at least 1 modifier option for it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create a modifier list for.
    * @param {module:model/V1ModifierList} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierList} and HTTP response
    */
   this.createModifierListWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createModifierList");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -516,7 +532,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -535,7 +551,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateModifierList
-   * Creates an item modifier list and at least one modifier option for it.
+   * Creates an item modifier list and at least 1 modifier option for it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create a modifier list for.
    * @param {module:model/V1ModifierList} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1ModifierList}
@@ -549,14 +565,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateModifierOption
-   * Creates an item modifier option and adds it to a modifier list.
+   * Creates an item modifier option and adds it to a modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {module:model/V1ModifierOption} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierOption} and HTTP response
    */
   this.createModifierOptionWithHttpInfo = function(locationId, modifierListId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createModifierOption");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -583,7 +601,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -602,7 +620,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateModifierOption
-   * Creates an item modifier option and adds it to a modifier list.
+   * Creates an item modifier option and adds it to a modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {module:model/V1ModifierOption} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -617,13 +635,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreatePage
-   * Creates a Favorites page in Square Register.
+   * Creates a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
    */
   this.createPageWithHttpInfo = function(locationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createPage");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -644,7 +664,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -663,7 +683,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreatePage
-   * Creates a Favorites page in Square Register.
+   * Creates a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to create an item for.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Page}
@@ -677,14 +697,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * CreateVariation
-   * Creates an item variation for an existing item.
+   * Creates an item variation for an existing item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
    * @param {module:model/V1Variation} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Variation} and HTTP response
    */
   this.createVariationWithHttpInfo = function(locationId, itemId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.createVariation");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -711,7 +733,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -730,7 +752,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateVariation
-   * Creates an item variation for an existing item.
+   * Creates an item variation for an existing item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
    * @param {module:model/V1Variation} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -745,13 +767,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteCategory
-   * Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
+   * Deletes an existing item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteCategory__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} categoryId The ID of the category to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Category} and HTTP response
    */
   this.deleteCategoryWithHttpInfo = function(locationId, categoryId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteCategory");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -773,7 +797,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -792,7 +816,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteCategory
-   * Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
+   * Deletes an existing item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteCategory__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteCategoryRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} categoryId The ID of the category to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Category}
@@ -806,13 +830,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteDiscount
-   * Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
+   * Deletes an existing discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteDiscount__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} discountId The ID of the discount to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Discount} and HTTP response
    */
   this.deleteDiscountWithHttpInfo = function(locationId, discountId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteDiscount");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -834,7 +860,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -853,7 +879,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteDiscount
-   * Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
+   * Deletes an existing discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteDiscount__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteDiscountRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} discountId The ID of the discount to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Discount}
@@ -867,13 +893,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteFee
-   * Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
+   * Deletes an existing fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteFee__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Fee} and HTTP response
    */
   this.deleteFeeWithHttpInfo = function(locationId, feeId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteFee");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -895,7 +923,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -914,7 +942,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteFee
-   * Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
+   * Deletes an existing fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteFee__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteFeeRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Fee}
@@ -928,13 +956,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteItem
-   * Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
+   * Deletes an existing item and all item variations associated with it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteItem__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.deleteItemWithHttpInfo = function(locationId, itemId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteItem");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -956,7 +986,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -975,7 +1005,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteItem
-   * Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
+   * Deletes an existing item and all item variations associated with it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteItem__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteItemRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Item}
@@ -989,13 +1019,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteModifierList
-   * Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
+   * Deletes an existing item modifier list and all modifier options associated with it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteModifierList__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierList} and HTTP response
    */
   this.deleteModifierListWithHttpInfo = function(locationId, modifierListId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteModifierList");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1017,7 +1049,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1036,7 +1068,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteModifierList
-   * Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
+   * Deletes an existing item modifier list and all modifier options associated with it.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteModifierList__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierListRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1ModifierList}
@@ -1050,14 +1082,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteModifierOption
-   * Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object as documented below.
+   * Deletes an existing item modifier option from a modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteModifierOption__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierOption} and HTTP response
    */
   this.deleteModifierOptionWithHttpInfo = function(locationId, modifierListId, modifierOptionId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteModifierOption");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1085,7 +1119,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1104,7 +1138,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteModifierOption
-   * Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object as documented below.
+   * Deletes an existing item modifier option from a modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteModifierOption__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteModifierOptionRequest&#x60; object.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to delete.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
@@ -1119,13 +1153,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeletePage
-   * Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object as documented below.
+   * Deletes an existing Favorites page and all of its cells.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeletePage__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
    */
   this.deletePageWithHttpInfo = function(locationId, pageId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deletePage");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1147,7 +1183,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1166,7 +1202,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeletePage
-   * Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object as documented below.
+   * Deletes an existing Favorites page and all of its cells.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeletePage__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageRequest&#x60; object.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Page}
@@ -1180,8 +1216,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeletePageCell
-   * Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
+   * Deletes a cell from a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeletePageCell__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @param {Object} opts Optional parameters
@@ -1190,6 +1227,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
    */
   this.deletePageCellWithHttpInfo = function(locationId, pageId, opts) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deletePageCell");
     opts = opts || {};
     var postBody = null;
 
@@ -1214,7 +1252,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1233,7 +1271,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeletePageCell
-   * Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
+   * Deletes a cell from a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeletePageCell__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeletePageCellRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page to delete.
    * @param {Object} opts Optional parameters
@@ -1250,14 +1288,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * DeleteVariation
-   * Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
+   * Deletes an existing item variation from an item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteVariation__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to delete.
    * @param {String} variationId The ID of the variation to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Variation} and HTTP response
    */
   this.deleteVariationWithHttpInfo = function(locationId, itemId, variationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.deleteVariation");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1285,7 +1325,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1304,7 +1344,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteVariation
-   * Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
+   * Deletes an existing item variation from an item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---  __DeleteVariation__ returns nothing on success but Connect SDKs map the empty response to an empty &#x60;V1DeleteVariationRequest&#x60; object as documented below.
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to delete.
    * @param {String} variationId The ID of the variation to delete.
@@ -1319,12 +1359,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListCategories
-   * Lists all of a location&#39;s item categories.
+   * Lists all the item categories for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Category>} and HTTP response
    */
   this.listCategoriesWithHttpInfo = function(locationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listCategories");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1340,7 +1382,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1359,7 +1401,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListCategories
-   * Lists all of a location&#39;s item categories.
+   * Lists all the item categories for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Category>}
    */
@@ -1372,12 +1414,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListDiscounts
-   * Lists all of a location&#39;s discounts.
+   * Lists all the discounts for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Discount>} and HTTP response
    */
   this.listDiscountsWithHttpInfo = function(locationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listDiscounts");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1393,7 +1437,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1412,7 +1456,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListDiscounts
-   * Lists all of a location&#39;s discounts.
+   * Lists all the discounts for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list categories for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Discount>}
    */
@@ -1425,12 +1469,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListFees
-   * Lists all of a location&#39;s fees (taxes).
+   * Lists all the fees (taxes) for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list fees for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Fee>} and HTTP response
    */
   this.listFeesWithHttpInfo = function(locationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listFees");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1446,7 +1492,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1465,7 +1511,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListFees
-   * Lists all of a location&#39;s fees (taxes).
+   * Lists all the fees (taxes) for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list fees for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Fee>}
    */
@@ -1478,8 +1524,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListInventory
-   * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
+   * Provides inventory information for all inventory-enabled item variations.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {Object} opts Optional parameters
    * @param {Number} opts.limit The maximum number of inventory entries to return in a single response. This value cannot exceed 1000.
@@ -1487,6 +1534,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1InventoryEntry>} and HTTP response
    */
   this.listInventoryWithHttpInfo = function(locationId, opts) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listInventory");
     opts = opts || {};
     var postBody = null;
 
@@ -1505,7 +1553,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1524,7 +1572,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListInventory
-   * Provides inventory information for all of a merchant&#39;s inventory-enabled item variations.
+   * Provides inventory information for all inventory-enabled item variations.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {Object} opts Optional parameters
    * @param {Number} opts.limit The maximum number of inventory entries to return in a single response. This value cannot exceed 1000.
@@ -1540,14 +1588,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListItems
-   * Provides summary information for all of a location&#39;s items.
+   * Provides summary information of all items for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list items for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Item>} and HTTP response
    */
   this.listItemsWithHttpInfo = function(locationId, opts) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listItems");
     opts = opts || {};
     var postBody = null;
 
@@ -1565,7 +1615,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1584,7 +1634,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListItems
-   * Provides summary information for all of a location&#39;s items.
+   * Provides summary information of all items for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list items for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.batchToken A pagination cursor to retrieve the next set of results for your original query to the endpoint.
@@ -1599,12 +1649,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListModifierLists
-   * Lists all of a location&#39;s modifier lists.
+   * Lists all the modifier lists for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list modifier lists for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1ModifierList>} and HTTP response
    */
   this.listModifierListsWithHttpInfo = function(locationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listModifierLists");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1620,7 +1672,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1639,7 +1691,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListModifierLists
-   * Lists all of a location&#39;s modifier lists.
+   * Lists all the modifier lists for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list modifier lists for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1ModifierList>}
    */
@@ -1652,12 +1704,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListPages
-   * Lists all of a location&#39;s Favorites pages in Square Register.
+   * Lists all Favorites pages (in Square Point of Sale) for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list Favorites pages for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Page>} and HTTP response
    */
   this.listPagesWithHttpInfo = function(locationId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.listPages");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1673,7 +1727,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1692,7 +1746,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListPages
-   * Lists all of a location&#39;s Favorites pages in Square Register.
+   * Lists all Favorites pages (in Square Point of Sale) for a given location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the location to list Favorites pages for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Page>}
    */
@@ -1705,14 +1759,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RemoveFee
-   * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+   * Removes a fee assocation from an item so the fee is no longer automatically applied to the item in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
    * @param {String} feeId The ID of the fee to apply.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.removeFeeWithHttpInfo = function(locationId, itemId, feeId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.removeFee");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1740,7 +1796,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1759,7 +1815,7 @@ module.exports = function(apiClient) {
 
   /**
    * RemoveFee
-   * Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+   * Removes a fee assocation from an item so the fee is no longer automatically applied to the item in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} itemId The ID of the item to add the fee to.
    * @param {String} feeId The ID of the fee to apply.
@@ -1774,14 +1830,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RemoveModifierList
-   * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+   * Removes a modifier list association from an item so the modifier options from the list can no longer be applied to the item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to remove.
    * @param {String} itemId The ID of the item to remove the modifier list from.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.removeModifierListWithHttpInfo = function(locationId, modifierListId, itemId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.removeModifierList");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1809,7 +1867,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1828,7 +1886,7 @@ module.exports = function(apiClient) {
 
   /**
    * RemoveModifierList
-   * Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+   * Removes a modifier list association from an item so the modifier options from the list can no longer be applied to the item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to remove.
    * @param {String} itemId The ID of the item to remove the modifier list from.
@@ -1843,13 +1901,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RetrieveItem
-   * Provides the details for a single item, including associated modifier lists and fees.
+   * Provides the details for a single item, including associated modifier lists and fees.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.retrieveItemWithHttpInfo = function(locationId, itemId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.retrieveItem");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1871,7 +1931,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1890,7 +1950,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveItem
-   * Provides the details for a single item, including associated modifier lists and fees.
+   * Provides the details for a single item, including associated modifier lists and fees.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The item&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Item}
@@ -1904,13 +1964,15 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RetrieveModifierList
-   * Provides the details for a single modifier list.
+   * Provides the details for a single modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The modifier list&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierList} and HTTP response
    */
   this.retrieveModifierListWithHttpInfo = function(locationId, modifierListId) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.retrieveModifierList");
     var postBody = null;
 
     // verify the required parameter 'locationId' is set
@@ -1932,7 +1994,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -1951,7 +2013,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveModifierList
-   * Provides the details for a single modifier list.
+   * Provides the details for a single modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The modifier list&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1ModifierList}
@@ -1965,14 +2027,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateCategory
-   * Modifies the details of an existing item category.
+   * Modifies the details of an existing item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} categoryId The ID of the category to edit.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Category} and HTTP response
    */
   this.updateCategoryWithHttpInfo = function(locationId, categoryId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateCategory");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -1999,7 +2063,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2018,7 +2082,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCategory
-   * Modifies the details of an existing item category.
+   * Modifies the details of an existing item category.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} categoryId The ID of the category to edit.
    * @param {module:model/V1Category} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2033,14 +2097,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateDiscount
-   * Modifies the details of an existing discount.
+   * Modifies the details of an existing discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} discountId The ID of the discount to edit.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Discount} and HTTP response
    */
   this.updateDiscountWithHttpInfo = function(locationId, discountId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateDiscount");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2067,7 +2133,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2086,7 +2152,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateDiscount
-   * Modifies the details of an existing discount.
+   * Modifies the details of an existing discount.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the category&#39;s associated location.
    * @param {String} discountId The ID of the discount to edit.
    * @param {module:model/V1Discount} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2101,14 +2167,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateFee
-   * Modifies the details of an existing fee (tax).
+   * Modifies the details of an existing fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to edit.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Fee} and HTTP response
    */
   this.updateFeeWithHttpInfo = function(locationId, feeId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateFee");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2135,7 +2203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2154,7 +2222,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateFee
-   * Modifies the details of an existing fee (tax).
+   * Modifies the details of an existing fee (tax).  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the fee&#39;s associated location.
    * @param {String} feeId The ID of the fee to edit.
    * @param {module:model/V1Fee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2169,14 +2237,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateItem
-   * Modifies the core details of an existing item.
+   * Modifies the core details of an existing item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Item} and HTTP response
    */
   this.updateItemWithHttpInfo = function(locationId, itemId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateItem");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2203,7 +2273,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2222,7 +2292,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateItem
-   * Modifies the core details of an existing item.
+   * Modifies the core details of an existing item.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @param {module:model/V1Item} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2237,14 +2307,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateModifierList
-   * Modifies the details of an existing item modifier list.
+   * Modifies the details of an existing item modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {module:model/V1UpdateModifierListRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierList} and HTTP response
    */
   this.updateModifierListWithHttpInfo = function(locationId, modifierListId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateModifierList");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2271,7 +2343,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2290,7 +2362,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateModifierList
-   * Modifies the details of an existing item modifier list.
+   * Modifies the details of an existing item modifier list.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {module:model/V1UpdateModifierListRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2305,8 +2377,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateModifierOption
-   * Modifies the details of an existing item modifier option.
+   * Modifies the details of an existing item modifier option.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
@@ -2314,6 +2387,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1ModifierOption} and HTTP response
    */
   this.updateModifierOptionWithHttpInfo = function(locationId, modifierListId, modifierOptionId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateModifierOption");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2346,7 +2420,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2365,7 +2439,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateModifierOption
-   * Modifies the details of an existing item modifier option.
+   * Modifies the details of an existing item modifier option.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} modifierListId The ID of the modifier list to edit.
    * @param {String} modifierOptionId The ID of the modifier list to edit.
@@ -2381,14 +2455,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdatePage
-   * Modifies the details of a Favorites page in Square Register.
+   * Modifies the details of a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the Favorites page&#39;s associated location
    * @param {String} pageId The ID of the page to modify.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
    */
   this.updatePageWithHttpInfo = function(locationId, pageId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updatePage");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2415,7 +2491,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2434,7 +2510,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdatePage
-   * Modifies the details of a Favorites page in Square Register.
+   * Modifies the details of a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the Favorites page&#39;s associated location
    * @param {String} pageId The ID of the page to modify.
    * @param {module:model/V1Page} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2449,14 +2525,16 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdatePageCell
-   * Modifies a cell of a Favorites page in Square Register.
+   * Modifies a cell of a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page the cell belongs to.
    * @param {module:model/V1PageCell} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Page} and HTTP response
    */
   this.updatePageCellWithHttpInfo = function(locationId, pageId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updatePageCell");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2483,7 +2561,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2502,7 +2580,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdatePageCell
-   * Modifies a cell of a Favorites page in Square Register.
+   * Modifies a cell of a Favorites page in Square Point of Sale.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the Favorites page&#39;s associated location.
    * @param {String} pageId The ID of the page the cell belongs to.
    * @param {module:model/V1PageCell} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -2517,8 +2595,9 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * UpdateVariation
-   * Modifies the details of an existing item variation.
+   * Modifies the details of an existing item variation.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @param {String} variationId The ID of the variation to modify.
@@ -2526,6 +2605,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Variation} and HTTP response
    */
   this.updateVariationWithHttpInfo = function(locationId, itemId, variationId, body) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: V1ItemsApi.updateVariation");
     var postBody = body;
 
     // verify the required parameter 'locationId' is set
@@ -2558,7 +2638,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -2577,7 +2657,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateVariation
-   * Modifies the details of an existing item variation.
+   * Modifies the details of an existing item variation.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-items)  ---
    * @param {String} locationId The ID of the item&#39;s associated location.
    * @param {String} itemId The ID of the item to modify.
    * @param {String} variationId The ID of the variation to modify.

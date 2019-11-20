@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogItemOptionValueForItemVariation</code>.
- * A [CatalogItemOptionValue](#type-catalogitemoptionvalue) links an item variation to an item option as an item option value. For example, a t-shirt item may offer a color option and a size option. An item option value would represent each variation of t-shirt: For example, “Color:Red, Size:Small” or “Color:Blue, Size:Medium”.
+ * A &#x60;CatalogItemOptionValue&#x60; links an item variation to an item option as an item option value. For example, a t-shirt item may offer a color option and a size option. An item option value would represent each variation of t-shirt: For example, \&quot;Color:Red, Size:Small\&quot; or \&quot;Color:Blue, Size:Medium\&quot;.
  * @alias module:model/CatalogItemOptionValueForItemVariation
  * @class
  */

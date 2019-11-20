@@ -1,6 +1,7 @@
 # SquareConnect.V1MerchantLocationDetails
 
 ### Description
+**Note: This model is deprecated.**
 
 Additional information for a single-location account specified by its associated business account, if it has one.
 

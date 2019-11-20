@@ -2,7 +2,7 @@
 
 ### Description
 
- Represents the hours of operation for a business location.
+Represents the hours of operation for a business location.
 
 ## Properties
 Name | Type | Description | Notes

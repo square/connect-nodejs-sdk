@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Indicates the information used to sort the results. For example, by creation date.  Default value: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values
+ * Indicates the information used to sort the results. For example, by creation date.  Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values
  * @member {String} field
  */
 exports.prototype['field'] = undefined;
 /**
- * Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings.  Default value: `ASC`. See [SortOrder](#type-sortorder) for possible values
+ * Indicates the order in which results should be displayed based on the value of the sort field. String comparisons use standard alphabetic comparison to determine order. Strings representing numbers are sorted as strings.  Default: `ASC`. See [SortOrder](#type-sortorder) for possible values
  * @member {String} order
  */
 exports.prototype['order'] = undefined;

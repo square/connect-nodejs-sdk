@@ -40,7 +40,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment, you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see  [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentResponse} and HTTP response
    */
@@ -60,7 +60,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -79,7 +79,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment, you can cancel the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see  [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentResponse}
    */
@@ -93,7 +93,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown.  For example, after you send a CreatePayment  request a network error occurs and you don&#39;t get a response. In this case, you can direct  Square to cancel the payment using this endpoint. In the request, you provide the same idempotency  key that you provided in your CreatePayment request you want  to cancel. After cancelling the  payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse} and HTTP response
    */
@@ -112,7 +112,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -131,7 +131,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again. Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown.  For example, after you send a CreatePayment  request a network error occurs and you don&#39;t get a response. In this case, you can direct  Square to cancel the payment using this endpoint. In the request, you provide the same idempotency  key that you provided in your CreatePayment request you want  to cancel. After cancelling the  payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse}
    */
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -270,7 +270,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -334,7 +334,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };

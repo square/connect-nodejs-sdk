@@ -1,6 +1,7 @@
 # SquareConnect.V1Category
 
 ### Description
+**Note: This model is deprecated.**
 
 V1Category
 

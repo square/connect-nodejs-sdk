@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['client_object_id'] = undefined;
 /**
- * The permanent ID for the `CatalogObject` created by the server.
+ * The permanent ID for the CatalogObject created by the server.
  * @member {String} object_id
  */
 exports.prototype['object_id'] = undefined;

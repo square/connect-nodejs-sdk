@@ -1,6 +1,7 @@
 # SquareConnect.V1ItemImage
 
 ### Description
+**Note: This model is deprecated.**
 
 V1ItemImage
 

@@ -57,7 +57,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * List of measurement units in this description group.
+ * List of standard (non-custom) measurement units in this description group.
  * @member {Array.<module:model/StandardUnitDescription>} standard_unit_descriptions
  */
 exports.prototype['standard_unit_descriptions'] = undefined;

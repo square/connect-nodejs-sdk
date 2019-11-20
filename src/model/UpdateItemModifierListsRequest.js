@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/UpdateItemModifierListsRequest
  * @class
- * @param itemIds {Array.<String>} The `CatalogItem](#type-catalogitem)s whose [CatalogModifierList`s are being updated.
+ * @param itemIds {Array.<String>} The IDs of the catalog items associated with the CatalogModifierList objects being updated.
  */
 var exports = function(itemIds) {
   var _this = this;
@@ -61,17 +61,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The `CatalogItem](#type-catalogitem)s whose [CatalogModifierList`s are being updated.
+ * The IDs of the catalog items associated with the CatalogModifierList objects being updated.
  * @member {Array.<String>} item_ids
  */
 exports.prototype['item_ids'] = undefined;
 /**
- * The set of `CatalogModifierList](#type-catalogmodifierlist)s (referenced by ID) to enable for the [CatalogItem`.
+ * The IDs of the CatalogModifierList objects to enable for the CatalogItem.
  * @member {Array.<String>} modifier_lists_to_enable
  */
 exports.prototype['modifier_lists_to_enable'] = undefined;
 /**
- * The set of `CatalogModifierList](#type-catalogmodifierlist)s (referenced by ID) to disable for the [CatalogItem`.
+ * The IDs of the CatalogModifierList objects to disable for the CatalogItem.
  * @member {Array.<String>} modifier_lists_to_disable
  */
 exports.prototype['modifier_lists_to_disable'] = undefined;

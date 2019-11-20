@@ -24,7 +24,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CatalogObjectBatch</code>.
- * A batch of [CatalogObject](#type-catalogobject)s.
+ * A batch of catalog objects.
  * @alias module:model/CatalogObjectBatch
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A list of `CatalogObject`s belonging to this batch.
+ * A list of CatalogObjects belonging to this batch.
  * @member {Array.<module:model/CatalogObject>} objects
  */
 exports.prototype['objects'] = undefined;

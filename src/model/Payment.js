@@ -56,6 +56,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -135,6 +136,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('note')) {
       obj['note'] = ApiClient.convertToType(data['note'], 'String');
     }
+      if (data.hasOwnProperty('statement_description_identifier')) {
+      obj['statement_description_identifier'] = ApiClient.convertToType(data['statement_description_identifier'], 'String');
+    }
     }
   return obj;
 }
@@ -155,7 +159,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
+ * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example,  US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
@@ -165,12 +169,12 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['tip_money'] = undefined;
 /**
- * The total money for the payment, including `amount_money` and `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
+ * The total money for the payment, including `amount_money` and `tip_money`. Specified in the smallest denomination of the applicable currency.  For example, US dollar amounts are specified in cents.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  For more information, see [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
+ * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.   For more information, see   [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;
@@ -249,6 +253,11 @@ exports.prototype['shipping_address'] = undefined;
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
+/**
+ * Additional payment information that gets added on the customer's card statement as part of the statement description.  Note that the statement_description_identifier may get truncated on the statement description to fit the required information including the Square identifier (SQ *) and name of the merchant taking the payment.
+ * @member {String} statement_description_identifier
+ */
+exports.prototype['statement_description_identifier'] = undefined;
 
 
 

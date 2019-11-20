@@ -44,8 +44,10 @@ var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
 var CardBrand = require('./model/CardBrand');
 var CardPaymentDetails = require('./model/CardPaymentDetails');
+var CashPaymentDetails = require('./model/CashPaymentDetails');
 var CatalogCategory = require('./model/CatalogCategory');
 var CatalogDiscount = require('./model/CatalogDiscount');
+var CatalogDiscountModifyTaxBasis = require('./model/CatalogDiscountModifyTaxBasis');
 var CatalogDiscountType = require('./model/CatalogDiscountType');
 var CatalogIdMapping = require('./model/CatalogIdMapping');
 var CatalogImage = require('./model/CatalogImage');
@@ -72,7 +74,13 @@ var CatalogPricingRule = require('./model/CatalogPricingRule');
 var CatalogPricingType = require('./model/CatalogPricingType');
 var CatalogProductSet = require('./model/CatalogProductSet');
 var CatalogQuery = require('./model/CatalogQuery');
+var CatalogQueryCustomAttributeUsage = require('./model/CatalogQueryCustomAttributeUsage');
 var CatalogQueryExact = require('./model/CatalogQueryExact');
+var CatalogQueryFilteredItems = require('./model/CatalogQueryFilteredItems');
+var CatalogQueryFilteredItemsCustomAttributeFilter = require('./model/CatalogQueryFilteredItemsCustomAttributeFilter');
+var CatalogQueryFilteredItemsCustomAttributeFilterFilterType = require('./model/CatalogQueryFilteredItemsCustomAttributeFilterFilterType');
+var CatalogQueryFilteredItemsNullableAttribute = require('./model/CatalogQueryFilteredItemsNullableAttribute');
+var CatalogQueryFilteredItemsStockLevel = require('./model/CatalogQueryFilteredItemsStockLevel');
 var CatalogQueryItemVariationsForItemOptionValues = require('./model/CatalogQueryItemVariationsForItemOptionValues');
 var CatalogQueryItemsForItemOptions = require('./model/CatalogQueryItemsForItemOptions');
 var CatalogQueryItemsForModifierList = require('./model/CatalogQueryItemsForModifierList');
@@ -94,12 +102,16 @@ var Coordinates = require('./model/Coordinates');
 var Country = require('./model/Country');
 var CreateBreakTypeRequest = require('./model/CreateBreakTypeRequest');
 var CreateBreakTypeResponse = require('./model/CreateBreakTypeResponse');
+var CreateCatalogImageRequest = require('./model/CreateCatalogImageRequest');
+var CreateCatalogImageResponse = require('./model/CreateCatalogImageResponse');
 var CreateCheckoutRequest = require('./model/CreateCheckoutRequest');
 var CreateCheckoutResponse = require('./model/CreateCheckoutResponse');
 var CreateCustomerCardRequest = require('./model/CreateCustomerCardRequest');
 var CreateCustomerCardResponse = require('./model/CreateCustomerCardResponse');
 var CreateCustomerRequest = require('./model/CreateCustomerRequest');
 var CreateCustomerResponse = require('./model/CreateCustomerResponse');
+var CreateLocationRequest = require('./model/CreateLocationRequest');
+var CreateLocationResponse = require('./model/CreateLocationResponse');
 var CreateMobileAuthorizationCodeRequest = require('./model/CreateMobileAuthorizationCodeRequest');
 var CreateMobileAuthorizationCodeResponse = require('./model/CreateMobileAuthorizationCodeResponse');
 var CreateOrderRequest = require('./model/CreateOrderRequest');
@@ -145,6 +157,7 @@ var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
 var ExcludeStrategy = require('./model/ExcludeStrategy');
+var ExternalPaymentDetails = require('./model/ExternalPaymentDetails');
 var GetBreakTypeRequest = require('./model/GetBreakTypeRequest');
 var GetBreakTypeResponse = require('./model/GetBreakTypeResponse');
 var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
@@ -502,7 +515,6 @@ var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertTy
 var V1VariationPricingType = require('./model/V1VariationPricingType');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
-var WebhookEvents = require('./model/WebhookEvents');
 var Weekday = require('./model/Weekday');
 var WorkweekConfig = require('./model/WorkweekConfig');
 
@@ -557,7 +569,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20191023.0
+ * @version 2.20191120.0
  */
   module.exports = {
   /**
@@ -721,6 +733,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CardPaymentDetails: CardPaymentDetails,
   /**
+   * The CashPaymentDetails model constructor.
+   * @property {module:model/CashPaymentDetails}
+   */
+  CashPaymentDetails: CashPaymentDetails,
+  /**
    * The CatalogCategory model constructor.
    * @property {module:model/CatalogCategory}
    */
@@ -730,6 +747,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogDiscount}
    */
   CatalogDiscount: CatalogDiscount,
+  /**
+   * The CatalogDiscountModifyTaxBasis model constructor.
+   * @property {module:model/CatalogDiscountModifyTaxBasis}
+   */
+  CatalogDiscountModifyTaxBasis: CatalogDiscountModifyTaxBasis,
   /**
    * The CatalogDiscountType model constructor.
    * @property {module:model/CatalogDiscountType}
@@ -861,10 +883,40 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogQuery: CatalogQuery,
   /**
+   * The CatalogQueryCustomAttributeUsage model constructor.
+   * @property {module:model/CatalogQueryCustomAttributeUsage}
+   */
+  CatalogQueryCustomAttributeUsage: CatalogQueryCustomAttributeUsage,
+  /**
    * The CatalogQueryExact model constructor.
    * @property {module:model/CatalogQueryExact}
    */
   CatalogQueryExact: CatalogQueryExact,
+  /**
+   * The CatalogQueryFilteredItems model constructor.
+   * @property {module:model/CatalogQueryFilteredItems}
+   */
+  CatalogQueryFilteredItems: CatalogQueryFilteredItems,
+  /**
+   * The CatalogQueryFilteredItemsCustomAttributeFilter model constructor.
+   * @property {module:model/CatalogQueryFilteredItemsCustomAttributeFilter}
+   */
+  CatalogQueryFilteredItemsCustomAttributeFilter: CatalogQueryFilteredItemsCustomAttributeFilter,
+  /**
+   * The CatalogQueryFilteredItemsCustomAttributeFilterFilterType model constructor.
+   * @property {module:model/CatalogQueryFilteredItemsCustomAttributeFilterFilterType}
+   */
+  CatalogQueryFilteredItemsCustomAttributeFilterFilterType: CatalogQueryFilteredItemsCustomAttributeFilterFilterType,
+  /**
+   * The CatalogQueryFilteredItemsNullableAttribute model constructor.
+   * @property {module:model/CatalogQueryFilteredItemsNullableAttribute}
+   */
+  CatalogQueryFilteredItemsNullableAttribute: CatalogQueryFilteredItemsNullableAttribute,
+  /**
+   * The CatalogQueryFilteredItemsStockLevel model constructor.
+   * @property {module:model/CatalogQueryFilteredItemsStockLevel}
+   */
+  CatalogQueryFilteredItemsStockLevel: CatalogQueryFilteredItemsStockLevel,
   /**
    * The CatalogQueryItemVariationsForItemOptionValues model constructor.
    * @property {module:model/CatalogQueryItemVariationsForItemOptionValues}
@@ -971,6 +1023,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateBreakTypeResponse: CreateBreakTypeResponse,
   /**
+   * The CreateCatalogImageRequest model constructor.
+   * @property {module:model/CreateCatalogImageRequest}
+   */
+  CreateCatalogImageRequest: CreateCatalogImageRequest,
+  /**
+   * The CreateCatalogImageResponse model constructor.
+   * @property {module:model/CreateCatalogImageResponse}
+   */
+  CreateCatalogImageResponse: CreateCatalogImageResponse,
+  /**
    * The CreateCheckoutRequest model constructor.
    * @property {module:model/CreateCheckoutRequest}
    */
@@ -1000,6 +1062,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateCustomerResponse}
    */
   CreateCustomerResponse: CreateCustomerResponse,
+  /**
+   * The CreateLocationRequest model constructor.
+   * @property {module:model/CreateLocationRequest}
+   */
+  CreateLocationRequest: CreateLocationRequest,
+  /**
+   * The CreateLocationResponse model constructor.
+   * @property {module:model/CreateLocationResponse}
+   */
+  CreateLocationResponse: CreateLocationResponse,
   /**
    * The CreateMobileAuthorizationCodeRequest model constructor.
    * @property {module:model/CreateMobileAuthorizationCodeRequest}
@@ -1225,6 +1297,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ExcludeStrategy}
    */
   ExcludeStrategy: ExcludeStrategy,
+  /**
+   * The ExternalPaymentDetails model constructor.
+   * @property {module:model/ExternalPaymentDetails}
+   */
+  ExternalPaymentDetails: ExternalPaymentDetails,
   /**
    * The GetBreakTypeRequest model constructor.
    * @property {module:model/GetBreakTypeRequest}
@@ -3010,11 +3087,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/VoidTransactionResponse}
    */
   VoidTransactionResponse: VoidTransactionResponse,
-  /**
-   * The WebhookEvents model constructor.
-   * @property {module:model/WebhookEvents}
-   */
-  WebhookEvents: WebhookEvents,
   /**
    * The Weekday model constructor.
    * @property {module:model/Weekday}

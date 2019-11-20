@@ -68,7 +68,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -128,7 +128,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -189,7 +189,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -242,7 +242,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -309,7 +309,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };

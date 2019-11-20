@@ -1,6 +1,7 @@
 # SquareConnect.V1CreateCategoryRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

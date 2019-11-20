@@ -18,6 +18,7 @@ var V1Money = require('./V1Money');
 
 
 /**
+ * @deprecated
  * The V1Tender model module.
  * @module model/V1Tender
  */

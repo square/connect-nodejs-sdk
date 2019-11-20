@@ -1,6 +1,7 @@
 # SquareConnect.V1UpdateFeeRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

@@ -27,12 +27,12 @@ var CustomerPreferences = require('./CustomerPreferences');
 
 /**
  * Constructs a new <code>Customer</code>.
- * Represents one of a business&#39;s customers, which can have one or more cards on file associated with it.
+ * Represents a Square customer profile, which can have one or more cards on file associated with it.
  * @alias module:model/Customer
  * @class
- * @param id {String} The customer's unique ID.
- * @param createdAt {String} The time when the customer was created, in RFC 3339 format.
- * @param updatedAt {String} The time when the customer was last updated, in RFC 3339 format.
+ * @param id {String} A unique, Square-assigned object ID.
+ * @param createdAt {String} The time when the customer profile was created, in RFC 3339 format.
+ * @param updatedAt {String} The time when the customer profile was last updated, in RFC 3339 format.
  */
 var exports = function(id, createdAt, updatedAt) {
   var _this = this;
@@ -123,77 +123,77 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The customer's unique ID.
+ * A unique, Square-assigned object ID.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
 /**
- * The time when the customer was created, in RFC 3339 format.
+ * The time when the customer profile was created, in RFC 3339 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * The time when the customer was last updated, in RFC 3339 format.
+ * The time when the customer profile was last updated, in RFC 3339 format.
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The payment details of the customer's cards on file.
+ * Payment details of cards stored on file for the customer profile.
  * @member {Array.<module:model/Card>} cards
  */
 exports.prototype['cards'] = undefined;
 /**
- * The customer's given (i.e., first) name.
+ * The given (i.e., first) name associated with the customer profile.
  * @member {String} given_name
  */
 exports.prototype['given_name'] = undefined;
 /**
- * The customer's family (i.e., last) name.
+ * The family (i.e., last) name associated with the customer profile.
  * @member {String} family_name
  */
 exports.prototype['family_name'] = undefined;
 /**
- * The customer's nickname.
+ * A nickname for the customer profile.
  * @member {String} nickname
  */
 exports.prototype['nickname'] = undefined;
 /**
- * The name of the customer's company.
+ * A business name associated with the customer profile.
  * @member {String} company_name
  */
 exports.prototype['company_name'] = undefined;
 /**
- * The customer's email address.
+ * The email address associated with the customer profile.
  * @member {String} email_address
  */
 exports.prototype['email_address'] = undefined;
 /**
- * The customer's physical address.
+ * The physical address associated with the customer profile.
  * @member {module:model/Address} address
  */
 exports.prototype['address'] = undefined;
 /**
- * The customer's phone number.
+ * The 11-digit phone number associated with the customer profile.
  * @member {String} phone_number
  */
 exports.prototype['phone_number'] = undefined;
 /**
- * The customer's birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example: `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on September 1st 1998.
+ * The birthday associated with the customer profile, in RFC-3339 format. Year is optional, timezone and times are not allowed. For example: `0000-09-01T00:00:00-00:00` indicates a birthday on September 1st. `1998-09-01T00:00:00-00:00` indications a birthday on September 1st __1998__.
  * @member {String} birthday
  */
 exports.prototype['birthday'] = undefined;
 /**
- * A second ID you can set to associate the customer with an entity in another system.
+ * An optional, second ID used to associate the customer profile with an entity in another system.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * A note to associate with the customer.
+ * A custom note associated with the customer profile.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
 /**
- * The customer's preferences.
+ * Represents general customer preferences.
  * @member {module:model/CustomerPreferences} preferences
  */
 exports.prototype['preferences'] = undefined;

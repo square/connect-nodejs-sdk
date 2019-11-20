@@ -105,7 +105,7 @@ exports.prototype['merchant_id'] = undefined;
  */
 exports.prototype['subscription_id'] = undefined;
 /**
- * __LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+ * T__LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
  * @member {String} plan_id
  */
 exports.prototype['plan_id'] = undefined;

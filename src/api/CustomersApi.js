@@ -63,7 +63,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -96,7 +96,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerCard
-   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.  Cards on file are automatically updated on a monthly basis to confirm they are still valid and can be charged.
+   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
    * @param {String} customerId The Square ID of the customer profile the card is linked to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCustomerCardResponse} and HTTP response
@@ -122,7 +122,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -141,7 +141,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerCard
-   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.  Cards on file are automatically updated on a monthly basis to confirm they are still valid and can be charged.
+   * Adds a card on file to an existing customer.  As with charges, calls to &#x60;CreateCustomerCard&#x60; are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
    * @param {String} customerId The Square ID of the customer profile the card is linked to.
    * @param {module:model/CreateCustomerCardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCustomerCardResponse}
@@ -176,7 +176,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -236,7 +236,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -272,9 +272,9 @@ module.exports = function(apiClient) {
    * ListCustomers
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
-   * @param {String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
+   * @param {String} opts.sortField Indicates how Customers should be sorted.  Default: &#x60;DEFAULT&#x60;.
+   * @param {String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order.  Default: &#x60;ASC&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListCustomersResponse} and HTTP response
    */
   this.listCustomersWithHttpInfo = function(opts) {
@@ -291,7 +291,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -312,9 +312,9 @@ module.exports = function(apiClient) {
    * ListCustomers
    * Lists a business&#39;s customers.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.sortField Indicates how Customers should be sorted. Default: &#x60;DEFAULT&#x60;.
-   * @param {String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order. Default: &#x60;ASC&#x60;.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
+   * @param {String} opts.sortField Indicates how Customers should be sorted.  Default: &#x60;DEFAULT&#x60;.
+   * @param {String} opts.sortOrder Indicates whether Customers should be sorted in ascending (&#x60;ASC&#x60;) or descending (&#x60;DESC&#x60;) order.  Default: &#x60;ASC&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListCustomersResponse}
    */
   this.listCustomers = function(opts) {
@@ -347,7 +347,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -399,7 +399,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -432,7 +432,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCustomer
-   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-customers-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-customers-createcustomercard) endpoint.
+   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
    * @param {String} customerId The ID of the customer to update.
    * @param {module:model/UpdateCustomerRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateCustomerResponse} and HTTP response
@@ -458,7 +458,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-10-23';
+    headerParams['Square-Version'] = '2019-11-20';
 
     var formParams = {
     };
@@ -477,7 +477,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCustomer
-   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-customers-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-customers-createcustomercard) endpoint.
+   * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
    * @param {String} customerId The ID of the customer to update.
    * @param {module:model/UpdateCustomerRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateCustomerResponse}

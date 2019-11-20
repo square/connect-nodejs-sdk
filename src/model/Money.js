@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>Money</code>.
- * Represents an amount of money. &#x60;Money&#x60; fields can be signed or unsigned.
+ * Represents an amount of money. &#x60;Money&#x60; fields can be signed or unsigned. Fields that do not explicitly define whether they are signed or unsigned are considered unsigned and can only hold positive amounts. For signed fields, the sign of the value indicates the purpose of the money transfer. See [Working with Monetary Amounts](/build-basics/working-with-monetary-amounts) for more information.
  * @alias module:model/Money
  * @class
  */
@@ -56,7 +56,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents. Monetary amounts can be positive or negative. See the specific API documentation to determine the meaning of the sign in a particular case.
+ * The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents. Monetary amounts can be positive or negative. See the specific field description to determine the meaning of the sign in a particular case.
  * @member {Number} amount
  */
 exports.prototype['amount'] = undefined;

@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * 
  * @alias module:model/CatalogQueryItemsForModifierList
  * @class
- * @param modifierListIds {Array.<String>} A set of `CatalogModifierList](#type-catalogmodifierlist) IDs to be used to find associated [CatalogItem`s.
+ * @param modifierListIds {Array.<String>} A set of `CatalogModifierList` IDs to be used to find associated `CatalogItem`s.
  */
 var exports = function(modifierListIds) {
   var _this = this;
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A set of `CatalogModifierList](#type-catalogmodifierlist) IDs to be used to find associated [CatalogItem`s.
+ * A set of `CatalogModifierList` IDs to be used to find associated `CatalogItem`s.
  * @member {Array.<String>} modifier_list_ids
  */
 exports.prototype['modifier_list_ids'] = undefined;

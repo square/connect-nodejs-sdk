@@ -147,17 +147,17 @@ exports.prototype['available_electronically'] = undefined;
  */
 exports.prototype['category_id'] = undefined;
 /**
- * A set of IDs indicating the `CatalogTax`es that are enabled for this item. When updating an item, any taxes listed here will be added to the item. `CatalogTax`es may also be added to or deleted from an item using `UpdateItemTaxes`.
+ * A set of IDs indicating the taxes enabled for this item. When updating an item, any taxes listed here will be added to the item. Taxes may also be added to or deleted from an item using `UpdateItemTaxes`.
  * @member {Array.<String>} tax_ids
  */
 exports.prototype['tax_ids'] = undefined;
 /**
- * A set of `CatalogItemModifierListInfo` objects representing the modifier lists that apply to this item, along with the overrides and min and max limits that are specific to this item. `CatalogModifierList`s may also be added to or deleted from an item using `UpdateItemModifierLists`.
+ * A set of `CatalogItemModifierListInfo` objects representing the modifier lists that apply to this item, along with the overrides and min and max limits that are specific to this item. Modifier lists may also be added to or deleted from an item using `UpdateItemModifierLists`.
  * @member {Array.<module:model/CatalogItemModifierListInfo>} modifier_list_info
  */
 exports.prototype['modifier_list_info'] = undefined;
 /**
- * A list of `CatalogObject`s containing the `CatalogItemVariation`s for this item.  Maximum: 250 item variations
+ * A list of CatalogObjects containing the `CatalogItemVariation`s for this item.
  * @member {Array.<module:model/CatalogObject>} variations
  */
 exports.prototype['variations'] = undefined;

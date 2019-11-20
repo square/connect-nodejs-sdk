@@ -18,6 +18,7 @@ var V1Merchant = require('./V1Merchant');
 
 
 /**
+ * @deprecated
  * The V1ListLocationsResponse model module.
  * @module model/V1ListLocationsResponse
  */
