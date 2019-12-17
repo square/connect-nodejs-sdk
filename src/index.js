@@ -44,6 +44,12 @@ var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
 var CardBrand = require('./model/CardBrand');
 var CardPaymentDetails = require('./model/CardPaymentDetails');
+var CashDrawerDevice = require('./model/CashDrawerDevice');
+var CashDrawerEventType = require('./model/CashDrawerEventType');
+var CashDrawerShift = require('./model/CashDrawerShift');
+var CashDrawerShiftEvent = require('./model/CashDrawerShiftEvent');
+var CashDrawerShiftState = require('./model/CashDrawerShiftState');
+var CashDrawerShiftSummary = require('./model/CashDrawerShiftSummary');
 var CashPaymentDetails = require('./model/CashPaymentDetails');
 var CatalogCategory = require('./model/CatalogCategory');
 var CatalogDiscount = require('./model/CatalogDiscount');
@@ -150,6 +156,7 @@ var DeleteCustomerResponse = require('./model/DeleteCustomerResponse');
 var DeleteShiftRequest = require('./model/DeleteShiftRequest');
 var DeleteShiftResponse = require('./model/DeleteShiftResponse');
 var Device = require('./model/Device');
+var DeviceDetails = require('./model/DeviceDetails');
 var Employee = require('./model/Employee');
 var EmployeeStatus = require('./model/EmployeeStatus');
 var EmployeeWage = require('./model/EmployeeWage');
@@ -183,6 +190,10 @@ var ListAdditionalRecipientReceivablesRequest = require('./model/ListAdditionalR
 var ListAdditionalRecipientReceivablesResponse = require('./model/ListAdditionalRecipientReceivablesResponse');
 var ListBreakTypesRequest = require('./model/ListBreakTypesRequest');
 var ListBreakTypesResponse = require('./model/ListBreakTypesResponse');
+var ListCashDrawerShiftEventsRequest = require('./model/ListCashDrawerShiftEventsRequest');
+var ListCashDrawerShiftEventsResponse = require('./model/ListCashDrawerShiftEventsResponse');
+var ListCashDrawerShiftsRequest = require('./model/ListCashDrawerShiftsRequest');
+var ListCashDrawerShiftsResponse = require('./model/ListCashDrawerShiftsResponse');
 var ListCatalogRequest = require('./model/ListCatalogRequest');
 var ListCatalogResponse = require('./model/ListCatalogResponse');
 var ListCustomersRequest = require('./model/ListCustomersRequest');
@@ -271,6 +282,8 @@ var RegisterDomainResponse = require('./model/RegisterDomainResponse');
 var RegisterDomainResponseStatus = require('./model/RegisterDomainResponseStatus');
 var RenewTokenRequest = require('./model/RenewTokenRequest');
 var RenewTokenResponse = require('./model/RenewTokenResponse');
+var RetrieveCashDrawerShiftRequest = require('./model/RetrieveCashDrawerShiftRequest');
+var RetrieveCashDrawerShiftResponse = require('./model/RetrieveCashDrawerShiftResponse');
 var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest');
 var RetrieveCatalogObjectResponse = require('./model/RetrieveCatalogObjectResponse');
 var RetrieveCustomerRequest = require('./model/RetrieveCustomerRequest');
@@ -519,6 +532,7 @@ var Weekday = require('./model/Weekday');
 var WorkweekConfig = require('./model/WorkweekConfig');
 
 var ApplePayApi = require('./api/ApplePayApi');
+var CashDrawersApi = require('./api/CashDrawersApi');
 var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
 var CustomersApi = require('./api/CustomersApi');
@@ -569,7 +583,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 2.20191120.0
+ * @version 2.3.0-20191217
  */
   module.exports = {
   /**
@@ -732,6 +746,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CardPaymentDetails}
    */
   CardPaymentDetails: CardPaymentDetails,
+  /**
+   * The CashDrawerDevice model constructor.
+   * @property {module:model/CashDrawerDevice}
+   */
+  CashDrawerDevice: CashDrawerDevice,
+  /**
+   * The CashDrawerEventType model constructor.
+   * @property {module:model/CashDrawerEventType}
+   */
+  CashDrawerEventType: CashDrawerEventType,
+  /**
+   * The CashDrawerShift model constructor.
+   * @property {module:model/CashDrawerShift}
+   */
+  CashDrawerShift: CashDrawerShift,
+  /**
+   * The CashDrawerShiftEvent model constructor.
+   * @property {module:model/CashDrawerShiftEvent}
+   */
+  CashDrawerShiftEvent: CashDrawerShiftEvent,
+  /**
+   * The CashDrawerShiftState model constructor.
+   * @property {module:model/CashDrawerShiftState}
+   */
+  CashDrawerShiftState: CashDrawerShiftState,
+  /**
+   * The CashDrawerShiftSummary model constructor.
+   * @property {module:model/CashDrawerShiftSummary}
+   */
+  CashDrawerShiftSummary: CashDrawerShiftSummary,
   /**
    * The CashPaymentDetails model constructor.
    * @property {module:model/CashPaymentDetails}
@@ -1263,6 +1307,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Device: Device,
   /**
+   * The DeviceDetails model constructor.
+   * @property {module:model/DeviceDetails}
+   */
+  DeviceDetails: DeviceDetails,
+  /**
    * The Employee model constructor.
    * @property {module:model/Employee}
    */
@@ -1427,6 +1476,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListBreakTypesResponse}
    */
   ListBreakTypesResponse: ListBreakTypesResponse,
+  /**
+   * The ListCashDrawerShiftEventsRequest model constructor.
+   * @property {module:model/ListCashDrawerShiftEventsRequest}
+   */
+  ListCashDrawerShiftEventsRequest: ListCashDrawerShiftEventsRequest,
+  /**
+   * The ListCashDrawerShiftEventsResponse model constructor.
+   * @property {module:model/ListCashDrawerShiftEventsResponse}
+   */
+  ListCashDrawerShiftEventsResponse: ListCashDrawerShiftEventsResponse,
+  /**
+   * The ListCashDrawerShiftsRequest model constructor.
+   * @property {module:model/ListCashDrawerShiftsRequest}
+   */
+  ListCashDrawerShiftsRequest: ListCashDrawerShiftsRequest,
+  /**
+   * The ListCashDrawerShiftsResponse model constructor.
+   * @property {module:model/ListCashDrawerShiftsResponse}
+   */
+  ListCashDrawerShiftsResponse: ListCashDrawerShiftsResponse,
   /**
    * The ListCatalogRequest model constructor.
    * @property {module:model/ListCatalogRequest}
@@ -1867,6 +1936,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RenewTokenResponse}
    */
   RenewTokenResponse: RenewTokenResponse,
+  /**
+   * The RetrieveCashDrawerShiftRequest model constructor.
+   * @property {module:model/RetrieveCashDrawerShiftRequest}
+   */
+  RetrieveCashDrawerShiftRequest: RetrieveCashDrawerShiftRequest,
+  /**
+   * The RetrieveCashDrawerShiftResponse model constructor.
+   * @property {module:model/RetrieveCashDrawerShiftResponse}
+   */
+  RetrieveCashDrawerShiftResponse: RetrieveCashDrawerShiftResponse,
   /**
    * The RetrieveCatalogObjectRequest model constructor.
    * @property {module:model/RetrieveCatalogObjectRequest}
@@ -3102,6 +3181,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/ApplePayApi}
    */
   ApplePayApi: ApplePayApi,
+  /**
+   * The CashDrawersApi service constructor.
+   * @property {module:api/CashDrawersApi}
+   */
+  CashDrawersApi: CashDrawersApi,
   /**
    * The CatalogApi service constructor.
    * @property {module:api/CatalogApi}

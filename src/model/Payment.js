@@ -57,6 +57,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -138,6 +140,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('statement_description_identifier')) {
       obj['statement_description_identifier'] = ApiClient.convertToType(data['statement_description_identifier'], 'String');
+    }
+      if (data.hasOwnProperty('receipt_number')) {
+      obj['receipt_number'] = ApiClient.convertToType(data['receipt_number'], 'String');
+    }
+      if (data.hasOwnProperty('receipt_url')) {
+      obj['receipt_url'] = ApiClient.convertToType(data['receipt_url'], 'String');
     }
     }
   return obj;
@@ -258,6 +266,16 @@ exports.prototype['note'] = undefined;
  * @member {String} statement_description_identifier
  */
 exports.prototype['statement_description_identifier'] = undefined;
+/**
+ * The payment's receipt number. The field will be missing if a payment is CANCELED
+ * @member {String} receipt_number
+ */
+exports.prototype['receipt_number'] = undefined;
+/**
+ * The URL for the payment's receipt. The field will only be populated for COMPLETED payments.
+ * @member {String} receipt_url
+ */
+exports.prototype['receipt_url'] = undefined;
 
 
 

@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The database [timestamp](https://developer.squareup.com/docs/build-basics/working-with-date) of this update in RFC 3339 format, e.g., `2016-09-04T23:59:33.123Z`.
+ * The database [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates) of this update in RFC 3339 format, e.g., `2016-09-04T23:59:33.123Z`.
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;

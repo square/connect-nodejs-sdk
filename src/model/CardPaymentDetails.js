@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var Card = require('./Card');
+var DeviceDetails = require('./DeviceDetails');
 var Error = require('./Error');
 
 
@@ -31,6 +32,7 @@ var Error = require('./Error');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -93,6 +95,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('statement_description')) {
       obj['statement_description'] = ApiClient.convertToType(data['statement_description'], 'String');
+    }
+      if (data.hasOwnProperty('device_details')) {
+      obj['device_details'] = DeviceDetails.constructFromObject(data['device_details']);
     }
       if (data.hasOwnProperty('errors')) {
       obj['errors'] = ApiClient.convertToType(data['errors'], [Error]);
@@ -161,6 +166,11 @@ exports.prototype['verification_results'] = undefined;
  * @member {String} statement_description
  */
 exports.prototype['statement_description'] = undefined;
+/**
+ * Details about the device that took the payment.
+ * @member {module:model/DeviceDetails} device_details
+ */
+exports.prototype['device_details'] = undefined;
 /**
  * Information on errors encountered during the request.
  * @member {Array.<module:model/Error>} errors

@@ -30,5 +30,7 @@ Name | Type | Description | Notes
 **shipping_address** | [**Address**](Address.md) | The buyer&#39;s shipping address | [optional] 
 **note** | **String** | An optional note to include when creating a payment | [optional] 
 **statement_description_identifier** | **String** | Additional payment information that gets added on the customer&#39;s card statement as part of the statement description.  Note that the statement_description_identifier may get truncated on the statement description to fit the required information including the Square identifier (SQ *) and name of the merchant taking the payment. | [optional] [beta]
+**receipt_number** | **String** | The payment&#39;s receipt number. The field will be missing if a payment is CANCELED | [optional] 
+**receipt_url** | **String** | The URL for the payment&#39;s receipt. The field will only be populated for COMPLETED payments. | [optional] 
 
 

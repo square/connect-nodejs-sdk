@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **verification_method** | **String** | For EMV payments, method used to verify the cardholder&#39;s identity.  Can be one of &#x60;PIN&#x60;, &#x60;SIGNATURE&#x60;, &#x60;PIN_AND_SIGNATURE&#x60;, &#x60;ON_DEVICE&#x60;, or &#x60;NONE&#x60;. | [optional] 
 **verification_results** | **String** | For EMV payments, the results of the cardholder verification.  Can be one of &#x60;SUCCESS&#x60;, &#x60;FAILURE&#x60;, or &#x60;UNKNOWN&#x60;. | [optional] 
 **statement_description** | **String** | The statement description sent to the card networks.  Note: The actual statement description will vary and is likely to be truncated and appended with additional information on a per issuer basis. | [optional] 
+**device_details** | [**DeviceDetails**](DeviceDetails.md) | Details about the device that took the payment. | [optional] 
 **errors** | [**[Error]**](Error.md) | Information on errors encountered during the request. | [optional] 
 
 

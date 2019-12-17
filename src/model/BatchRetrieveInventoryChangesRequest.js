@@ -106,7 +106,7 @@ exports.prototype['updated_after'] = undefined;
  */
 exports.prototype['updated_before'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
