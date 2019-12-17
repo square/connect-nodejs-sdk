@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -118,7 +118,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -177,7 +177,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };

@@ -68,6 +68,9 @@ All URIs are relative to *https://connect.squareup.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SquareConnect.ApplePayApi* | [**registerDomain**](docs/ApplePayApi.md#registerDomain) | **POST** /v2/apple-pay/domains | RegisterDomain
+*SquareConnect.CashDrawersApi* | [**listCashDrawerShiftEvents**](docs/CashDrawersApi.md#listCashDrawerShiftEvents) | **GET** /v2/cash-drawers/shifts/{shift_id}/events | ListCashDrawerShiftEvents
+*SquareConnect.CashDrawersApi* | [**listCashDrawerShifts**](docs/CashDrawersApi.md#listCashDrawerShifts) | **GET** /v2/cash-drawers/shifts | ListCashDrawerShifts
+*SquareConnect.CashDrawersApi* | [**retrieveCashDrawerShift**](docs/CashDrawersApi.md#retrieveCashDrawerShift) | **GET** /v2/cash-drawers/shifts/{shift_id} | RetrieveCashDrawerShift
 *SquareConnect.CatalogApi* | [**batchDeleteCatalogObjects**](docs/CatalogApi.md#batchDeleteCatalogObjects) | **POST** /v2/catalog/batch-delete | BatchDeleteCatalogObjects
 *SquareConnect.CatalogApi* | [**batchRetrieveCatalogObjects**](docs/CatalogApi.md#batchRetrieveCatalogObjects) | **POST** /v2/catalog/batch-retrieve | BatchRetrieveCatalogObjects
 *SquareConnect.CatalogApi* | [**batchUpsertCatalogObjects**](docs/CatalogApi.md#batchUpsertCatalogObjects) | **POST** /v2/catalog/batch-upsert | BatchUpsertCatalogObjects
@@ -248,6 +251,12 @@ Class | Method | HTTP request | Description
  - [SquareConnect.Card](docs/Card.md)
  - [SquareConnect.CardBrand](docs/CardBrand.md)
  - [SquareConnect.CardPaymentDetails](docs/CardPaymentDetails.md)
+ - [SquareConnect.CashDrawerDevice](docs/CashDrawerDevice.md)
+ - [SquareConnect.CashDrawerEventType](docs/CashDrawerEventType.md)
+ - [SquareConnect.CashDrawerShift](docs/CashDrawerShift.md)
+ - [SquareConnect.CashDrawerShiftEvent](docs/CashDrawerShiftEvent.md)
+ - [SquareConnect.CashDrawerShiftState](docs/CashDrawerShiftState.md)
+ - [SquareConnect.CashDrawerShiftSummary](docs/CashDrawerShiftSummary.md)
  - [SquareConnect.CashPaymentDetails](docs/CashPaymentDetails.md)
  - [SquareConnect.CatalogCategory](docs/CatalogCategory.md)
  - [SquareConnect.CatalogDiscount](docs/CatalogDiscount.md)
@@ -354,6 +363,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.DeleteShiftRequest](docs/DeleteShiftRequest.md)
  - [SquareConnect.DeleteShiftResponse](docs/DeleteShiftResponse.md)
  - [SquareConnect.Device](docs/Device.md)
+ - [SquareConnect.DeviceDetails](docs/DeviceDetails.md)
  - [SquareConnect.Employee](docs/Employee.md)
  - [SquareConnect.EmployeeStatus](docs/EmployeeStatus.md)
  - [SquareConnect.EmployeeWage](docs/EmployeeWage.md)
@@ -387,6 +397,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ListAdditionalRecipientReceivablesResponse](docs/ListAdditionalRecipientReceivablesResponse.md)
  - [SquareConnect.ListBreakTypesRequest](docs/ListBreakTypesRequest.md)
  - [SquareConnect.ListBreakTypesResponse](docs/ListBreakTypesResponse.md)
+ - [SquareConnect.ListCashDrawerShiftEventsRequest](docs/ListCashDrawerShiftEventsRequest.md)
+ - [SquareConnect.ListCashDrawerShiftEventsResponse](docs/ListCashDrawerShiftEventsResponse.md)
+ - [SquareConnect.ListCashDrawerShiftsRequest](docs/ListCashDrawerShiftsRequest.md)
+ - [SquareConnect.ListCashDrawerShiftsResponse](docs/ListCashDrawerShiftsResponse.md)
  - [SquareConnect.ListCatalogRequest](docs/ListCatalogRequest.md)
  - [SquareConnect.ListCatalogResponse](docs/ListCatalogResponse.md)
  - [SquareConnect.ListCustomersRequest](docs/ListCustomersRequest.md)
@@ -475,6 +489,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RegisterDomainResponseStatus](docs/RegisterDomainResponseStatus.md)
  - [SquareConnect.RenewTokenRequest](docs/RenewTokenRequest.md)
  - [SquareConnect.RenewTokenResponse](docs/RenewTokenResponse.md)
+ - [SquareConnect.RetrieveCashDrawerShiftRequest](docs/RetrieveCashDrawerShiftRequest.md)
+ - [SquareConnect.RetrieveCashDrawerShiftResponse](docs/RetrieveCashDrawerShiftResponse.md)
  - [SquareConnect.RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
  - [SquareConnect.RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [SquareConnect.RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)

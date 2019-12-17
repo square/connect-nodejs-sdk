@@ -65,7 +65,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -119,7 +119,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -180,7 +180,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -251,7 +251,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -323,7 +323,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -363,7 +363,7 @@ module.exports = function(apiClient) {
   /**
    * ListSettlements
    * Provides summary information for all deposits and withdrawals initiated by Square to a linked bank account during a date range. Date ranges cannot exceed one year in length.  *Note**: the ListSettlements endpoint does not provide entry information.
-   * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
+   * @param {String} locationId The ID of the location to list settlements for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
@@ -396,7 +396,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -416,7 +416,7 @@ module.exports = function(apiClient) {
   /**
    * ListSettlements
    * Provides summary information for all deposits and withdrawals initiated by Square to a linked bank account during a date range. Date ranges cannot exceed one year in length.  *Note**: the ListSettlements endpoint does not provide entry information.
-   * @param {String} locationId The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations.
+   * @param {String} locationId The ID of the location to list settlements for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order TThe order in which payments are listed in the response.
    * @param {String} opts.beginTime The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
@@ -463,7 +463,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -524,7 +524,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -585,7 +585,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -646,7 +646,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };
@@ -713,7 +713,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2019-11-20';
+    headerParams['Square-Version'] = '2019-12-17';
 
     var formParams = {
     };

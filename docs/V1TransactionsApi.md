@@ -313,7 +313,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business's locations.
+var locationId = "locationId_example"; // String | The ID of the location to list settlements for.
 
 var opts = { 
   'order': "order_example", // String | TThe order in which payments are listed in the response.
@@ -335,7 +335,7 @@ apiInstance.listSettlements(locationId, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the location to list settlements for. If you specify me, this endpoint returns payments aggregated from all of the business&#39;s locations. | 
+ **locationId** | **String**| The ID of the location to list settlements for. | 
  **order** | **String**| TThe order in which payments are listed in the response. | [optional] 
  **beginTime** | **String**| The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year. | [optional] 
  **endTime** | **String**| The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time. | [optional] 
