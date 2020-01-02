@@ -50,9 +50,9 @@ api.listLocations().then(function(data) {
 ### How to configure sandbox environment
 ```javascript
 var SquareConnect = require('square-connect');
-var client = SquareConnect.ApiClient.instance;
+var defaultClient = SquareConnect.ApiClient.instance;
 // Set sandbox url
-client.basePath = 'https://connect.squareupsandbox.com';
+defaultClient.basePath = 'https://connect.squareupsandbox.com';
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 // Set sandbox access token
