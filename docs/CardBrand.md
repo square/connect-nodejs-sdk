@@ -21,4 +21,6 @@
 
 * `SQUARE_GIFT_CARD` (value: `"SQUARE_GIFT_CARD"`)
 
+* `SQUARE_CAPITAL_CARD` (value: `"SQUARE_CAPITAL_CARD"`)
+
 
