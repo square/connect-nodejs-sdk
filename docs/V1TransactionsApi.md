@@ -313,13 +313,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list settlements for.
+var locationId = "locationId_example"; // String | The ID of the location to list settlements for. If you specify me, this endpoint returns settlements aggregated from all of the business's locations.
 
 var opts = { 
-  'order': "order_example", // String | TThe order in which payments are listed in the response.
+  'order': "order_example", // String | The order in which settlements are listed in the response.
   'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
   'endTime': "endTime_example", // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-  'limit': 56, // Number | The maximum number of payments to return in a single response. This value cannot exceed 200.
+  'limit': 56, // Number | The maximum number of settlements to return in a single response. This value cannot exceed 200.
   'status': "status_example", // String | Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
   'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
@@ -335,11 +335,11 @@ apiInstance.listSettlements(locationId, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the location to list settlements for. | 
- **order** | **String**| TThe order in which payments are listed in the response. | [optional] 
+ **locationId** | **String**| The ID of the location to list settlements for. If you specify me, this endpoint returns settlements aggregated from all of the business&#39;s locations. | 
+ **order** | **String**| The order in which settlements are listed in the response. | [optional] 
  **beginTime** | **String**| The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year. | [optional] 
  **endTime** | **String**| The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time. | [optional] 
- **limit** | **Number**| The maximum number of payments to return in a single response. This value cannot exceed 200. | [optional] 
+ **limit** | **Number**| The maximum number of settlements to return in a single response. This value cannot exceed 200. | [optional] 
  **status** | **String**| Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED). | [optional] 
  **batchToken** | **String**| A pagination cursor to retrieve the next set of results for your original query to the endpoint. | [optional] 
 
