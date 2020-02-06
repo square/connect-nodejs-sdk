@@ -21,7 +21,7 @@
     "test": "mocha --recursive"
   },
   "dependencies": {
-    "superagent": "3.8.3"
+    "superagent": "5.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
