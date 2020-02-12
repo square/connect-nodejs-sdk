@@ -25,7 +25,7 @@ var UpdateLocationResponse = require('../model/UpdateLocationResponse');
  */
 
 /**
- * Constructs a new LocationsApi.
+ * Constructs a new LocationsApi. 
  * @alias module:api/LocationsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

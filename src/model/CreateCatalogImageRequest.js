@@ -24,7 +24,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CreateCatalogImageRequest</code>.
- *
+ * 
  * @alias module:model/CreateCatalogImageRequest
  * @class
  * @param idempotencyKey {String} A unique string that identifies this CreateCatalogImage request. Keys can be any valid string but must be unique for every CreateCatalogImage request.  See [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.

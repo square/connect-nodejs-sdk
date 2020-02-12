@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>UpdateItemTaxesResponse</code>.
- *
+ * 
  * @alias module:model/UpdateItemTaxesResponse
  * @class
  */

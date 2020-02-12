@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryText</code>.
- *
+ * 
  * @alias module:model/CatalogQueryText
  * @class
  * @param keywords {Array.<String>} A list of 1, 2, or 3 search keywords. Keywords with fewer than 3 characters are ignored.

@@ -29,7 +29,7 @@ var UpdateOrderResponse = require('../model/UpdateOrderResponse');
  */
 
 /**
- * Constructs a new OrdersApi.
+ * Constructs a new OrdersApi. 
  * @alias module:api/OrdersApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

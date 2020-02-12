@@ -25,7 +25,7 @@ var V1Item = require('./V1Item');
 
 /**
  * Constructs a new <code>V1CreateItemRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateItemRequest
  * @class
  */

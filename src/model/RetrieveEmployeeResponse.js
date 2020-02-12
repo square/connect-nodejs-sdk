@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RetrieveEmployeeResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveEmployeeResponse
  * @class
  */

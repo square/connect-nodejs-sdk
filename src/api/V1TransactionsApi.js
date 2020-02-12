@@ -26,7 +26,7 @@ var V1UpdateOrderRequest = require('../model/V1UpdateOrderRequest');
  */
 
 /**
- * Constructs a new V1TransactionsApi.
+ * Constructs a new V1TransactionsApi. 
  * @alias module:api/V1TransactionsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveTransactionRequest</code>.
- *
+ * 
  * @alias module:model/RetrieveTransactionRequest
  * @class
  */

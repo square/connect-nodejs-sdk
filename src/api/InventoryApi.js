@@ -29,7 +29,7 @@ var RetrieveInventoryPhysicalCountResponse = require('../model/RetrieveInventory
  */
 
 /**
- * Constructs a new InventoryApi.
+ * Constructs a new InventoryApi. 
  * @alias module:api/InventoryApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

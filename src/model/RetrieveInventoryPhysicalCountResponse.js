@@ -25,7 +25,7 @@ var InventoryPhysicalCount = require('./InventoryPhysicalCount');
 
 /**
  * Constructs a new <code>RetrieveInventoryPhysicalCountResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveInventoryPhysicalCountResponse
  * @class
  */

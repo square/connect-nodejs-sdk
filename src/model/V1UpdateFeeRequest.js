@@ -25,7 +25,7 @@ var V1Fee = require('./V1Fee');
 
 /**
  * Constructs a new <code>V1UpdateFeeRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateFeeRequest
  * @class
  * @param body {module:model/V1Fee} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

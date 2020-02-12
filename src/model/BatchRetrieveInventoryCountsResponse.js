@@ -25,7 +25,7 @@ var InventoryCount = require('./InventoryCount');
 
 /**
  * Constructs a new <code>BatchRetrieveInventoryCountsResponse</code>.
- *
+ * 
  * @alias module:model/BatchRetrieveInventoryCountsResponse
  * @class
  */

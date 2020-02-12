@@ -25,7 +25,7 @@ var V1Page = require('./V1Page');
 
 /**
  * Constructs a new <code>V1ListPagesResponse</code>.
- *
+ * 
  * @alias module:model/V1ListPagesResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1Page>} items
  */
 exports.prototype['items'] = undefined;

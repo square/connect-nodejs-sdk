@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>UpsertCatalogObjectResponse</code>.
- *
+ * 
  * @alias module:model/UpsertCatalogObjectResponse
  * @class
  */

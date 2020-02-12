@@ -24,7 +24,7 @@ var V1EmployeeRole = require('./V1EmployeeRole');
 
 /**
  * Constructs a new <code>V1CreateEmployeeRoleRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateEmployeeRoleRequest
  * @class
  */

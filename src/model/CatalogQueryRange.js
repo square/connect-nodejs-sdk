@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryRange</code>.
- *
+ * 
  * @alias module:model/CatalogQueryRange
  * @class
  * @param attributeName {String} The name of the attribute to be searched.

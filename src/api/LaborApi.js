@@ -39,7 +39,7 @@ var UpdateWorkweekConfigResponse = require('../model/UpdateWorkweekConfigRespons
  */
 
 /**
- * Constructs a new LaborApi.
+ * Constructs a new LaborApi. 
  * @alias module:api/LaborApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

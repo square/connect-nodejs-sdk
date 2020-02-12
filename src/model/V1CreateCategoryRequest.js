@@ -25,7 +25,7 @@ var V1Category = require('./V1Category');
 
 /**
  * Constructs a new <code>V1CreateCategoryRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateCategoryRequest
  * @class
  */

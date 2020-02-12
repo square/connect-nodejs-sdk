@@ -25,7 +25,7 @@ var V1InventoryEntry = require('./V1InventoryEntry');
 
 /**
  * Constructs a new <code>V1ListInventoryResponse</code>.
- *
+ * 
  * @alias module:model/V1ListInventoryResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1InventoryEntry>} items
  */
 exports.prototype['items'] = undefined;

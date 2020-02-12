@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>BatchDeleteCatalogObjectsRequest</code>.
- *
+ * 
  * @alias module:model/BatchDeleteCatalogObjectsRequest
  * @class
  */

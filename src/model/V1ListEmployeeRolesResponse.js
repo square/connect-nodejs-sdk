@@ -24,7 +24,7 @@ var V1EmployeeRole = require('./V1EmployeeRole');
 
 /**
  * Constructs a new <code>V1ListEmployeeRolesResponse</code>.
- *
+ * 
  * @alias module:model/V1ListEmployeeRolesResponse
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1EmployeeRole>} items
  */
 exports.prototype['items'] = undefined;

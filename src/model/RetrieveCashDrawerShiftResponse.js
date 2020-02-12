@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RetrieveCashDrawerShiftResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveCashDrawerShiftResponse
  * @class
  */

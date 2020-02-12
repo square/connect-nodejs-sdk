@@ -203,7 +203,7 @@ exports.prototype['processed_at'] = undefined;
  */
 exports.prototype['payment_id'] = undefined;
 /**
- *
+ * 
  * @member {String} merchant_id
  */
 exports.prototype['merchant_id'] = undefined;

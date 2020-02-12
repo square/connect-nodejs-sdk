@@ -100,7 +100,7 @@ exports.prototype['sort_order'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 /**
- * ID of location associated with payment
+ * Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;

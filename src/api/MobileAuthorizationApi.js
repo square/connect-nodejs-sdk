@@ -21,7 +21,7 @@ var CreateMobileAuthorizationCodeResponse = require('../model/CreateMobileAuthor
  */
 
 /**
- * Constructs a new MobileAuthorizationApi.
+ * Constructs a new MobileAuthorizationApi. 
  * @alias module:api/MobileAuthorizationApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

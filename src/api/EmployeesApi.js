@@ -21,7 +21,7 @@ var RetrieveEmployeeResponse = require('../model/RetrieveEmployeeResponse');
  */
 
 /**
- * Constructs a new EmployeesApi.
+ * Constructs a new EmployeesApi. 
  * @alias module:api/EmployeesApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -34,7 +34,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListEmployees
-   *
+   * 
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
    * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
@@ -76,7 +76,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListEmployees
-   *
+   * 
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
    * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
@@ -94,7 +94,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveEmployee
-   *
+   * 
    * @param {String} id UUID for the employee that was requested.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveEmployeeResponse} and HTTP response
    */
@@ -133,7 +133,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveEmployee
-   *
+   * 
    * @param {String} id UUID for the employee that was requested.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveEmployeeResponse}
    */

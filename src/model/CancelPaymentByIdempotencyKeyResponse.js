@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CancelPaymentByIdempotencyKeyResponse</code>.
- * Return value from the [CancelPaymentByIdempotencyKey](#endpoint-payments-cancelpaymentbyidempotencykey) endpoint.  On success, &#x60;errors&#x60; will be empty.
+ * Return value from the [CancelPaymentByIdempotencyKey](#endpoint-payments-cancelpaymentbyidempotencykey) endpoint. On success, &#x60;errors&#x60; will be empty.
  * @alias module:model/CancelPaymentByIdempotencyKeyResponse
  * @class
  */

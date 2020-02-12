@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListCatalogRequest</code>.
- *
+ * 
  * @alias module:model/ListCatalogRequest
  * @class
  */

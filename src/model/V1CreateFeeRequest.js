@@ -25,7 +25,7 @@ var V1Fee = require('./V1Fee');
 
 /**
  * Constructs a new <code>V1CreateFeeRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateFeeRequest
  * @class
  */

@@ -25,7 +25,7 @@ var InventoryAdjustment = require('./InventoryAdjustment');
 
 /**
  * Constructs a new <code>RetrieveInventoryAdjustmentResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveInventoryAdjustmentResponse
  * @class
  */

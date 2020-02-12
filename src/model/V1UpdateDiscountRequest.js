@@ -25,7 +25,7 @@ var V1Discount = require('./V1Discount');
 
 /**
  * Constructs a new <code>V1UpdateDiscountRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateDiscountRequest
  * @class
  * @param body {module:model/V1Discount} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

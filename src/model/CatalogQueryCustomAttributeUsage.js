@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryCustomAttributeUsage</code>.
- *
+ * 
  * @alias module:model/CatalogQueryCustomAttributeUsage
  * @class
  */
@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<String>} custom_attribute_definition_ids
  */
 exports.prototype['custom_attribute_definition_ids'] = undefined;
 /**
- *
+ * 
  * @member {Boolean} has_value
  */
 exports.prototype['has_value'] = undefined;

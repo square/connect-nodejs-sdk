@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ObtainTokenResponse</code>.
- *
+ * 
  * @alias module:model/ObtainTokenResponse
  * @class
  */

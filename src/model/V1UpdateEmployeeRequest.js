@@ -24,7 +24,7 @@ var V1Employee = require('./V1Employee');
 
 /**
  * Constructs a new <code>V1UpdateEmployeeRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateEmployeeRequest
  * @class
  * @param body {module:model/V1Employee} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

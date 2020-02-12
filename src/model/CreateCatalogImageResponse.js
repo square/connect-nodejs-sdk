@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CreateCatalogImageResponse</code>.
- *
+ * 
  * @alias module:model/CreateCatalogImageResponse
  * @class
  */

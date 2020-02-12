@@ -23,7 +23,7 @@ var RefundPaymentResponse = require('../model/RefundPaymentResponse');
  */
 
 /**
- * Constructs a new RefundsApi.
+ * Constructs a new RefundsApi. 
  * @alias module:api/RefundsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

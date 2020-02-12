@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryItemsForItemOptions</code>.
- *
+ * 
  * @alias module:model/CatalogQueryItemsForItemOptions
  * @class
  */

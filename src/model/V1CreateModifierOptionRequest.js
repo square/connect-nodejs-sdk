@@ -25,7 +25,7 @@ var V1ModifierOption = require('./V1ModifierOption');
 
 /**
  * Constructs a new <code>V1CreateModifierOptionRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateModifierOptionRequest
  * @class
  */

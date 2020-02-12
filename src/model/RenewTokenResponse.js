@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RenewTokenResponse</code>.
- *
+ * 
  * @alias module:model/RenewTokenResponse
  * @class
  */

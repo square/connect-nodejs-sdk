@@ -24,7 +24,7 @@ var CatalogQuery = require('./CatalogQuery');
 
 /**
  * Constructs a new <code>SearchCatalogObjectsRequest</code>.
- *
+ * 
  * @alias module:model/SearchCatalogObjectsRequest
  * @class
  */

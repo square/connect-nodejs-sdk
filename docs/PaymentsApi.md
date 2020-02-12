@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 CancelPaymentByIdempotencyKey
 
-Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown.  For example, after you send a CreatePayment  request a network error occurs and you don&#39;t get a response. In this case, you can direct  Square to cancel the payment using this endpoint. In the request, you provide the same idempotency  key that you provided in your CreatePayment request you want  to cancel. After cancelling the  payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+Cancels (voids) a payment identified by the idempotency key that is specified in the request.  Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end point returns successfully.
 
 ### Example
 ```javascript
@@ -276,7 +276,7 @@ var opts = {
   'endTime': "endTime_example", // String | Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
   'sortOrder': "sortOrder_example", // String | The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).
   'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-  'locationId': "locationId_example", // String | ID of location associated with payment
+  'locationId': "locationId_example", // String | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
   'total': 789, // Number | The exact amount in the total_money for a `Payment`.
   'last4': "last4_example", // String | The last 4 digits of `Payment` card.
   'cardBrand': "cardBrand_example" // String | The brand of `Payment` card. For example, `VISA`
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
  **endTime** | **String**| Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time. | [optional] 
  **sortOrder** | **String**| The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default). | [optional] 
  **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information. | [optional] 
- **locationId** | **String**| ID of location associated with payment | [optional] 
+ **locationId** | **String**| Limit results to the location supplied. By default, results are returned for all locations associated with the merchant. | [optional] 
  **total** | **Number**| The exact amount in the total_money for a &#x60;Payment&#x60;. | [optional] 
  **last4** | **String**| The last 4 digits of &#x60;Payment&#x60; card. | [optional] 
  **cardBrand** | **String**| The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60; | [optional] 

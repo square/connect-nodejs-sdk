@@ -25,7 +25,7 @@ var V1Discount = require('./V1Discount');
 
 /**
  * Constructs a new <code>V1ListDiscountsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListDiscountsResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1Discount>} items
  */
 exports.prototype['items'] = undefined;

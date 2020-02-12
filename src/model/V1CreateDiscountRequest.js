@@ -25,7 +25,7 @@ var V1Discount = require('./V1Discount');
 
 /**
  * Constructs a new <code>V1CreateDiscountRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateDiscountRequest
  * @class
  */

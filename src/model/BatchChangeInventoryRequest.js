@@ -24,7 +24,7 @@ var InventoryChange = require('./InventoryChange');
 
 /**
  * Constructs a new <code>BatchChangeInventoryRequest</code>.
- *
+ * 
  * @alias module:model/BatchChangeInventoryRequest
  * @class
  */

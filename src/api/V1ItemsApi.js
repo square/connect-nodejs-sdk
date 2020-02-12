@@ -31,7 +31,7 @@ var V1Variation = require('../model/V1Variation');
  */
 
 /**
- * Constructs a new V1ItemsApi.
+ * Constructs a new V1ItemsApi. 
  * @alias module:api/V1ItemsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

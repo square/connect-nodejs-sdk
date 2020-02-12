@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>BatchDeleteCatalogObjectsResponse</code>.
- *
+ * 
  * @alias module:model/BatchDeleteCatalogObjectsResponse
  * @class
  */

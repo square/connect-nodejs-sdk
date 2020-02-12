@@ -24,7 +24,7 @@ var V1TimecardEvent = require('./V1TimecardEvent');
 
 /**
  * Constructs a new <code>V1ListTimecardEventsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListTimecardEventsResponse
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1TimecardEvent>} items
  */
 exports.prototype['items'] = undefined;

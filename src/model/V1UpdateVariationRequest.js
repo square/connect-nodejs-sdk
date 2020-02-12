@@ -25,7 +25,7 @@ var V1Variation = require('./V1Variation');
 
 /**
  * Constructs a new <code>V1UpdateVariationRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateVariationRequest
  * @class
  * @param body {module:model/V1Variation} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

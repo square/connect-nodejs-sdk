@@ -25,7 +25,7 @@ var V1Category = require('./V1Category');
 
 /**
  * Constructs a new <code>V1UpdateCategoryRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateCategoryRequest
  * @class
  * @param body {module:model/V1Category} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

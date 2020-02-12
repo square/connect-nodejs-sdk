@@ -27,7 +27,7 @@ var ListPaymentsResponse = require('../model/ListPaymentsResponse');
  */
 
 /**
- * Constructs a new PaymentsApi.
+ * Constructs a new PaymentsApi. 
  * @alias module:api/PaymentsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -93,7 +93,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown.  For example, after you send a CreatePayment  request a network error occurs and you don&#39;t get a response. In this case, you can direct  Square to cancel the payment using this endpoint. In the request, you provide the same idempotency  key that you provided in your CreatePayment request you want  to cancel. After cancelling the  payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.  Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse} and HTTP response
    */
@@ -131,7 +131,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPaymentByIdempotencyKey
-   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.   Use this method when status of a CreatePayment request is unknown.  For example, after you send a CreatePayment  request a network error occurs and you don&#39;t get a response. In this case, you can direct  Square to cancel the payment using this endpoint. In the request, you provide the same idempotency  key that you provided in your CreatePayment request you want  to cancel. After cancelling the  payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end  point returns successfully.
+   * Cancels (voids) a payment identified by the idempotency key that is specified in the request.  Use this method when status of a CreatePayment request is unknown. For example, after you send a CreatePayment request a network error occurs and you don&#39;t get a response. In this case, you can direct Square to cancel the payment using this endpoint. In the request, you provide the same idempotency key that you provided in your CreatePayment request you want  to cancel. After cancelling the payment, you can submit your CreatePayment request again.  Note that if no payment with the specified idempotency key is found, no action is taken, the end point returns successfully.
    * @param {module:model/CancelPaymentByIdempotencyKeyRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentByIdempotencyKeyResponse}
    */
@@ -309,7 +309,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId ID of location associated with payment
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.
    * @param {String} opts.cardBrand The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60;
@@ -359,7 +359,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId ID of location associated with payment
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.
    * @param {String} opts.cardBrand The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60;

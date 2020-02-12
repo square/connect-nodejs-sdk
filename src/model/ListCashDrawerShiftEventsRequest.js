@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListCashDrawerShiftEventsRequest</code>.
- *
+ * 
  * @alias module:model/ListCashDrawerShiftEventsRequest
  * @class
  * @param locationId {String} The ID of the location to list cash drawer shifts for.

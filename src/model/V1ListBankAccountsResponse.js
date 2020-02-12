@@ -24,7 +24,7 @@ var V1BankAccount = require('./V1BankAccount');
 
 /**
  * Constructs a new <code>V1ListBankAccountsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListBankAccountsResponse
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1BankAccount>} items
  */
 exports.prototype['items'] = undefined;

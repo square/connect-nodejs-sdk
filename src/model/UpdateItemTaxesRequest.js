@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>UpdateItemTaxesRequest</code>.
- *
+ * 
  * @alias module:model/UpdateItemTaxesRequest
  * @class
  * @param itemIds {Array.<String>} IDs for the CatalogItems associated with the CatalogTax objects being updated.

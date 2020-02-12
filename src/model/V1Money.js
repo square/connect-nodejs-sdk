@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1Money</code>.
- *
+ * 
  * @alias module:model/V1Money
  * @class
  */

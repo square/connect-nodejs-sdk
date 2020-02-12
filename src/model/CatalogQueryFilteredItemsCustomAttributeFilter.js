@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryFilteredItemsCustomAttributeFilter</code>.
- *
+ * 
  * @alias module:model/CatalogQueryFilteredItemsCustomAttributeFilter
  * @class
  */
@@ -77,27 +77,27 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['filter_type'] = undefined;
 /**
- *
+ * 
  * @member {Array.<String>} custom_attribute_definition_ids
  */
 exports.prototype['custom_attribute_definition_ids'] = undefined;
 /**
- *
+ * 
  * @member {String} custom_attribute_value_exact
  */
 exports.prototype['custom_attribute_value_exact'] = undefined;
 /**
- *
+ * 
  * @member {String} custom_attribute_value_prefix
  */
 exports.prototype['custom_attribute_value_prefix'] = undefined;
 /**
- *
+ * 
  * @member {String} custom_attribute_min_value
  */
 exports.prototype['custom_attribute_min_value'] = undefined;
 /**
- *
+ * 
  * @member {String} custom_attribute_max_value
  */
 exports.prototype['custom_attribute_max_value'] = undefined;

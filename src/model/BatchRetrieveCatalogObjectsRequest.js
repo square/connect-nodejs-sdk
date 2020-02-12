@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>BatchRetrieveCatalogObjectsRequest</code>.
- *
+ * 
  * @alias module:model/BatchRetrieveCatalogObjectsRequest
  * @class
  * @param objectIds {Array.<String>} The IDs of the CatalogObjects to be retrieved.

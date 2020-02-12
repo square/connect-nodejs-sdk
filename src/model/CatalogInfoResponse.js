@@ -26,7 +26,7 @@ var StandardUnitDescriptionGroup = require('./StandardUnitDescriptionGroup');
 
 /**
  * Constructs a new <code>CatalogInfoResponse</code>.
- *
+ * 
  * @alias module:model/CatalogInfoResponse
  * @class
  */
@@ -68,7 +68,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- *
+ * 
  * @member {module:model/CatalogInfoResponseLimits} limits
  */
 exports.prototype['limits'] = undefined;

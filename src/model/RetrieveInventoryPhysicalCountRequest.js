@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveInventoryPhysicalCountRequest</code>.
- *
+ * 
  * @alias module:model/RetrieveInventoryPhysicalCountRequest
  * @class
  */

@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>UpdateItemModifierListsResponse</code>.
- *
+ * 
  * @alias module:model/UpdateItemModifierListsResponse
  * @class
  */
@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- *
+ * 
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;

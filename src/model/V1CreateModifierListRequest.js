@@ -25,7 +25,7 @@ var V1ModifierList = require('./V1ModifierList');
 
 /**
  * Constructs a new <code>V1CreateModifierListRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateModifierListRequest
  * @class
  */

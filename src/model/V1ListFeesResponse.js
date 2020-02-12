@@ -25,7 +25,7 @@ var V1Fee = require('./V1Fee');
 
 /**
  * Constructs a new <code>V1ListFeesResponse</code>.
- *
+ * 
  * @alias module:model/V1ListFeesResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1Fee>} items
  */
 exports.prototype['items'] = undefined;

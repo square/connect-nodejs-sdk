@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryItemsForTax</code>.
- *
+ * 
  * @alias module:model/CatalogQueryItemsForTax
  * @class
  * @param taxIds {Array.<String>} A set of `CatalogTax` IDs to be used to find associated `CatalogItem`s.
