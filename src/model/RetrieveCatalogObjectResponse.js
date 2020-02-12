@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RetrieveCatalogObjectResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveCatalogObjectResponse
  * @class
  */

@@ -21,7 +21,7 @@ var RetrieveMerchantResponse = require('../model/RetrieveMerchantResponse');
  */
 
 /**
- * Constructs a new MerchantsApi.
+ * Constructs a new MerchantsApi. 
  * @alias module:api/MerchantsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

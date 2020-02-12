@@ -72,7 +72,7 @@ exports.prototype['idempotency_key'] = undefined;
  */
 exports.prototype['order_version'] = undefined;
 /**
- *
+ * 
  * @member {Array.<String>} payment_ids
  */
 exports.prototype['payment_ids'] = undefined;

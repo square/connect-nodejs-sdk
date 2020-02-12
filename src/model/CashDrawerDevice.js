@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CashDrawerDevice</code>.
- *
+ * 
  * @alias module:model/CashDrawerDevice
  * @class
  */

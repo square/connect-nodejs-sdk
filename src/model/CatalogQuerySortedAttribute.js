@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQuerySortedAttribute</code>.
- *
+ * 
  * @alias module:model/CatalogQuerySortedAttribute
  * @class
  * @param attributeName {String} The attribute whose value should be used as the sort key.

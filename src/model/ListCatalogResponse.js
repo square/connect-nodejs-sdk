@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>ListCatalogResponse</code>.
- *
+ * 
  * @alias module:model/ListCatalogResponse
  * @class
  */

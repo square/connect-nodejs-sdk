@@ -25,7 +25,7 @@ var V1Item = require('./V1Item');
 
 /**
  * Constructs a new <code>V1UpdateItemRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateItemRequest
  * @class
  * @param body {module:model/V1Item} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

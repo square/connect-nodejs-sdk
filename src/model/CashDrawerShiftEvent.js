@@ -25,7 +25,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CashDrawerShiftEvent</code>.
- *
+ * 
  * @alias module:model/CashDrawerShiftEvent
  * @class
  */

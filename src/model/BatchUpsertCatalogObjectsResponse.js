@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>BatchUpsertCatalogObjectsResponse</code>.
- *
+ * 
  * @alias module:model/BatchUpsertCatalogObjectsResponse
  * @class
  */

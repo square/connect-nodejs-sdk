@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogInfoResponseLimits</code>.
- *
+ * 
  * @alias module:model/CatalogInfoResponseLimits
  * @class
  */

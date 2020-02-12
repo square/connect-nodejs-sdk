@@ -25,7 +25,7 @@ var V1Variation = require('./V1Variation');
 
 /**
  * Constructs a new <code>V1CreateVariationRequest</code>.
- *
+ * 
  * @alias module:model/V1CreateVariationRequest
  * @class
  */

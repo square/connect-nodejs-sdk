@@ -24,7 +24,7 @@ var V1CashDrawerShift = require('./V1CashDrawerShift');
 
 /**
  * Constructs a new <code>V1ListCashDrawerShiftsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListCashDrawerShiftsResponse
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1CashDrawerShift>} items
  */
 exports.prototype['items'] = undefined;

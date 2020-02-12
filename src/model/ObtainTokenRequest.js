@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ObtainTokenRequest</code>.
- *
+ * 
  * @alias module:model/ObtainTokenRequest
  * @class
  * @param clientId {String} The Square-issued ID of your application, available from the [application dashboard](https://connect.squareup.com/apps).

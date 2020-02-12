@@ -25,7 +25,7 @@ var InventoryChange = require('./InventoryChange');
 
 /**
  * Constructs a new <code>RetrieveInventoryChangesResponse</code>.
- *
+ * 
  * @alias module:model/RetrieveInventoryChangesResponse
  * @class
  */

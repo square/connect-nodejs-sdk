@@ -22,7 +22,7 @@ var RetrieveCashDrawerShiftResponse = require('../model/RetrieveCashDrawerShiftR
  */
 
 /**
- * Constructs a new CashDrawersApi.
+ * Constructs a new CashDrawersApi. 
  * @alias module:api/CashDrawersApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

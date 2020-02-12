@@ -25,7 +25,7 @@ var V1ModifierOption = require('./V1ModifierOption');
 
 /**
  * Constructs a new <code>V1UpdateModifierOptionRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateModifierOptionRequest
  * @class
  * @param body {module:model/V1ModifierOption} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

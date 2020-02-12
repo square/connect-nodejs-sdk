@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>ListEmployeesResponse</code>.
- *
+ * 
  * @alias module:model/ListEmployeesResponse
  * @class
  */

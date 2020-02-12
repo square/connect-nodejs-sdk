@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1RetrieveCashDrawerShiftRequest</code>.
- *
+ * 
  * @alias module:model/V1RetrieveCashDrawerShiftRequest
  * @class
  */

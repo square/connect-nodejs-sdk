@@ -21,7 +21,7 @@ var ListAdditionalRecipientReceivablesResponse = require('../model/ListAdditiona
  */
 
 /**
- * Constructs a new ReportingApi.
+ * Constructs a new ReportingApi. 
  * @alias module:api/ReportingApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RevokeTokenResponse</code>.
- *
+ * 
  * @alias module:model/RevokeTokenResponse
  * @class
  */

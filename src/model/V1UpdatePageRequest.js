@@ -25,7 +25,7 @@ var V1Page = require('./V1Page');
 
 /**
  * Constructs a new <code>V1UpdatePageRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdatePageRequest
  * @class
  * @param body {module:model/V1Page} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

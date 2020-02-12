@@ -25,7 +25,7 @@ var RevokeTokenResponse = require('../model/RevokeTokenResponse');
  */
 
 /**
- * Constructs a new OAuthApi.
+ * Constructs a new OAuthApi. 
  * @alias module:api/OAuthApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>UpdateItemModifierListsRequest</code>.
- *
+ * 
  * @alias module:model/UpdateItemModifierListsRequest
  * @class
  * @param itemIds {Array.<String>} The IDs of the catalog items associated with the CatalogModifierList objects being updated.

@@ -27,7 +27,7 @@ var Order = require('./Order');
 
 /**
  * Constructs a new <code>CreateOrderRequest</code>.
- *
+ * 
  * @alias module:model/CreateOrderRequest
  * @class
  */

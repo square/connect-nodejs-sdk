@@ -24,7 +24,7 @@ var V1Settlement = require('./V1Settlement');
 
 /**
  * Constructs a new <code>V1ListSettlementsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListSettlementsResponse
  * @class
  */
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1Settlement>} items
  */
 exports.prototype['items'] = undefined;

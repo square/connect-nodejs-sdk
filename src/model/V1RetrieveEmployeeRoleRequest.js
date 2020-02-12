@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1RetrieveEmployeeRoleRequest</code>.
- *
+ * 
  * @alias module:model/V1RetrieveEmployeeRoleRequest
  * @class
  */

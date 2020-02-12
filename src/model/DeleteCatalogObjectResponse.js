@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>DeleteCatalogObjectResponse</code>.
- *
+ * 
  * @alias module:model/DeleteCatalogObjectResponse
  * @class
  */

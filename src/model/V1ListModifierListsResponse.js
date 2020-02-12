@@ -25,7 +25,7 @@ var V1ModifierList = require('./V1ModifierList');
 
 /**
  * Constructs a new <code>V1ListModifierListsResponse</code>.
- *
+ * 
  * @alias module:model/V1ListModifierListsResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1ModifierList>} items
  */
 exports.prototype['items'] = undefined;

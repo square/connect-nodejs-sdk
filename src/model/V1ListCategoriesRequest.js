@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ListCategoriesRequest</code>.
- *
+ * 
  * @alias module:model/V1ListCategoriesRequest
  * @class
  */

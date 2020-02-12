@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveEmployeeRequest</code>.
- *
+ * 
  * @alias module:model/RetrieveEmployeeRequest
  * @class
  */

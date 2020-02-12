@@ -167,7 +167,7 @@ exports.prototype['created_at'] = undefined;
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example,  US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
+ * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
@@ -177,12 +177,12 @@ exports.prototype['amount_money'] = undefined;
  */
 exports.prototype['tip_money'] = undefined;
 /**
- * The total money for the payment, including `amount_money` and `tip_money`. Specified in the smallest denomination of the applicable currency.  For example, US dollar amounts are specified in cents.
+ * The total money for the payment, including `amount_money` and `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.   For more information, see   [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
+ * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  For more information, see [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;

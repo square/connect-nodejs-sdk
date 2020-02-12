@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ListSettlementsRequest</code>.
- *
+ * 
  * @alias module:model/V1ListSettlementsRequest
  * @class
  */

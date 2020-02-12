@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryPrefix</code>.
- *
+ * 
  * @alias module:model/CatalogQueryPrefix
  * @class
  * @param attributeName {String} The name of the attribute to be searched.

@@ -25,7 +25,7 @@ var V1PageCell = require('./V1PageCell');
 
 /**
  * Constructs a new <code>V1UpdatePageCellRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdatePageCellRequest
  * @class
  * @param body {module:model/V1PageCell} An object containing the fields to POST for the request.  See the corresponding object definition for field details.

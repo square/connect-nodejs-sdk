@@ -25,7 +25,7 @@ var V1Category = require('./V1Category');
 
 /**
  * Constructs a new <code>V1ListCategoriesResponse</code>.
- *
+ * 
  * @alias module:model/V1ListCategoriesResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *
+ * 
  * @member {Array.<module:model/V1Category>} items
  */
 exports.prototype['items'] = undefined;

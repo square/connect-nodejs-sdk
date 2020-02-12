@@ -37,7 +37,7 @@ var UpsertCatalogObjectResponse = require('../model/UpsertCatalogObjectResponse'
  */
 
 /**
- * Constructs a new CatalogApi.
+ * Constructs a new CatalogApi. 
  * @alias module:api/CatalogApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,

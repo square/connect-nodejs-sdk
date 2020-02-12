@@ -24,7 +24,7 @@ var V1Timecard = require('./V1Timecard');
 
 /**
  * Constructs a new <code>V1UpdateTimecardRequest</code>.
- *
+ * 
  * @alias module:model/V1UpdateTimecardRequest
  * @class
  * @param body {module:model/V1Timecard} An object containing the fields to POST for the request. See the corresponding object definition for field details.

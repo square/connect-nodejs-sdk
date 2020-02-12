@@ -26,7 +26,7 @@ var Coordinates = require('./Coordinates');
 
 /**
  * Constructs a new <code>Location</code>.
- *
+ * 
  * @alias module:model/Location
  * @class
  */

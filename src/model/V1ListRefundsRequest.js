@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1ListRefundsRequest</code>.
- *
+ * 
  * @alias module:model/V1ListRefundsRequest
  * @class
  */

@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RetrieveCashDrawerShiftRequest</code>.
- *
+ * 
  * @alias module:model/RetrieveCashDrawerShiftRequest
  * @class
  * @param locationId {String} The ID of the location to retrieve cash drawer shifts from.

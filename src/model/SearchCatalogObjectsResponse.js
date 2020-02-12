@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>SearchCatalogObjectsResponse</code>.
- *
+ * 
  * @alias module:model/SearchCatalogObjectsResponse
  * @class
  */

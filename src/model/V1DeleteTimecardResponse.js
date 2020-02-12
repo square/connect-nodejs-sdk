@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>V1DeleteTimecardResponse</code>.
- *
+ * 
  * @alias module:model/V1DeleteTimecardResponse
  * @class
  */

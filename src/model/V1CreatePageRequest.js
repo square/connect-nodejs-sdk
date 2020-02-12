@@ -25,7 +25,7 @@ var V1Page = require('./V1Page');
 
 /**
  * Constructs a new <code>V1CreatePageRequest</code>.
- *
+ * 
  * @alias module:model/V1CreatePageRequest
  * @class
  */
