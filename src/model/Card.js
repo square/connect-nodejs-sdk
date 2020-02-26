@@ -40,6 +40,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -77,6 +79,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('fingerprint')) {
       obj['fingerprint'] = ApiClient.convertToType(data['fingerprint'], 'String');
     }
+      if (data.hasOwnProperty('card_type')) {
+      obj['card_type'] = ApiClient.convertToType(data['card_type'], 'String');
+    }
+      if (data.hasOwnProperty('prepaid_type')) {
+      obj['prepaid_type'] = ApiClient.convertToType(data['prepaid_type'], 'String');
+    }
       if (data.hasOwnProperty('bin')) {
       obj['bin'] = ApiClient.convertToType(data['bin'], 'String');
     }
@@ -90,7 +98,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The card's brand (such as `VISA`). See `CardBrand` for all possible values. See [CardBrand](#type-cardbrand) for possible values
+ * The card's brand. See [CardBrand](#type-cardbrand) for possible values
  * @member {String} card_brand
  */
 exports.prototype['card_brand'] = undefined;
@@ -124,6 +132,16 @@ exports.prototype['billing_address'] = undefined;
  * @member {String} fingerprint
  */
 exports.prototype['fingerprint'] = undefined;
+/**
+ * The type of the card. The Card object includes this field only in response to Payments API calls. See [CardType](#type-cardtype) for possible values
+ * @member {String} card_type
+ */
+exports.prototype['card_type'] = undefined;
+/**
+ * Indicates whether the Card is prepaid or not. The Card object includes this field only in response to Payments API calls. See [CardPrepaidType](#type-cardprepaidtype) for possible values
+ * @member {String} prepaid_type
+ */
+exports.prototype['prepaid_type'] = undefined;
 /**
  * The first six digits of the card number, known as the Bank Identification Number (BIN). Only the Payments API returns this field.
  * @member {String} bin

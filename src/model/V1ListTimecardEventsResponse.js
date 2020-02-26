@@ -18,6 +18,7 @@ var V1TimecardEvent = require('./V1TimecardEvent');
 
 
 /**
+ * @deprecated
  * The V1ListTimecardEventsResponse model module.
  * @module model/V1ListTimecardEventsResponse
  */

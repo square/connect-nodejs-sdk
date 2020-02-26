@@ -18,6 +18,7 @@ var V1CashDrawerShift = require('./V1CashDrawerShift');
 
 
 /**
+ * @deprecated
  * The V1ListCashDrawerShiftsResponse model module.
  * @module model/V1ListCashDrawerShiftsResponse
  */

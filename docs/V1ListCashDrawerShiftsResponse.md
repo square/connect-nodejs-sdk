@@ -1,6 +1,7 @@
 # SquareConnect.V1ListCashDrawerShiftsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

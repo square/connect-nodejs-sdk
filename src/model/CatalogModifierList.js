@@ -34,6 +34,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -50,6 +51,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('name')) {
       obj['name'] = ApiClient.convertToType(data['name'], 'String');
     }
+      if (data.hasOwnProperty('ordinal')) {
+      obj['ordinal'] = ApiClient.convertToType(data['ordinal'], 'Number');
+    }
       if (data.hasOwnProperty('selection_type')) {
       obj['selection_type'] = ApiClient.convertToType(data['selection_type'], 'String');
     }
@@ -65,6 +69,11 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
+/**
+ * Determines where this `CatalogModifierList` appears in a list of `CatalogModifierList` values.
+ * @member {Number} ordinal
+ */
+exports.prototype['ordinal'] = undefined;
 /**
  * Indicates whether multiple options from the `CatalogModifierList` can be applied to a single `CatalogItem`. See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values
  * @member {String} selection_type

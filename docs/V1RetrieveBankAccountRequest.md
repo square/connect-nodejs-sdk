@@ -1,6 +1,7 @@
 # SquareConnect.V1RetrieveBankAccountRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

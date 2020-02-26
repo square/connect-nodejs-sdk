@@ -1,0 +1,24 @@
+# SquareConnect.DisputeReason
+
+## Enum
+
+
+* `AMOUNT_DIFFERS` (value: `"AMOUNT_DIFFERS"`)
+
+* `CANCELLED` (value: `"CANCELLED"`)
+
+* `DUPLICATE` (value: `"DUPLICATE"`)
+
+* `NO_KNOWLEDGE` (value: `"NO_KNOWLEDGE"`)
+
+* `NOT_AS_DESCRIBED` (value: `"NOT_AS_DESCRIBED"`)
+
+* `NOT_RECEIVED` (value: `"NOT_RECEIVED"`)
+
+* `PAID_BY_OTHER_MEANS` (value: `"PAID_BY_OTHER_MEANS"`)
+
+* `CUSTOMER_REQUESTS_CREDIT` (value: `"CUSTOMER_REQUESTS_CREDIT"`)
+
+* `EMV_LIABILITY_SHIFT` (value: `"EMV_LIABILITY_SHIFT"`)
+
+

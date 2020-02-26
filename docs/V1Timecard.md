@@ -1,6 +1,7 @@
 # SquareConnect.V1Timecard
 
 ### Description
+**Note: This model is deprecated.**
 
 Represents a timecard for an employee.
 

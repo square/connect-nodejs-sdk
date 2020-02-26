@@ -90,7 +90,7 @@ exports.prototype['min_selected_modifiers'] = undefined;
  */
 exports.prototype['max_selected_modifiers'] = undefined;
 /**
- * If `true`, enable this `CatalogModifierList`.
+ * If `true`, enable this `CatalogModifierList`. The default value is `true`.
  * @member {Boolean} enabled
  */
 exports.prototype['enabled'] = undefined;

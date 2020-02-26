@@ -70,11 +70,12 @@ Name | Type | Description  | Notes
 
 <a name="listBankAccounts"></a>
 # **listBankAccounts**
+**Note: This endpoint is deprecated.**
 > [V1BankAccount] listBankAccounts(locationId)
 
 ListBankAccounts
 
-Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
 
 ### Example
 ```javascript
@@ -358,11 +359,12 @@ Name | Type | Description  | Notes
 
 <a name="retrieveBankAccount"></a>
 # **retrieveBankAccount**
+**Note: This endpoint is deprecated.**
 > V1BankAccount retrieveBankAccount(locationId, bankAccountId)
 
 RetrieveBankAccount
 
-Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
 
 ### Example
 ```javascript

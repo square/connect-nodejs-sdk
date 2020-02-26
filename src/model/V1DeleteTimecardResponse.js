@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1DeleteTimecardResponse model module.
  * @module model/V1DeleteTimecardResponse
  */

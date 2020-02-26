@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['cursor'] = undefined;
 /**
- * A limit on the number of results to be returned in a single page. The limit is advisory - the implementation may return more or fewer results. If the supplied limit is negative, zero, or is higher than the maximum limit of 1,000, it will be ignored.
+ * A limit on the number of results to be returned in a single page. The limit is advisory - the implementation may return more or fewer results. If the supplied limit is negative, zero, or is higher than the maximum limit of 100, it will be ignored.
  * @member {Number} limit
  */
 exports.prototype['limit'] = undefined;

@@ -14,7 +14,6 @@
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
 var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
-var OrderLineItemTax = require('./OrderLineItemTax');
 
 
 
@@ -32,7 +31,6 @@ var OrderLineItemTax = require('./OrderLineItemTax');
  */
 var exports = function() {
   var _this = this;
-
 
 
 
@@ -88,9 +86,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('taxable')) {
       obj['taxable'] = ApiClient.convertToType(data['taxable'], 'Boolean');
-    }
-      if (data.hasOwnProperty('taxes')) {
-      obj['taxes'] = ApiClient.convertToType(data['taxes'], [OrderLineItemTax]);
     }
       if (data.hasOwnProperty('applied_taxes')) {
       obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
@@ -152,11 +147,6 @@ exports.prototype['calculation_phase'] = undefined;
  * @member {Boolean} taxable
  */
 exports.prototype['taxable'] = undefined;
-/**
- * A list of taxes applied to this service charge. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this service charge. When creating an Order, set your service charge-level taxes in this list. By default, order-level taxes apply to service charges calculated in the `SUBTOTAL_PHASE` if `taxable` is set to `true`.  This field has been deprecated in favour of `applied_taxes`. Usage of both this field and `applied_taxes` when creating an order will result in an error. Usage of this field when sending requests to the UpdateOrder endpoint will result in an error.
- * @member {Array.<module:model/OrderLineItemTax>} taxes
- */
-exports.prototype['taxes'] = undefined;
 /**
  * The list of references to taxes applied to this service charge. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderLineItemTax` that is being applied to this service charge. On reads, the amount applied is populated.  An `OrderLineItemAppliedTax` will be automatically created on every taxable service charge for all `ORDER` scoped taxes that are added to the order. `OrderLineItemAppliedTax` records for `LINE_ITEM` scoped taxes must be added in requests for the tax to apply to any taxable service charge.  Taxable service charges have the `taxable` field set to true and calculated in the `SUBTOTAL_PHASE`.  To change the amount of a tax, modify the referenced top-level tax.
  * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes

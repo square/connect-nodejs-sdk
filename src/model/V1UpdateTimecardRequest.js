@@ -18,6 +18,7 @@ var V1Timecard = require('./V1Timecard');
 
 
 /**
+ * @deprecated
  * The V1UpdateTimecardRequest model module.
  * @module model/V1UpdateTimecardRequest
  */

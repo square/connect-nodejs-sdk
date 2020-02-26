@@ -1,6 +1,7 @@
 # SquareConnect.V1ListTimecardsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

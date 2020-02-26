@@ -1,6 +1,7 @@
 # SquareConnect.V1CashDrawerEvent
 
 ### Description
+**Note: This model is deprecated.**
 
 V1CashDrawerEvent
 

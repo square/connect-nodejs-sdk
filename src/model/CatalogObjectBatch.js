@@ -27,11 +27,12 @@ var CatalogObject = require('./CatalogObject');
  * A batch of catalog objects.
  * @alias module:model/CatalogObjectBatch
  * @class
+ * @param objects {Array.<module:model/CatalogObject>} A list of CatalogObjects belonging to this batch.
  */
-var exports = function() {
+var exports = function(objects) {
   var _this = this;
 
-
+  _this['objects'] = objects;
 };
 
 /**

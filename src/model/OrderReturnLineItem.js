@@ -16,9 +16,7 @@ var Money = require('./Money');
 var OrderLineItemAppliedDiscount = require('./OrderLineItemAppliedDiscount');
 var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
 var OrderQuantityUnit = require('./OrderQuantityUnit');
-var OrderReturnDiscount = require('./OrderReturnDiscount');
 var OrderReturnLineItemModifier = require('./OrderReturnLineItemModifier');
-var OrderReturnTax = require('./OrderReturnTax');
 
 
 
@@ -43,8 +41,6 @@ var exports = function(quantity) {
 
 
   _this['quantity'] = quantity;
-
-
 
 
 
@@ -97,12 +93,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('return_modifiers')) {
       obj['return_modifiers'] = ApiClient.convertToType(data['return_modifiers'], [OrderReturnLineItemModifier]);
-    }
-      if (data.hasOwnProperty('return_taxes')) {
-      obj['return_taxes'] = ApiClient.convertToType(data['return_taxes'], [OrderReturnTax]);
-    }
-      if (data.hasOwnProperty('return_discounts')) {
-      obj['return_discounts'] = ApiClient.convertToType(data['return_discounts'], [OrderReturnDiscount]);
     }
       if (data.hasOwnProperty('applied_taxes')) {
       obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
@@ -177,16 +167,6 @@ exports.prototype['variation_name'] = undefined;
  * @member {Array.<module:model/OrderReturnLineItemModifier>} return_modifiers
  */
 exports.prototype['return_modifiers'] = undefined;
-/**
- * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of `applied_taxes`.
- * @member {Array.<module:model/OrderReturnTax>} return_taxes
- */
-exports.prototype['return_taxes'] = undefined;
-/**
- * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any return-level discounts apportioned to this item.  This field has been deprecated in favour of `applied_discounts`.
- * @member {Array.<module:model/OrderReturnDiscount>} return_discounts
- */
-exports.prototype['return_discounts'] = undefined;
 /**
  * The list of references to `OrderReturnTax` entities applied to the returned line item. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderReturnTax` applied to the returned line item. On reads, the amount applied is populated.
  * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes

@@ -1,6 +1,7 @@
 # SquareConnect.V1ListBankAccountsResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 
 
