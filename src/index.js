@@ -620,7 +620,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 3.2020226.0
+ * @version 3.20200226.0
  */
   module.exports = {
   /**
