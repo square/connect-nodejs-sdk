@@ -1,6 +1,7 @@
 # SquareConnect.V1CashDrawerShift
 
 ### Description
+**Note: This model is deprecated.**
 
 Contains details for a single cash drawer shift.
 

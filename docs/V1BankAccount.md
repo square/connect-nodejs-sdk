@@ -1,6 +1,7 @@
 # SquareConnect.V1BankAccount
 
 ### Description
+**Note: This model is deprecated.**
 
 V1BankAccount
 

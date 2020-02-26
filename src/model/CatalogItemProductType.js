@@ -34,17 +34,7 @@ var exports = {
    * value: "APPOINTMENTS_SERVICE"
    * @const
    */
-  "APPOINTMENTS_SERVICE": "APPOINTMENTS_SERVICE",
-  /**
-   * value: "RETAIL_ITEM"
-   * @const
-   */
-  "RETAIL_ITEM": "RETAIL_ITEM",
-  /**
-   * value: "RESTAURANT_ITEM"
-   * @const
-   */
-  "RESTAURANT_ITEM": "RESTAURANT_ITEM"};
+  "APPOINTMENTS_SERVICE": "APPOINTMENTS_SERVICE"};
 
 /**
  * Returns a <code>CatalogItemProductType</code> enum value from a Javascript object name.

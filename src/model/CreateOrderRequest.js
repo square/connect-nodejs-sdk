@@ -12,9 +12,6 @@
  *
  */
 var ApiClient = require('../ApiClient');
-var CreateOrderRequestDiscount = require('./CreateOrderRequestDiscount');
-var CreateOrderRequestLineItem = require('./CreateOrderRequestLineItem');
-var CreateOrderRequestTax = require('./CreateOrderRequestTax');
 var Order = require('./Order');
 
 
@@ -33,10 +30,6 @@ var Order = require('./Order');
  */
 var exports = function() {
   var _this = this;
-
-
-
-
 
 
 
@@ -59,18 +52,6 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('idempotency_key')) {
       obj['idempotency_key'] = ApiClient.convertToType(data['idempotency_key'], 'String');
     }
-      if (data.hasOwnProperty('reference_id')) {
-      obj['reference_id'] = ApiClient.convertToType(data['reference_id'], 'String');
-    }
-      if (data.hasOwnProperty('line_items')) {
-      obj['line_items'] = ApiClient.convertToType(data['line_items'], [CreateOrderRequestLineItem]);
-    }
-      if (data.hasOwnProperty('taxes')) {
-      obj['taxes'] = ApiClient.convertToType(data['taxes'], [CreateOrderRequestTax]);
-    }
-      if (data.hasOwnProperty('discounts')) {
-      obj['discounts'] = ApiClient.convertToType(data['discounts'], [CreateOrderRequestDiscount]);
-    }
     }
   return obj;
 }
@@ -85,26 +66,6 @@ exports.prototype['order'] = undefined;
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;
-/**
- * __Deprecated__: Please set the reference_id on the nested `order` field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
- * @member {String} reference_id
- */
-exports.prototype['reference_id'] = undefined;
-/**
- * __Deprecated__: Please set the line_items on the nested `order` field instead.  The line items to associate with this order.  Each line item represents a different product to include in a purchase.
- * @member {Array.<module:model/CreateOrderRequestLineItem>} line_items
- */
-exports.prototype['line_items'] = undefined;
-/**
- * __Deprecated__: Please set the taxes on the nested `order` field instead.  The taxes to include on the order.
- * @member {Array.<module:model/CreateOrderRequestTax>} taxes
- */
-exports.prototype['taxes'] = undefined;
-/**
- * __Deprecated__: Please set the discounts on the nested `order` field instead.  The discounts to include on the order.
- * @member {Array.<module:model/CreateOrderRequestDiscount>} discounts
- */
-exports.prototype['discounts'] = undefined;
 
 
 

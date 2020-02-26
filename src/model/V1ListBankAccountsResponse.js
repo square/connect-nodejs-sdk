@@ -18,6 +18,7 @@ var V1BankAccount = require('./V1BankAccount');
 
 
 /**
+ * @deprecated
  * The V1ListBankAccountsResponse model module.
  * @module model/V1ListBankAccountsResponse
  */

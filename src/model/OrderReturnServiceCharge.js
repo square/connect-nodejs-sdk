@@ -14,7 +14,6 @@
 var ApiClient = require('../ApiClient');
 var Money = require('./Money');
 var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
-var OrderReturnTax = require('./OrderReturnTax');
 
 
 
@@ -32,7 +31,6 @@ var OrderReturnTax = require('./OrderReturnTax');
  */
 var exports = function() {
   var _this = this;
-
 
 
 
@@ -91,9 +89,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('taxable')) {
       obj['taxable'] = ApiClient.convertToType(data['taxable'], 'Boolean');
-    }
-      if (data.hasOwnProperty('return_taxes')) {
-      obj['return_taxes'] = ApiClient.convertToType(data['return_taxes'], [OrderReturnTax]);
     }
       if (data.hasOwnProperty('applied_taxes')) {
       obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
@@ -157,11 +152,6 @@ exports.prototype['calculation_phase'] = undefined;
  * @member {Boolean} taxable
  */
 exports.prototype['taxable'] = undefined;
-/**
- * Taxes applied to the `OrderReturnServiceCharge`. By default, return-level taxes apply to `OrderReturnServiceCharge`s calculated in the `SUBTOTAL_PHASE` if `taxable` is set to `true`.  On read or retrieve, this list includes both item-level taxes and any return-level taxes apportioned to this item.  This field has been deprecated in favour of `applied_taxes`.
- * @member {Array.<module:model/OrderReturnTax>} return_taxes
- */
-exports.prototype['return_taxes'] = undefined;
 /**
  * The list of references to `OrderReturnTax` entities applied to the `OrderReturnServiceCharge`. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderReturnTax` that is being applied to the `OrderReturnServiceCharge`. On reads, the amount applied is populated.
  * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes

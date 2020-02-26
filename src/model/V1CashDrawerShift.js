@@ -20,6 +20,7 @@ var V1Money = require('./V1Money');
 
 
 /**
+ * @deprecated
  * The V1CashDrawerShift model module.
  * @module model/V1CashDrawerShift
  */

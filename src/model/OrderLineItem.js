@@ -15,9 +15,7 @@ var ApiClient = require('../ApiClient');
 var Money = require('./Money');
 var OrderLineItemAppliedDiscount = require('./OrderLineItemAppliedDiscount');
 var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
-var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemModifier = require('./OrderLineItemModifier');
-var OrderLineItemTax = require('./OrderLineItemTax');
 var OrderQuantityUnit = require('./OrderQuantityUnit');
 
 
@@ -41,8 +39,6 @@ var exports = function(quantity) {
 
 
   _this['quantity'] = quantity;
-
-
 
 
 
@@ -96,12 +92,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('modifiers')) {
       obj['modifiers'] = ApiClient.convertToType(data['modifiers'], [OrderLineItemModifier]);
-    }
-      if (data.hasOwnProperty('taxes')) {
-      obj['taxes'] = ApiClient.convertToType(data['taxes'], [OrderLineItemTax]);
-    }
-      if (data.hasOwnProperty('discounts')) {
-      obj['discounts'] = ApiClient.convertToType(data['discounts'], [OrderLineItemDiscount]);
     }
       if (data.hasOwnProperty('applied_taxes')) {
       obj['applied_taxes'] = ApiClient.convertToType(data['applied_taxes'], [OrderLineItemAppliedTax]);
@@ -176,16 +166,6 @@ exports.prototype['metadata'] = undefined;
  * @member {Array.<module:model/OrderLineItemModifier>} modifiers
  */
 exports.prototype['modifiers'] = undefined;
-/**
- * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.  This field has been deprecated in favour of `applied_taxes`. Usage of both this field and `applied_taxes` when creating an order will result in an error. Usage of this field when sending requests to the UpdateOrder endpoint will result in an error.
- * @member {Array.<module:model/OrderLineItemTax>} taxes
- */
-exports.prototype['taxes'] = undefined;
-/**
- * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.  This field has been deprecated in favour of `applied_discounts`. Usage of both this field and `applied_discounts` when creating an order will result in an error. Usage of this field when sending requests to the UpdateOrder endpoint will result in an error.
- * @member {Array.<module:model/OrderLineItemDiscount>} discounts
- */
-exports.prototype['discounts'] = undefined;
 /**
  * The list of references to taxes applied to this line item. Each `OrderLineItemAppliedTax` has a `tax_uid` that references the `uid` of a top-level `OrderLineItemTax` applied to the line item. On reads, the amount applied is populated.  An `OrderLineItemAppliedTax` will be automatically created on every line item for all `ORDER` scoped taxes added to the order. `OrderLineItemAppliedTax` records for `LINE_ITEM` scoped taxes must be added in requests for the tax to apply to any line items.  To change the amount of a tax, modify the referenced top-level tax.
  * @member {Array.<module:model/OrderLineItemAppliedTax>} applied_taxes

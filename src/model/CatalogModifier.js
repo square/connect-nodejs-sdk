@@ -33,6 +33,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -52,6 +54,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('price_money')) {
       obj['price_money'] = Money.constructFromObject(data['price_money']);
     }
+      if (data.hasOwnProperty('ordinal')) {
+      obj['ordinal'] = ApiClient.convertToType(data['ordinal'], 'Number');
+    }
+      if (data.hasOwnProperty('modifier_list_id')) {
+      obj['modifier_list_id'] = ApiClient.convertToType(data['modifier_list_id'], 'String');
+    }
     }
   return obj;
 }
@@ -66,6 +74,16 @@ exports.prototype['name'] = undefined;
  * @member {module:model/Money} price_money
  */
 exports.prototype['price_money'] = undefined;
+/**
+ * Determines where this `CatalogModifier` appears in the `CatalogModifierList`.
+ * @member {Number} ordinal
+ */
+exports.prototype['ordinal'] = undefined;
+/**
+ * The ID of the `CatalogModifierList` associated with this modifier. Searchable.
+ * @member {String} modifier_list_id
+ */
+exports.prototype['modifier_list_id'] = undefined;
 
 
 

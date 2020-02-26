@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The V1ListCashDrawerShiftsRequest model module.
  * @module model/V1ListCashDrawerShiftsRequest
  */

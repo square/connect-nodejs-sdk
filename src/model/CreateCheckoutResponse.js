@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CreateCheckoutResponse</code>.
- * Defines the fields that are included in the response body of a request to the [CreateCheckout](#endpoint-createcheckout) endpoint.
+ * Defines the fields that are included in the response body of a request to the __CreateCheckout__ endpoint.
  * @alias module:model/CreateCheckoutResponse
  * @class
  */

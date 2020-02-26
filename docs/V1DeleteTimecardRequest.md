@@ -1,6 +1,7 @@
 # SquareConnect.V1DeleteTimecardRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

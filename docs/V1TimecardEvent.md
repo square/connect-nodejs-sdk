@@ -1,6 +1,7 @@
 # SquareConnect.V1TimecardEvent
 
 ### Description
+**Note: This model is deprecated.**
 
 V1TimecardEvent
 

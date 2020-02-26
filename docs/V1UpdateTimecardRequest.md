@@ -1,6 +1,7 @@
 # SquareConnect.V1UpdateTimecardRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 
