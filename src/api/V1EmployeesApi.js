@@ -24,7 +24,7 @@ var V1TimecardEvent = require('../model/V1TimecardEvent');
  */
 
 /**
- * Constructs a new V1EmployeesApi.
+ * Constructs a new V1EmployeesApi. 
  * @alias module:api/V1EmployeesApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -108,7 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -162,7 +162,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -280,7 +280,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -338,7 +338,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -407,7 +407,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -471,7 +471,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -543,7 +543,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -616,7 +616,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -670,7 +670,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -723,7 +723,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -778,7 +778,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -811,7 +811,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateEmployee
-   *
+   * 
    * @param {String} employeeId The ID of the role to modify.
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Employee} and HTTP response
@@ -837,7 +837,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -856,7 +856,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateEmployee
-   *
+   * 
    * @param {String} employeeId The ID of the role to modify.
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Employee}
@@ -897,7 +897,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -959,7 +959,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };

@@ -11,7 +11,6 @@ Method | HTTP request | Description
 
 <a name="listCashDrawerShiftEvents"></a>
 # **listCashDrawerShiftEvents**
-**Note: This endpoint is in beta.**
 > ListCashDrawerShiftEventsResponse listCashDrawerShiftEvents(locationId, shiftId, opts)
 
 ListCashDrawerShiftEvents
@@ -69,7 +68,6 @@ Name | Type | Description  | Notes
 
 <a name="listCashDrawerShifts"></a>
 # **listCashDrawerShifts**
-**Note: This endpoint is in beta.**
 > ListCashDrawerShiftsResponse listCashDrawerShifts(locationId, opts)
 
 ListCashDrawerShifts
@@ -130,7 +128,6 @@ Name | Type | Description  | Notes
 
 <a name="retrieveCashDrawerShift"></a>
 # **retrieveCashDrawerShift**
-**Note: This endpoint is in beta.**
 > RetrieveCashDrawerShiftResponse retrieveCashDrawerShift(locationId, shiftId)
 
 RetrieveCashDrawerShift

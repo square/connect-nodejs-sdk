@@ -19,7 +19,6 @@ var Money = require('./Money');
 
 /**
  * The CashDrawerShiftSummary model module.
- * Note: This model is in beta.
  * @module model/CashDrawerShiftSummary
  */
 

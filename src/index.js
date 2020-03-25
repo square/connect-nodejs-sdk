@@ -57,8 +57,15 @@ var CashDrawerShift = require('./model/CashDrawerShift');
 var CashDrawerShiftEvent = require('./model/CashDrawerShiftEvent');
 var CashDrawerShiftState = require('./model/CashDrawerShiftState');
 var CashDrawerShiftSummary = require('./model/CashDrawerShiftSummary');
-var CashPaymentDetails = require('./model/CashPaymentDetails');
 var CatalogCategory = require('./model/CatalogCategory');
+var CatalogCustomAttributeDefinition = require('./model/CatalogCustomAttributeDefinition');
+var CatalogCustomAttributeDefinitionAppVisibility = require('./model/CatalogCustomAttributeDefinitionAppVisibility');
+var CatalogCustomAttributeDefinitionSelectionConfig = require('./model/CatalogCustomAttributeDefinitionSelectionConfig');
+var CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection = require('./model/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection');
+var CatalogCustomAttributeDefinitionSellerVisibility = require('./model/CatalogCustomAttributeDefinitionSellerVisibility');
+var CatalogCustomAttributeDefinitionStringConfig = require('./model/CatalogCustomAttributeDefinitionStringConfig');
+var CatalogCustomAttributeDefinitionType = require('./model/CatalogCustomAttributeDefinitionType');
+var CatalogCustomAttributeValue = require('./model/CatalogCustomAttributeValue');
 var CatalogDiscount = require('./model/CatalogDiscount');
 var CatalogDiscountModifyTaxBasis = require('./model/CatalogDiscountModifyTaxBasis');
 var CatalogDiscountType = require('./model/CatalogDiscountType');
@@ -179,7 +186,6 @@ var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
 var ExcludeStrategy = require('./model/ExcludeStrategy');
-var ExternalPaymentDetails = require('./model/ExternalPaymentDetails');
 var GetBankAccountByV1IdRequest = require('./model/GetBankAccountByV1IdRequest');
 var GetBankAccountByV1IdResponse = require('./model/GetBankAccountByV1IdResponse');
 var GetBankAccountRequest = require('./model/GetBankAccountRequest');
@@ -620,7 +626,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 3.20200226.0
+ * @version 3.20200325.0
  */
   module.exports = {
   /**
@@ -849,15 +855,50 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CashDrawerShiftSummary: CashDrawerShiftSummary,
   /**
-   * The CashPaymentDetails model constructor.
-   * @property {module:model/CashPaymentDetails}
-   */
-  CashPaymentDetails: CashPaymentDetails,
-  /**
    * The CatalogCategory model constructor.
    * @property {module:model/CatalogCategory}
    */
   CatalogCategory: CatalogCategory,
+  /**
+   * The CatalogCustomAttributeDefinition model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinition}
+   */
+  CatalogCustomAttributeDefinition: CatalogCustomAttributeDefinition,
+  /**
+   * The CatalogCustomAttributeDefinitionAppVisibility model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionAppVisibility}
+   */
+  CatalogCustomAttributeDefinitionAppVisibility: CatalogCustomAttributeDefinitionAppVisibility,
+  /**
+   * The CatalogCustomAttributeDefinitionSelectionConfig model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionSelectionConfig}
+   */
+  CatalogCustomAttributeDefinitionSelectionConfig: CatalogCustomAttributeDefinitionSelectionConfig,
+  /**
+   * The CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection}
+   */
+  CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection: CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection,
+  /**
+   * The CatalogCustomAttributeDefinitionSellerVisibility model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionSellerVisibility}
+   */
+  CatalogCustomAttributeDefinitionSellerVisibility: CatalogCustomAttributeDefinitionSellerVisibility,
+  /**
+   * The CatalogCustomAttributeDefinitionStringConfig model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionStringConfig}
+   */
+  CatalogCustomAttributeDefinitionStringConfig: CatalogCustomAttributeDefinitionStringConfig,
+  /**
+   * The CatalogCustomAttributeDefinitionType model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionType}
+   */
+  CatalogCustomAttributeDefinitionType: CatalogCustomAttributeDefinitionType,
+  /**
+   * The CatalogCustomAttributeValue model constructor.
+   * @property {module:model/CatalogCustomAttributeValue}
+   */
+  CatalogCustomAttributeValue: CatalogCustomAttributeValue,
   /**
    * The CatalogDiscount model constructor.
    * @property {module:model/CatalogDiscount}
@@ -1458,11 +1499,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ExcludeStrategy}
    */
   ExcludeStrategy: ExcludeStrategy,
-  /**
-   * The ExternalPaymentDetails model constructor.
-   * @property {module:model/ExternalPaymentDetails}
-   */
-  ExternalPaymentDetails: ExternalPaymentDetails,
   /**
    * The GetBankAccountByV1IdRequest model constructor.
    * @property {module:model/GetBankAccountByV1IdRequest}

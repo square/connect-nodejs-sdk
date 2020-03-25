@@ -20,7 +20,6 @@ var Error = require('./Error');
 
 /**
  * The RetrieveCashDrawerShiftResponse model module.
- * Note: This model is in beta.
  * @module model/RetrieveCashDrawerShiftResponse
  */
 

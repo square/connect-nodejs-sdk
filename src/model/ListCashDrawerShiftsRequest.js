@@ -18,7 +18,6 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The ListCashDrawerShiftsRequest model module.
- * Note: This model is in beta.
  * @module model/ListCashDrawerShiftsRequest
  */
 

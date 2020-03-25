@@ -15,12 +15,12 @@ const SquareConnect = require('../../src/index');
 
 describe('CashPaymentDetails', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CashPaymentDetails();
+    // this.api = new SquareConnect.CashPaymentDetails();
   });
 
   it('should create an instance of CashPaymentDetails', function() {
     // uncomment below and update the code to test CashPaymentDetails
-    //var instane = new SquareConnect.CashPaymentDetails();
+    //var instance = new SquareConnect.CashPaymentDetails();
     //expect(instance).to.be.a(SquareConnect.CashPaymentDetails);
   });
 

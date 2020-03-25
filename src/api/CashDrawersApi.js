@@ -35,7 +35,6 @@ module.exports = function(apiClient) {
 
   /**
    * ListCashDrawerShiftEvents
-   * Note: This endpoint is in beta.
    * Provides a paginated list of events for a single cash drawer shift.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {String} shiftId The shift ID.
@@ -69,7 +68,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -106,7 +105,6 @@ module.exports = function(apiClient) {
 
   /**
    * ListCashDrawerShifts
-   * Note: This endpoint is in beta.
    * Provides the details for all of the cash drawer shifts for a location in a date range.
    * @param {String} locationId The ID of the location to query for a list of cash drawer shifts.
    * @param {Object} opts Optional parameters
@@ -139,7 +137,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -178,7 +176,6 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCashDrawerShift
-   * Note: This endpoint is in beta.
    * Provides the summary details for a single cash drawer shift. See RetrieveCashDrawerShiftEvents for a list of cash drawer shift events.
    * @param {String} locationId The ID of the location to retrieve cash drawer shifts from.
    * @param {String} shiftId The shift ID.
@@ -206,7 +203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };

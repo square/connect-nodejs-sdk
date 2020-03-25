@@ -13,6 +13,8 @@
  */
 var ApiClient = require('../ApiClient');
 var CatalogCategory = require('./CatalogCategory');
+var CatalogCustomAttributeDefinition = require('./CatalogCustomAttributeDefinition');
+var CatalogCustomAttributeValue = require('./CatalogCustomAttributeValue');
 var CatalogDiscount = require('./CatalogDiscount');
 var CatalogImage = require('./CatalogImage');
 var CatalogItem = require('./CatalogItem');
@@ -71,6 +73,8 @@ var exports = function(type, id) {
 
 
 
+
+
 };
 
 /**
@@ -98,6 +102,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('is_deleted')) {
       obj['is_deleted'] = ApiClient.convertToType(data['is_deleted'], 'Boolean');
+    }
+      if (data.hasOwnProperty('custom_attribute_values')) {
+      obj['custom_attribute_values'] = ApiClient.convertToType(data['custom_attribute_values'], {'String': CatalogCustomAttributeValue});
     }
       if (data.hasOwnProperty('catalog_v1_ids')) {
       obj['catalog_v1_ids'] = ApiClient.convertToType(data['catalog_v1_ids'], [CatalogV1Id]);
@@ -156,6 +163,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('item_option_value_data')) {
       obj['item_option_value_data'] = CatalogItemOptionValue.constructFromObject(data['item_option_value_data']);
     }
+      if (data.hasOwnProperty('custom_attribute_definition_data')) {
+      obj['custom_attribute_definition_data'] = CatalogCustomAttributeDefinition.constructFromObject(data['custom_attribute_definition_data']);
+    }
     }
   return obj;
 }
@@ -185,6 +195,11 @@ exports.prototype['version'] = undefined;
  * @member {Boolean} is_deleted
  */
 exports.prototype['is_deleted'] = undefined;
+/**
+ * Application-defined key/value attributes that are set at a global (location-independent) level. Values from the `*_data` fields may not be duplicated. Custom Attribute fields are intended to store additional information about a Catalog Object or associations with an entity in another system. Do not use custom attributes to store any sensitive information (personally identifiable information, card details, etc.).  For CustomAttributesDefinitions defined by the app making the request, the map key is the key defined in CustomAttributeDefinition (eg. “reference_id”). For CustomAttributesDefinitions by other apps, the map key is the key defined in CustomAttributeDefinition prefixed with the application ID and a colon (eg. “abcd1234:reference_id”).
+ * @member {Object.<String, module:model/CatalogCustomAttributeValue>} custom_attribute_values
+ */
+exports.prototype['custom_attribute_values'] = undefined;
 /**
  * The Connect v1 IDs for this object at each location where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
  * @member {Array.<module:model/CatalogV1Id>} catalog_v1_ids
@@ -280,6 +295,11 @@ exports.prototype['item_option_data'] = undefined;
  * @member {module:model/CatalogItemOptionValue} item_option_value_data
  */
 exports.prototype['item_option_value_data'] = undefined;
+/**
+ * Structured data for a `CatalogCustomAttributeDefinition`, set for CatalogObjects of type `CUSTOM_ATTRIBUTE_DEFINITION`.
+ * @member {module:model/CatalogCustomAttributeDefinition} custom_attribute_definition_data
+ */
+exports.prototype['custom_attribute_definition_data'] = undefined;
 
 
 
