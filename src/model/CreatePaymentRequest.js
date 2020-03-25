@@ -52,6 +52,7 @@ var exports = function(sourceId, idempotencyKey, amountMoney) {
 
 
 
+
 };
 
 /**
@@ -79,6 +80,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('app_fee_money')) {
       obj['app_fee_money'] = Money.constructFromObject(data['app_fee_money']);
+    }
+      if (data.hasOwnProperty('delay_duration')) {
+      obj['delay_duration'] = ApiClient.convertToType(data['delay_duration'], 'String');
     }
       if (data.hasOwnProperty('autocomplete')) {
       obj['autocomplete'] = ApiClient.convertToType(data['autocomplete'], 'Boolean');
@@ -145,6 +149,11 @@ exports.prototype['tip_money'] = undefined;
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;
+/**
+ * The duration of time after the payment's creation when Square automatically cancels the payment. This automatic cancellation applies only to payments that don't reach a terminal state (COMPLETED, CANCELED, or FAILED) before the `delay_duration` time period.  This parameter should be specified as a time duration, in RFC 3339 format, with a minimum value of 1 minute.  Notes: This feature is only supported for card payments. This parameter can only be set for a delayed capture payment (`autocomplete=false`).  Default:  - Card Present payments: \"PT36H\" (36 hours) from the creation time. - Card Not Present payments: \"P7D\" (7 days) from the creation time.
+ * @member {String} delay_duration
+ */
+exports.prototype['delay_duration'] = undefined;
 /**
  * If set to `true`, this payment will be completed when possible. If set to `false`, this payment will be held in an approved state until either explicitly completed (captured) or canceled (voided). For more information, see [Delayed Payments](https://developer.squareup.com/docs/payments-api/take-payments#delayed-payments).  Default: true
  * @member {Boolean} autocomplete

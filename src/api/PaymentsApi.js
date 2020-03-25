@@ -15,6 +15,7 @@ var ApiClient = require('../ApiClient');
 var CancelPaymentByIdempotencyKeyRequest = require('../model/CancelPaymentByIdempotencyKeyRequest');
 var CancelPaymentByIdempotencyKeyResponse = require('../model/CancelPaymentByIdempotencyKeyResponse');
 var CancelPaymentResponse = require('../model/CancelPaymentResponse');
+var CompletePaymentRequest = require('../model/CompletePaymentRequest');
 var CompletePaymentResponse = require('../model/CompletePaymentResponse');
 var CreatePaymentRequest = require('../model/CreatePaymentRequest');
 var CreatePaymentResponse = require('../model/CreatePaymentResponse');
@@ -60,7 +61,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -112,7 +113,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -147,14 +148,20 @@ module.exports = function(apiClient) {
    * CompletePayment
    * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId Unique ID identifying the payment to be completed.
+   * @param {module:model/CompletePaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CompletePaymentResponse} and HTTP response
    */
-  this.completePaymentWithHttpInfo = function(paymentId) {
-    var postBody = null;
+  this.completePaymentWithHttpInfo = function(paymentId, body) {
+    var postBody = body;
 
     // verify the required parameter 'paymentId' is set
     if (paymentId === undefined || paymentId === null) {
       throw new Error("Missing the required parameter 'paymentId' when calling completePayment");
+    }
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling completePayment");
     }
 
 
@@ -165,7 +172,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -186,10 +193,11 @@ module.exports = function(apiClient) {
    * CompletePayment
    * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
    * @param {String} paymentId Unique ID identifying the payment to be completed.
+   * @param {module:model/CompletePaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CompletePaymentResponse}
    */
-  this.completePayment = function(paymentId) {
-    return this.completePaymentWithHttpInfo(paymentId)
+  this.completePayment = function(paymentId, body) {
+    return this.completePaymentWithHttpInfo(paymentId, body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
@@ -217,7 +225,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -270,7 +278,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };
@@ -334,7 +342,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-02-26';
+    headerParams['Square-Version'] = '2020-03-25';
 
     var formParams = {
     };

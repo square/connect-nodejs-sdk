@@ -20,7 +20,6 @@ var Money = require('./Money');
 
 /**
  * The CashDrawerShift model module.
- * Note: This model is in beta.
  * @module model/CashDrawerShift
  */
 

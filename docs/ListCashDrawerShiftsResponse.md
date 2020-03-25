@@ -1,7 +1,6 @@
 # SquareConnect.ListCashDrawerShiftsResponse
 
 ### Description
-**Note: This model is in beta.**
 
 
 

@@ -1,7 +1,6 @@
 # SquareConnect.CashDrawerShiftEvent
 
 ### Description
-**Note: This model is in beta.**
 
 
 

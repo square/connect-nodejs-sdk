@@ -1,7 +1,6 @@
 # SquareConnect.CashDrawerShift
 
 ### Description
-**Note: This model is in beta.**
 
 This model gives the details of a cash drawer shift. The cash_payment_money, cash_refund_money, cash_paid_in_money, and cash_paid_out_money fields are all computed by summing their respective event types.
 

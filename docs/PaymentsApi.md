@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 <a name="completePayment"></a>
 # **completePayment**
-> CompletePaymentResponse completePayment(paymentId)
+> CompletePaymentResponse completePayment(paymentId, body)
 
 CompletePayment
 
@@ -129,7 +129,9 @@ var apiInstance = new SquareConnect.PaymentsApi();
 
 var paymentId = "paymentId_example"; // String | Unique ID identifying the payment to be completed.
 
-apiInstance.completePayment(paymentId).then(function(data) {
+var body = new SquareConnect.CompletePaymentRequest(); // CompletePaymentRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+
+apiInstance.completePayment(paymentId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -142,6 +144,7 @@ apiInstance.completePayment(paymentId).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentId** | **String**| Unique ID identifying the payment to be completed. | 
+ **body** | [**CompletePaymentRequest**](CompletePaymentRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type
 

@@ -19,7 +19,6 @@ var Money = require('./Money');
 
 /**
  * The CashDrawerShiftEvent model module.
- * Note: This model is in beta.
  * @module model/CashDrawerShiftEvent
  */
 
