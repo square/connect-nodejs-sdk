@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CashPaymentDetails', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CashPaymentDetails();
+    // this.api = new SquareConnect.CashPaymentDetails();
   });
 
   it('should create an instance of CashPaymentDetails', function() {
