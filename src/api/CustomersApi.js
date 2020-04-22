@@ -47,7 +47,7 @@ module.exports = function(apiClient) {
   /**
    * AddGroupToCustomer
    * Note: This endpoint is in beta.
-   * Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * Adds a group membership to a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to add to a group.
    * @param {String} groupId The ID of the customer group to add the customer to.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AddGroupToCustomerResponse} and HTTP response
@@ -93,7 +93,7 @@ module.exports = function(apiClient) {
 
   /**
    * AddGroupToCustomer
-   * Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * Adds a group membership to a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to add to a group.
    * @param {String} groupId The ID of the customer group to add the customer to.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AddGroupToCustomerResponse}
@@ -392,7 +392,7 @@ module.exports = function(apiClient) {
   /**
    * RemoveGroupFromCustomer
    * Note: This endpoint is in beta.
-   * Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * Removes a group membership from a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to remove from the group.
    * @param {String} groupId The ID of the customer group to remove the customer from.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RemoveGroupFromCustomerResponse} and HTTP response
@@ -438,7 +438,7 @@ module.exports = function(apiClient) {
 
   /**
    * RemoveGroupFromCustomer
-   * Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * Removes a group membership from a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to remove from the group.
    * @param {String} groupId The ID of the customer group to remove the customer from.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RemoveGroupFromCustomerResponse}

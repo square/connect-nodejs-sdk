@@ -32,7 +32,6 @@ var exports = function() {
   var _this = this;
 
 
-
 };
 
 /**
@@ -49,9 +48,6 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('cursor')) {
       obj['cursor'] = ApiClient.convertToType(data['cursor'], 'String');
     }
-      if (data.hasOwnProperty('limit')) {
-      obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
-    }
     }
   return obj;
 }
@@ -61,11 +57,6 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
-/**
- * Sets the maximum number of results to be returned in a single page. Limit values outside the supported range are ignored.  Minimum value: `1` Maximum value: `1,000`
- * @member {Number} limit
- */
-exports.prototype['limit'] = undefined;
 
 
 
