@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 AddGroupToCustomer
 
-Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+Adds a group membership to a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
 
 ### Example
 ```javascript
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 
 RemoveGroupFromCustomer
 
-Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+Removes a group membership from a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
 
 ### Example
 ```javascript

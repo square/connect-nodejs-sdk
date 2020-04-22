@@ -40,7 +40,7 @@ module.exports = function(apiClient) {
   /**
    * CreateCustomerGroup
    * Note: This endpoint is in beta.
-   * Creates a new customer group for a business.   The request must include at least the &#x60;name&#x60; value of the group.
+   * Creates a new customer group for a business.   The request must include the &#x60;name&#x60; value of the group.
    * @param {module:model/CreateCustomerGroupRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCustomerGroupResponse} and HTTP response
    */
@@ -78,7 +78,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerGroup
-   * Creates a new customer group for a business.   The request must include at least the &#x60;name&#x60; value of the group.
+   * Creates a new customer group for a business.   The request must include the &#x60;name&#x60; value of the group.
    * @param {module:model/CreateCustomerGroupRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCustomerGroupResponse}
    */

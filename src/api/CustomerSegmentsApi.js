@@ -38,7 +38,6 @@ module.exports = function(apiClient) {
    * Retrieves the list of customer segments of a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by previous calls to __ListCustomerSegments__. Used to retrieve the next set of query results.  See the [Pagination guide](https://developer.squareup.com/docs/docs/working-with-apis/pagination) for more information.
-   * @param {Number} opts.limit Sets the maximum number of results to be returned in a single page. Limit values outside the supported range are ignored.  Minimum value: &#x60;1&#x60; Maximum value: &#x60;1,000&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListCustomerSegmentsResponse} and HTTP response
    */
   this.listCustomerSegmentsWithHttpInfo = function(opts) {
@@ -49,8 +48,7 @@ module.exports = function(apiClient) {
     var pathParams = {
     };
     var queryParams = {
-      'cursor': opts['cursor'],
-      'limit': opts['limit']
+      'cursor': opts['cursor']
     };
     var headerParams = {
     };
@@ -76,7 +74,6 @@ module.exports = function(apiClient) {
    * Retrieves the list of customer segments of a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by previous calls to __ListCustomerSegments__. Used to retrieve the next set of query results.  See the [Pagination guide](https://developer.squareup.com/docs/docs/working-with-apis/pagination) for more information.
-   * @param {Number} opts.limit Sets the maximum number of results to be returned in a single page. Limit values outside the supported range are ignored.  Minimum value: &#x60;1&#x60; Maximum value: &#x60;1,000&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListCustomerSegmentsResponse}
    */
   this.listCustomerSegments = function(opts) {
