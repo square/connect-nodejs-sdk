@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var OrderFulfillmentPickupDetailsCurbsidePickupDetails = require('./OrderFulfillmentPickupDetailsCurbsidePickupDetails');
 var OrderFulfillmentRecipient = require('./OrderFulfillmentRecipient');
 
 
@@ -30,6 +31,8 @@ var OrderFulfillmentRecipient = require('./OrderFulfillmentRecipient');
  */
 var exports = function() {
   var _this = this;
+
+
 
 
 
@@ -107,6 +110,12 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('cancel_reason')) {
       obj['cancel_reason'] = ApiClient.convertToType(data['cancel_reason'], 'String');
+    }
+      if (data.hasOwnProperty('is_curbside_pickup')) {
+      obj['is_curbside_pickup'] = ApiClient.convertToType(data['is_curbside_pickup'], 'Boolean');
+    }
+      if (data.hasOwnProperty('curbside_pickup_details')) {
+      obj['curbside_pickup_details'] = OrderFulfillmentPickupDetailsCurbsidePickupDetails.constructFromObject(data['curbside_pickup_details']);
     }
     }
   return obj;
@@ -192,6 +201,16 @@ exports.prototype['canceled_at'] = undefined;
  * @member {String} cancel_reason
  */
 exports.prototype['cancel_reason'] = undefined;
+/**
+ * If true, indicates this pickup order is for curbside pickup, not in-store pickup.
+ * @member {Boolean} is_curbside_pickup
+ */
+exports.prototype['is_curbside_pickup'] = undefined;
+/**
+ * Specific details for curbside pickup. Can only be populated if `is_curbside_pickup` is true.
+ * @member {module:model/OrderFulfillmentPickupDetailsCurbsidePickupDetails} curbside_pickup_details
+ */
+exports.prototype['curbside_pickup_details'] = undefined;
 
 
 

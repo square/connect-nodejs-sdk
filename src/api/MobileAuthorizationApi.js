@@ -53,7 +53,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };

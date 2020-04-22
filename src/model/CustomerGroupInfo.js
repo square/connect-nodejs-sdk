@@ -23,11 +23,11 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CustomerGroupInfo</code>.
- * Contains some brief information about a customer group with its identifier included.
+ * Contains some brief information about a Customer Group with its identifier included.
  * @alias module:model/CustomerGroupInfo
  * @class
- * @param id {String} The ID of the customer group.
- * @param name {String} The name of the customer group.
+ * @param id {String} The ID of the Customer Group.
+ * @param name {String} The name of the Customer Group.
  */
 var exports = function(id, name) {
   var _this = this;
@@ -58,12 +58,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID of the customer group.
+ * The ID of the Customer Group.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
 /**
- * The name of the customer group.
+ * The name of the Customer Group.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

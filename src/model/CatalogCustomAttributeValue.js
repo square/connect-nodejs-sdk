@@ -91,12 +91,12 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['string_value'] = undefined;
 /**
- * __Read-only.__ The custom attribute definition this value belongs to.
+ * __Read-only.__ The id of the `CatalogCustomAttributeDefinition` this value belongs to.
  * @member {String} custom_attribute_definition_id
  */
 exports.prototype['custom_attribute_definition_id'] = undefined;
 /**
- * __Read-only.__ A copy of type from the associated custom attribute definition. See [CatalogCustomAttributeDefinitionType](#type-catalogcustomattributedefinitiontype) for possible values
+ * __Read-only.__ A copy of type from the associated `CatalogCustomAttributeDefinition`. See [CatalogCustomAttributeDefinitionType](#type-catalogcustomattributedefinitiontype) for possible values
  * @member {String} type
  */
 exports.prototype['type'] = undefined;
@@ -116,7 +116,7 @@ exports.prototype['boolean_value'] = undefined;
  */
 exports.prototype['selection_uid_values'] = undefined;
 /**
- * __Read-only.__ A copy of key from the associated custom attribute definition.
+ * __Read-only.__ A copy of key from the associated `CatalogCustomAttributeDefinition`.
  * @member {String} key
  */
 exports.prototype['key'] = undefined;

@@ -89,7 +89,12 @@ var exports = {
    * value: "ITEM_OPTION_VAL"
    * @const
    */
-  "ITEM_OPTION_VAL": "ITEM_OPTION_VAL"};
+  "ITEM_OPTION_VAL": "ITEM_OPTION_VAL",
+  /**
+   * value: "QUICK_AMOUNTS_SETTINGS"
+   * @const
+   */
+  "QUICK_AMOUNTS_SETTINGS": "QUICK_AMOUNTS_SETTINGS"};
 
 /**
  * Returns a <code>CatalogObjectType</code> enum value from a Javascript object name.

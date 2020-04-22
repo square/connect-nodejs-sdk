@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('ExternalPaymentDetails', function() {
   beforeEach(function() {
-    // this.api = new SquareConnect.ExternalPaymentDetails();
+    this.api = new SquareConnect.ExternalPaymentDetails();
   });
 
   it('should create an instance of ExternalPaymentDetails', function() {

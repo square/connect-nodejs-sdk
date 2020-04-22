@@ -41,6 +41,11 @@ var exports = {
    */
   "ACCESS_TOKEN_REVOKED": "ACCESS_TOKEN_REVOKED",
   /**
+   * value: "CLIENT_DISABLED"
+   * @const
+   */
+  "CLIENT_DISABLED": "CLIENT_DISABLED",
+  /**
    * value: "FORBIDDEN"
    * @const
    */

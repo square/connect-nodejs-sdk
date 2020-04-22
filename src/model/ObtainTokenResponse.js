@@ -115,7 +115,7 @@ exports.prototype['plan_id'] = undefined;
  */
 exports.prototype['id_token'] = undefined;
 /**
- * A refresh token. For more information, see [OAuth access token management](https://developer.squareup.com/docs/authz/oauth/how-it-works#oauth-access-token-management).
+ * A refresh token. OAuth refresh tokens are 64 bytes long. For more information, see [OAuth access token management](https://developer.squareup.com/docs/authz/oauth/how-it-works#oauth-access-token-management).
  * @member {String} refresh_token
  */
 exports.prototype['refresh_token'] = undefined;

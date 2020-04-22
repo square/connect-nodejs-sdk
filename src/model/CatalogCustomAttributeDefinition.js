@@ -118,7 +118,7 @@ exports.prototype['description'] = undefined;
  */
 exports.prototype['source_application'] = undefined;
 /**
- * The set of Catalog Object Types that this Custom Attribute may be applied to. Currently, only `ITEM` and `ITEM_VARIATION` are allowed. See [CatalogObjectType](#type-catalogobjecttype) for possible values
+ * The set of Catalog Object Types that this Custom Attribute may be applied to. Currently, only `ITEM` and `ITEM_VARIATION` are allowed. At least one type must be included. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @member {Array.<String>} allowed_object_types
  */
 exports.prototype['allowed_object_types'] = undefined;
@@ -148,7 +148,7 @@ exports.prototype['selection_config'] = undefined;
  */
 exports.prototype['custom_attribute_usage_count'] = undefined;
 /**
- * The name of the desired custom attribute key that can be used to access the custom attribute value on catalog objects. Cannot be modified after the custom attribute definition has been created.
+ * The name of the desired custom attribute key that can be used to access the custom attribute value on catalog objects. Cannot be modified after the custom attribute definition has been created. Must be between 1 and 60 characters, and may only contain the characters [a-zA-Z0-9_-].
  * @member {String} key
  */
 exports.prototype['key'] = undefined;
