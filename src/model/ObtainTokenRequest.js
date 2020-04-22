@@ -40,6 +40,7 @@ var exports = function(clientId, clientSecret, grantType) {
   _this['grant_type'] = grantType;
 
 
+
 };
 
 /**
@@ -73,6 +74,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('migration_token')) {
       obj['migration_token'] = ApiClient.convertToType(data['migration_token'], 'String');
+    }
+      if (data.hasOwnProperty('scopes')) {
+      obj['scopes'] = ApiClient.convertToType(data['scopes'], ['String']);
     }
     }
   return obj;
@@ -113,6 +117,11 @@ exports.prototype['refresh_token'] = undefined;
  * @member {String} migration_token
  */
 exports.prototype['migration_token'] = undefined;
+/**
+ * __OPTIONAL__  A JSON list of strings that are the permissions the application is requesting. For example: \"`[\"MERCHANT_PROFILE_READ\",\"PAYMENTS_READ\",\"BANK_ACCOUNTS_READ\"]`\" The access token returned in the response will be granted the permissions that comprise the intersection between the given list of permissions, and those that belong to the provided refresh token.
+ * @member {Array.<String>} scopes
+ */
+exports.prototype['scopes'] = undefined;
 
 
 

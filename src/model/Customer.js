@@ -30,9 +30,9 @@ var CustomerPreferences = require('./CustomerPreferences');
  * Represents a Square customer profile, which can have one or more cards on file associated with it.
  * @alias module:model/Customer
  * @class
- * @param id {String} A unique, Square-assigned object ID.
- * @param createdAt {String} The time when the customer profile was created, in RFC 3339 format.
- * @param updatedAt {String} The time when the customer profile was last updated, in RFC 3339 format.
+ * @param id {String} A unique Square-assigned ID for the customer profile.
+ * @param createdAt {String} The timestamp when the customer profile was created, in RFC 3339 format.
+ * @param updatedAt {String} The timestamp when the customer profile was last updated, in RFC 3339 format.
  */
 var exports = function(id, createdAt, updatedAt) {
   var _this = this;
@@ -40,6 +40,8 @@ var exports = function(id, createdAt, updatedAt) {
   _this['id'] = id;
   _this['created_at'] = createdAt;
   _this['updated_at'] = updatedAt;
+
+
 
 
 
@@ -118,22 +120,28 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('creation_source')) {
       obj['creation_source'] = ApiClient.convertToType(data['creation_source'], 'String');
     }
+      if (data.hasOwnProperty('group_ids')) {
+      obj['group_ids'] = ApiClient.convertToType(data['group_ids'], ['String']);
+    }
+      if (data.hasOwnProperty('segment_ids')) {
+      obj['segment_ids'] = ApiClient.convertToType(data['segment_ids'], ['String']);
+    }
     }
   return obj;
 }
 
 /**
- * A unique, Square-assigned object ID.
+ * A unique Square-assigned ID for the customer profile.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
 /**
- * The time when the customer profile was created, in RFC 3339 format.
+ * The timestamp when the customer profile was created, in RFC 3339 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * The time when the customer profile was last updated, in RFC 3339 format.
+ * The timestamp when the customer profile was last updated, in RFC 3339 format.
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
@@ -198,7 +206,7 @@ exports.prototype['note'] = undefined;
  */
 exports.prototype['preferences'] = undefined;
 /**
- * The groups the customer belongs to.
+ * The customer groups and segments the customer belongs to. This deprecated field is replaced with dedicated `group_ids` for customer groups and `segment_ids` for customer segments.
  * @member {Array.<module:model/CustomerGroupInfo>} groups
  */
 exports.prototype['groups'] = undefined;
@@ -207,6 +215,16 @@ exports.prototype['groups'] = undefined;
  * @member {String} creation_source
  */
 exports.prototype['creation_source'] = undefined;
+/**
+ * The IDs of customer groups the customer belongs to.
+ * @member {Array.<String>} group_ids
+ */
+exports.prototype['group_ids'] = undefined;
+/**
+ * The IDs of segments the customer belongs to.
+ * @member {Array.<String>} segment_ids
+ */
+exports.prototype['segment_ids'] = undefined;
 
 
 

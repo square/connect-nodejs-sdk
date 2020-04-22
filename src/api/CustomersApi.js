@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var AddGroupToCustomerResponse = require('../model/AddGroupToCustomerResponse');
 var CreateCustomerCardRequest = require('../model/CreateCustomerCardRequest');
 var CreateCustomerCardResponse = require('../model/CreateCustomerCardResponse');
 var CreateCustomerRequest = require('../model/CreateCustomerRequest');
@@ -19,6 +20,7 @@ var CreateCustomerResponse = require('../model/CreateCustomerResponse');
 var DeleteCustomerCardResponse = require('../model/DeleteCustomerCardResponse');
 var DeleteCustomerResponse = require('../model/DeleteCustomerResponse');
 var ListCustomersResponse = require('../model/ListCustomersResponse');
+var RemoveGroupFromCustomerResponse = require('../model/RemoveGroupFromCustomerResponse');
 var RetrieveCustomerResponse = require('../model/RetrieveCustomerResponse');
 var SearchCustomersRequest = require('../model/SearchCustomersRequest');
 var SearchCustomersResponse = require('../model/SearchCustomersResponse');
@@ -43,6 +45,68 @@ module.exports = function(apiClient) {
 
 
   /**
+   * AddGroupToCustomer
+   * Note: This endpoint is in beta.
+   * Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * @param {String} customerId The ID of the customer to add to a group.
+   * @param {String} groupId The ID of the customer group to add the customer to.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AddGroupToCustomerResponse} and HTTP response
+   */
+  this.addGroupToCustomerWithHttpInfo = function(customerId, groupId) {
+    var postBody = null;
+
+    // verify the required parameter 'customerId' is set
+    if (customerId === undefined || customerId === null) {
+      throw new Error("Missing the required parameter 'customerId' when calling addGroupToCustomer");
+    }
+
+    // verify the required parameter 'groupId' is set
+    if (groupId === undefined || groupId === null) {
+      throw new Error("Missing the required parameter 'groupId' when calling addGroupToCustomer");
+    }
+
+
+    var pathParams = {
+      'customer_id': customerId,
+      'group_id': groupId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-04-22';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = AddGroupToCustomerResponse;
+
+    return this.apiClient.callApi(
+      '/v2/customers/{customer_id}/groups/{group_id}', 'PUT',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * AddGroupToCustomer
+   * Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * @param {String} customerId The ID of the customer to add to a group.
+   * @param {String} groupId The ID of the customer group to add the customer to.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AddGroupToCustomerResponse}
+   */
+  this.addGroupToCustomer = function(customerId, groupId) {
+    return this.addGroupToCustomerWithHttpInfo(customerId, groupId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * CreateCustomer
    * Creates a new customer for a business, which can have associated cards on file.  You must provide __at least one__ of the following values in your request to this endpoint:  - &#x60;given_name&#x60; - &#x60;family_name&#x60; - &#x60;company_name&#x60; - &#x60;email_address&#x60; - &#x60;phone_number&#x60;
    * @param {module:model/CreateCustomerRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -63,7 +127,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -122,7 +186,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -176,7 +240,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -236,7 +300,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -291,7 +355,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -326,6 +390,68 @@ module.exports = function(apiClient) {
 
 
   /**
+   * RemoveGroupFromCustomer
+   * Note: This endpoint is in beta.
+   * Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * @param {String} customerId The ID of the customer to remove from the group.
+   * @param {String} groupId The ID of the customer group to remove the customer from.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RemoveGroupFromCustomerResponse} and HTTP response
+   */
+  this.removeGroupFromCustomerWithHttpInfo = function(customerId, groupId) {
+    var postBody = null;
+
+    // verify the required parameter 'customerId' is set
+    if (customerId === undefined || customerId === null) {
+      throw new Error("Missing the required parameter 'customerId' when calling removeGroupFromCustomer");
+    }
+
+    // verify the required parameter 'groupId' is set
+    if (groupId === undefined || groupId === null) {
+      throw new Error("Missing the required parameter 'groupId' when calling removeGroupFromCustomer");
+    }
+
+
+    var pathParams = {
+      'customer_id': customerId,
+      'group_id': groupId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-04-22';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = RemoveGroupFromCustomerResponse;
+
+    return this.apiClient.callApi(
+      '/v2/customers/{customer_id}/groups/{group_id}', 'DELETE',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * RemoveGroupFromCustomer
+   * Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+   * @param {String} customerId The ID of the customer to remove from the group.
+   * @param {String} groupId The ID of the customer group to remove the customer from.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RemoveGroupFromCustomerResponse}
+   */
+  this.removeGroupFromCustomer = function(customerId, groupId) {
+    return this.removeGroupFromCustomerWithHttpInfo(customerId, groupId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * RetrieveCustomer
    * Returns details for a single customer.
    * @param {String} customerId The ID of the customer to retrieve.
@@ -347,7 +473,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -399,7 +525,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };
@@ -458,7 +584,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-03-25';
+    headerParams['Square-Version'] = '2020-04-22';
 
     var formParams = {
     };

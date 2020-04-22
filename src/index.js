@@ -15,6 +15,8 @@
 var ApiClient = require('./ApiClient');
 var AcceptDisputeRequest = require('./model/AcceptDisputeRequest');
 var AcceptDisputeResponse = require('./model/AcceptDisputeResponse');
+var AddGroupToCustomerRequest = require('./model/AddGroupToCustomerRequest');
+var AddGroupToCustomerResponse = require('./model/AddGroupToCustomerResponse');
 var AdditionalRecipient = require('./model/AdditionalRecipient');
 var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
 var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
@@ -44,6 +46,8 @@ var CancelPaymentByIdempotencyKeyRequest = require('./model/CancelPaymentByIdemp
 var CancelPaymentByIdempotencyKeyResponse = require('./model/CancelPaymentByIdempotencyKeyResponse');
 var CancelPaymentRequest = require('./model/CancelPaymentRequest');
 var CancelPaymentResponse = require('./model/CancelPaymentResponse');
+var CancelTerminalCheckoutRequest = require('./model/CancelTerminalCheckoutRequest');
+var CancelTerminalCheckoutResponse = require('./model/CancelTerminalCheckoutResponse');
 var CaptureTransactionRequest = require('./model/CaptureTransactionRequest');
 var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
@@ -109,6 +113,10 @@ var CatalogQueryPrefix = require('./model/CatalogQueryPrefix');
 var CatalogQueryRange = require('./model/CatalogQueryRange');
 var CatalogQuerySortedAttribute = require('./model/CatalogQuerySortedAttribute');
 var CatalogQueryText = require('./model/CatalogQueryText');
+var CatalogQuickAmount = require('./model/CatalogQuickAmount');
+var CatalogQuickAmountType = require('./model/CatalogQuickAmountType');
+var CatalogQuickAmountsSettings = require('./model/CatalogQuickAmountsSettings');
+var CatalogQuickAmountsSettingsOption = require('./model/CatalogQuickAmountsSettingsOption');
 var CatalogTax = require('./model/CatalogTax');
 var CatalogTimePeriod = require('./model/CatalogTimePeriod');
 var CatalogV1Id = require('./model/CatalogV1Id');
@@ -128,8 +136,12 @@ var CreateCheckoutRequest = require('./model/CreateCheckoutRequest');
 var CreateCheckoutResponse = require('./model/CreateCheckoutResponse');
 var CreateCustomerCardRequest = require('./model/CreateCustomerCardRequest');
 var CreateCustomerCardResponse = require('./model/CreateCustomerCardResponse');
+var CreateCustomerGroupRequest = require('./model/CreateCustomerGroupRequest');
+var CreateCustomerGroupResponse = require('./model/CreateCustomerGroupResponse');
 var CreateCustomerRequest = require('./model/CreateCustomerRequest');
 var CreateCustomerResponse = require('./model/CreateCustomerResponse');
+var CreateDeviceCodeRequest = require('./model/CreateDeviceCodeRequest');
+var CreateDeviceCodeResponse = require('./model/CreateDeviceCodeResponse');
 var CreateDisputeEvidenceFileRequest = require('./model/CreateDisputeEvidenceFileRequest');
 var CreateDisputeEvidenceFileResponse = require('./model/CreateDisputeEvidenceFileResponse');
 var CreateDisputeEvidenceTextRequest = require('./model/CreateDisputeEvidenceTextRequest');
@@ -146,15 +158,19 @@ var CreateRefundRequest = require('./model/CreateRefundRequest');
 var CreateRefundResponse = require('./model/CreateRefundResponse');
 var CreateShiftRequest = require('./model/CreateShiftRequest');
 var CreateShiftResponse = require('./model/CreateShiftResponse');
+var CreateTerminalCheckoutRequest = require('./model/CreateTerminalCheckoutRequest');
+var CreateTerminalCheckoutResponse = require('./model/CreateTerminalCheckoutResponse');
 var Currency = require('./model/Currency');
 var Customer = require('./model/Customer');
 var CustomerCreationSource = require('./model/CustomerCreationSource');
 var CustomerCreationSourceFilter = require('./model/CustomerCreationSourceFilter');
 var CustomerFilter = require('./model/CustomerFilter');
+var CustomerGroup = require('./model/CustomerGroup');
 var CustomerGroupInfo = require('./model/CustomerGroupInfo');
 var CustomerInclusionExclusion = require('./model/CustomerInclusionExclusion');
 var CustomerPreferences = require('./model/CustomerPreferences');
 var CustomerQuery = require('./model/CustomerQuery');
+var CustomerSegment = require('./model/CustomerSegment');
 var CustomerSort = require('./model/CustomerSort');
 var CustomerSortField = require('./model/CustomerSortField');
 var DateRange = require('./model/DateRange');
@@ -165,11 +181,16 @@ var DeleteCatalogObjectRequest = require('./model/DeleteCatalogObjectRequest');
 var DeleteCatalogObjectResponse = require('./model/DeleteCatalogObjectResponse');
 var DeleteCustomerCardRequest = require('./model/DeleteCustomerCardRequest');
 var DeleteCustomerCardResponse = require('./model/DeleteCustomerCardResponse');
+var DeleteCustomerGroupRequest = require('./model/DeleteCustomerGroupRequest');
+var DeleteCustomerGroupResponse = require('./model/DeleteCustomerGroupResponse');
 var DeleteCustomerRequest = require('./model/DeleteCustomerRequest');
 var DeleteCustomerResponse = require('./model/DeleteCustomerResponse');
 var DeleteShiftRequest = require('./model/DeleteShiftRequest');
 var DeleteShiftResponse = require('./model/DeleteShiftResponse');
 var Device = require('./model/Device');
+var DeviceCheckoutOptions = require('./model/DeviceCheckoutOptions');
+var DeviceCode = require('./model/DeviceCode');
+var DeviceCodeStatus = require('./model/DeviceCodeStatus');
 var DeviceDetails = require('./model/DeviceDetails');
 var Dispute = require('./model/Dispute');
 var DisputeEvidence = require('./model/DisputeEvidence');
@@ -186,12 +207,15 @@ var Error = require('./model/Error');
 var ErrorCategory = require('./model/ErrorCategory');
 var ErrorCode = require('./model/ErrorCode');
 var ExcludeStrategy = require('./model/ExcludeStrategy');
+var FilterValue = require('./model/FilterValue');
 var GetBankAccountByV1IdRequest = require('./model/GetBankAccountByV1IdRequest');
 var GetBankAccountByV1IdResponse = require('./model/GetBankAccountByV1IdResponse');
 var GetBankAccountRequest = require('./model/GetBankAccountRequest');
 var GetBankAccountResponse = require('./model/GetBankAccountResponse');
 var GetBreakTypeRequest = require('./model/GetBreakTypeRequest');
 var GetBreakTypeResponse = require('./model/GetBreakTypeResponse');
+var GetDeviceCodeRequest = require('./model/GetDeviceCodeRequest');
+var GetDeviceCodeResponse = require('./model/GetDeviceCodeResponse');
 var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
 var GetEmployeeWageResponse = require('./model/GetEmployeeWageResponse');
 var GetPaymentRefundRequest = require('./model/GetPaymentRefundRequest');
@@ -200,6 +224,8 @@ var GetPaymentRequest = require('./model/GetPaymentRequest');
 var GetPaymentResponse = require('./model/GetPaymentResponse');
 var GetShiftRequest = require('./model/GetShiftRequest');
 var GetShiftResponse = require('./model/GetShiftResponse');
+var GetTerminalCheckoutRequest = require('./model/GetTerminalCheckoutRequest');
+var GetTerminalCheckoutResponse = require('./model/GetTerminalCheckoutResponse');
 var InventoryAdjustment = require('./model/InventoryAdjustment');
 var InventoryAlertType = require('./model/InventoryAlertType');
 var InventoryChange = require('./model/InventoryChange');
@@ -223,8 +249,14 @@ var ListCashDrawerShiftsRequest = require('./model/ListCashDrawerShiftsRequest')
 var ListCashDrawerShiftsResponse = require('./model/ListCashDrawerShiftsResponse');
 var ListCatalogRequest = require('./model/ListCatalogRequest');
 var ListCatalogResponse = require('./model/ListCatalogResponse');
+var ListCustomerGroupsRequest = require('./model/ListCustomerGroupsRequest');
+var ListCustomerGroupsResponse = require('./model/ListCustomerGroupsResponse');
+var ListCustomerSegmentsRequest = require('./model/ListCustomerSegmentsRequest');
+var ListCustomerSegmentsResponse = require('./model/ListCustomerSegmentsResponse');
 var ListCustomersRequest = require('./model/ListCustomersRequest');
 var ListCustomersResponse = require('./model/ListCustomersResponse');
+var ListDeviceCodesRequest = require('./model/ListDeviceCodesRequest');
+var ListDeviceCodesResponse = require('./model/ListDeviceCodesResponse');
 var ListDisputeEvidenceRequest = require('./model/ListDisputeEvidenceRequest');
 var ListDisputeEvidenceResponse = require('./model/ListDisputeEvidenceResponse');
 var ListDisputesRequest = require('./model/ListDisputesRequest');
@@ -268,14 +300,20 @@ var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
 var ObtainTokenResponse = require('./model/ObtainTokenResponse');
 var Order = require('./model/Order');
+var OrderCreated = require('./model/OrderCreated');
+var OrderCreatedObject = require('./model/OrderCreatedObject');
 var OrderEntry = require('./model/OrderEntry');
 var OrderFulfillment = require('./model/OrderFulfillment');
 var OrderFulfillmentPickupDetails = require('./model/OrderFulfillmentPickupDetails');
+var OrderFulfillmentPickupDetailsCurbsidePickupDetails = require('./model/OrderFulfillmentPickupDetailsCurbsidePickupDetails');
 var OrderFulfillmentPickupDetailsScheduleType = require('./model/OrderFulfillmentPickupDetailsScheduleType');
 var OrderFulfillmentRecipient = require('./model/OrderFulfillmentRecipient');
 var OrderFulfillmentShipmentDetails = require('./model/OrderFulfillmentShipmentDetails');
 var OrderFulfillmentState = require('./model/OrderFulfillmentState');
 var OrderFulfillmentType = require('./model/OrderFulfillmentType');
+var OrderFulfillmentUpdated = require('./model/OrderFulfillmentUpdated');
+var OrderFulfillmentUpdatedObject = require('./model/OrderFulfillmentUpdatedObject');
+var OrderFulfillmentUpdatedUpdate = require('./model/OrderFulfillmentUpdatedUpdate');
 var OrderLineItem = require('./model/OrderLineItem');
 var OrderLineItemAppliedDiscount = require('./model/OrderLineItemAppliedDiscount');
 var OrderLineItemAppliedTax = require('./model/OrderLineItemAppliedTax');
@@ -299,12 +337,16 @@ var OrderServiceCharge = require('./model/OrderServiceCharge');
 var OrderServiceChargeCalculationPhase = require('./model/OrderServiceChargeCalculationPhase');
 var OrderSource = require('./model/OrderSource');
 var OrderState = require('./model/OrderState');
+var OrderUpdated = require('./model/OrderUpdated');
+var OrderUpdatedObject = require('./model/OrderUpdatedObject');
 var PayOrderRequest = require('./model/PayOrderRequest');
 var PayOrderResponse = require('./model/PayOrderResponse');
 var Payment = require('./model/Payment');
+var PaymentOptions = require('./model/PaymentOptions');
 var PaymentRefund = require('./model/PaymentRefund');
 var ProcessingFee = require('./model/ProcessingFee');
 var Product = require('./model/Product');
+var ProductType = require('./model/ProductType');
 var Refund = require('./model/Refund');
 var RefundPaymentRequest = require('./model/RefundPaymentRequest');
 var RefundPaymentResponse = require('./model/RefundPaymentResponse');
@@ -314,14 +356,20 @@ var RegisterDomainResponse = require('./model/RegisterDomainResponse');
 var RegisterDomainResponseStatus = require('./model/RegisterDomainResponseStatus');
 var RemoveDisputeEvidenceRequest = require('./model/RemoveDisputeEvidenceRequest');
 var RemoveDisputeEvidenceResponse = require('./model/RemoveDisputeEvidenceResponse');
+var RemoveGroupFromCustomerRequest = require('./model/RemoveGroupFromCustomerRequest');
+var RemoveGroupFromCustomerResponse = require('./model/RemoveGroupFromCustomerResponse');
 var RenewTokenRequest = require('./model/RenewTokenRequest');
 var RenewTokenResponse = require('./model/RenewTokenResponse');
 var RetrieveCashDrawerShiftRequest = require('./model/RetrieveCashDrawerShiftRequest');
 var RetrieveCashDrawerShiftResponse = require('./model/RetrieveCashDrawerShiftResponse');
 var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest');
 var RetrieveCatalogObjectResponse = require('./model/RetrieveCatalogObjectResponse');
+var RetrieveCustomerGroupRequest = require('./model/RetrieveCustomerGroupRequest');
+var RetrieveCustomerGroupResponse = require('./model/RetrieveCustomerGroupResponse');
 var RetrieveCustomerRequest = require('./model/RetrieveCustomerRequest');
 var RetrieveCustomerResponse = require('./model/RetrieveCustomerResponse');
+var RetrieveCustomerSegmentRequest = require('./model/RetrieveCustomerSegmentRequest');
+var RetrieveCustomerSegmentResponse = require('./model/RetrieveCustomerSegmentResponse');
 var RetrieveDisputeEvidenceRequest = require('./model/RetrieveDisputeEvidenceRequest');
 var RetrieveDisputeEvidenceResponse = require('./model/RetrieveDisputeEvidenceResponse');
 var RetrieveDisputeRequest = require('./model/RetrieveDisputeRequest');
@@ -361,6 +409,8 @@ var SearchOrdersSourceFilter = require('./model/SearchOrdersSourceFilter');
 var SearchOrdersStateFilter = require('./model/SearchOrdersStateFilter');
 var SearchShiftsRequest = require('./model/SearchShiftsRequest');
 var SearchShiftsResponse = require('./model/SearchShiftsResponse');
+var SearchTerminalCheckoutsRequest = require('./model/SearchTerminalCheckoutsRequest');
+var SearchTerminalCheckoutsResponse = require('./model/SearchTerminalCheckoutsResponse');
 var Shift = require('./model/Shift');
 var ShiftFilter = require('./model/ShiftFilter');
 var ShiftFilterStatus = require('./model/ShiftFilterStatus');
@@ -385,12 +435,20 @@ var TenderCardDetailsEntryMethod = require('./model/TenderCardDetailsEntryMethod
 var TenderCardDetailsStatus = require('./model/TenderCardDetailsStatus');
 var TenderCashDetails = require('./model/TenderCashDetails');
 var TenderType = require('./model/TenderType');
+var TerminalCheckout = require('./model/TerminalCheckout');
+var TerminalCheckoutCancelReason = require('./model/TerminalCheckoutCancelReason');
+var TerminalCheckoutQuery = require('./model/TerminalCheckoutQuery');
+var TerminalCheckoutQueryFilter = require('./model/TerminalCheckoutQueryFilter');
+var TerminalCheckoutQuerySort = require('./model/TerminalCheckoutQuerySort');
 var TimeRange = require('./model/TimeRange');
+var TipSettings = require('./model/TipSettings');
 var Transaction = require('./model/Transaction');
 var TransactionProduct = require('./model/TransactionProduct');
 var TransactionType = require('./model/TransactionType');
 var UpdateBreakTypeRequest = require('./model/UpdateBreakTypeRequest');
 var UpdateBreakTypeResponse = require('./model/UpdateBreakTypeResponse');
+var UpdateCustomerGroupRequest = require('./model/UpdateCustomerGroupRequest');
+var UpdateCustomerGroupResponse = require('./model/UpdateCustomerGroupResponse');
 var UpdateCustomerRequest = require('./model/UpdateCustomerRequest');
 var UpdateCustomerResponse = require('./model/UpdateCustomerResponse');
 var UpdateItemModifierListsRequest = require('./model/UpdateItemModifierListsRequest');
@@ -577,7 +635,10 @@ var BankAccountsApi = require('./api/BankAccountsApi');
 var CashDrawersApi = require('./api/CashDrawersApi');
 var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
+var CustomerGroupsApi = require('./api/CustomerGroupsApi');
+var CustomerSegmentsApi = require('./api/CustomerSegmentsApi');
 var CustomersApi = require('./api/CustomersApi');
+var DevicesApi = require('./api/DevicesApi');
 var DisputesApi = require('./api/DisputesApi');
 var EmployeesApi = require('./api/EmployeesApi');
 var InventoryApi = require('./api/InventoryApi');
@@ -590,6 +651,7 @@ var OrdersApi = require('./api/OrdersApi');
 var PaymentsApi = require('./api/PaymentsApi');
 var RefundsApi = require('./api/RefundsApi');
 var ReportingApi = require('./api/ReportingApi');
+var TerminalApi = require('./api/TerminalApi');
 var TransactionsApi = require('./api/TransactionsApi');
 var V1EmployeesApi = require('./api/V1EmployeesApi');
 var V1ItemsApi = require('./api/V1ItemsApi');
@@ -626,7 +688,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 3.20200325.0
+ * @version 3.20200422.0
  */
   module.exports = {
   /**
@@ -644,6 +706,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/AcceptDisputeResponse}
    */
   AcceptDisputeResponse: AcceptDisputeResponse,
+  /**
+   * The AddGroupToCustomerRequest model constructor.
+   * @property {module:model/AddGroupToCustomerRequest}
+   */
+  AddGroupToCustomerRequest: AddGroupToCustomerRequest,
+  /**
+   * The AddGroupToCustomerResponse model constructor.
+   * @property {module:model/AddGroupToCustomerResponse}
+   */
+  AddGroupToCustomerResponse: AddGroupToCustomerResponse,
   /**
    * The AdditionalRecipient model constructor.
    * @property {module:model/AdditionalRecipient}
@@ -789,6 +861,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CancelPaymentResponse}
    */
   CancelPaymentResponse: CancelPaymentResponse,
+  /**
+   * The CancelTerminalCheckoutRequest model constructor.
+   * @property {module:model/CancelTerminalCheckoutRequest}
+   */
+  CancelTerminalCheckoutRequest: CancelTerminalCheckoutRequest,
+  /**
+   * The CancelTerminalCheckoutResponse model constructor.
+   * @property {module:model/CancelTerminalCheckoutResponse}
+   */
+  CancelTerminalCheckoutResponse: CancelTerminalCheckoutResponse,
   /**
    * The CaptureTransactionRequest model constructor.
    * @property {module:model/CaptureTransactionRequest}
@@ -1115,6 +1197,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogQueryText: CatalogQueryText,
   /**
+   * The CatalogQuickAmount model constructor.
+   * @property {module:model/CatalogQuickAmount}
+   */
+  CatalogQuickAmount: CatalogQuickAmount,
+  /**
+   * The CatalogQuickAmountType model constructor.
+   * @property {module:model/CatalogQuickAmountType}
+   */
+  CatalogQuickAmountType: CatalogQuickAmountType,
+  /**
+   * The CatalogQuickAmountsSettings model constructor.
+   * @property {module:model/CatalogQuickAmountsSettings}
+   */
+  CatalogQuickAmountsSettings: CatalogQuickAmountsSettings,
+  /**
+   * The CatalogQuickAmountsSettingsOption model constructor.
+   * @property {module:model/CatalogQuickAmountsSettingsOption}
+   */
+  CatalogQuickAmountsSettingsOption: CatalogQuickAmountsSettingsOption,
+  /**
    * The CatalogTax model constructor.
    * @property {module:model/CatalogTax}
    */
@@ -1210,6 +1312,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateCustomerCardResponse: CreateCustomerCardResponse,
   /**
+   * The CreateCustomerGroupRequest model constructor.
+   * @property {module:model/CreateCustomerGroupRequest}
+   */
+  CreateCustomerGroupRequest: CreateCustomerGroupRequest,
+  /**
+   * The CreateCustomerGroupResponse model constructor.
+   * @property {module:model/CreateCustomerGroupResponse}
+   */
+  CreateCustomerGroupResponse: CreateCustomerGroupResponse,
+  /**
    * The CreateCustomerRequest model constructor.
    * @property {module:model/CreateCustomerRequest}
    */
@@ -1219,6 +1331,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateCustomerResponse}
    */
   CreateCustomerResponse: CreateCustomerResponse,
+  /**
+   * The CreateDeviceCodeRequest model constructor.
+   * @property {module:model/CreateDeviceCodeRequest}
+   */
+  CreateDeviceCodeRequest: CreateDeviceCodeRequest,
+  /**
+   * The CreateDeviceCodeResponse model constructor.
+   * @property {module:model/CreateDeviceCodeResponse}
+   */
+  CreateDeviceCodeResponse: CreateDeviceCodeResponse,
   /**
    * The CreateDisputeEvidenceFileRequest model constructor.
    * @property {module:model/CreateDisputeEvidenceFileRequest}
@@ -1300,6 +1422,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateShiftResponse: CreateShiftResponse,
   /**
+   * The CreateTerminalCheckoutRequest model constructor.
+   * @property {module:model/CreateTerminalCheckoutRequest}
+   */
+  CreateTerminalCheckoutRequest: CreateTerminalCheckoutRequest,
+  /**
+   * The CreateTerminalCheckoutResponse model constructor.
+   * @property {module:model/CreateTerminalCheckoutResponse}
+   */
+  CreateTerminalCheckoutResponse: CreateTerminalCheckoutResponse,
+  /**
    * The Currency model constructor.
    * @property {module:model/Currency}
    */
@@ -1325,6 +1457,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CustomerFilter: CustomerFilter,
   /**
+   * The CustomerGroup model constructor.
+   * @property {module:model/CustomerGroup}
+   */
+  CustomerGroup: CustomerGroup,
+  /**
    * The CustomerGroupInfo model constructor.
    * @property {module:model/CustomerGroupInfo}
    */
@@ -1344,6 +1481,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CustomerQuery}
    */
   CustomerQuery: CustomerQuery,
+  /**
+   * The CustomerSegment model constructor.
+   * @property {module:model/CustomerSegment}
+   */
+  CustomerSegment: CustomerSegment,
   /**
    * The CustomerSort model constructor.
    * @property {module:model/CustomerSort}
@@ -1395,6 +1537,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   DeleteCustomerCardResponse: DeleteCustomerCardResponse,
   /**
+   * The DeleteCustomerGroupRequest model constructor.
+   * @property {module:model/DeleteCustomerGroupRequest}
+   */
+  DeleteCustomerGroupRequest: DeleteCustomerGroupRequest,
+  /**
+   * The DeleteCustomerGroupResponse model constructor.
+   * @property {module:model/DeleteCustomerGroupResponse}
+   */
+  DeleteCustomerGroupResponse: DeleteCustomerGroupResponse,
+  /**
    * The DeleteCustomerRequest model constructor.
    * @property {module:model/DeleteCustomerRequest}
    */
@@ -1419,6 +1571,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Device}
    */
   Device: Device,
+  /**
+   * The DeviceCheckoutOptions model constructor.
+   * @property {module:model/DeviceCheckoutOptions}
+   */
+  DeviceCheckoutOptions: DeviceCheckoutOptions,
+  /**
+   * The DeviceCode model constructor.
+   * @property {module:model/DeviceCode}
+   */
+  DeviceCode: DeviceCode,
+  /**
+   * The DeviceCodeStatus model constructor.
+   * @property {module:model/DeviceCodeStatus}
+   */
+  DeviceCodeStatus: DeviceCodeStatus,
   /**
    * The DeviceDetails model constructor.
    * @property {module:model/DeviceDetails}
@@ -1500,6 +1667,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ExcludeStrategy: ExcludeStrategy,
   /**
+   * The FilterValue model constructor.
+   * @property {module:model/FilterValue}
+   */
+  FilterValue: FilterValue,
+  /**
    * The GetBankAccountByV1IdRequest model constructor.
    * @property {module:model/GetBankAccountByV1IdRequest}
    */
@@ -1529,6 +1701,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/GetBreakTypeResponse}
    */
   GetBreakTypeResponse: GetBreakTypeResponse,
+  /**
+   * The GetDeviceCodeRequest model constructor.
+   * @property {module:model/GetDeviceCodeRequest}
+   */
+  GetDeviceCodeRequest: GetDeviceCodeRequest,
+  /**
+   * The GetDeviceCodeResponse model constructor.
+   * @property {module:model/GetDeviceCodeResponse}
+   */
+  GetDeviceCodeResponse: GetDeviceCodeResponse,
   /**
    * The GetEmployeeWageRequest model constructor.
    * @property {module:model/GetEmployeeWageRequest}
@@ -1569,6 +1751,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/GetShiftResponse}
    */
   GetShiftResponse: GetShiftResponse,
+  /**
+   * The GetTerminalCheckoutRequest model constructor.
+   * @property {module:model/GetTerminalCheckoutRequest}
+   */
+  GetTerminalCheckoutRequest: GetTerminalCheckoutRequest,
+  /**
+   * The GetTerminalCheckoutResponse model constructor.
+   * @property {module:model/GetTerminalCheckoutResponse}
+   */
+  GetTerminalCheckoutResponse: GetTerminalCheckoutResponse,
   /**
    * The InventoryAdjustment model constructor.
    * @property {module:model/InventoryAdjustment}
@@ -1685,6 +1877,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ListCatalogResponse: ListCatalogResponse,
   /**
+   * The ListCustomerGroupsRequest model constructor.
+   * @property {module:model/ListCustomerGroupsRequest}
+   */
+  ListCustomerGroupsRequest: ListCustomerGroupsRequest,
+  /**
+   * The ListCustomerGroupsResponse model constructor.
+   * @property {module:model/ListCustomerGroupsResponse}
+   */
+  ListCustomerGroupsResponse: ListCustomerGroupsResponse,
+  /**
+   * The ListCustomerSegmentsRequest model constructor.
+   * @property {module:model/ListCustomerSegmentsRequest}
+   */
+  ListCustomerSegmentsRequest: ListCustomerSegmentsRequest,
+  /**
+   * The ListCustomerSegmentsResponse model constructor.
+   * @property {module:model/ListCustomerSegmentsResponse}
+   */
+  ListCustomerSegmentsResponse: ListCustomerSegmentsResponse,
+  /**
    * The ListCustomersRequest model constructor.
    * @property {module:model/ListCustomersRequest}
    */
@@ -1694,6 +1906,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListCustomersResponse}
    */
   ListCustomersResponse: ListCustomersResponse,
+  /**
+   * The ListDeviceCodesRequest model constructor.
+   * @property {module:model/ListDeviceCodesRequest}
+   */
+  ListDeviceCodesRequest: ListDeviceCodesRequest,
+  /**
+   * The ListDeviceCodesResponse model constructor.
+   * @property {module:model/ListDeviceCodesResponse}
+   */
+  ListDeviceCodesResponse: ListDeviceCodesResponse,
   /**
    * The ListDisputeEvidenceRequest model constructor.
    * @property {module:model/ListDisputeEvidenceRequest}
@@ -1910,6 +2132,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Order: Order,
   /**
+   * The OrderCreated model constructor.
+   * @property {module:model/OrderCreated}
+   */
+  OrderCreated: OrderCreated,
+  /**
+   * The OrderCreatedObject model constructor.
+   * @property {module:model/OrderCreatedObject}
+   */
+  OrderCreatedObject: OrderCreatedObject,
+  /**
    * The OrderEntry model constructor.
    * @property {module:model/OrderEntry}
    */
@@ -1924,6 +2156,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderFulfillmentPickupDetails}
    */
   OrderFulfillmentPickupDetails: OrderFulfillmentPickupDetails,
+  /**
+   * The OrderFulfillmentPickupDetailsCurbsidePickupDetails model constructor.
+   * @property {module:model/OrderFulfillmentPickupDetailsCurbsidePickupDetails}
+   */
+  OrderFulfillmentPickupDetailsCurbsidePickupDetails: OrderFulfillmentPickupDetailsCurbsidePickupDetails,
   /**
    * The OrderFulfillmentPickupDetailsScheduleType model constructor.
    * @property {module:model/OrderFulfillmentPickupDetailsScheduleType}
@@ -1949,6 +2186,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderFulfillmentType}
    */
   OrderFulfillmentType: OrderFulfillmentType,
+  /**
+   * The OrderFulfillmentUpdated model constructor.
+   * @property {module:model/OrderFulfillmentUpdated}
+   */
+  OrderFulfillmentUpdated: OrderFulfillmentUpdated,
+  /**
+   * The OrderFulfillmentUpdatedObject model constructor.
+   * @property {module:model/OrderFulfillmentUpdatedObject}
+   */
+  OrderFulfillmentUpdatedObject: OrderFulfillmentUpdatedObject,
+  /**
+   * The OrderFulfillmentUpdatedUpdate model constructor.
+   * @property {module:model/OrderFulfillmentUpdatedUpdate}
+   */
+  OrderFulfillmentUpdatedUpdate: OrderFulfillmentUpdatedUpdate,
   /**
    * The OrderLineItem model constructor.
    * @property {module:model/OrderLineItem}
@@ -2065,6 +2317,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderState: OrderState,
   /**
+   * The OrderUpdated model constructor.
+   * @property {module:model/OrderUpdated}
+   */
+  OrderUpdated: OrderUpdated,
+  /**
+   * The OrderUpdatedObject model constructor.
+   * @property {module:model/OrderUpdatedObject}
+   */
+  OrderUpdatedObject: OrderUpdatedObject,
+  /**
    * The PayOrderRequest model constructor.
    * @property {module:model/PayOrderRequest}
    */
@@ -2080,6 +2342,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Payment: Payment,
   /**
+   * The PaymentOptions model constructor.
+   * @property {module:model/PaymentOptions}
+   */
+  PaymentOptions: PaymentOptions,
+  /**
    * The PaymentRefund model constructor.
    * @property {module:model/PaymentRefund}
    */
@@ -2094,6 +2361,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Product}
    */
   Product: Product,
+  /**
+   * The ProductType model constructor.
+   * @property {module:model/ProductType}
+   */
+  ProductType: ProductType,
   /**
    * The Refund model constructor.
    * @property {module:model/Refund}
@@ -2140,6 +2412,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RemoveDisputeEvidenceResponse: RemoveDisputeEvidenceResponse,
   /**
+   * The RemoveGroupFromCustomerRequest model constructor.
+   * @property {module:model/RemoveGroupFromCustomerRequest}
+   */
+  RemoveGroupFromCustomerRequest: RemoveGroupFromCustomerRequest,
+  /**
+   * The RemoveGroupFromCustomerResponse model constructor.
+   * @property {module:model/RemoveGroupFromCustomerResponse}
+   */
+  RemoveGroupFromCustomerResponse: RemoveGroupFromCustomerResponse,
+  /**
    * The RenewTokenRequest model constructor.
    * @property {module:model/RenewTokenRequest}
    */
@@ -2170,6 +2452,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveCatalogObjectResponse: RetrieveCatalogObjectResponse,
   /**
+   * The RetrieveCustomerGroupRequest model constructor.
+   * @property {module:model/RetrieveCustomerGroupRequest}
+   */
+  RetrieveCustomerGroupRequest: RetrieveCustomerGroupRequest,
+  /**
+   * The RetrieveCustomerGroupResponse model constructor.
+   * @property {module:model/RetrieveCustomerGroupResponse}
+   */
+  RetrieveCustomerGroupResponse: RetrieveCustomerGroupResponse,
+  /**
    * The RetrieveCustomerRequest model constructor.
    * @property {module:model/RetrieveCustomerRequest}
    */
@@ -2179,6 +2471,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RetrieveCustomerResponse}
    */
   RetrieveCustomerResponse: RetrieveCustomerResponse,
+  /**
+   * The RetrieveCustomerSegmentRequest model constructor.
+   * @property {module:model/RetrieveCustomerSegmentRequest}
+   */
+  RetrieveCustomerSegmentRequest: RetrieveCustomerSegmentRequest,
+  /**
+   * The RetrieveCustomerSegmentResponse model constructor.
+   * @property {module:model/RetrieveCustomerSegmentResponse}
+   */
+  RetrieveCustomerSegmentResponse: RetrieveCustomerSegmentResponse,
   /**
    * The RetrieveDisputeEvidenceRequest model constructor.
    * @property {module:model/RetrieveDisputeEvidenceRequest}
@@ -2375,6 +2677,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchShiftsResponse: SearchShiftsResponse,
   /**
+   * The SearchTerminalCheckoutsRequest model constructor.
+   * @property {module:model/SearchTerminalCheckoutsRequest}
+   */
+  SearchTerminalCheckoutsRequest: SearchTerminalCheckoutsRequest,
+  /**
+   * The SearchTerminalCheckoutsResponse model constructor.
+   * @property {module:model/SearchTerminalCheckoutsResponse}
+   */
+  SearchTerminalCheckoutsResponse: SearchTerminalCheckoutsResponse,
+  /**
    * The Shift model constructor.
    * @property {module:model/Shift}
    */
@@ -2495,10 +2807,40 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   TenderType: TenderType,
   /**
+   * The TerminalCheckout model constructor.
+   * @property {module:model/TerminalCheckout}
+   */
+  TerminalCheckout: TerminalCheckout,
+  /**
+   * The TerminalCheckoutCancelReason model constructor.
+   * @property {module:model/TerminalCheckoutCancelReason}
+   */
+  TerminalCheckoutCancelReason: TerminalCheckoutCancelReason,
+  /**
+   * The TerminalCheckoutQuery model constructor.
+   * @property {module:model/TerminalCheckoutQuery}
+   */
+  TerminalCheckoutQuery: TerminalCheckoutQuery,
+  /**
+   * The TerminalCheckoutQueryFilter model constructor.
+   * @property {module:model/TerminalCheckoutQueryFilter}
+   */
+  TerminalCheckoutQueryFilter: TerminalCheckoutQueryFilter,
+  /**
+   * The TerminalCheckoutQuerySort model constructor.
+   * @property {module:model/TerminalCheckoutQuerySort}
+   */
+  TerminalCheckoutQuerySort: TerminalCheckoutQuerySort,
+  /**
    * The TimeRange model constructor.
    * @property {module:model/TimeRange}
    */
   TimeRange: TimeRange,
+  /**
+   * The TipSettings model constructor.
+   * @property {module:model/TipSettings}
+   */
+  TipSettings: TipSettings,
   /**
    * The Transaction model constructor.
    * @property {module:model/Transaction}
@@ -2524,6 +2866,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/UpdateBreakTypeResponse}
    */
   UpdateBreakTypeResponse: UpdateBreakTypeResponse,
+  /**
+   * The UpdateCustomerGroupRequest model constructor.
+   * @property {module:model/UpdateCustomerGroupRequest}
+   */
+  UpdateCustomerGroupRequest: UpdateCustomerGroupRequest,
+  /**
+   * The UpdateCustomerGroupResponse model constructor.
+   * @property {module:model/UpdateCustomerGroupResponse}
+   */
+  UpdateCustomerGroupResponse: UpdateCustomerGroupResponse,
   /**
    * The UpdateCustomerRequest model constructor.
    * @property {module:model/UpdateCustomerRequest}
@@ -3450,10 +3802,25 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CheckoutApi: CheckoutApi,
   /**
+   * The CustomerGroupsApi service constructor.
+   * @property {module:api/CustomerGroupsApi}
+   */
+  CustomerGroupsApi: CustomerGroupsApi,
+  /**
+   * The CustomerSegmentsApi service constructor.
+   * @property {module:api/CustomerSegmentsApi}
+   */
+  CustomerSegmentsApi: CustomerSegmentsApi,
+  /**
    * The CustomersApi service constructor.
    * @property {module:api/CustomersApi}
    */
   CustomersApi: CustomersApi,
+  /**
+   * The DevicesApi service constructor.
+   * @property {module:api/DevicesApi}
+   */
+  DevicesApi: DevicesApi,
   /**
    * The DisputesApi service constructor.
    * @property {module:api/DisputesApi}
@@ -3514,6 +3881,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/ReportingApi}
    */
   ReportingApi: ReportingApi,
+  /**
+   * The TerminalApi service constructor.
+   * @property {module:api/TerminalApi}
+   */
+  TerminalApi: TerminalApi,
   /**
    * The TransactionsApi service constructor.
    * @property {module:api/TransactionsApi}

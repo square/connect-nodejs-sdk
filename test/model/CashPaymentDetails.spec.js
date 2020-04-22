@@ -20,7 +20,7 @@ describe('CashPaymentDetails', function() {
 
   it('should create an instance of CashPaymentDetails', function() {
     // uncomment below and update the code to test CashPaymentDetails
-    //var instance = new SquareConnect.CashPaymentDetails();
+    //var instane = new SquareConnect.CashPaymentDetails();
     //expect(instance).to.be.a(SquareConnect.CashPaymentDetails);
   });
 

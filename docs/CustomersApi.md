@@ -4,15 +4,69 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**addGroupToCustomer**](CustomersApi.md#addGroupToCustomer) | **PUT** /v2/customers/{customer_id}/groups/{group_id} | AddGroupToCustomer
 [**createCustomer**](CustomersApi.md#createCustomer) | **POST** /v2/customers | CreateCustomer
 [**createCustomerCard**](CustomersApi.md#createCustomerCard) | **POST** /v2/customers/{customer_id}/cards | CreateCustomerCard
 [**deleteCustomer**](CustomersApi.md#deleteCustomer) | **DELETE** /v2/customers/{customer_id} | DeleteCustomer
 [**deleteCustomerCard**](CustomersApi.md#deleteCustomerCard) | **DELETE** /v2/customers/{customer_id}/cards/{card_id} | DeleteCustomerCard
 [**listCustomers**](CustomersApi.md#listCustomers) | **GET** /v2/customers | ListCustomers
+[**removeGroupFromCustomer**](CustomersApi.md#removeGroupFromCustomer) | **DELETE** /v2/customers/{customer_id}/groups/{group_id} | RemoveGroupFromCustomer
 [**retrieveCustomer**](CustomersApi.md#retrieveCustomer) | **GET** /v2/customers/{customer_id} | RetrieveCustomer
 [**searchCustomers**](CustomersApi.md#searchCustomers) | **POST** /v2/customers/search | SearchCustomers
 [**updateCustomer**](CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
 
+
+<a name="addGroupToCustomer"></a>
+# **addGroupToCustomer**
+**Note: This endpoint is in beta.**
+> AddGroupToCustomerResponse addGroupToCustomer(customerId, groupId)
+
+AddGroupToCustomer
+
+Adds a customer membership to a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.CustomersApi();
+
+var customerId = "customerId_example"; // String | The ID of the customer to add to a group.
+
+var groupId = "groupId_example"; // String | The ID of the customer group to add the customer to.
+
+apiInstance.addGroupToCustomer(customerId, groupId).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **String**| The ID of the customer to add to a group. | 
+ **groupId** | **String**| The ID of the customer group to add the customer to. | 
+
+### Return type
+
+[**AddGroupToCustomerResponse**](AddGroupToCustomerResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 <a name="createCustomer"></a>
 # **createCustomer**
@@ -255,6 +309,58 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ListCustomersResponse**](ListCustomersResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="removeGroupFromCustomer"></a>
+# **removeGroupFromCustomer**
+**Note: This endpoint is in beta.**
+> RemoveGroupFromCustomerResponse removeGroupFromCustomer(customerId, groupId)
+
+RemoveGroupFromCustomer
+
+Removes a customer membership from a customer group.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.CustomersApi();
+
+var customerId = "customerId_example"; // String | The ID of the customer to remove from the group.
+
+var groupId = "groupId_example"; // String | The ID of the customer group to remove the customer from.
+
+apiInstance.removeGroupFromCustomer(customerId, groupId).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **String**| The ID of the customer to remove from the group. | 
+ **groupId** | **String**| The ID of the customer group to remove the customer from. | 
+
+### Return type
+
+[**RemoveGroupFromCustomerResponse**](RemoveGroupFromCustomerResponse.md)
 
 ### Authorization
 

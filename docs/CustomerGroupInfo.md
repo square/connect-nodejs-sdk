@@ -2,12 +2,12 @@
 
 ### Description
 
-Contains some brief information about a customer group with its identifier included.
+Contains some brief information about a Customer Group with its identifier included.
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** | The ID of the customer group. | 
-**name** | **String** | The name of the customer group. | 
+**id** | **String** | The ID of the Customer Group. | 
+**name** | **String** | The name of the Customer Group. | 
 
 

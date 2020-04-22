@@ -72,7 +72,7 @@ exports.prototype['idempotency_key'] = undefined;
  */
 exports.prototype['order_version'] = undefined;
 /**
- * 
+ * The IDs of the `payments` to collect. The payment total must match the order total.
  * @member {Array.<String>} payment_ids
  */
 exports.prototype['payment_ids'] = undefined;

@@ -33,6 +33,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -55,6 +56,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('merchant_id')) {
       obj['merchant_id'] = ApiClient.convertToType(data['merchant_id'], 'String');
     }
+      if (data.hasOwnProperty('revoke_only_access_token')) {
+      obj['revoke_only_access_token'] = ApiClient.convertToType(data['revoke_only_access_token'], 'Boolean');
+    }
     }
   return obj;
 }
@@ -74,6 +78,11 @@ exports.prototype['access_token'] = undefined;
  * @member {String} merchant_id
  */
 exports.prototype['merchant_id'] = undefined;
+/**
+ * If `true`, terminate the given single access token, but do not terminate the entire authorization. Default: `false`
+ * @member {Boolean} revoke_only_access_token
+ */
+exports.prototype['revoke_only_access_token'] = undefined;
 
 
 

@@ -26,6 +26,7 @@ var CatalogModifier = require('./CatalogModifier');
 var CatalogModifierList = require('./CatalogModifierList');
 var CatalogPricingRule = require('./CatalogPricingRule');
 var CatalogProductSet = require('./CatalogProductSet');
+var CatalogQuickAmountsSettings = require('./CatalogQuickAmountsSettings');
 var CatalogTax = require('./CatalogTax');
 var CatalogTimePeriod = require('./CatalogTimePeriod');
 var CatalogV1Id = require('./CatalogV1Id');
@@ -40,7 +41,7 @@ var CatalogV1Id = require('./CatalogV1Id');
 
 /**
  * Constructs a new <code>CatalogObject</code>.
- * The wrapper object for object types in the Catalog data model. The type of a particular &#x60;CatalogObject&#x60; is determined by the value of &#x60;type&#x60; and only the corresponding data field may be set.  - if type &#x3D; &#x60;ITEM&#x60;, only &#x60;item_data&#x60; will be populated and it will contain a valid &#x60;CatalogItem&#x60; object. - if type &#x3D; &#x60;ITEM_VARIATION&#x60;, only &#x60;item_variation_data&#x60; will be populated and it will contain a valid &#x60;CatalogItemVariation&#x60; object. - if type &#x3D; &#x60;MODIFIER&#x60;, only &#x60;modifier_data&#x60; will be populated and it will contain a valid &#x60;CatalogModifier&#x60; object. - if type &#x3D; &#x60;MODIFIER_LIST&#x60;, only &#x60;modifier_list_data&#x60; will be populated and it will contain a valid &#x60;CatalogModifierList&#x60; object. - if type &#x3D; &#x60;CATEGORY&#x60;, only &#x60;category_data&#x60; will be populated and it will contain a valid &#x60;CatalogCategory&#x60; object. - if type &#x3D; &#x60;DISCOUNT&#x60;, only &#x60;discount_data&#x60; will be populated and it will contain a valid &#x60;CatalogDiscount&#x60; object. - if type &#x3D; &#x60;TAX&#x60;, only &#x60;tax_data&#x60; will be populated and it will contain a valid &#x60;CatalogTax&#x60; object. - if type &#x3D; &#x60;IMAGE&#x60;, only &#x60;image_data&#x60; will be populated and it will contain a valid &#x60;CatalogImage&#x60; object.  For a more detailed discussion of the Catalog data model, please see the [Design a Catalog](/catalog-api/design-a-catalog) guide.
+ * The wrapper object for object types in the Catalog data model. The type of a particular &#x60;CatalogObject&#x60; is determined by the value of &#x60;type&#x60; and only the corresponding data field may be set.  - if type &#x3D; &#x60;ITEM&#x60;, only &#x60;item_data&#x60; will be populated and it will contain a valid &#x60;CatalogItem&#x60; object. - if type &#x3D; &#x60;ITEM_VARIATION&#x60;, only &#x60;item_variation_data&#x60; will be populated and it will contain a valid &#x60;CatalogItemVariation&#x60; object. - if type &#x3D; &#x60;MODIFIER&#x60;, only &#x60;modifier_data&#x60; will be populated and it will contain a valid &#x60;CatalogModifier&#x60; object. - if type &#x3D; &#x60;MODIFIER_LIST&#x60;, only &#x60;modifier_list_data&#x60; will be populated and it will contain a valid &#x60;CatalogModifierList&#x60; object. - if type &#x3D; &#x60;CATEGORY&#x60;, only &#x60;category_data&#x60; will be populated and it will contain a valid &#x60;CatalogCategory&#x60; object. - if type &#x3D; &#x60;DISCOUNT&#x60;, only &#x60;discount_data&#x60; will be populated and it will contain a valid &#x60;CatalogDiscount&#x60; object. - if type &#x3D; &#x60;TAX&#x60;, only &#x60;tax_data&#x60; will be populated and it will contain a valid &#x60;CatalogTax&#x60; object. - if type &#x3D; &#x60;IMAGE&#x60;, only &#x60;image_data&#x60; will be populated and it will contain a valid &#x60;CatalogImage&#x60; object. - if type &#x3D; &#x60;QUICK_AMOUNTS_SETTINGS&#x60;, only &#x60;quick_amounts_settings_data&#x60; will be populated and will contain a valid &#x60;CatalogQuickAmountsSettings&#x60; object.  For a more detailed discussion of the Catalog data model, please see the [Design a Catalog](/catalog-api/design-a-catalog) guide.
  * @alias module:model/CatalogObject
  * @class
  * @param type {String} The type of this object. Each object type has expected properties expressed in a structured format within its corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values
@@ -51,6 +52,7 @@ var exports = function(type, id) {
 
   _this['type'] = type;
   _this['id'] = id;
+
 
 
 
@@ -166,6 +168,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('custom_attribute_definition_data')) {
       obj['custom_attribute_definition_data'] = CatalogCustomAttributeDefinition.constructFromObject(data['custom_attribute_definition_data']);
     }
+      if (data.hasOwnProperty('quick_amounts_settings_data')) {
+      obj['quick_amounts_settings_data'] = CatalogQuickAmountsSettings.constructFromObject(data['quick_amounts_settings_data']);
+    }
     }
   return obj;
 }
@@ -196,7 +201,7 @@ exports.prototype['version'] = undefined;
  */
 exports.prototype['is_deleted'] = undefined;
 /**
- * Application-defined key/value attributes that are set at a global (location-independent) level. Values from the `*_data` fields may not be duplicated. Custom Attribute fields are intended to store additional information about a Catalog Object or associations with an entity in another system. Do not use custom attributes to store any sensitive information (personally identifiable information, card details, etc.).  For CustomAttributesDefinitions defined by the app making the request, the map key is the key defined in CustomAttributeDefinition (eg. “reference_id”). For CustomAttributesDefinitions by other apps, the map key is the key defined in CustomAttributeDefinition prefixed with the application ID and a colon (eg. “abcd1234:reference_id”).
+ * Application-defined key/value attributes that are set at a global (location-independent) level. Custom Attribute Values are intended to store additional information about a Catalog Object or associations with an entity in another system. Do not use custom attributes to store any sensitive information (personally identifiable information, card details, etc.).  For CustomAttributesDefinitions defined by the app making the request, the map key is the key defined in the `CatalogCustomAttributeDefinition` (e.g. “reference_id”). For custom attributes created by other apps, the map key is the key defined in `CatalogCustomAttributeDefinition` prefixed with the application ID and a colon (eg. “abcd1234:reference_id”).
  * @member {Object.<String, module:model/CatalogCustomAttributeValue>} custom_attribute_values
  */
 exports.prototype['custom_attribute_values'] = undefined;
@@ -300,6 +305,11 @@ exports.prototype['item_option_value_data'] = undefined;
  * @member {module:model/CatalogCustomAttributeDefinition} custom_attribute_definition_data
  */
 exports.prototype['custom_attribute_definition_data'] = undefined;
+/**
+ * Structured data for a `CatalogQuickAmountsSettings`, set for CatalogObjects of type `QUICK_AMOUNTS_SETTINGS`.
+ * @member {module:model/CatalogQuickAmountsSettings} quick_amounts_settings_data
+ */
+exports.prototype['quick_amounts_settings_data'] = undefined;
 
 
 

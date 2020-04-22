@@ -13,6 +13,7 @@
  */
 var ApiClient = require('../ApiClient');
 var CustomerCreationSourceFilter = require('./CustomerCreationSourceFilter');
+var FilterValue = require('./FilterValue');
 var TimeRange = require('./TimeRange');
 
 
@@ -25,12 +26,13 @@ var TimeRange = require('./TimeRange');
 
 /**
  * Constructs a new <code>CustomerFilter</code>.
- * Represents a set of &#x60;CustomerQuery&#x60; filters used to limit the set of &#x60;Customers&#x60; returned by SearchCustomers.
+ * Represents a set of &#x60;CustomerQuery&#x60; filters used to limit the set of &#x60;Customers&#x60; returned by &#x60;SearchCustomers&#x60;.
  * @alias module:model/CustomerFilter
  * @class
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -57,6 +59,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('updated_at')) {
       obj['updated_at'] = TimeRange.constructFromObject(data['updated_at']);
     }
+      if (data.hasOwnProperty('group_ids')) {
+      obj['group_ids'] = FilterValue.constructFromObject(data['group_ids']);
+    }
     }
   return obj;
 }
@@ -76,6 +81,11 @@ exports.prototype['created_at'] = undefined;
  * @member {module:model/TimeRange} updated_at
  */
 exports.prototype['updated_at'] = undefined;
+/**
+ * A filter to select customers based on their group membership.  The `group_ids` is a JSON object of the following general format: ``` \"group_ids\": { \"any\":  [\"{group_a_id}\", \"{group_b_id}\", ...], \"all\":  [\"{group_1_id}\", \"{group_2_id}\", ...], 'none\": [\"{group_i_id}\", \"{group_ii_id}\", ...] } ```  You can use any combination of the above `group_ids` fields (also known as `FilterValue` properties)  to specify how customers are selected based on their group membership.   With the `any` option, the search returns customers in Groups `A` or `B` or ... of the list. With the `all` option, the search returns customers in Groups `1` and `2` and ... of the list With the `none` option, the search returns customers not in Groups `i` and not in `ii` and not in ... of the list.  If any of the search conditions is not met, including when an invalid or non-existent group ID is provided, the result is an empty list.   You can use the `group_ids` search filter with other available filters.   You cannot use the `group_ids` filter to select customers based on segment membership.
+ * @member {module:model/FilterValue} group_ids
+ */
+exports.prototype['group_ids'] = undefined;
 
 
 

@@ -17,7 +17,7 @@ var HeaderUtils = require('./lib/HeaderUtils');
 
   /**
  * @module ApiClient
- * @version 3.20200325.0
+ * @version 3.20200422.0
  */
 
 /**
@@ -49,7 +49,7 @@ var exports = function() {
    * @default {}
    */
   this.defaultHeaders = {
-    'User-Agent': 'Square-Connect-Javascript/3.20200325.0'
+    'User-Agent': 'Square-Connect-Javascript/3.20200422.0'
   };
   /**
    * The default HTTP timeout for all API calls.
