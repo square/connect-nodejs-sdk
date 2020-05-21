@@ -9,7 +9,7 @@
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ==================
 
-## NOTICE: Square Connect Node.js SDK deprecated in Q3, 2020
+## NOTICE: Square Connect Node.js SDK will be replaced in Q3, 2020
 This Square Connect SDK will enter a security maintenance phase in Q3 2020 and will be RETIRED (EOL) in Q1 2021. In the security
 maintenance phase, this SDK will continue to receive support and security patches but will no longer receive bug fixes or product
 updates. Once it is retired, support and security patches will no longer be available.  A new SDK, more bespoke to the language, will be available once this SDK enters its security maintenance phase.
