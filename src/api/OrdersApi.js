@@ -14,6 +14,8 @@
 var ApiClient = require('../ApiClient');
 var BatchRetrieveOrdersRequest = require('../model/BatchRetrieveOrdersRequest');
 var BatchRetrieveOrdersResponse = require('../model/BatchRetrieveOrdersResponse');
+var CalculateOrderRequest = require('../model/CalculateOrderRequest');
+var CalculateOrderResponse = require('../model/CalculateOrderResponse');
 var CreateOrderRequest = require('../model/CreateOrderRequest');
 var CreateOrderResponse = require('../model/CreateOrderResponse');
 var PayOrderRequest = require('../model/PayOrderRequest');
@@ -68,7 +70,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -94,6 +96,59 @@ module.exports = function(apiClient) {
    */
   this.batchRetrieveOrders = function(locationId, body) {
     return this.batchRetrieveOrdersWithHttpInfo(locationId, body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * CalculateOrder
+   * Note: This endpoint is in beta.
+   * Calculates an [Order](#type-order).
+   * @param {module:model/CalculateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CalculateOrderResponse} and HTTP response
+   */
+  this.calculateOrderWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling calculateOrder");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-05-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = CalculateOrderResponse;
+
+    return this.apiClient.callApi(
+      '/v2/orders/calculate', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * CalculateOrder
+   * Calculates an [Order](#type-order).
+   * @param {module:model/CalculateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CalculateOrderResponse}
+   */
+  this.calculateOrder = function(body) {
+    return this.calculateOrderWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
@@ -128,7 +183,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -189,7 +244,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -242,7 +297,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -309,7 +364,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };

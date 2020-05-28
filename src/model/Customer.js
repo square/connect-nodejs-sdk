@@ -30,16 +30,13 @@ var CustomerPreferences = require('./CustomerPreferences');
  * Represents a Square customer profile, which can have one or more cards on file associated with it.
  * @alias module:model/Customer
  * @class
- * @param id {String} A unique Square-assigned ID for the customer profile.
- * @param createdAt {String} The timestamp when the customer profile was created, in RFC 3339 format.
- * @param updatedAt {String} The timestamp when the customer profile was last updated, in RFC 3339 format.
  */
-var exports = function(id, createdAt, updatedAt) {
+var exports = function() {
   var _this = this;
 
-  _this['id'] = id;
-  _this['created_at'] = createdAt;
-  _this['updated_at'] = updatedAt;
+
+
+
 
 
 
@@ -206,7 +203,7 @@ exports.prototype['note'] = undefined;
  */
 exports.prototype['preferences'] = undefined;
 /**
- * The customer groups and segments the customer belongs to. This deprecated field is replaced with dedicated `group_ids` for customer groups and `segment_ids` for customer segments.
+ * The customer groups and segments the customer belongs to. This deprecated field has been replaced with  the dedicated `group_ids` for customer groups and the dedicated `segment_ids` field for customer segments. You can retrieve information about a given customer group and segment respectively using the Customer Groups API and Customer Segments API.
  * @member {Array.<module:model/CustomerGroupInfo>} groups
  */
 exports.prototype['groups'] = undefined;

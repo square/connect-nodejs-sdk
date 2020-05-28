@@ -229,7 +229,7 @@ exports.prototype['delay_action'] = undefined;
  */
 exports.prototype['delayed_until'] = undefined;
 /**
- * The source type for this payment  Current values include: `CARD`
+ * The source type for this payment  Current values include: `CARD`.
  * @member {String} source_type
  */
 exports.prototype['source_type'] = undefined;
@@ -254,7 +254,7 @@ exports.prototype['order_id'] = undefined;
  */
 exports.prototype['reference_id'] = undefined;
 /**
- * An optional customer_id to be entered by the developer when creating a payment.
+ * The `Customer` ID of the customer associated with the payment.
  * @member {String} customer_id
  */
 exports.prototype['customer_id'] = undefined;
@@ -289,7 +289,7 @@ exports.prototype['shipping_address'] = undefined;
  */
 exports.prototype['note'] = undefined;
 /**
- * Additional payment information that gets added on the customer's card statement as part of the statement description.  Note that the statement_description_identifier may get truncated on the statement description to fit the required information including the Square identifier (SQ *) and name of the merchant taking the payment.
+ * Additional payment information that gets added on the customer's card statement as part of the statement description.  Note that the `statement_description_identifier` may get truncated on the statement description to fit the required information including the Square identifier (SQ *) and name of the merchant taking the payment.
  * @member {String} statement_description_identifier
  */
 exports.prototype['statement_description_identifier'] = undefined;

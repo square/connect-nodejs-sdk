@@ -5,6 +5,7 @@ All URIs are relative to *https://connect.squareup.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**batchRetrieveOrders**](OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
+[**calculateOrder**](OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
 [**createOrder**](OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
 [**payOrder**](OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
 [**searchOrders**](OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
@@ -52,6 +53,55 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BatchRetrieveOrdersResponse**](BatchRetrieveOrdersResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="calculateOrder"></a>
+# **calculateOrder**
+**Note: This endpoint is in beta.**
+> CalculateOrderResponse calculateOrder(body)
+
+CalculateOrder
+
+Calculates an [Order](#type-order).
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.OrdersApi();
+
+var body = new SquareConnect.CalculateOrderRequest(); // CalculateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+
+apiInstance.calculateOrder(body).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**CalculateOrderRequest**](CalculateOrderRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
+
+### Return type
+
+[**CalculateOrderResponse**](CalculateOrderResponse.md)
 
 ### Authorization
 

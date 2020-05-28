@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var CatalogCustomAttributeDefinitionNumberConfig = require('./CatalogCustomAttributeDefinitionNumberConfig');
 var CatalogCustomAttributeDefinitionSelectionConfig = require('./CatalogCustomAttributeDefinitionSelectionConfig');
 var CatalogCustomAttributeDefinitionStringConfig = require('./CatalogCustomAttributeDefinitionStringConfig');
 var SourceApplication = require('./SourceApplication');
@@ -32,14 +33,16 @@ var SourceApplication = require('./SourceApplication');
  * @class
  * @param type {String} The type of this custom attribute. Cannot be modified after creation. Required. See [CatalogCustomAttributeDefinitionType](#type-catalogcustomattributedefinitiontype) for possible values
  * @param name {String}  The name of this definition for API and seller-facing UI purposes. The name must be unique within the (merchant, application_id) pair. Required. May not be empty and may not exceed 255 characters. Can be modified after creation.
+ * @param allowedObjectTypes {Array.<String>} The set of Catalog Object Types that this Custom Attribute may be applied to. Currently, only `ITEM` and `ITEM_VARIATION` are allowed. At least one type must be included. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  */
-var exports = function(type, name) {
+var exports = function(type, name, allowedObjectTypes) {
   var _this = this;
 
   _this['type'] = type;
   _this['name'] = name;
 
 
+  _this['allowed_object_types'] = allowedObjectTypes;
 
 
 
@@ -83,6 +86,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('string_config')) {
       obj['string_config'] = CatalogCustomAttributeDefinitionStringConfig.constructFromObject(data['string_config']);
+    }
+      if (data.hasOwnProperty('number_config')) {
+      obj['number_config'] = CatalogCustomAttributeDefinitionNumberConfig.constructFromObject(data['number_config']);
     }
       if (data.hasOwnProperty('selection_config')) {
       obj['selection_config'] = CatalogCustomAttributeDefinitionSelectionConfig.constructFromObject(data['selection_config']);
@@ -137,6 +143,11 @@ exports.prototype['app_visibility'] = undefined;
  * @member {module:model/CatalogCustomAttributeDefinitionStringConfig} string_config
  */
 exports.prototype['string_config'] = undefined;
+/**
+ * 
+ * @member {module:model/CatalogCustomAttributeDefinitionNumberConfig} number_config
+ */
+exports.prototype['number_config'] = undefined;
 /**
  * Populated when `type` is set to `SELECTION`, unset otherwise.
  * @member {module:model/CatalogCustomAttributeDefinitionSelectionConfig} selection_config

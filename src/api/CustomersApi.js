@@ -74,7 +74,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -127,7 +127,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -186,7 +186,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -240,7 +240,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -300,7 +300,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -334,7 +334,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListCustomers
-   * Lists a business&#39;s customers.
+   * Lists customer profiles associated with a Square account.  Under normal operating conditions, newly created or updated customer profiles become available  for the listing operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
    * @param {String} opts.sortField Indicates how Customers should be sorted.  Default: &#x60;DEFAULT&#x60;.
@@ -355,7 +355,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -374,7 +374,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListCustomers
-   * Lists a business&#39;s customers.
+   * Lists customer profiles associated with a Square account.  Under normal operating conditions, newly created or updated customer profiles become available  for the listing operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
    * @param {String} opts.sortField Indicates how Customers should be sorted.  Default: &#x60;DEFAULT&#x60;.
@@ -419,7 +419,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -473,7 +473,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -506,7 +506,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCustomers
-   * Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
+   * Searches the customer profiles associated with a Square account using  one or more supported query filters.   Calling &#x60;SearchCustomers&#x60; without any explicit query filter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.  Under normal operating conditions, newly created or updated customer profiles become available  for the search operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
    * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCustomersResponse} and HTTP response
    */
@@ -525,7 +525,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -544,7 +544,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCustomers
-   * Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
+   * Searches the customer profiles associated with a Square account using  one or more supported query filters.   Calling &#x60;SearchCustomers&#x60; without any explicit query filter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.  Under normal operating conditions, newly created or updated customer profiles become available  for the search operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
    * @param {module:model/SearchCustomersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCustomersResponse}
    */
@@ -584,7 +584,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };

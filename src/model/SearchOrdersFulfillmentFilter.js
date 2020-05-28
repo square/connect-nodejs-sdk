@@ -26,12 +26,11 @@ var ApiClient = require('../ApiClient');
  * Filter based on [Order Fulfillment](#type-orderfulfillment) information.
  * @alias module:model/SearchOrdersFulfillmentFilter
  * @class
- * @param fulfillmentTypes {Array.<String>} List of `fulfillment types` to filter for. Will return orders if any of its fulfillments match any of the fulfillment types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
  */
-var exports = function(fulfillmentTypes) {
+var exports = function() {
   var _this = this;
 
-  _this['fulfillment_types'] = fulfillmentTypes;
+
 
 };
 

@@ -91,6 +91,11 @@ var exports = {
    */
   "ITEM_OPTION_VAL": "ITEM_OPTION_VAL",
   /**
+   * value: "CUSTOM_ATTRIBUTE_DEFINITION"
+   * @const
+   */
+  "CUSTOM_ATTRIBUTE_DEFINITION": "CUSTOM_ATTRIBUTE_DEFINITION",
+  /**
    * value: "QUICK_AMOUNTS_SETTINGS"
    * @const
    */
