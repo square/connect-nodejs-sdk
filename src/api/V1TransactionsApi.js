@@ -65,7 +65,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -121,7 +121,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -182,7 +182,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -253,7 +253,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -325,7 +325,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -398,7 +398,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -467,7 +467,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -528,7 +528,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -589,7 +589,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -650,7 +650,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };
@@ -717,7 +717,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-04-22';
+    headerParams['Square-Version'] = '2020-05-28';
 
     var formParams = {
     };

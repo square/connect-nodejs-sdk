@@ -40,6 +40,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -79,6 +80,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('scope')) {
       obj['scope'] = ApiClient.convertToType(data['scope'], 'String');
+    }
+      if (data.hasOwnProperty('reward_ids')) {
+      obj['reward_ids'] = ApiClient.convertToType(data['reward_ids'], ['String']);
     }
     }
   return obj;
@@ -129,6 +133,11 @@ exports.prototype['metadata'] = undefined;
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;
+/**
+ * The reward identifiers corresponding to this discount. The application and specification of discounts that have `reward_ids` are completely controlled by the backing criteria corresponding to the reward tiers of the rewards that are added to the order through the Loyalty API. To manually unapply discounts that are the result of added rewards, the rewards must be removed from the order through the Loyalty API.
+ * @member {Array.<String>} reward_ids
+ */
+exports.prototype['reward_ids'] = undefined;
 
 
 

@@ -25,7 +25,7 @@ var CustomerSort = require('./CustomerSort');
 
 /**
  * Constructs a new <code>CustomerQuery</code>.
- * Represents a query (filtering and sorting criteria) used to search for customer profiles.
+ * Represents a query (including filtering criteria, sorting criteria, or both) used to search for customer profiles.
  * @alias module:model/CustomerQuery
  * @class
  */
@@ -58,12 +58,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A list of filter criteria.
+ * A list of filtering criteria.
  * @member {module:model/CustomerFilter} filter
  */
 exports.prototype['filter'] = undefined;
 /**
- * Sort criteria for query results. The default sort behavior is to order customers alphabetically by `given_name` and `last_name`.
+ * Sorting criteria for query results. The default behavior is to sort  customers alphabetically by `given_name` and `family_name`.
  * @member {module:model/CustomerSort} sort
  */
 exports.prototype['sort'] = undefined;

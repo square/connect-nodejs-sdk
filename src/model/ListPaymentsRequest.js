@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>ListPaymentsRequest</code>.
- * Retrieves a list of refunds taken by the account making the request.  Max results per page: 100
+ * Retrieves a list of payments taken by the account making the request.  Max results per page: 100
  * @alias module:model/ListPaymentsRequest
  * @class
  */

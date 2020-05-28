@@ -8,8 +8,7 @@
 [![npm version](https://badge.fury.io/js/square-connect.svg)](https://badge.fury.io/js/square-connect)
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ==================
-
-## NOTICE: Square Connect Node.js SDK will be replaced in Q3, 2020
+## NOTICE: Square Connect Node.js SDK deprecated
 This Square Connect SDK will enter a security maintenance phase in Q3 2020 and will be RETIRED (EOL) in Q1 2021. In the security
 maintenance phase, this SDK will continue to receive support and security patches but will no longer receive bug fixes or product
 updates. Once it is retired, support and security patches will no longer be available.  A new SDK, more bespoke to the language, will be available once this SDK enters its security maintenance phase.
@@ -151,6 +150,19 @@ Class | Method | HTTP request | Description
 *SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
 *SquareConnect.LocationsApi* | [**retrieveLocation**](docs/LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
 *SquareConnect.LocationsApi* | [**updateLocation**](docs/LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
+*SquareConnect.LoyaltyApi* | [**accumulateLoyaltyPoints**](docs/LoyaltyApi.md#accumulateLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/accumulate | AccumulateLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**adjustLoyaltyPoints**](docs/LoyaltyApi.md#adjustLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/adjust | AdjustLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**calculateLoyaltyPoints**](docs/LoyaltyApi.md#calculateLoyaltyPoints) | **POST** /v2/loyalty/programs/{program_id}/calculate | CalculateLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**createLoyaltyAccount**](docs/LoyaltyApi.md#createLoyaltyAccount) | **POST** /v2/loyalty/accounts | CreateLoyaltyAccount
+*SquareConnect.LoyaltyApi* | [**createLoyaltyReward**](docs/LoyaltyApi.md#createLoyaltyReward) | **POST** /v2/loyalty/rewards | CreateLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**deleteLoyaltyReward**](docs/LoyaltyApi.md#deleteLoyaltyReward) | **DELETE** /v2/loyalty/rewards/{reward_id} | DeleteLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**listLoyaltyPrograms**](docs/LoyaltyApi.md#listLoyaltyPrograms) | **GET** /v2/loyalty/programs | ListLoyaltyPrograms
+*SquareConnect.LoyaltyApi* | [**redeemLoyaltyReward**](docs/LoyaltyApi.md#redeemLoyaltyReward) | **POST** /v2/loyalty/rewards/{reward_id}/redeem | RedeemLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyAccount**](docs/LoyaltyApi.md#retrieveLoyaltyAccount) | **GET** /v2/loyalty/accounts/{account_id} | RetrieveLoyaltyAccount
+*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyReward**](docs/LoyaltyApi.md#retrieveLoyaltyReward) | **GET** /v2/loyalty/rewards/{reward_id} | RetrieveLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyAccounts**](docs/LoyaltyApi.md#searchLoyaltyAccounts) | **POST** /v2/loyalty/accounts/search | SearchLoyaltyAccounts
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyEvents**](docs/LoyaltyApi.md#searchLoyaltyEvents) | **POST** /v2/loyalty/events/search | SearchLoyaltyEvents
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyRewards**](docs/LoyaltyApi.md#searchLoyaltyRewards) | **POST** /v2/loyalty/rewards/search | SearchLoyaltyRewards
 *SquareConnect.MerchantsApi* | [**listMerchants**](docs/MerchantsApi.md#listMerchants) | **GET** /v2/merchants | ListMerchants
 *SquareConnect.MerchantsApi* | [**retrieveMerchant**](docs/MerchantsApi.md#retrieveMerchant) | **GET** /v2/merchants/{merchant_id} | RetrieveMerchant
 *SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
@@ -158,6 +170,7 @@ Class | Method | HTTP request | Description
 *SquareConnect.OAuthApi* | [**renewToken**](docs/OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
 *SquareConnect.OAuthApi* | [**revokeToken**](docs/OAuthApi.md#revokeToken) | **POST** /oauth2/revoke | RevokeToken
 *SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
+*SquareConnect.OrdersApi* | [**calculateOrder**](docs/OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
 *SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
 *SquareConnect.OrdersApi* | [**payOrder**](docs/OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
 *SquareConnect.OrdersApi* | [**searchOrders**](docs/OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
@@ -259,12 +272,16 @@ Class | Method | HTTP request | Description
 
  - [SquareConnect.AcceptDisputeRequest](docs/AcceptDisputeRequest.md)
  - [SquareConnect.AcceptDisputeResponse](docs/AcceptDisputeResponse.md)
+ - [SquareConnect.AccumulateLoyaltyPointsRequest](docs/AccumulateLoyaltyPointsRequest.md)
+ - [SquareConnect.AccumulateLoyaltyPointsResponse](docs/AccumulateLoyaltyPointsResponse.md)
  - [SquareConnect.AddGroupToCustomerRequest](docs/AddGroupToCustomerRequest.md)
  - [SquareConnect.AddGroupToCustomerResponse](docs/AddGroupToCustomerResponse.md)
  - [SquareConnect.AdditionalRecipient](docs/AdditionalRecipient.md)
  - [SquareConnect.AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
  - [SquareConnect.AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [SquareConnect.Address](docs/Address.md)
+ - [SquareConnect.AdjustLoyaltyPointsRequest](docs/AdjustLoyaltyPointsRequest.md)
+ - [SquareConnect.AdjustLoyaltyPointsResponse](docs/AdjustLoyaltyPointsResponse.md)
  - [SquareConnect.BalancePaymentDetails](docs/BalancePaymentDetails.md)
  - [SquareConnect.BankAccount](docs/BankAccount.md)
  - [SquareConnect.BankAccountStatus](docs/BankAccountStatus.md)
@@ -286,6 +303,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.BreakType](docs/BreakType.md)
  - [SquareConnect.BusinessHours](docs/BusinessHours.md)
  - [SquareConnect.BusinessHoursPeriod](docs/BusinessHoursPeriod.md)
+ - [SquareConnect.CalculateLoyaltyPointsRequest](docs/CalculateLoyaltyPointsRequest.md)
+ - [SquareConnect.CalculateLoyaltyPointsResponse](docs/CalculateLoyaltyPointsResponse.md)
+ - [SquareConnect.CalculateOrderRequest](docs/CalculateOrderRequest.md)
+ - [SquareConnect.CalculateOrderResponse](docs/CalculateOrderResponse.md)
  - [SquareConnect.CancelPaymentByIdempotencyKeyRequest](docs/CancelPaymentByIdempotencyKeyRequest.md)
  - [SquareConnect.CancelPaymentByIdempotencyKeyResponse](docs/CancelPaymentByIdempotencyKeyResponse.md)
  - [SquareConnect.CancelPaymentRequest](docs/CancelPaymentRequest.md)
@@ -308,6 +329,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogCategory](docs/CatalogCategory.md)
  - [SquareConnect.CatalogCustomAttributeDefinition](docs/CatalogCustomAttributeDefinition.md)
  - [SquareConnect.CatalogCustomAttributeDefinitionAppVisibility](docs/CatalogCustomAttributeDefinitionAppVisibility.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionNumberConfig](docs/CatalogCustomAttributeDefinitionNumberConfig.md)
  - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig](docs/CatalogCustomAttributeDefinitionSelectionConfig.md)
  - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection](docs/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection.md)
  - [SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility](docs/CatalogCustomAttributeDefinitionSellerVisibility.md)
@@ -392,6 +414,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CreateDisputeEvidenceTextResponse](docs/CreateDisputeEvidenceTextResponse.md)
  - [SquareConnect.CreateLocationRequest](docs/CreateLocationRequest.md)
  - [SquareConnect.CreateLocationResponse](docs/CreateLocationResponse.md)
+ - [SquareConnect.CreateLoyaltyAccountRequest](docs/CreateLoyaltyAccountRequest.md)
+ - [SquareConnect.CreateLoyaltyAccountResponse](docs/CreateLoyaltyAccountResponse.md)
+ - [SquareConnect.CreateLoyaltyRewardRequest](docs/CreateLoyaltyRewardRequest.md)
+ - [SquareConnect.CreateLoyaltyRewardResponse](docs/CreateLoyaltyRewardResponse.md)
  - [SquareConnect.CreateMobileAuthorizationCodeRequest](docs/CreateMobileAuthorizationCodeRequest.md)
  - [SquareConnect.CreateMobileAuthorizationCodeResponse](docs/CreateMobileAuthorizationCodeResponse.md)
  - [SquareConnect.CreateOrderRequest](docs/CreateOrderRequest.md)
@@ -417,6 +443,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CustomerSegment](docs/CustomerSegment.md)
  - [SquareConnect.CustomerSort](docs/CustomerSort.md)
  - [SquareConnect.CustomerSortField](docs/CustomerSortField.md)
+ - [SquareConnect.CustomerTextFilter](docs/CustomerTextFilter.md)
  - [SquareConnect.DateRange](docs/DateRange.md)
  - [SquareConnect.DayOfWeek](docs/DayOfWeek.md)
  - [SquareConnect.DeleteBreakTypeRequest](docs/DeleteBreakTypeRequest.md)
@@ -429,6 +456,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.DeleteCustomerGroupResponse](docs/DeleteCustomerGroupResponse.md)
  - [SquareConnect.DeleteCustomerRequest](docs/DeleteCustomerRequest.md)
  - [SquareConnect.DeleteCustomerResponse](docs/DeleteCustomerResponse.md)
+ - [SquareConnect.DeleteLoyaltyRewardRequest](docs/DeleteLoyaltyRewardRequest.md)
+ - [SquareConnect.DeleteLoyaltyRewardResponse](docs/DeleteLoyaltyRewardResponse.md)
  - [SquareConnect.DeleteShiftRequest](docs/DeleteShiftRequest.md)
  - [SquareConnect.DeleteShiftResponse](docs/DeleteShiftResponse.md)
  - [SquareConnect.Device](docs/Device.md)
@@ -511,6 +540,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ListEmployeesResponse](docs/ListEmployeesResponse.md)
  - [SquareConnect.ListLocationsRequest](docs/ListLocationsRequest.md)
  - [SquareConnect.ListLocationsResponse](docs/ListLocationsResponse.md)
+ - [SquareConnect.ListLoyaltyProgramsRequest](docs/ListLoyaltyProgramsRequest.md)
+ - [SquareConnect.ListLoyaltyProgramsResponse](docs/ListLoyaltyProgramsResponse.md)
  - [SquareConnect.ListMerchantsRequest](docs/ListMerchantsRequest.md)
  - [SquareConnect.ListMerchantsResponse](docs/ListMerchantsResponse.md)
  - [SquareConnect.ListPaymentRefundsRequest](docs/ListPaymentRefundsRequest.md)
@@ -527,6 +558,38 @@ Class | Method | HTTP request | Description
  - [SquareConnect.LocationCapability](docs/LocationCapability.md)
  - [SquareConnect.LocationStatus](docs/LocationStatus.md)
  - [SquareConnect.LocationType](docs/LocationType.md)
+ - [SquareConnect.LoyaltyAccount](docs/LoyaltyAccount.md)
+ - [SquareConnect.LoyaltyAccountMapping](docs/LoyaltyAccountMapping.md)
+ - [SquareConnect.LoyaltyAccountMappingType](docs/LoyaltyAccountMappingType.md)
+ - [SquareConnect.LoyaltyEvent](docs/LoyaltyEvent.md)
+ - [SquareConnect.LoyaltyEventAccumulatePoints](docs/LoyaltyEventAccumulatePoints.md)
+ - [SquareConnect.LoyaltyEventAdjustPoints](docs/LoyaltyEventAdjustPoints.md)
+ - [SquareConnect.LoyaltyEventCreateReward](docs/LoyaltyEventCreateReward.md)
+ - [SquareConnect.LoyaltyEventDateTimeFilter](docs/LoyaltyEventDateTimeFilter.md)
+ - [SquareConnect.LoyaltyEventDeleteReward](docs/LoyaltyEventDeleteReward.md)
+ - [SquareConnect.LoyaltyEventExpirePoints](docs/LoyaltyEventExpirePoints.md)
+ - [SquareConnect.LoyaltyEventFilter](docs/LoyaltyEventFilter.md)
+ - [SquareConnect.LoyaltyEventLocationFilter](docs/LoyaltyEventLocationFilter.md)
+ - [SquareConnect.LoyaltyEventLoyaltyAccountFilter](docs/LoyaltyEventLoyaltyAccountFilter.md)
+ - [SquareConnect.LoyaltyEventOrderFilter](docs/LoyaltyEventOrderFilter.md)
+ - [SquareConnect.LoyaltyEventOther](docs/LoyaltyEventOther.md)
+ - [SquareConnect.LoyaltyEventQuery](docs/LoyaltyEventQuery.md)
+ - [SquareConnect.LoyaltyEventRedeemReward](docs/LoyaltyEventRedeemReward.md)
+ - [SquareConnect.LoyaltyEventSource](docs/LoyaltyEventSource.md)
+ - [SquareConnect.LoyaltyEventType](docs/LoyaltyEventType.md)
+ - [SquareConnect.LoyaltyEventTypeFilter](docs/LoyaltyEventTypeFilter.md)
+ - [SquareConnect.LoyaltyProgram](docs/LoyaltyProgram.md)
+ - [SquareConnect.LoyaltyProgramAccrualRule](docs/LoyaltyProgramAccrualRule.md)
+ - [SquareConnect.LoyaltyProgramAccrualRuleType](docs/LoyaltyProgramAccrualRuleType.md)
+ - [SquareConnect.LoyaltyProgramExpirationPolicy](docs/LoyaltyProgramExpirationPolicy.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinition](docs/LoyaltyProgramRewardDefinition.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinitionScope](docs/LoyaltyProgramRewardDefinitionScope.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinitionType](docs/LoyaltyProgramRewardDefinitionType.md)
+ - [SquareConnect.LoyaltyProgramRewardTier](docs/LoyaltyProgramRewardTier.md)
+ - [SquareConnect.LoyaltyProgramStatus](docs/LoyaltyProgramStatus.md)
+ - [SquareConnect.LoyaltyProgramTerminology](docs/LoyaltyProgramTerminology.md)
+ - [SquareConnect.LoyaltyReward](docs/LoyaltyReward.md)
+ - [SquareConnect.LoyaltyRewardStatus](docs/LoyaltyRewardStatus.md)
  - [SquareConnect.MeasurementUnit](docs/MeasurementUnit.md)
  - [SquareConnect.MeasurementUnitArea](docs/MeasurementUnitArea.md)
  - [SquareConnect.MeasurementUnitCustom](docs/MeasurementUnitCustom.md)
@@ -576,6 +639,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.OrderReturnLineItemModifier](docs/OrderReturnLineItemModifier.md)
  - [SquareConnect.OrderReturnServiceCharge](docs/OrderReturnServiceCharge.md)
  - [SquareConnect.OrderReturnTax](docs/OrderReturnTax.md)
+ - [SquareConnect.OrderReward](docs/OrderReward.md)
  - [SquareConnect.OrderRoundingAdjustment](docs/OrderRoundingAdjustment.md)
  - [SquareConnect.OrderServiceCharge](docs/OrderServiceCharge.md)
  - [SquareConnect.OrderServiceChargeCalculationPhase](docs/OrderServiceChargeCalculationPhase.md)
@@ -591,6 +655,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ProcessingFee](docs/ProcessingFee.md)
  - [SquareConnect.Product](docs/Product.md)
  - [SquareConnect.ProductType](docs/ProductType.md)
+ - [SquareConnect.RedeemLoyaltyRewardRequest](docs/RedeemLoyaltyRewardRequest.md)
+ - [SquareConnect.RedeemLoyaltyRewardResponse](docs/RedeemLoyaltyRewardResponse.md)
  - [SquareConnect.Refund](docs/Refund.md)
  - [SquareConnect.RefundPaymentRequest](docs/RefundPaymentRequest.md)
  - [SquareConnect.RefundPaymentResponse](docs/RefundPaymentResponse.md)
@@ -630,6 +696,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RetrieveInventoryPhysicalCountResponse](docs/RetrieveInventoryPhysicalCountResponse.md)
  - [SquareConnect.RetrieveLocationRequest](docs/RetrieveLocationRequest.md)
  - [SquareConnect.RetrieveLocationResponse](docs/RetrieveLocationResponse.md)
+ - [SquareConnect.RetrieveLoyaltyAccountRequest](docs/RetrieveLoyaltyAccountRequest.md)
+ - [SquareConnect.RetrieveLoyaltyAccountResponse](docs/RetrieveLoyaltyAccountResponse.md)
+ - [SquareConnect.RetrieveLoyaltyRewardRequest](docs/RetrieveLoyaltyRewardRequest.md)
+ - [SquareConnect.RetrieveLoyaltyRewardResponse](docs/RetrieveLoyaltyRewardResponse.md)
  - [SquareConnect.RetrieveMerchantRequest](docs/RetrieveMerchantRequest.md)
  - [SquareConnect.RetrieveMerchantResponse](docs/RetrieveMerchantResponse.md)
  - [SquareConnect.RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
@@ -640,6 +710,14 @@ Class | Method | HTTP request | Description
  - [SquareConnect.SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
  - [SquareConnect.SearchCustomersRequest](docs/SearchCustomersRequest.md)
  - [SquareConnect.SearchCustomersResponse](docs/SearchCustomersResponse.md)
+ - [SquareConnect.SearchLoyaltyAccountsRequest](docs/SearchLoyaltyAccountsRequest.md)
+ - [SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery](docs/SearchLoyaltyAccountsRequestLoyaltyAccountQuery.md)
+ - [SquareConnect.SearchLoyaltyAccountsResponse](docs/SearchLoyaltyAccountsResponse.md)
+ - [SquareConnect.SearchLoyaltyEventsRequest](docs/SearchLoyaltyEventsRequest.md)
+ - [SquareConnect.SearchLoyaltyEventsResponse](docs/SearchLoyaltyEventsResponse.md)
+ - [SquareConnect.SearchLoyaltyRewardsRequest](docs/SearchLoyaltyRewardsRequest.md)
+ - [SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery](docs/SearchLoyaltyRewardsRequestLoyaltyRewardQuery.md)
+ - [SquareConnect.SearchLoyaltyRewardsResponse](docs/SearchLoyaltyRewardsResponse.md)
  - [SquareConnect.SearchOrdersCustomerFilter](docs/SearchOrdersCustomerFilter.md)
  - [SquareConnect.SearchOrdersDateTimeFilter](docs/SearchOrdersDateTimeFilter.md)
  - [SquareConnect.SearchOrdersFilter](docs/SearchOrdersFilter.md)
@@ -885,6 +963,7 @@ Class | Method | HTTP request | Description
 - **Authorization URL**: https://connect.squareup.com/oauth2/authorize
 - **Scopes**: 
   - BANK_ACCOUNTS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to bank account information associated with the targeted Square account. For example, to call the Connect v1 ListBankAccounts endpoint.
+  - CASH_DRAWER_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to cash drawer shift information. For example, to call the ListCashDrawerShifts endpoint.
   - CUSTOMERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to customer information. For example, to call the ListCustomers endpoint.
   - CUSTOMERS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to customer information. For example, to create and update customer profiles.
   - DEVICE_CREDENTIAL_MANAGEMENT: __HTTP Method__: &#x60;POST&#x60;, &#x60;GET&#x60;  Grants read/write access to device credentials information. For example, to call the CreateDeviceCode endpoint.
@@ -894,6 +973,8 @@ Class | Method | HTTP request | Description
   - INVENTORY_WRITE: __HTTP Method__:  &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to inventory information. For example, to call the BatchChangeInventory endpoint.
   - ITEMS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
   - ITEMS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to product catalog information. For example, to modify or add to a product catalog.
+  - LOYALTY_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to loyalty information. For example, to call the ListLoyaltyPrograms endpoint.
+  - LOYALTY_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to loyalty information. For example, to call the CreateLoyaltyAccount endpoint.
   - MERCHANT_PROFILE_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
   - ORDERS_READ: __HTTP Method__: &#x60;GET&#x60;  Grants read access to order information. For example, to call the BatchRetrieveOrders endpoint.
   - ORDERS_WRITE: __HTTP Method__: &#x60;POST&#x60;, &#x60;PUT&#x60;, &#x60;DELETE&#x60;  Grants write access to order information. For example, to call the CreateCheckout endpoint.

@@ -15,12 +15,16 @@
 var ApiClient = require('./ApiClient');
 var AcceptDisputeRequest = require('./model/AcceptDisputeRequest');
 var AcceptDisputeResponse = require('./model/AcceptDisputeResponse');
+var AccumulateLoyaltyPointsRequest = require('./model/AccumulateLoyaltyPointsRequest');
+var AccumulateLoyaltyPointsResponse = require('./model/AccumulateLoyaltyPointsResponse');
 var AddGroupToCustomerRequest = require('./model/AddGroupToCustomerRequest');
 var AddGroupToCustomerResponse = require('./model/AddGroupToCustomerResponse');
 var AdditionalRecipient = require('./model/AdditionalRecipient');
 var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
 var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
 var Address = require('./model/Address');
+var AdjustLoyaltyPointsRequest = require('./model/AdjustLoyaltyPointsRequest');
+var AdjustLoyaltyPointsResponse = require('./model/AdjustLoyaltyPointsResponse');
 var BalancePaymentDetails = require('./model/BalancePaymentDetails');
 var BankAccount = require('./model/BankAccount');
 var BankAccountStatus = require('./model/BankAccountStatus');
@@ -42,6 +46,10 @@ var BatchUpsertCatalogObjectsResponse = require('./model/BatchUpsertCatalogObjec
 var BreakType = require('./model/BreakType');
 var BusinessHours = require('./model/BusinessHours');
 var BusinessHoursPeriod = require('./model/BusinessHoursPeriod');
+var CalculateLoyaltyPointsRequest = require('./model/CalculateLoyaltyPointsRequest');
+var CalculateLoyaltyPointsResponse = require('./model/CalculateLoyaltyPointsResponse');
+var CalculateOrderRequest = require('./model/CalculateOrderRequest');
+var CalculateOrderResponse = require('./model/CalculateOrderResponse');
 var CancelPaymentByIdempotencyKeyRequest = require('./model/CancelPaymentByIdempotencyKeyRequest');
 var CancelPaymentByIdempotencyKeyResponse = require('./model/CancelPaymentByIdempotencyKeyResponse');
 var CancelPaymentRequest = require('./model/CancelPaymentRequest');
@@ -64,6 +72,7 @@ var CashDrawerShiftSummary = require('./model/CashDrawerShiftSummary');
 var CatalogCategory = require('./model/CatalogCategory');
 var CatalogCustomAttributeDefinition = require('./model/CatalogCustomAttributeDefinition');
 var CatalogCustomAttributeDefinitionAppVisibility = require('./model/CatalogCustomAttributeDefinitionAppVisibility');
+var CatalogCustomAttributeDefinitionNumberConfig = require('./model/CatalogCustomAttributeDefinitionNumberConfig');
 var CatalogCustomAttributeDefinitionSelectionConfig = require('./model/CatalogCustomAttributeDefinitionSelectionConfig');
 var CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection = require('./model/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection');
 var CatalogCustomAttributeDefinitionSellerVisibility = require('./model/CatalogCustomAttributeDefinitionSellerVisibility');
@@ -148,6 +157,10 @@ var CreateDisputeEvidenceTextRequest = require('./model/CreateDisputeEvidenceTex
 var CreateDisputeEvidenceTextResponse = require('./model/CreateDisputeEvidenceTextResponse');
 var CreateLocationRequest = require('./model/CreateLocationRequest');
 var CreateLocationResponse = require('./model/CreateLocationResponse');
+var CreateLoyaltyAccountRequest = require('./model/CreateLoyaltyAccountRequest');
+var CreateLoyaltyAccountResponse = require('./model/CreateLoyaltyAccountResponse');
+var CreateLoyaltyRewardRequest = require('./model/CreateLoyaltyRewardRequest');
+var CreateLoyaltyRewardResponse = require('./model/CreateLoyaltyRewardResponse');
 var CreateMobileAuthorizationCodeRequest = require('./model/CreateMobileAuthorizationCodeRequest');
 var CreateMobileAuthorizationCodeResponse = require('./model/CreateMobileAuthorizationCodeResponse');
 var CreateOrderRequest = require('./model/CreateOrderRequest');
@@ -173,6 +186,7 @@ var CustomerQuery = require('./model/CustomerQuery');
 var CustomerSegment = require('./model/CustomerSegment');
 var CustomerSort = require('./model/CustomerSort');
 var CustomerSortField = require('./model/CustomerSortField');
+var CustomerTextFilter = require('./model/CustomerTextFilter');
 var DateRange = require('./model/DateRange');
 var DayOfWeek = require('./model/DayOfWeek');
 var DeleteBreakTypeRequest = require('./model/DeleteBreakTypeRequest');
@@ -185,6 +199,8 @@ var DeleteCustomerGroupRequest = require('./model/DeleteCustomerGroupRequest');
 var DeleteCustomerGroupResponse = require('./model/DeleteCustomerGroupResponse');
 var DeleteCustomerRequest = require('./model/DeleteCustomerRequest');
 var DeleteCustomerResponse = require('./model/DeleteCustomerResponse');
+var DeleteLoyaltyRewardRequest = require('./model/DeleteLoyaltyRewardRequest');
+var DeleteLoyaltyRewardResponse = require('./model/DeleteLoyaltyRewardResponse');
 var DeleteShiftRequest = require('./model/DeleteShiftRequest');
 var DeleteShiftResponse = require('./model/DeleteShiftResponse');
 var Device = require('./model/Device');
@@ -267,6 +283,8 @@ var ListEmployeesRequest = require('./model/ListEmployeesRequest');
 var ListEmployeesResponse = require('./model/ListEmployeesResponse');
 var ListLocationsRequest = require('./model/ListLocationsRequest');
 var ListLocationsResponse = require('./model/ListLocationsResponse');
+var ListLoyaltyProgramsRequest = require('./model/ListLoyaltyProgramsRequest');
+var ListLoyaltyProgramsResponse = require('./model/ListLoyaltyProgramsResponse');
 var ListMerchantsRequest = require('./model/ListMerchantsRequest');
 var ListMerchantsResponse = require('./model/ListMerchantsResponse');
 var ListPaymentRefundsRequest = require('./model/ListPaymentRefundsRequest');
@@ -283,6 +301,38 @@ var Location = require('./model/Location');
 var LocationCapability = require('./model/LocationCapability');
 var LocationStatus = require('./model/LocationStatus');
 var LocationType = require('./model/LocationType');
+var LoyaltyAccount = require('./model/LoyaltyAccount');
+var LoyaltyAccountMapping = require('./model/LoyaltyAccountMapping');
+var LoyaltyAccountMappingType = require('./model/LoyaltyAccountMappingType');
+var LoyaltyEvent = require('./model/LoyaltyEvent');
+var LoyaltyEventAccumulatePoints = require('./model/LoyaltyEventAccumulatePoints');
+var LoyaltyEventAdjustPoints = require('./model/LoyaltyEventAdjustPoints');
+var LoyaltyEventCreateReward = require('./model/LoyaltyEventCreateReward');
+var LoyaltyEventDateTimeFilter = require('./model/LoyaltyEventDateTimeFilter');
+var LoyaltyEventDeleteReward = require('./model/LoyaltyEventDeleteReward');
+var LoyaltyEventExpirePoints = require('./model/LoyaltyEventExpirePoints');
+var LoyaltyEventFilter = require('./model/LoyaltyEventFilter');
+var LoyaltyEventLocationFilter = require('./model/LoyaltyEventLocationFilter');
+var LoyaltyEventLoyaltyAccountFilter = require('./model/LoyaltyEventLoyaltyAccountFilter');
+var LoyaltyEventOrderFilter = require('./model/LoyaltyEventOrderFilter');
+var LoyaltyEventOther = require('./model/LoyaltyEventOther');
+var LoyaltyEventQuery = require('./model/LoyaltyEventQuery');
+var LoyaltyEventRedeemReward = require('./model/LoyaltyEventRedeemReward');
+var LoyaltyEventSource = require('./model/LoyaltyEventSource');
+var LoyaltyEventType = require('./model/LoyaltyEventType');
+var LoyaltyEventTypeFilter = require('./model/LoyaltyEventTypeFilter');
+var LoyaltyProgram = require('./model/LoyaltyProgram');
+var LoyaltyProgramAccrualRule = require('./model/LoyaltyProgramAccrualRule');
+var LoyaltyProgramAccrualRuleType = require('./model/LoyaltyProgramAccrualRuleType');
+var LoyaltyProgramExpirationPolicy = require('./model/LoyaltyProgramExpirationPolicy');
+var LoyaltyProgramRewardDefinition = require('./model/LoyaltyProgramRewardDefinition');
+var LoyaltyProgramRewardDefinitionScope = require('./model/LoyaltyProgramRewardDefinitionScope');
+var LoyaltyProgramRewardDefinitionType = require('./model/LoyaltyProgramRewardDefinitionType');
+var LoyaltyProgramRewardTier = require('./model/LoyaltyProgramRewardTier');
+var LoyaltyProgramStatus = require('./model/LoyaltyProgramStatus');
+var LoyaltyProgramTerminology = require('./model/LoyaltyProgramTerminology');
+var LoyaltyReward = require('./model/LoyaltyReward');
+var LoyaltyRewardStatus = require('./model/LoyaltyRewardStatus');
 var MeasurementUnit = require('./model/MeasurementUnit');
 var MeasurementUnitArea = require('./model/MeasurementUnitArea');
 var MeasurementUnitCustom = require('./model/MeasurementUnitCustom');
@@ -332,6 +382,7 @@ var OrderReturnLineItem = require('./model/OrderReturnLineItem');
 var OrderReturnLineItemModifier = require('./model/OrderReturnLineItemModifier');
 var OrderReturnServiceCharge = require('./model/OrderReturnServiceCharge');
 var OrderReturnTax = require('./model/OrderReturnTax');
+var OrderReward = require('./model/OrderReward');
 var OrderRoundingAdjustment = require('./model/OrderRoundingAdjustment');
 var OrderServiceCharge = require('./model/OrderServiceCharge');
 var OrderServiceChargeCalculationPhase = require('./model/OrderServiceChargeCalculationPhase');
@@ -347,6 +398,8 @@ var PaymentRefund = require('./model/PaymentRefund');
 var ProcessingFee = require('./model/ProcessingFee');
 var Product = require('./model/Product');
 var ProductType = require('./model/ProductType');
+var RedeemLoyaltyRewardRequest = require('./model/RedeemLoyaltyRewardRequest');
+var RedeemLoyaltyRewardResponse = require('./model/RedeemLoyaltyRewardResponse');
 var Refund = require('./model/Refund');
 var RefundPaymentRequest = require('./model/RefundPaymentRequest');
 var RefundPaymentResponse = require('./model/RefundPaymentResponse');
@@ -386,6 +439,10 @@ var RetrieveInventoryPhysicalCountRequest = require('./model/RetrieveInventoryPh
 var RetrieveInventoryPhysicalCountResponse = require('./model/RetrieveInventoryPhysicalCountResponse');
 var RetrieveLocationRequest = require('./model/RetrieveLocationRequest');
 var RetrieveLocationResponse = require('./model/RetrieveLocationResponse');
+var RetrieveLoyaltyAccountRequest = require('./model/RetrieveLoyaltyAccountRequest');
+var RetrieveLoyaltyAccountResponse = require('./model/RetrieveLoyaltyAccountResponse');
+var RetrieveLoyaltyRewardRequest = require('./model/RetrieveLoyaltyRewardRequest');
+var RetrieveLoyaltyRewardResponse = require('./model/RetrieveLoyaltyRewardResponse');
 var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
 var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
@@ -396,6 +453,14 @@ var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest')
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
 var SearchCustomersResponse = require('./model/SearchCustomersResponse');
+var SearchLoyaltyAccountsRequest = require('./model/SearchLoyaltyAccountsRequest');
+var SearchLoyaltyAccountsRequestLoyaltyAccountQuery = require('./model/SearchLoyaltyAccountsRequestLoyaltyAccountQuery');
+var SearchLoyaltyAccountsResponse = require('./model/SearchLoyaltyAccountsResponse');
+var SearchLoyaltyEventsRequest = require('./model/SearchLoyaltyEventsRequest');
+var SearchLoyaltyEventsResponse = require('./model/SearchLoyaltyEventsResponse');
+var SearchLoyaltyRewardsRequest = require('./model/SearchLoyaltyRewardsRequest');
+var SearchLoyaltyRewardsRequestLoyaltyRewardQuery = require('./model/SearchLoyaltyRewardsRequestLoyaltyRewardQuery');
+var SearchLoyaltyRewardsResponse = require('./model/SearchLoyaltyRewardsResponse');
 var SearchOrdersCustomerFilter = require('./model/SearchOrdersCustomerFilter');
 var SearchOrdersDateTimeFilter = require('./model/SearchOrdersDateTimeFilter');
 var SearchOrdersFilter = require('./model/SearchOrdersFilter');
@@ -644,6 +709,7 @@ var EmployeesApi = require('./api/EmployeesApi');
 var InventoryApi = require('./api/InventoryApi');
 var LaborApi = require('./api/LaborApi');
 var LocationsApi = require('./api/LocationsApi');
+var LoyaltyApi = require('./api/LoyaltyApi');
 var MerchantsApi = require('./api/MerchantsApi');
 var MobileAuthorizationApi = require('./api/MobileAuthorizationApi');
 var OAuthApi = require('./api/OAuthApi');
@@ -688,7 +754,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 3.20200422.2
+ * @version 3.20200528.0
  */
   module.exports = {
   /**
@@ -706,6 +772,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/AcceptDisputeResponse}
    */
   AcceptDisputeResponse: AcceptDisputeResponse,
+  /**
+   * The AccumulateLoyaltyPointsRequest model constructor.
+   * @property {module:model/AccumulateLoyaltyPointsRequest}
+   */
+  AccumulateLoyaltyPointsRequest: AccumulateLoyaltyPointsRequest,
+  /**
+   * The AccumulateLoyaltyPointsResponse model constructor.
+   * @property {module:model/AccumulateLoyaltyPointsResponse}
+   */
+  AccumulateLoyaltyPointsResponse: AccumulateLoyaltyPointsResponse,
   /**
    * The AddGroupToCustomerRequest model constructor.
    * @property {module:model/AddGroupToCustomerRequest}
@@ -736,6 +812,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Address}
    */
   Address: Address,
+  /**
+   * The AdjustLoyaltyPointsRequest model constructor.
+   * @property {module:model/AdjustLoyaltyPointsRequest}
+   */
+  AdjustLoyaltyPointsRequest: AdjustLoyaltyPointsRequest,
+  /**
+   * The AdjustLoyaltyPointsResponse model constructor.
+   * @property {module:model/AdjustLoyaltyPointsResponse}
+   */
+  AdjustLoyaltyPointsResponse: AdjustLoyaltyPointsResponse,
   /**
    * The BalancePaymentDetails model constructor.
    * @property {module:model/BalancePaymentDetails}
@@ -841,6 +927,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BusinessHoursPeriod}
    */
   BusinessHoursPeriod: BusinessHoursPeriod,
+  /**
+   * The CalculateLoyaltyPointsRequest model constructor.
+   * @property {module:model/CalculateLoyaltyPointsRequest}
+   */
+  CalculateLoyaltyPointsRequest: CalculateLoyaltyPointsRequest,
+  /**
+   * The CalculateLoyaltyPointsResponse model constructor.
+   * @property {module:model/CalculateLoyaltyPointsResponse}
+   */
+  CalculateLoyaltyPointsResponse: CalculateLoyaltyPointsResponse,
+  /**
+   * The CalculateOrderRequest model constructor.
+   * @property {module:model/CalculateOrderRequest}
+   */
+  CalculateOrderRequest: CalculateOrderRequest,
+  /**
+   * The CalculateOrderResponse model constructor.
+   * @property {module:model/CalculateOrderResponse}
+   */
+  CalculateOrderResponse: CalculateOrderResponse,
   /**
    * The CancelPaymentByIdempotencyKeyRequest model constructor.
    * @property {module:model/CancelPaymentByIdempotencyKeyRequest}
@@ -951,6 +1057,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogCustomAttributeDefinitionAppVisibility}
    */
   CatalogCustomAttributeDefinitionAppVisibility: CatalogCustomAttributeDefinitionAppVisibility,
+  /**
+   * The CatalogCustomAttributeDefinitionNumberConfig model constructor.
+   * @property {module:model/CatalogCustomAttributeDefinitionNumberConfig}
+   */
+  CatalogCustomAttributeDefinitionNumberConfig: CatalogCustomAttributeDefinitionNumberConfig,
   /**
    * The CatalogCustomAttributeDefinitionSelectionConfig model constructor.
    * @property {module:model/CatalogCustomAttributeDefinitionSelectionConfig}
@@ -1372,6 +1483,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateLocationResponse: CreateLocationResponse,
   /**
+   * The CreateLoyaltyAccountRequest model constructor.
+   * @property {module:model/CreateLoyaltyAccountRequest}
+   */
+  CreateLoyaltyAccountRequest: CreateLoyaltyAccountRequest,
+  /**
+   * The CreateLoyaltyAccountResponse model constructor.
+   * @property {module:model/CreateLoyaltyAccountResponse}
+   */
+  CreateLoyaltyAccountResponse: CreateLoyaltyAccountResponse,
+  /**
+   * The CreateLoyaltyRewardRequest model constructor.
+   * @property {module:model/CreateLoyaltyRewardRequest}
+   */
+  CreateLoyaltyRewardRequest: CreateLoyaltyRewardRequest,
+  /**
+   * The CreateLoyaltyRewardResponse model constructor.
+   * @property {module:model/CreateLoyaltyRewardResponse}
+   */
+  CreateLoyaltyRewardResponse: CreateLoyaltyRewardResponse,
+  /**
    * The CreateMobileAuthorizationCodeRequest model constructor.
    * @property {module:model/CreateMobileAuthorizationCodeRequest}
    */
@@ -1497,6 +1628,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CustomerSortField: CustomerSortField,
   /**
+   * The CustomerTextFilter model constructor.
+   * @property {module:model/CustomerTextFilter}
+   */
+  CustomerTextFilter: CustomerTextFilter,
+  /**
    * The DateRange model constructor.
    * @property {module:model/DateRange}
    */
@@ -1556,6 +1692,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/DeleteCustomerResponse}
    */
   DeleteCustomerResponse: DeleteCustomerResponse,
+  /**
+   * The DeleteLoyaltyRewardRequest model constructor.
+   * @property {module:model/DeleteLoyaltyRewardRequest}
+   */
+  DeleteLoyaltyRewardRequest: DeleteLoyaltyRewardRequest,
+  /**
+   * The DeleteLoyaltyRewardResponse model constructor.
+   * @property {module:model/DeleteLoyaltyRewardResponse}
+   */
+  DeleteLoyaltyRewardResponse: DeleteLoyaltyRewardResponse,
   /**
    * The DeleteShiftRequest model constructor.
    * @property {module:model/DeleteShiftRequest}
@@ -1967,6 +2113,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ListLocationsResponse: ListLocationsResponse,
   /**
+   * The ListLoyaltyProgramsRequest model constructor.
+   * @property {module:model/ListLoyaltyProgramsRequest}
+   */
+  ListLoyaltyProgramsRequest: ListLoyaltyProgramsRequest,
+  /**
+   * The ListLoyaltyProgramsResponse model constructor.
+   * @property {module:model/ListLoyaltyProgramsResponse}
+   */
+  ListLoyaltyProgramsResponse: ListLoyaltyProgramsResponse,
+  /**
    * The ListMerchantsRequest model constructor.
    * @property {module:model/ListMerchantsRequest}
    */
@@ -2046,6 +2202,166 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/LocationType}
    */
   LocationType: LocationType,
+  /**
+   * The LoyaltyAccount model constructor.
+   * @property {module:model/LoyaltyAccount}
+   */
+  LoyaltyAccount: LoyaltyAccount,
+  /**
+   * The LoyaltyAccountMapping model constructor.
+   * @property {module:model/LoyaltyAccountMapping}
+   */
+  LoyaltyAccountMapping: LoyaltyAccountMapping,
+  /**
+   * The LoyaltyAccountMappingType model constructor.
+   * @property {module:model/LoyaltyAccountMappingType}
+   */
+  LoyaltyAccountMappingType: LoyaltyAccountMappingType,
+  /**
+   * The LoyaltyEvent model constructor.
+   * @property {module:model/LoyaltyEvent}
+   */
+  LoyaltyEvent: LoyaltyEvent,
+  /**
+   * The LoyaltyEventAccumulatePoints model constructor.
+   * @property {module:model/LoyaltyEventAccumulatePoints}
+   */
+  LoyaltyEventAccumulatePoints: LoyaltyEventAccumulatePoints,
+  /**
+   * The LoyaltyEventAdjustPoints model constructor.
+   * @property {module:model/LoyaltyEventAdjustPoints}
+   */
+  LoyaltyEventAdjustPoints: LoyaltyEventAdjustPoints,
+  /**
+   * The LoyaltyEventCreateReward model constructor.
+   * @property {module:model/LoyaltyEventCreateReward}
+   */
+  LoyaltyEventCreateReward: LoyaltyEventCreateReward,
+  /**
+   * The LoyaltyEventDateTimeFilter model constructor.
+   * @property {module:model/LoyaltyEventDateTimeFilter}
+   */
+  LoyaltyEventDateTimeFilter: LoyaltyEventDateTimeFilter,
+  /**
+   * The LoyaltyEventDeleteReward model constructor.
+   * @property {module:model/LoyaltyEventDeleteReward}
+   */
+  LoyaltyEventDeleteReward: LoyaltyEventDeleteReward,
+  /**
+   * The LoyaltyEventExpirePoints model constructor.
+   * @property {module:model/LoyaltyEventExpirePoints}
+   */
+  LoyaltyEventExpirePoints: LoyaltyEventExpirePoints,
+  /**
+   * The LoyaltyEventFilter model constructor.
+   * @property {module:model/LoyaltyEventFilter}
+   */
+  LoyaltyEventFilter: LoyaltyEventFilter,
+  /**
+   * The LoyaltyEventLocationFilter model constructor.
+   * @property {module:model/LoyaltyEventLocationFilter}
+   */
+  LoyaltyEventLocationFilter: LoyaltyEventLocationFilter,
+  /**
+   * The LoyaltyEventLoyaltyAccountFilter model constructor.
+   * @property {module:model/LoyaltyEventLoyaltyAccountFilter}
+   */
+  LoyaltyEventLoyaltyAccountFilter: LoyaltyEventLoyaltyAccountFilter,
+  /**
+   * The LoyaltyEventOrderFilter model constructor.
+   * @property {module:model/LoyaltyEventOrderFilter}
+   */
+  LoyaltyEventOrderFilter: LoyaltyEventOrderFilter,
+  /**
+   * The LoyaltyEventOther model constructor.
+   * @property {module:model/LoyaltyEventOther}
+   */
+  LoyaltyEventOther: LoyaltyEventOther,
+  /**
+   * The LoyaltyEventQuery model constructor.
+   * @property {module:model/LoyaltyEventQuery}
+   */
+  LoyaltyEventQuery: LoyaltyEventQuery,
+  /**
+   * The LoyaltyEventRedeemReward model constructor.
+   * @property {module:model/LoyaltyEventRedeemReward}
+   */
+  LoyaltyEventRedeemReward: LoyaltyEventRedeemReward,
+  /**
+   * The LoyaltyEventSource model constructor.
+   * @property {module:model/LoyaltyEventSource}
+   */
+  LoyaltyEventSource: LoyaltyEventSource,
+  /**
+   * The LoyaltyEventType model constructor.
+   * @property {module:model/LoyaltyEventType}
+   */
+  LoyaltyEventType: LoyaltyEventType,
+  /**
+   * The LoyaltyEventTypeFilter model constructor.
+   * @property {module:model/LoyaltyEventTypeFilter}
+   */
+  LoyaltyEventTypeFilter: LoyaltyEventTypeFilter,
+  /**
+   * The LoyaltyProgram model constructor.
+   * @property {module:model/LoyaltyProgram}
+   */
+  LoyaltyProgram: LoyaltyProgram,
+  /**
+   * The LoyaltyProgramAccrualRule model constructor.
+   * @property {module:model/LoyaltyProgramAccrualRule}
+   */
+  LoyaltyProgramAccrualRule: LoyaltyProgramAccrualRule,
+  /**
+   * The LoyaltyProgramAccrualRuleType model constructor.
+   * @property {module:model/LoyaltyProgramAccrualRuleType}
+   */
+  LoyaltyProgramAccrualRuleType: LoyaltyProgramAccrualRuleType,
+  /**
+   * The LoyaltyProgramExpirationPolicy model constructor.
+   * @property {module:model/LoyaltyProgramExpirationPolicy}
+   */
+  LoyaltyProgramExpirationPolicy: LoyaltyProgramExpirationPolicy,
+  /**
+   * The LoyaltyProgramRewardDefinition model constructor.
+   * @property {module:model/LoyaltyProgramRewardDefinition}
+   */
+  LoyaltyProgramRewardDefinition: LoyaltyProgramRewardDefinition,
+  /**
+   * The LoyaltyProgramRewardDefinitionScope model constructor.
+   * @property {module:model/LoyaltyProgramRewardDefinitionScope}
+   */
+  LoyaltyProgramRewardDefinitionScope: LoyaltyProgramRewardDefinitionScope,
+  /**
+   * The LoyaltyProgramRewardDefinitionType model constructor.
+   * @property {module:model/LoyaltyProgramRewardDefinitionType}
+   */
+  LoyaltyProgramRewardDefinitionType: LoyaltyProgramRewardDefinitionType,
+  /**
+   * The LoyaltyProgramRewardTier model constructor.
+   * @property {module:model/LoyaltyProgramRewardTier}
+   */
+  LoyaltyProgramRewardTier: LoyaltyProgramRewardTier,
+  /**
+   * The LoyaltyProgramStatus model constructor.
+   * @property {module:model/LoyaltyProgramStatus}
+   */
+  LoyaltyProgramStatus: LoyaltyProgramStatus,
+  /**
+   * The LoyaltyProgramTerminology model constructor.
+   * @property {module:model/LoyaltyProgramTerminology}
+   */
+  LoyaltyProgramTerminology: LoyaltyProgramTerminology,
+  /**
+   * The LoyaltyReward model constructor.
+   * @property {module:model/LoyaltyReward}
+   */
+  LoyaltyReward: LoyaltyReward,
+  /**
+   * The LoyaltyRewardStatus model constructor.
+   * @property {module:model/LoyaltyRewardStatus}
+   */
+  LoyaltyRewardStatus: LoyaltyRewardStatus,
   /**
    * The MeasurementUnit model constructor.
    * @property {module:model/MeasurementUnit}
@@ -2292,6 +2608,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderReturnTax: OrderReturnTax,
   /**
+   * The OrderReward model constructor.
+   * @property {module:model/OrderReward}
+   */
+  OrderReward: OrderReward,
+  /**
    * The OrderRoundingAdjustment model constructor.
    * @property {module:model/OrderRoundingAdjustment}
    */
@@ -2366,6 +2687,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ProductType}
    */
   ProductType: ProductType,
+  /**
+   * The RedeemLoyaltyRewardRequest model constructor.
+   * @property {module:model/RedeemLoyaltyRewardRequest}
+   */
+  RedeemLoyaltyRewardRequest: RedeemLoyaltyRewardRequest,
+  /**
+   * The RedeemLoyaltyRewardResponse model constructor.
+   * @property {module:model/RedeemLoyaltyRewardResponse}
+   */
+  RedeemLoyaltyRewardResponse: RedeemLoyaltyRewardResponse,
   /**
    * The Refund model constructor.
    * @property {module:model/Refund}
@@ -2562,6 +2893,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveLocationResponse: RetrieveLocationResponse,
   /**
+   * The RetrieveLoyaltyAccountRequest model constructor.
+   * @property {module:model/RetrieveLoyaltyAccountRequest}
+   */
+  RetrieveLoyaltyAccountRequest: RetrieveLoyaltyAccountRequest,
+  /**
+   * The RetrieveLoyaltyAccountResponse model constructor.
+   * @property {module:model/RetrieveLoyaltyAccountResponse}
+   */
+  RetrieveLoyaltyAccountResponse: RetrieveLoyaltyAccountResponse,
+  /**
+   * The RetrieveLoyaltyRewardRequest model constructor.
+   * @property {module:model/RetrieveLoyaltyRewardRequest}
+   */
+  RetrieveLoyaltyRewardRequest: RetrieveLoyaltyRewardRequest,
+  /**
+   * The RetrieveLoyaltyRewardResponse model constructor.
+   * @property {module:model/RetrieveLoyaltyRewardResponse}
+   */
+  RetrieveLoyaltyRewardResponse: RetrieveLoyaltyRewardResponse,
+  /**
    * The RetrieveMerchantRequest model constructor.
    * @property {module:model/RetrieveMerchantRequest}
    */
@@ -2611,6 +2962,46 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SearchCustomersResponse}
    */
   SearchCustomersResponse: SearchCustomersResponse,
+  /**
+   * The SearchLoyaltyAccountsRequest model constructor.
+   * @property {module:model/SearchLoyaltyAccountsRequest}
+   */
+  SearchLoyaltyAccountsRequest: SearchLoyaltyAccountsRequest,
+  /**
+   * The SearchLoyaltyAccountsRequestLoyaltyAccountQuery model constructor.
+   * @property {module:model/SearchLoyaltyAccountsRequestLoyaltyAccountQuery}
+   */
+  SearchLoyaltyAccountsRequestLoyaltyAccountQuery: SearchLoyaltyAccountsRequestLoyaltyAccountQuery,
+  /**
+   * The SearchLoyaltyAccountsResponse model constructor.
+   * @property {module:model/SearchLoyaltyAccountsResponse}
+   */
+  SearchLoyaltyAccountsResponse: SearchLoyaltyAccountsResponse,
+  /**
+   * The SearchLoyaltyEventsRequest model constructor.
+   * @property {module:model/SearchLoyaltyEventsRequest}
+   */
+  SearchLoyaltyEventsRequest: SearchLoyaltyEventsRequest,
+  /**
+   * The SearchLoyaltyEventsResponse model constructor.
+   * @property {module:model/SearchLoyaltyEventsResponse}
+   */
+  SearchLoyaltyEventsResponse: SearchLoyaltyEventsResponse,
+  /**
+   * The SearchLoyaltyRewardsRequest model constructor.
+   * @property {module:model/SearchLoyaltyRewardsRequest}
+   */
+  SearchLoyaltyRewardsRequest: SearchLoyaltyRewardsRequest,
+  /**
+   * The SearchLoyaltyRewardsRequestLoyaltyRewardQuery model constructor.
+   * @property {module:model/SearchLoyaltyRewardsRequestLoyaltyRewardQuery}
+   */
+  SearchLoyaltyRewardsRequestLoyaltyRewardQuery: SearchLoyaltyRewardsRequestLoyaltyRewardQuery,
+  /**
+   * The SearchLoyaltyRewardsResponse model constructor.
+   * @property {module:model/SearchLoyaltyRewardsResponse}
+   */
+  SearchLoyaltyRewardsResponse: SearchLoyaltyRewardsResponse,
   /**
    * The SearchOrdersCustomerFilter model constructor.
    * @property {module:model/SearchOrdersCustomerFilter}
@@ -3846,6 +4237,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/LocationsApi}
    */
   LocationsApi: LocationsApi,
+  /**
+   * The LoyaltyApi service constructor.
+   * @property {module:api/LoyaltyApi}
+   */
+  LoyaltyApi: LoyaltyApi,
   /**
    * The MerchantsApi service constructor.
    * @property {module:api/MerchantsApi}

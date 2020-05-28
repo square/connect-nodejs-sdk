@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 ListCustomers
 
-Lists a business&#39;s customers.
+Lists customer profiles associated with a Square account.  Under normal operating conditions, newly created or updated customer profiles become available  for the listing operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
 
 ### Example
 ```javascript
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 
 SearchCustomers
 
-Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.
+Searches the customer profiles associated with a Square account using  one or more supported query filters.   Calling &#x60;SearchCustomers&#x60; without any explicit query filter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.  Under normal operating conditions, newly created or updated customer profiles become available  for the search operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
 
 ### Example
 ```javascript

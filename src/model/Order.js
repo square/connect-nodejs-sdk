@@ -19,6 +19,7 @@ var OrderLineItemDiscount = require('./OrderLineItemDiscount');
 var OrderLineItemTax = require('./OrderLineItemTax');
 var OrderMoneyAmounts = require('./OrderMoneyAmounts');
 var OrderReturn = require('./OrderReturn');
+var OrderReward = require('./OrderReward');
 var OrderRoundingAdjustment = require('./OrderRoundingAdjustment');
 var OrderServiceCharge = require('./OrderServiceCharge');
 var OrderSource = require('./OrderSource');
@@ -45,6 +46,7 @@ var exports = function(locationId) {
 
 
   _this['location_id'] = locationId;
+
 
 
 
@@ -159,6 +161,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('total_service_charge_money')) {
       obj['total_service_charge_money'] = Money.constructFromObject(data['total_service_charge_money']);
+    }
+      if (data.hasOwnProperty('rewards')) {
+      obj['rewards'] = ApiClient.convertToType(data['rewards'], [OrderReward]);
     }
     }
   return obj;
@@ -294,6 +299,11 @@ exports.prototype['total_discount_money'] = undefined;
  * @member {module:model/Money} total_service_charge_money
  */
 exports.prototype['total_service_charge_money'] = undefined;
+/**
+ * A set-like list of rewards that have been added to the order.
+ * @member {Array.<module:model/OrderReward>} rewards
+ */
+exports.prototype['rewards'] = undefined;
 
 
 
