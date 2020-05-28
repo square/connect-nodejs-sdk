@@ -1,7 +1,6 @@
 language: node_js
 node_js:
 - '6'
-- '6.2'
 before_install:
 - openssl aes-256-cbc -K $encrypted_17d5860a9a31_key -iv $encrypted_17d5860a9a31_iv
   -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
