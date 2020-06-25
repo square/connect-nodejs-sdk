@@ -15,26 +15,26 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class CatalogQueryFilteredItemsStockLevel.
+ * Enum class TeamMemberAssignedLocationsAssignmentType.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "OUT"
+   * value: "ALL_CURRENT_AND_FUTURE_LOCATIONS"
    * @const
    */
-  "OUT": "OUT",
+  "ALL_CURRENT_AND_FUTURE_LOCATIONS": "ALL_CURRENT_AND_FUTURE_LOCATIONS",
   /**
-   * value: "LOW"
+   * value: "EXPLICIT_LOCATIONS"
    * @const
    */
-  "LOW": "LOW"};
+  "EXPLICIT_LOCATIONS": "EXPLICIT_LOCATIONS"};
 
 /**
- * Returns a <code>CatalogQueryFilteredItemsStockLevel</code> enum value from a Javascript object name.
+ * Returns a <code>TeamMemberAssignedLocationsAssignmentType</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/CatalogQueryFilteredItemsStockLevel} The enum <code>CatalogQueryFilteredItemsStockLevel</code> value.
+ * @return {module:model/TeamMemberAssignedLocationsAssignmentType} The enum <code>TeamMemberAssignedLocationsAssignmentType</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

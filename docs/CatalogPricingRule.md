@@ -1,9 +1,8 @@
 # SquareConnect.CatalogPricingRule
 
 ### Description
-**Note: This model is in beta.**
 
-Defines how prices are modified or set for items that match the pricing rule during the active time period.
+Defines how discounts are automatically applied to a set of items that match the pricing rule  during the active time period.
 
 ## Properties
 Name | Type | Description | Notes

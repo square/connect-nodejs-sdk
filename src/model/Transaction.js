@@ -102,7 +102,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['location_id'] = undefined;
 /**
- * The time when the transaction was created, in RFC 3339 format.
+ * The timestamp for when the transaction was created, in RFC 3339 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;

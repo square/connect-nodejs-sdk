@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **id** | **String** | The tender&#39;s unique ID. | [optional] 
 **location_id** | **String** | The ID of the transaction&#39;s associated location. | [optional] 
 **transaction_id** | **String** | The ID of the tender&#39;s associated transaction. | [optional] 
-**created_at** | **String** | The time when the tender was created, in RFC 3339 format. | [optional] 
+**created_at** | **String** | The timestamp for when the tender was created, in RFC 3339 format. | [optional] 
 **note** | **String** | An optional note associated with the tender at the time of payment. | [optional] 
 **amount_money** | [**Money**](Money.md) | The total amount of the tender, including &#x60;tip_money&#x60;. If the tender has a &#x60;payment_id&#x60;, the &#x60;total_money&#x60; of the corresponding &#x60;Payment&#x60; will be equal to the &#x60;amount_money&#x60; of the tender. | [optional] 
 **tip_money** | [**Money**](Money.md) | The tip&#39;s amount of the tender. | [optional] 

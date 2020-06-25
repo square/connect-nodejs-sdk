@@ -15,21 +15,26 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class CatalogQueryFilteredItemsNullableAttribute.
+ * Enum class TeamMemberStatus.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "VENDOR_TOKEN"
+   * value: "ACTIVE"
    * @const
    */
-  "TOKEN": "VENDOR_TOKEN"};
+  "ACTIVE": "ACTIVE",
+  /**
+   * value: "INACTIVE"
+   * @const
+   */
+  "INACTIVE": "INACTIVE"};
 
 /**
- * Returns a <code>CatalogQueryFilteredItemsNullableAttribute</code> enum value from a Javascript object name.
+ * Returns a <code>TeamMemberStatus</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/CatalogQueryFilteredItemsNullableAttribute} The enum <code>CatalogQueryFilteredItemsNullableAttribute</code> value.
+ * @return {module:model/TeamMemberStatus} The enum <code>TeamMemberStatus</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

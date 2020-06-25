@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 CreateTimecard
 
-Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---   To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
+Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
 
 ### Example
 ```javascript
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 DeleteTimecard
 
-Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.   __Note__: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
 
 ### Example
 ```javascript
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ListCashDrawerShifts
 
-Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
 
 ### Example
 ```javascript
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 
 ListTimecardEvents
 
-Provides summary information for all events associated with a particular timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ListTimecards
 
-Provides summary information for all of a business&#39;s employee timecards.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+Provides summary information for all of a business&#39;s employee timecards.
 
 ### Example
 ```javascript
@@ -517,7 +517,7 @@ Name | Type | Description  | Notes
 
 RetrieveCashDrawerShift
 
-Provides the details for a single cash drawer shift, including all events that occurred during the shift.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+Provides the details for a single cash drawer shift, including all events that occurred during the shift.
 
 ### Example
 ```javascript
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 
 RetrieveTimecard
 
-Provides the details for a single timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+Provides the details for a single timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
 
 ### Example
 ```javascript
@@ -816,7 +816,7 @@ Name | Type | Description  | Notes
 
 UpdateTimecard
 
-Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
 
 ### Example
 ```javascript

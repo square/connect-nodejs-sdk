@@ -15,36 +15,31 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class CatalogQueryFilteredItemsCustomAttributeFilterFilterType.
+ * Enum class JobAssignmentPayType.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "CUSTOM_ATTRIBUTE_FILTER_TYPE_DO_NOT_USE"
+   * value: "NONE"
    * @const
    */
-  "CUSTOM_ATTRIBUTE_FILTER_TYPE_DO_NOT_USE": "CUSTOM_ATTRIBUTE_FILTER_TYPE_DO_NOT_USE",
+  "NONE": "NONE",
   /**
-   * value: "EXACT"
+   * value: "HOURLY"
    * @const
    */
-  "EXACT": "EXACT",
+  "HOURLY": "HOURLY",
   /**
-   * value: "PREFIX"
+   * value: "SALARY"
    * @const
    */
-  "PREFIX": "PREFIX",
-  /**
-   * value: "RANGE"
-   * @const
-   */
-  "RANGE": "RANGE"};
+  "SALARY": "SALARY"};
 
 /**
- * Returns a <code>CatalogQueryFilteredItemsCustomAttributeFilterFilterType</code> enum value from a Javascript object name.
+ * Returns a <code>JobAssignmentPayType</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/CatalogQueryFilteredItemsCustomAttributeFilterFilterType} The enum <code>CatalogQueryFilteredItemsCustomAttributeFilterFilterType</code> value.
+ * @return {module:model/JobAssignmentPayType} The enum <code>JobAssignmentPayType</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

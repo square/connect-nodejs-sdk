@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **exp_year** | **Number** | The four-digit year of the card&#39;s expiration date. | [optional] 
 **cardholder_name** | **String** | The name of the cardholder. | [optional] 
 **billing_address** | [**Address**](Address.md) | The billing address for this card. | [optional] 
-**fingerprint** | **String** | __Not currently set.__ Intended as a Square-assigned identifier, based  on the card number, to identify the card across multiple locations within a single application. | [optional] 
+**fingerprint** | **String** | __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application. | [optional] 
 **card_type** | **String** | The type of the card. The Card object includes this field only in response to Payments API calls. See [CardType](#type-cardtype) for possible values | [optional] [beta]
 **prepaid_type** | **String** | Indicates whether the Card is prepaid or not. The Card object includes this field only in response to Payments API calls. See [CardPrepaidType](#type-cardprepaidtype) for possible values | [optional] [beta]
 **bin** | **String** | The first six digits of the card number, known as the Bank Identification Number (BIN). Only the Payments API returns this field. | [optional] 

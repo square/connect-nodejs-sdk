@@ -47,6 +47,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -98,6 +99,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('device_details')) {
       obj['device_details'] = DeviceDetails.constructFromObject(data['device_details']);
+    }
+      if (data.hasOwnProperty('refund_requires_card_presence')) {
+      obj['refund_requires_card_presence'] = ApiClient.convertToType(data['refund_requires_card_presence'], 'Boolean');
     }
       if (data.hasOwnProperty('errors')) {
       obj['errors'] = ApiClient.convertToType(data['errors'], [Error]);
@@ -171,6 +175,11 @@ exports.prototype['statement_description'] = undefined;
  * @member {module:model/DeviceDetails} device_details
  */
 exports.prototype['device_details'] = undefined;
+/**
+ * Whether or not the card is required to be physically present in order for the payment to be refunded.  If true, the card is required to be present.
+ * @member {Boolean} refund_requires_card_presence
+ */
+exports.prototype['refund_requires_card_presence'] = undefined;
 /**
  * Information on errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
