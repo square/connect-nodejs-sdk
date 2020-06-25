@@ -18,13 +18,12 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The CatalogPricingRule model module.
- * Note: This model is in beta.
  * @module model/CatalogPricingRule
  */
 
 /**
  * Constructs a new <code>CatalogPricingRule</code>.
- * Defines how prices are modified or set for items that match the pricing rule during the active time period.
+ * Defines how discounts are automatically applied to a set of items that match the pricing rule  during the active time period.
  * @alias module:model/CatalogPricingRule
  * @class
  */

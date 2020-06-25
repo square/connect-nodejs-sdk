@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 
 SearchCatalogObjects
 
-Queries the targeted catalog using a variety of query types: [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), [CatalogQueryExact](#type-catalogqueryexact), [CatalogQueryRange](#type-catalogqueryrange), [CatalogQueryText](#type-catalogquerytext), [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), and [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist). -- -- Future end of the above comment: [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
 
 ### Example
 ```javascript

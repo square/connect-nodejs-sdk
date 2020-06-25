@@ -69,7 +69,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -121,7 +121,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -173,7 +173,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -219,7 +219,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -271,7 +271,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -323,7 +323,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -382,7 +382,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -417,7 +417,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCatalogObjects
-   * Queries the targeted catalog using a variety of query types: [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), [CatalogQueryExact](#type-catalogqueryexact), [CatalogQueryRange](#type-catalogqueryrange), [CatalogQueryText](#type-catalogquerytext), [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), and [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist). -- -- Future end of the above comment: [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+   * Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
    * @param {module:model/SearchCatalogObjectsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCatalogObjectsResponse} and HTTP response
    */
@@ -436,7 +436,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -455,7 +455,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCatalogObjects
-   * Queries the targeted catalog using a variety of query types: [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), [CatalogQueryExact](#type-catalogqueryexact), [CatalogQueryRange](#type-catalogqueryrange), [CatalogQueryText](#type-catalogquerytext), [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), and [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist). -- -- Future end of the above comment: [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+   * Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
    * @param {module:model/SearchCatalogObjectsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCatalogObjectsResponse}
    */
@@ -488,7 +488,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -540,7 +540,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -592,7 +592,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };

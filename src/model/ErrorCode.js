@@ -236,6 +236,11 @@ var exports = {
    */
   "INVALID_FORM_VALUE": "INVALID_FORM_VALUE",
   /**
+   * value: "CUSTOMER_NOT_FOUND"
+   * @const
+   */
+  "CUSTOMER_NOT_FOUND": "CUSTOMER_NOT_FOUND",
+  /**
    * value: "ONE_INSTRUMENT_EXPECTED"
    * @const
    */

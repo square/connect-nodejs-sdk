@@ -27,7 +27,7 @@ var Money = require('./Money');
  * Refunds a payment.
  * @alias module:model/RefundPaymentRequest
  * @class
- * @param idempotencyKey {String}  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request. For more information, see [Idempotency keys](https://developer.squareup.com/docs/working-with-apis/idempotency).
+ * @param idempotencyKey {String}  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](https://developer.squareup.com/docs/working-with-apis/idempotency).
  * @param amountMoney {module:model/Money} The amount of money to refund.  Cannot be more than the `total_money` value of the payment minus the total amount of all previously completed refunds for this payment.  Must be specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.  The currency code must match the currency associated with the business that is charging the card.
  * @param paymentId {String} Unique ID of the payment being refunded.
  */
@@ -72,7 +72,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- *  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request. For more information, see [Idempotency keys](https://developer.squareup.com/docs/working-with-apis/idempotency).
+ *  A unique string that identifies this RefundPayment request. Key can be any valid string but must be unique for every RefundPayment request.  For more information, see [Idempotency keys](https://developer.squareup.com/docs/working-with-apis/idempotency).
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

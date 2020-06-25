@@ -117,7 +117,7 @@ exports.prototype['transaction_id'] = undefined;
  */
 exports.prototype['tender_id'] = undefined;
 /**
- * The time when the refund was created, in RFC 3339 format.
+ * The timestamp for when the refund was created, in RFC 3339 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;

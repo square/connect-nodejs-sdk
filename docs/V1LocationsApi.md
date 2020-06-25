@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 ListLocations
 
-Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.
 
 ### Example
 ```javascript
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 RetrieveBusiness
 
-Get the general information for a business.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+Get the general information for a business.
 
 ### Example
 ```javascript

@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **verification_results** | **String** | For EMV payments, the results of the cardholder verification.  Can be one of &#x60;SUCCESS&#x60;, &#x60;FAILURE&#x60;, or &#x60;UNKNOWN&#x60;. | [optional] 
 **statement_description** | **String** | The statement description sent to the card networks.  Note: The actual statement description will vary and is likely to be truncated and appended with additional information on a per issuer basis. | [optional] 
 **device_details** | [**DeviceDetails**](DeviceDetails.md) | Details about the device that took the payment. | [optional] 
+**refund_requires_card_presence** | **Boolean** | Whether or not the card is required to be physically present in order for the payment to be refunded.  If true, the card is required to be present. | [optional] [beta]
 **errors** | [**[Error]**](Error.md) | Information on errors encountered during the request. | [optional] 
 
 

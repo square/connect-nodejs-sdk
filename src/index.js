@@ -44,6 +44,10 @@ var BatchRetrieveOrdersResponse = require('./model/BatchRetrieveOrdersResponse')
 var BatchUpsertCatalogObjectsRequest = require('./model/BatchUpsertCatalogObjectsRequest');
 var BatchUpsertCatalogObjectsResponse = require('./model/BatchUpsertCatalogObjectsResponse');
 var BreakType = require('./model/BreakType');
+var BulkCreateTeamMembersRequest = require('./model/BulkCreateTeamMembersRequest');
+var BulkCreateTeamMembersResponse = require('./model/BulkCreateTeamMembersResponse');
+var BulkUpdateTeamMembersRequest = require('./model/BulkUpdateTeamMembersRequest');
+var BulkUpdateTeamMembersResponse = require('./model/BulkUpdateTeamMembersResponse');
 var BusinessHours = require('./model/BusinessHours');
 var BusinessHoursPeriod = require('./model/BusinessHoursPeriod');
 var CalculateLoyaltyPointsRequest = require('./model/CalculateLoyaltyPointsRequest');
@@ -107,13 +111,7 @@ var CatalogPricingRule = require('./model/CatalogPricingRule');
 var CatalogPricingType = require('./model/CatalogPricingType');
 var CatalogProductSet = require('./model/CatalogProductSet');
 var CatalogQuery = require('./model/CatalogQuery');
-var CatalogQueryCustomAttributeUsage = require('./model/CatalogQueryCustomAttributeUsage');
 var CatalogQueryExact = require('./model/CatalogQueryExact');
-var CatalogQueryFilteredItems = require('./model/CatalogQueryFilteredItems');
-var CatalogQueryFilteredItemsCustomAttributeFilter = require('./model/CatalogQueryFilteredItemsCustomAttributeFilter');
-var CatalogQueryFilteredItemsCustomAttributeFilterFilterType = require('./model/CatalogQueryFilteredItemsCustomAttributeFilterFilterType');
-var CatalogQueryFilteredItemsNullableAttribute = require('./model/CatalogQueryFilteredItemsNullableAttribute');
-var CatalogQueryFilteredItemsStockLevel = require('./model/CatalogQueryFilteredItemsStockLevel');
 var CatalogQueryItemVariationsForItemOptionValues = require('./model/CatalogQueryItemVariationsForItemOptionValues');
 var CatalogQueryItemsForItemOptions = require('./model/CatalogQueryItemsForItemOptions');
 var CatalogQueryItemsForModifierList = require('./model/CatalogQueryItemsForModifierList');
@@ -171,6 +169,8 @@ var CreateRefundRequest = require('./model/CreateRefundRequest');
 var CreateRefundResponse = require('./model/CreateRefundResponse');
 var CreateShiftRequest = require('./model/CreateShiftRequest');
 var CreateShiftResponse = require('./model/CreateShiftResponse');
+var CreateTeamMemberRequest = require('./model/CreateTeamMemberRequest');
+var CreateTeamMemberResponse = require('./model/CreateTeamMemberResponse');
 var CreateTerminalCheckoutRequest = require('./model/CreateTerminalCheckoutRequest');
 var CreateTerminalCheckoutResponse = require('./model/CreateTerminalCheckoutResponse');
 var Currency = require('./model/Currency');
@@ -251,6 +251,8 @@ var InventoryPhysicalCount = require('./model/InventoryPhysicalCount');
 var InventoryState = require('./model/InventoryState');
 var InventoryTransfer = require('./model/InventoryTransfer');
 var ItemVariationLocationOverrides = require('./model/ItemVariationLocationOverrides');
+var JobAssignment = require('./model/JobAssignment');
+var JobAssignmentPayType = require('./model/JobAssignmentPayType');
 var ListAdditionalRecipientReceivableRefundsRequest = require('./model/ListAdditionalRecipientReceivableRefundsRequest');
 var ListAdditionalRecipientReceivableRefundsResponse = require('./model/ListAdditionalRecipientReceivableRefundsResponse');
 var ListAdditionalRecipientReceivablesRequest = require('./model/ListAdditionalRecipientReceivablesRequest');
@@ -445,8 +447,12 @@ var RetrieveLoyaltyRewardRequest = require('./model/RetrieveLoyaltyRewardRequest
 var RetrieveLoyaltyRewardResponse = require('./model/RetrieveLoyaltyRewardResponse');
 var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
 var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
+var RetrieveTeamMemberRequest = require('./model/RetrieveTeamMemberRequest');
+var RetrieveTeamMemberResponse = require('./model/RetrieveTeamMemberResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
 var RetrieveTransactionResponse = require('./model/RetrieveTransactionResponse');
+var RetrieveWageSettingRequest = require('./model/RetrieveWageSettingRequest');
+var RetrieveWageSettingResponse = require('./model/RetrieveWageSettingResponse');
 var RevokeTokenRequest = require('./model/RevokeTokenRequest');
 var RevokeTokenResponse = require('./model/RevokeTokenResponse');
 var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest');
@@ -474,6 +480,10 @@ var SearchOrdersSourceFilter = require('./model/SearchOrdersSourceFilter');
 var SearchOrdersStateFilter = require('./model/SearchOrdersStateFilter');
 var SearchShiftsRequest = require('./model/SearchShiftsRequest');
 var SearchShiftsResponse = require('./model/SearchShiftsResponse');
+var SearchTeamMembersFilter = require('./model/SearchTeamMembersFilter');
+var SearchTeamMembersQuery = require('./model/SearchTeamMembersQuery');
+var SearchTeamMembersRequest = require('./model/SearchTeamMembersRequest');
+var SearchTeamMembersResponse = require('./model/SearchTeamMembersResponse');
 var SearchTerminalCheckoutsRequest = require('./model/SearchTerminalCheckoutsRequest');
 var SearchTerminalCheckoutsResponse = require('./model/SearchTerminalCheckoutsResponse');
 var Shift = require('./model/Shift');
@@ -494,6 +504,10 @@ var SubmitEvidenceRequest = require('./model/SubmitEvidenceRequest');
 var SubmitEvidenceResponse = require('./model/SubmitEvidenceResponse');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
 var TaxInclusionType = require('./model/TaxInclusionType');
+var TeamMember = require('./model/TeamMember');
+var TeamMemberAssignedLocations = require('./model/TeamMemberAssignedLocations');
+var TeamMemberAssignedLocationsAssignmentType = require('./model/TeamMemberAssignedLocationsAssignmentType');
+var TeamMemberStatus = require('./model/TeamMemberStatus');
 var Tender = require('./model/Tender');
 var TenderCardDetails = require('./model/TenderCardDetails');
 var TenderCardDetailsEntryMethod = require('./model/TenderCardDetailsEntryMethod');
@@ -526,6 +540,10 @@ var UpdateOrderRequest = require('./model/UpdateOrderRequest');
 var UpdateOrderResponse = require('./model/UpdateOrderResponse');
 var UpdateShiftRequest = require('./model/UpdateShiftRequest');
 var UpdateShiftResponse = require('./model/UpdateShiftResponse');
+var UpdateTeamMemberRequest = require('./model/UpdateTeamMemberRequest');
+var UpdateTeamMemberResponse = require('./model/UpdateTeamMemberResponse');
+var UpdateWageSettingRequest = require('./model/UpdateWageSettingRequest');
+var UpdateWageSettingResponse = require('./model/UpdateWageSettingResponse');
 var UpdateWorkweekConfigRequest = require('./model/UpdateWorkweekConfigRequest');
 var UpdateWorkweekConfigResponse = require('./model/UpdateWorkweekConfigResponse');
 var UpsertCatalogObjectRequest = require('./model/UpsertCatalogObjectRequest');
@@ -692,6 +710,7 @@ var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertTy
 var V1VariationPricingType = require('./model/V1VariationPricingType');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
+var WageSetting = require('./model/WageSetting');
 var Weekday = require('./model/Weekday');
 var WorkweekConfig = require('./model/WorkweekConfig');
 
@@ -717,6 +736,7 @@ var OrdersApi = require('./api/OrdersApi');
 var PaymentsApi = require('./api/PaymentsApi');
 var RefundsApi = require('./api/RefundsApi');
 var ReportingApi = require('./api/ReportingApi');
+var TeamApi = require('./api/TeamApi');
 var TerminalApi = require('./api/TerminalApi');
 var TransactionsApi = require('./api/TransactionsApi');
 var V1EmployeesApi = require('./api/V1EmployeesApi');
@@ -754,7 +774,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 3.20200528.0
+ * @version 4.20200625.0
  */
   module.exports = {
   /**
@@ -917,6 +937,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BreakType}
    */
   BreakType: BreakType,
+  /**
+   * The BulkCreateTeamMembersRequest model constructor.
+   * @property {module:model/BulkCreateTeamMembersRequest}
+   */
+  BulkCreateTeamMembersRequest: BulkCreateTeamMembersRequest,
+  /**
+   * The BulkCreateTeamMembersResponse model constructor.
+   * @property {module:model/BulkCreateTeamMembersResponse}
+   */
+  BulkCreateTeamMembersResponse: BulkCreateTeamMembersResponse,
+  /**
+   * The BulkUpdateTeamMembersRequest model constructor.
+   * @property {module:model/BulkUpdateTeamMembersRequest}
+   */
+  BulkUpdateTeamMembersRequest: BulkUpdateTeamMembersRequest,
+  /**
+   * The BulkUpdateTeamMembersResponse model constructor.
+   * @property {module:model/BulkUpdateTeamMembersResponse}
+   */
+  BulkUpdateTeamMembersResponse: BulkUpdateTeamMembersResponse,
   /**
    * The BusinessHours model constructor.
    * @property {module:model/BusinessHours}
@@ -1233,40 +1273,10 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogQuery: CatalogQuery,
   /**
-   * The CatalogQueryCustomAttributeUsage model constructor.
-   * @property {module:model/CatalogQueryCustomAttributeUsage}
-   */
-  CatalogQueryCustomAttributeUsage: CatalogQueryCustomAttributeUsage,
-  /**
    * The CatalogQueryExact model constructor.
    * @property {module:model/CatalogQueryExact}
    */
   CatalogQueryExact: CatalogQueryExact,
-  /**
-   * The CatalogQueryFilteredItems model constructor.
-   * @property {module:model/CatalogQueryFilteredItems}
-   */
-  CatalogQueryFilteredItems: CatalogQueryFilteredItems,
-  /**
-   * The CatalogQueryFilteredItemsCustomAttributeFilter model constructor.
-   * @property {module:model/CatalogQueryFilteredItemsCustomAttributeFilter}
-   */
-  CatalogQueryFilteredItemsCustomAttributeFilter: CatalogQueryFilteredItemsCustomAttributeFilter,
-  /**
-   * The CatalogQueryFilteredItemsCustomAttributeFilterFilterType model constructor.
-   * @property {module:model/CatalogQueryFilteredItemsCustomAttributeFilterFilterType}
-   */
-  CatalogQueryFilteredItemsCustomAttributeFilterFilterType: CatalogQueryFilteredItemsCustomAttributeFilterFilterType,
-  /**
-   * The CatalogQueryFilteredItemsNullableAttribute model constructor.
-   * @property {module:model/CatalogQueryFilteredItemsNullableAttribute}
-   */
-  CatalogQueryFilteredItemsNullableAttribute: CatalogQueryFilteredItemsNullableAttribute,
-  /**
-   * The CatalogQueryFilteredItemsStockLevel model constructor.
-   * @property {module:model/CatalogQueryFilteredItemsStockLevel}
-   */
-  CatalogQueryFilteredItemsStockLevel: CatalogQueryFilteredItemsStockLevel,
   /**
    * The CatalogQueryItemVariationsForItemOptionValues model constructor.
    * @property {module:model/CatalogQueryItemVariationsForItemOptionValues}
@@ -1552,6 +1562,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateShiftResponse}
    */
   CreateShiftResponse: CreateShiftResponse,
+  /**
+   * The CreateTeamMemberRequest model constructor.
+   * @property {module:model/CreateTeamMemberRequest}
+   */
+  CreateTeamMemberRequest: CreateTeamMemberRequest,
+  /**
+   * The CreateTeamMemberResponse model constructor.
+   * @property {module:model/CreateTeamMemberResponse}
+   */
+  CreateTeamMemberResponse: CreateTeamMemberResponse,
   /**
    * The CreateTerminalCheckoutRequest model constructor.
    * @property {module:model/CreateTerminalCheckoutRequest}
@@ -1952,6 +1972,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ItemVariationLocationOverrides}
    */
   ItemVariationLocationOverrides: ItemVariationLocationOverrides,
+  /**
+   * The JobAssignment model constructor.
+   * @property {module:model/JobAssignment}
+   */
+  JobAssignment: JobAssignment,
+  /**
+   * The JobAssignmentPayType model constructor.
+   * @property {module:model/JobAssignmentPayType}
+   */
+  JobAssignmentPayType: JobAssignmentPayType,
   /**
    * The ListAdditionalRecipientReceivableRefundsRequest model constructor.
    * @property {module:model/ListAdditionalRecipientReceivableRefundsRequest}
@@ -2923,6 +2953,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveMerchantResponse: RetrieveMerchantResponse,
   /**
+   * The RetrieveTeamMemberRequest model constructor.
+   * @property {module:model/RetrieveTeamMemberRequest}
+   */
+  RetrieveTeamMemberRequest: RetrieveTeamMemberRequest,
+  /**
+   * The RetrieveTeamMemberResponse model constructor.
+   * @property {module:model/RetrieveTeamMemberResponse}
+   */
+  RetrieveTeamMemberResponse: RetrieveTeamMemberResponse,
+  /**
    * The RetrieveTransactionRequest model constructor.
    * @property {module:model/RetrieveTransactionRequest}
    */
@@ -2932,6 +2972,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RetrieveTransactionResponse}
    */
   RetrieveTransactionResponse: RetrieveTransactionResponse,
+  /**
+   * The RetrieveWageSettingRequest model constructor.
+   * @property {module:model/RetrieveWageSettingRequest}
+   */
+  RetrieveWageSettingRequest: RetrieveWageSettingRequest,
+  /**
+   * The RetrieveWageSettingResponse model constructor.
+   * @property {module:model/RetrieveWageSettingResponse}
+   */
+  RetrieveWageSettingResponse: RetrieveWageSettingResponse,
   /**
    * The RevokeTokenRequest model constructor.
    * @property {module:model/RevokeTokenRequest}
@@ -3068,6 +3118,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchShiftsResponse: SearchShiftsResponse,
   /**
+   * The SearchTeamMembersFilter model constructor.
+   * @property {module:model/SearchTeamMembersFilter}
+   */
+  SearchTeamMembersFilter: SearchTeamMembersFilter,
+  /**
+   * The SearchTeamMembersQuery model constructor.
+   * @property {module:model/SearchTeamMembersQuery}
+   */
+  SearchTeamMembersQuery: SearchTeamMembersQuery,
+  /**
+   * The SearchTeamMembersRequest model constructor.
+   * @property {module:model/SearchTeamMembersRequest}
+   */
+  SearchTeamMembersRequest: SearchTeamMembersRequest,
+  /**
+   * The SearchTeamMembersResponse model constructor.
+   * @property {module:model/SearchTeamMembersResponse}
+   */
+  SearchTeamMembersResponse: SearchTeamMembersResponse,
+  /**
    * The SearchTerminalCheckoutsRequest model constructor.
    * @property {module:model/SearchTerminalCheckoutsRequest}
    */
@@ -3167,6 +3237,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/TaxInclusionType}
    */
   TaxInclusionType: TaxInclusionType,
+  /**
+   * The TeamMember model constructor.
+   * @property {module:model/TeamMember}
+   */
+  TeamMember: TeamMember,
+  /**
+   * The TeamMemberAssignedLocations model constructor.
+   * @property {module:model/TeamMemberAssignedLocations}
+   */
+  TeamMemberAssignedLocations: TeamMemberAssignedLocations,
+  /**
+   * The TeamMemberAssignedLocationsAssignmentType model constructor.
+   * @property {module:model/TeamMemberAssignedLocationsAssignmentType}
+   */
+  TeamMemberAssignedLocationsAssignmentType: TeamMemberAssignedLocationsAssignmentType,
+  /**
+   * The TeamMemberStatus model constructor.
+   * @property {module:model/TeamMemberStatus}
+   */
+  TeamMemberStatus: TeamMemberStatus,
   /**
    * The Tender model constructor.
    * @property {module:model/Tender}
@@ -3327,6 +3417,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/UpdateShiftResponse}
    */
   UpdateShiftResponse: UpdateShiftResponse,
+  /**
+   * The UpdateTeamMemberRequest model constructor.
+   * @property {module:model/UpdateTeamMemberRequest}
+   */
+  UpdateTeamMemberRequest: UpdateTeamMemberRequest,
+  /**
+   * The UpdateTeamMemberResponse model constructor.
+   * @property {module:model/UpdateTeamMemberResponse}
+   */
+  UpdateTeamMemberResponse: UpdateTeamMemberResponse,
+  /**
+   * The UpdateWageSettingRequest model constructor.
+   * @property {module:model/UpdateWageSettingRequest}
+   */
+  UpdateWageSettingRequest: UpdateWageSettingRequest,
+  /**
+   * The UpdateWageSettingResponse model constructor.
+   * @property {module:model/UpdateWageSettingResponse}
+   */
+  UpdateWageSettingResponse: UpdateWageSettingResponse,
   /**
    * The UpdateWorkweekConfigRequest model constructor.
    * @property {module:model/UpdateWorkweekConfigRequest}
@@ -4158,6 +4268,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   VoidTransactionResponse: VoidTransactionResponse,
   /**
+   * The WageSetting model constructor.
+   * @property {module:model/WageSetting}
+   */
+  WageSetting: WageSetting,
+  /**
    * The Weekday model constructor.
    * @property {module:model/Weekday}
    */
@@ -4277,6 +4392,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/ReportingApi}
    */
   ReportingApi: ReportingApi,
+  /**
+   * The TeamApi service constructor.
+   * @property {module:api/TeamApi}
+   */
+  TeamApi: TeamApi,
   /**
    * The TerminalApi service constructor.
    * @property {module:api/TerminalApi}

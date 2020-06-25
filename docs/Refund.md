@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **location_id** | **String** | The ID of the refund&#39;s associated location. | 
 **transaction_id** | **String** | The ID of the transaction that the refunded tender is part of. | 
 **tender_id** | **String** | The ID of the refunded tender. | 
-**created_at** | **String** | The time when the refund was created, in RFC 3339 format. | [optional] 
+**created_at** | **String** | The timestamp for when the refund was created, in RFC 3339 format. | [optional] 
 **reason** | **String** | The reason for the refund being issued. | 
 **amount_money** | [**Money**](Money.md) | The amount of money refunded to the buyer. | 
 **status** | **String** | The current status of the refund (&#x60;PENDING&#x60;, &#x60;APPROVED&#x60;, &#x60;REJECTED&#x60;, or &#x60;FAILED&#x60;). See [RefundStatus](#type-refundstatus) for possible values | 

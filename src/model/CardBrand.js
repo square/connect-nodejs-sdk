@@ -69,7 +69,22 @@ var exports = {
    * value: "SQUARE_CAPITAL_CARD"
    * @const
    */
-  "SQUARE_CAPITAL_CARD": "SQUARE_CAPITAL_CARD"};
+  "SQUARE_CAPITAL_CARD": "SQUARE_CAPITAL_CARD",
+  /**
+   * value: "INTERAC"
+   * @const
+   */
+  "INTERAC": "INTERAC",
+  /**
+   * value: "EFTPOS"
+   * @const
+   */
+  "EFTPOS": "EFTPOS",
+  /**
+   * value: "FELICA"
+   * @const
+   */
+  "FELICA": "FELICA"};
 
 /**
  * Returns a <code>CardBrand</code> enum value from a Javascript object name.

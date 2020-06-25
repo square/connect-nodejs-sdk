@@ -1,7 +1,6 @@
 # SquareConnect.CatalogTimePeriod
 
 ### Description
-**Note: This model is in beta.**
 
 Represents a time period - either a single period or a repeating period.
 

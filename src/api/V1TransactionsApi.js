@@ -65,7 +65,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -100,7 +100,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListBankAccounts
-   * Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
+   * Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
    * @param {String} locationId The ID of the location to list bank accounts for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1BankAccount>} and HTTP response
    */
@@ -121,7 +121,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -140,7 +140,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListBankAccounts
-   * Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
+   * Provides non-confidential details for all of a location&#39;s associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
    * @param {String} locationId The ID of the location to list bank accounts for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1BankAccount>}
    */
@@ -182,7 +182,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -253,7 +253,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -325,7 +325,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -398,7 +398,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -439,7 +439,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * RetrieveBankAccount
-   * Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
+   * Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
    * @param {String} locationId The ID of the bank account&#39;s associated location.
    * @param {String} bankAccountId The bank account&#39;s Square-issued ID. You obtain this value from Settlement objects returned.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1BankAccount} and HTTP response
@@ -467,7 +467,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -486,7 +486,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveBankAccount
-   * Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-bankaccounts)  ---
+   * Provides non-confidential details for a merchant&#39;s associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
    * @param {String} locationId The ID of the bank account&#39;s associated location.
    * @param {String} bankAccountId The bank account&#39;s Square-issued ID. You obtain this value from Settlement objects returned.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1BankAccount}
@@ -528,7 +528,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -589,7 +589,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -650,7 +650,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -717,7 +717,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };

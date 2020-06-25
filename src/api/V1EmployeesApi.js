@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -108,7 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -142,7 +142,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * CreateTimecard
-   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---   To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
+   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
    */
@@ -162,7 +162,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -181,7 +181,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateTimecard
-   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---   To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
+   * Creates a timecard for an employee and clocks them in with an &#x60;API_CREATE&#x60; event and a &#x60;clockin_time&#x60; set to the current time unless the request provides a different value.  To import timecards from another system (rather than clocking someone in). Specify the &#x60;clockin_time&#x60; and* &#x60;clockout_time&#x60; in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the &#x60;clockin_time&#x60; and &#x60;clockout_time&#x60; fields. An employee is considered clocked in if they have a timecard that doesn&#39;t have a &#x60;clockout_time&#x60; set. An employee that is currently clocked in cannot be clocked in a second time.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}
    */
@@ -196,7 +196,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * DeleteTimecard
-   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.   __Note__: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
    * @param {String} timecardId The ID of the timecard to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object} and HTTP response
    */
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -236,7 +236,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteTimecard
-   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The &#x60;deleted&#x60; field of the &#x60;Timecard&#x60; object indicates whether the timecard has been deleted.   __Note__: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the &#x60;deleted&#x60; query parameter in the list request.  Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
    * @param {String} timecardId The ID of the timecard to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object}
    */
@@ -251,7 +251,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListCashDrawerShifts
-   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
@@ -280,7 +280,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -299,7 +299,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListCashDrawerShifts
-   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+   * Provides the details for all of a location&#39;s cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
@@ -338,7 +338,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -407,7 +407,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -450,7 +450,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListTimecardEvents
-   * Provides summary information for all events associated with a particular timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1TimecardEvent>} and HTTP response
    */
@@ -471,7 +471,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -490,7 +490,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTimecardEvents
-   * Provides summary information for all events associated with a particular timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1TimecardEvent>}
    */
@@ -505,7 +505,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListTimecards
-   * Provides summary information for all of a business&#39;s employee timecards.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+   * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order The order in which timecards are listed in the response, based on their created_at field.
    * @param {String} opts.employeeId If provided, the endpoint returns only timecards for the employee with the specified ID.
@@ -543,7 +543,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -562,7 +562,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTimecards
-   * Provides summary information for all of a business&#39;s employee timecards.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+   * Provides summary information for all of a business&#39;s employee timecards.
    * @param {Object} opts Optional parameters
    * @param {String} opts.order The order in which timecards are listed in the response, based on their created_at field.
    * @param {String} opts.employeeId If provided, the endpoint returns only timecards for the employee with the specified ID.
@@ -588,7 +588,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * RetrieveCashDrawerShift
-   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {String} shiftId The shift&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1CashDrawerShift} and HTTP response
@@ -616,7 +616,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -635,7 +635,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCashDrawerShift
-   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-cashdrawershifts)  ---
+   * Provides the details for a single cash drawer shift, including all events that occurred during the shift.
    * @param {String} locationId The ID of the location to list cash drawer shifts for.
    * @param {String} shiftId The shift&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1CashDrawerShift}
@@ -670,7 +670,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -723,7 +723,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -757,7 +757,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * RetrieveTimecard
-   * Provides the details for a single timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides the details for a single timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The timecard&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
    */
@@ -778,7 +778,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -797,7 +797,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveTimecard
-   * Provides the details for a single timecard.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---  &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides the details for a single timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
    * @param {String} timecardId The timecard&#39;s ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}
    */
@@ -837,7 +837,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -897,7 +897,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -932,7 +932,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * UpdateTimecard
-   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
    * @param {String} timecardId TThe ID of the timecard to modify.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request. See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Timecard} and HTTP response
@@ -959,7 +959,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -978,7 +978,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateTimecard
-   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.  ---  - __Deprecation date__: 2020-02-26 - [__Retirement date__](/docs/build-basics/api-lifecycle#deprecated): 2021-02-26 - [Migration guide](/docs/migrate-from-v1/guides/v1-timecards)  ---
+   * Modifies the details of a timecard with an &#x60;API_EDIT&#x60; event for the timecard. Updating an active timecard with a &#x60;clockout_time&#x60; clocks the employee out.
    * @param {String} timecardId TThe ID of the timecard to modify.
    * @param {module:model/V1Timecard} body An object containing the fields to POST for the request. See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Timecard}

@@ -34,7 +34,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListLocations
-   * Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+   * Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1Merchant>} and HTTP response
    */
   this.listLocationsWithHttpInfo = function() {
@@ -48,7 +48,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -67,7 +67,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListLocations
-   * Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+   * Provides details for all business locations associated with a Square account, including the Square-assigned object ID for the location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1Merchant>}
    */
   this.listLocations = function() {
@@ -81,7 +81,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * RetrieveBusiness
-   * Get the general information for a business.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+   * Get the general information for a business.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Merchant} and HTTP response
    */
   this.retrieveBusinessWithHttpInfo = function() {
@@ -95,7 +95,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-05-28';
+    headerParams['Square-Version'] = '2020-06-25';
 
     var formParams = {
     };
@@ -114,7 +114,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveBusiness
-   * Get the general information for a business.  ---  - __Deprecation date__: 2019-11-20 - [__Retirement date__](/build-basics/api-lifecycle#deprecated): 2020-11-18 - [Migration guide](/migrate-from-v1/guides/v1-locations)  ---
+   * Get the general information for a business.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Merchant}
    */
   this.retrieveBusiness = function() {

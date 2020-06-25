@@ -23,4 +23,10 @@
 
 * `SQUARE_CAPITAL_CARD` (value: `"SQUARE_CAPITAL_CARD"`)
 
+* `INTERAC` (value: `"INTERAC"`)
+
+* `EFTPOS` (value: `"EFTPOS"`)
+
+* `FELICA` (value: `"FELICA"`)
+
 
