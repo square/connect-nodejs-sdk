@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CatalogQueryCustomAttributeUsage', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CatalogQueryCustomAttributeUsage();
+    //this.api = new SquareConnect.CatalogQueryCustomAttributeUsage();
   });
 
   it('should create an instance of CatalogQueryCustomAttributeUsage', function() {

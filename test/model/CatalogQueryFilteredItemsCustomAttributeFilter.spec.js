@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CatalogQueryFilteredItemsCustomAttributeFilter', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //this.api = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
   });
 
   it('should create an instance of CatalogQueryFilteredItemsCustomAttributeFilter', function() {
