@@ -2,7 +2,7 @@
 
 ### Description
 
-Provides information about the application used to generate an inventory change.
+Provides information about the application used to generate a change.
 
 ## Properties
 Name | Type | Description | Notes

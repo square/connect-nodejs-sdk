@@ -2,7 +2,7 @@
 
 ### Description
 
-
+The query filter to return the items containing the specified modifier list IDs.
 
 ## Properties
 Name | Type | Description | Notes

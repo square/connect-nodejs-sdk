@@ -2,7 +2,7 @@
 
 ### Description
 
-
+The query filter to return the search result whose named attribute values fall between the specified range.
 
 ## Properties
 Name | Type | Description | Notes

@@ -72,7 +72,7 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['changes'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If unset, this is the final response.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+ * The pagination cursor to be used in a subsequent request. If unset, this is the final response.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

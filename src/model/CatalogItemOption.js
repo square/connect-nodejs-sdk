@@ -74,17 +74,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The item option's display name for the seller. Must be unique across all item options. Searchable.
+ * The item option's display name for the seller. Must be unique across all item options. This is a searchable attribute for use in applicable query filters.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The item option's display name for the customer. Searchable.
+ * The item option's display name for the customer. This is a searchable attribute for use in applicable query filters.
  * @member {String} display_name
  */
 exports.prototype['display_name'] = undefined;
 /**
- * The item option's human-readable description. Displayed in the Square Point of Sale app for the seller and in the Online Store or on receipts for the buyer.
+ * The item option's human-readable description. Displayed in the Square Point of Sale app for the seller and in the Online Store or on receipts for the buyer. This is a searchable attribute for use in applicable query filters.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;

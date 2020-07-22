@@ -132,7 +132,7 @@ exports.prototype['deadline_duration'] = undefined;
  */
 exports.prototype['status'] = undefined;
 /**
- * Present if the status is CANCELED. See [TerminalCheckoutCancelReason](#type-terminalcheckoutcancelreason) for possible values
+ * Present if the status is CANCELED. See [ActionCancelReason](#type-actioncancelreason) for possible values
  * @member {String} cancel_reason
  */
 exports.prototype['cancel_reason'] = undefined;

@@ -1,6 +1,6 @@
 {
   "name": "square-connect",
-  "version": "4.20200625.0",
+  "version": "4.20200722.1",
   "description": "JavaScript client library for the Square Connect v2 API",
   "keywords": [
     "square",

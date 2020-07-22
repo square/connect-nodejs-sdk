@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>SourceApplication</code>.
- * Provides information about the application used to generate an inventory change.
+ * Provides information about the application used to generate a change.
  * @alias module:model/SourceApplication
  * @class
  */

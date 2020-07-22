@@ -41,6 +41,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -83,6 +84,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('reward_ids')) {
       obj['reward_ids'] = ApiClient.convertToType(data['reward_ids'], ['String']);
+    }
+      if (data.hasOwnProperty('pricing_rule_id')) {
+      obj['pricing_rule_id'] = ApiClient.convertToType(data['pricing_rule_id'], 'String');
     }
     }
   return obj;
@@ -138,6 +142,11 @@ exports.prototype['scope'] = undefined;
  * @member {Array.<String>} reward_ids
  */
 exports.prototype['reward_ids'] = undefined;
+/**
+ * The object identifier of a `pricing rule` to be applied automatically to this discount. The specification and application of the discounts, to which a `pricing_rule_id` is assigned, are completely controlled by the corresponding pricing rule.
+ * @member {String} pricing_rule_id
+ */
+exports.prototype['pricing_rule_id'] = undefined;
 
 
 

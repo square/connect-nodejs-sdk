@@ -24,7 +24,7 @@ var CatalogModifierOverride = require('./CatalogModifierOverride');
 
 /**
  * Constructs a new <code>CatalogItemModifierListInfo</code>.
- * Controls the properties of a &#x60;CatalogModifierList&#x60; as it applies to this &#x60;CatalogItem&#x60;.
+ * Options to control the properties of a &#x60;CatalogModifierList&#x60; applied to a &#x60;CatalogItem&#x60; instance.
  * @alias module:model/CatalogItemModifierListInfo
  * @class
  * @param modifierListId {String} The ID of the `CatalogModifierList` controlled by this `CatalogModifierListInfo`.

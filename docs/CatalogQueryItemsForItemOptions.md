@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-
+The query filter to return the items containing the specified item option IDs.
 
 ## Properties
 Name | Type | Description | Notes

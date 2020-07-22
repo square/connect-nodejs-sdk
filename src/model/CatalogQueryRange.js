@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryRange</code>.
- * 
+ * The query filter to return the search result whose named attribute values fall between the specified range.
  * @alias module:model/CatalogQueryRange
  * @class
  * @param attributeName {String} The name of the attribute to be searched.

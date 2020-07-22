@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CatalogDiscount</code>.
- * A discount in the Catalog object model.
+ * A discount applicable to items.
  * @alias module:model/CatalogDiscount
  * @class
  */
@@ -77,7 +77,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The discount name. Searchable. This field has max length of 255 Unicode code points.
+ * The discount name. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -87,12 +87,12 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['discount_type'] = undefined;
 /**
- * The percentage of the discount as a string representation of a decimal number, using a `.` as the decimal separator and without a `%` sign. A value of `7.5` corresponds to `7.5%`. Specify a percentage of `0` if `discount_type` is `VARIABLE_PERCENTAGE`.  Do not include this field for amount-based or variable discounts.
+ * The percentage of the discount as a string representation of a decimal number, using a `.` as the decimal separator and without a `%` sign. A value of `7.5` corresponds to `7.5%`. Specify a percentage of `0` if `discount_type` is `VARIABLE_PERCENTAGE`.  Do not use this field for amount-based or variable discounts.
  * @member {String} percentage
  */
 exports.prototype['percentage'] = undefined;
 /**
- * The amount of the discount. Specify an amount of `0` if `discount_type` is `VARIABLE_AMOUNT`.  Do not include this field for percentage-based or variable discounts.
+ * The amount of the discount. Specify an amount of `0` if `discount_type` is `VARIABLE_AMOUNT`.  Do not use this field for percentage-based or variable discounts.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;

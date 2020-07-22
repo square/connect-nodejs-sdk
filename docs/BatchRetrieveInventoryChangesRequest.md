@@ -7,7 +7,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**catalog_object_ids** | **[String]** | Filters results by &#x60;CatalogObject&#x60; ID. Only applied when set. Default: unset. | [optional] 
+**catalog_object_ids** | **[String]** | Filters results by &#x60;CatalogObject&#x60; ID. Only applied when set. Max size is 500 IDs. Default: unset. | [optional] 
 **location_ids** | **[String]** | Filters results by &#x60;Location&#x60; ID. Only applied when set. Default: unset. | [optional] 
 **types** | **[String]** | Filters results by &#x60;InventoryChangeType&#x60;. Default: [&#x60;PHYSICAL_COUNT&#x60;, &#x60;ADJUSTMENT&#x60;]. &#x60;TRANSFER&#x60; is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values | [optional] 
 **states** | **[String]** | Filters &#x60;ADJUSTMENT&#x60; query results by &#x60;InventoryState&#x60;. Only applied when set. Default: unset. See [InventoryState](#type-inventorystate) for possible values | [optional] 

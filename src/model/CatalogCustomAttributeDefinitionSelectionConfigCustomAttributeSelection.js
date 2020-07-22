@@ -27,7 +27,7 @@ var ApiClient = require('../ApiClient');
  * A named selection for this &#x60;SELECTION&#x60;-type custom attribute definition.
  * @alias module:model/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection
  * @class
- * @param name {String} Selection name, unique within `allowed_selections`. Required. Min length of 1, max length of 255.
+ * @param name {String} Selection name, unique within `allowed_selections`.
  */
 var exports = function(name) {
   var _this = this;
@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['uid'] = undefined;
 /**
- * Selection name, unique within `allowed_selections`. Required. Min length of 1, max length of 255.
+ * Selection name, unique within `allowed_selections`.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

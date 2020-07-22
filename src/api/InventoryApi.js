@@ -29,7 +29,7 @@ var RetrieveInventoryPhysicalCountResponse = require('../model/RetrieveInventory
  */
 
 /**
- * Constructs a new InventoryApi. 
+ * Constructs a new InventoryApi.
  * @alias module:api/InventoryApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -61,7 +61,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -113,7 +113,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -218,7 +218,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -255,7 +255,7 @@ module.exports = function(apiClient) {
    * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveInventoryChangesResponse} and HTTP response
    */
   this.retrieveInventoryChangesWithHttpInfo = function(catalogObjectId, opts) {
@@ -277,7 +277,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -300,7 +300,7 @@ module.exports = function(apiClient) {
    * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveInventoryChangesResponse}
    */
   this.retrieveInventoryChanges = function(catalogObjectId, opts) {
@@ -339,7 +339,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -395,7 +395,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

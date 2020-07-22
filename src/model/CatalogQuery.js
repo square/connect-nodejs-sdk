@@ -32,7 +32,7 @@ var CatalogQueryText = require('./CatalogQueryText');
 
 /**
  * Constructs a new <code>CatalogQuery</code>.
- * A query to be applied to a &#x60;SearchCatalogObjectsRequest&#x60;. Only one query field may be present.  Where an attribute name is required, it should be specified as the name of any field marked \&quot;searchable\&quot; from the structured data types for the desired result object type(s) (&#x60;CatalogItem&#x60;, &#x60;CatalogItemVariation&#x60;, &#x60;CatalogCategory&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogDiscount&#x60;, &#x60;CatalogModifierList&#x60;, &#x60;CatalogModifier&#x60;).  For example, a query that should return Items may specify attribute names from any of the searchable fields of the &#x60;CatalogItem&#x60; data type, namely &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, and &#x60;\&quot;abbreviation\&quot;&#x60;.
+ * A query composed of one or more different types of filters to narrow the scope of targeted objects when calling the &#x60;SearchCatalogObjects&#x60; endpoint.  Although a query can have multiple filters, only one query is allowed per call to [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects).  When a query filter is based on an attribute, the attribute must be searchable.  Searchable attributes are listed as follows, along their parent types that can be searched for with applicable query filters.   Searchable attribute and objects queryable by searchable attributes **  - &#x60;name&#x60;:  &#x60;CatalogItem&#x60;, &#x60;CatalogItemVariation&#x60;, &#x60;CatelogCatogry&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogDiscount&#x60;, &#x60;CatalogModifier&#x60;, &#39;CatalogModifierList&#x60;, &#x60;CatalogItemOption&#x60;, &#x60;CatalogItemOptionValue&#x60;  - &#x60;description&#x60;: &#x60;CatalogItem&#x60;, &#x60;CatalogItemOptionValue&#x60;  - &#x60;abbreviation&#x60;: &#x60;CatalogItem&#x60;  - &#x60;upc&#x60;: &#x60;CatalogItemVariation&#x60;  - &#x60;sku&#x60;: &#x60;CatalogItemVariation&#x60;  - &#x60;caption&#x60;: &#x60;CatalogImage&#x60;  - &#x60;display_name&#x60;: &#x60;CatalogItemOption&#x60;   For example, to search for [CatalogItem](#type-CatalogItem) objects by searchable attributes, you can use  the &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, or &#x60;\&quot;abbreviation\&quot;&#x60; attribute in an applicable query filter.
  * @alias module:model/CatalogQuery
  * @class
  */
@@ -93,47 +93,47 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A query that returns all objects, sorted by the given attribute.
+ * A query expression to sort returned query result by the given attribute.
  * @member {module:model/CatalogQuerySortedAttribute} sorted_attribute_query
  */
 exports.prototype['sorted_attribute_query'] = undefined;
 /**
- * A query that returns only objects for which the given (string-valued) attribute has the given case-insensitive value.
+ * An exact query expression to return objects with attribute name and value   matching the specified attribute name and value exactly. Value matching is case insensitive.
  * @member {module:model/CatalogQueryExact} exact_query
  */
 exports.prototype['exact_query'] = undefined;
 /**
- * A query that returns only objects for which the given (string-valued) attribute has the given case-insensitive prefix.
+ * A prefix query expression to return objects with attribute values  that have a prefix matching the specified string value. Value maching is case insensitive.
  * @member {module:model/CatalogQueryPrefix} prefix_query
  */
 exports.prototype['prefix_query'] = undefined;
 /**
- * A query that returns only objects for which the given (integer-valued) attribute lies in the given range.
+ * A range query expression to return objects with numberic values  that lie in the specified range.
  * @member {module:model/CatalogQueryRange} range_query
  */
 exports.prototype['range_query'] = undefined;
 /**
- * A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a `CatalogItem` contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}`.
+ * A text query expression to return objectd whose searchable attributes contain all of the given keywords, irrespective of their order. For example, if a `CatalogItem` contains custom attribute values of  `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, the query filter of `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}` returns this item.
  * @member {module:model/CatalogQueryText} text_query
  */
 exports.prototype['text_query'] = undefined;
 /**
- * A query that returns all `CatalogItem`s that have any of the given `CatalogTax`es enabled.
+ * A query expression to return items that have any of the specified taxes (as identified by the corresponding `CatalogTax` object IDs) enabled.
  * @member {module:model/CatalogQueryItemsForTax} items_for_tax_query
  */
 exports.prototype['items_for_tax_query'] = undefined;
 /**
- * A query that returns all `CatalogItem`s that have any of the given `CatalogModifierList`s enabled.
+ * A query expression to return items that have any of the given modifier list (as identifieid by the coresponding `CatalogModifierList`s IDs) enabled.
  * @member {module:model/CatalogQueryItemsForModifierList} items_for_modifier_list_query
  */
 exports.prototype['items_for_modifier_list_query'] = undefined;
 /**
- * A query that returns all `CatalogItem`s that have all of the given `CatalogItemOption`s.
+ * A query expression to return items that contains the specified item options (as identified the corresponding `CatalogItemOption` IDs).
  * @member {module:model/CatalogQueryItemsForItemOptions} items_for_item_options_query
  */
 exports.prototype['items_for_item_options_query'] = undefined;
 /**
- * A query that returns all `CatalogItemVariation`s that have all of the given `CatalogItemOption` values.
+ * A query expression to return item variations (of the `CatalogItemVariation` that  contain all of the specified `CatalogItemOption` IDs.
  * @member {module:model/CatalogQueryItemVariationsForItemOptionValues} item_variations_for_item_option_values_query
  */
 exports.prototype['item_variations_for_item_option_values_query'] = undefined;

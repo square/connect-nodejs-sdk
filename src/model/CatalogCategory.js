@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogCategory</code>.
- * A category to which a &#x60;CatalogItem&#x60; belongs in the &#x60;Catalog&#x60; object model.
+ * A category to which a &#x60;CatalogItem&#x60; instance belongs.
  * @alias module:model/CatalogCategory
  * @class
  */
@@ -52,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The category name. Searchable. This field has max length of 255 Unicode code points.
+ * The category name. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

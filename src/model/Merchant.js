@@ -26,7 +26,7 @@ var ApiClient = require('../ApiClient');
  * Represents a Square seller.
  * @alias module:model/Merchant
  * @class
- * @param country {String} The country code associated with the merchant account, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
+ * @param country {String} The country code associated with the merchant account, in ISO 3166 format. See [Country](#type-country) for possible values
  */
 var exports = function(country) {
   var _this = this;
@@ -34,6 +34,7 @@ var exports = function(country) {
 
 
   _this['country'] = country;
+
 
 
 
@@ -68,6 +69,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('status')) {
       obj['status'] = ApiClient.convertToType(data['status'], 'String');
     }
+      if (data.hasOwnProperty('main_location_id')) {
+      obj['main_location_id'] = ApiClient.convertToType(data['main_location_id'], 'String');
+    }
     }
   return obj;
 }
@@ -83,7 +87,7 @@ exports.prototype['id'] = undefined;
  */
 exports.prototype['business_name'] = undefined;
 /**
- * The country code associated with the merchant account, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
+ * The country code associated with the merchant account, in ISO 3166 format. See [Country](#type-country) for possible values
  * @member {String} country
  */
 exports.prototype['country'] = undefined;
@@ -102,6 +106,11 @@ exports.prototype['currency'] = undefined;
  * @member {String} status
  */
 exports.prototype['status'] = undefined;
+/**
+ * The ID of the main `Location` for this merchant.
+ * @member {String} main_location_id
+ */
+exports.prototype['main_location_id'] = undefined;
 
 
 

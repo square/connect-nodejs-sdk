@@ -25,7 +25,7 @@ var UpdateLocationResponse = require('../model/UpdateLocationResponse');
  */
 
 /**
- * Constructs a new LocationsApi. 
+ * Constructs a new LocationsApi.
  * @alias module:api/LocationsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -58,7 +58,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -104,7 +104,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -136,8 +136,8 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
-   * Retrieves details of a location.
-   * @param {String} locationId The ID of the location to retrieve.
+   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
+   * @param {String} locationId The ID of the location to retrieve. If you specify the string \&quot;main\&quot;, then the endpoint returns the main location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveLocationResponse} and HTTP response
    */
   this.retrieveLocationWithHttpInfo = function(locationId) {
@@ -156,7 +156,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -175,8 +175,8 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
-   * Retrieves details of a location.
-   * @param {String} locationId The ID of the location to retrieve.
+   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
+   * @param {String} locationId The ID of the location to retrieve. If you specify the string \&quot;main\&quot;, then the endpoint returns the main location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveLocationResponse}
    */
   this.retrieveLocation = function(locationId) {
@@ -216,7 +216,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

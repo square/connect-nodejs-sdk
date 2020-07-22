@@ -41,7 +41,7 @@ var SearchLoyaltyRewardsResponse = require('../model/SearchLoyaltyRewardsRespons
  */
 
 /**
- * Constructs a new LoyaltyApi. 
+ * Constructs a new LoyaltyApi.
  * @alias module:api/LoyaltyApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -81,7 +81,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -142,7 +142,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -203,7 +203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -257,7 +257,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -310,7 +310,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -364,7 +364,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -411,7 +411,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -470,7 +470,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -525,7 +525,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -579,7 +579,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -632,7 +632,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -685,7 +685,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -738,7 +738,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

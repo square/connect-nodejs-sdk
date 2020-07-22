@@ -21,7 +21,7 @@ var RetrieveCustomerSegmentResponse = require('../model/RetrieveCustomerSegmentR
  */
 
 /**
- * Constructs a new CustomerSegmentsApi. 
+ * Constructs a new CustomerSegmentsApi.
  * @alias module:api/CustomerSegmentsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -52,7 +52,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -107,7 +107,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
