@@ -17,6 +17,7 @@ var AcceptDisputeRequest = require('./model/AcceptDisputeRequest');
 var AcceptDisputeResponse = require('./model/AcceptDisputeResponse');
 var AccumulateLoyaltyPointsRequest = require('./model/AccumulateLoyaltyPointsRequest');
 var AccumulateLoyaltyPointsResponse = require('./model/AccumulateLoyaltyPointsResponse');
+var ActionCancelReason = require('./model/ActionCancelReason');
 var AddGroupToCustomerRequest = require('./model/AddGroupToCustomerRequest');
 var AddGroupToCustomerResponse = require('./model/AddGroupToCustomerResponse');
 var AdditionalRecipient = require('./model/AdditionalRecipient');
@@ -54,6 +55,8 @@ var CalculateLoyaltyPointsRequest = require('./model/CalculateLoyaltyPointsReque
 var CalculateLoyaltyPointsResponse = require('./model/CalculateLoyaltyPointsResponse');
 var CalculateOrderRequest = require('./model/CalculateOrderRequest');
 var CalculateOrderResponse = require('./model/CalculateOrderResponse');
+var CancelInvoiceRequest = require('./model/CancelInvoiceRequest');
+var CancelInvoiceResponse = require('./model/CancelInvoiceResponse');
 var CancelPaymentByIdempotencyKeyRequest = require('./model/CancelPaymentByIdempotencyKeyRequest');
 var CancelPaymentByIdempotencyKeyResponse = require('./model/CancelPaymentByIdempotencyKeyResponse');
 var CancelPaymentRequest = require('./model/CancelPaymentRequest');
@@ -153,6 +156,8 @@ var CreateDisputeEvidenceFileRequest = require('./model/CreateDisputeEvidenceFil
 var CreateDisputeEvidenceFileResponse = require('./model/CreateDisputeEvidenceFileResponse');
 var CreateDisputeEvidenceTextRequest = require('./model/CreateDisputeEvidenceTextRequest');
 var CreateDisputeEvidenceTextResponse = require('./model/CreateDisputeEvidenceTextResponse');
+var CreateInvoiceRequest = require('./model/CreateInvoiceRequest');
+var CreateInvoiceResponse = require('./model/CreateInvoiceResponse');
 var CreateLocationRequest = require('./model/CreateLocationRequest');
 var CreateLocationResponse = require('./model/CreateLocationResponse');
 var CreateLoyaltyAccountRequest = require('./model/CreateLoyaltyAccountRequest');
@@ -174,6 +179,7 @@ var CreateTeamMemberResponse = require('./model/CreateTeamMemberResponse');
 var CreateTerminalCheckoutRequest = require('./model/CreateTerminalCheckoutRequest');
 var CreateTerminalCheckoutResponse = require('./model/CreateTerminalCheckoutResponse');
 var Currency = require('./model/Currency');
+var CustomAttributeFilter = require('./model/CustomAttributeFilter');
 var Customer = require('./model/Customer');
 var CustomerCreationSource = require('./model/CustomerCreationSource');
 var CustomerCreationSourceFilter = require('./model/CustomerCreationSourceFilter');
@@ -199,6 +205,8 @@ var DeleteCustomerGroupRequest = require('./model/DeleteCustomerGroupRequest');
 var DeleteCustomerGroupResponse = require('./model/DeleteCustomerGroupResponse');
 var DeleteCustomerRequest = require('./model/DeleteCustomerRequest');
 var DeleteCustomerResponse = require('./model/DeleteCustomerResponse');
+var DeleteInvoiceRequest = require('./model/DeleteInvoiceRequest');
+var DeleteInvoiceResponse = require('./model/DeleteInvoiceResponse');
 var DeleteLoyaltyRewardRequest = require('./model/DeleteLoyaltyRewardRequest');
 var DeleteLoyaltyRewardResponse = require('./model/DeleteLoyaltyRewardResponse');
 var DeleteShiftRequest = require('./model/DeleteShiftRequest');
@@ -234,6 +242,8 @@ var GetDeviceCodeRequest = require('./model/GetDeviceCodeRequest');
 var GetDeviceCodeResponse = require('./model/GetDeviceCodeResponse');
 var GetEmployeeWageRequest = require('./model/GetEmployeeWageRequest');
 var GetEmployeeWageResponse = require('./model/GetEmployeeWageResponse');
+var GetInvoiceRequest = require('./model/GetInvoiceRequest');
+var GetInvoiceResponse = require('./model/GetInvoiceResponse');
 var GetPaymentRefundRequest = require('./model/GetPaymentRefundRequest');
 var GetPaymentRefundResponse = require('./model/GetPaymentRefundResponse');
 var GetPaymentRequest = require('./model/GetPaymentRequest');
@@ -250,6 +260,18 @@ var InventoryCount = require('./model/InventoryCount');
 var InventoryPhysicalCount = require('./model/InventoryPhysicalCount');
 var InventoryState = require('./model/InventoryState');
 var InventoryTransfer = require('./model/InventoryTransfer');
+var Invoice = require('./model/Invoice');
+var InvoiceFilter = require('./model/InvoiceFilter');
+var InvoicePaymentReminder = require('./model/InvoicePaymentReminder');
+var InvoicePaymentReminderStatus = require('./model/InvoicePaymentReminderStatus');
+var InvoicePaymentRequest = require('./model/InvoicePaymentRequest');
+var InvoiceQuery = require('./model/InvoiceQuery');
+var InvoiceRecipient = require('./model/InvoiceRecipient');
+var InvoiceRequestMethod = require('./model/InvoiceRequestMethod');
+var InvoiceRequestType = require('./model/InvoiceRequestType');
+var InvoiceSort = require('./model/InvoiceSort');
+var InvoiceSortField = require('./model/InvoiceSortField');
+var InvoiceStatus = require('./model/InvoiceStatus');
 var ItemVariationLocationOverrides = require('./model/ItemVariationLocationOverrides');
 var JobAssignment = require('./model/JobAssignment');
 var JobAssignmentPayType = require('./model/JobAssignmentPayType');
@@ -283,6 +305,8 @@ var ListEmployeeWagesRequest = require('./model/ListEmployeeWagesRequest');
 var ListEmployeeWagesResponse = require('./model/ListEmployeeWagesResponse');
 var ListEmployeesRequest = require('./model/ListEmployeesRequest');
 var ListEmployeesResponse = require('./model/ListEmployeesResponse');
+var ListInvoicesRequest = require('./model/ListInvoicesRequest');
+var ListInvoicesResponse = require('./model/ListInvoicesResponse');
 var ListLocationsRequest = require('./model/ListLocationsRequest');
 var ListLocationsResponse = require('./model/ListLocationsResponse');
 var ListLoyaltyProgramsRequest = require('./model/ListLoyaltyProgramsRequest');
@@ -377,6 +401,7 @@ var OrderLineItemTax = require('./model/OrderLineItemTax');
 var OrderLineItemTaxScope = require('./model/OrderLineItemTaxScope');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
 var OrderMoneyAmounts = require('./model/OrderMoneyAmounts');
+var OrderPricingOptions = require('./model/OrderPricingOptions');
 var OrderQuantityUnit = require('./model/OrderQuantityUnit');
 var OrderReturn = require('./model/OrderReturn');
 var OrderReturnDiscount = require('./model/OrderReturnDiscount');
@@ -400,6 +425,9 @@ var PaymentRefund = require('./model/PaymentRefund');
 var ProcessingFee = require('./model/ProcessingFee');
 var Product = require('./model/Product');
 var ProductType = require('./model/ProductType');
+var PublishInvoiceRequest = require('./model/PublishInvoiceRequest');
+var PublishInvoiceResponse = require('./model/PublishInvoiceResponse');
+var Range = require('./model/Range');
 var RedeemLoyaltyRewardRequest = require('./model/RedeemLoyaltyRewardRequest');
 var RedeemLoyaltyRewardResponse = require('./model/RedeemLoyaltyRewardResponse');
 var Refund = require('./model/Refund');
@@ -455,10 +483,15 @@ var RetrieveWageSettingRequest = require('./model/RetrieveWageSettingRequest');
 var RetrieveWageSettingResponse = require('./model/RetrieveWageSettingResponse');
 var RevokeTokenRequest = require('./model/RevokeTokenRequest');
 var RevokeTokenResponse = require('./model/RevokeTokenResponse');
+var SearchCatalogItemsRequest = require('./model/SearchCatalogItemsRequest');
+var SearchCatalogItemsRequestStockLevel = require('./model/SearchCatalogItemsRequestStockLevel');
+var SearchCatalogItemsResponse = require('./model/SearchCatalogItemsResponse');
 var SearchCatalogObjectsRequest = require('./model/SearchCatalogObjectsRequest');
 var SearchCatalogObjectsResponse = require('./model/SearchCatalogObjectsResponse');
 var SearchCustomersRequest = require('./model/SearchCustomersRequest');
 var SearchCustomersResponse = require('./model/SearchCustomersResponse');
+var SearchInvoicesRequest = require('./model/SearchInvoicesRequest');
+var SearchInvoicesResponse = require('./model/SearchInvoicesResponse');
 var SearchLoyaltyAccountsRequest = require('./model/SearchLoyaltyAccountsRequest');
 var SearchLoyaltyAccountsRequestLoyaltyAccountQuery = require('./model/SearchLoyaltyAccountsRequestLoyaltyAccountQuery');
 var SearchLoyaltyAccountsResponse = require('./model/SearchLoyaltyAccountsResponse');
@@ -515,7 +548,6 @@ var TenderCardDetailsStatus = require('./model/TenderCardDetailsStatus');
 var TenderCashDetails = require('./model/TenderCashDetails');
 var TenderType = require('./model/TenderType');
 var TerminalCheckout = require('./model/TerminalCheckout');
-var TerminalCheckoutCancelReason = require('./model/TerminalCheckoutCancelReason');
 var TerminalCheckoutQuery = require('./model/TerminalCheckoutQuery');
 var TerminalCheckoutQueryFilter = require('./model/TerminalCheckoutQueryFilter');
 var TerminalCheckoutQuerySort = require('./model/TerminalCheckoutQuerySort');
@@ -530,6 +562,8 @@ var UpdateCustomerGroupRequest = require('./model/UpdateCustomerGroupRequest');
 var UpdateCustomerGroupResponse = require('./model/UpdateCustomerGroupResponse');
 var UpdateCustomerRequest = require('./model/UpdateCustomerRequest');
 var UpdateCustomerResponse = require('./model/UpdateCustomerResponse');
+var UpdateInvoiceRequest = require('./model/UpdateInvoiceRequest');
+var UpdateInvoiceResponse = require('./model/UpdateInvoiceResponse');
 var UpdateItemModifierListsRequest = require('./model/UpdateItemModifierListsRequest');
 var UpdateItemModifierListsResponse = require('./model/UpdateItemModifierListsResponse');
 var UpdateItemTaxesRequest = require('./model/UpdateItemTaxesRequest');
@@ -726,6 +760,7 @@ var DevicesApi = require('./api/DevicesApi');
 var DisputesApi = require('./api/DisputesApi');
 var EmployeesApi = require('./api/EmployeesApi');
 var InventoryApi = require('./api/InventoryApi');
+var InvoicesApi = require('./api/InvoicesApi');
 var LaborApi = require('./api/LaborApi');
 var LocationsApi = require('./api/LocationsApi');
 var LoyaltyApi = require('./api/LoyaltyApi');
@@ -774,7 +809,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 4.20200625.0
+ * @version 4.20200722.1
  */
   module.exports = {
   /**
@@ -802,6 +837,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/AccumulateLoyaltyPointsResponse}
    */
   AccumulateLoyaltyPointsResponse: AccumulateLoyaltyPointsResponse,
+  /**
+   * The ActionCancelReason model constructor.
+   * @property {module:model/ActionCancelReason}
+   */
+  ActionCancelReason: ActionCancelReason,
   /**
    * The AddGroupToCustomerRequest model constructor.
    * @property {module:model/AddGroupToCustomerRequest}
@@ -987,6 +1027,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CalculateOrderResponse}
    */
   CalculateOrderResponse: CalculateOrderResponse,
+  /**
+   * The CancelInvoiceRequest model constructor.
+   * @property {module:model/CancelInvoiceRequest}
+   */
+  CancelInvoiceRequest: CancelInvoiceRequest,
+  /**
+   * The CancelInvoiceResponse model constructor.
+   * @property {module:model/CancelInvoiceResponse}
+   */
+  CancelInvoiceResponse: CancelInvoiceResponse,
   /**
    * The CancelPaymentByIdempotencyKeyRequest model constructor.
    * @property {module:model/CancelPaymentByIdempotencyKeyRequest}
@@ -1483,6 +1533,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CreateDisputeEvidenceTextResponse: CreateDisputeEvidenceTextResponse,
   /**
+   * The CreateInvoiceRequest model constructor.
+   * @property {module:model/CreateInvoiceRequest}
+   */
+  CreateInvoiceRequest: CreateInvoiceRequest,
+  /**
+   * The CreateInvoiceResponse model constructor.
+   * @property {module:model/CreateInvoiceResponse}
+   */
+  CreateInvoiceResponse: CreateInvoiceResponse,
+  /**
    * The CreateLocationRequest model constructor.
    * @property {module:model/CreateLocationRequest}
    */
@@ -1587,6 +1647,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/Currency}
    */
   Currency: Currency,
+  /**
+   * The CustomAttributeFilter model constructor.
+   * @property {module:model/CustomAttributeFilter}
+   */
+  CustomAttributeFilter: CustomAttributeFilter,
   /**
    * The Customer model constructor.
    * @property {module:model/Customer}
@@ -1712,6 +1777,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/DeleteCustomerResponse}
    */
   DeleteCustomerResponse: DeleteCustomerResponse,
+  /**
+   * The DeleteInvoiceRequest model constructor.
+   * @property {module:model/DeleteInvoiceRequest}
+   */
+  DeleteInvoiceRequest: DeleteInvoiceRequest,
+  /**
+   * The DeleteInvoiceResponse model constructor.
+   * @property {module:model/DeleteInvoiceResponse}
+   */
+  DeleteInvoiceResponse: DeleteInvoiceResponse,
   /**
    * The DeleteLoyaltyRewardRequest model constructor.
    * @property {module:model/DeleteLoyaltyRewardRequest}
@@ -1888,6 +1963,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   GetEmployeeWageResponse: GetEmployeeWageResponse,
   /**
+   * The GetInvoiceRequest model constructor.
+   * @property {module:model/GetInvoiceRequest}
+   */
+  GetInvoiceRequest: GetInvoiceRequest,
+  /**
+   * The GetInvoiceResponse model constructor.
+   * @property {module:model/GetInvoiceResponse}
+   */
+  GetInvoiceResponse: GetInvoiceResponse,
+  /**
    * The GetPaymentRefundRequest model constructor.
    * @property {module:model/GetPaymentRefundRequest}
    */
@@ -1967,6 +2052,66 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/InventoryTransfer}
    */
   InventoryTransfer: InventoryTransfer,
+  /**
+   * The Invoice model constructor.
+   * @property {module:model/Invoice}
+   */
+  Invoice: Invoice,
+  /**
+   * The InvoiceFilter model constructor.
+   * @property {module:model/InvoiceFilter}
+   */
+  InvoiceFilter: InvoiceFilter,
+  /**
+   * The InvoicePaymentReminder model constructor.
+   * @property {module:model/InvoicePaymentReminder}
+   */
+  InvoicePaymentReminder: InvoicePaymentReminder,
+  /**
+   * The InvoicePaymentReminderStatus model constructor.
+   * @property {module:model/InvoicePaymentReminderStatus}
+   */
+  InvoicePaymentReminderStatus: InvoicePaymentReminderStatus,
+  /**
+   * The InvoicePaymentRequest model constructor.
+   * @property {module:model/InvoicePaymentRequest}
+   */
+  InvoicePaymentRequest: InvoicePaymentRequest,
+  /**
+   * The InvoiceQuery model constructor.
+   * @property {module:model/InvoiceQuery}
+   */
+  InvoiceQuery: InvoiceQuery,
+  /**
+   * The InvoiceRecipient model constructor.
+   * @property {module:model/InvoiceRecipient}
+   */
+  InvoiceRecipient: InvoiceRecipient,
+  /**
+   * The InvoiceRequestMethod model constructor.
+   * @property {module:model/InvoiceRequestMethod}
+   */
+  InvoiceRequestMethod: InvoiceRequestMethod,
+  /**
+   * The InvoiceRequestType model constructor.
+   * @property {module:model/InvoiceRequestType}
+   */
+  InvoiceRequestType: InvoiceRequestType,
+  /**
+   * The InvoiceSort model constructor.
+   * @property {module:model/InvoiceSort}
+   */
+  InvoiceSort: InvoiceSort,
+  /**
+   * The InvoiceSortField model constructor.
+   * @property {module:model/InvoiceSortField}
+   */
+  InvoiceSortField: InvoiceSortField,
+  /**
+   * The InvoiceStatus model constructor.
+   * @property {module:model/InvoiceStatus}
+   */
+  InvoiceStatus: InvoiceStatus,
   /**
    * The ItemVariationLocationOverrides model constructor.
    * @property {module:model/ItemVariationLocationOverrides}
@@ -2132,6 +2277,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListEmployeesResponse}
    */
   ListEmployeesResponse: ListEmployeesResponse,
+  /**
+   * The ListInvoicesRequest model constructor.
+   * @property {module:model/ListInvoicesRequest}
+   */
+  ListInvoicesRequest: ListInvoicesRequest,
+  /**
+   * The ListInvoicesResponse model constructor.
+   * @property {module:model/ListInvoicesResponse}
+   */
+  ListInvoicesResponse: ListInvoicesResponse,
   /**
    * The ListLocationsRequest model constructor.
    * @property {module:model/ListLocationsRequest}
@@ -2603,6 +2758,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   OrderMoneyAmounts: OrderMoneyAmounts,
   /**
+   * The OrderPricingOptions model constructor.
+   * @property {module:model/OrderPricingOptions}
+   */
+  OrderPricingOptions: OrderPricingOptions,
+  /**
    * The OrderQuantityUnit model constructor.
    * @property {module:model/OrderQuantityUnit}
    */
@@ -2717,6 +2877,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ProductType}
    */
   ProductType: ProductType,
+  /**
+   * The PublishInvoiceRequest model constructor.
+   * @property {module:model/PublishInvoiceRequest}
+   */
+  PublishInvoiceRequest: PublishInvoiceRequest,
+  /**
+   * The PublishInvoiceResponse model constructor.
+   * @property {module:model/PublishInvoiceResponse}
+   */
+  PublishInvoiceResponse: PublishInvoiceResponse,
+  /**
+   * The Range model constructor.
+   * @property {module:model/Range}
+   */
+  Range: Range,
   /**
    * The RedeemLoyaltyRewardRequest model constructor.
    * @property {module:model/RedeemLoyaltyRewardRequest}
@@ -2993,6 +3168,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RevokeTokenResponse: RevokeTokenResponse,
   /**
+   * The SearchCatalogItemsRequest model constructor.
+   * @property {module:model/SearchCatalogItemsRequest}
+   */
+  SearchCatalogItemsRequest: SearchCatalogItemsRequest,
+  /**
+   * The SearchCatalogItemsRequestStockLevel model constructor.
+   * @property {module:model/SearchCatalogItemsRequestStockLevel}
+   */
+  SearchCatalogItemsRequestStockLevel: SearchCatalogItemsRequestStockLevel,
+  /**
+   * The SearchCatalogItemsResponse model constructor.
+   * @property {module:model/SearchCatalogItemsResponse}
+   */
+  SearchCatalogItemsResponse: SearchCatalogItemsResponse,
+  /**
    * The SearchCatalogObjectsRequest model constructor.
    * @property {module:model/SearchCatalogObjectsRequest}
    */
@@ -3012,6 +3202,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SearchCustomersResponse}
    */
   SearchCustomersResponse: SearchCustomersResponse,
+  /**
+   * The SearchInvoicesRequest model constructor.
+   * @property {module:model/SearchInvoicesRequest}
+   */
+  SearchInvoicesRequest: SearchInvoicesRequest,
+  /**
+   * The SearchInvoicesResponse model constructor.
+   * @property {module:model/SearchInvoicesResponse}
+   */
+  SearchInvoicesResponse: SearchInvoicesResponse,
   /**
    * The SearchLoyaltyAccountsRequest model constructor.
    * @property {module:model/SearchLoyaltyAccountsRequest}
@@ -3293,11 +3493,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   TerminalCheckout: TerminalCheckout,
   /**
-   * The TerminalCheckoutCancelReason model constructor.
-   * @property {module:model/TerminalCheckoutCancelReason}
-   */
-  TerminalCheckoutCancelReason: TerminalCheckoutCancelReason,
-  /**
    * The TerminalCheckoutQuery model constructor.
    * @property {module:model/TerminalCheckoutQuery}
    */
@@ -3367,6 +3562,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/UpdateCustomerResponse}
    */
   UpdateCustomerResponse: UpdateCustomerResponse,
+  /**
+   * The UpdateInvoiceRequest model constructor.
+   * @property {module:model/UpdateInvoiceRequest}
+   */
+  UpdateInvoiceRequest: UpdateInvoiceRequest,
+  /**
+   * The UpdateInvoiceResponse model constructor.
+   * @property {module:model/UpdateInvoiceResponse}
+   */
+  UpdateInvoiceResponse: UpdateInvoiceResponse,
   /**
    * The UpdateItemModifierListsRequest model constructor.
    * @property {module:model/UpdateItemModifierListsRequest}
@@ -4342,6 +4547,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/InventoryApi}
    */
   InventoryApi: InventoryApi,
+  /**
+   * The InvoicesApi service constructor.
+   * @property {module:api/InvoicesApi}
+   */
+  InvoicesApi: InvoicesApi,
   /**
    * The LaborApi service constructor.
    * @property {module:api/LaborApi}

@@ -21,7 +21,7 @@ var RetrieveMerchantResponse = require('../model/RetrieveMerchantResponse');
  */
 
 /**
- * Constructs a new MerchantsApi. 
+ * Constructs a new MerchantsApi.
  * @alias module:api/MerchantsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -51,7 +51,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -86,7 +86,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveMerchant
    * Retrieve a &#x60;Merchant&#x60; object for the given &#x60;merchant_id&#x60;.
-   * @param {String} merchantId The ID of the merchant to retrieve.
+   * @param {String} merchantId The ID of the merchant to retrieve. If the string \&quot;me\&quot; is supplied as the ID, then retrieve the merchant that is currently accessible to this call.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveMerchantResponse} and HTTP response
    */
   this.retrieveMerchantWithHttpInfo = function(merchantId) {
@@ -105,7 +105,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -125,7 +125,7 @@ module.exports = function(apiClient) {
   /**
    * RetrieveMerchant
    * Retrieve a &#x60;Merchant&#x60; object for the given &#x60;merchant_id&#x60;.
-   * @param {String} merchantId The ID of the merchant to retrieve.
+   * @param {String} merchantId The ID of the merchant to retrieve. If the string \&quot;me\&quot; is supplied as the ID, then retrieve the merchant that is currently accessible to this call.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveMerchantResponse}
    */
   this.retrieveMerchant = function(merchantId) {

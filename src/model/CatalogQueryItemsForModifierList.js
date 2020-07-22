@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryItemsForModifierList</code>.
- * 
+ * The query filter to return the items containing the specified modifier list IDs.
  * @alias module:model/CatalogQueryItemsForModifierList
  * @class
  * @param modifierListIds {Array.<String>} A set of `CatalogModifierList` IDs to be used to find associated `CatalogItem`s.

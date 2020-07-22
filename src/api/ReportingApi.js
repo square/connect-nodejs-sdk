@@ -21,7 +21,7 @@ var ListAdditionalRecipientReceivablesResponse = require('../model/ListAdditiona
  */
 
 /**
- * Constructs a new ReportingApi. 
+ * Constructs a new ReportingApi.
  * @alias module:api/ReportingApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -66,7 +66,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -136,7 +136,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

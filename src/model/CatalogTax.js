@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogTax</code>.
- * A tax in the Catalog object model.
+ * A tax applicable to an item.
  * @alias module:model/CatalogTax
  * @class
  */
@@ -72,7 +72,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The tax's name. Searchable. This field has max length of 255 Unicode code points.
+ * The tax's name. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;

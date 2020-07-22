@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryItemVariationsForItemOptionValues</code>.
- * 
+ * The query filter to return the item variations containing the specified item option value IDs.
  * @alias module:model/CatalogQueryItemVariationsForItemOptionValues
  * @class
  */

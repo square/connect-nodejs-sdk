@@ -251,6 +251,21 @@ var exports = {
    */
   "NO_FIELDS_SET": "NO_FIELDS_SET",
   /**
+   * value: "TOO_MANY_MAP_ENTRIES"
+   * @const
+   */
+  "TOO_MANY_MAP_ENTRIES": "TOO_MANY_MAP_ENTRIES",
+  /**
+   * value: "MAP_KEY_LENGTH_TOO_SHORT"
+   * @const
+   */
+  "MAP_KEY_LENGTH_TOO_SHORT": "MAP_KEY_LENGTH_TOO_SHORT",
+  /**
+   * value: "MAP_KEY_LENGTH_TOO_LONG"
+   * @const
+   */
+  "MAP_KEY_LENGTH_TOO_LONG": "MAP_KEY_LENGTH_TOO_LONG",
+  /**
    * value: "CARD_EXPIRED"
    * @const
    */

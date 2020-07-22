@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryItemsForItemOptions</code>.
- * 
+ * The query filter to return the items containing the specified item option IDs.
  * @alias module:model/CatalogQueryItemsForItemOptions
  * @class
  */

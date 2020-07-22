@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**deleteCatalogObject**](CatalogApi.md#deleteCatalogObject) | **DELETE** /v2/catalog/object/{object_id} | DeleteCatalogObject
 [**listCatalog**](CatalogApi.md#listCatalog) | **GET** /v2/catalog/list | ListCatalog
 [**retrieveCatalogObject**](CatalogApi.md#retrieveCatalogObject) | **GET** /v2/catalog/object/{object_id} | RetrieveCatalogObject
+[**searchCatalogItems**](CatalogApi.md#searchCatalogItems) | **POST** /v2/catalog/search-catalog-items | SearchCatalogItems
 [**searchCatalogObjects**](CatalogApi.md#searchCatalogObjects) | **POST** /v2/catalog/search | SearchCatalogObjects
 [**updateItemModifierLists**](CatalogApi.md#updateItemModifierLists) | **POST** /v2/catalog/update-item-modifier-lists | UpdateItemModifierLists
 [**updateItemTaxes**](CatalogApi.md#updateItemTaxes) | **POST** /v2/catalog/update-item-taxes | UpdateItemTaxes
@@ -167,7 +168,7 @@ Name | Type | Description  | Notes
 
 CatalogInfo
 
-Returns information about the Square Catalog API, such as batch size limits for &#x60;BatchUpsertCatalogObjects&#x60;.
+Retrieves information about the Square Catalog API, such as batch size limits that can be used by the &#x60;BatchUpsertCatalogObjects&#x60; endpoint.
 
 ### Example
 ```javascript
@@ -354,13 +355,62 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="searchCatalogItems"></a>
+# **searchCatalogItems**
+**Note: This endpoint is in beta.**
+> SearchCatalogItemsResponse searchCatalogItems(body)
+
+SearchCatalogItems
+
+Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions,   This (&#x60;SearchCatalogItems&#x60;) endpoint differs from the [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints use different call conventions, including the query filter formats.
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.CatalogApi();
+
+var body = new SquareConnect.SearchCatalogItemsRequest(); // SearchCatalogItemsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+
+apiInstance.searchCatalogItems(body).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SearchCatalogItemsRequest**](SearchCatalogItemsRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
+
+### Return type
+
+[**SearchCatalogItemsResponse**](SearchCatalogItemsResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="searchCatalogObjects"></a>
 # **searchCatalogObjects**
 > SearchCatalogObjectsResponse searchCatalogObjects(body)
 
 SearchCatalogObjects
 
-Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+Searches for [CatalogObject](#type-CatalogObject) of any types against supported search attribute values,  excluding custom attribute values on items or item variations, against one or more of the specified query expressions,   This (&#x60;SearchCatalogObjects&#x60;) endpoint differs from the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints have different call conventions, including the query filter formats.
 
 ### Example
 ```javascript

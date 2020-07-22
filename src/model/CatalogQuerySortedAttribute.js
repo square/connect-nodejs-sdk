@@ -23,10 +23,10 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQuerySortedAttribute</code>.
- * 
+ * The query expression to specify the key to sort search results.
  * @alias module:model/CatalogQuerySortedAttribute
  * @class
- * @param attributeName {String} The attribute whose value should be used as the sort key.
+ * @param attributeName {String} The attribute whose value is used as the sort key.
  */
 var exports = function(attributeName) {
   var _this = this;
@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The attribute whose value should be used as the sort key.
+ * The attribute whose value is used as the sort key.
  * @member {String} attribute_name
  */
 exports.prototype['attribute_name'] = undefined;

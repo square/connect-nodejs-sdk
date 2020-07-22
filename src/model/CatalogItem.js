@@ -26,7 +26,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CatalogItem</code>.
- * An item (i.e., product family) in the Catalog object model.
+ * An [CatalogObject](#type-CatalogObject) instance of the &#x60;ITEM&#x60; type, also referred to as an item, in the catalog.
  * @alias module:model/CatalogItem
  * @class
  */
@@ -107,17 +107,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The item's name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points.
+ * The item's name. This is a searchable attribute for use in applicable query filters, its value must not be empty, and the length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * The item's description. Searchable. This field has max length of 4096 Unicode code points.
+ * The item's description. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
 /**
- * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
+ * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. This attribute is searchable, and its value length is of Unicode code points.
  * @member {String} abbreviation
  */
 exports.prototype['abbreviation'] = undefined;

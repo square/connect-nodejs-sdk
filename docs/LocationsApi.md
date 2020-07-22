@@ -107,7 +107,7 @@ This endpoint does not need any parameter.
 
 RetrieveLocation
 
-Retrieves details of a location.
+Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
 
 ### Example
 ```javascript
@@ -120,7 +120,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LocationsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to retrieve.
+var locationId = "locationId_example"; // String | The ID of the location to retrieve. If you specify the string \"main\", then the endpoint returns the main location.
 
 apiInstance.retrieveLocation(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -134,7 +134,7 @@ apiInstance.retrieveLocation(locationId).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the location to retrieve. | 
+ **locationId** | **String**| The ID of the location to retrieve. If you specify the string \&quot;main\&quot;, then the endpoint returns the main location. | 
 
 ### Return type
 

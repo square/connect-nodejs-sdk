@@ -64,7 +64,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filters results by `CatalogObject` ID. Only applied when set. Default: unset.
+ * Filters results by `CatalogObject` ID. Only applied when set. Max size is 1000 IDs. Default: unset.
  * @member {Array.<String>} catalog_object_ids
  */
 exports.prototype['catalog_object_ids'] = undefined;

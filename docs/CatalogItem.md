@@ -2,14 +2,14 @@
 
 ### Description
 
-An item (i.e., product family) in the Catalog object model.
+An [CatalogObject](#type-CatalogObject) instance of the `ITEM` type, also referred to as an item, in the catalog.
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | The item&#39;s name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points. | [optional] 
-**description** | **String** | The item&#39;s description. Searchable. This field has max length of 4096 Unicode code points. | [optional] 
-**abbreviation** | **String** | The text of the item&#39;s display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points. | [optional] 
+**name** | **String** | The item&#39;s name. This is a searchable attribute for use in applicable query filters, its value must not be empty, and the length is of Unicode code points. | [optional] 
+**description** | **String** | The item&#39;s description. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points. | [optional] 
+**abbreviation** | **String** | The text of the item&#39;s display label in the Square Point of Sale app. Only up to the first five characters of the string are used. This attribute is searchable, and its value length is of Unicode code points. | [optional] 
 **label_color** | **String** | The color of the item&#39;s display label in the Square Point of Sale app. This must be a valid hex color code. | [optional] 
 **available_online** | **Boolean** | If &#x60;true&#x60;, the item can be added to shipping orders from the merchant&#39;s online store. | [optional] 
 **available_for_pickup** | **Boolean** | If &#x60;true&#x60;, the item can be added to pickup orders from the merchant&#39;s online store. | [optional] 

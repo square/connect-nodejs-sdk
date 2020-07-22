@@ -23,11 +23,11 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogQueryExact</code>.
- * 
+ * The query filter to return the serch result by exact match of the specified attribute name and value.
  * @alias module:model/CatalogQueryExact
  * @class
- * @param attributeName {String} The name of the attribute to be searched.
- * @param attributeValue {String} The desired value of the search attribute.
+ * @param attributeName {String} The name of the attribute to be searched. Matching of the attribute name is exact.
+ * @param attributeValue {String} The desired value of the search attribute. Matching of the attribute value is case insensitive and can be partial.  For example, if a specified value of \"sma\", objects with the named attribute value of \"Small\", \"small\" are both matched.
  */
 var exports = function(attributeName, attributeValue) {
   var _this = this;
@@ -58,12 +58,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The name of the attribute to be searched.
+ * The name of the attribute to be searched. Matching of the attribute name is exact.
  * @member {String} attribute_name
  */
 exports.prototype['attribute_name'] = undefined;
 /**
- * The desired value of the search attribute.
+ * The desired value of the search attribute. Matching of the attribute value is case insensitive and can be partial.  For example, if a specified value of \"sma\", objects with the named attribute value of \"Small\", \"small\" are both matched.
  * @member {String} attribute_value
  */
 exports.prototype['attribute_value'] = undefined;

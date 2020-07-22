@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogV1Id</code>.
- * An Items Connect V1 object ID along with its associated location ID.
+ * A Square API V1 identifier of an item, including the object ID and its associated location ID.
  * @alias module:model/CatalogV1Id
  * @class
  */
@@ -56,7 +56,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The ID for an object in Connect V1, if different from its Connect V2 ID.
+ * The ID for an object used in the Square API V1, if the object ID differs from the Square API V2 object ID.
  * @member {String} catalog_v1_id
  */
 exports.prototype['catalog_v1_id'] = undefined;

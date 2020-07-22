@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>BreakType</code>.
- * A defined break template that sets an expectation for possible &#x60;Break&#x60;  instances on a &#x60;Shift&#x60;.
+ * A defined break template that sets an expectation for possible &#x60;Break&#x60; instances on a &#x60;Shift&#x60;.
  * @alias module:model/BreakType
  * @class
  * @param locationId {String} The ID of the business location this type of break applies to.
@@ -109,7 +109,7 @@ exports.prototype['expected_duration'] = undefined;
  */
 exports.prototype['is_paid'] = undefined;
 /**
- * Used for resolving concurrency issues; request will fail if version provided does not match server version at time of request. If a value is not provided, Square's servers execute a \"blind\" write; potentially  overwriting another writer's data.
+ * Used for resolving concurrency issues; request will fail if version provided does not match server version at time of request. If a value is not provided, Square's servers execute a \"blind\" write; potentially overwriting another writer's data.
  * @member {Number} version
  */
 exports.prototype['version'] = undefined;

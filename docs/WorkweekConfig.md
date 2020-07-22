@@ -2,7 +2,7 @@
 
 ### Description
 
-Sets the Day of the week and hour of the day that a business starts a  work week. Used for the calculation of overtime pay.
+Sets the Day of the week and hour of the day that a business starts a work week. Used for the calculation of overtime pay.
 
 ## Properties
 Name | Type | Description | Notes

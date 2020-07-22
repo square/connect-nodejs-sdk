@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **total_tax_money** | [**Money**](Money.md) | The total tax amount of money to collect for the order. | [optional] 
 **total_discount_money** | [**Money**](Money.md) | The total discount amount of money to collect for the order. | [optional] 
 **total_service_charge_money** | [**Money**](Money.md) | The total amount of money collected in service charges for the order.  Note: &#x60;total_service_charge_money&#x60; is the sum of &#x60;applied_money&#x60; fields for each individual service charge. Therefore, &#x60;total_service_charge_money&#x60; will only include inclusive tax amounts, not additive tax amounts. | [optional] 
+**pricing_options** | [**OrderPricingOptions**](OrderPricingOptions.md) | Pricing options for an order. The options affect how the order&#39;s price is calculated. They can be used, for example, to apply automatic price adjustments that are based on pre-configured [pricing rules](https://developer.squareup.com/docs/reference/square/objects/CatalogPricingRule). | [optional] 
 **rewards** | [**[OrderReward]**](OrderReward.md) | A set-like list of rewards that have been added to the order. | [optional] [beta]
 
 

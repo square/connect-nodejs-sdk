@@ -21,7 +21,7 @@ var RegisterDomainResponse = require('../model/RegisterDomainResponse');
  */
 
 /**
- * Constructs a new ApplePayApi. 
+ * Constructs a new ApplePayApi.
  * @alias module:api/ApplePayApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -53,7 +53,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

@@ -24,7 +24,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CatalogModifierList</code>.
- * A modifier list in the Catalog object model. A &#x60;CatalogModifierList&#x60; contains &#x60;CatalogModifier&#x60; objects that can be applied to a &#x60;CatalogItem&#x60; at the time of sale.  For example, a modifier list \&quot;Condiments\&quot; that would apply to a \&quot;Hot Dog\&quot; &#x60;CatalogItem&#x60; might contain &#x60;CatalogModifier&#x60;s \&quot;Ketchup\&quot;, \&quot;Mustard\&quot;, and \&quot;Relish\&quot;. The &#x60;selection_type&#x60; field specifies whether or not multiple selections from the modifier list are allowed.
+ * A list of modifiers applicable to items at the time of sale.  For example, a \&quot;Condiments\&quot; modifier list applicable to a \&quot;Hot Dog\&quot; item may contain \&quot;Ketchup\&quot;, \&quot;Mustard\&quot;, and \&quot;Relish\&quot; modifiers. Use the &#x60;selection_type&#x60; field to specify whether or not multiple selections from the modifier list are allowed.
  * @alias module:model/CatalogModifierList
  * @class
  */
@@ -65,17 +65,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A searchable name for the `CatalogModifierList`. This field has max length of 255 Unicode code points.
+ * The name for the `CatalogModifierList` instance. This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
 /**
- * Determines where this `CatalogModifierList` appears in a list of `CatalogModifierList` values.
+ * Determines where this modifier list appears in a list of `CatalogModifierList` values.
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;
 /**
- * Indicates whether multiple options from the `CatalogModifierList` can be applied to a single `CatalogItem`. See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values
+ * Indicates whether multiple options from the modifier list can be applied to a single `CatalogItem`. See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values
  * @member {String} selection_type
  */
 exports.prototype['selection_type'] = undefined;

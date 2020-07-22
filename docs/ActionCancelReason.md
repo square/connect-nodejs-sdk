@@ -1,4 +1,4 @@
-# SquareConnect.TerminalCheckoutCancelReason
+# SquareConnect.ActionCancelReason
 
 ## Enum
 

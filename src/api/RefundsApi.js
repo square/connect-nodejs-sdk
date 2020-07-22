@@ -23,7 +23,7 @@ var RefundPaymentResponse = require('../model/RefundPaymentResponse');
  */
 
 /**
- * Constructs a new RefundsApi. 
+ * Constructs a new RefundsApi.
  * @alias module:api/RefundsApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -118,7 +118,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -177,7 +177,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };

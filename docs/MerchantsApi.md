@@ -76,7 +76,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.MerchantsApi();
 
-var merchantId = "merchantId_example"; // String | The ID of the merchant to retrieve.
+var merchantId = "merchantId_example"; // String | The ID of the merchant to retrieve. If the string \"me\" is supplied as the ID, then retrieve the merchant that is currently accessible to this call.
 
 apiInstance.retrieveMerchant(merchantId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -90,7 +90,7 @@ apiInstance.retrieveMerchant(merchantId).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **merchantId** | **String**| The ID of the merchant to retrieve. | 
+ **merchantId** | **String**| The ID of the merchant to retrieve. If the string \&quot;me\&quot; is supplied as the ID, then retrieve the merchant that is currently accessible to this call. | 
 
 ### Return type
 

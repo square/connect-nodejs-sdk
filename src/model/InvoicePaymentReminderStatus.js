@@ -15,31 +15,31 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class TerminalCheckoutCancelReason.
+ * Enum class InvoicePaymentReminderStatus.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "BUYER_CANCELED"
+   * value: "PENDING"
    * @const
    */
-  "BUYER_CANCELED": "BUYER_CANCELED",
+  "PENDING": "PENDING",
   /**
-   * value: "SELLER_CANCELED"
+   * value: "NOT_APPLICABLE"
    * @const
    */
-  "SELLER_CANCELED": "SELLER_CANCELED",
+  "NOT_APPLICABLE": "NOT_APPLICABLE",
   /**
-   * value: "TIMED_OUT"
+   * value: "SENT"
    * @const
    */
-  "TIMED_OUT": "TIMED_OUT"};
+  "SENT": "SENT"};
 
 /**
- * Returns a <code>TerminalCheckoutCancelReason</code> enum value from a Javascript object name.
+ * Returns a <code>InvoicePaymentReminderStatus</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/TerminalCheckoutCancelReason} The enum <code>TerminalCheckoutCancelReason</code> value.
+ * @return {module:model/InvoicePaymentReminderStatus} The enum <code>InvoicePaymentReminderStatus</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

@@ -24,7 +24,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RegisterDomainResponse</code>.
- * Defines the fields that are included in the response body of a request to the __RegisterDomain__ endpoint.  Either &#x60;errors&#x60; or &#x60;status&#x60; will be present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the [RegisterDomain](#endpoint-registerdomain) endpoint.  Either &#x60;errors&#x60; or &#x60;status&#x60; will be present in a given response (never both).
  * @alias module:model/RegisterDomainResponse
  * @class
  */

@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>WorkweekConfig</code>.
- * Sets the Day of the week and hour of the day that a business starts a  work week. Used for the calculation of overtime pay.
+ * Sets the Day of the week and hour of the day that a business starts a work week. Used for the calculation of overtime pay.
  * @alias module:model/WorkweekConfig
  * @class
  * @param startOfWeek {String} The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values

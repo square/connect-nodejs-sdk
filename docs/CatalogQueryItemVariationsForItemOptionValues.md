@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-
+The query filter to return the item variations containing the specified item option value IDs.
 
 ## Properties
 Name | Type | Description | Notes

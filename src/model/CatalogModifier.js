@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>CatalogModifier</code>.
- * A modifier in the Catalog object model.
+ * A modifier applicable to items at the time of sale.
  * @alias module:model/CatalogModifier
  * @class
  */
@@ -65,7 +65,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The modifier name. Searchable. This field has max length of 255 Unicode code points.
+ * The modifier name.  This is a searchable attribute for use in applicable query filters, and its value length is of Unicode code points.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -80,7 +80,7 @@ exports.prototype['price_money'] = undefined;
  */
 exports.prototype['ordinal'] = undefined;
 /**
- * The ID of the `CatalogModifierList` associated with this modifier. Searchable.
+ * The ID of the `CatalogModifierList` associated with this modifier.
  * @member {String} modifier_list_id
  */
 exports.prototype['modifier_list_id'] = undefined;

@@ -22,6 +22,8 @@ var CatalogInfoResponse = require('../model/CatalogInfoResponse');
 var DeleteCatalogObjectResponse = require('../model/DeleteCatalogObjectResponse');
 var ListCatalogResponse = require('../model/ListCatalogResponse');
 var RetrieveCatalogObjectResponse = require('../model/RetrieveCatalogObjectResponse');
+var SearchCatalogItemsRequest = require('../model/SearchCatalogItemsRequest');
+var SearchCatalogItemsResponse = require('../model/SearchCatalogItemsResponse');
 var SearchCatalogObjectsRequest = require('../model/SearchCatalogObjectsRequest');
 var SearchCatalogObjectsResponse = require('../model/SearchCatalogObjectsResponse');
 var UpdateItemModifierListsRequest = require('../model/UpdateItemModifierListsRequest');
@@ -37,7 +39,7 @@ var UpsertCatalogObjectResponse = require('../model/UpsertCatalogObjectResponse'
  */
 
 /**
- * Constructs a new CatalogApi. 
+ * Constructs a new CatalogApi.
  * @alias module:api/CatalogApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -69,7 +71,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -121,7 +123,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -173,7 +175,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -206,7 +208,7 @@ module.exports = function(apiClient) {
 
   /**
    * CatalogInfo
-   * Returns information about the Square Catalog API, such as batch size limits for &#x60;BatchUpsertCatalogObjects&#x60;.
+   * Retrieves information about the Square Catalog API, such as batch size limits that can be used by the &#x60;BatchUpsertCatalogObjects&#x60; endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CatalogInfoResponse} and HTTP response
    */
   this.catalogInfoWithHttpInfo = function() {
@@ -219,7 +221,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -238,7 +240,7 @@ module.exports = function(apiClient) {
 
   /**
    * CatalogInfo
-   * Returns information about the Square Catalog API, such as batch size limits for &#x60;BatchUpsertCatalogObjects&#x60;.
+   * Retrieves information about the Square Catalog API, such as batch size limits that can be used by the &#x60;BatchUpsertCatalogObjects&#x60; endpoint.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CatalogInfoResponse}
    */
   this.catalogInfo = function() {
@@ -271,7 +273,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -323,7 +325,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -382,7 +384,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -416,8 +418,61 @@ module.exports = function(apiClient) {
 
 
   /**
+   * SearchCatalogItems
+   * Note: This endpoint is in beta.
+   * Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions,   This (&#x60;SearchCatalogItems&#x60;) endpoint differs from the [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints use different call conventions, including the query filter formats.
+   * @param {module:model/SearchCatalogItemsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCatalogItemsResponse} and HTTP response
+   */
+  this.searchCatalogItemsWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling searchCatalogItems");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-07-22';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = SearchCatalogItemsResponse;
+
+    return this.apiClient.callApi(
+      '/v2/catalog/search-catalog-items', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * SearchCatalogItems
+   * Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions,   This (&#x60;SearchCatalogItems&#x60;) endpoint differs from the [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints use different call conventions, including the query filter formats.
+   * @param {module:model/SearchCatalogItemsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCatalogItemsResponse}
+   */
+  this.searchCatalogItems = function(body) {
+    return this.searchCatalogItemsWithHttpInfo(body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * SearchCatalogObjects
-   * Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+   * Searches for [CatalogObject](#type-CatalogObject) of any types against supported search attribute values,  excluding custom attribute values on items or item variations, against one or more of the specified query expressions,   This (&#x60;SearchCatalogObjects&#x60;) endpoint differs from the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints have different call conventions, including the query filter formats.
    * @param {module:model/SearchCatalogObjectsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchCatalogObjectsResponse} and HTTP response
    */
@@ -436,7 +491,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -455,7 +510,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchCatalogObjects
-   * Queries the targeted catalog using a variety of query expressions.  Supported query expressions are of the following types: - [CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), - [CatalogQueryExact](#type-catalogqueryexact), - [CatalogQueryRange](#type-catalogqueryrange), - [CatalogQueryText](#type-catalogquerytext), - [CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), - [CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist), - [CatalogQueryItemsForItemOptions](#type-catalogqueryitemsforitemoptions), and - [CatalogQueryItemVariationsForItemOptionValues](#type-catalogqueryitemvariationsforitemoptionvalues).
+   * Searches for [CatalogObject](#type-CatalogObject) of any types against supported search attribute values,  excluding custom attribute values on items or item variations, against one or more of the specified query expressions,   This (&#x60;SearchCatalogObjects&#x60;) endpoint differs from the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints have different call conventions, including the query filter formats.
    * @param {module:model/SearchCatalogObjectsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchCatalogObjectsResponse}
    */
@@ -488,7 +543,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -540,7 +595,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
@@ -592,7 +647,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-06-25';
+    headerParams['Square-Version'] = '2020-07-22';
 
     var formParams = {
     };
