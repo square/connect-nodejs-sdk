@@ -59,17 +59,17 @@ describe('CustomersApi', function () {
       expect(resp.customer).to.have.property('given_name', 'Bob Dole');
     });
   });
-  describe('createCustomerCard', function () {
-    it('should call createCustomerCard successfully', async function () {
-      const resp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+  // describe('createCustomerCard', function () {
+  //   it('should call createCustomerCard successfully', async function () {
+  //     const resp = await this.api.createCustomer({given_name: 'Bob Dole'})
+  //       .catch(handleUnexpectedError);
 
-      const createCardResp = await this.api.createCustomerCard(resp.customer.id, {card_nonce: 'fake-card-nonce-ok'})
-        .catch(handleUnexpectedError);
+  //     const createCardResp = await this.api.createCustomerCard(resp.customer.id, {card_nonce: 'fake-card-nonce-ok'})
+  //       .catch(handleUnexpectedError);
 
-      expect(createCardResp).to.have.property('card');
-    });
-  });
+  //     expect(createCardResp).to.have.property('card');
+  //   });
+  // });
   describe('deleteCustomer', function () {
     it('should call deleteCustomer successfully', async function () {
       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
@@ -82,22 +82,22 @@ describe('CustomersApi', function () {
       expect(deleteCustomerResp.errors).to.equal(undefined);
     })
   });
-  describe('deleteCustomerCard', function () {
-    it('should call deleteCustomerCard successfully', async function () {
-      const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+  // describe('deleteCustomerCard', function () {
+  //   it('should call deleteCustomerCard successfully', async function () {
+  //     const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
+  //       .catch(handleUnexpectedError);
 
-      const createCustomerCardResp = await this.api.createCustomerCard(createCustomerResp.customer.id, {card_nonce: 'fake-card-nonce-ok'})
-        .catch(handleUnexpectedError);
+  //     const createCustomerCardResp = await this.api.createCustomerCard(createCustomerResp.customer.id, {card_nonce: 'fake-card-nonce-ok'})
+  //       .catch(handleUnexpectedError);
 
 
-      const deleteCustomerCardResp = await this.api.deleteCustomerCard(createCustomerResp.customer.id, createCustomerCardResp.card.id)
-        .catch(handleUnexpectedError);
+  //     const deleteCustomerCardResp = await this.api.deleteCustomerCard(createCustomerResp.customer.id, createCustomerCardResp.card.id)
+  //       .catch(handleUnexpectedError);
 
-      expect(deleteCustomerCardResp).to.have.property('errors');
-      expect(deleteCustomerCardResp.error).to.equal(undefined);
-    })
-  });
+  //     expect(deleteCustomerCardResp).to.have.property('errors');
+  //     expect(deleteCustomerCardResp.error).to.equal(undefined);
+  //   })
+  // });
   describe('listCustomers', function () {
     it('should call listCustomers successfully', async function () {
       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
