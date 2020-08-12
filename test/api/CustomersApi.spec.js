@@ -21,44 +21,44 @@ const {
 } = require('../support/setup');
 
 describe('CustomersApi', function () {
-  beforeEach(function () {
-    const defaultClient = SquareConnect.ApiClient.instance;
-    const oauth2 = defaultClient.authentications['oauth2'];
-    oauth2.accessToken = accounts.sandbox.access_token;
-    this.api = new SquareConnect.CustomersApi();
-  });
+//   beforeEach(function () {
+//     const defaultClient = SquareConnect.ApiClient.instance;
+//     const oauth2 = defaultClient.authentications['oauth2'];
+//     oauth2.accessToken = accounts.sandbox.access_token;
+//     this.api = new SquareConnect.CustomersApi();
+//   });
 
-  afterEach(async function () {
-    const resp = await this.api.listCustomers();
-    const customers = resp.customers;
+//   afterEach(async function () {
+//     const resp = await this.api.listCustomers();
+//     const customers = resp.customers;
 
-    if (!customers || customers.length === 0) {
-      return;
-    }
+//     if (!customers || customers.length === 0) {
+//       return;
+//     }
 
-    const deleteCustomerPromises = customers
-      .map(customer => this.api.deleteCustomer(customer.id));
+//     const deleteCustomerPromises = customers
+//       .map(customer => this.api.deleteCustomer(customer.id));
 
-    console.info(`Going to delete ${customers.length} customer(s).`);
-    return Promise.all(deleteCustomerPromises);
-  });
+//     console.info(`Going to delete ${customers.length} customer(s).`);
+//     return Promise.all(deleteCustomerPromises);
+//   });
 
-  it('should be authorized. If this fails, everything else might fail too.', async function () {
-    const resp = await this.api.listCustomers()
-      .catch(handleUnexpectedError);
+//   it('should be authorized. If this fails, everything else might fail too.', async function () {
+//     const resp = await this.api.listCustomers()
+//       .catch(handleUnexpectedError);
 
-    expect(resp.errors).to.not.exist;
-  });
+//     expect(resp.errors).to.not.exist;
+//   });
 
-  describe('createCustomer', function () {
-    it('should call createCustomer successfully', async function () {
-      const resp = await this.api.createCustomer({given_name: "Bob Dole"})
-        .catch(handleUnexpectedError);
+//   describe('createCustomer', function () {
+//     it('should call createCustomer successfully', async function () {
+//       const resp = await this.api.createCustomer({given_name: "Bob Dole"})
+//         .catch(handleUnexpectedError);
 
-      expect(resp).to.have.property('customer');
-      expect(resp.customer).to.have.property('given_name', 'Bob Dole');
-    });
-  });
+//       expect(resp).to.have.property('customer');
+//       expect(resp.customer).to.have.property('given_name', 'Bob Dole');
+//     });
+//   });
   // describe('createCustomerCard', function () {
   //   it('should call createCustomerCard successfully', async function () {
   //     const resp = await this.api.createCustomer({given_name: 'Bob Dole'})
@@ -70,18 +70,18 @@ describe('CustomersApi', function () {
   //     expect(createCardResp).to.have.property('card');
   //   });
   // });
-  describe('deleteCustomer', function () {
-    it('should call deleteCustomer successfully', async function () {
-      const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+//   describe('deleteCustomer', function () {
+//     it('should call deleteCustomer successfully', async function () {
+//       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
+//         .catch(handleUnexpectedError);
 
-      const deleteCustomerResp = await this.api.deleteCustomer(createCustomerResp.customer.id)
-        .catch(handleUnexpectedError);
+//       const deleteCustomerResp = await this.api.deleteCustomer(createCustomerResp.customer.id)
+//         .catch(handleUnexpectedError);
 
-      expect(deleteCustomerResp).to.have.property('errors');
-      expect(deleteCustomerResp.errors).to.equal(undefined);
-    })
-  });
+//       expect(deleteCustomerResp).to.have.property('errors');
+//       expect(deleteCustomerResp.errors).to.equal(undefined);
+//     })
+//   });
   // describe('deleteCustomerCard', function () {
   //   it('should call deleteCustomerCard successfully', async function () {
   //     const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
@@ -98,40 +98,40 @@ describe('CustomersApi', function () {
   //     expect(deleteCustomerCardResp.error).to.equal(undefined);
   //   })
   // });
-  describe('listCustomers', function () {
-    it('should call listCustomers successfully', async function () {
-      const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+//   describe('listCustomers', function () {
+//     it('should call listCustomers successfully', async function () {
+//       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
+//         .catch(handleUnexpectedError);
 
-      const listCustomerResp = await this.api.listCustomers()
-        .catch(handleUnexpectedError);
+//       const listCustomerResp = await this.api.listCustomers()
+//         .catch(handleUnexpectedError);
 
-      expect(listCustomerResp).to.have.property('customers');
-      expect(listCustomerResp.customers).to.have.lengthOf(1);
-    });
-  });
-  describe('retrieveCustomer', function () {
-    it('should call retrieveCustomer successfully', async function () {
-      const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+//       expect(listCustomerResp).to.have.property('customers');
+//       expect(listCustomerResp.customers).to.have.lengthOf(1);
+//     });
+//   });
+//   describe('retrieveCustomer', function () {
+//     it('should call retrieveCustomer successfully', async function () {
+//       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
+//         .catch(handleUnexpectedError);
 
-      const retrieveCustomerResp = await this.api.retrieveCustomer(createCustomerResp.customer.id)
-        .catch(handleUnexpectedError);
+//       const retrieveCustomerResp = await this.api.retrieveCustomer(createCustomerResp.customer.id)
+//         .catch(handleUnexpectedError);
 
-      expect(retrieveCustomerResp).to.have.property('customer');
-      expect(retrieveCustomerResp.customer).to.have.property('given_name', 'Bob Dole');
-    });
-  });
-  describe('updateCustomer', function () {
-    it('should call updateCustomer successfully', async function () {
-      const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
-        .catch(handleUnexpectedError);
+//       expect(retrieveCustomerResp).to.have.property('customer');
+//       expect(retrieveCustomerResp.customer).to.have.property('given_name', 'Bob Dole');
+//     });
+//   });
+//   describe('updateCustomer', function () {
+//     it('should call updateCustomer successfully', async function () {
+//       const createCustomerResp = await this.api.createCustomer({given_name: 'Bob Dole'})
+//         .catch(handleUnexpectedError);
 
-      const updateCustomerResp = await this.api.updateCustomer(createCustomerResp.customer.id, {given_name: 'Rob Lowe'})
-        .catch(handleUnexpectedError);
+//       const updateCustomerResp = await this.api.updateCustomer(createCustomerResp.customer.id, {given_name: 'Rob Lowe'})
+//         .catch(handleUnexpectedError);
 
-      expect(updateCustomerResp).to.have.property('customer');
-      expect(updateCustomerResp.customer).to.have.property('given_name', 'Rob Lowe');
-    });
-  });
+//       expect(updateCustomerResp).to.have.property('customer');
+//       expect(updateCustomerResp.customer).to.have.property('given_name', 'Rob Lowe');
+//     });
+//   });
 });
