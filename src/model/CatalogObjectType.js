@@ -81,6 +81,11 @@ var exports = {
    */
   "MEASUREMENT_UNIT": "MEASUREMENT_UNIT",
   /**
+   * value: "SUBSCRIPTION_PLAN"
+   * @const
+   */
+  "SUBSCRIPTION_PLAN": "SUBSCRIPTION_PLAN",
+  /**
    * value: "ITEM_OPTION"
    * @const
    */
