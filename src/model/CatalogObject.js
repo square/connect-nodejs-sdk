@@ -27,6 +27,7 @@ var CatalogModifierList = require('./CatalogModifierList');
 var CatalogPricingRule = require('./CatalogPricingRule');
 var CatalogProductSet = require('./CatalogProductSet');
 var CatalogQuickAmountsSettings = require('./CatalogQuickAmountsSettings');
+var CatalogSubscriptionPlan = require('./CatalogSubscriptionPlan');
 var CatalogTax = require('./CatalogTax');
 var CatalogTimePeriod = require('./CatalogTimePeriod');
 var CatalogV1Id = require('./CatalogV1Id');
@@ -41,7 +42,7 @@ var CatalogV1Id = require('./CatalogV1Id');
 
 /**
  * Constructs a new <code>CatalogObject</code>.
- * The wrapper object for the Catalog entries of a given object type.   The type of a particular &#x60;CatalogObject&#x60; is determined by the value of the &#x60;type&#x60; attribute and only the corresponding data attribute can be set on the &#x60;CatalogObject&#x60; instance. For example, the following list shows some instances of &#x60;CatalogObject&#x60; of a given &#x60;type&#x60; and their corresponding data atrribute that can be set: - For a &#x60;CatalogObject&#x60; of the &#x60;ITEM&#x60; type, set the &#x60;item_data&#x60; attribute to yield the &#x60;CatalogItem&#x60; object.  - For a &#x60;CatalogObject&#x60; of the &#x60;ITEM_VARIATION&#x60; type, set the &#x60;item_variation_data&#x60; attribute to yield the &#x60;CatalogItemVariation&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;MODIFIER&#x60; type, set the &#x60;modifier_data&#x60; attribute to yield the &#x60;CatalogModifier&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;MODIFIER_LIST&#x60; type, set the &#x60;modifier_list_data&#x60; attribute to yield the &#x60;CatalogModifierList&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;CATEGORY&#x60; type, set the &#x60;category_data&#x60; attribute to yield the &#x60;CatalogCategory&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;DISCOUNT&#x60; type, set the &#x60;discount_data&#x60; attribute to yield the &#x60;CatalogDiscount&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;TAX&#x60; type, set the &#x60;tax_data&#x60; attribute to yield the &#x60;CatalogTax&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;IMAGE&#x60; type, set the &#x60;image_data&#x60; attribute to yield the &#x60;CatalogImageData&#x60;  object. - For a &#x60;CatalogObject&#x60; of the &#x60;QUICK_AMOUNTS_SETTINGS&#x60; type, set the &#x60;quick_amounts_settings_data&#x60; attribute to yield the &#x60;CatalogQuickAmountsSettings&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;PRICING_RULE&#x60; type, set the &#x60;pricing_rule_data&#x60; attribute to yield the &#x60;CatalogPricingRule&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;TIME_PERIOD&#x60; type, set the &#x60;time_period_data&#x60; attribute to yield the &#x60;CatalogTimePeriod&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;PRODUCT_SET&#x60; type, set the &#x60;product_set_data&#x60; attribute to yield the &#x60;CatalogProductSet&#x60;  object.  For a more detailed discussion of the Catalog data model, please see the [Design a Catalog](/catalog-api/design-a-catalog) guide.
+ * The wrapper object for the Catalog entries of a given object type.   The type of a particular &#x60;CatalogObject&#x60; is determined by the value of the &#x60;type&#x60; attribute and only the corresponding data attribute can be set on the &#x60;CatalogObject&#x60; instance. For example, the following list shows some instances of &#x60;CatalogObject&#x60; of a given &#x60;type&#x60; and their corresponding data atrribute that can be set: - For a &#x60;CatalogObject&#x60; of the &#x60;ITEM&#x60; type, set the &#x60;item_data&#x60; attribute to yield the &#x60;CatalogItem&#x60; object.  - For a &#x60;CatalogObject&#x60; of the &#x60;ITEM_VARIATION&#x60; type, set the &#x60;item_variation_data&#x60; attribute to yield the &#x60;CatalogItemVariation&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;MODIFIER&#x60; type, set the &#x60;modifier_data&#x60; attribute to yield the &#x60;CatalogModifier&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;MODIFIER_LIST&#x60; type, set the &#x60;modifier_list_data&#x60; attribute to yield the &#x60;CatalogModifierList&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;CATEGORY&#x60; type, set the &#x60;category_data&#x60; attribute to yield the &#x60;CatalogCategory&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;DISCOUNT&#x60; type, set the &#x60;discount_data&#x60; attribute to yield the &#x60;CatalogDiscount&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;TAX&#x60; type, set the &#x60;tax_data&#x60; attribute to yield the &#x60;CatalogTax&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;IMAGE&#x60; type, set the &#x60;image_data&#x60; attribute to yield the &#x60;CatalogImageData&#x60;  object. - For a &#x60;CatalogObject&#x60; of the &#x60;QUICK_AMOUNTS_SETTINGS&#x60; type, set the &#x60;quick_amounts_settings_data&#x60; attribute to yield the &#x60;CatalogQuickAmountsSettings&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;PRICING_RULE&#x60; type, set the &#x60;pricing_rule_data&#x60; attribute to yield the &#x60;CatalogPricingRule&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;TIME_PERIOD&#x60; type, set the &#x60;time_period_data&#x60; attribute to yield the &#x60;CatalogTimePeriod&#x60; object. - For a &#x60;CatalogObject&#x60; of the &#x60;PRODUCT_SET&#x60; type, set the &#x60;product_set_data&#x60; attribute to yield the &#x60;CatalogProductSet&#x60;  object. - For a &#x60;CatalogObject&#x60; of the &#x60;SUBSCRIPTION_PLAN&#x60; type, set the &#x60;subscription_plan_data&#x60; attribute to yield the &#x60;CatalogSubscriptionPlan&#x60; object.   For a more detailed discussion of the Catalog data model, please see the [Design a Catalog](/catalog-api/design-a-catalog) guide.
  * @alias module:model/CatalogObject
  * @class
  * @param type {String} The type of this object. Each object type has expected properties expressed in a structured format within its corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values
@@ -52,6 +53,7 @@ var exports = function(type, id) {
 
   _this['type'] = type;
   _this['id'] = id;
+
 
 
 
@@ -158,6 +160,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('measurement_unit_data')) {
       obj['measurement_unit_data'] = CatalogMeasurementUnit.constructFromObject(data['measurement_unit_data']);
+    }
+      if (data.hasOwnProperty('subscription_plan_data')) {
+      obj['subscription_plan_data'] = CatalogSubscriptionPlan.constructFromObject(data['subscription_plan_data']);
     }
       if (data.hasOwnProperty('item_option_data')) {
       obj['item_option_data'] = CatalogItemOption.constructFromObject(data['item_option_data']);
@@ -290,6 +295,11 @@ exports.prototype['image_data'] = undefined;
  * @member {module:model/CatalogMeasurementUnit} measurement_unit_data
  */
 exports.prototype['measurement_unit_data'] = undefined;
+/**
+ * Structured data for a `CatalogSubscriptionPlan`, set for CatalogObjects of type `SUBSCRIPTION_PLAN`.
+ * @member {module:model/CatalogSubscriptionPlan} subscription_plan_data
+ */
+exports.prototype['subscription_plan_data'] = undefined;
 /**
  * Structured data for a `CatalogItemOption`, set for CatalogObjects of type `ITEM_OPTION`.
  * @member {module:model/CatalogItemOption} item_option_data

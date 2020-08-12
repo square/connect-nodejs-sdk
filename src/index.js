@@ -61,6 +61,8 @@ var CancelPaymentByIdempotencyKeyRequest = require('./model/CancelPaymentByIdemp
 var CancelPaymentByIdempotencyKeyResponse = require('./model/CancelPaymentByIdempotencyKeyResponse');
 var CancelPaymentRequest = require('./model/CancelPaymentRequest');
 var CancelPaymentResponse = require('./model/CancelPaymentResponse');
+var CancelSubscriptionRequest = require('./model/CancelSubscriptionRequest');
+var CancelSubscriptionResponse = require('./model/CancelSubscriptionResponse');
 var CancelTerminalCheckoutRequest = require('./model/CancelTerminalCheckoutRequest');
 var CancelTerminalCheckoutResponse = require('./model/CancelTerminalCheckoutResponse');
 var CaptureTransactionRequest = require('./model/CaptureTransactionRequest');
@@ -127,6 +129,7 @@ var CatalogQuickAmount = require('./model/CatalogQuickAmount');
 var CatalogQuickAmountType = require('./model/CatalogQuickAmountType');
 var CatalogQuickAmountsSettings = require('./model/CatalogQuickAmountsSettings');
 var CatalogQuickAmountsSettingsOption = require('./model/CatalogQuickAmountsSettingsOption');
+var CatalogSubscriptionPlan = require('./model/CatalogSubscriptionPlan');
 var CatalogTax = require('./model/CatalogTax');
 var CatalogTimePeriod = require('./model/CatalogTimePeriod');
 var CatalogV1Id = require('./model/CatalogV1Id');
@@ -174,6 +177,8 @@ var CreateRefundRequest = require('./model/CreateRefundRequest');
 var CreateRefundResponse = require('./model/CreateRefundResponse');
 var CreateShiftRequest = require('./model/CreateShiftRequest');
 var CreateShiftResponse = require('./model/CreateShiftResponse');
+var CreateSubscriptionRequest = require('./model/CreateSubscriptionRequest');
+var CreateSubscriptionResponse = require('./model/CreateSubscriptionResponse');
 var CreateTeamMemberRequest = require('./model/CreateTeamMemberRequest');
 var CreateTeamMemberResponse = require('./model/CreateTeamMemberResponse');
 var CreateTerminalCheckoutRequest = require('./model/CreateTerminalCheckoutRequest');
@@ -319,6 +324,8 @@ var ListPaymentsRequest = require('./model/ListPaymentsRequest');
 var ListPaymentsResponse = require('./model/ListPaymentsResponse');
 var ListRefundsRequest = require('./model/ListRefundsRequest');
 var ListRefundsResponse = require('./model/ListRefundsResponse');
+var ListSubscriptionEventsRequest = require('./model/ListSubscriptionEventsRequest');
+var ListSubscriptionEventsResponse = require('./model/ListSubscriptionEventsResponse');
 var ListTransactionsRequest = require('./model/ListTransactionsRequest');
 var ListTransactionsResponse = require('./model/ListTransactionsResponse');
 var ListWorkweekConfigsRequest = require('./model/ListWorkweekConfigsRequest');
@@ -475,6 +482,8 @@ var RetrieveLoyaltyRewardRequest = require('./model/RetrieveLoyaltyRewardRequest
 var RetrieveLoyaltyRewardResponse = require('./model/RetrieveLoyaltyRewardResponse');
 var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
 var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
+var RetrieveSubscriptionRequest = require('./model/RetrieveSubscriptionRequest');
+var RetrieveSubscriptionResponse = require('./model/RetrieveSubscriptionResponse');
 var RetrieveTeamMemberRequest = require('./model/RetrieveTeamMemberRequest');
 var RetrieveTeamMemberResponse = require('./model/RetrieveTeamMemberResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
@@ -513,6 +522,10 @@ var SearchOrdersSourceFilter = require('./model/SearchOrdersSourceFilter');
 var SearchOrdersStateFilter = require('./model/SearchOrdersStateFilter');
 var SearchShiftsRequest = require('./model/SearchShiftsRequest');
 var SearchShiftsResponse = require('./model/SearchShiftsResponse');
+var SearchSubscriptionsFilter = require('./model/SearchSubscriptionsFilter');
+var SearchSubscriptionsQuery = require('./model/SearchSubscriptionsQuery');
+var SearchSubscriptionsRequest = require('./model/SearchSubscriptionsRequest');
+var SearchSubscriptionsResponse = require('./model/SearchSubscriptionsResponse');
 var SearchTeamMembersFilter = require('./model/SearchTeamMembersFilter');
 var SearchTeamMembersQuery = require('./model/SearchTeamMembersQuery');
 var SearchTeamMembersRequest = require('./model/SearchTeamMembersRequest');
@@ -535,6 +548,12 @@ var StandardUnitDescription = require('./model/StandardUnitDescription');
 var StandardUnitDescriptionGroup = require('./model/StandardUnitDescriptionGroup');
 var SubmitEvidenceRequest = require('./model/SubmitEvidenceRequest');
 var SubmitEvidenceResponse = require('./model/SubmitEvidenceResponse');
+var Subscription = require('./model/Subscription');
+var SubscriptionCadence = require('./model/SubscriptionCadence');
+var SubscriptionEvent = require('./model/SubscriptionEvent');
+var SubscriptionEventSubscriptionEventType = require('./model/SubscriptionEventSubscriptionEventType');
+var SubscriptionPhase = require('./model/SubscriptionPhase');
+var SubscriptionStatus = require('./model/SubscriptionStatus');
 var TaxCalculationPhase = require('./model/TaxCalculationPhase');
 var TaxInclusionType = require('./model/TaxInclusionType');
 var TeamMember = require('./model/TeamMember');
@@ -574,6 +593,8 @@ var UpdateOrderRequest = require('./model/UpdateOrderRequest');
 var UpdateOrderResponse = require('./model/UpdateOrderResponse');
 var UpdateShiftRequest = require('./model/UpdateShiftRequest');
 var UpdateShiftResponse = require('./model/UpdateShiftResponse');
+var UpdateSubscriptionRequest = require('./model/UpdateSubscriptionRequest');
+var UpdateSubscriptionResponse = require('./model/UpdateSubscriptionResponse');
 var UpdateTeamMemberRequest = require('./model/UpdateTeamMemberRequest');
 var UpdateTeamMemberResponse = require('./model/UpdateTeamMemberResponse');
 var UpdateWageSettingRequest = require('./model/UpdateWageSettingRequest');
@@ -771,6 +792,7 @@ var OrdersApi = require('./api/OrdersApi');
 var PaymentsApi = require('./api/PaymentsApi');
 var RefundsApi = require('./api/RefundsApi');
 var ReportingApi = require('./api/ReportingApi');
+var SubscriptionsApi = require('./api/SubscriptionsApi');
 var TeamApi = require('./api/TeamApi');
 var TerminalApi = require('./api/TerminalApi');
 var TransactionsApi = require('./api/TransactionsApi');
@@ -809,7 +831,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 4.20200722.1
+ * @version 4.20200812.2
  */
   module.exports = {
   /**
@@ -1057,6 +1079,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CancelPaymentResponse}
    */
   CancelPaymentResponse: CancelPaymentResponse,
+  /**
+   * The CancelSubscriptionRequest model constructor.
+   * @property {module:model/CancelSubscriptionRequest}
+   */
+  CancelSubscriptionRequest: CancelSubscriptionRequest,
+  /**
+   * The CancelSubscriptionResponse model constructor.
+   * @property {module:model/CancelSubscriptionResponse}
+   */
+  CancelSubscriptionResponse: CancelSubscriptionResponse,
   /**
    * The CancelTerminalCheckoutRequest model constructor.
    * @property {module:model/CancelTerminalCheckoutRequest}
@@ -1388,6 +1420,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   CatalogQuickAmountsSettingsOption: CatalogQuickAmountsSettingsOption,
   /**
+   * The CatalogSubscriptionPlan model constructor.
+   * @property {module:model/CatalogSubscriptionPlan}
+   */
+  CatalogSubscriptionPlan: CatalogSubscriptionPlan,
+  /**
    * The CatalogTax model constructor.
    * @property {module:model/CatalogTax}
    */
@@ -1622,6 +1659,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateShiftResponse}
    */
   CreateShiftResponse: CreateShiftResponse,
+  /**
+   * The CreateSubscriptionRequest model constructor.
+   * @property {module:model/CreateSubscriptionRequest}
+   */
+  CreateSubscriptionRequest: CreateSubscriptionRequest,
+  /**
+   * The CreateSubscriptionResponse model constructor.
+   * @property {module:model/CreateSubscriptionResponse}
+   */
+  CreateSubscriptionResponse: CreateSubscriptionResponse,
   /**
    * The CreateTeamMemberRequest model constructor.
    * @property {module:model/CreateTeamMemberRequest}
@@ -2347,6 +2394,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListRefundsResponse}
    */
   ListRefundsResponse: ListRefundsResponse,
+  /**
+   * The ListSubscriptionEventsRequest model constructor.
+   * @property {module:model/ListSubscriptionEventsRequest}
+   */
+  ListSubscriptionEventsRequest: ListSubscriptionEventsRequest,
+  /**
+   * The ListSubscriptionEventsResponse model constructor.
+   * @property {module:model/ListSubscriptionEventsResponse}
+   */
+  ListSubscriptionEventsResponse: ListSubscriptionEventsResponse,
   /**
    * The ListTransactionsRequest model constructor.
    * @property {module:model/ListTransactionsRequest}
@@ -3128,6 +3185,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveMerchantResponse: RetrieveMerchantResponse,
   /**
+   * The RetrieveSubscriptionRequest model constructor.
+   * @property {module:model/RetrieveSubscriptionRequest}
+   */
+  RetrieveSubscriptionRequest: RetrieveSubscriptionRequest,
+  /**
+   * The RetrieveSubscriptionResponse model constructor.
+   * @property {module:model/RetrieveSubscriptionResponse}
+   */
+  RetrieveSubscriptionResponse: RetrieveSubscriptionResponse,
+  /**
    * The RetrieveTeamMemberRequest model constructor.
    * @property {module:model/RetrieveTeamMemberRequest}
    */
@@ -3318,6 +3385,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchShiftsResponse: SearchShiftsResponse,
   /**
+   * The SearchSubscriptionsFilter model constructor.
+   * @property {module:model/SearchSubscriptionsFilter}
+   */
+  SearchSubscriptionsFilter: SearchSubscriptionsFilter,
+  /**
+   * The SearchSubscriptionsQuery model constructor.
+   * @property {module:model/SearchSubscriptionsQuery}
+   */
+  SearchSubscriptionsQuery: SearchSubscriptionsQuery,
+  /**
+   * The SearchSubscriptionsRequest model constructor.
+   * @property {module:model/SearchSubscriptionsRequest}
+   */
+  SearchSubscriptionsRequest: SearchSubscriptionsRequest,
+  /**
+   * The SearchSubscriptionsResponse model constructor.
+   * @property {module:model/SearchSubscriptionsResponse}
+   */
+  SearchSubscriptionsResponse: SearchSubscriptionsResponse,
+  /**
    * The SearchTeamMembersFilter model constructor.
    * @property {module:model/SearchTeamMembersFilter}
    */
@@ -3427,6 +3514,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/SubmitEvidenceResponse}
    */
   SubmitEvidenceResponse: SubmitEvidenceResponse,
+  /**
+   * The Subscription model constructor.
+   * @property {module:model/Subscription}
+   */
+  Subscription: Subscription,
+  /**
+   * The SubscriptionCadence model constructor.
+   * @property {module:model/SubscriptionCadence}
+   */
+  SubscriptionCadence: SubscriptionCadence,
+  /**
+   * The SubscriptionEvent model constructor.
+   * @property {module:model/SubscriptionEvent}
+   */
+  SubscriptionEvent: SubscriptionEvent,
+  /**
+   * The SubscriptionEventSubscriptionEventType model constructor.
+   * @property {module:model/SubscriptionEventSubscriptionEventType}
+   */
+  SubscriptionEventSubscriptionEventType: SubscriptionEventSubscriptionEventType,
+  /**
+   * The SubscriptionPhase model constructor.
+   * @property {module:model/SubscriptionPhase}
+   */
+  SubscriptionPhase: SubscriptionPhase,
+  /**
+   * The SubscriptionStatus model constructor.
+   * @property {module:model/SubscriptionStatus}
+   */
+  SubscriptionStatus: SubscriptionStatus,
   /**
    * The TaxCalculationPhase model constructor.
    * @property {module:model/TaxCalculationPhase}
@@ -3622,6 +3739,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/UpdateShiftResponse}
    */
   UpdateShiftResponse: UpdateShiftResponse,
+  /**
+   * The UpdateSubscriptionRequest model constructor.
+   * @property {module:model/UpdateSubscriptionRequest}
+   */
+  UpdateSubscriptionRequest: UpdateSubscriptionRequest,
+  /**
+   * The UpdateSubscriptionResponse model constructor.
+   * @property {module:model/UpdateSubscriptionResponse}
+   */
+  UpdateSubscriptionResponse: UpdateSubscriptionResponse,
   /**
    * The UpdateTeamMemberRequest model constructor.
    * @property {module:model/UpdateTeamMemberRequest}
@@ -4602,6 +4729,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/ReportingApi}
    */
   ReportingApi: ReportingApi,
+  /**
+   * The SubscriptionsApi service constructor.
+   * @property {module:api/SubscriptionsApi}
+   */
+  SubscriptionsApi: SubscriptionsApi,
   /**
    * The TeamApi service constructor.
    * @property {module:api/TeamApi}

@@ -25,7 +25,7 @@ var SearchTerminalCheckoutsResponse = require('../model/SearchTerminalCheckoutsR
  */
 
 /**
- * Constructs a new TerminalApi.
+ * Constructs a new TerminalApi. 
  * @alias module:api/TerminalApi
  * @class
  * @param {module:ApiClient} apiClient Optional API client implementation to use,
@@ -59,7 +59,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-07-22';
+    headerParams['Square-Version'] = '2020-08-12';
 
     var formParams = {
     };
@@ -112,7 +112,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-07-22';
+    headerParams['Square-Version'] = '2020-08-12';
 
     var formParams = {
     };
@@ -166,7 +166,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-07-22';
+    headerParams['Square-Version'] = '2020-08-12';
 
     var formParams = {
     };
@@ -219,7 +219,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-07-22';
+    headerParams['Square-Version'] = '2020-08-12';
 
     var formParams = {
     };
