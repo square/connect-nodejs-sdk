@@ -130,7 +130,7 @@ describe('CatalogApi', function () {
   });
 
   describe('batchDeleteCatalogObjects', function () {
-    it('should call batchDeleteCatalogObjects successfully', async function () {
+    xit('should call batchDeleteCatalogObjects successfully', async function () {
       const milkItem = {idempotency_key: generateIdempotencyKey()};
       milkItem['object'] = getMilkItem;
 
