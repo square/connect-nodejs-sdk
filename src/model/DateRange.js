@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>DateRange</code>.
- * A range defined by two dates. Used for filtering a query for Connect v2  objects that have date properties.
+ * A range defined by two dates. Used for filtering a query for Connect v2 objects that have date properties.
  * @alias module:model/DateRange
  * @class
  */

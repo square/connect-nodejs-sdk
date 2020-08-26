@@ -140,32 +140,32 @@ exports.prototype['tracking_number'] = undefined;
  */
 exports.prototype['tracking_url'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when the shipment was requested. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when the shipment was requested. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} placed_at
  */
 exports.prototype['placed_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `RESERVED` state. Indicates that preparation of this shipment has begun. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `RESERVED` state. Indicates that preparation of this shipment has begun. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} in_progress_at
  */
 exports.prototype['in_progress_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `PREPARED` state. Indicates that the fulfillment is packaged. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `PREPARED` state. Indicates that the fulfillment is packaged. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} packaged_at
  */
 exports.prototype['packaged_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when the shipment is expected to be delivered to the shipping carrier. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when the shipment is expected to be delivered to the shipping carrier. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} expected_shipped_at
  */
 exports.prototype['expected_shipped_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `COMPLETED`state. Indicates that the fulfillment has been given to the shipping carrier. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when this fulfillment was moved to the `COMPLETED`state. Indicates that the fulfillment has been given to the shipping carrier. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} shipped_at
  */
 exports.prototype['shipped_at'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating the shipment was canceled. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating the shipment was canceled. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} canceled_at
  */
 exports.prototype['canceled_at'] = undefined;
@@ -175,7 +175,7 @@ exports.prototype['canceled_at'] = undefined;
  */
 exports.prototype['cancel_reason'] = undefined;
 /**
- * The [timestamp](#workingwithdates) indicating when the shipment failed to be completed. Must be in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
+ * The [timestamp](#workingwithdates) indicating when the shipment failed to be completed. Must be in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\".
  * @member {String} failed_at
  */
 exports.prototype['failed_at'] = undefined;

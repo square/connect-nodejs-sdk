@@ -33,16 +33,18 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListEmployees
    * 
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
+   * @param {String} opts.locationId 
    * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
    * @param {Number} opts.limit The number of employees to be returned on each page.
    * @param {String} opts.cursor The token required to retrieve the specified page of results.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListEmployeesResponse} and HTTP response
    */
   this.listEmployeesWithHttpInfo = function(opts) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: EmployeesApi.listEmployees");
     opts = opts || {};
     var postBody = null;
 
@@ -57,7 +59,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -78,7 +80,7 @@ module.exports = function(apiClient) {
    * ListEmployees
    * 
    * @param {Object} opts Optional parameters
-   * @param {String} opts.locationId Filter employees returned to only those that are associated with the specified location.
+   * @param {String} opts.locationId 
    * @param {String} opts.status Specifies the EmployeeStatus to filter the employee by.
    * @param {Number} opts.limit The number of employees to be returned on each page.
    * @param {String} opts.cursor The token required to retrieve the specified page of results.
@@ -93,12 +95,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * RetrieveEmployee
    * 
    * @param {String} id UUID for the employee that was requested.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveEmployeeResponse} and HTTP response
    */
   this.retrieveEmployeeWithHttpInfo = function(id) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: EmployeesApi.retrieveEmployee");
     var postBody = null;
 
     // verify the required parameter 'id' is set
@@ -114,7 +118,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };

@@ -148,8 +148,10 @@ Class | Method | HTTP request | Description
 *SquareConnect.LaborApi* | [**getBreakType**](docs/LaborApi.md#getBreakType) | **GET** /v2/labor/break-types/{id} | GetBreakType
 *SquareConnect.LaborApi* | [**getEmployeeWage**](docs/LaborApi.md#getEmployeeWage) | **GET** /v2/labor/employee-wages/{id} | GetEmployeeWage
 *SquareConnect.LaborApi* | [**getShift**](docs/LaborApi.md#getShift) | **GET** /v2/labor/shifts/{id} | GetShift
+*SquareConnect.LaborApi* | [**getTeamMemberWage**](docs/LaborApi.md#getTeamMemberWage) | **GET** /v2/labor/team-member-wages/{id} | GetTeamMemberWage
 *SquareConnect.LaborApi* | [**listBreakTypes**](docs/LaborApi.md#listBreakTypes) | **GET** /v2/labor/break-types | ListBreakTypes
 *SquareConnect.LaborApi* | [**listEmployeeWages**](docs/LaborApi.md#listEmployeeWages) | **GET** /v2/labor/employee-wages | ListEmployeeWages
+*SquareConnect.LaborApi* | [**listTeamMemberWages**](docs/LaborApi.md#listTeamMemberWages) | **GET** /v2/labor/team-member-wages | ListTeamMemberWages
 *SquareConnect.LaborApi* | [**listWorkweekConfigs**](docs/LaborApi.md#listWorkweekConfigs) | **GET** /v2/labor/workweek-configs | ListWorkweekConfigs
 *SquareConnect.LaborApi* | [**searchShifts**](docs/LaborApi.md#searchShifts) | **POST** /v2/labor/shifts/search | SearchShifts
 *SquareConnect.LaborApi* | [**updateBreakType**](docs/LaborApi.md#updateBreakType) | **PUT** /v2/labor/break-types/{id} | UpdateBreakType
@@ -178,12 +180,12 @@ Class | Method | HTTP request | Description
 *SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
 *SquareConnect.OAuthApi* | [**renewToken**](docs/OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
 *SquareConnect.OAuthApi* | [**revokeToken**](docs/OAuthApi.md#revokeToken) | **POST** /oauth2/revoke | RevokeToken
-*SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
+*SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/orders/batch-retrieve | BatchRetrieveOrders
 *SquareConnect.OrdersApi* | [**calculateOrder**](docs/OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
-*SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
+*SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
 *SquareConnect.OrdersApi* | [**payOrder**](docs/OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
 *SquareConnect.OrdersApi* | [**searchOrders**](docs/OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
-*SquareConnect.OrdersApi* | [**updateOrder**](docs/OrdersApi.md#updateOrder) | **PUT** /v2/locations/{location_id}/orders/{order_id} | UpdateOrder
+*SquareConnect.OrdersApi* | [**updateOrder**](docs/OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
 *SquareConnect.PaymentsApi* | [**cancelPayment**](docs/PaymentsApi.md#cancelPayment) | **POST** /v2/payments/{payment_id}/cancel | CancelPayment
 *SquareConnect.PaymentsApi* | [**cancelPaymentByIdempotencyKey**](docs/PaymentsApi.md#cancelPaymentByIdempotencyKey) | **POST** /v2/payments/cancel | CancelPaymentByIdempotencyKey
 *SquareConnect.PaymentsApi* | [**completePayment**](docs/PaymentsApi.md#completePayment) | **POST** /v2/payments/{payment_id}/complete | CompletePayment
@@ -193,8 +195,6 @@ Class | Method | HTTP request | Description
 *SquareConnect.RefundsApi* | [**getPaymentRefund**](docs/RefundsApi.md#getPaymentRefund) | **GET** /v2/refunds/{refund_id} | GetPaymentRefund
 *SquareConnect.RefundsApi* | [**listPaymentRefunds**](docs/RefundsApi.md#listPaymentRefunds) | **GET** /v2/refunds | ListPaymentRefunds
 *SquareConnect.RefundsApi* | [**refundPayment**](docs/RefundsApi.md#refundPayment) | **POST** /v2/refunds | RefundPayment
-*SquareConnect.ReportingApi* | [**listAdditionalRecipientReceivableRefunds**](docs/ReportingApi.md#listAdditionalRecipientReceivableRefunds) | **GET** /v2/locations/{location_id}/additional-recipient-receivable-refunds | ListAdditionalRecipientReceivableRefunds
-*SquareConnect.ReportingApi* | [**listAdditionalRecipientReceivables**](docs/ReportingApi.md#listAdditionalRecipientReceivables) | **GET** /v2/locations/{location_id}/additional-recipient-receivables | ListAdditionalRecipientReceivables
 *SquareConnect.SubscriptionsApi* | [**cancelSubscription**](docs/SubscriptionsApi.md#cancelSubscription) | **POST** /v2/subscriptions/{subscription_id}/cancel | CancelSubscription
 *SquareConnect.SubscriptionsApi* | [**createSubscription**](docs/SubscriptionsApi.md#createSubscription) | **POST** /v2/subscriptions | CreateSubscription
 *SquareConnect.SubscriptionsApi* | [**listSubscriptionEvents**](docs/SubscriptionsApi.md#listSubscriptionEvents) | **GET** /v2/subscriptions/{subscription_id}/events | ListSubscriptionEvents
@@ -301,8 +301,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.AddGroupToCustomerRequest](docs/AddGroupToCustomerRequest.md)
  - [SquareConnect.AddGroupToCustomerResponse](docs/AddGroupToCustomerResponse.md)
  - [SquareConnect.AdditionalRecipient](docs/AdditionalRecipient.md)
- - [SquareConnect.AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
- - [SquareConnect.AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [SquareConnect.Address](docs/Address.md)
  - [SquareConnect.AdjustLoyaltyPointsRequest](docs/AdjustLoyaltyPointsRequest.md)
  - [SquareConnect.AdjustLoyaltyPointsResponse](docs/AdjustLoyaltyPointsResponse.md)
@@ -351,6 +349,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CardBrand](docs/CardBrand.md)
  - [SquareConnect.CardPaymentDetails](docs/CardPaymentDetails.md)
  - [SquareConnect.CardPrepaidType](docs/CardPrepaidType.md)
+ - [SquareConnect.CardSquareProduct](docs/CardSquareProduct.md)
  - [SquareConnect.CardType](docs/CardType.md)
  - [SquareConnect.CashDrawerDevice](docs/CashDrawerDevice.md)
  - [SquareConnect.CashDrawerEventType](docs/CashDrawerEventType.md)
@@ -535,6 +534,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.GetPaymentResponse](docs/GetPaymentResponse.md)
  - [SquareConnect.GetShiftRequest](docs/GetShiftRequest.md)
  - [SquareConnect.GetShiftResponse](docs/GetShiftResponse.md)
+ - [SquareConnect.GetTeamMemberWageRequest](docs/GetTeamMemberWageRequest.md)
+ - [SquareConnect.GetTeamMemberWageResponse](docs/GetTeamMemberWageResponse.md)
  - [SquareConnect.GetTerminalCheckoutRequest](docs/GetTerminalCheckoutRequest.md)
  - [SquareConnect.GetTerminalCheckoutResponse](docs/GetTerminalCheckoutResponse.md)
  - [SquareConnect.InventoryAdjustment](docs/InventoryAdjustment.md)
@@ -560,10 +561,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ItemVariationLocationOverrides](docs/ItemVariationLocationOverrides.md)
  - [SquareConnect.JobAssignment](docs/JobAssignment.md)
  - [SquareConnect.JobAssignmentPayType](docs/JobAssignmentPayType.md)
- - [SquareConnect.ListAdditionalRecipientReceivableRefundsRequest](docs/ListAdditionalRecipientReceivableRefundsRequest.md)
- - [SquareConnect.ListAdditionalRecipientReceivableRefundsResponse](docs/ListAdditionalRecipientReceivableRefundsResponse.md)
- - [SquareConnect.ListAdditionalRecipientReceivablesRequest](docs/ListAdditionalRecipientReceivablesRequest.md)
- - [SquareConnect.ListAdditionalRecipientReceivablesResponse](docs/ListAdditionalRecipientReceivablesResponse.md)
  - [SquareConnect.ListBankAccountsRequest](docs/ListBankAccountsRequest.md)
  - [SquareConnect.ListBankAccountsResponse](docs/ListBankAccountsResponse.md)
  - [SquareConnect.ListBreakTypesRequest](docs/ListBreakTypesRequest.md)
@@ -606,6 +603,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.ListRefundsResponse](docs/ListRefundsResponse.md)
  - [SquareConnect.ListSubscriptionEventsRequest](docs/ListSubscriptionEventsRequest.md)
  - [SquareConnect.ListSubscriptionEventsResponse](docs/ListSubscriptionEventsResponse.md)
+ - [SquareConnect.ListTeamMemberWagesRequest](docs/ListTeamMemberWagesRequest.md)
+ - [SquareConnect.ListTeamMemberWagesResponse](docs/ListTeamMemberWagesResponse.md)
  - [SquareConnect.ListTransactionsRequest](docs/ListTransactionsRequest.md)
  - [SquareConnect.ListTransactionsResponse](docs/ListTransactionsResponse.md)
  - [SquareConnect.ListWorkweekConfigsRequest](docs/ListWorkweekConfigsRequest.md)
@@ -657,7 +656,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.MeasurementUnitWeight](docs/MeasurementUnitWeight.md)
  - [SquareConnect.Merchant](docs/Merchant.md)
  - [SquareConnect.MerchantStatus](docs/MerchantStatus.md)
- - [SquareConnect.MethodErrorCodes](docs/MethodErrorCodes.md)
  - [SquareConnect.ModelBreak](docs/ModelBreak.md)
  - [SquareConnect.Money](docs/Money.md)
  - [SquareConnect.ObtainTokenRequest](docs/ObtainTokenRequest.md)
@@ -840,7 +838,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.TeamMemberAssignedLocations](docs/TeamMemberAssignedLocations.md)
  - [SquareConnect.TeamMemberAssignedLocationsAssignmentType](docs/TeamMemberAssignedLocationsAssignmentType.md)
  - [SquareConnect.TeamMemberStatus](docs/TeamMemberStatus.md)
+ - [SquareConnect.TeamMemberWage](docs/TeamMemberWage.md)
  - [SquareConnect.Tender](docs/Tender.md)
+ - [SquareConnect.TenderBankTransferDetails](docs/TenderBankTransferDetails.md)
+ - [SquareConnect.TenderBankTransferDetailsStatus](docs/TenderBankTransferDetailsStatus.md)
  - [SquareConnect.TenderCardDetails](docs/TenderCardDetails.md)
  - [SquareConnect.TenderCardDetailsEntryMethod](docs/TenderCardDetailsEntryMethod.md)
  - [SquareConnect.TenderCardDetailsStatus](docs/TenderCardDetailsStatus.md)

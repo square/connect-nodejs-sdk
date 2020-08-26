@@ -461,6 +461,11 @@ var exports = {
    */
   "PAYMENT_NOT_REFUNDABLE": "PAYMENT_NOT_REFUNDABLE",
   /**
+   * value: "REFUND_DECLINED"
+   * @const
+   */
+  "REFUND_DECLINED": "REFUND_DECLINED",
+  /**
    * value: "INVALID_CARD_DATA"
    * @const
    */

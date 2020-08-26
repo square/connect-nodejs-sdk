@@ -21,8 +21,10 @@ var DeleteShiftResponse = require('../model/DeleteShiftResponse');
 var GetBreakTypeResponse = require('../model/GetBreakTypeResponse');
 var GetEmployeeWageResponse = require('../model/GetEmployeeWageResponse');
 var GetShiftResponse = require('../model/GetShiftResponse');
+var GetTeamMemberWageResponse = require('../model/GetTeamMemberWageResponse');
 var ListBreakTypesResponse = require('../model/ListBreakTypesResponse');
 var ListEmployeeWagesResponse = require('../model/ListEmployeeWagesResponse');
+var ListTeamMemberWagesResponse = require('../model/ListTeamMemberWagesResponse');
 var ListWorkweekConfigsResponse = require('../model/ListWorkweekConfigsResponse');
 var SearchShiftsRequest = require('../model/SearchShiftsRequest');
 var SearchShiftsResponse = require('../model/SearchShiftsResponse');
@@ -52,7 +54,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateBreakType
-   * Creates a new &#x60;BreakType&#x60;.   A &#x60;BreakType&#x60; is a template for creating &#x60;Break&#x60; objects.  You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;break_name&#x60; - &#x60;expected_duration&#x60; - &#x60;is_paid&#x60;  You can only have 3 &#x60;BreakType&#x60; instances per location. If you attempt to add a 4th &#x60;BreakType&#x60; for a location, an &#x60;INVALID_REQUEST_ERROR&#x60; \&quot;Exceeded limit of 3 breaks per location.\&quot; is returned.
+   * Creates a new &#x60;BreakType&#x60;.  A &#x60;BreakType&#x60; is a template for creating &#x60;Break&#x60; objects. You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;break_name&#x60; - &#x60;expected_duration&#x60; - &#x60;is_paid&#x60;  You can only have 3 &#x60;BreakType&#x60; instances per location. If you attempt to add a 4th &#x60;BreakType&#x60; for a location, an &#x60;INVALID_REQUEST_ERROR&#x60; \&quot;Exceeded limit of 3 breaks per location.\&quot; is returned.
    * @param {module:model/CreateBreakTypeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateBreakTypeResponse} and HTTP response
    */
@@ -71,7 +73,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -90,7 +92,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateBreakType
-   * Creates a new &#x60;BreakType&#x60;.   A &#x60;BreakType&#x60; is a template for creating &#x60;Break&#x60; objects.  You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;break_name&#x60; - &#x60;expected_duration&#x60; - &#x60;is_paid&#x60;  You can only have 3 &#x60;BreakType&#x60; instances per location. If you attempt to add a 4th &#x60;BreakType&#x60; for a location, an &#x60;INVALID_REQUEST_ERROR&#x60; \&quot;Exceeded limit of 3 breaks per location.\&quot; is returned.
+   * Creates a new &#x60;BreakType&#x60;.  A &#x60;BreakType&#x60; is a template for creating &#x60;Break&#x60; objects. You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;break_name&#x60; - &#x60;expected_duration&#x60; - &#x60;is_paid&#x60;  You can only have 3 &#x60;BreakType&#x60; instances per location. If you attempt to add a 4th &#x60;BreakType&#x60; for a location, an &#x60;INVALID_REQUEST_ERROR&#x60; \&quot;Exceeded limit of 3 breaks per location.\&quot; is returned.
    * @param {module:model/CreateBreakTypeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateBreakTypeResponse}
    */
@@ -104,7 +106,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateShift
-   * Creates a new &#x60;Shift&#x60;.   A &#x60;Shift&#x60; represents a complete work day for a single employee.  You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;employee_id&#x60; - &#x60;start_at&#x60;  An attempt to create a new &#x60;Shift&#x60; can result in a &#x60;BAD_REQUEST&#x60; error when: - The &#x60;status&#x60; of the new &#x60;Shift&#x60; is &#x60;OPEN&#x60; and the employee has another  shift with an &#x60;OPEN&#x60; status.  - The &#x60;start_at&#x60; date is in the future - the &#x60;start_at&#x60; or &#x60;end_at&#x60; overlaps another shift for the same employee - If &#x60;Break&#x60;s are set in the request, a break &#x60;start_at&#x60; must not be before the &#x60;Shift.start_at&#x60;. A break &#x60;end_at&#x60; must not be after the &#x60;Shift.end_at&#x60;
+   * Creates a new &#x60;Shift&#x60;.  A &#x60;Shift&#x60; represents a complete work day for a single employee. You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;employee_id&#x60; - &#x60;start_at&#x60;  An attempt to create a new &#x60;Shift&#x60; can result in a &#x60;BAD_REQUEST&#x60; error when: - The &#x60;status&#x60; of the new &#x60;Shift&#x60; is &#x60;OPEN&#x60; and the employee has another shift with an &#x60;OPEN&#x60; status. - The &#x60;start_at&#x60; date is in the future - the &#x60;start_at&#x60; or &#x60;end_at&#x60; overlaps another shift for the same employee - If &#x60;Break&#x60;s are set in the request, a break &#x60;start_at&#x60; must not be before the &#x60;Shift.start_at&#x60;. A break &#x60;end_at&#x60; must not be after the &#x60;Shift.end_at&#x60;
    * @param {module:model/CreateShiftRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateShiftResponse} and HTTP response
    */
@@ -123,7 +125,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -142,7 +144,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateShift
-   * Creates a new &#x60;Shift&#x60;.   A &#x60;Shift&#x60; represents a complete work day for a single employee.  You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;employee_id&#x60; - &#x60;start_at&#x60;  An attempt to create a new &#x60;Shift&#x60; can result in a &#x60;BAD_REQUEST&#x60; error when: - The &#x60;status&#x60; of the new &#x60;Shift&#x60; is &#x60;OPEN&#x60; and the employee has another  shift with an &#x60;OPEN&#x60; status.  - The &#x60;start_at&#x60; date is in the future - the &#x60;start_at&#x60; or &#x60;end_at&#x60; overlaps another shift for the same employee - If &#x60;Break&#x60;s are set in the request, a break &#x60;start_at&#x60; must not be before the &#x60;Shift.start_at&#x60;. A break &#x60;end_at&#x60; must not be after the &#x60;Shift.end_at&#x60;
+   * Creates a new &#x60;Shift&#x60;.  A &#x60;Shift&#x60; represents a complete work day for a single employee. You must provide the following values in your request to this endpoint:  - &#x60;location_id&#x60; - &#x60;employee_id&#x60; - &#x60;start_at&#x60;  An attempt to create a new &#x60;Shift&#x60; can result in a &#x60;BAD_REQUEST&#x60; error when: - The &#x60;status&#x60; of the new &#x60;Shift&#x60; is &#x60;OPEN&#x60; and the employee has another shift with an &#x60;OPEN&#x60; status. - The &#x60;start_at&#x60; date is in the future - the &#x60;start_at&#x60; or &#x60;end_at&#x60; overlaps another shift for the same employee - If &#x60;Break&#x60;s are set in the request, a break &#x60;start_at&#x60; must not be before the &#x60;Shift.start_at&#x60;. A break &#x60;end_at&#x60; must not be after the &#x60;Shift.end_at&#x60;
    * @param {module:model/CreateShiftRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateShiftResponse}
    */
@@ -156,7 +158,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteBreakType
-   * Deletes an existing &#x60;BreakType&#x60;.   A &#x60;BreakType&#x60; can be deleted even if it is referenced from a &#x60;Shift&#x60;.
+   * Deletes an existing &#x60;BreakType&#x60;.  A &#x60;BreakType&#x60; can be deleted even if it is referenced from a &#x60;Shift&#x60;.
    * @param {String} id UUID for the &#x60;BreakType&#x60; being deleted.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteBreakTypeResponse} and HTTP response
    */
@@ -176,7 +178,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -195,7 +197,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteBreakType
-   * Deletes an existing &#x60;BreakType&#x60;.   A &#x60;BreakType&#x60; can be deleted even if it is referenced from a &#x60;Shift&#x60;.
+   * Deletes an existing &#x60;BreakType&#x60;.  A &#x60;BreakType&#x60; can be deleted even if it is referenced from a &#x60;Shift&#x60;.
    * @param {String} id UUID for the &#x60;BreakType&#x60; being deleted.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteBreakTypeResponse}
    */
@@ -229,7 +231,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -282,7 +284,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -314,12 +316,14 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * GetEmployeeWage
    * Returns a single &#x60;EmployeeWage&#x60; specified by id.
    * @param {String} id UUID for the &#x60;EmployeeWage&#x60; being retrieved.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetEmployeeWageResponse} and HTTP response
    */
   this.getEmployeeWageWithHttpInfo = function(id) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: LaborApi.getEmployeeWage");
     var postBody = null;
 
     // verify the required parameter 'id' is set
@@ -335,7 +339,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -388,7 +392,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -420,6 +424,59 @@ module.exports = function(apiClient) {
 
 
   /**
+   * GetTeamMemberWage
+   * Returns a single &#x60;TeamMemberWage&#x60; specified by id.
+   * @param {String} id UUID for the &#x60;TeamMemberWage&#x60; being retrieved.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTeamMemberWageResponse} and HTTP response
+   */
+  this.getTeamMemberWageWithHttpInfo = function(id) {
+    var postBody = null;
+
+    // verify the required parameter 'id' is set
+    if (id === undefined || id === null) {
+      throw new Error("Missing the required parameter 'id' when calling getTeamMemberWage");
+    }
+
+
+    var pathParams = {
+      'id': id
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-08-26';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = GetTeamMemberWageResponse;
+
+    return this.apiClient.callApi(
+      '/v2/labor/team-member-wages/{id}', 'GET',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * GetTeamMemberWage
+   * Returns a single &#x60;TeamMemberWage&#x60; specified by id.
+   * @param {String} id UUID for the &#x60;TeamMemberWage&#x60; being retrieved.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetTeamMemberWageResponse}
+   */
+  this.getTeamMemberWage = function(id) {
+    return this.getTeamMemberWageWithHttpInfo(id)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * ListBreakTypes
    * Returns a paginated list of &#x60;BreakType&#x60; instances for a business.
    * @param {Object} opts Optional parameters
@@ -442,7 +499,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -477,6 +534,7 @@ module.exports = function(apiClient) {
 
 
   /**
+   * @deprecated
    * ListEmployeeWages
    * Returns a paginated list of &#x60;EmployeeWage&#x60; instances for a business.
    * @param {Object} opts Optional parameters
@@ -486,6 +544,7 @@ module.exports = function(apiClient) {
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListEmployeeWagesResponse} and HTTP response
    */
   this.listEmployeeWagesWithHttpInfo = function(opts) {
+    console.warn("\x1b[33m%s\x1b[0m","Calling deprecated API: LaborApi.listEmployeeWages");
     opts = opts || {};
     var postBody = null;
 
@@ -499,7 +558,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -534,6 +593,63 @@ module.exports = function(apiClient) {
 
 
   /**
+   * ListTeamMemberWages
+   * Returns a paginated list of &#x60;TeamMemberWage&#x60; instances for a business.
+   * @param {Object} opts Optional parameters
+   * @param {String} opts.teamMemberId Filter wages returned to only those that are associated with the specified team member.
+   * @param {Number} opts.limit Maximum number of Team Member Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
+   * @param {String} opts.cursor Pointer to the next page of Employee Wage results to fetch.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTeamMemberWagesResponse} and HTTP response
+   */
+  this.listTeamMemberWagesWithHttpInfo = function(opts) {
+    opts = opts || {};
+    var postBody = null;
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+      'team_member_id': opts['teamMemberId'],
+      'limit': opts['limit'],
+      'cursor': opts['cursor']
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-08-26';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = ListTeamMemberWagesResponse;
+
+    return this.apiClient.callApi(
+      '/v2/labor/team-member-wages', 'GET',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * ListTeamMemberWages
+   * Returns a paginated list of &#x60;TeamMemberWage&#x60; instances for a business.
+   * @param {Object} opts Optional parameters
+   * @param {String} opts.teamMemberId Filter wages returned to only those that are associated with the specified team member.
+   * @param {Number} opts.limit Maximum number of Team Member Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
+   * @param {String} opts.cursor Pointer to the next page of Employee Wage results to fetch.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTeamMemberWagesResponse}
+   */
+  this.listTeamMemberWages = function(opts) {
+    return this.listTeamMemberWagesWithHttpInfo(opts)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * ListWorkweekConfigs
    * Returns a list of &#x60;WorkweekConfig&#x60; instances for a business.
    * @param {Object} opts Optional parameters
@@ -554,7 +670,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -589,7 +705,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchShifts
-   * Returns a paginated list of &#x60;Shift&#x60; records for a business.  The list to be returned can be filtered by: - Location IDs **and** - employee IDs **and** - shift status (&#x60;OPEN&#x60;, &#x60;CLOSED&#x60;) **and** - shift start **and** - shift end **and** - work day details  The list can be sorted by: - &#x60;start_at&#x60; - &#x60;end_at&#x60; - &#x60;created_at&#x60; - &#x60;updated_at&#x60;
+   * Returns a paginated list of &#x60;Shift&#x60; records for a business. The list to be returned can be filtered by: - Location IDs **and** - employee IDs **and** - shift status (&#x60;OPEN&#x60;, &#x60;CLOSED&#x60;) **and** - shift start **and** - shift end **and** - work day details  The list can be sorted by: - &#x60;start_at&#x60; - &#x60;end_at&#x60; - &#x60;created_at&#x60; - &#x60;updated_at&#x60;
    * @param {module:model/SearchShiftsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchShiftsResponse} and HTTP response
    */
@@ -608,7 +724,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -627,7 +743,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchShifts
-   * Returns a paginated list of &#x60;Shift&#x60; records for a business.  The list to be returned can be filtered by: - Location IDs **and** - employee IDs **and** - shift status (&#x60;OPEN&#x60;, &#x60;CLOSED&#x60;) **and** - shift start **and** - shift end **and** - work day details  The list can be sorted by: - &#x60;start_at&#x60; - &#x60;end_at&#x60; - &#x60;created_at&#x60; - &#x60;updated_at&#x60;
+   * Returns a paginated list of &#x60;Shift&#x60; records for a business. The list to be returned can be filtered by: - Location IDs **and** - employee IDs **and** - shift status (&#x60;OPEN&#x60;, &#x60;CLOSED&#x60;) **and** - shift start **and** - shift end **and** - work day details  The list can be sorted by: - &#x60;start_at&#x60; - &#x60;end_at&#x60; - &#x60;created_at&#x60; - &#x60;updated_at&#x60;
    * @param {module:model/SearchShiftsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchShiftsResponse}
    */
@@ -667,7 +783,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -701,7 +817,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateShift
-   * Updates an existing &#x60;Shift&#x60;.   When adding a &#x60;Break&#x60; to a &#x60;Shift&#x60;, any earlier &#x60;Breaks&#x60; in the &#x60;Shift&#x60; have  the &#x60;end_at&#x60; property set to a valid RFC-3339 datetime string.   When closing a &#x60;Shift&#x60;, all &#x60;Break&#x60; instances in the shift must be complete with &#x60;end_at&#x60; set on each &#x60;Break&#x60;.
+   * Updates an existing &#x60;Shift&#x60;.  When adding a &#x60;Break&#x60; to a &#x60;Shift&#x60;, any earlier &#x60;Breaks&#x60; in the &#x60;Shift&#x60; have the &#x60;end_at&#x60; property set to a valid RFC-3339 datetime string.  When closing a &#x60;Shift&#x60;, all &#x60;Break&#x60; instances in the shift must be complete with &#x60;end_at&#x60; set on each &#x60;Break&#x60;.
    * @param {String} id ID of the object being updated.
    * @param {module:model/UpdateShiftRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateShiftResponse} and HTTP response
@@ -727,7 +843,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -746,7 +862,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateShift
-   * Updates an existing &#x60;Shift&#x60;.   When adding a &#x60;Break&#x60; to a &#x60;Shift&#x60;, any earlier &#x60;Breaks&#x60; in the &#x60;Shift&#x60; have  the &#x60;end_at&#x60; property set to a valid RFC-3339 datetime string.   When closing a &#x60;Shift&#x60;, all &#x60;Break&#x60; instances in the shift must be complete with &#x60;end_at&#x60; set on each &#x60;Break&#x60;.
+   * Updates an existing &#x60;Shift&#x60;.  When adding a &#x60;Break&#x60; to a &#x60;Shift&#x60;, any earlier &#x60;Breaks&#x60; in the &#x60;Shift&#x60; have the &#x60;end_at&#x60; property set to a valid RFC-3339 datetime string.  When closing a &#x60;Shift&#x60;, all &#x60;Break&#x60; instances in the shift must be complete with &#x60;end_at&#x60; set on each &#x60;Break&#x60;.
    * @param {String} id ID of the object being updated.
    * @param {module:model/UpdateShiftRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateShiftResponse}
@@ -787,7 +903,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };

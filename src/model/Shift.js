@@ -28,17 +28,17 @@ var ShiftWage = require('./ShiftWage');
  * A record of the hourly rate, start, and end times for a single work shift for an employee. May include a record of the start and end times for breaks taken during the shift.
  * @alias module:model/Shift
  * @class
- * @param employeeId {String} The ID of the employee this shift belongs to.
  * @param startAt {String} RFC 3339; shifted to location timezone + offset. Precision up to the minute is respected; seconds are truncated.
  */
-var exports = function(employeeId, startAt) {
+var exports = function(startAt) {
   var _this = this;
 
 
-  _this['employee_id'] = employeeId;
+
 
 
   _this['start_at'] = startAt;
+
 
 
 
@@ -95,6 +95,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('updated_at')) {
       obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
     }
+      if (data.hasOwnProperty('team_member_id')) {
+      obj['team_member_id'] = ApiClient.convertToType(data['team_member_id'], 'String');
+    }
     }
   return obj;
 }
@@ -105,7 +108,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The ID of the employee this shift belongs to.
+ * The ID of the employee this shift belongs to. DEPRECATED at version 2020-08-26. Use `team_member_id` instead
  * @member {String} employee_id
  */
 exports.prototype['employee_id'] = undefined;
@@ -125,7 +128,7 @@ exports.prototype['timezone'] = undefined;
  */
 exports.prototype['start_at'] = undefined;
 /**
- * RFC 3339; shifted to timezone + offset. Precision up to the minute is respected; seconds are truncated. The `end_at` minute is not counted when the shift length is calculated. For example, a shift from `00:00` to `08:01` is considered an 8 hour shift (midnight to 8am).
+ * RFC 3339; shifted to timezone + offset. Precision up to the minute is respected; seconds are truncated.
  * @member {String} end_at
  */
 exports.prototype['end_at'] = undefined;
@@ -159,6 +162,11 @@ exports.prototype['created_at'] = undefined;
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
+/**
+ * The ID of the team member this shift belongs to. Replaced `employee_id` at version \"2020-08-26\"
+ * @member {String} team_member_id
+ */
+exports.prototype['team_member_id'] = undefined;
 
 
 

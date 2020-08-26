@@ -10,6 +10,7 @@ Method | HTTP request | Description
 
 <a name="listEmployees"></a>
 # **listEmployees**
+**Note: This endpoint is deprecated.**
 > ListEmployeesResponse listEmployees(opts)
 
 ListEmployees
@@ -28,7 +29,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.EmployeesApi();
 
 var opts = { 
-  'locationId': "locationId_example", // String | Filter employees returned to only those that are associated with the specified location.
+  'locationId': "locationId_example", // String | 
   'status': "status_example", // String | Specifies the EmployeeStatus to filter the employee by.
   'limit': 56, // Number | The number of employees to be returned on each page.
   'cursor': "cursor_example" // String | The token required to retrieve the specified page of results.
@@ -45,7 +46,7 @@ apiInstance.listEmployees(opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| Filter employees returned to only those that are associated with the specified location. | [optional] 
+ **locationId** | **String**|  | [optional] 
  **status** | **String**| Specifies the EmployeeStatus to filter the employee by. | [optional] 
  **limit** | **Number**| The number of employees to be returned on each page. | [optional] 
  **cursor** | **String**| The token required to retrieve the specified page of results. | [optional] 
@@ -65,6 +66,7 @@ Name | Type | Description  | Notes
 
 <a name="retrieveEmployee"></a>
 # **retrieveEmployee**
+**Note: This endpoint is deprecated.**
 > RetrieveEmployeeResponse retrieveEmployee(id)
 
 RetrieveEmployee

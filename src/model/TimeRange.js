@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>TimeRange</code>.
- * Represents a generic time range. The start and end values are represented in RFC-3339 format. Time ranges are customized to be inclusive or exclusive based on the needs of a particular endpoint. Refer to the relevent endpoint-specific documentation to determine how time ranges are handled.
+ * Represents a generic time range. The start and end values are represented in RFC 3339 format. Time ranges are customized to be inclusive or exclusive based on the needs of a particular endpoint. Refer to the relevant endpoint-specific documentation to determine how time ranges are handled.
  * @alias module:model/TimeRange
  * @class
  */
@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A datetime value in RFC-3339 format indicating when the time range starts.
+ * A datetime value in RFC 3339 format indicating when the time range starts.
  * @member {String} start_at
  */
 exports.prototype['start_at'] = undefined;
 /**
- * A datetime value in RFC-3339 format indicating when the time range ends.
+ * A datetime value in RFC 3339 format indicating when the time range ends.
  * @member {String} end_at
  */
 exports.prototype['end_at'] = undefined;

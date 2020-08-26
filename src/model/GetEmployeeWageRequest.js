@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The GetEmployeeWageRequest model module.
  * @module model/GetEmployeeWageRequest
  */

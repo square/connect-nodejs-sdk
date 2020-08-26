@@ -33,6 +33,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -49,6 +50,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('order')) {
       obj['order'] = Order.constructFromObject(data['order']);
     }
+      if (data.hasOwnProperty('location_id')) {
+      obj['location_id'] = ApiClient.convertToType(data['location_id'], 'String');
+    }
       if (data.hasOwnProperty('idempotency_key')) {
       obj['idempotency_key'] = ApiClient.convertToType(data['idempotency_key'], 'String');
     }
@@ -61,6 +65,11 @@ exports.constructFromObject = function(data, obj) {
  * @member {module:model/Order} order
  */
 exports.prototype['order'] = undefined;
+/**
+ * The ID of the business location to associate the order with.
+ * @member {String} location_id
+ */
+exports.prototype['location_id'] = undefined;
 /**
  * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
  * @member {String} idempotency_key

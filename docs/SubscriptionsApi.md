@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 CancelSubscription
 
-Cancels a subscription immediately and sets the subscription &#x60;status&#x60; to &#x60;CANCELED&#x60;. You can also use the &#x60;UpdateSubscription&#x60; endpoint to cancel a subscription at a future date. For more information, see [CancelSubscriptions](/docs/subscriptions-api/overview#cancel-subscriptions).
+Sets the &#x60;canceled_date&#x60; field to the end of the active billing period. After this date, the status changes from ACTIVE to CANCELED.
 
 ### Example
 ```javascript
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 CreateSubscription
 
-Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.   For more information,  see [Subscription API Overview](/docs/subscriptions-api/overview).
+Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.
 
 ### Example
 ```javascript
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 UpdateSubscription
 
-Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values. For more information and examples, see  [Update subscriptions](/docs/subscriptions-api/overview#update-subscriptions).
+Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values.
 
 ### Example
 ```javascript

@@ -24,7 +24,7 @@ var DateRange = require('./DateRange');
 
 /**
  * Constructs a new <code>ShiftWorkday</code>.
- * A &#x60;Shift&#x60; search query filter parameter that sets a range of days that  a &#x60;Shift&#x60; must start or end in before passing the filter condition.
+ * A &#x60;Shift&#x60; search query filter parameter that sets a range of days that a &#x60;Shift&#x60; must start or end in before passing the filter condition.
  * @alias module:model/ShiftWorkday
  * @class
  */

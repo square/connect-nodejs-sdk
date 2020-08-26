@@ -1,12 +1,11 @@
-# SquareConnect.MethodErrorCodes
+# SquareConnect.GetTeamMemberWageRequest
 
 ### Description
 
-
+A request to get an `TeamMemberWage`
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | **[String]** |  See [ErrorCode](#type-errorcode) for possible values | [optional] 
 
 

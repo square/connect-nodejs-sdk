@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['curbside_details'] = undefined;
 /**
- * The [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the buyer arrived and is waiting for pickup.
+ * The [timestamp](#workingwithdates) in RFC 3339 timestamp format, e.g., \"2016-09-04T23:59:33.123Z\", indicating when the buyer arrived and is waiting for pickup.
  * @member {String} buyer_arrived_at
  */
 exports.prototype['buyer_arrived_at'] = undefined;

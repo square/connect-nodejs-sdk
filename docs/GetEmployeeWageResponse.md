@@ -1,6 +1,7 @@
 # SquareConnect.GetEmployeeWageResponse
 
 ### Description
+**Note: This model is deprecated.**
 
 A response to a request to get an `EmployeeWage`. Contains the requested `EmployeeWage` objects. May contain a set of `Error` objects if the request resulted in errors.
 

@@ -61,7 +61,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -113,7 +113,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -218,7 +218,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -251,7 +251,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveInventoryChanges
-   * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint is useful when displaying recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
+   * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint can be  used to display recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
    * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
@@ -277,7 +277,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -296,7 +296,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveInventoryChanges
-   * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint is useful when displaying recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
+   * Returns a set of physical counts and inventory adjustments for the provided [CatalogObject](#type-catalogobject) at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their &#x60;occurred_at&#x60; timestamp (newest first).  There are no limits on how far back the caller can page. This endpoint can be  used to display recent changes for a specific item. For more sophisticated queries, use a batch endpoint.
    * @param {String} catalogObjectId ID of the &#x60;CatalogObject&#x60; to retrieve.
    * @param {Object} opts Optional parameters
    * @param {String} opts.locationIds The &#x60;Location&#x60; IDs to look up as a comma-separated list. An empty list queries all locations.
@@ -339,7 +339,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -395,7 +395,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };

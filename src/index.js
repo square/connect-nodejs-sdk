@@ -21,8 +21,6 @@ var ActionCancelReason = require('./model/ActionCancelReason');
 var AddGroupToCustomerRequest = require('./model/AddGroupToCustomerRequest');
 var AddGroupToCustomerResponse = require('./model/AddGroupToCustomerResponse');
 var AdditionalRecipient = require('./model/AdditionalRecipient');
-var AdditionalRecipientReceivable = require('./model/AdditionalRecipientReceivable');
-var AdditionalRecipientReceivableRefund = require('./model/AdditionalRecipientReceivableRefund');
 var Address = require('./model/Address');
 var AdjustLoyaltyPointsRequest = require('./model/AdjustLoyaltyPointsRequest');
 var AdjustLoyaltyPointsResponse = require('./model/AdjustLoyaltyPointsResponse');
@@ -71,6 +69,7 @@ var Card = require('./model/Card');
 var CardBrand = require('./model/CardBrand');
 var CardPaymentDetails = require('./model/CardPaymentDetails');
 var CardPrepaidType = require('./model/CardPrepaidType');
+var CardSquareProduct = require('./model/CardSquareProduct');
 var CardType = require('./model/CardType');
 var CashDrawerDevice = require('./model/CashDrawerDevice');
 var CashDrawerEventType = require('./model/CashDrawerEventType');
@@ -255,6 +254,8 @@ var GetPaymentRequest = require('./model/GetPaymentRequest');
 var GetPaymentResponse = require('./model/GetPaymentResponse');
 var GetShiftRequest = require('./model/GetShiftRequest');
 var GetShiftResponse = require('./model/GetShiftResponse');
+var GetTeamMemberWageRequest = require('./model/GetTeamMemberWageRequest');
+var GetTeamMemberWageResponse = require('./model/GetTeamMemberWageResponse');
 var GetTerminalCheckoutRequest = require('./model/GetTerminalCheckoutRequest');
 var GetTerminalCheckoutResponse = require('./model/GetTerminalCheckoutResponse');
 var InventoryAdjustment = require('./model/InventoryAdjustment');
@@ -280,10 +281,6 @@ var InvoiceStatus = require('./model/InvoiceStatus');
 var ItemVariationLocationOverrides = require('./model/ItemVariationLocationOverrides');
 var JobAssignment = require('./model/JobAssignment');
 var JobAssignmentPayType = require('./model/JobAssignmentPayType');
-var ListAdditionalRecipientReceivableRefundsRequest = require('./model/ListAdditionalRecipientReceivableRefundsRequest');
-var ListAdditionalRecipientReceivableRefundsResponse = require('./model/ListAdditionalRecipientReceivableRefundsResponse');
-var ListAdditionalRecipientReceivablesRequest = require('./model/ListAdditionalRecipientReceivablesRequest');
-var ListAdditionalRecipientReceivablesResponse = require('./model/ListAdditionalRecipientReceivablesResponse');
 var ListBankAccountsRequest = require('./model/ListBankAccountsRequest');
 var ListBankAccountsResponse = require('./model/ListBankAccountsResponse');
 var ListBreakTypesRequest = require('./model/ListBreakTypesRequest');
@@ -326,6 +323,8 @@ var ListRefundsRequest = require('./model/ListRefundsRequest');
 var ListRefundsResponse = require('./model/ListRefundsResponse');
 var ListSubscriptionEventsRequest = require('./model/ListSubscriptionEventsRequest');
 var ListSubscriptionEventsResponse = require('./model/ListSubscriptionEventsResponse');
+var ListTeamMemberWagesRequest = require('./model/ListTeamMemberWagesRequest');
+var ListTeamMemberWagesResponse = require('./model/ListTeamMemberWagesResponse');
 var ListTransactionsRequest = require('./model/ListTransactionsRequest');
 var ListTransactionsResponse = require('./model/ListTransactionsResponse');
 var ListWorkweekConfigsRequest = require('./model/ListWorkweekConfigsRequest');
@@ -377,7 +376,6 @@ var MeasurementUnitVolume = require('./model/MeasurementUnitVolume');
 var MeasurementUnitWeight = require('./model/MeasurementUnitWeight');
 var Merchant = require('./model/Merchant');
 var MerchantStatus = require('./model/MerchantStatus');
-var MethodErrorCodes = require('./model/MethodErrorCodes');
 var ModelBreak = require('./model/ModelBreak');
 var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
@@ -560,7 +558,10 @@ var TeamMember = require('./model/TeamMember');
 var TeamMemberAssignedLocations = require('./model/TeamMemberAssignedLocations');
 var TeamMemberAssignedLocationsAssignmentType = require('./model/TeamMemberAssignedLocationsAssignmentType');
 var TeamMemberStatus = require('./model/TeamMemberStatus');
+var TeamMemberWage = require('./model/TeamMemberWage');
 var Tender = require('./model/Tender');
+var TenderBankTransferDetails = require('./model/TenderBankTransferDetails');
+var TenderBankTransferDetailsStatus = require('./model/TenderBankTransferDetailsStatus');
 var TenderCardDetails = require('./model/TenderCardDetails');
 var TenderCardDetailsEntryMethod = require('./model/TenderCardDetailsEntryMethod');
 var TenderCardDetailsStatus = require('./model/TenderCardDetailsStatus');
@@ -791,7 +792,6 @@ var OAuthApi = require('./api/OAuthApi');
 var OrdersApi = require('./api/OrdersApi');
 var PaymentsApi = require('./api/PaymentsApi');
 var RefundsApi = require('./api/RefundsApi');
-var ReportingApi = require('./api/ReportingApi');
 var SubscriptionsApi = require('./api/SubscriptionsApi');
 var TeamApi = require('./api/TeamApi');
 var TerminalApi = require('./api/TerminalApi');
@@ -831,7 +831,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 4.20200812.2
+ * @version 4.20200826.3
  */
   module.exports = {
   /**
@@ -879,16 +879,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/AdditionalRecipient}
    */
   AdditionalRecipient: AdditionalRecipient,
-  /**
-   * The AdditionalRecipientReceivable model constructor.
-   * @property {module:model/AdditionalRecipientReceivable}
-   */
-  AdditionalRecipientReceivable: AdditionalRecipientReceivable,
-  /**
-   * The AdditionalRecipientReceivableRefund model constructor.
-   * @property {module:model/AdditionalRecipientReceivableRefund}
-   */
-  AdditionalRecipientReceivableRefund: AdditionalRecipientReceivableRefund,
   /**
    * The Address model constructor.
    * @property {module:model/Address}
@@ -1129,6 +1119,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CardPrepaidType}
    */
   CardPrepaidType: CardPrepaidType,
+  /**
+   * The CardSquareProduct model constructor.
+   * @property {module:model/CardSquareProduct}
+   */
+  CardSquareProduct: CardSquareProduct,
   /**
    * The CardType model constructor.
    * @property {module:model/CardType}
@@ -2050,6 +2045,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   GetShiftResponse: GetShiftResponse,
   /**
+   * The GetTeamMemberWageRequest model constructor.
+   * @property {module:model/GetTeamMemberWageRequest}
+   */
+  GetTeamMemberWageRequest: GetTeamMemberWageRequest,
+  /**
+   * The GetTeamMemberWageResponse model constructor.
+   * @property {module:model/GetTeamMemberWageResponse}
+   */
+  GetTeamMemberWageResponse: GetTeamMemberWageResponse,
+  /**
    * The GetTerminalCheckoutRequest model constructor.
    * @property {module:model/GetTerminalCheckoutRequest}
    */
@@ -2174,26 +2179,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/JobAssignmentPayType}
    */
   JobAssignmentPayType: JobAssignmentPayType,
-  /**
-   * The ListAdditionalRecipientReceivableRefundsRequest model constructor.
-   * @property {module:model/ListAdditionalRecipientReceivableRefundsRequest}
-   */
-  ListAdditionalRecipientReceivableRefundsRequest: ListAdditionalRecipientReceivableRefundsRequest,
-  /**
-   * The ListAdditionalRecipientReceivableRefundsResponse model constructor.
-   * @property {module:model/ListAdditionalRecipientReceivableRefundsResponse}
-   */
-  ListAdditionalRecipientReceivableRefundsResponse: ListAdditionalRecipientReceivableRefundsResponse,
-  /**
-   * The ListAdditionalRecipientReceivablesRequest model constructor.
-   * @property {module:model/ListAdditionalRecipientReceivablesRequest}
-   */
-  ListAdditionalRecipientReceivablesRequest: ListAdditionalRecipientReceivablesRequest,
-  /**
-   * The ListAdditionalRecipientReceivablesResponse model constructor.
-   * @property {module:model/ListAdditionalRecipientReceivablesResponse}
-   */
-  ListAdditionalRecipientReceivablesResponse: ListAdditionalRecipientReceivablesResponse,
   /**
    * The ListBankAccountsRequest model constructor.
    * @property {module:model/ListBankAccountsRequest}
@@ -2404,6 +2389,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ListSubscriptionEventsResponse}
    */
   ListSubscriptionEventsResponse: ListSubscriptionEventsResponse,
+  /**
+   * The ListTeamMemberWagesRequest model constructor.
+   * @property {module:model/ListTeamMemberWagesRequest}
+   */
+  ListTeamMemberWagesRequest: ListTeamMemberWagesRequest,
+  /**
+   * The ListTeamMemberWagesResponse model constructor.
+   * @property {module:model/ListTeamMemberWagesResponse}
+   */
+  ListTeamMemberWagesResponse: ListTeamMemberWagesResponse,
   /**
    * The ListTransactionsRequest model constructor.
    * @property {module:model/ListTransactionsRequest}
@@ -2659,11 +2654,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/MerchantStatus}
    */
   MerchantStatus: MerchantStatus,
-  /**
-   * The MethodErrorCodes model constructor.
-   * @property {module:model/MethodErrorCodes}
-   */
-  MethodErrorCodes: MethodErrorCodes,
   /**
    * The ModelBreak model constructor.
    * @property {module:model/ModelBreak}
@@ -3575,10 +3565,25 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   TeamMemberStatus: TeamMemberStatus,
   /**
+   * The TeamMemberWage model constructor.
+   * @property {module:model/TeamMemberWage}
+   */
+  TeamMemberWage: TeamMemberWage,
+  /**
    * The Tender model constructor.
    * @property {module:model/Tender}
    */
   Tender: Tender,
+  /**
+   * The TenderBankTransferDetails model constructor.
+   * @property {module:model/TenderBankTransferDetails}
+   */
+  TenderBankTransferDetails: TenderBankTransferDetails,
+  /**
+   * The TenderBankTransferDetailsStatus model constructor.
+   * @property {module:model/TenderBankTransferDetailsStatus}
+   */
+  TenderBankTransferDetailsStatus: TenderBankTransferDetailsStatus,
   /**
    * The TenderCardDetails model constructor.
    * @property {module:model/TenderCardDetails}
@@ -4724,11 +4729,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/RefundsApi}
    */
   RefundsApi: RefundsApi,
-  /**
-   * The ReportingApi service constructor.
-   * @property {module:api/ReportingApi}
-   */
-  ReportingApi: ReportingApi,
   /**
    * The SubscriptionsApi service constructor.
    * @property {module:api/SubscriptionsApi}

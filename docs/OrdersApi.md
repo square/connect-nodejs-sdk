@@ -4,17 +4,17 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**batchRetrieveOrders**](OrdersApi.md#batchRetrieveOrders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve | BatchRetrieveOrders
+[**batchRetrieveOrders**](OrdersApi.md#batchRetrieveOrders) | **POST** /v2/orders/batch-retrieve | BatchRetrieveOrders
 [**calculateOrder**](OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
-[**createOrder**](OrdersApi.md#createOrder) | **POST** /v2/locations/{location_id}/orders | CreateOrder
+[**createOrder**](OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
 [**payOrder**](OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
 [**searchOrders**](OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
-[**updateOrder**](OrdersApi.md#updateOrder) | **PUT** /v2/locations/{location_id}/orders/{order_id} | UpdateOrder
+[**updateOrder**](OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
 
 
 <a name="batchRetrieveOrders"></a>
 # **batchRetrieveOrders**
-> BatchRetrieveOrdersResponse batchRetrieveOrders(locationId, body)
+> BatchRetrieveOrdersResponse batchRetrieveOrders(body)
 
 BatchRetrieveOrders
 
@@ -31,11 +31,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var locationId = "locationId_example"; // String | The ID of the orders' associated location.
-
 var body = new SquareConnect.BatchRetrieveOrdersRequest(); // BatchRetrieveOrdersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
-apiInstance.batchRetrieveOrders(locationId, body).then(function(data) {
+apiInstance.batchRetrieveOrders(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -47,7 +45,6 @@ apiInstance.batchRetrieveOrders(locationId, body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the orders&#39; associated location. | 
  **body** | [**BatchRetrieveOrdersRequest**](BatchRetrieveOrdersRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type
@@ -114,7 +111,7 @@ Name | Type | Description  | Notes
 
 <a name="createOrder"></a>
 # **createOrder**
-> CreateOrderResponse createOrder(locationId, body)
+> CreateOrderResponse createOrder(body)
 
 CreateOrder
 
@@ -131,11 +128,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var locationId = "locationId_example"; // String | The ID of the business location to associate the order with.
-
 var body = new SquareConnect.CreateOrderRequest(); // CreateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
-apiInstance.createOrder(locationId, body).then(function(data) {
+apiInstance.createOrder(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -147,7 +142,6 @@ apiInstance.createOrder(locationId, body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the business location to associate the order with. | 
  **body** | [**CreateOrderRequest**](CreateOrderRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type
@@ -266,7 +260,7 @@ Name | Type | Description  | Notes
 <a name="updateOrder"></a>
 # **updateOrder**
 **Note: This endpoint is in beta.**
-> UpdateOrderResponse updateOrder(locationId, orderId, body)
+> UpdateOrderResponse updateOrder(orderId, body)
 
 UpdateOrder
 
@@ -283,13 +277,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var locationId = "locationId_example"; // String | The ID of the order's associated location.
-
 var orderId = "orderId_example"; // String | The ID of the order to update.
 
 var body = new SquareConnect.UpdateOrderRequest(); // UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
-apiInstance.updateOrder(locationId, orderId, body).then(function(data) {
+apiInstance.updateOrder(orderId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -301,7 +293,6 @@ apiInstance.updateOrder(locationId, orderId, body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **locationId** | **String**| The ID of the order&#39;s associated location. | 
  **orderId** | **String**| The ID of the order to update. | 
  **body** | [**UpdateOrderRequest**](UpdateOrderRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 

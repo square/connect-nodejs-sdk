@@ -42,7 +42,7 @@ module.exports = function(apiClient) {
   /**
    * CancelSubscription
    * Note: This endpoint is in beta.
-   * Cancels a subscription immediately and sets the subscription &#x60;status&#x60; to &#x60;CANCELED&#x60;. You can also use the &#x60;UpdateSubscription&#x60; endpoint to cancel a subscription at a future date. For more information, see [CancelSubscriptions](/docs/subscriptions-api/overview#cancel-subscriptions).
+   * Sets the &#x60;canceled_date&#x60; field to the end of the active billing period. After this date, the status changes from ACTIVE to CANCELED.
    * @param {String} subscriptionId The ID of the subscription to cancel.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelSubscriptionResponse} and HTTP response
    */
@@ -62,7 +62,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -81,7 +81,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelSubscription
-   * Cancels a subscription immediately and sets the subscription &#x60;status&#x60; to &#x60;CANCELED&#x60;. You can also use the &#x60;UpdateSubscription&#x60; endpoint to cancel a subscription at a future date. For more information, see [CancelSubscriptions](/docs/subscriptions-api/overview#cancel-subscriptions).
+   * Sets the &#x60;canceled_date&#x60; field to the end of the active billing period. After this date, the status changes from ACTIVE to CANCELED.
    * @param {String} subscriptionId The ID of the subscription to cancel.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelSubscriptionResponse}
    */
@@ -96,7 +96,7 @@ module.exports = function(apiClient) {
   /**
    * CreateSubscription
    * Note: This endpoint is in beta.
-   * Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.   For more information,  see [Subscription API Overview](/docs/subscriptions-api/overview).
+   * Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.
    * @param {module:model/CreateSubscriptionRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateSubscriptionResponse} and HTTP response
    */
@@ -115,7 +115,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -134,7 +134,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateSubscription
-   * Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.   For more information,  see [Subscription API Overview](/docs/subscriptions-api/overview).
+   * Creates a subscription for a customer to a subscription plan.  If you provide a card on file in the request, Square charges the card for  the subscription. Otherwise, Square bills an invoice to the customer&#39;s email  address. The subscription starts immediately, unless the request includes  the optional &#x60;start_date&#x60;. Each individual subscription is associated with a particular location.
    * @param {module:model/CreateSubscriptionRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateSubscriptionResponse}
    */
@@ -175,7 +175,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -232,7 +232,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -285,7 +285,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -319,7 +319,7 @@ module.exports = function(apiClient) {
   /**
    * UpdateSubscription
    * Note: This endpoint is in beta.
-   * Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values. For more information and examples, see  [Update subscriptions](/docs/subscriptions-api/overview#update-subscriptions).
+   * Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values.
    * @param {String} subscriptionId The ID for the subscription to update.
    * @param {module:model/UpdateSubscriptionRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateSubscriptionResponse} and HTTP response
@@ -345,7 +345,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -364,7 +364,7 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateSubscription
-   * Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values. For more information and examples, see  [Update subscriptions](/docs/subscriptions-api/overview#update-subscriptions).
+   * Updates a subscription. You can set, modify, and clear the  &#x60;subscription&#x60; field values.
    * @param {String} subscriptionId The ID for the subscription to update.
    * @param {module:model/UpdateSubscriptionRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateSubscriptionResponse}

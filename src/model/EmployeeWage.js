@@ -18,22 +18,22 @@ var Money = require('./Money');
 
 
 /**
+ * @deprecated
  * The EmployeeWage model module.
  * @module model/EmployeeWage
  */
 
 /**
  * Constructs a new <code>EmployeeWage</code>.
- * The hourly wage rate that an employee will earn on a &#x60;Shift&#x60; for doing the job specified by the &#x60;title&#x60; property of this object.
+ * The hourly wage rate that an employee will earn on a &#x60;Shift&#x60; for doing the job specified by the &#x60;title&#x60; property of this object. Deprecated at verison 2020-08-26. Use &#x60;TeamMemberWage&#x60; instead.
  * @alias module:model/EmployeeWage
  * @class
- * @param employeeId {String} The `Employee` that this wage is assigned to.
  */
-var exports = function(employeeId) {
+var exports = function() {
   var _this = this;
 
 
-  _this['employee_id'] = employeeId;
+
 
 
 };

@@ -66,7 +66,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['idempotency_key'] = undefined;
 /**
- * The set of physical counts and inventory adjustments to be made. Changes are applied based on the client-supplied timestamp and may be sent out of order. Max size is 100 changes.
+ * The set of physical counts and inventory adjustments to be made. Changes are applied based on the client-supplied timestamp and may be sent out of order.
  * @member {Array.<module:model/InventoryChange>} changes
  */
 exports.prototype['changes'] = undefined;
