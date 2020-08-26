@@ -13,7 +13,7 @@ describe('LocationsApi', function () {
     this.api = new SquareConnect.LocationsApi();
   });
 
-  it('should list locations', async function () {
+  xit('should list locations', async function () {
     const resp = await this.api.listLocations()
       .catch(handleUnexpectedError);
 

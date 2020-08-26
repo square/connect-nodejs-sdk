@@ -1,6 +1,7 @@
 # SquareConnect.Employee
 
 ### Description
+**Note: This model is deprecated.**
 
 An employee object that is used by the external API.
 

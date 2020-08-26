@@ -17,45 +17,36 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * The MethodErrorCodes model module.
- * @module model/MethodErrorCodes
+ * The GetTeamMemberWageRequest model module.
+ * @module model/GetTeamMemberWageRequest
  */
 
 /**
- * Constructs a new <code>MethodErrorCodes</code>.
- * 
- * @alias module:model/MethodErrorCodes
+ * Constructs a new <code>GetTeamMemberWageRequest</code>.
+ * A request to get an &#x60;TeamMemberWage&#x60;
+ * @alias module:model/GetTeamMemberWageRequest
  * @class
  */
 var exports = function() {
   var _this = this;
 
-
 };
 
 /**
- * Constructs a <code>MethodErrorCodes</code> from a plain JavaScript object, optionally creating a new instance.
+ * Constructs a <code>GetTeamMemberWageRequest</code> from a plain JavaScript object, optionally creating a new instance.
  * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
  * @param {Object} data The plain JavaScript object bearing properties of interest.
- * @param {module:model/MethodErrorCodes} obj Optional instance to populate.
- * @return {module:model/MethodErrorCodes} The populated <code>MethodErrorCodes</code> instance.
+ * @param {module:model/GetTeamMemberWageRequest} obj Optional instance to populate.
+ * @return {module:model/GetTeamMemberWageRequest} The populated <code>GetTeamMemberWageRequest</code> instance.
  */
 exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
-      if (data.hasOwnProperty('value')) {
-      obj['value'] = ApiClient.convertToType(data['value'], ['String']);
-    }
     }
   return obj;
 }
 
-/**
- *  See [ErrorCode](#type-errorcode) for possible values
- * @member {Array.<String>} value
- */
-exports.prototype['value'] = undefined;
 
 
 

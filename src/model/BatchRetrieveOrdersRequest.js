@@ -31,6 +31,7 @@ var ApiClient = require('../ApiClient');
 var exports = function(orderIds) {
   var _this = this;
 
+
   _this['order_ids'] = orderIds;
 };
 
@@ -45,6 +46,9 @@ exports.constructFromObject = function(data, obj) {
   if (data) {
     obj = obj || new exports();
 
+      if (data.hasOwnProperty('location_id')) {
+      obj['location_id'] = ApiClient.convertToType(data['location_id'], 'String');
+    }
       if (data.hasOwnProperty('order_ids')) {
       obj['order_ids'] = ApiClient.convertToType(data['order_ids'], ['String']);
     }
@@ -52,6 +56,11 @@ exports.constructFromObject = function(data, obj) {
   return obj;
 }
 
+/**
+ * The ID of the location for these orders. This field is optional: omit it to retrieve orders within the scope of the current authorization's merchant ID.
+ * @member {String} location_id
+ */
+exports.prototype['location_id'] = undefined;
 /**
  * The IDs of the orders to retrieve. A maximum of 100 orders can be retrieved per request.
  * @member {Array.<String>} order_ids

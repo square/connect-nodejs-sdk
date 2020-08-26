@@ -34,6 +34,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -59,22 +60,25 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('cursor')) {
       obj['cursor'] = ApiClient.convertToType(data['cursor'], 'String');
     }
+      if (data.hasOwnProperty('states')) {
+      obj['states'] = ApiClient.convertToType(data['states'], ['String']);
+    }
     }
   return obj;
 }
 
 /**
- * Filters results by `CatalogObject` ID. Only applied when set. Max size is 1000 IDs. Default: unset.
+ * The filter to return results by `CatalogObject` ID. The filter is applicable only when set.  The default is null.
  * @member {Array.<String>} catalog_object_ids
  */
 exports.prototype['catalog_object_ids'] = undefined;
 /**
- * Filters results by `Location` ID. Only applied when set. Default: unset.
+ * The filter to return results by `Location` ID.  This filter is applicable only when set. The default is null.
  * @member {Array.<String>} location_ids
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * Provided as an RFC 3339 timestamp. Returns results whose `calculated_at` value is after the given time. Default: UNIX epoch (`1970-01-01T00:00:00Z`).
+ * The filter to return results with their `calculated_at` value  after the given time as specified in an RFC 3339 timestamp.  The default value is the UNIX epoch of (`1970-01-01T00:00:00Z`).
  * @member {String} updated_after
  */
 exports.prototype['updated_after'] = undefined;
@@ -83,6 +87,11 @@ exports.prototype['updated_after'] = undefined;
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;
+/**
+ * The filter to return results by `InventoryState`. The filter is only applicable when set. Ignored are untracked states of `NONE`, `SOLD`, and `UNLINKED_RETURN`. The default is null. See [InventoryState](#type-inventorystate) for possible values
+ * @member {Array.<String>} states
+ */
+exports.prototype['states'] = undefined;
 
 
 

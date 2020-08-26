@@ -13,6 +13,8 @@
 
 * `NO_SALE` (value: `"NO_SALE"`)
 
+* `BANK_TRANSFER` (value: `"BANK_TRANSFER"`)
+
 * `OTHER` (value: `"OTHER"`)
 
 

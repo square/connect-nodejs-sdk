@@ -28,16 +28,19 @@ var TimeRange = require('./TimeRange');
  * Defines a filter used in a search for &#x60;Shift&#x60; records. &#x60;AND&#x60; logic is used by Square&#39;s servers to apply each filter property specified.
  * @alias module:model/ShiftFilter
  * @class
+ * @param locationIds {Array.<String>} Fetch shifts for the specified location.
+ * @param teamMemberIds {Array.<String>} Fetch shifts for the specified team members. Replaced `employee_ids` at version \"2020-08-26\"
  */
-var exports = function() {
+var exports = function(locationIds, teamMemberIds) {
   var _this = this;
 
+  _this['location_ids'] = locationIds;
 
 
 
 
 
-
+  _this['team_member_ids'] = teamMemberIds;
 };
 
 /**
@@ -69,6 +72,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('workday')) {
       obj['workday'] = ShiftWorkday.constructFromObject(data['workday']);
     }
+      if (data.hasOwnProperty('team_member_ids')) {
+      obj['team_member_ids'] = ApiClient.convertToType(data['team_member_ids'], ['String']);
+    }
     }
   return obj;
 }
@@ -79,7 +85,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['location_ids'] = undefined;
 /**
- * Fetch shifts for the specified employee.
+ * Fetch shifts for the specified employees. DEPRECATED at version 2020-08-26. Use `team_member_ids` instead
  * @member {Array.<String>} employee_ids
  */
 exports.prototype['employee_ids'] = undefined;
@@ -103,6 +109,11 @@ exports.prototype['end'] = undefined;
  * @member {module:model/ShiftWorkday} workday
  */
 exports.prototype['workday'] = undefined;
+/**
+ * Fetch shifts for the specified team members. Replaced `employee_ids` at version \"2020-08-26\"
+ * @member {Array.<String>} team_member_ids
+ */
+exports.prototype['team_member_ids'] = undefined;
 
 
 

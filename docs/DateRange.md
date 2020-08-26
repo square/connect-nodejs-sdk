@@ -2,7 +2,7 @@
 
 ### Description
 
-A range defined by two dates. Used for filtering a query for Connect v2  objects that have date properties.
+A range defined by two dates. Used for filtering a query for Connect v2 objects that have date properties.
 
 ## Properties
 Name | Type | Description | Notes

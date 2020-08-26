@@ -19,6 +19,7 @@ var Error = require('./Error');
 
 
 /**
+ * @deprecated
  * The GetEmployeeWageResponse model module.
  * @module model/GetEmployeeWageResponse
  */

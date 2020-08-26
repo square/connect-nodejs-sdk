@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **type** | **String** | The type of tender, such as &#x60;CARD&#x60; or &#x60;CASH&#x60;. See [TenderType](#type-tendertype) for possible values | 
 **card_details** | [**TenderCardDetails**](TenderCardDetails.md) | The details of the card tender.  This value is present only if the value of &#x60;type&#x60; is &#x60;CARD&#x60;. | [optional] 
 **cash_details** | [**TenderCashDetails**](TenderCashDetails.md) | The details of the cash tender.  This value is present only if the value of &#x60;type&#x60; is &#x60;CASH&#x60;. | [optional] 
+**bank_transfer_details** | [**TenderBankTransferDetails**](TenderBankTransferDetails.md) | The details of the bank transfer tender.  This value is present only if the value of &#x60;type&#x60; is &#x60;BANK_TRANSFER&#x60;. | [optional] 
 **additional_recipients** | [**[AdditionalRecipient]**](AdditionalRecipient.md) | Additional recipients (other than the merchant) receiving a portion of this tender. For example, fees assessed on the purchase by a third party integration. | [optional] 
 **payment_id** | **String** | The ID of the &#x60;Payment&#x60; that corresponds to this tender. This value is only present for payments created with the v2 Payments API. | [optional] 
 

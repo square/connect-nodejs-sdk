@@ -28,7 +28,7 @@ var Money = require('./Money');
  * Describes a phase in a subscription plan. For more information, see [Set Up and Manage a Subscription Plan](/docs/subscriptions-api/setup-plan).
  * @alias module:model/SubscriptionPhase
  * @class
- * @param cadence {String} The billing cadence of the phase. For example, weekly or monthly. See [SubscriptionCadence](#type-subscriptioncadence) for possible values
+ * @param cadence {String} The billing cadence of the phase. For example, weekly or monthly. This field cannot be changed after a `SubscriptionPhase` is created. See [SubscriptionCadence](#type-subscriptioncadence) for possible values
  * @param recurringPriceMoney {module:model/Money} The amount to bill for each `cadence`.
  */
 var exports = function(cadence, recurringPriceMoney) {
@@ -72,17 +72,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The Square-assigned ID of the subscription phase.
+ * The Square-assigned ID of the subscription phase. This field cannot be changed after a `SubscriptionPhase` is created.
  * @member {String} uid
  */
 exports.prototype['uid'] = undefined;
 /**
- * The billing cadence of the phase. For example, weekly or monthly. See [SubscriptionCadence](#type-subscriptioncadence) for possible values
+ * The billing cadence of the phase. For example, weekly or monthly. This field cannot be changed after a `SubscriptionPhase` is created. See [SubscriptionCadence](#type-subscriptioncadence) for possible values
  * @member {String} cadence
  */
 exports.prototype['cadence'] = undefined;
 /**
- * The number of `cadence`s the phase lasts. If not set, the phase never ends. Only the last phase can be indefinite.
+ * The number of `cadence`s the phase lasts. If not set, the phase never ends. Only the last phase can be indefinite. This field cannot be changed after a `SubscriptionPhase` is created.
  * @member {Number} periods
  */
 exports.prototype['periods'] = undefined;
@@ -92,7 +92,7 @@ exports.prototype['periods'] = undefined;
  */
 exports.prototype['recurring_price_money'] = undefined;
 /**
- * The position this phase appears in the sequence of phases defined for the plan, indexed from 0.
+ * The position this phase appears in the sequence of phases defined for the plan, indexed from 0. This field cannot be changed after a `SubscriptionPhase` is created.
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;

@@ -19,6 +19,7 @@ var Error = require('./Error');
 
 
 /**
+ * @deprecated
  * The RetrieveEmployeeResponse model module.
  * @module model/RetrieveEmployeeResponse
  */
@@ -58,7 +59,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The response object.
+ * 
  * @member {module:model/Employee} employee
  */
 exports.prototype['employee'] = undefined;

@@ -73,6 +73,7 @@ var exports = function(locationId) {
 
 
 
+
 };
 
 /**
@@ -160,6 +161,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('total_discount_money')) {
       obj['total_discount_money'] = Money.constructFromObject(data['total_discount_money']);
+    }
+      if (data.hasOwnProperty('total_tip_money')) {
+      obj['total_tip_money'] = Money.constructFromObject(data['total_tip_money']);
     }
       if (data.hasOwnProperty('total_service_charge_money')) {
       obj['total_service_charge_money'] = Money.constructFromObject(data['total_service_charge_money']);
@@ -299,6 +303,11 @@ exports.prototype['total_tax_money'] = undefined;
  * @member {module:model/Money} total_discount_money
  */
 exports.prototype['total_discount_money'] = undefined;
+/**
+ * The total tip amount of money to collect for the order.
+ * @member {module:model/Money} total_tip_money
+ */
+exports.prototype['total_tip_money'] = undefined;
 /**
  * The total amount of money collected in service charges for the order.  Note: `total_service_charge_money` is the sum of `applied_money` fields for each individual service charge. Therefore, `total_service_charge_money` will only include inclusive tax amounts, not additive tax amounts.
  * @member {module:model/Money} total_service_charge_money

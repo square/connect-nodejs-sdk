@@ -1,6 +1,7 @@
 # SquareConnect.RetrieveEmployeeRequest
 
 ### Description
+**Note: This model is deprecated.**
 
 
 

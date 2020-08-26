@@ -45,17 +45,11 @@ module.exports = function(apiClient) {
   /**
    * BatchRetrieveOrders
    * Retrieves a set of [Order](#type-order)s by their IDs.  If a given Order ID does not exist, the ID is ignored instead of generating an error.
-   * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BatchRetrieveOrdersResponse} and HTTP response
    */
-  this.batchRetrieveOrdersWithHttpInfo = function(locationId, body) {
+  this.batchRetrieveOrdersWithHttpInfo = function(body) {
     var postBody = body;
-
-    // verify the required parameter 'locationId' is set
-    if (locationId === undefined || locationId === null) {
-      throw new Error("Missing the required parameter 'locationId' when calling batchRetrieveOrders");
-    }
 
     // verify the required parameter 'body' is set
     if (body === undefined || body === null) {
@@ -64,13 +58,12 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
-      'location_id': locationId
     };
     var queryParams = {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -81,7 +74,7 @@ module.exports = function(apiClient) {
     var returnType = BatchRetrieveOrdersResponse;
 
     return this.apiClient.callApi(
-      '/v2/locations/{location_id}/orders/batch-retrieve', 'POST',
+      '/v2/orders/batch-retrieve', 'POST',
       pathParams, queryParams, headerParams, formParams, postBody,
       authNames, contentTypes, accepts, returnType
     );
@@ -90,12 +83,11 @@ module.exports = function(apiClient) {
   /**
    * BatchRetrieveOrders
    * Retrieves a set of [Order](#type-order)s by their IDs.  If a given Order ID does not exist, the ID is ignored instead of generating an error.
-   * @param {String} locationId The ID of the orders&#39; associated location.
    * @param {module:model/BatchRetrieveOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BatchRetrieveOrdersResponse}
    */
-  this.batchRetrieveOrders = function(locationId, body) {
-    return this.batchRetrieveOrdersWithHttpInfo(locationId, body)
+  this.batchRetrieveOrders = function(body) {
+    return this.batchRetrieveOrdersWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
@@ -124,7 +116,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -158,17 +150,11 @@ module.exports = function(apiClient) {
   /**
    * CreateOrder
    * Creates a new [Order](#type-order) which can include information on products for purchase and settings to apply to the purchase.  To pay for a created order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  You can modify open orders using the [UpdateOrder](#endpoint-orders-updateorder) endpoint.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
-   * @param {String} locationId The ID of the business location to associate the order with.
    * @param {module:model/CreateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateOrderResponse} and HTTP response
    */
-  this.createOrderWithHttpInfo = function(locationId, body) {
+  this.createOrderWithHttpInfo = function(body) {
     var postBody = body;
-
-    // verify the required parameter 'locationId' is set
-    if (locationId === undefined || locationId === null) {
-      throw new Error("Missing the required parameter 'locationId' when calling createOrder");
-    }
 
     // verify the required parameter 'body' is set
     if (body === undefined || body === null) {
@@ -177,13 +163,12 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
-      'location_id': locationId
     };
     var queryParams = {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -194,7 +179,7 @@ module.exports = function(apiClient) {
     var returnType = CreateOrderResponse;
 
     return this.apiClient.callApi(
-      '/v2/locations/{location_id}/orders', 'POST',
+      '/v2/orders', 'POST',
       pathParams, queryParams, headerParams, formParams, postBody,
       authNames, contentTypes, accepts, returnType
     );
@@ -203,12 +188,11 @@ module.exports = function(apiClient) {
   /**
    * CreateOrder
    * Creates a new [Order](#type-order) which can include information on products for purchase and settings to apply to the purchase.  To pay for a created order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  You can modify open orders using the [UpdateOrder](#endpoint-orders-updateorder) endpoint.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
-   * @param {String} locationId The ID of the business location to associate the order with.
    * @param {module:model/CreateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateOrderResponse}
    */
-  this.createOrder = function(locationId, body) {
-    return this.createOrderWithHttpInfo(locationId, body)
+  this.createOrder = function(body) {
+    return this.createOrderWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });
@@ -244,7 +228,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -297,7 +281,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -332,18 +316,12 @@ module.exports = function(apiClient) {
    * UpdateOrder
    * Note: This endpoint is in beta.
    * Updates an open [Order](#type-order) by adding, replacing, or deleting fields. Orders with a &#x60;COMPLETED&#x60; or &#x60;CANCELED&#x60; state cannot be updated.  An UpdateOrder request requires the following:  - The &#x60;order_id&#x60; in the endpoint path, identifying the order to update. - The latest &#x60;version&#x60; of the order to update. - The [sparse order](/orders-api/manage-orders#sparse-order-objects) containing only the fields to update and the version the update is being applied to. - If deleting fields, the [dot notation paths](/orders-api/manage-orders#on-dot-notation) identifying fields to clear.  To pay for an order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
-   * @param {String} locationId The ID of the order&#39;s associated location.
    * @param {String} orderId The ID of the order to update.
    * @param {module:model/UpdateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateOrderResponse} and HTTP response
    */
-  this.updateOrderWithHttpInfo = function(locationId, orderId, body) {
+  this.updateOrderWithHttpInfo = function(orderId, body) {
     var postBody = body;
-
-    // verify the required parameter 'locationId' is set
-    if (locationId === undefined || locationId === null) {
-      throw new Error("Missing the required parameter 'locationId' when calling updateOrder");
-    }
 
     // verify the required parameter 'orderId' is set
     if (orderId === undefined || orderId === null) {
@@ -357,14 +335,13 @@ module.exports = function(apiClient) {
 
 
     var pathParams = {
-      'location_id': locationId,
       'order_id': orderId
     };
     var queryParams = {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-12';
+    headerParams['Square-Version'] = '2020-08-26';
 
     var formParams = {
     };
@@ -375,7 +352,7 @@ module.exports = function(apiClient) {
     var returnType = UpdateOrderResponse;
 
     return this.apiClient.callApi(
-      '/v2/locations/{location_id}/orders/{order_id}', 'PUT',
+      '/v2/orders/{order_id}', 'PUT',
       pathParams, queryParams, headerParams, formParams, postBody,
       authNames, contentTypes, accepts, returnType
     );
@@ -384,13 +361,12 @@ module.exports = function(apiClient) {
   /**
    * UpdateOrder
    * Updates an open [Order](#type-order) by adding, replacing, or deleting fields. Orders with a &#x60;COMPLETED&#x60; or &#x60;CANCELED&#x60; state cannot be updated.  An UpdateOrder request requires the following:  - The &#x60;order_id&#x60; in the endpoint path, identifying the order to update. - The latest &#x60;version&#x60; of the order to update. - The [sparse order](/orders-api/manage-orders#sparse-order-objects) containing only the fields to update and the version the update is being applied to. - If deleting fields, the [dot notation paths](/orders-api/manage-orders#on-dot-notation) identifying fields to clear.  To pay for an order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.  To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
-   * @param {String} locationId The ID of the order&#39;s associated location.
    * @param {String} orderId The ID of the order to update.
    * @param {module:model/UpdateOrderRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateOrderResponse}
    */
-  this.updateOrder = function(locationId, orderId, body) {
-    return this.updateOrderWithHttpInfo(locationId, orderId, body)
+  this.updateOrder = function(orderId, body) {
+    return this.updateOrderWithHttpInfo(orderId, body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });

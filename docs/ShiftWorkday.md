@@ -2,7 +2,7 @@
 
 ### Description
 
-A `Shift` search query filter parameter that sets a range of days that  a `Shift` must start or end in before passing the filter condition.
+A `Shift` search query filter parameter that sets a range of days that a `Shift` must start or end in before passing the filter condition.
 
 ## Properties
 Name | Type | Description | Notes

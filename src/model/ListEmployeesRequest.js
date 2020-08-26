@@ -17,6 +17,7 @@ var ApiClient = require('../ApiClient');
 
 
 /**
+ * @deprecated
  * The ListEmployeesRequest model module.
  * @module model/ListEmployeesRequest
  */
@@ -64,7 +65,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Filter employees returned to only those that are associated with the specified location.
+ * 
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
