@@ -83,7 +83,8 @@ var opts = {
   'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
   'locationId': "locationId_example", // String | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
   'status': "status_example", // String | If provided, only refunds with the given status are returned. For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
-  'sourceType': "sourceType_example" // String | If provided, only refunds with the given source type are returned. - `CARD` - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
+  'sourceType': "sourceType_example", // String | If provided, only refunds with the given source type are returned. - `CARD` - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
+  'limit': 56 // Number | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
 };
 apiInstance.listPaymentRefunds(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -104,6 +105,7 @@ Name | Type | Description  | Notes
  **locationId** | **String**| Limit results to the location supplied. By default, results are returned for all locations associated with the merchant. | [optional] 
  **status** | **String**| If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status. | [optional] 
  **sourceType** | **String**| If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type. | [optional] 
+ **limit** | **Number**| Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60; | [optional] 
 
 ### Return type
 
@@ -124,7 +126,7 @@ Name | Type | Description  | Notes
 
 RefundPayment
 
-Refunds a payment. You can refund the entire payment amount or a  portion of it. For more information, see  [Payments and Refunds Overview](/payments-api/overview).
+Refunds a payment. You can refund the entire payment amount or a  portion of it.
 
 ### Example
 ```javascript

@@ -11,9 +11,10 @@ Name | Type | Description | Notes
 **end_time** | **String** | Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time. | [optional] 
 **sort_order** | **String** | The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default). | [optional] 
 **cursor** | **String** | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information. | [optional] 
-**location_id** | **String** | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant. | [optional] 
+**location_id** | **String** | Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant. | [optional] 
 **total** | **Number** | The exact amount in the total_money for a &#x60;Payment&#x60;. | [optional] 
 **last_4** | **String** | The last 4 digits of &#x60;Payment&#x60; card. | [optional] 
 **card_brand** | **String** | The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60; | [optional] 
+**limit** | **Number** | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60; | [optional] 
 
 

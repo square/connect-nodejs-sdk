@@ -37,6 +37,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -70,6 +71,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('source_type')) {
       obj['source_type'] = ApiClient.convertToType(data['source_type'], 'String');
+    }
+      if (data.hasOwnProperty('limit')) {
+      obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
     }
     }
   return obj;
@@ -110,6 +114,11 @@ exports.prototype['status'] = undefined;
  * @member {String} source_type
  */
 exports.prototype['source_type'] = undefined;
+/**
+ * Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
+ * @member {Number} limit
+ */
+exports.prototype['limit'] = undefined;
 
 
 

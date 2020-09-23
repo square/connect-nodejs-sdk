@@ -38,6 +38,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -75,6 +76,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('card_brand')) {
       obj['card_brand'] = ApiClient.convertToType(data['card_brand'], 'String');
     }
+      if (data.hasOwnProperty('limit')) {
+      obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
+    }
     }
   return obj;
 }
@@ -100,7 +104,7 @@ exports.prototype['sort_order'] = undefined;
  */
 exports.prototype['cursor'] = undefined;
 /**
- * Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
+ * Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
@@ -119,6 +123,11 @@ exports.prototype['last_4'] = undefined;
  * @member {String} card_brand
  */
 exports.prototype['card_brand'] = undefined;
+/**
+ * Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
+ * @member {Number} limit
+ */
+exports.prototype['limit'] = undefined;
 
 
 

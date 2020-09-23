@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 CancelPayment
 
-Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see  [Delayed Payments](/payments-api/take-payments#delayed-payments).
+Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint.
 
 ### Example
 ```javascript
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 CompletePayment
 
-Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint.
 
 ### Example
 ```javascript
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 CreatePayment
 
-Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.  For more information about these  payment options, see [Take Payments](/payments-api/take-payments).  The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
+Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.   The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
 
 ### Example
 ```javascript
@@ -276,10 +276,11 @@ var opts = {
   'endTime': "endTime_example", // String | Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
   'sortOrder': "sortOrder_example", // String | The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).
   'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-  'locationId': "locationId_example", // String | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
+  'locationId': "locationId_example", // String | Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant.
   'total': 789, // Number | The exact amount in the total_money for a `Payment`.
   'last4': "last4_example", // String | The last 4 digits of `Payment` card.
-  'cardBrand': "cardBrand_example" // String | The brand of `Payment` card. For example, `VISA`
+  'cardBrand': "cardBrand_example", // String | The brand of `Payment` card. For example, `VISA`
+  'limit': 56 // Number | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
 };
 apiInstance.listPayments(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -297,10 +298,11 @@ Name | Type | Description  | Notes
  **endTime** | **String**| Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time. | [optional] 
  **sortOrder** | **String**| The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default). | [optional] 
  **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information. | [optional] 
- **locationId** | **String**| Limit results to the location supplied. By default, results are returned for all locations associated with the merchant. | [optional] 
+ **locationId** | **String**| Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant. | [optional] 
  **total** | **Number**| The exact amount in the total_money for a &#x60;Payment&#x60;. | [optional] 
  **last4** | **String**| The last 4 digits of &#x60;Payment&#x60; card. | [optional] 
  **cardBrand** | **String**| The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60; | [optional] 
+ **limit** | **Number**| Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60; | [optional] 
 
 ### Return type
 

@@ -40,7 +40,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see  [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint.
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelPaymentResponse} and HTTP response
    */
@@ -60,7 +60,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -79,7 +79,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelPayment
-   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint. For more information, see  [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Cancels (voids) a payment. If you set &#x60;autocomplete&#x60; to false when creating a payment,  you can cancel the payment using this endpoint.
    * @param {String} paymentId &#x60;payment_id&#x60; identifying the payment to be canceled.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelPaymentResponse}
    */
@@ -112,7 +112,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -145,7 +145,7 @@ module.exports = function(apiClient) {
 
   /**
    * CompletePayment
-   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint.
    * @param {String} paymentId Unique ID identifying the payment to be completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CompletePaymentResponse} and HTTP response
    */
@@ -165,7 +165,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -184,7 +184,7 @@ module.exports = function(apiClient) {
 
   /**
    * CompletePayment
-   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).
+   * Completes (captures) a payment.  By default, payments are set to complete immediately after they are created.  If you set autocomplete to false when creating a payment, you can complete (capture)  the payment using this endpoint.
    * @param {String} paymentId Unique ID identifying the payment to be completed.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CompletePaymentResponse}
    */
@@ -198,7 +198,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreatePayment
-   * Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.  For more information about these  payment options, see [Take Payments](/payments-api/take-payments).  The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
+   * Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.   The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
    * @param {module:model/CreatePaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreatePaymentResponse} and HTTP response
    */
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -236,7 +236,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreatePayment
-   * Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.  For more information about these  payment options, see [Take Payments](/payments-api/take-payments).  The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
+   * Charges a payment source, for example, a card  represented by customer&#39;s card on file or a card nonce. In addition  to the payment source, the request must also include the  amount to accept for the payment.  There are several optional parameters that you can include in the request.  For example, tip money, whether to autocomplete the payment, or a reference ID to correlate this payment with another system.   The &#x60;PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS&#x60; OAuth permission is required to enable application fees.
    * @param {module:model/CreatePaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreatePaymentResponse}
    */
@@ -270,7 +270,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -309,10 +309,11 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant.
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.
    * @param {String} opts.cardBrand The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60;
+   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListPaymentsResponse} and HTTP response
    */
   this.listPaymentsWithHttpInfo = function(opts) {
@@ -330,11 +331,12 @@ module.exports = function(apiClient) {
       'location_id': opts['locationId'],
       'total': opts['total'],
       'last_4': opts['last4'],
-      'card_brand': opts['cardBrand']
+      'card_brand': opts['cardBrand'],
+      'limit': opts['limit']
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -359,10 +361,11 @@ module.exports = function(apiClient) {
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
    * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for the default (main) location associated with the merchant.
    * @param {Number} opts.total The exact amount in the total_money for a &#x60;Payment&#x60;.
    * @param {String} opts.last4 The last 4 digits of &#x60;Payment&#x60; card.
    * @param {String} opts.cardBrand The brand of &#x60;Payment&#x60; card. For example, &#x60;VISA&#x60;
+   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListPaymentsResponse}
    */
   this.listPayments = function(opts) {

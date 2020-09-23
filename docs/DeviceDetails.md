@@ -8,6 +8,7 @@ Details about the device that took the payment.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **device_id** | **String** | Square-issued ID of the device. | [optional] 
+**device_installation_id** | **String** | Square-issued installation ID for the device. | [optional] 
 **device_name** | **String** | The name of the device set by the merchant. | [optional] 
 
 
