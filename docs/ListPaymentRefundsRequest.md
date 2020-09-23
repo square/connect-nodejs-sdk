@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **location_id** | **String** | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant. | [optional] 
 **status** | **String** | If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status. | [optional] 
 **source_type** | **String** | If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type. | [optional] 
+**limit** | **Number** | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60; | [optional] 
 
 

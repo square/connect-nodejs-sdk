@@ -32,6 +32,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -48,6 +49,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('device_id')) {
       obj['device_id'] = ApiClient.convertToType(data['device_id'], 'String');
     }
+      if (data.hasOwnProperty('device_installation_id')) {
+      obj['device_installation_id'] = ApiClient.convertToType(data['device_installation_id'], 'String');
+    }
       if (data.hasOwnProperty('device_name')) {
       obj['device_name'] = ApiClient.convertToType(data['device_name'], 'String');
     }
@@ -60,6 +64,11 @@ exports.constructFromObject = function(data, obj) {
  * @member {String} device_id
  */
 exports.prototype['device_id'] = undefined;
+/**
+ * Square-issued installation ID for the device.
+ * @member {String} device_installation_id
+ */
+exports.prototype['device_installation_id'] = undefined;
 /**
  * The name of the device set by the merchant.
  * @member {String} device_name

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **uid** | **String** | Unique ID that identifies the line item only within this order. | [optional] [beta]
 **name** | **String** | The name of the line item. | [optional] 
-**quantity** | **String** | The quantity purchased, formatted as a decimal number. For example: &#x60;\&quot;3\&quot;&#x60;.  Line items with a &#x60;quantity_unit&#x60; can have non-integer quantities. For example: &#x60;\&quot;1.70000\&quot;&#x60;. | 
+**quantity** | **String** | The quantity purchased, formatted as a decimal number. For example: &#x60;\&quot;3\&quot;&#x60;.  Line items with a quantity of &#x60;\&quot;0\&quot;&#x60; will be automatically removed upon paying for or otherwise completing the order.  Line items with a &#x60;quantity_unit&#x60; can have non-integer quantities. For example: &#x60;\&quot;1.70000\&quot;&#x60;. | 
 **quantity_unit** | [**OrderQuantityUnit**](OrderQuantityUnit.md) | The unit and precision that this line item&#39;s quantity is measured in. | [optional] 
 **note** | **String** | The note of the line item. | [optional] 
 **catalog_object_id** | **String** | The &#x60;CatalogItemVariation&#x60; id applied to this line item. | [optional] 

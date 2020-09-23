@@ -42,7 +42,7 @@ module.exports = function(apiClient) {
   /**
    * AcceptDispute
    * Note: This endpoint is in beta.
-   * Accepts loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account balance does not have sufficient funds, Square debits the associated bank account. For an overview of the Disputes API, see [Overview](/docs/disputes-api/overview).
+   * Accepts loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account balance does not have sufficient funds, Square debits the associated bank account.
    * @param {String} disputeId ID of the dispute you want to accept.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AcceptDisputeResponse} and HTTP response
    */
@@ -62,7 +62,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -81,7 +81,7 @@ module.exports = function(apiClient) {
 
   /**
    * AcceptDispute
-   * Accepts loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account balance does not have sufficient funds, Square debits the associated bank account. For an overview of the Disputes API, see [Overview](/docs/disputes-api/overview).
+   * Accepts loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account balance does not have sufficient funds, Square debits the associated bank account.
    * @param {String} disputeId ID of the dispute you want to accept.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AcceptDisputeResponse}
    */
@@ -96,7 +96,7 @@ module.exports = function(apiClient) {
   /**
    * CreateDisputeEvidenceText
    * Note: This endpoint is in beta.
-   * Uploads text to use as evidence for a dispute challenge. For more information, see [Challenge a Dispute](/docs/disputes-api/process-disputes#challenge-a-dispute).
+   * Uploads text to use as evidence for a dispute challenge.
    * @param {String} disputeId The ID of the dispute you want to upload evidence for.
    * @param {module:model/CreateDisputeEvidenceTextRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateDisputeEvidenceTextResponse} and HTTP response
@@ -122,7 +122,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -141,7 +141,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateDisputeEvidenceText
-   * Uploads text to use as evidence for a dispute challenge. For more information, see [Challenge a Dispute](/docs/disputes-api/process-disputes#challenge-a-dispute).
+   * Uploads text to use as evidence for a dispute challenge.
    * @param {String} disputeId The ID of the dispute you want to upload evidence for.
    * @param {module:model/CreateDisputeEvidenceTextRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateDisputeEvidenceTextResponse}
@@ -177,7 +177,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -232,7 +232,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -296,7 +296,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -351,7 +351,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -412,7 +412,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -447,7 +447,7 @@ module.exports = function(apiClient) {
   /**
    * SubmitEvidence
    * Note: This endpoint is in beta.
-   * Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints, and evidence automatically provided by Square, when available. For more information, see [Challenge a Dispute](/docs/disputes-api/process-disputes#challenge-a-dispute).
+   * Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints, and evidence automatically provided by Square, when available.
    * @param {String} disputeId The ID of the dispute you want to submit evidence for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SubmitEvidenceResponse} and HTTP response
    */
@@ -467,7 +467,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -486,7 +486,7 @@ module.exports = function(apiClient) {
 
   /**
    * SubmitEvidence
-   * Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints, and evidence automatically provided by Square, when available. For more information, see [Challenge a Dispute](/docs/disputes-api/process-disputes#challenge-a-dispute).
+   * Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints, and evidence automatically provided by Square, when available.
    * @param {String} disputeId The ID of the dispute you want to submit evidence for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SubmitEvidenceResponse}
    */

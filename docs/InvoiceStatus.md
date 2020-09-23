@@ -21,4 +21,6 @@
 
 * `FAILED` (value: `"FAILED"`)
 
+* `PAYMENT_PENDING` (value: `"PAYMENT_PENDING"`)
+
 

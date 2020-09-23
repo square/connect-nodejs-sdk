@@ -64,7 +64,12 @@ var exports = {
    * value: "FAILED"
    * @const
    */
-  "FAILED": "FAILED"};
+  "FAILED": "FAILED",
+  /**
+   * value: "PAYMENT_PENDING"
+   * @const
+   */
+  "PAYMENT_PENDING": "PAYMENT_PENDING"};
 
 /**
  * Returns a <code>InvoiceStatus</code> enum value from a Javascript object name.

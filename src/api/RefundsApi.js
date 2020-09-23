@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -98,6 +98,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
    * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
    * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
+   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListPaymentRefundsResponse} and HTTP response
    */
   this.listPaymentRefundsWithHttpInfo = function(opts) {
@@ -114,11 +115,12 @@ module.exports = function(apiClient) {
       'cursor': opts['cursor'],
       'location_id': opts['locationId'],
       'status': opts['status'],
-      'source_type': opts['sourceType']
+      'source_type': opts['sourceType'],
+      'limit': opts['limit']
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -146,6 +148,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
    * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
    * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
+   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListPaymentRefundsResponse}
    */
   this.listPaymentRefunds = function(opts) {
@@ -158,7 +161,7 @@ module.exports = function(apiClient) {
 
   /**
    * RefundPayment
-   * Refunds a payment. You can refund the entire payment amount or a  portion of it. For more information, see  [Payments and Refunds Overview](/payments-api/overview).
+   * Refunds a payment. You can refund the entire payment amount or a  portion of it.
    * @param {module:model/RefundPaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RefundPaymentResponse} and HTTP response
    */
@@ -177,7 +180,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-08-26';
+    headerParams['Square-Version'] = '2020-09-23';
 
     var formParams = {
     };
@@ -196,7 +199,7 @@ module.exports = function(apiClient) {
 
   /**
    * RefundPayment
-   * Refunds a payment. You can refund the entire payment amount or a  portion of it. For more information, see  [Payments and Refunds Overview](/payments-api/overview).
+   * Refunds a payment. You can refund the entire payment amount or a  portion of it.
    * @param {module:model/RefundPaymentRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RefundPaymentResponse}
    */
