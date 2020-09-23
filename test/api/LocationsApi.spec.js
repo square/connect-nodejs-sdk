@@ -20,6 +20,6 @@ describe('LocationsApi', function () {
     const locations = resp.locations;
     expect(locations).to.exist;
     const locationIds = locations.map(location => location.id);
-    expect(locationIds).to.include(accounts.sandbox.location_id);
+    expect(locationIds).to.include(accounts.production.location_id);
   });
 });
