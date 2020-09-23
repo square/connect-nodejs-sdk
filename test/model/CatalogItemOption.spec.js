@@ -20,38 +20,38 @@ describe('CatalogItemOption', function() {
 
   it('should create an instance of CatalogItemOption', function() {
     // uncomment below and update the code to test CatalogItemOption
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be.a(SquareConnect.CatalogItemOption);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
   it('should have the property displayName (base name: "display_name")', function() {
     // uncomment below and update the code to test the property displayName
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
   it('should have the property description (base name: "description")', function() {
     // uncomment below and update the code to test the property description
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
   it('should have the property showColors (base name: "show_colors")', function() {
     // uncomment below and update the code to test the property showColors
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
   it('should have the property values (base name: "values")', function() {
     // uncomment below and update the code to test the property values
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
   it('should have the property itemCount (base name: "item_count")', function() {
     // uncomment below and update the code to test the property itemCount
-    //var instane = new SquareConnect.CatalogItemOption();
+    //var instance = new SquareConnect.CatalogItemOption();
     //expect(instance).to.be();
   });
 });

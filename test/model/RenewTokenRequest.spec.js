@@ -20,13 +20,13 @@ describe('RenewTokenRequest', function() {
 
   it('should create an instance of RenewTokenRequest', function() {
     // uncomment below and update the code to test RenewTokenRequest
-    //var instane = new SquareConnect.RenewTokenRequest();
+    //var instance = new SquareConnect.RenewTokenRequest();
     //expect(instance).to.be.a(SquareConnect.RenewTokenRequest);
   });
 
   it('should have the property accessToken (base name: "access_token")', function() {
     // uncomment below and update the code to test the property accessToken
-    //var instane = new SquareConnect.RenewTokenRequest();
+    //var instance = new SquareConnect.RenewTokenRequest();
     //expect(instance).to.be();
   });
 });

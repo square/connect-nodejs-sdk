@@ -21,18 +21,18 @@ describe('CatalogInfoResponse', function() {
 
   it('should create an instance of CatalogInfoResponse', function() {
     // uncomment below and update the code to test CatalogInfoResponse
-    //var instane = new SquareConnect.CatalogInfoResponse();
+    //var instance = new SquareConnect.CatalogInfoResponse();
     //expect(instance).to.be.a(SquareConnect.CatalogInfoResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CatalogInfoResponse();
+    //var instance = new SquareConnect.CatalogInfoResponse();
     //expect(instance).to.be();
   });
   it('should have the property limits (base name: "limits")', function() {
     // uncomment below and update the code to test the property limits
-    //var instane = new SquareConnect.CatalogInfoResponse();
+    //var instance = new SquareConnect.CatalogInfoResponse();
     //expect(instance).to.be();
   });
 });

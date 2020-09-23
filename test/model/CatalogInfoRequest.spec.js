@@ -21,7 +21,7 @@ describe('CatalogInfoRequest', function() {
 
   it('should create an instance of CatalogInfoRequest', function() {
     // uncomment below and update the code to test CatalogInfoRequest
-    //var instane = new SquareConnect.CatalogInfoRequest();
+    //var instance = new SquareConnect.CatalogInfoRequest();
     //expect(instance).to.be.a(SquareConnect.CatalogInfoRequest);
   });
 

@@ -19,7 +19,7 @@ describe('V1VariationInventoryAlertType', function() {
 
   it('should create an instance of V1VariationInventoryAlertType', function() {
     // uncomment below and update the code to test V1VariationInventoryAlertType
-    //var instane = new SquareConnect.V1VariationInventoryAlertType();
+    //var instance = new SquareConnect.V1VariationInventoryAlertType();
     //expect(instance).to.be.a(SquareConnect.V1VariationInventoryAlertType);
   });
 

@@ -19,7 +19,7 @@ describe('V1CashDrawerEventEventType', function() {
 
   it('should create an instance of V1CashDrawerEventEventType', function() {
     // uncomment below and update the code to test V1CashDrawerEventEventType
-    //var instane = new SquareConnect.V1CashDrawerEventEventType();
+    //var instance = new SquareConnect.V1CashDrawerEventEventType();
     //expect(instance).to.be.a(SquareConnect.V1CashDrawerEventEventType);
   });
 

@@ -20,18 +20,18 @@ describe('CancelInvoiceResponse', function() {
 
   it('should create an instance of CancelInvoiceResponse', function() {
     // uncomment below and update the code to test CancelInvoiceResponse
-    //var instane = new SquareConnect.CancelInvoiceResponse();
+    //var instance = new SquareConnect.CancelInvoiceResponse();
     //expect(instance).to.be.a(SquareConnect.CancelInvoiceResponse);
   });
 
   it('should have the property invoice (base name: "invoice")', function() {
     // uncomment below and update the code to test the property invoice
-    //var instane = new SquareConnect.CancelInvoiceResponse();
+    //var instance = new SquareConnect.CancelInvoiceResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CancelInvoiceResponse();
+    //var instance = new SquareConnect.CancelInvoiceResponse();
     //expect(instance).to.be();
   });
 });

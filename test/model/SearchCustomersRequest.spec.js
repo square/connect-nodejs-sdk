@@ -20,23 +20,23 @@ describe('SearchCustomersRequest', function() {
 
   it('should create an instance of SearchCustomersRequest', function() {
     // uncomment below and update the code to test SearchCustomersRequest
-    //var instane = new SquareConnect.SearchCustomersRequest();
+    //var instance = new SquareConnect.SearchCustomersRequest();
     //expect(instance).to.be.a(SquareConnect.SearchCustomersRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchCustomersRequest();
+    //var instance = new SquareConnect.SearchCustomersRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.SearchCustomersRequest();
+    //var instance = new SquareConnect.SearchCustomersRequest();
     //expect(instance).to.be();
   });
   it('should have the property query (base name: "query")', function() {
     // uncomment below and update the code to test the property query
-    //var instane = new SquareConnect.SearchCustomersRequest();
+    //var instance = new SquareConnect.SearchCustomersRequest();
     //expect(instance).to.be();
   });
 });

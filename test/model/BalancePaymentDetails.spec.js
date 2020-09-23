@@ -20,18 +20,18 @@ describe('BalancePaymentDetails', function() {
 
   it('should create an instance of BalancePaymentDetails', function() {
     // uncomment below and update the code to test BalancePaymentDetails
-    //var instane = new SquareConnect.BalancePaymentDetails();
+    //var instance = new SquareConnect.BalancePaymentDetails();
     //expect(instance).to.be.a(SquareConnect.BalancePaymentDetails);
   });
 
   it('should have the property accountId (base name: "account_id")', function() {
     // uncomment below and update the code to test the property accountId
-    //var instane = new SquareConnect.BalancePaymentDetails();
+    //var instance = new SquareConnect.BalancePaymentDetails();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.BalancePaymentDetails();
+    //var instance = new SquareConnect.BalancePaymentDetails();
     //expect(instance).to.be();
   });
 });

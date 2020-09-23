@@ -21,78 +21,78 @@ describe('V1Item', function() {
 
   it('should create an instance of V1Item', function() {
     // uncomment below and update the code to test V1Item
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be.a(SquareConnect.V1Item);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property description (base name: "description")', function() {
     // uncomment below and update the code to test the property description
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property color (base name: "color")', function() {
     // uncomment below and update the code to test the property color
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property abbreviation (base name: "abbreviation")', function() {
     // uncomment below and update the code to test the property abbreviation
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property visibility (base name: "visibility")', function() {
     // uncomment below and update the code to test the property visibility
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property availableOnline (base name: "available_online")', function() {
     // uncomment below and update the code to test the property availableOnline
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property masterImage (base name: "master_image")', function() {
     // uncomment below and update the code to test the property masterImage
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property category (base name: "category")', function() {
     // uncomment below and update the code to test the property category
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property variations (base name: "variations")', function() {
     // uncomment below and update the code to test the property variations
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property modifierLists (base name: "modifier_lists")', function() {
     // uncomment below and update the code to test the property modifierLists
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property fees (base name: "fees")', function() {
     // uncomment below and update the code to test the property fees
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
   it('should have the property taxable (base name: "taxable")', function() {
     // uncomment below and update the code to test the property taxable
-    //var instane = new SquareConnect.V1Item();
+    //var instance = new SquareConnect.V1Item();
     //expect(instance).to.be();
   });
 });

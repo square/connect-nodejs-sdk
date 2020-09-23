@@ -19,7 +19,7 @@ describe('DayOfWeek', function() {
 
   it('should create an instance of DayOfWeek', function() {
     // uncomment below and update the code to test DayOfWeek
-    //var instane = new SquareConnect.DayOfWeek();
+    //var instance = new SquareConnect.DayOfWeek();
     //expect(instance).to.be.a(SquareConnect.DayOfWeek);
   });
 

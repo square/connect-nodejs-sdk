@@ -20,7 +20,7 @@ describe('CancelTerminalCheckoutRequest', function() {
 
   it('should create an instance of CancelTerminalCheckoutRequest', function() {
     // uncomment below and update the code to test CancelTerminalCheckoutRequest
-    //var instane = new SquareConnect.CancelTerminalCheckoutRequest();
+    //var instance = new SquareConnect.CancelTerminalCheckoutRequest();
     //expect(instance).to.be.a(SquareConnect.CancelTerminalCheckoutRequest);
   });
 

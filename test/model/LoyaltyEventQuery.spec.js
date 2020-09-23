@@ -20,13 +20,13 @@ describe('LoyaltyEventQuery', function() {
 
   it('should create an instance of LoyaltyEventQuery', function() {
     // uncomment below and update the code to test LoyaltyEventQuery
-    //var instane = new SquareConnect.LoyaltyEventQuery();
+    //var instance = new SquareConnect.LoyaltyEventQuery();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.LoyaltyEventQuery();
+    //var instance = new SquareConnect.LoyaltyEventQuery();
     //expect(instance).to.be();
   });
 });

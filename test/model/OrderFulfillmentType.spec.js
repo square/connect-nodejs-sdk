@@ -19,7 +19,7 @@ describe('OrderFulfillmentType', function() {
 
   it('should create an instance of OrderFulfillmentType', function() {
     // uncomment below and update the code to test OrderFulfillmentType
-    //var instane = new SquareConnect.OrderFulfillmentType();
+    //var instance = new SquareConnect.OrderFulfillmentType();
     //expect(instance).to.be.a(SquareConnect.OrderFulfillmentType);
   });
 

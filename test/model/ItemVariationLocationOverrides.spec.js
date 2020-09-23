@@ -21,38 +21,38 @@ describe('ItemVariationLocationOverrides', function() {
 
   it('should create an instance of ItemVariationLocationOverrides', function() {
     // uncomment below and update the code to test ItemVariationLocationOverrides
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be.a(SquareConnect.ItemVariationLocationOverrides);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
   it('should have the property priceMoney (base name: "price_money")', function() {
     // uncomment below and update the code to test the property priceMoney
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
   it('should have the property pricingType (base name: "pricing_type")', function() {
     // uncomment below and update the code to test the property pricingType
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
   it('should have the property trackInventory (base name: "track_inventory")', function() {
     // uncomment below and update the code to test the property trackInventory
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
   it('should have the property inventoryAlertType (base name: "inventory_alert_type")', function() {
     // uncomment below and update the code to test the property inventoryAlertType
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
   it('should have the property inventoryAlertThreshold (base name: "inventory_alert_threshold")', function() {
     // uncomment below and update the code to test the property inventoryAlertThreshold
-    //var instane = new SquareConnect.ItemVariationLocationOverrides();
+    //var instance = new SquareConnect.ItemVariationLocationOverrides();
     //expect(instance).to.be();
   });
 });

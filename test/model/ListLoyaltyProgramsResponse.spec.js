@@ -20,18 +20,18 @@ describe('ListLoyaltyProgramsResponse', function() {
 
   it('should create an instance of ListLoyaltyProgramsResponse', function() {
     // uncomment below and update the code to test ListLoyaltyProgramsResponse
-    //var instane = new SquareConnect.ListLoyaltyProgramsResponse();
+    //var instance = new SquareConnect.ListLoyaltyProgramsResponse();
     //expect(instance).to.be.a(SquareConnect.ListLoyaltyProgramsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListLoyaltyProgramsResponse();
+    //var instance = new SquareConnect.ListLoyaltyProgramsResponse();
     //expect(instance).to.be();
   });
   it('should have the property programs (base name: "programs")', function() {
     // uncomment below and update the code to test the property programs
-    //var instane = new SquareConnect.ListLoyaltyProgramsResponse();
+    //var instance = new SquareConnect.ListLoyaltyProgramsResponse();
     //expect(instance).to.be();
   });
 });

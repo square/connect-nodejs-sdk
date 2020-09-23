@@ -20,18 +20,18 @@ describe('TeamMemberAssignedLocations', function() {
 
   it('should create an instance of TeamMemberAssignedLocations', function() {
     // uncomment below and update the code to test TeamMemberAssignedLocations
-    //var instane = new SquareConnect.TeamMemberAssignedLocations();
+    //var instance = new SquareConnect.TeamMemberAssignedLocations();
     //expect(instance).to.be.a(SquareConnect.TeamMemberAssignedLocations);
   });
 
   it('should have the property assignmentType (base name: "assignment_type")', function() {
     // uncomment below and update the code to test the property assignmentType
-    //var instane = new SquareConnect.TeamMemberAssignedLocations();
+    //var instance = new SquareConnect.TeamMemberAssignedLocations();
     //expect(instance).to.be();
   });
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.TeamMemberAssignedLocations();
+    //var instance = new SquareConnect.TeamMemberAssignedLocations();
     //expect(instance).to.be();
   });
 });

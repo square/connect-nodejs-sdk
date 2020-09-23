@@ -19,7 +19,7 @@ describe('V1CreateRefundRequestType', function() {
 
   it('should create an instance of V1CreateRefundRequestType', function() {
     // uncomment below and update the code to test V1CreateRefundRequestType
-    //var instane = new SquareConnect.V1CreateRefundRequestType();
+    //var instance = new SquareConnect.V1CreateRefundRequestType();
     //expect(instance).to.be.a(SquareConnect.V1CreateRefundRequestType);
   });
 

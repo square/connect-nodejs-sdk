@@ -20,13 +20,13 @@ describe('RemoveDisputeEvidenceResponse', function() {
 
   it('should create an instance of RemoveDisputeEvidenceResponse', function() {
     // uncomment below and update the code to test RemoveDisputeEvidenceResponse
-    //var instane = new SquareConnect.RemoveDisputeEvidenceResponse();
+    //var instance = new SquareConnect.RemoveDisputeEvidenceResponse();
     //expect(instance).to.be.a(SquareConnect.RemoveDisputeEvidenceResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RemoveDisputeEvidenceResponse();
+    //var instance = new SquareConnect.RemoveDisputeEvidenceResponse();
     //expect(instance).to.be();
   });
 });

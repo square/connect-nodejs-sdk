@@ -20,18 +20,18 @@ describe('AdjustLoyaltyPointsRequest', function() {
 
   it('should create an instance of AdjustLoyaltyPointsRequest', function() {
     // uncomment below and update the code to test AdjustLoyaltyPointsRequest
-    //var instane = new SquareConnect.AdjustLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AdjustLoyaltyPointsRequest();
     //expect(instance).to.be.a(SquareConnect.AdjustLoyaltyPointsRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.AdjustLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AdjustLoyaltyPointsRequest();
     //expect(instance).to.be();
   });
   it('should have the property adjustPoints (base name: "adjust_points")', function() {
     // uncomment below and update the code to test the property adjustPoints
-    //var instane = new SquareConnect.AdjustLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AdjustLoyaltyPointsRequest();
     //expect(instance).to.be();
   });
 });

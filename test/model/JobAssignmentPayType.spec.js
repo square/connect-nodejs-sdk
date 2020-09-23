@@ -19,7 +19,7 @@ describe('JobAssignmentPayType', function() {
 
   it('should create an instance of JobAssignmentPayType', function() {
     // uncomment below and update the code to test JobAssignmentPayType
-    //var instane = new SquareConnect.JobAssignmentPayType();
+    //var instance = new SquareConnect.JobAssignmentPayType();
     //expect(instance).to.be.a(SquareConnect.JobAssignmentPayType);
   });
 

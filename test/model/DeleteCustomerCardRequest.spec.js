@@ -21,7 +21,7 @@ describe('DeleteCustomerCardRequest', function() {
 
   it('should create an instance of DeleteCustomerCardRequest', function() {
     // uncomment below and update the code to test DeleteCustomerCardRequest
-    //var instane = new SquareConnect.DeleteCustomerCardRequest();
+    //var instance = new SquareConnect.DeleteCustomerCardRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteCustomerCardRequest);
   });
 

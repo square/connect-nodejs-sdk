@@ -20,7 +20,7 @@ describe('RetrieveInventoryAdjustmentRequest', function() {
 
   it('should create an instance of RetrieveInventoryAdjustmentRequest', function() {
     // uncomment below and update the code to test RetrieveInventoryAdjustmentRequest
-    //var instane = new SquareConnect.RetrieveInventoryAdjustmentRequest();
+    //var instance = new SquareConnect.RetrieveInventoryAdjustmentRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryAdjustmentRequest);
   });
 

@@ -19,7 +19,7 @@ describe('LoyaltyAccountMappingType', function() {
 
   it('should create an instance of LoyaltyAccountMappingType', function() {
     // uncomment below and update the code to test LoyaltyAccountMappingType
-    //var instane = new SquareConnect.LoyaltyAccountMappingType();
+    //var instance = new SquareConnect.LoyaltyAccountMappingType();
     //expect(instance).to.be.a(SquareConnect.LoyaltyAccountMappingType);
   });
 

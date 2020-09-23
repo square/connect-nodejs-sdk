@@ -20,7 +20,7 @@ describe('AddGroupToCustomerRequest', function() {
 
   it('should create an instance of AddGroupToCustomerRequest', function() {
     // uncomment below and update the code to test AddGroupToCustomerRequest
-    //var instane = new SquareConnect.AddGroupToCustomerRequest();
+    //var instance = new SquareConnect.AddGroupToCustomerRequest();
     //expect(instance).to.be.a(SquareConnect.AddGroupToCustomerRequest);
   });
 

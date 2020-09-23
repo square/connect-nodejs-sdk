@@ -20,7 +20,7 @@ describe('CatalogObjectType', function() {
 
   it('should create an instance of CatalogObjectType', function() {
     // uncomment below and update the code to test CatalogObjectType
-    //var instane = new SquareConnect.CatalogObjectType();
+    //var instance = new SquareConnect.CatalogObjectType();
     //expect(instance).to.be.a(SquareConnect.CatalogObjectType);
   });
 

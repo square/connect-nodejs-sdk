@@ -20,28 +20,28 @@ describe('CustomerSegment', function() {
 
   it('should create an instance of CustomerSegment', function() {
     // uncomment below and update the code to test CustomerSegment
-    //var instane = new SquareConnect.CustomerSegment();
+    //var instance = new SquareConnect.CustomerSegment();
     //expect(instance).to.be.a(SquareConnect.CustomerSegment);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.CustomerSegment();
+    //var instance = new SquareConnect.CustomerSegment();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CustomerSegment();
+    //var instance = new SquareConnect.CustomerSegment();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.CustomerSegment();
+    //var instance = new SquareConnect.CustomerSegment();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.CustomerSegment();
+    //var instance = new SquareConnect.CustomerSegment();
     //expect(instance).to.be();
   });
 });

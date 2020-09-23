@@ -20,18 +20,18 @@ describe('ShiftSort', function() {
 
   it('should create an instance of ShiftSort', function() {
     // uncomment below and update the code to test ShiftSort
-    //var instane = new SquareConnect.ShiftSort();
+    //var instance = new SquareConnect.ShiftSort();
     //expect(instance).to.be.a(SquareConnect.ShiftSort);
   });
 
   it('should have the property field (base name: "field")', function() {
     // uncomment below and update the code to test the property field
-    //var instane = new SquareConnect.ShiftSort();
+    //var instance = new SquareConnect.ShiftSort();
     //expect(instance).to.be();
   });
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.ShiftSort();
+    //var instance = new SquareConnect.ShiftSort();
     //expect(instance).to.be();
   });
 });

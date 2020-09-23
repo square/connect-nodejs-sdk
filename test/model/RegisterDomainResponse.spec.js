@@ -21,18 +21,18 @@ describe('RegisterDomainResponse', function() {
 
   it('should create an instance of RegisterDomainResponse', function() {
     // uncomment below and update the code to test RegisterDomainResponse
-    //var instane = new SquareConnect.RegisterDomainResponse();
+    //var instance = new SquareConnect.RegisterDomainResponse();
     //expect(instance).to.be.a(SquareConnect.RegisterDomainResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RegisterDomainResponse();
+    //var instance = new SquareConnect.RegisterDomainResponse();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.RegisterDomainResponse();
+    //var instance = new SquareConnect.RegisterDomainResponse();
     //expect(instance).to.be();
   });
 });

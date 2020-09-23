@@ -20,18 +20,18 @@ describe('OrderReward', function() {
 
   it('should create an instance of OrderReward', function() {
     // uncomment below and update the code to test OrderReward
-    //var instane = new SquareConnect.OrderReward();
+    //var instance = new SquareConnect.OrderReward();
     //expect(instance).to.be.a(SquareConnect.OrderReward);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.OrderReward();
+    //var instance = new SquareConnect.OrderReward();
     //expect(instance).to.be();
   });
   it('should have the property rewardTierId (base name: "reward_tier_id")', function() {
     // uncomment below and update the code to test the property rewardTierId
-    //var instane = new SquareConnect.OrderReward();
+    //var instance = new SquareConnect.OrderReward();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('LocationCapability', function() {
 
   it('should create an instance of LocationCapability', function() {
     // uncomment below and update the code to test LocationCapability
-    //var instane = new SquareConnect.LocationCapability();
+    //var instance = new SquareConnect.LocationCapability();
     //expect(instance).to.be.a(SquareConnect.LocationCapability);
   });
 

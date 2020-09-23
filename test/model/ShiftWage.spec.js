@@ -20,18 +20,18 @@ describe('ShiftWage', function() {
 
   it('should create an instance of ShiftWage', function() {
     // uncomment below and update the code to test ShiftWage
-    //var instane = new SquareConnect.ShiftWage();
+    //var instance = new SquareConnect.ShiftWage();
     //expect(instance).to.be.a(SquareConnect.ShiftWage);
   });
 
   it('should have the property title (base name: "title")', function() {
     // uncomment below and update the code to test the property title
-    //var instane = new SquareConnect.ShiftWage();
+    //var instance = new SquareConnect.ShiftWage();
     //expect(instance).to.be();
   });
   it('should have the property hourlyRate (base name: "hourly_rate")', function() {
     // uncomment below and update the code to test the property hourlyRate
-    //var instane = new SquareConnect.ShiftWage();
+    //var instance = new SquareConnect.ShiftWage();
     //expect(instance).to.be();
   });
 });

@@ -21,43 +21,43 @@ describe('SearchCatalogObjectsRequest', function() {
 
   it('should create an instance of SearchCatalogObjectsRequest', function() {
     // uncomment below and update the code to test SearchCatalogObjectsRequest
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be.a(SquareConnect.SearchCatalogObjectsRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property objectTypes (base name: "object_types")', function() {
     // uncomment below and update the code to test the property objectTypes
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property includeDeletedObjects (base name: "include_deleted_objects")', function() {
     // uncomment below and update the code to test the property includeDeletedObjects
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property includeRelatedObjects (base name: "include_related_objects")', function() {
     // uncomment below and update the code to test the property includeRelatedObjects
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property query (base name: "query")', function() {
     // uncomment below and update the code to test the property query
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.SearchCatalogObjectsRequest();
+    //var instance = new SquareConnect.SearchCatalogObjectsRequest();
     //expect(instance).to.be();
   });
 });

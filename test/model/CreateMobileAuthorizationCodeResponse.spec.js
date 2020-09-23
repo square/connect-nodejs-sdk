@@ -20,23 +20,23 @@ describe('CreateMobileAuthorizationCodeResponse', function() {
 
   it('should create an instance of CreateMobileAuthorizationCodeResponse', function() {
     // uncomment below and update the code to test CreateMobileAuthorizationCodeResponse
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeResponse();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeResponse();
     //expect(instance).to.be.a(SquareConnect.CreateMobileAuthorizationCodeResponse);
   });
 
   it('should have the property authorizationCode (base name: "authorization_code")', function() {
     // uncomment below and update the code to test the property authorizationCode
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeResponse();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeResponse();
     //expect(instance).to.be();
   });
   it('should have the property expiresAt (base name: "expires_at")', function() {
     // uncomment below and update the code to test the property expiresAt
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeResponse();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeResponse();
     //expect(instance).to.be();
   });
   it('should have the property error (base name: "error")', function() {
     // uncomment below and update the code to test the property error
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeResponse();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeResponse();
     //expect(instance).to.be();
   });
 });

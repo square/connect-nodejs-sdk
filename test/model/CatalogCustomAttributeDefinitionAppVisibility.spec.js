@@ -19,7 +19,7 @@ describe('CatalogCustomAttributeDefinitionAppVisibility', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionAppVisibility', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionAppVisibility
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionAppVisibility();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionAppVisibility();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionAppVisibility);
   });
 

@@ -19,7 +19,7 @@ describe('V1SettlementStatus', function() {
 
   it('should create an instance of V1SettlementStatus', function() {
     // uncomment below and update the code to test V1SettlementStatus
-    //var instane = new SquareConnect.V1SettlementStatus();
+    //var instance = new SquareConnect.V1SettlementStatus();
     //expect(instance).to.be.a(SquareConnect.V1SettlementStatus);
   });
 

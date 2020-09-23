@@ -20,13 +20,13 @@ describe('UpdateWorkweekConfigRequest', function() {
 
   it('should create an instance of UpdateWorkweekConfigRequest', function() {
     // uncomment below and update the code to test UpdateWorkweekConfigRequest
-    //var instane = new SquareConnect.UpdateWorkweekConfigRequest();
+    //var instance = new SquareConnect.UpdateWorkweekConfigRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateWorkweekConfigRequest);
   });
 
   it('should have the property workweekConfig (base name: "workweek_config")', function() {
     // uncomment below and update the code to test the property workweekConfig
-    //var instane = new SquareConnect.UpdateWorkweekConfigRequest();
+    //var instance = new SquareConnect.UpdateWorkweekConfigRequest();
     //expect(instance).to.be();
   });
 });

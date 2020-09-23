@@ -20,28 +20,28 @@ describe('LoyaltyAccountMapping', function() {
 
   it('should create an instance of LoyaltyAccountMapping', function() {
     // uncomment below and update the code to test LoyaltyAccountMapping
-    //var instane = new SquareConnect.LoyaltyAccountMapping();
+    //var instance = new SquareConnect.LoyaltyAccountMapping();
     //expect(instance).to.be.a(SquareConnect.LoyaltyAccountMapping);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.LoyaltyAccountMapping();
+    //var instance = new SquareConnect.LoyaltyAccountMapping();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.LoyaltyAccountMapping();
+    //var instance = new SquareConnect.LoyaltyAccountMapping();
     //expect(instance).to.be();
   });
   it('should have the property value (base name: "value")', function() {
     // uncomment below and update the code to test the property value
-    //var instane = new SquareConnect.LoyaltyAccountMapping();
+    //var instance = new SquareConnect.LoyaltyAccountMapping();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyAccountMapping();
+    //var instance = new SquareConnect.LoyaltyAccountMapping();
     //expect(instance).to.be();
   });
 });

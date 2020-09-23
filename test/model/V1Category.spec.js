@@ -21,18 +21,18 @@ describe('V1Category', function() {
 
   it('should create an instance of V1Category', function() {
     // uncomment below and update the code to test V1Category
-    //var instane = new SquareConnect.V1Category();
+    //var instance = new SquareConnect.V1Category();
     //expect(instance).to.be.a(SquareConnect.V1Category);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Category();
+    //var instance = new SquareConnect.V1Category();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1Category();
+    //var instance = new SquareConnect.V1Category();
     //expect(instance).to.be();
   });
 });

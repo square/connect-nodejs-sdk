@@ -20,33 +20,33 @@ describe('SubscriptionPhase', function() {
 
   it('should create an instance of SubscriptionPhase', function() {
     // uncomment below and update the code to test SubscriptionPhase
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be.a(SquareConnect.SubscriptionPhase);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be();
   });
   it('should have the property cadence (base name: "cadence")', function() {
     // uncomment below and update the code to test the property cadence
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be();
   });
   it('should have the property periods (base name: "periods")', function() {
     // uncomment below and update the code to test the property periods
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be();
   });
   it('should have the property recurringPriceMoney (base name: "recurring_price_money")', function() {
     // uncomment below and update the code to test the property recurringPriceMoney
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be();
   });
   it('should have the property ordinal (base name: "ordinal")', function() {
     // uncomment below and update the code to test the property ordinal
-    //var instane = new SquareConnect.SubscriptionPhase();
+    //var instance = new SquareConnect.SubscriptionPhase();
     //expect(instance).to.be();
   });
 });

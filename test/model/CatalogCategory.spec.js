@@ -21,13 +21,13 @@ describe('CatalogCategory', function() {
 
   it('should create an instance of CatalogCategory', function() {
     // uncomment below and update the code to test CatalogCategory
-    //var instane = new SquareConnect.CatalogCategory();
+    //var instance = new SquareConnect.CatalogCategory();
     //expect(instance).to.be.a(SquareConnect.CatalogCategory);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogCategory();
+    //var instance = new SquareConnect.CatalogCategory();
     //expect(instance).to.be();
   });
 });

@@ -19,7 +19,7 @@ describe('CustomerCreationSource', function() {
 
   it('should create an instance of CustomerCreationSource', function() {
     // uncomment below and update the code to test CustomerCreationSource
-    //var instane = new SquareConnect.CustomerCreationSource();
+    //var instance = new SquareConnect.CustomerCreationSource();
     //expect(instance).to.be.a(SquareConnect.CustomerCreationSource);
   });
 

@@ -20,18 +20,18 @@ describe('DisputeEvidenceFile', function() {
 
   it('should create an instance of DisputeEvidenceFile', function() {
     // uncomment below and update the code to test DisputeEvidenceFile
-    //var instane = new SquareConnect.DisputeEvidenceFile();
+    //var instance = new SquareConnect.DisputeEvidenceFile();
     //expect(instance).to.be.a(SquareConnect.DisputeEvidenceFile);
   });
 
   it('should have the property filename (base name: "filename")', function() {
     // uncomment below and update the code to test the property filename
-    //var instane = new SquareConnect.DisputeEvidenceFile();
+    //var instance = new SquareConnect.DisputeEvidenceFile();
     //expect(instance).to.be();
   });
   it('should have the property filetype (base name: "filetype")', function() {
     // uncomment below and update the code to test the property filetype
-    //var instane = new SquareConnect.DisputeEvidenceFile();
+    //var instance = new SquareConnect.DisputeEvidenceFile();
     //expect(instance).to.be();
   });
 });

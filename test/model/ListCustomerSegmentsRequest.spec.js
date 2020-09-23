@@ -20,18 +20,18 @@ describe('ListCustomerSegmentsRequest', function() {
 
   it('should create an instance of ListCustomerSegmentsRequest', function() {
     // uncomment below and update the code to test ListCustomerSegmentsRequest
-    //var instane = new SquareConnect.ListCustomerSegmentsRequest();
+    //var instance = new SquareConnect.ListCustomerSegmentsRequest();
     //expect(instance).to.be.a(SquareConnect.ListCustomerSegmentsRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCustomerSegmentsRequest();
+    //var instance = new SquareConnect.ListCustomerSegmentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListCustomerSegmentsRequest();
+    //var instance = new SquareConnect.ListCustomerSegmentsRequest();
     //expect(instance).to.be();
   });
 });

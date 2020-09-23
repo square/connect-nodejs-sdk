@@ -20,23 +20,23 @@ describe('TipSettings', function() {
 
   it('should create an instance of TipSettings', function() {
     // uncomment below and update the code to test TipSettings
-    //var instane = new SquareConnect.TipSettings();
+    //var instance = new SquareConnect.TipSettings();
     //expect(instance).to.be.a(SquareConnect.TipSettings);
   });
 
   it('should have the property allowTipping (base name: "allow_tipping")', function() {
     // uncomment below and update the code to test the property allowTipping
-    //var instane = new SquareConnect.TipSettings();
+    //var instance = new SquareConnect.TipSettings();
     //expect(instance).to.be();
   });
   it('should have the property separateTipScreen (base name: "separate_tip_screen")', function() {
     // uncomment below and update the code to test the property separateTipScreen
-    //var instane = new SquareConnect.TipSettings();
+    //var instance = new SquareConnect.TipSettings();
     //expect(instance).to.be();
   });
   it('should have the property customTipField (base name: "custom_tip_field")', function() {
     // uncomment below and update the code to test the property customTipField
-    //var instane = new SquareConnect.TipSettings();
+    //var instance = new SquareConnect.TipSettings();
     //expect(instance).to.be();
   });
 });

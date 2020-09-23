@@ -20,13 +20,13 @@ describe('CatalogItemOptionForItem', function() {
 
   it('should create an instance of CatalogItemOptionForItem', function() {
     // uncomment below and update the code to test CatalogItemOptionForItem
-    //var instane = new SquareConnect.CatalogItemOptionForItem();
+    //var instance = new SquareConnect.CatalogItemOptionForItem();
     //expect(instance).to.be.a(SquareConnect.CatalogItemOptionForItem);
   });
 
   it('should have the property itemOptionId (base name: "item_option_id")', function() {
     // uncomment below and update the code to test the property itemOptionId
-    //var instane = new SquareConnect.CatalogItemOptionForItem();
+    //var instance = new SquareConnect.CatalogItemOptionForItem();
     //expect(instance).to.be();
   });
 });

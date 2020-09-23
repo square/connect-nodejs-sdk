@@ -20,38 +20,38 @@ describe('OrderReturnLineItemModifier', function() {
 
   it('should create an instance of OrderReturnLineItemModifier', function() {
     // uncomment below and update the code to test OrderReturnLineItemModifier
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be.a(SquareConnect.OrderReturnLineItemModifier);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
   it('should have the property sourceModifierUid (base name: "source_modifier_uid")', function() {
     // uncomment below and update the code to test the property sourceModifierUid
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
   it('should have the property basePriceMoney (base name: "base_price_money")', function() {
     // uncomment below and update the code to test the property basePriceMoney
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
   it('should have the property totalPriceMoney (base name: "total_price_money")', function() {
     // uncomment below and update the code to test the property totalPriceMoney
-    //var instane = new SquareConnect.OrderReturnLineItemModifier();
+    //var instance = new SquareConnect.OrderReturnLineItemModifier();
     //expect(instance).to.be();
   });
 });

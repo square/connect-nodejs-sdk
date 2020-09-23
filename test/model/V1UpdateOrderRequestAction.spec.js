@@ -19,7 +19,7 @@ describe('V1UpdateOrderRequestAction', function() {
 
   it('should create an instance of V1UpdateOrderRequestAction', function() {
     // uncomment below and update the code to test V1UpdateOrderRequestAction
-    //var instane = new SquareConnect.V1UpdateOrderRequestAction();
+    //var instance = new SquareConnect.V1UpdateOrderRequestAction();
     //expect(instance).to.be.a(SquareConnect.V1UpdateOrderRequestAction);
   });
 

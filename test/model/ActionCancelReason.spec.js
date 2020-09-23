@@ -19,7 +19,7 @@ describe('ActionCancelReason', function() {
 
   it('should create an instance of ActionCancelReason', function() {
     // uncomment below and update the code to test ActionCancelReason
-    //var instane = new SquareConnect.ActionCancelReason();
+    //var instance = new SquareConnect.ActionCancelReason();
     //expect(instance).to.be.a(SquareConnect.ActionCancelReason);
   });
 

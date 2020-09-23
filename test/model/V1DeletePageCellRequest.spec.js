@@ -20,18 +20,18 @@ describe('V1DeletePageCellRequest', function() {
 
   it('should create an instance of V1DeletePageCellRequest', function() {
     // uncomment below and update the code to test V1DeletePageCellRequest
-    //var instane = new SquareConnect.V1DeletePageCellRequest();
+    //var instance = new SquareConnect.V1DeletePageCellRequest();
     //expect(instance).to.be.a(SquareConnect.V1DeletePageCellRequest);
   });
 
   it('should have the property row (base name: "row")', function() {
     // uncomment below and update the code to test the property row
-    //var instane = new SquareConnect.V1DeletePageCellRequest();
+    //var instance = new SquareConnect.V1DeletePageCellRequest();
     //expect(instance).to.be();
   });
   it('should have the property column (base name: "column")', function() {
     // uncomment below and update the code to test the property column
-    //var instane = new SquareConnect.V1DeletePageCellRequest();
+    //var instance = new SquareConnect.V1DeletePageCellRequest();
     //expect(instance).to.be();
   });
 });

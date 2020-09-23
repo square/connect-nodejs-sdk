@@ -20,13 +20,13 @@ describe('UpdateSubscriptionRequest', function() {
 
   it('should create an instance of UpdateSubscriptionRequest', function() {
     // uncomment below and update the code to test UpdateSubscriptionRequest
-    //var instane = new SquareConnect.UpdateSubscriptionRequest();
+    //var instance = new SquareConnect.UpdateSubscriptionRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateSubscriptionRequest);
   });
 
   it('should have the property subscription (base name: "subscription")', function() {
     // uncomment below and update the code to test the property subscription
-    //var instane = new SquareConnect.UpdateSubscriptionRequest();
+    //var instance = new SquareConnect.UpdateSubscriptionRequest();
     //expect(instance).to.be();
   });
 });

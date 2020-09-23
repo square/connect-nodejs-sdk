@@ -21,53 +21,53 @@ describe('CreateCustomerRequest', function() {
 
   it('should create an instance of CreateCustomerRequest', function() {
     // uncomment below and update the code to test CreateCustomerRequest
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be.a(SquareConnect.CreateCustomerRequest);
   });
 
   it('should have the property givenName (base name: "given_name")', function() {
     // uncomment below and update the code to test the property givenName
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property familyName (base name: "family_name")', function() {
     // uncomment below and update the code to test the property familyName
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property companyName (base name: "company_name")', function() {
     // uncomment below and update the code to test the property companyName
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property nickname (base name: "nickname")', function() {
     // uncomment below and update the code to test the property nickname
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property emailAddress (base name: "email_address")', function() {
     // uncomment below and update the code to test the property emailAddress
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property address (base name: "address")', function() {
     // uncomment below and update the code to test the property address
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property phoneNumber (base name: "phone_number")', function() {
     // uncomment below and update the code to test the property phoneNumber
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
   it('should have the property note (base name: "note")', function() {
     // uncomment below and update the code to test the property note
-    //var instane = new SquareConnect.CreateCustomerRequest();
+    //var instance = new SquareConnect.CreateCustomerRequest();
     //expect(instance).to.be();
   });
 });

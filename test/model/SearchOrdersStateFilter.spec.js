@@ -20,13 +20,13 @@ describe('SearchOrdersStateFilter', function() {
 
   it('should create an instance of SearchOrdersStateFilter', function() {
     // uncomment below and update the code to test SearchOrdersStateFilter
-    //var instane = new SquareConnect.SearchOrdersStateFilter();
+    //var instance = new SquareConnect.SearchOrdersStateFilter();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersStateFilter);
   });
 
   it('should have the property states (base name: "states")', function() {
     // uncomment below and update the code to test the property states
-    //var instane = new SquareConnect.SearchOrdersStateFilter();
+    //var instance = new SquareConnect.SearchOrdersStateFilter();
     //expect(instance).to.be();
   });
 });

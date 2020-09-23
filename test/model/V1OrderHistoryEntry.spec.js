@@ -21,18 +21,18 @@ describe('V1OrderHistoryEntry', function() {
 
   it('should create an instance of V1OrderHistoryEntry', function() {
     // uncomment below and update the code to test V1OrderHistoryEntry
-    //var instane = new SquareConnect.V1OrderHistoryEntry();
+    //var instance = new SquareConnect.V1OrderHistoryEntry();
     //expect(instance).to.be.a(SquareConnect.V1OrderHistoryEntry);
   });
 
   it('should have the property action (base name: "action")', function() {
     // uncomment below and update the code to test the property action
-    //var instane = new SquareConnect.V1OrderHistoryEntry();
+    //var instance = new SquareConnect.V1OrderHistoryEntry();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.V1OrderHistoryEntry();
+    //var instance = new SquareConnect.V1OrderHistoryEntry();
     //expect(instance).to.be();
   });
 });

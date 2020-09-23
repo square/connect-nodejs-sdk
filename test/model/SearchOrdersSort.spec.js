@@ -20,18 +20,18 @@ describe('SearchOrdersSort', function() {
 
   it('should create an instance of SearchOrdersSort', function() {
     // uncomment below and update the code to test SearchOrdersSort
-    //var instane = new SquareConnect.SearchOrdersSort();
+    //var instance = new SquareConnect.SearchOrdersSort();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersSort);
   });
 
   it('should have the property sortField (base name: "sort_field")', function() {
     // uncomment below and update the code to test the property sortField
-    //var instane = new SquareConnect.SearchOrdersSort();
+    //var instance = new SquareConnect.SearchOrdersSort();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.SearchOrdersSort();
+    //var instance = new SquareConnect.SearchOrdersSort();
     //expect(instance).to.be();
   });
 });

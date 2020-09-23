@@ -20,68 +20,68 @@ describe('InventoryTransfer', function() {
 
   it('should create an instance of InventoryTransfer', function() {
     // uncomment below and update the code to test InventoryTransfer
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be.a(SquareConnect.InventoryTransfer);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property state (base name: "state")', function() {
     // uncomment below and update the code to test the property state
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property fromLocationId (base name: "from_location_id")', function() {
     // uncomment below and update the code to test the property fromLocationId
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property toLocationId (base name: "to_location_id")', function() {
     // uncomment below and update the code to test the property toLocationId
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectType (base name: "catalog_object_type")', function() {
     // uncomment below and update the code to test the property catalogObjectType
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property quantity (base name: "quantity")', function() {
     // uncomment below and update the code to test the property quantity
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property occurredAt (base name: "occurred_at")', function() {
     // uncomment below and update the code to test the property occurredAt
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property source (base name: "source")', function() {
     // uncomment below and update the code to test the property source
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
   it('should have the property employeeId (base name: "employee_id")', function() {
     // uncomment below and update the code to test the property employeeId
-    //var instane = new SquareConnect.InventoryTransfer();
+    //var instance = new SquareConnect.InventoryTransfer();
     //expect(instance).to.be();
   });
 });

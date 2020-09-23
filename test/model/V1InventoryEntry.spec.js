@@ -21,18 +21,18 @@ describe('V1InventoryEntry', function() {
 
   it('should create an instance of V1InventoryEntry', function() {
     // uncomment below and update the code to test V1InventoryEntry
-    //var instane = new SquareConnect.V1InventoryEntry();
+    //var instance = new SquareConnect.V1InventoryEntry();
     //expect(instance).to.be.a(SquareConnect.V1InventoryEntry);
   });
 
   it('should have the property variationId (base name: "variation_id")', function() {
     // uncomment below and update the code to test the property variationId
-    //var instane = new SquareConnect.V1InventoryEntry();
+    //var instance = new SquareConnect.V1InventoryEntry();
     //expect(instance).to.be();
   });
   it('should have the property quantityOnHand (base name: "quantity_on_hand")', function() {
     // uncomment below and update the code to test the property quantityOnHand
-    //var instane = new SquareConnect.V1InventoryEntry();
+    //var instance = new SquareConnect.V1InventoryEntry();
     //expect(instance).to.be();
   });
 });

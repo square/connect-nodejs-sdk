@@ -21,13 +21,13 @@ describe('BatchDeleteCatalogObjectsRequest', function() {
 
   it('should create an instance of BatchDeleteCatalogObjectsRequest', function() {
     // uncomment below and update the code to test BatchDeleteCatalogObjectsRequest
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsRequest();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsRequest();
     //expect(instance).to.be.a(SquareConnect.BatchDeleteCatalogObjectsRequest);
   });
 
   it('should have the property objectIds (base name: "object_ids")', function() {
     // uncomment below and update the code to test the property objectIds
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsRequest();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsRequest();
     //expect(instance).to.be();
   });
 });

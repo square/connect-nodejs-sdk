@@ -20,23 +20,23 @@ describe('OrderLineItemAppliedDiscount', function() {
 
   it('should create an instance of OrderLineItemAppliedDiscount', function() {
     // uncomment below and update the code to test OrderLineItemAppliedDiscount
-    //var instane = new SquareConnect.OrderLineItemAppliedDiscount();
+    //var instance = new SquareConnect.OrderLineItemAppliedDiscount();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemAppliedDiscount);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderLineItemAppliedDiscount();
+    //var instance = new SquareConnect.OrderLineItemAppliedDiscount();
     //expect(instance).to.be();
   });
   it('should have the property discountUid (base name: "discount_uid")', function() {
     // uncomment below and update the code to test the property discountUid
-    //var instane = new SquareConnect.OrderLineItemAppliedDiscount();
+    //var instance = new SquareConnect.OrderLineItemAppliedDiscount();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.OrderLineItemAppliedDiscount();
+    //var instance = new SquareConnect.OrderLineItemAppliedDiscount();
     //expect(instance).to.be();
   });
 });

@@ -21,18 +21,18 @@ describe('CatalogModifierOverride', function() {
 
   it('should create an instance of CatalogModifierOverride', function() {
     // uncomment below and update the code to test CatalogModifierOverride
-    //var instane = new SquareConnect.CatalogModifierOverride();
+    //var instance = new SquareConnect.CatalogModifierOverride();
     //expect(instance).to.be.a(SquareConnect.CatalogModifierOverride);
   });
 
   it('should have the property modifierId (base name: "modifier_id")', function() {
     // uncomment below and update the code to test the property modifierId
-    //var instane = new SquareConnect.CatalogModifierOverride();
+    //var instance = new SquareConnect.CatalogModifierOverride();
     //expect(instance).to.be();
   });
   it('should have the property onByDefault (base name: "on_by_default")', function() {
     // uncomment below and update the code to test the property onByDefault
-    //var instane = new SquareConnect.CatalogModifierOverride();
+    //var instance = new SquareConnect.CatalogModifierOverride();
     //expect(instance).to.be();
   });
 });

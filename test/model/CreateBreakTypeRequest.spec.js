@@ -20,18 +20,18 @@ describe('CreateBreakTypeRequest', function() {
 
   it('should create an instance of CreateBreakTypeRequest', function() {
     // uncomment below and update the code to test CreateBreakTypeRequest
-    //var instane = new SquareConnect.CreateBreakTypeRequest();
+    //var instance = new SquareConnect.CreateBreakTypeRequest();
     //expect(instance).to.be.a(SquareConnect.CreateBreakTypeRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateBreakTypeRequest();
+    //var instance = new SquareConnect.CreateBreakTypeRequest();
     //expect(instance).to.be();
   });
   it('should have the property breakType (base name: "break_type")', function() {
     // uncomment below and update the code to test the property breakType
-    //var instane = new SquareConnect.CreateBreakTypeRequest();
+    //var instance = new SquareConnect.CreateBreakTypeRequest();
     //expect(instance).to.be();
   });
 });

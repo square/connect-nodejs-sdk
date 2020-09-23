@@ -20,23 +20,23 @@ describe('AccumulateLoyaltyPointsRequest', function() {
 
   it('should create an instance of AccumulateLoyaltyPointsRequest', function() {
     // uncomment below and update the code to test AccumulateLoyaltyPointsRequest
-    //var instane = new SquareConnect.AccumulateLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AccumulateLoyaltyPointsRequest();
     //expect(instance).to.be.a(SquareConnect.AccumulateLoyaltyPointsRequest);
   });
 
   it('should have the property accumulatePoints (base name: "accumulate_points")', function() {
     // uncomment below and update the code to test the property accumulatePoints
-    //var instane = new SquareConnect.AccumulateLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AccumulateLoyaltyPointsRequest();
     //expect(instance).to.be();
   });
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.AccumulateLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AccumulateLoyaltyPointsRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.AccumulateLoyaltyPointsRequest();
+    //var instance = new SquareConnect.AccumulateLoyaltyPointsRequest();
     //expect(instance).to.be();
   });
 });

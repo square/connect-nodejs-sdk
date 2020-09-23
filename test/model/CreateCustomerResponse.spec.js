@@ -21,18 +21,18 @@ describe('CreateCustomerResponse', function() {
 
   it('should create an instance of CreateCustomerResponse', function() {
     // uncomment below and update the code to test CreateCustomerResponse
-    //var instane = new SquareConnect.CreateCustomerResponse();
+    //var instance = new SquareConnect.CreateCustomerResponse();
     //expect(instance).to.be.a(SquareConnect.CreateCustomerResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateCustomerResponse();
+    //var instance = new SquareConnect.CreateCustomerResponse();
     //expect(instance).to.be();
   });
   it('should have the property customer (base name: "customer")', function() {
     // uncomment below and update the code to test the property customer
-    //var instane = new SquareConnect.CreateCustomerResponse();
+    //var instance = new SquareConnect.CreateCustomerResponse();
     //expect(instance).to.be();
   });
 });

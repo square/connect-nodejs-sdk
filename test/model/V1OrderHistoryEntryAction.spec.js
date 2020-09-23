@@ -19,7 +19,7 @@ describe('V1OrderHistoryEntryAction', function() {
 
   it('should create an instance of V1OrderHistoryEntryAction', function() {
     // uncomment below and update the code to test V1OrderHistoryEntryAction
-    //var instane = new SquareConnect.V1OrderHistoryEntryAction();
+    //var instance = new SquareConnect.V1OrderHistoryEntryAction();
     //expect(instance).to.be.a(SquareConnect.V1OrderHistoryEntryAction);
   });
 

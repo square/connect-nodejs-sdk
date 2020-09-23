@@ -19,7 +19,7 @@ describe('CatalogQuickAmountType', function() {
 
   it('should create an instance of CatalogQuickAmountType', function() {
     // uncomment below and update the code to test CatalogQuickAmountType
-    //var instane = new SquareConnect.CatalogQuickAmountType();
+    //var instance = new SquareConnect.CatalogQuickAmountType();
     //expect(instance).to.be.a(SquareConnect.CatalogQuickAmountType);
   });
 

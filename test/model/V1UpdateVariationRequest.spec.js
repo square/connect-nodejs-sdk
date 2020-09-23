@@ -20,13 +20,13 @@ describe('V1UpdateVariationRequest', function() {
 
   it('should create an instance of V1UpdateVariationRequest', function() {
     // uncomment below and update the code to test V1UpdateVariationRequest
-    //var instane = new SquareConnect.V1UpdateVariationRequest();
+    //var instance = new SquareConnect.V1UpdateVariationRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateVariationRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1UpdateVariationRequest();
+    //var instance = new SquareConnect.V1UpdateVariationRequest();
     //expect(instance).to.be();
   });
 });

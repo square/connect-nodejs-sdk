@@ -20,7 +20,7 @@ describe('SortOrder', function() {
 
   it('should create an instance of SortOrder', function() {
     // uncomment below and update the code to test SortOrder
-    //var instane = new SquareConnect.SortOrder();
+    //var instance = new SquareConnect.SortOrder();
     //expect(instance).to.be.a(SquareConnect.SortOrder);
   });
 

@@ -19,7 +19,7 @@ describe('V1ItemType', function() {
 
   it('should create an instance of V1ItemType', function() {
     // uncomment below and update the code to test V1ItemType
-    //var instane = new SquareConnect.V1ItemType();
+    //var instance = new SquareConnect.V1ItemType();
     //expect(instance).to.be.a(SquareConnect.V1ItemType);
   });
 

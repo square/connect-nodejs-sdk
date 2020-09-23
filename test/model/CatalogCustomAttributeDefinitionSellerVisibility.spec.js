@@ -19,7 +19,7 @@ describe('CatalogCustomAttributeDefinitionSellerVisibility', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionSellerVisibility', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionSellerVisibility
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility);
   });
 

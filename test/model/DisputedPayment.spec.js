@@ -20,13 +20,13 @@ describe('DisputedPayment', function() {
 
   it('should create an instance of DisputedPayment', function() {
     // uncomment below and update the code to test DisputedPayment
-    //var instane = new SquareConnect.DisputedPayment();
+    //var instance = new SquareConnect.DisputedPayment();
     //expect(instance).to.be.a(SquareConnect.DisputedPayment);
   });
 
   it('should have the property paymentId (base name: "payment_id")', function() {
     // uncomment below and update the code to test the property paymentId
-    //var instane = new SquareConnect.DisputedPayment();
+    //var instance = new SquareConnect.DisputedPayment();
     //expect(instance).to.be();
   });
 });

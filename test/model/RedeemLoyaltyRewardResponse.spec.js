@@ -20,18 +20,18 @@ describe('RedeemLoyaltyRewardResponse', function() {
 
   it('should create an instance of RedeemLoyaltyRewardResponse', function() {
     // uncomment below and update the code to test RedeemLoyaltyRewardResponse
-    //var instane = new SquareConnect.RedeemLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardResponse();
     //expect(instance).to.be.a(SquareConnect.RedeemLoyaltyRewardResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RedeemLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardResponse();
     //expect(instance).to.be();
   });
   it('should have the property event (base name: "event")', function() {
     // uncomment below and update the code to test the property event
-    //var instane = new SquareConnect.RedeemLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardResponse();
     //expect(instance).to.be();
   });
 });

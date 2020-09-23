@@ -20,18 +20,18 @@ describe('CreateTeamMemberResponse', function() {
 
   it('should create an instance of CreateTeamMemberResponse', function() {
     // uncomment below and update the code to test CreateTeamMemberResponse
-    //var instane = new SquareConnect.CreateTeamMemberResponse();
+    //var instance = new SquareConnect.CreateTeamMemberResponse();
     //expect(instance).to.be.a(SquareConnect.CreateTeamMemberResponse);
   });
 
   it('should have the property teamMember (base name: "team_member")', function() {
     // uncomment below and update the code to test the property teamMember
-    //var instane = new SquareConnect.CreateTeamMemberResponse();
+    //var instance = new SquareConnect.CreateTeamMemberResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateTeamMemberResponse();
+    //var instance = new SquareConnect.CreateTeamMemberResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,23 +20,23 @@ describe('FilterValue', function() {
 
   it('should create an instance of FilterValue', function() {
     // uncomment below and update the code to test FilterValue
-    //var instane = new SquareConnect.FilterValue();
+    //var instance = new SquareConnect.FilterValue();
     //expect(instance).to.be.a(SquareConnect.FilterValue);
   });
 
   it('should have the property all (base name: "all")', function() {
     // uncomment below and update the code to test the property all
-    //var instane = new SquareConnect.FilterValue();
+    //var instance = new SquareConnect.FilterValue();
     //expect(instance).to.be();
   });
   it('should have the property any (base name: "any")', function() {
     // uncomment below and update the code to test the property any
-    //var instane = new SquareConnect.FilterValue();
+    //var instance = new SquareConnect.FilterValue();
     //expect(instance).to.be();
   });
   it('should have the property none (base name: "none")', function() {
     // uncomment below and update the code to test the property none
-    //var instane = new SquareConnect.FilterValue();
+    //var instance = new SquareConnect.FilterValue();
     //expect(instance).to.be();
   });
 });

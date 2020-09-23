@@ -20,18 +20,18 @@ describe('GetTerminalCheckoutResponse', function() {
 
   it('should create an instance of GetTerminalCheckoutResponse', function() {
     // uncomment below and update the code to test GetTerminalCheckoutResponse
-    //var instane = new SquareConnect.GetTerminalCheckoutResponse();
+    //var instance = new SquareConnect.GetTerminalCheckoutResponse();
     //expect(instance).to.be.a(SquareConnect.GetTerminalCheckoutResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.GetTerminalCheckoutResponse();
+    //var instance = new SquareConnect.GetTerminalCheckoutResponse();
     //expect(instance).to.be();
   });
   it('should have the property checkout (base name: "checkout")', function() {
     // uncomment below and update the code to test the property checkout
-    //var instane = new SquareConnect.GetTerminalCheckoutResponse();
+    //var instance = new SquareConnect.GetTerminalCheckoutResponse();
     //expect(instance).to.be();
   });
 });

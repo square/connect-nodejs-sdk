@@ -20,7 +20,7 @@ describe('CatalogModifierListSelectionType', function() {
 
   it('should create an instance of CatalogModifierListSelectionType', function() {
     // uncomment below and update the code to test CatalogModifierListSelectionType
-    //var instane = new SquareConnect.CatalogModifierListSelectionType();
+    //var instance = new SquareConnect.CatalogModifierListSelectionType();
     //expect(instance).to.be.a(SquareConnect.CatalogModifierListSelectionType);
   });
 

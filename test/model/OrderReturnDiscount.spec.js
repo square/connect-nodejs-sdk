@@ -20,53 +20,53 @@ describe('OrderReturnDiscount', function() {
 
   it('should create an instance of OrderReturnDiscount', function() {
     // uncomment below and update the code to test OrderReturnDiscount
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be.a(SquareConnect.OrderReturnDiscount);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property sourceDiscountUid (base name: "source_discount_uid")', function() {
     // uncomment below and update the code to test the property sourceDiscountUid
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property percentage (base name: "percentage")', function() {
     // uncomment below and update the code to test the property percentage
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
   it('should have the property scope (base name: "scope")', function() {
     // uncomment below and update the code to test the property scope
-    //var instane = new SquareConnect.OrderReturnDiscount();
+    //var instance = new SquareConnect.OrderReturnDiscount();
     //expect(instance).to.be();
   });
 });

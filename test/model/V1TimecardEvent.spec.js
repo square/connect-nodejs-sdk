@@ -21,33 +21,33 @@ describe('V1TimecardEvent', function() {
 
   it('should create an instance of V1TimecardEvent', function() {
     // uncomment below and update the code to test V1TimecardEvent
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be.a(SquareConnect.V1TimecardEvent);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be();
   });
   it('should have the property eventType (base name: "event_type")', function() {
     // uncomment below and update the code to test the property eventType
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be();
   });
   it('should have the property clockinTime (base name: "clockin_time")', function() {
     // uncomment below and update the code to test the property clockinTime
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be();
   });
   it('should have the property clockoutTime (base name: "clockout_time")', function() {
     // uncomment below and update the code to test the property clockoutTime
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.V1TimecardEvent();
+    //var instance = new SquareConnect.V1TimecardEvent();
     //expect(instance).to.be();
   });
 });

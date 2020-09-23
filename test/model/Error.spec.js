@@ -21,28 +21,28 @@ describe('Error', function() {
 
   it('should create an instance of Error', function() {
     // uncomment below and update the code to test Error
-    //var instane = new SquareConnect.Error();
+    //var instance = new SquareConnect.Error();
     //expect(instance).to.be.a(SquareConnect.Error);
   });
 
   it('should have the property category (base name: "category")', function() {
     // uncomment below and update the code to test the property category
-    //var instane = new SquareConnect.Error();
+    //var instance = new SquareConnect.Error();
     //expect(instance).to.be();
   });
   it('should have the property code (base name: "code")', function() {
     // uncomment below and update the code to test the property code
-    //var instane = new SquareConnect.Error();
+    //var instance = new SquareConnect.Error();
     //expect(instance).to.be();
   });
   it('should have the property detail (base name: "detail")', function() {
     // uncomment below and update the code to test the property detail
-    //var instane = new SquareConnect.Error();
+    //var instance = new SquareConnect.Error();
     //expect(instance).to.be();
   });
   it('should have the property field (base name: "field")', function() {
     // uncomment below and update the code to test the property field
-    //var instane = new SquareConnect.Error();
+    //var instance = new SquareConnect.Error();
     //expect(instance).to.be();
   });
 });

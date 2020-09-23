@@ -21,18 +21,18 @@ describe('UpdateItemModifierListsResponse', function() {
 
   it('should create an instance of UpdateItemModifierListsResponse', function() {
     // uncomment below and update the code to test UpdateItemModifierListsResponse
-    //var instane = new SquareConnect.UpdateItemModifierListsResponse();
+    //var instance = new SquareConnect.UpdateItemModifierListsResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateItemModifierListsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateItemModifierListsResponse();
+    //var instance = new SquareConnect.UpdateItemModifierListsResponse();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.UpdateItemModifierListsResponse();
+    //var instance = new SquareConnect.UpdateItemModifierListsResponse();
     //expect(instance).to.be();
   });
 });

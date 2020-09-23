@@ -19,7 +19,7 @@ describe('V1FeeCalculationPhase', function() {
 
   it('should create an instance of V1FeeCalculationPhase', function() {
     // uncomment below and update the code to test V1FeeCalculationPhase
-    //var instane = new SquareConnect.V1FeeCalculationPhase();
+    //var instance = new SquareConnect.V1FeeCalculationPhase();
     //expect(instance).to.be.a(SquareConnect.V1FeeCalculationPhase);
   });
 

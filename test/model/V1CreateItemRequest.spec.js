@@ -20,13 +20,13 @@ describe('V1CreateItemRequest', function() {
 
   it('should create an instance of V1CreateItemRequest', function() {
     // uncomment below and update the code to test V1CreateItemRequest
-    //var instane = new SquareConnect.V1CreateItemRequest();
+    //var instance = new SquareConnect.V1CreateItemRequest();
     //expect(instance).to.be.a(SquareConnect.V1CreateItemRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1CreateItemRequest();
+    //var instance = new SquareConnect.V1CreateItemRequest();
     //expect(instance).to.be();
   });
 });

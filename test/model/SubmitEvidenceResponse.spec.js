@@ -20,18 +20,18 @@ describe('SubmitEvidenceResponse', function() {
 
   it('should create an instance of SubmitEvidenceResponse', function() {
     // uncomment below and update the code to test SubmitEvidenceResponse
-    //var instane = new SquareConnect.SubmitEvidenceResponse();
+    //var instance = new SquareConnect.SubmitEvidenceResponse();
     //expect(instance).to.be.a(SquareConnect.SubmitEvidenceResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.SubmitEvidenceResponse();
+    //var instance = new SquareConnect.SubmitEvidenceResponse();
     //expect(instance).to.be();
   });
   it('should have the property dispute (base name: "dispute")', function() {
     // uncomment below and update the code to test the property dispute
-    //var instane = new SquareConnect.SubmitEvidenceResponse();
+    //var instance = new SquareConnect.SubmitEvidenceResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,33 +20,33 @@ describe('LoyaltyProgramRewardTier', function() {
 
   it('should create an instance of LoyaltyProgramRewardTier', function() {
     // uncomment below and update the code to test LoyaltyProgramRewardTier
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramRewardTier);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be();
   });
   it('should have the property definition (base name: "definition")', function() {
     // uncomment below and update the code to test the property definition
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyProgramRewardTier();
+    //var instance = new SquareConnect.LoyaltyProgramRewardTier();
     //expect(instance).to.be();
   });
 });

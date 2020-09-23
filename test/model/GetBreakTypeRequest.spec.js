@@ -20,7 +20,7 @@ describe('GetBreakTypeRequest', function() {
 
   it('should create an instance of GetBreakTypeRequest', function() {
     // uncomment below and update the code to test GetBreakTypeRequest
-    //var instane = new SquareConnect.GetBreakTypeRequest();
+    //var instance = new SquareConnect.GetBreakTypeRequest();
     //expect(instance).to.be.a(SquareConnect.GetBreakTypeRequest);
   });
 

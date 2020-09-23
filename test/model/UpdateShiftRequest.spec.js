@@ -20,13 +20,13 @@ describe('UpdateShiftRequest', function() {
 
   it('should create an instance of UpdateShiftRequest', function() {
     // uncomment below and update the code to test UpdateShiftRequest
-    //var instane = new SquareConnect.UpdateShiftRequest();
+    //var instance = new SquareConnect.UpdateShiftRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateShiftRequest);
   });
 
   it('should have the property shift (base name: "shift")', function() {
     // uncomment below and update the code to test the property shift
-    //var instane = new SquareConnect.UpdateShiftRequest();
+    //var instance = new SquareConnect.UpdateShiftRequest();
     //expect(instance).to.be();
   });
 });

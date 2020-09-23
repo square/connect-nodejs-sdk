@@ -20,23 +20,23 @@ describe('ListDisputesRequest', function() {
 
   it('should create an instance of ListDisputesRequest', function() {
     // uncomment below and update the code to test ListDisputesRequest
-    //var instane = new SquareConnect.ListDisputesRequest();
+    //var instance = new SquareConnect.ListDisputesRequest();
     //expect(instance).to.be.a(SquareConnect.ListDisputesRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListDisputesRequest();
+    //var instance = new SquareConnect.ListDisputesRequest();
     //expect(instance).to.be();
   });
   it('should have the property states (base name: "states")', function() {
     // uncomment below and update the code to test the property states
-    //var instane = new SquareConnect.ListDisputesRequest();
+    //var instance = new SquareConnect.ListDisputesRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListDisputesRequest();
+    //var instance = new SquareConnect.ListDisputesRequest();
     //expect(instance).to.be();
   });
 });

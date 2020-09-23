@@ -19,7 +19,7 @@ describe('TransactionType', function() {
 
   it('should create an instance of TransactionType', function() {
     // uncomment below and update the code to test TransactionType
-    //var instane = new SquareConnect.TransactionType();
+    //var instance = new SquareConnect.TransactionType();
     //expect(instance).to.be.a(SquareConnect.TransactionType);
   });
 

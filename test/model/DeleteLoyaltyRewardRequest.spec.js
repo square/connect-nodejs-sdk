@@ -20,7 +20,7 @@ describe('DeleteLoyaltyRewardRequest', function() {
 
   it('should create an instance of DeleteLoyaltyRewardRequest', function() {
     // uncomment below and update the code to test DeleteLoyaltyRewardRequest
-    //var instane = new SquareConnect.DeleteLoyaltyRewardRequest();
+    //var instance = new SquareConnect.DeleteLoyaltyRewardRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteLoyaltyRewardRequest);
   });
 

@@ -20,18 +20,18 @@ describe('BulkCreateTeamMembersResponse', function() {
 
   it('should create an instance of BulkCreateTeamMembersResponse', function() {
     // uncomment below and update the code to test BulkCreateTeamMembersResponse
-    //var instane = new SquareConnect.BulkCreateTeamMembersResponse();
+    //var instance = new SquareConnect.BulkCreateTeamMembersResponse();
     //expect(instance).to.be.a(SquareConnect.BulkCreateTeamMembersResponse);
   });
 
   it('should have the property teamMembers (base name: "team_members")', function() {
     // uncomment below and update the code to test the property teamMembers
-    //var instane = new SquareConnect.BulkCreateTeamMembersResponse();
+    //var instance = new SquareConnect.BulkCreateTeamMembersResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.BulkCreateTeamMembersResponse();
+    //var instance = new SquareConnect.BulkCreateTeamMembersResponse();
     //expect(instance).to.be();
   });
 });

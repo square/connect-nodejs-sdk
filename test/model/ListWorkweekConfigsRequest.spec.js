@@ -20,18 +20,18 @@ describe('ListWorkweekConfigsRequest', function() {
 
   it('should create an instance of ListWorkweekConfigsRequest', function() {
     // uncomment below and update the code to test ListWorkweekConfigsRequest
-    //var instane = new SquareConnect.ListWorkweekConfigsRequest();
+    //var instance = new SquareConnect.ListWorkweekConfigsRequest();
     //expect(instance).to.be.a(SquareConnect.ListWorkweekConfigsRequest);
   });
 
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListWorkweekConfigsRequest();
+    //var instance = new SquareConnect.ListWorkweekConfigsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListWorkweekConfigsRequest();
+    //var instance = new SquareConnect.ListWorkweekConfigsRequest();
     //expect(instance).to.be();
   });
 });

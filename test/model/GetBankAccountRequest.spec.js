@@ -20,7 +20,7 @@ describe('GetBankAccountRequest', function() {
 
   it('should create an instance of GetBankAccountRequest', function() {
     // uncomment below and update the code to test GetBankAccountRequest
-    //var instane = new SquareConnect.GetBankAccountRequest();
+    //var instance = new SquareConnect.GetBankAccountRequest();
     //expect(instance).to.be.a(SquareConnect.GetBankAccountRequest);
   });
 

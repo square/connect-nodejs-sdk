@@ -19,7 +19,7 @@ describe('InvoiceStatus', function() {
 
   it('should create an instance of InvoiceStatus', function() {
     // uncomment below and update the code to test InvoiceStatus
-    //var instane = new SquareConnect.InvoiceStatus();
+    //var instance = new SquareConnect.InvoiceStatus();
     //expect(instance).to.be.a(SquareConnect.InvoiceStatus);
   });
 

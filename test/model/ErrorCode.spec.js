@@ -20,7 +20,7 @@ describe('ErrorCode', function() {
 
   it('should create an instance of ErrorCode', function() {
     // uncomment below and update the code to test ErrorCode
-    //var instane = new SquareConnect.ErrorCode();
+    //var instance = new SquareConnect.ErrorCode();
     //expect(instance).to.be.a(SquareConnect.ErrorCode);
   });
 

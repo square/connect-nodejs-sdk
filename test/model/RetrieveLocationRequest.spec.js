@@ -20,7 +20,7 @@ describe('RetrieveLocationRequest', function() {
 
   it('should create an instance of RetrieveLocationRequest', function() {
     // uncomment below and update the code to test RetrieveLocationRequest
-    //var instane = new SquareConnect.RetrieveLocationRequest();
+    //var instance = new SquareConnect.RetrieveLocationRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveLocationRequest);
   });
 

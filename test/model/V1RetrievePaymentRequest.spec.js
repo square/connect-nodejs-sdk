@@ -20,7 +20,7 @@ describe('V1RetrievePaymentRequest', function() {
 
   it('should create an instance of V1RetrievePaymentRequest', function() {
     // uncomment below and update the code to test V1RetrievePaymentRequest
-    //var instane = new SquareConnect.V1RetrievePaymentRequest();
+    //var instance = new SquareConnect.V1RetrievePaymentRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrievePaymentRequest);
   });
 

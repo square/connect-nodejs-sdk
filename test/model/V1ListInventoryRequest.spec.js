@@ -20,18 +20,18 @@ describe('V1ListInventoryRequest', function() {
 
   it('should create an instance of V1ListInventoryRequest', function() {
     // uncomment below and update the code to test V1ListInventoryRequest
-    //var instane = new SquareConnect.V1ListInventoryRequest();
+    //var instance = new SquareConnect.V1ListInventoryRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListInventoryRequest);
   });
 
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListInventoryRequest();
+    //var instance = new SquareConnect.V1ListInventoryRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListInventoryRequest();
+    //var instance = new SquareConnect.V1ListInventoryRequest();
     //expect(instance).to.be();
   });
 });

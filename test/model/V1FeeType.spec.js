@@ -19,7 +19,7 @@ describe('V1FeeType', function() {
 
   it('should create an instance of V1FeeType', function() {
     // uncomment below and update the code to test V1FeeType
-    //var instane = new SquareConnect.V1FeeType();
+    //var instance = new SquareConnect.V1FeeType();
     //expect(instance).to.be.a(SquareConnect.V1FeeType);
   });
 

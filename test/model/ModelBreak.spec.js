@@ -20,43 +20,43 @@ describe('ModelBreak', function() {
 
   it('should create an instance of ModelBreak', function() {
     // uncomment below and update the code to test ModelBreak
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be.a(SquareConnect.ModelBreak);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property startAt (base name: "start_at")', function() {
     // uncomment below and update the code to test the property startAt
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property endAt (base name: "end_at")', function() {
     // uncomment below and update the code to test the property endAt
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property breakTypeId (base name: "break_type_id")', function() {
     // uncomment below and update the code to test the property breakTypeId
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property expectedDuration (base name: "expected_duration")', function() {
     // uncomment below and update the code to test the property expectedDuration
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
   it('should have the property isPaid (base name: "is_paid")', function() {
     // uncomment below and update the code to test the property isPaid
-    //var instane = new SquareConnect.ModelBreak();
+    //var instance = new SquareConnect.ModelBreak();
     //expect(instance).to.be();
   });
 });

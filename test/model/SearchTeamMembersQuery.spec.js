@@ -20,13 +20,13 @@ describe('SearchTeamMembersQuery', function() {
 
   it('should create an instance of SearchTeamMembersQuery', function() {
     // uncomment below and update the code to test SearchTeamMembersQuery
-    //var instane = new SquareConnect.SearchTeamMembersQuery();
+    //var instance = new SquareConnect.SearchTeamMembersQuery();
     //expect(instance).to.be.a(SquareConnect.SearchTeamMembersQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.SearchTeamMembersQuery();
+    //var instance = new SquareConnect.SearchTeamMembersQuery();
     //expect(instance).to.be();
   });
 });

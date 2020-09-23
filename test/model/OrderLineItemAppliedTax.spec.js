@@ -20,23 +20,23 @@ describe('OrderLineItemAppliedTax', function() {
 
   it('should create an instance of OrderLineItemAppliedTax', function() {
     // uncomment below and update the code to test OrderLineItemAppliedTax
-    //var instane = new SquareConnect.OrderLineItemAppliedTax();
+    //var instance = new SquareConnect.OrderLineItemAppliedTax();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemAppliedTax);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderLineItemAppliedTax();
+    //var instance = new SquareConnect.OrderLineItemAppliedTax();
     //expect(instance).to.be();
   });
   it('should have the property taxUid (base name: "tax_uid")', function() {
     // uncomment below and update the code to test the property taxUid
-    //var instane = new SquareConnect.OrderLineItemAppliedTax();
+    //var instance = new SquareConnect.OrderLineItemAppliedTax();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.OrderLineItemAppliedTax();
+    //var instance = new SquareConnect.OrderLineItemAppliedTax();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('GetShiftRequest', function() {
 
   it('should create an instance of GetShiftRequest', function() {
     // uncomment below and update the code to test GetShiftRequest
-    //var instane = new SquareConnect.GetShiftRequest();
+    //var instance = new SquareConnect.GetShiftRequest();
     //expect(instance).to.be.a(SquareConnect.GetShiftRequest);
   });
 

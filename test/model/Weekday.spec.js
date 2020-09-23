@@ -19,7 +19,7 @@ describe('Weekday', function() {
 
   it('should create an instance of Weekday', function() {
     // uncomment below and update the code to test Weekday
-    //var instane = new SquareConnect.Weekday();
+    //var instance = new SquareConnect.Weekday();
     //expect(instance).to.be.a(SquareConnect.Weekday);
   });
 

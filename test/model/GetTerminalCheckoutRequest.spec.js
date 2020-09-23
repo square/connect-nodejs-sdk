@@ -20,7 +20,7 @@ describe('GetTerminalCheckoutRequest', function() {
 
   it('should create an instance of GetTerminalCheckoutRequest', function() {
     // uncomment below and update the code to test GetTerminalCheckoutRequest
-    //var instane = new SquareConnect.GetTerminalCheckoutRequest();
+    //var instance = new SquareConnect.GetTerminalCheckoutRequest();
     //expect(instance).to.be.a(SquareConnect.GetTerminalCheckoutRequest);
   });
 

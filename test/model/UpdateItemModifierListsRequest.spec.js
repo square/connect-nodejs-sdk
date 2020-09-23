@@ -21,23 +21,23 @@ describe('UpdateItemModifierListsRequest', function() {
 
   it('should create an instance of UpdateItemModifierListsRequest', function() {
     // uncomment below and update the code to test UpdateItemModifierListsRequest
-    //var instane = new SquareConnect.UpdateItemModifierListsRequest();
+    //var instance = new SquareConnect.UpdateItemModifierListsRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateItemModifierListsRequest);
   });
 
   it('should have the property itemIds (base name: "item_ids")', function() {
     // uncomment below and update the code to test the property itemIds
-    //var instane = new SquareConnect.UpdateItemModifierListsRequest();
+    //var instance = new SquareConnect.UpdateItemModifierListsRequest();
     //expect(instance).to.be();
   });
   it('should have the property modifierListsToEnable (base name: "modifier_lists_to_enable")', function() {
     // uncomment below and update the code to test the property modifierListsToEnable
-    //var instane = new SquareConnect.UpdateItemModifierListsRequest();
+    //var instance = new SquareConnect.UpdateItemModifierListsRequest();
     //expect(instance).to.be();
   });
   it('should have the property modifierListsToDisable (base name: "modifier_lists_to_disable")', function() {
     // uncomment below and update the code to test the property modifierListsToDisable
-    //var instane = new SquareConnect.UpdateItemModifierListsRequest();
+    //var instance = new SquareConnect.UpdateItemModifierListsRequest();
     //expect(instance).to.be();
   });
 });

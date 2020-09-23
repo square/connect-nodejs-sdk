@@ -20,23 +20,23 @@ describe('ListDeviceCodesRequest', function() {
 
   it('should create an instance of ListDeviceCodesRequest', function() {
     // uncomment below and update the code to test ListDeviceCodesRequest
-    //var instane = new SquareConnect.ListDeviceCodesRequest();
+    //var instance = new SquareConnect.ListDeviceCodesRequest();
     //expect(instance).to.be.a(SquareConnect.ListDeviceCodesRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListDeviceCodesRequest();
+    //var instance = new SquareConnect.ListDeviceCodesRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListDeviceCodesRequest();
+    //var instance = new SquareConnect.ListDeviceCodesRequest();
     //expect(instance).to.be();
   });
   it('should have the property productType (base name: "product_type")', function() {
     // uncomment below and update the code to test the property productType
-    //var instane = new SquareConnect.ListDeviceCodesRequest();
+    //var instance = new SquareConnect.ListDeviceCodesRequest();
     //expect(instance).to.be();
   });
 });

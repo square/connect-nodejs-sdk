@@ -20,18 +20,18 @@ describe('OrderQuantityUnit', function() {
 
   it('should create an instance of OrderQuantityUnit', function() {
     // uncomment below and update the code to test OrderQuantityUnit
-    //var instane = new SquareConnect.OrderQuantityUnit();
+    //var instance = new SquareConnect.OrderQuantityUnit();
     //expect(instance).to.be.a(SquareConnect.OrderQuantityUnit);
   });
 
   it('should have the property measurementUnit (base name: "measurement_unit")', function() {
     // uncomment below and update the code to test the property measurementUnit
-    //var instane = new SquareConnect.OrderQuantityUnit();
+    //var instance = new SquareConnect.OrderQuantityUnit();
     //expect(instance).to.be();
   });
   it('should have the property precision (base name: "precision")', function() {
     // uncomment below and update the code to test the property precision
-    //var instane = new SquareConnect.OrderQuantityUnit();
+    //var instance = new SquareConnect.OrderQuantityUnit();
     //expect(instance).to.be();
   });
 });

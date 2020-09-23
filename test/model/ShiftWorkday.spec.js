@@ -20,23 +20,23 @@ describe('ShiftWorkday', function() {
 
   it('should create an instance of ShiftWorkday', function() {
     // uncomment below and update the code to test ShiftWorkday
-    //var instane = new SquareConnect.ShiftWorkday();
+    //var instance = new SquareConnect.ShiftWorkday();
     //expect(instance).to.be.a(SquareConnect.ShiftWorkday);
   });
 
   it('should have the property dateRange (base name: "date_range")', function() {
     // uncomment below and update the code to test the property dateRange
-    //var instane = new SquareConnect.ShiftWorkday();
+    //var instance = new SquareConnect.ShiftWorkday();
     //expect(instance).to.be();
   });
   it('should have the property matchShiftsBy (base name: "match_shifts_by")', function() {
     // uncomment below and update the code to test the property matchShiftsBy
-    //var instane = new SquareConnect.ShiftWorkday();
+    //var instance = new SquareConnect.ShiftWorkday();
     //expect(instance).to.be();
   });
   it('should have the property defaultTimezone (base name: "default_timezone")', function() {
     // uncomment below and update the code to test the property defaultTimezone
-    //var instane = new SquareConnect.ShiftWorkday();
+    //var instance = new SquareConnect.ShiftWorkday();
     //expect(instance).to.be();
   });
 });

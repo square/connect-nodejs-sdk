@@ -21,28 +21,28 @@ describe('V1PaymentItemDetail', function() {
 
   it('should create an instance of V1PaymentItemDetail', function() {
     // uncomment below and update the code to test V1PaymentItemDetail
-    //var instane = new SquareConnect.V1PaymentItemDetail();
+    //var instance = new SquareConnect.V1PaymentItemDetail();
     //expect(instance).to.be.a(SquareConnect.V1PaymentItemDetail);
   });
 
   it('should have the property categoryName (base name: "category_name")', function() {
     // uncomment below and update the code to test the property categoryName
-    //var instane = new SquareConnect.V1PaymentItemDetail();
+    //var instance = new SquareConnect.V1PaymentItemDetail();
     //expect(instance).to.be();
   });
   it('should have the property sku (base name: "sku")', function() {
     // uncomment below and update the code to test the property sku
-    //var instane = new SquareConnect.V1PaymentItemDetail();
+    //var instance = new SquareConnect.V1PaymentItemDetail();
     //expect(instance).to.be();
   });
   it('should have the property itemId (base name: "item_id")', function() {
     // uncomment below and update the code to test the property itemId
-    //var instane = new SquareConnect.V1PaymentItemDetail();
+    //var instance = new SquareConnect.V1PaymentItemDetail();
     //expect(instance).to.be();
   });
   it('should have the property itemVariationId (base name: "item_variation_id")', function() {
     // uncomment below and update the code to test the property itemVariationId
-    //var instane = new SquareConnect.V1PaymentItemDetail();
+    //var instance = new SquareConnect.V1PaymentItemDetail();
     //expect(instance).to.be();
   });
 });

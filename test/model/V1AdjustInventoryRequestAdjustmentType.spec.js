@@ -19,7 +19,7 @@ describe('V1AdjustInventoryRequestAdjustmentType', function() {
 
   it('should create an instance of V1AdjustInventoryRequestAdjustmentType', function() {
     // uncomment below and update the code to test V1AdjustInventoryRequestAdjustmentType
-    //var instane = new SquareConnect.V1AdjustInventoryRequestAdjustmentType();
+    //var instance = new SquareConnect.V1AdjustInventoryRequestAdjustmentType();
     //expect(instance).to.be.a(SquareConnect.V1AdjustInventoryRequestAdjustmentType);
   });
 

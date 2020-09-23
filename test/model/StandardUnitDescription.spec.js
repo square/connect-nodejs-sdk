@@ -20,23 +20,23 @@ describe('StandardUnitDescription', function() {
 
   it('should create an instance of StandardUnitDescription', function() {
     // uncomment below and update the code to test StandardUnitDescription
-    //var instane = new SquareConnect.StandardUnitDescription();
+    //var instance = new SquareConnect.StandardUnitDescription();
     //expect(instance).to.be.a(SquareConnect.StandardUnitDescription);
   });
 
   it('should have the property unit (base name: "unit")', function() {
     // uncomment below and update the code to test the property unit
-    //var instane = new SquareConnect.StandardUnitDescription();
+    //var instance = new SquareConnect.StandardUnitDescription();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.StandardUnitDescription();
+    //var instance = new SquareConnect.StandardUnitDescription();
     //expect(instance).to.be();
   });
   it('should have the property abbreviation (base name: "abbreviation")', function() {
     // uncomment below and update the code to test the property abbreviation
-    //var instane = new SquareConnect.StandardUnitDescription();
+    //var instance = new SquareConnect.StandardUnitDescription();
     //expect(instance).to.be();
   });
 });

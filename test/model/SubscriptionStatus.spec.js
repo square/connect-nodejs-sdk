@@ -19,7 +19,7 @@ describe('SubscriptionStatus', function() {
 
   it('should create an instance of SubscriptionStatus', function() {
     // uncomment below and update the code to test SubscriptionStatus
-    //var instane = new SquareConnect.SubscriptionStatus();
+    //var instance = new SquareConnect.SubscriptionStatus();
     //expect(instance).to.be.a(SquareConnect.SubscriptionStatus);
   });
 

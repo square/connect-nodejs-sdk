@@ -20,7 +20,7 @@ describe('OrderLineItemTaxType', function() {
 
   it('should create an instance of OrderLineItemTaxType', function() {
     // uncomment below and update the code to test OrderLineItemTaxType
-    //var instane = new SquareConnect.OrderLineItemTaxType();
+    //var instance = new SquareConnect.OrderLineItemTaxType();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemTaxType);
   });
 

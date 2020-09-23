@@ -20,7 +20,7 @@ describe('RegisterDomainResponseStatus', function() {
 
   it('should create an instance of RegisterDomainResponseStatus', function() {
     // uncomment below and update the code to test RegisterDomainResponseStatus
-    //var instane = new SquareConnect.RegisterDomainResponseStatus();
+    //var instance = new SquareConnect.RegisterDomainResponseStatus();
     //expect(instance).to.be.a(SquareConnect.RegisterDomainResponseStatus);
   });
 

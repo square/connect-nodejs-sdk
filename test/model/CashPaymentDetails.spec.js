@@ -20,18 +20,18 @@ describe('CashPaymentDetails', function() {
 
   it('should create an instance of CashPaymentDetails', function() {
     // uncomment below and update the code to test CashPaymentDetails
-    //var instane = new SquareConnect.CashPaymentDetails();
+    //var instance = new SquareConnect.CashPaymentDetails();
     //expect(instance).to.be.a(SquareConnect.CashPaymentDetails);
   });
 
   it('should have the property buyerSuppliedMoney (base name: "buyer_supplied_money")', function() {
     // uncomment below and update the code to test the property buyerSuppliedMoney
-    //var instane = new SquareConnect.CashPaymentDetails();
+    //var instance = new SquareConnect.CashPaymentDetails();
     //expect(instance).to.be();
   });
   it('should have the property changeBackMoney (base name: "change_back_money")', function() {
     // uncomment below and update the code to test the property changeBackMoney
-    //var instane = new SquareConnect.CashPaymentDetails();
+    //var instance = new SquareConnect.CashPaymentDetails();
     //expect(instance).to.be();
   });
 });

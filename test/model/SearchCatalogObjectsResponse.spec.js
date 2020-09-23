@@ -21,28 +21,28 @@ describe('SearchCatalogObjectsResponse', function() {
 
   it('should create an instance of SearchCatalogObjectsResponse', function() {
     // uncomment below and update the code to test SearchCatalogObjectsResponse
-    //var instane = new SquareConnect.SearchCatalogObjectsResponse();
+    //var instance = new SquareConnect.SearchCatalogObjectsResponse();
     //expect(instance).to.be.a(SquareConnect.SearchCatalogObjectsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.SearchCatalogObjectsResponse();
+    //var instance = new SquareConnect.SearchCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchCatalogObjectsResponse();
+    //var instance = new SquareConnect.SearchCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property objects (base name: "objects")', function() {
     // uncomment below and update the code to test the property objects
-    //var instane = new SquareConnect.SearchCatalogObjectsResponse();
+    //var instance = new SquareConnect.SearchCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property relatedObjects (base name: "related_objects")', function() {
     // uncomment below and update the code to test the property relatedObjects
-    //var instane = new SquareConnect.SearchCatalogObjectsResponse();
+    //var instance = new SquareConnect.SearchCatalogObjectsResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('CustomerCreationSourceFilter', function() {
 
   it('should create an instance of CustomerCreationSourceFilter', function() {
     // uncomment below and update the code to test CustomerCreationSourceFilter
-    //var instane = new SquareConnect.CustomerCreationSourceFilter();
+    //var instance = new SquareConnect.CustomerCreationSourceFilter();
     //expect(instance).to.be.a(SquareConnect.CustomerCreationSourceFilter);
   });
 
   it('should have the property values (base name: "values")', function() {
     // uncomment below and update the code to test the property values
-    //var instane = new SquareConnect.CustomerCreationSourceFilter();
+    //var instance = new SquareConnect.CustomerCreationSourceFilter();
     //expect(instance).to.be();
   });
   it('should have the property rule (base name: "rule")', function() {
     // uncomment below and update the code to test the property rule
-    //var instane = new SquareConnect.CustomerCreationSourceFilter();
+    //var instance = new SquareConnect.CustomerCreationSourceFilter();
     //expect(instance).to.be();
   });
 });

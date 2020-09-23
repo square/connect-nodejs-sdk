@@ -20,13 +20,13 @@ describe('CreateMobileAuthorizationCodeRequest', function() {
 
   it('should create an instance of CreateMobileAuthorizationCodeRequest', function() {
     // uncomment below and update the code to test CreateMobileAuthorizationCodeRequest
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeRequest();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeRequest();
     //expect(instance).to.be.a(SquareConnect.CreateMobileAuthorizationCodeRequest);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.CreateMobileAuthorizationCodeRequest();
+    //var instance = new SquareConnect.CreateMobileAuthorizationCodeRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,13 +20,13 @@ describe('UpdateCustomerGroupRequest', function() {
 
   it('should create an instance of UpdateCustomerGroupRequest', function() {
     // uncomment below and update the code to test UpdateCustomerGroupRequest
-    //var instane = new SquareConnect.UpdateCustomerGroupRequest();
+    //var instance = new SquareConnect.UpdateCustomerGroupRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateCustomerGroupRequest);
   });
 
   it('should have the property group (base name: "group")', function() {
     // uncomment below and update the code to test the property group
-    //var instane = new SquareConnect.UpdateCustomerGroupRequest();
+    //var instance = new SquareConnect.UpdateCustomerGroupRequest();
     //expect(instance).to.be();
   });
 });

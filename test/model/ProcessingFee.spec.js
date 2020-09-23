@@ -20,23 +20,23 @@ describe('ProcessingFee', function() {
 
   it('should create an instance of ProcessingFee', function() {
     // uncomment below and update the code to test ProcessingFee
-    //var instane = new SquareConnect.ProcessingFee();
+    //var instance = new SquareConnect.ProcessingFee();
     //expect(instance).to.be.a(SquareConnect.ProcessingFee);
   });
 
   it('should have the property effectiveAt (base name: "effective_at")', function() {
     // uncomment below and update the code to test the property effectiveAt
-    //var instane = new SquareConnect.ProcessingFee();
+    //var instance = new SquareConnect.ProcessingFee();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.ProcessingFee();
+    //var instance = new SquareConnect.ProcessingFee();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.ProcessingFee();
+    //var instance = new SquareConnect.ProcessingFee();
     //expect(instance).to.be();
   });
 });

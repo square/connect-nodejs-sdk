@@ -19,7 +19,7 @@ describe('EcomVisibility', function() {
 
   it('should create an instance of EcomVisibility', function() {
     // uncomment below and update the code to test EcomVisibility
-    //var instane = new SquareConnect.EcomVisibility();
+    //var instance = new SquareConnect.EcomVisibility();
     //expect(instance).to.be.a(SquareConnect.EcomVisibility);
   });
 

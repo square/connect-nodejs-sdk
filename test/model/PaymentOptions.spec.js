@@ -20,13 +20,13 @@ describe('PaymentOptions', function() {
 
   it('should create an instance of PaymentOptions', function() {
     // uncomment below and update the code to test PaymentOptions
-    //var instane = new SquareConnect.PaymentOptions();
+    //var instance = new SquareConnect.PaymentOptions();
     //expect(instance).to.be.a(SquareConnect.PaymentOptions);
   });
 
   it('should have the property autocomplete (base name: "autocomplete")', function() {
     // uncomment below and update the code to test the property autocomplete
-    //var instane = new SquareConnect.PaymentOptions();
+    //var instance = new SquareConnect.PaymentOptions();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('GetDeviceCodeRequest', function() {
 
   it('should create an instance of GetDeviceCodeRequest', function() {
     // uncomment below and update the code to test GetDeviceCodeRequest
-    //var instane = new SquareConnect.GetDeviceCodeRequest();
+    //var instance = new SquareConnect.GetDeviceCodeRequest();
     //expect(instance).to.be.a(SquareConnect.GetDeviceCodeRequest);
   });
 

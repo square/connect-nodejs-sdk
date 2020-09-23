@@ -19,7 +19,7 @@ describe('CatalogQueryFilteredItemsStockLevel', function() {
 
   it('should create an instance of CatalogQueryFilteredItemsStockLevel', function() {
     // uncomment below and update the code to test CatalogQueryFilteredItemsStockLevel
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsStockLevel();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsStockLevel();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryFilteredItemsStockLevel);
   });
 

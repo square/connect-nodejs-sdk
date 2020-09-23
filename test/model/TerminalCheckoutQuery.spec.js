@@ -20,18 +20,18 @@ describe('TerminalCheckoutQuery', function() {
 
   it('should create an instance of TerminalCheckoutQuery', function() {
     // uncomment below and update the code to test TerminalCheckoutQuery
-    //var instane = new SquareConnect.TerminalCheckoutQuery();
+    //var instance = new SquareConnect.TerminalCheckoutQuery();
     //expect(instance).to.be.a(SquareConnect.TerminalCheckoutQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.TerminalCheckoutQuery();
+    //var instance = new SquareConnect.TerminalCheckoutQuery();
     //expect(instance).to.be();
   });
   it('should have the property sort (base name: "sort")', function() {
     // uncomment below and update the code to test the property sort
-    //var instane = new SquareConnect.TerminalCheckoutQuery();
+    //var instance = new SquareConnect.TerminalCheckoutQuery();
     //expect(instance).to.be();
   });
 });

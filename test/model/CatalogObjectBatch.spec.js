@@ -21,13 +21,13 @@ describe('CatalogObjectBatch', function() {
 
   it('should create an instance of CatalogObjectBatch', function() {
     // uncomment below and update the code to test CatalogObjectBatch
-    //var instane = new SquareConnect.CatalogObjectBatch();
+    //var instance = new SquareConnect.CatalogObjectBatch();
     //expect(instance).to.be.a(SquareConnect.CatalogObjectBatch);
   });
 
   it('should have the property objects (base name: "objects")', function() {
     // uncomment below and update the code to test the property objects
-    //var instane = new SquareConnect.CatalogObjectBatch();
+    //var instance = new SquareConnect.CatalogObjectBatch();
     //expect(instance).to.be();
   });
 });

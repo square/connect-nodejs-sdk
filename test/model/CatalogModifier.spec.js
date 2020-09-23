@@ -21,18 +21,18 @@ describe('CatalogModifier', function() {
 
   it('should create an instance of CatalogModifier', function() {
     // uncomment below and update the code to test CatalogModifier
-    //var instane = new SquareConnect.CatalogModifier();
+    //var instance = new SquareConnect.CatalogModifier();
     //expect(instance).to.be.a(SquareConnect.CatalogModifier);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogModifier();
+    //var instance = new SquareConnect.CatalogModifier();
     //expect(instance).to.be();
   });
   it('should have the property priceMoney (base name: "price_money")', function() {
     // uncomment below and update the code to test the property priceMoney
-    //var instane = new SquareConnect.CatalogModifier();
+    //var instance = new SquareConnect.CatalogModifier();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('V1ListBankAccountsRequest', function() {
 
   it('should create an instance of V1ListBankAccountsRequest', function() {
     // uncomment below and update the code to test V1ListBankAccountsRequest
-    //var instane = new SquareConnect.V1ListBankAccountsRequest();
+    //var instance = new SquareConnect.V1ListBankAccountsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListBankAccountsRequest);
   });
 

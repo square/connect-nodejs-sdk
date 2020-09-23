@@ -20,23 +20,23 @@ describe('BatchChangeInventoryRequest', function() {
 
   it('should create an instance of BatchChangeInventoryRequest', function() {
     // uncomment below and update the code to test BatchChangeInventoryRequest
-    //var instane = new SquareConnect.BatchChangeInventoryRequest();
+    //var instance = new SquareConnect.BatchChangeInventoryRequest();
     //expect(instance).to.be.a(SquareConnect.BatchChangeInventoryRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.BatchChangeInventoryRequest();
+    //var instance = new SquareConnect.BatchChangeInventoryRequest();
     //expect(instance).to.be();
   });
   it('should have the property changes (base name: "changes")', function() {
     // uncomment below and update the code to test the property changes
-    //var instane = new SquareConnect.BatchChangeInventoryRequest();
+    //var instance = new SquareConnect.BatchChangeInventoryRequest();
     //expect(instance).to.be();
   });
   it('should have the property ignoreUnchangedCounts (base name: "ignore_unchanged_counts")', function() {
     // uncomment below and update the code to test the property ignoreUnchangedCounts
-    //var instane = new SquareConnect.BatchChangeInventoryRequest();
+    //var instance = new SquareConnect.BatchChangeInventoryRequest();
     //expect(instance).to.be();
   });
 });

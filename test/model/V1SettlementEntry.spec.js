@@ -21,28 +21,28 @@ describe('V1SettlementEntry', function() {
 
   it('should create an instance of V1SettlementEntry', function() {
     // uncomment below and update the code to test V1SettlementEntry
-    //var instane = new SquareConnect.V1SettlementEntry();
+    //var instance = new SquareConnect.V1SettlementEntry();
     //expect(instance).to.be.a(SquareConnect.V1SettlementEntry);
   });
 
   it('should have the property paymentId (base name: "payment_id")', function() {
     // uncomment below and update the code to test the property paymentId
-    //var instane = new SquareConnect.V1SettlementEntry();
+    //var instance = new SquareConnect.V1SettlementEntry();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.V1SettlementEntry();
+    //var instance = new SquareConnect.V1SettlementEntry();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.V1SettlementEntry();
+    //var instance = new SquareConnect.V1SettlementEntry();
     //expect(instance).to.be();
   });
   it('should have the property feeMoney (base name: "fee_money")', function() {
     // uncomment below and update the code to test the property feeMoney
-    //var instane = new SquareConnect.V1SettlementEntry();
+    //var instance = new SquareConnect.V1SettlementEntry();
     //expect(instance).to.be();
   });
 });

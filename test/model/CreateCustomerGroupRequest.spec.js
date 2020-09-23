@@ -20,18 +20,18 @@ describe('CreateCustomerGroupRequest', function() {
 
   it('should create an instance of CreateCustomerGroupRequest', function() {
     // uncomment below and update the code to test CreateCustomerGroupRequest
-    //var instane = new SquareConnect.CreateCustomerGroupRequest();
+    //var instance = new SquareConnect.CreateCustomerGroupRequest();
     //expect(instance).to.be.a(SquareConnect.CreateCustomerGroupRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateCustomerGroupRequest();
+    //var instance = new SquareConnect.CreateCustomerGroupRequest();
     //expect(instance).to.be();
   });
   it('should have the property group (base name: "group")', function() {
     // uncomment below and update the code to test the property group
-    //var instane = new SquareConnect.CreateCustomerGroupRequest();
+    //var instance = new SquareConnect.CreateCustomerGroupRequest();
     //expect(instance).to.be();
   });
 });

@@ -21,23 +21,23 @@ describe('DeleteCatalogObjectResponse', function() {
 
   it('should create an instance of DeleteCatalogObjectResponse', function() {
     // uncomment below and update the code to test DeleteCatalogObjectResponse
-    //var instane = new SquareConnect.DeleteCatalogObjectResponse();
+    //var instance = new SquareConnect.DeleteCatalogObjectResponse();
     //expect(instance).to.be.a(SquareConnect.DeleteCatalogObjectResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.DeleteCatalogObjectResponse();
+    //var instance = new SquareConnect.DeleteCatalogObjectResponse();
     //expect(instance).to.be();
   });
   it('should have the property deletedObjectIds (base name: "deleted_object_ids")', function() {
     // uncomment below and update the code to test the property deletedObjectIds
-    //var instane = new SquareConnect.DeleteCatalogObjectResponse();
+    //var instance = new SquareConnect.DeleteCatalogObjectResponse();
     //expect(instance).to.be();
   });
   it('should have the property deletedAt (base name: "deleted_at")', function() {
     // uncomment below and update the code to test the property deletedAt
-    //var instane = new SquareConnect.DeleteCatalogObjectResponse();
+    //var instance = new SquareConnect.DeleteCatalogObjectResponse();
     //expect(instance).to.be();
   });
 });

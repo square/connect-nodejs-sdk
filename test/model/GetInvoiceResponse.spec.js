@@ -20,18 +20,18 @@ describe('GetInvoiceResponse', function() {
 
   it('should create an instance of GetInvoiceResponse', function() {
     // uncomment below and update the code to test GetInvoiceResponse
-    //var instane = new SquareConnect.GetInvoiceResponse();
+    //var instance = new SquareConnect.GetInvoiceResponse();
     //expect(instance).to.be.a(SquareConnect.GetInvoiceResponse);
   });
 
   it('should have the property invoice (base name: "invoice")', function() {
     // uncomment below and update the code to test the property invoice
-    //var instane = new SquareConnect.GetInvoiceResponse();
+    //var instance = new SquareConnect.GetInvoiceResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.GetInvoiceResponse();
+    //var instance = new SquareConnect.GetInvoiceResponse();
     //expect(instance).to.be();
   });
 });

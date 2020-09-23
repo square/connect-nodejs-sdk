@@ -20,7 +20,7 @@ describe('InventoryAlertType', function() {
 
   it('should create an instance of InventoryAlertType', function() {
     // uncomment below and update the code to test InventoryAlertType
-    //var instane = new SquareConnect.InventoryAlertType();
+    //var instance = new SquareConnect.InventoryAlertType();
     //expect(instance).to.be.a(SquareConnect.InventoryAlertType);
   });
 

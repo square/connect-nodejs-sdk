@@ -20,18 +20,18 @@ describe('CreateShiftRequest', function() {
 
   it('should create an instance of CreateShiftRequest', function() {
     // uncomment below and update the code to test CreateShiftRequest
-    //var instane = new SquareConnect.CreateShiftRequest();
+    //var instance = new SquareConnect.CreateShiftRequest();
     //expect(instance).to.be.a(SquareConnect.CreateShiftRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateShiftRequest();
+    //var instance = new SquareConnect.CreateShiftRequest();
     //expect(instance).to.be();
   });
   it('should have the property shift (base name: "shift")', function() {
     // uncomment below and update the code to test the property shift
-    //var instane = new SquareConnect.CreateShiftRequest();
+    //var instance = new SquareConnect.CreateShiftRequest();
     //expect(instance).to.be();
   });
 });

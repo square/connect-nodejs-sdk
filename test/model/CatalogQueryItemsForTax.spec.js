@@ -21,13 +21,13 @@ describe('CatalogQueryItemsForTax', function() {
 
   it('should create an instance of CatalogQueryItemsForTax', function() {
     // uncomment below and update the code to test CatalogQueryItemsForTax
-    //var instane = new SquareConnect.CatalogQueryItemsForTax();
+    //var instance = new SquareConnect.CatalogQueryItemsForTax();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryItemsForTax);
   });
 
   it('should have the property taxIds (base name: "tax_ids")', function() {
     // uncomment below and update the code to test the property taxIds
-    //var instane = new SquareConnect.CatalogQueryItemsForTax();
+    //var instance = new SquareConnect.CatalogQueryItemsForTax();
     //expect(instance).to.be();
   });
 });

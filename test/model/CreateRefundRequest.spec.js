@@ -21,28 +21,28 @@ describe('CreateRefundRequest', function() {
 
   it('should create an instance of CreateRefundRequest', function() {
     // uncomment below and update the code to test CreateRefundRequest
-    //var instane = new SquareConnect.CreateRefundRequest();
+    //var instance = new SquareConnect.CreateRefundRequest();
     //expect(instance).to.be.a(SquareConnect.CreateRefundRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateRefundRequest();
+    //var instance = new SquareConnect.CreateRefundRequest();
     //expect(instance).to.be();
   });
   it('should have the property tenderId (base name: "tender_id")', function() {
     // uncomment below and update the code to test the property tenderId
-    //var instane = new SquareConnect.CreateRefundRequest();
+    //var instance = new SquareConnect.CreateRefundRequest();
     //expect(instance).to.be();
   });
   it('should have the property reason (base name: "reason")', function() {
     // uncomment below and update the code to test the property reason
-    //var instane = new SquareConnect.CreateRefundRequest();
+    //var instance = new SquareConnect.CreateRefundRequest();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.CreateRefundRequest();
+    //var instance = new SquareConnect.CreateRefundRequest();
     //expect(instance).to.be();
   });
 });

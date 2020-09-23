@@ -20,13 +20,13 @@ describe('CancelInvoiceRequest', function() {
 
   it('should create an instance of CancelInvoiceRequest', function() {
     // uncomment below and update the code to test CancelInvoiceRequest
-    //var instane = new SquareConnect.CancelInvoiceRequest();
+    //var instance = new SquareConnect.CancelInvoiceRequest();
     //expect(instance).to.be.a(SquareConnect.CancelInvoiceRequest);
   });
 
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.CancelInvoiceRequest();
+    //var instance = new SquareConnect.CancelInvoiceRequest();
     //expect(instance).to.be();
   });
 });

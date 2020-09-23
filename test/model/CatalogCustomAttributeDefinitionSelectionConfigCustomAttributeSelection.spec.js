@@ -20,18 +20,18 @@ describe('CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelectio
 
   it('should create an instance of CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection();
     //expect(instance).to.be();
   });
 });

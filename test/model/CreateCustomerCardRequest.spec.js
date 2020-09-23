@@ -21,23 +21,23 @@ describe('CreateCustomerCardRequest', function() {
 
   it('should create an instance of CreateCustomerCardRequest', function() {
     // uncomment below and update the code to test CreateCustomerCardRequest
-    //var instane = new SquareConnect.CreateCustomerCardRequest();
+    //var instance = new SquareConnect.CreateCustomerCardRequest();
     //expect(instance).to.be.a(SquareConnect.CreateCustomerCardRequest);
   });
 
   it('should have the property cardNonce (base name: "card_nonce")', function() {
     // uncomment below and update the code to test the property cardNonce
-    //var instane = new SquareConnect.CreateCustomerCardRequest();
+    //var instance = new SquareConnect.CreateCustomerCardRequest();
     //expect(instance).to.be();
   });
   it('should have the property billingAddress (base name: "billing_address")', function() {
     // uncomment below and update the code to test the property billingAddress
-    //var instane = new SquareConnect.CreateCustomerCardRequest();
+    //var instance = new SquareConnect.CreateCustomerCardRequest();
     //expect(instance).to.be();
   });
   it('should have the property cardholderName (base name: "cardholder_name")', function() {
     // uncomment below and update the code to test the property cardholderName
-    //var instane = new SquareConnect.CreateCustomerCardRequest();
+    //var instance = new SquareConnect.CreateCustomerCardRequest();
     //expect(instance).to.be();
   });
 });

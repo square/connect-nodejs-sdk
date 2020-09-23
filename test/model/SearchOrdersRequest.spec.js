@@ -20,33 +20,33 @@ describe('SearchOrdersRequest', function() {
 
   it('should create an instance of SearchOrdersRequest', function() {
     // uncomment below and update the code to test SearchOrdersRequest
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersRequest);
   });
 
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be();
   });
   it('should have the property query (base name: "query")', function() {
     // uncomment below and update the code to test the property query
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be();
   });
   it('should have the property returnEntries (base name: "return_entries")', function() {
     // uncomment below and update the code to test the property returnEntries
-    //var instane = new SquareConnect.SearchOrdersRequest();
+    //var instance = new SquareConnect.SearchOrdersRequest();
     //expect(instance).to.be();
   });
 });

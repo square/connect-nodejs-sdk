@@ -20,38 +20,38 @@ describe('LoyaltyProgramRewardDefinition', function() {
 
   it('should create an instance of LoyaltyProgramRewardDefinition', function() {
     // uncomment below and update the code to test LoyaltyProgramRewardDefinition
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramRewardDefinition);
   });
 
   it('should have the property scope (base name: "scope")', function() {
     // uncomment below and update the code to test the property scope
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
   it('should have the property discountType (base name: "discount_type")', function() {
     // uncomment below and update the code to test the property discountType
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
   it('should have the property percentageDiscount (base name: "percentage_discount")', function() {
     // uncomment below and update the code to test the property percentageDiscount
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectIds (base name: "catalog_object_ids")', function() {
     // uncomment below and update the code to test the property catalogObjectIds
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
   it('should have the property fixedDiscountMoney (base name: "fixed_discount_money")', function() {
     // uncomment below and update the code to test the property fixedDiscountMoney
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
   it('should have the property maxDiscountMoney (base name: "max_discount_money")', function() {
     // uncomment below and update the code to test the property maxDiscountMoney
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinition();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinition();
     //expect(instance).to.be();
   });
 });

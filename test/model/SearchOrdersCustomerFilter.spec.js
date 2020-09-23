@@ -20,13 +20,13 @@ describe('SearchOrdersCustomerFilter', function() {
 
   it('should create an instance of SearchOrdersCustomerFilter', function() {
     // uncomment below and update the code to test SearchOrdersCustomerFilter
-    //var instane = new SquareConnect.SearchOrdersCustomerFilter();
+    //var instance = new SquareConnect.SearchOrdersCustomerFilter();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersCustomerFilter);
   });
 
   it('should have the property customerIds (base name: "customer_ids")', function() {
     // uncomment below and update the code to test the property customerIds
-    //var instane = new SquareConnect.SearchOrdersCustomerFilter();
+    //var instance = new SquareConnect.SearchOrdersCustomerFilter();
     //expect(instance).to.be();
   });
 });

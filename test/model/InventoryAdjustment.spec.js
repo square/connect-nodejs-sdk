@@ -20,93 +20,93 @@ describe('InventoryAdjustment', function() {
 
   it('should create an instance of InventoryAdjustment', function() {
     // uncomment below and update the code to test InventoryAdjustment
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be.a(SquareConnect.InventoryAdjustment);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property fromState (base name: "from_state")', function() {
     // uncomment below and update the code to test the property fromState
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property toState (base name: "to_state")', function() {
     // uncomment below and update the code to test the property toState
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectType (base name: "catalog_object_type")', function() {
     // uncomment below and update the code to test the property catalogObjectType
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property quantity (base name: "quantity")', function() {
     // uncomment below and update the code to test the property quantity
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property totalPriceMoney (base name: "total_price_money")', function() {
     // uncomment below and update the code to test the property totalPriceMoney
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property occurredAt (base name: "occurred_at")', function() {
     // uncomment below and update the code to test the property occurredAt
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property source (base name: "source")', function() {
     // uncomment below and update the code to test the property source
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property employeeId (base name: "employee_id")', function() {
     // uncomment below and update the code to test the property employeeId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property transactionId (base name: "transaction_id")', function() {
     // uncomment below and update the code to test the property transactionId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property refundId (base name: "refund_id")', function() {
     // uncomment below and update the code to test the property refundId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property purchaseOrderId (base name: "purchase_order_id")', function() {
     // uncomment below and update the code to test the property purchaseOrderId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property goodsReceiptId (base name: "goods_receipt_id")', function() {
     // uncomment below and update the code to test the property goodsReceiptId
-    //var instane = new SquareConnect.InventoryAdjustment();
+    //var instance = new SquareConnect.InventoryAdjustment();
     //expect(instance).to.be();
   });
 });

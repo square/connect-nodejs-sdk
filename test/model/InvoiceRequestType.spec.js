@@ -19,7 +19,7 @@ describe('InvoiceRequestType', function() {
 
   it('should create an instance of InvoiceRequestType', function() {
     // uncomment below and update the code to test InvoiceRequestType
-    //var instane = new SquareConnect.InvoiceRequestType();
+    //var instance = new SquareConnect.InvoiceRequestType();
     //expect(instance).to.be.a(SquareConnect.InvoiceRequestType);
   });
 

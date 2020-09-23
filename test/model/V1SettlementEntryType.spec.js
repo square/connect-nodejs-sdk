@@ -19,7 +19,7 @@ describe('V1SettlementEntryType', function() {
 
   it('should create an instance of V1SettlementEntryType', function() {
     // uncomment below and update the code to test V1SettlementEntryType
-    //var instane = new SquareConnect.V1SettlementEntryType();
+    //var instance = new SquareConnect.V1SettlementEntryType();
     //expect(instance).to.be.a(SquareConnect.V1SettlementEntryType);
   });
 

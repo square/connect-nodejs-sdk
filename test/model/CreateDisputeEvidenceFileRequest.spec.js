@@ -20,23 +20,23 @@ describe('CreateDisputeEvidenceFileRequest', function() {
 
   it('should create an instance of CreateDisputeEvidenceFileRequest', function() {
     // uncomment below and update the code to test CreateDisputeEvidenceFileRequest
-    //var instane = new SquareConnect.CreateDisputeEvidenceFileRequest();
+    //var instance = new SquareConnect.CreateDisputeEvidenceFileRequest();
     //expect(instance).to.be.a(SquareConnect.CreateDisputeEvidenceFileRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateDisputeEvidenceFileRequest();
+    //var instance = new SquareConnect.CreateDisputeEvidenceFileRequest();
     //expect(instance).to.be();
   });
   it('should have the property evidenceType (base name: "evidence_type")', function() {
     // uncomment below and update the code to test the property evidenceType
-    //var instane = new SquareConnect.CreateDisputeEvidenceFileRequest();
+    //var instance = new SquareConnect.CreateDisputeEvidenceFileRequest();
     //expect(instance).to.be();
   });
   it('should have the property contentType (base name: "content_type")', function() {
     // uncomment below and update the code to test the property contentType
-    //var instane = new SquareConnect.CreateDisputeEvidenceFileRequest();
+    //var instance = new SquareConnect.CreateDisputeEvidenceFileRequest();
     //expect(instance).to.be();
   });
 });

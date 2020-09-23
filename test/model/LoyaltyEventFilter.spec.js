@@ -20,33 +20,33 @@ describe('LoyaltyEventFilter', function() {
 
   it('should create an instance of LoyaltyEventFilter', function() {
     // uncomment below and update the code to test LoyaltyEventFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventFilter);
   });
 
   it('should have the property loyaltyAccountFilter (base name: "loyalty_account_filter")', function() {
     // uncomment below and update the code to test the property loyaltyAccountFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be();
   });
   it('should have the property typeFilter (base name: "type_filter")', function() {
     // uncomment below and update the code to test the property typeFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be();
   });
   it('should have the property dateTimeFilter (base name: "date_time_filter")', function() {
     // uncomment below and update the code to test the property dateTimeFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be();
   });
   it('should have the property locationFilter (base name: "location_filter")', function() {
     // uncomment below and update the code to test the property locationFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be();
   });
   it('should have the property orderFilter (base name: "order_filter")', function() {
     // uncomment below and update the code to test the property orderFilter
-    //var instane = new SquareConnect.LoyaltyEventFilter();
+    //var instance = new SquareConnect.LoyaltyEventFilter();
     //expect(instance).to.be();
   });
 });

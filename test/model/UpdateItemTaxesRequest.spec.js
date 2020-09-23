@@ -21,23 +21,23 @@ describe('UpdateItemTaxesRequest', function() {
 
   it('should create an instance of UpdateItemTaxesRequest', function() {
     // uncomment below and update the code to test UpdateItemTaxesRequest
-    //var instane = new SquareConnect.UpdateItemTaxesRequest();
+    //var instance = new SquareConnect.UpdateItemTaxesRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateItemTaxesRequest);
   });
 
   it('should have the property itemIds (base name: "item_ids")', function() {
     // uncomment below and update the code to test the property itemIds
-    //var instane = new SquareConnect.UpdateItemTaxesRequest();
+    //var instance = new SquareConnect.UpdateItemTaxesRequest();
     //expect(instance).to.be();
   });
   it('should have the property taxesToEnable (base name: "taxes_to_enable")', function() {
     // uncomment below and update the code to test the property taxesToEnable
-    //var instane = new SquareConnect.UpdateItemTaxesRequest();
+    //var instance = new SquareConnect.UpdateItemTaxesRequest();
     //expect(instance).to.be();
   });
   it('should have the property taxesToDisable (base name: "taxes_to_disable")', function() {
     // uncomment below and update the code to test the property taxesToDisable
-    //var instane = new SquareConnect.UpdateItemTaxesRequest();
+    //var instance = new SquareConnect.UpdateItemTaxesRequest();
     //expect(instance).to.be();
   });
 });

@@ -21,13 +21,13 @@ describe('CustomerPreferences', function() {
 
   it('should create an instance of CustomerPreferences', function() {
     // uncomment below and update the code to test CustomerPreferences
-    //var instane = new SquareConnect.CustomerPreferences();
+    //var instance = new SquareConnect.CustomerPreferences();
     //expect(instance).to.be.a(SquareConnect.CustomerPreferences);
   });
 
   it('should have the property emailUnsubscribed (base name: "email_unsubscribed")', function() {
     // uncomment below and update the code to test the property emailUnsubscribed
-    //var instane = new SquareConnect.CustomerPreferences();
+    //var instance = new SquareConnect.CustomerPreferences();
     //expect(instance).to.be();
   });
 });

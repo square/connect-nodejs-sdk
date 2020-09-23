@@ -20,23 +20,23 @@ describe('UpdateOrderRequest', function() {
 
   it('should create an instance of UpdateOrderRequest', function() {
     // uncomment below and update the code to test UpdateOrderRequest
-    //var instane = new SquareConnect.UpdateOrderRequest();
+    //var instance = new SquareConnect.UpdateOrderRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateOrderRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.UpdateOrderRequest();
+    //var instance = new SquareConnect.UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property fieldsToClear (base name: "fields_to_clear")', function() {
     // uncomment below and update the code to test the property fieldsToClear
-    //var instane = new SquareConnect.UpdateOrderRequest();
+    //var instance = new SquareConnect.UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.UpdateOrderRequest();
+    //var instance = new SquareConnect.UpdateOrderRequest();
     //expect(instance).to.be();
   });
 });

@@ -21,53 +21,53 @@ describe('V1Timecard', function() {
 
   it('should create an instance of V1Timecard', function() {
     // uncomment below and update the code to test V1Timecard
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be.a(SquareConnect.V1Timecard);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property employeeId (base name: "employee_id")', function() {
     // uncomment below and update the code to test the property employeeId
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property deleted (base name: "deleted")', function() {
     // uncomment below and update the code to test the property deleted
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property clockinTime (base name: "clockin_time")', function() {
     // uncomment below and update the code to test the property clockinTime
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property clockoutTime (base name: "clockout_time")', function() {
     // uncomment below and update the code to test the property clockoutTime
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property clockinLocationId (base name: "clockin_location_id")', function() {
     // uncomment below and update the code to test the property clockinLocationId
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property clockoutLocationId (base name: "clockout_location_id")', function() {
     // uncomment below and update the code to test the property clockoutLocationId
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.V1Timecard();
+    //var instance = new SquareConnect.V1Timecard();
     //expect(instance).to.be();
   });
 });

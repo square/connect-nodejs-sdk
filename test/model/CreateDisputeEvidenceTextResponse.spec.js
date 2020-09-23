@@ -20,18 +20,18 @@ describe('CreateDisputeEvidenceTextResponse', function() {
 
   it('should create an instance of CreateDisputeEvidenceTextResponse', function() {
     // uncomment below and update the code to test CreateDisputeEvidenceTextResponse
-    //var instane = new SquareConnect.CreateDisputeEvidenceTextResponse();
+    //var instance = new SquareConnect.CreateDisputeEvidenceTextResponse();
     //expect(instance).to.be.a(SquareConnect.CreateDisputeEvidenceTextResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateDisputeEvidenceTextResponse();
+    //var instance = new SquareConnect.CreateDisputeEvidenceTextResponse();
     //expect(instance).to.be();
   });
   it('should have the property evidence (base name: "evidence")', function() {
     // uncomment below and update the code to test the property evidence
-    //var instane = new SquareConnect.CreateDisputeEvidenceTextResponse();
+    //var instance = new SquareConnect.CreateDisputeEvidenceTextResponse();
     //expect(instance).to.be();
   });
 });

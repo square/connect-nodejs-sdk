@@ -20,7 +20,7 @@ describe('V1RetrieveCashDrawerShiftRequest', function() {
 
   it('should create an instance of V1RetrieveCashDrawerShiftRequest', function() {
     // uncomment below and update the code to test V1RetrieveCashDrawerShiftRequest
-    //var instane = new SquareConnect.V1RetrieveCashDrawerShiftRequest();
+    //var instance = new SquareConnect.V1RetrieveCashDrawerShiftRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrieveCashDrawerShiftRequest);
   });
 

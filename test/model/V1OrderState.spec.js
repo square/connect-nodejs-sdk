@@ -19,7 +19,7 @@ describe('V1OrderState', function() {
 
   it('should create an instance of V1OrderState', function() {
     // uncomment below and update the code to test V1OrderState
-    //var instane = new SquareConnect.V1OrderState();
+    //var instance = new SquareConnect.V1OrderState();
     //expect(instance).to.be.a(SquareConnect.V1OrderState);
   });
 

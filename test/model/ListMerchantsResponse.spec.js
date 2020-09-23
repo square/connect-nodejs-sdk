@@ -20,23 +20,23 @@ describe('ListMerchantsResponse', function() {
 
   it('should create an instance of ListMerchantsResponse', function() {
     // uncomment below and update the code to test ListMerchantsResponse
-    //var instane = new SquareConnect.ListMerchantsResponse();
+    //var instance = new SquareConnect.ListMerchantsResponse();
     //expect(instance).to.be.a(SquareConnect.ListMerchantsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListMerchantsResponse();
+    //var instance = new SquareConnect.ListMerchantsResponse();
     //expect(instance).to.be();
   });
   it('should have the property merchant (base name: "merchant")', function() {
     // uncomment below and update the code to test the property merchant
-    //var instane = new SquareConnect.ListMerchantsResponse();
+    //var instance = new SquareConnect.ListMerchantsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListMerchantsResponse();
+    //var instance = new SquareConnect.ListMerchantsResponse();
     //expect(instance).to.be();
   });
 });

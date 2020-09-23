@@ -20,23 +20,23 @@ describe('ListCashDrawerShiftEventsResponse', function() {
 
   it('should create an instance of ListCashDrawerShiftEventsResponse', function() {
     // uncomment below and update the code to test ListCashDrawerShiftEventsResponse
-    //var instane = new SquareConnect.ListCashDrawerShiftEventsResponse();
+    //var instance = new SquareConnect.ListCashDrawerShiftEventsResponse();
     //expect(instance).to.be.a(SquareConnect.ListCashDrawerShiftEventsResponse);
   });
 
   it('should have the property events (base name: "events")', function() {
     // uncomment below and update the code to test the property events
-    //var instane = new SquareConnect.ListCashDrawerShiftEventsResponse();
+    //var instance = new SquareConnect.ListCashDrawerShiftEventsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCashDrawerShiftEventsResponse();
+    //var instance = new SquareConnect.ListCashDrawerShiftEventsResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListCashDrawerShiftEventsResponse();
+    //var instance = new SquareConnect.ListCashDrawerShiftEventsResponse();
     //expect(instance).to.be();
   });
 });

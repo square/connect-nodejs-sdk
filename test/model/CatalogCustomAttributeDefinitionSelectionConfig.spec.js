@@ -20,18 +20,18 @@ describe('CatalogCustomAttributeDefinitionSelectionConfig', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionSelectionConfig', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionSelectionConfig
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig);
   });
 
   it('should have the property maxAllowedSelections (base name: "max_allowed_selections")', function() {
     // uncomment below and update the code to test the property maxAllowedSelections
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
     //expect(instance).to.be();
   });
   it('should have the property allowedSelections (base name: "allowed_selections")', function() {
     // uncomment below and update the code to test the property allowedSelections
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig();
     //expect(instance).to.be();
   });
 });

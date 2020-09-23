@@ -20,23 +20,23 @@ describe('V1ListEmployeeRolesRequest', function() {
 
   it('should create an instance of V1ListEmployeeRolesRequest', function() {
     // uncomment below and update the code to test V1ListEmployeeRolesRequest
-    //var instane = new SquareConnect.V1ListEmployeeRolesRequest();
+    //var instance = new SquareConnect.V1ListEmployeeRolesRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListEmployeeRolesRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListEmployeeRolesRequest();
+    //var instance = new SquareConnect.V1ListEmployeeRolesRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListEmployeeRolesRequest();
+    //var instance = new SquareConnect.V1ListEmployeeRolesRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListEmployeeRolesRequest();
+    //var instance = new SquareConnect.V1ListEmployeeRolesRequest();
     //expect(instance).to.be();
   });
 });

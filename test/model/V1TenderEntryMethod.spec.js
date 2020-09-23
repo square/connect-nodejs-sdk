@@ -19,7 +19,7 @@ describe('V1TenderEntryMethod', function() {
 
   it('should create an instance of V1TenderEntryMethod', function() {
     // uncomment below and update the code to test V1TenderEntryMethod
-    //var instane = new SquareConnect.V1TenderEntryMethod();
+    //var instance = new SquareConnect.V1TenderEntryMethod();
     //expect(instance).to.be.a(SquareConnect.V1TenderEntryMethod);
   });
 

@@ -20,13 +20,13 @@ describe('V1UpdateCategoryRequest', function() {
 
   it('should create an instance of V1UpdateCategoryRequest', function() {
     // uncomment below and update the code to test V1UpdateCategoryRequest
-    //var instane = new SquareConnect.V1UpdateCategoryRequest();
+    //var instance = new SquareConnect.V1UpdateCategoryRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateCategoryRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1UpdateCategoryRequest();
+    //var instance = new SquareConnect.V1UpdateCategoryRequest();
     //expect(instance).to.be();
   });
 });

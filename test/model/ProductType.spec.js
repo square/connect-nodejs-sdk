@@ -19,7 +19,7 @@ describe('ProductType', function() {
 
   it('should create an instance of ProductType', function() {
     // uncomment below and update the code to test ProductType
-    //var instane = new SquareConnect.ProductType();
+    //var instance = new SquareConnect.ProductType();
     //expect(instance).to.be.a(SquareConnect.ProductType);
   });
 

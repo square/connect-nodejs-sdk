@@ -20,18 +20,18 @@ describe('RetrieveInventoryPhysicalCountResponse', function() {
 
   it('should create an instance of RetrieveInventoryPhysicalCountResponse', function() {
     // uncomment below and update the code to test RetrieveInventoryPhysicalCountResponse
-    //var instane = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
+    //var instance = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryPhysicalCountResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
+    //var instance = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
     //expect(instance).to.be();
   });
   it('should have the property count (base name: "count")', function() {
     // uncomment below and update the code to test the property count
-    //var instane = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
+    //var instance = new SquareConnect.RetrieveInventoryPhysicalCountResponse();
     //expect(instance).to.be();
   });
 });

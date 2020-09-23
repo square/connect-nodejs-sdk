@@ -20,18 +20,18 @@ describe('CreateTerminalCheckoutRequest', function() {
 
   it('should create an instance of CreateTerminalCheckoutRequest', function() {
     // uncomment below and update the code to test CreateTerminalCheckoutRequest
-    //var instane = new SquareConnect.CreateTerminalCheckoutRequest();
+    //var instance = new SquareConnect.CreateTerminalCheckoutRequest();
     //expect(instance).to.be.a(SquareConnect.CreateTerminalCheckoutRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateTerminalCheckoutRequest();
+    //var instance = new SquareConnect.CreateTerminalCheckoutRequest();
     //expect(instance).to.be();
   });
   it('should have the property checkout (base name: "checkout")', function() {
     // uncomment below and update the code to test the property checkout
-    //var instane = new SquareConnect.CreateTerminalCheckoutRequest();
+    //var instance = new SquareConnect.CreateTerminalCheckoutRequest();
     //expect(instance).to.be();
   });
 });

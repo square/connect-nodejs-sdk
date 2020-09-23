@@ -20,13 +20,13 @@ describe('UpdateBreakTypeRequest', function() {
 
   it('should create an instance of UpdateBreakTypeRequest', function() {
     // uncomment below and update the code to test UpdateBreakTypeRequest
-    //var instane = new SquareConnect.UpdateBreakTypeRequest();
+    //var instance = new SquareConnect.UpdateBreakTypeRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateBreakTypeRequest);
   });
 
   it('should have the property breakType (base name: "break_type")', function() {
     // uncomment below and update the code to test the property breakType
-    //var instane = new SquareConnect.UpdateBreakTypeRequest();
+    //var instance = new SquareConnect.UpdateBreakTypeRequest();
     //expect(instance).to.be();
   });
 });

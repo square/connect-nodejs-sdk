@@ -20,18 +20,18 @@ describe('RetrieveDisputeEvidenceResponse', function() {
 
   it('should create an instance of RetrieveDisputeEvidenceResponse', function() {
     // uncomment below and update the code to test RetrieveDisputeEvidenceResponse
-    //var instane = new SquareConnect.RetrieveDisputeEvidenceResponse();
+    //var instance = new SquareConnect.RetrieveDisputeEvidenceResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveDisputeEvidenceResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveDisputeEvidenceResponse();
+    //var instance = new SquareConnect.RetrieveDisputeEvidenceResponse();
     //expect(instance).to.be();
   });
   it('should have the property evidence (base name: "evidence")', function() {
     // uncomment below and update the code to test the property evidence
-    //var instane = new SquareConnect.RetrieveDisputeEvidenceResponse();
+    //var instance = new SquareConnect.RetrieveDisputeEvidenceResponse();
     //expect(instance).to.be();
   });
 });

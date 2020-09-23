@@ -20,13 +20,13 @@ describe('LoyaltyProgramExpirationPolicy', function() {
 
   it('should create an instance of LoyaltyProgramExpirationPolicy', function() {
     // uncomment below and update the code to test LoyaltyProgramExpirationPolicy
-    //var instane = new SquareConnect.LoyaltyProgramExpirationPolicy();
+    //var instance = new SquareConnect.LoyaltyProgramExpirationPolicy();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramExpirationPolicy);
   });
 
   it('should have the property expirationDuration (base name: "expiration_duration")', function() {
     // uncomment below and update the code to test the property expirationDuration
-    //var instane = new SquareConnect.LoyaltyProgramExpirationPolicy();
+    //var instance = new SquareConnect.LoyaltyProgramExpirationPolicy();
     //expect(instance).to.be();
   });
 });

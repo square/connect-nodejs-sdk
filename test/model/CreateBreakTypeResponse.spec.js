@@ -20,18 +20,18 @@ describe('CreateBreakTypeResponse', function() {
 
   it('should create an instance of CreateBreakTypeResponse', function() {
     // uncomment below and update the code to test CreateBreakTypeResponse
-    //var instane = new SquareConnect.CreateBreakTypeResponse();
+    //var instance = new SquareConnect.CreateBreakTypeResponse();
     //expect(instance).to.be.a(SquareConnect.CreateBreakTypeResponse);
   });
 
   it('should have the property breakType (base name: "break_type")', function() {
     // uncomment below and update the code to test the property breakType
-    //var instane = new SquareConnect.CreateBreakTypeResponse();
+    //var instance = new SquareConnect.CreateBreakTypeResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateBreakTypeResponse();
+    //var instance = new SquareConnect.CreateBreakTypeResponse();
     //expect(instance).to.be();
   });
 });

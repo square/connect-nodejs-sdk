@@ -19,7 +19,7 @@ describe('ShiftStatus', function() {
 
   it('should create an instance of ShiftStatus', function() {
     // uncomment below and update the code to test ShiftStatus
-    //var instane = new SquareConnect.ShiftStatus();
+    //var instance = new SquareConnect.ShiftStatus();
     //expect(instance).to.be.a(SquareConnect.ShiftStatus);
   });
 

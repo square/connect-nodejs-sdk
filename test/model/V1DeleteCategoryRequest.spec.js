@@ -20,7 +20,7 @@ describe('V1DeleteCategoryRequest', function() {
 
   it('should create an instance of V1DeleteCategoryRequest', function() {
     // uncomment below and update the code to test V1DeleteCategoryRequest
-    //var instane = new SquareConnect.V1DeleteCategoryRequest();
+    //var instance = new SquareConnect.V1DeleteCategoryRequest();
     //expect(instance).to.be.a(SquareConnect.V1DeleteCategoryRequest);
   });
 

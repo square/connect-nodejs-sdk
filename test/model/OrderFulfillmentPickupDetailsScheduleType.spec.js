@@ -19,7 +19,7 @@ describe('OrderFulfillmentPickupDetailsScheduleType', function() {
 
   it('should create an instance of OrderFulfillmentPickupDetailsScheduleType', function() {
     // uncomment below and update the code to test OrderFulfillmentPickupDetailsScheduleType
-    //var instane = new SquareConnect.OrderFulfillmentPickupDetailsScheduleType();
+    //var instance = new SquareConnect.OrderFulfillmentPickupDetailsScheduleType();
     //expect(instance).to.be.a(SquareConnect.OrderFulfillmentPickupDetailsScheduleType);
   });
 

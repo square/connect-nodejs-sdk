@@ -20,7 +20,7 @@ describe('CompletePaymentRequest', function() {
 
   it('should create an instance of CompletePaymentRequest', function() {
     // uncomment below and update the code to test CompletePaymentRequest
-    //var instane = new SquareConnect.CompletePaymentRequest();
+    //var instance = new SquareConnect.CompletePaymentRequest();
     //expect(instance).to.be.a(SquareConnect.CompletePaymentRequest);
   });
 

@@ -19,7 +19,7 @@ describe('OrderServiceChargeCalculationPhase', function() {
 
   it('should create an instance of OrderServiceChargeCalculationPhase', function() {
     // uncomment below and update the code to test OrderServiceChargeCalculationPhase
-    //var instane = new SquareConnect.OrderServiceChargeCalculationPhase();
+    //var instance = new SquareConnect.OrderServiceChargeCalculationPhase();
     //expect(instance).to.be.a(SquareConnect.OrderServiceChargeCalculationPhase);
   });
 

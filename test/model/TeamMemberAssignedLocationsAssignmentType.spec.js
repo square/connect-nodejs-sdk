@@ -19,7 +19,7 @@ describe('TeamMemberAssignedLocationsAssignmentType', function() {
 
   it('should create an instance of TeamMemberAssignedLocationsAssignmentType', function() {
     // uncomment below and update the code to test TeamMemberAssignedLocationsAssignmentType
-    //var instane = new SquareConnect.TeamMemberAssignedLocationsAssignmentType();
+    //var instance = new SquareConnect.TeamMemberAssignedLocationsAssignmentType();
     //expect(instance).to.be.a(SquareConnect.TeamMemberAssignedLocationsAssignmentType);
   });
 

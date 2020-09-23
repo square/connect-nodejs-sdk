@@ -20,88 +20,88 @@ describe('Invoice', function() {
 
   it('should create an instance of Invoice', function() {
     // uncomment below and update the code to test Invoice
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be.a(SquareConnect.Invoice);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property primaryRecipient (base name: "primary_recipient")', function() {
     // uncomment below and update the code to test the property primaryRecipient
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property paymentRequests (base name: "payment_requests")', function() {
     // uncomment below and update the code to test the property paymentRequests
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property invoiceNumber (base name: "invoice_number")', function() {
     // uncomment below and update the code to test the property invoiceNumber
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property title (base name: "title")', function() {
     // uncomment below and update the code to test the property title
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property description (base name: "description")', function() {
     // uncomment below and update the code to test the property description
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property scheduledAt (base name: "scheduled_at")', function() {
     // uncomment below and update the code to test the property scheduledAt
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property publicUrl (base name: "public_url")', function() {
     // uncomment below and update the code to test the property publicUrl
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property nextPaymentAmountMoney (base name: "next_payment_amount_money")', function() {
     // uncomment below and update the code to test the property nextPaymentAmountMoney
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property timezone (base name: "timezone")', function() {
     // uncomment below and update the code to test the property timezone
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.Invoice();
+    //var instance = new SquareConnect.Invoice();
     //expect(instance).to.be();
   });
 });

@@ -20,13 +20,13 @@ describe('RevokeTokenResponse', function() {
 
   it('should create an instance of RevokeTokenResponse', function() {
     // uncomment below and update the code to test RevokeTokenResponse
-    //var instane = new SquareConnect.RevokeTokenResponse();
+    //var instance = new SquareConnect.RevokeTokenResponse();
     //expect(instance).to.be.a(SquareConnect.RevokeTokenResponse);
   });
 
   it('should have the property success (base name: "success")', function() {
     // uncomment below and update the code to test the property success
-    //var instane = new SquareConnect.RevokeTokenResponse();
+    //var instance = new SquareConnect.RevokeTokenResponse();
     //expect(instance).to.be();
   });
 });

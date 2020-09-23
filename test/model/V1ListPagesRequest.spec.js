@@ -20,7 +20,7 @@ describe('V1ListPagesRequest', function() {
 
   it('should create an instance of V1ListPagesRequest', function() {
     // uncomment below and update the code to test V1ListPagesRequest
-    //var instane = new SquareConnect.V1ListPagesRequest();
+    //var instance = new SquareConnect.V1ListPagesRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListPagesRequest);
   });
 

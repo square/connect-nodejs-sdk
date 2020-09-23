@@ -21,13 +21,13 @@ describe('DeleteCustomerResponse', function() {
 
   it('should create an instance of DeleteCustomerResponse', function() {
     // uncomment below and update the code to test DeleteCustomerResponse
-    //var instane = new SquareConnect.DeleteCustomerResponse();
+    //var instance = new SquareConnect.DeleteCustomerResponse();
     //expect(instance).to.be.a(SquareConnect.DeleteCustomerResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.DeleteCustomerResponse();
+    //var instance = new SquareConnect.DeleteCustomerResponse();
     //expect(instance).to.be();
   });
 });

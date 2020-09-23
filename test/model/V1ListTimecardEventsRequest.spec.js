@@ -20,13 +20,13 @@ describe('V1ListTimecardEventsRequest', function() {
 
   it('should create an instance of V1ListTimecardEventsRequest', function() {
     // uncomment below and update the code to test V1ListTimecardEventsRequest
-    //var instane = new SquareConnect.V1ListTimecardEventsRequest();
+    //var instance = new SquareConnect.V1ListTimecardEventsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListTimecardEventsRequest);
   });
 
   it('should have the property timecardId (base name: "timecard_id")', function() {
     // uncomment below and update the code to test the property timecardId
-    //var instane = new SquareConnect.V1ListTimecardEventsRequest();
+    //var instance = new SquareConnect.V1ListTimecardEventsRequest();
     //expect(instance).to.be();
   });
 });

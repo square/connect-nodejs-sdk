@@ -20,33 +20,33 @@ describe('V1ListRefundsRequest', function() {
 
   it('should create an instance of V1ListRefundsRequest', function() {
     // uncomment below and update the code to test V1ListRefundsRequest
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListRefundsRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListRefundsRequest();
+    //var instance = new SquareConnect.V1ListRefundsRequest();
     //expect(instance).to.be();
   });
 });

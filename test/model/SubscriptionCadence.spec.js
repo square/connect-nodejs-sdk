@@ -19,7 +19,7 @@ describe('SubscriptionCadence', function() {
 
   it('should create an instance of SubscriptionCadence', function() {
     // uncomment below and update the code to test SubscriptionCadence
-    //var instane = new SquareConnect.SubscriptionCadence();
+    //var instance = new SquareConnect.SubscriptionCadence();
     //expect(instance).to.be.a(SquareConnect.SubscriptionCadence);
   });
 

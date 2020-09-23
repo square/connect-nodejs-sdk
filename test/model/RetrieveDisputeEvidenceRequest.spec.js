@@ -20,7 +20,7 @@ describe('RetrieveDisputeEvidenceRequest', function() {
 
   it('should create an instance of RetrieveDisputeEvidenceRequest', function() {
     // uncomment below and update the code to test RetrieveDisputeEvidenceRequest
-    //var instane = new SquareConnect.RetrieveDisputeEvidenceRequest();
+    //var instance = new SquareConnect.RetrieveDisputeEvidenceRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveDisputeEvidenceRequest);
   });
 

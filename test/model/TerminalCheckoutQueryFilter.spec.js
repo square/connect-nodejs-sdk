@@ -20,23 +20,23 @@ describe('TerminalCheckoutQueryFilter', function() {
 
   it('should create an instance of TerminalCheckoutQueryFilter', function() {
     // uncomment below and update the code to test TerminalCheckoutQueryFilter
-    //var instane = new SquareConnect.TerminalCheckoutQueryFilter();
+    //var instance = new SquareConnect.TerminalCheckoutQueryFilter();
     //expect(instance).to.be.a(SquareConnect.TerminalCheckoutQueryFilter);
   });
 
   it('should have the property deviceId (base name: "device_id")', function() {
     // uncomment below and update the code to test the property deviceId
-    //var instane = new SquareConnect.TerminalCheckoutQueryFilter();
+    //var instance = new SquareConnect.TerminalCheckoutQueryFilter();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.TerminalCheckoutQueryFilter();
+    //var instance = new SquareConnect.TerminalCheckoutQueryFilter();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.TerminalCheckoutQueryFilter();
+    //var instance = new SquareConnect.TerminalCheckoutQueryFilter();
     //expect(instance).to.be();
   });
 });

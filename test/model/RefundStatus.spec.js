@@ -20,7 +20,7 @@ describe('RefundStatus', function() {
 
   it('should create an instance of RefundStatus', function() {
     // uncomment below and update the code to test RefundStatus
-    //var instane = new SquareConnect.RefundStatus();
+    //var instance = new SquareConnect.RefundStatus();
     //expect(instance).to.be.a(SquareConnect.RefundStatus);
   });
 

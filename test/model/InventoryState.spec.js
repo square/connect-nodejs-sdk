@@ -19,7 +19,7 @@ describe('InventoryState', function() {
 
   it('should create an instance of InventoryState', function() {
     // uncomment below and update the code to test InventoryState
-    //var instane = new SquareConnect.InventoryState();
+    //var instance = new SquareConnect.InventoryState();
     //expect(instance).to.be.a(SquareConnect.InventoryState);
   });
 

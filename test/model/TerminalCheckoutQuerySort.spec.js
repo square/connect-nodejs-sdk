@@ -20,13 +20,13 @@ describe('TerminalCheckoutQuerySort', function() {
 
   it('should create an instance of TerminalCheckoutQuerySort', function() {
     // uncomment below and update the code to test TerminalCheckoutQuerySort
-    //var instane = new SquareConnect.TerminalCheckoutQuerySort();
+    //var instance = new SquareConnect.TerminalCheckoutQuerySort();
     //expect(instance).to.be.a(SquareConnect.TerminalCheckoutQuerySort);
   });
 
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.TerminalCheckoutQuerySort();
+    //var instance = new SquareConnect.TerminalCheckoutQuerySort();
     //expect(instance).to.be();
   });
 });

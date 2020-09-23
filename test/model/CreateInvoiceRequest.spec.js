@@ -20,18 +20,18 @@ describe('CreateInvoiceRequest', function() {
 
   it('should create an instance of CreateInvoiceRequest', function() {
     // uncomment below and update the code to test CreateInvoiceRequest
-    //var instane = new SquareConnect.CreateInvoiceRequest();
+    //var instance = new SquareConnect.CreateInvoiceRequest();
     //expect(instance).to.be.a(SquareConnect.CreateInvoiceRequest);
   });
 
   it('should have the property invoice (base name: "invoice")', function() {
     // uncomment below and update the code to test the property invoice
-    //var instane = new SquareConnect.CreateInvoiceRequest();
+    //var instance = new SquareConnect.CreateInvoiceRequest();
     //expect(instance).to.be();
   });
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateInvoiceRequest();
+    //var instance = new SquareConnect.CreateInvoiceRequest();
     //expect(instance).to.be();
   });
 });

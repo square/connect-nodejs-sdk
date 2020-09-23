@@ -19,7 +19,7 @@ describe('CatalogCustomAttributeDefinitionType', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionType', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionType
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionType();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionType();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionType);
   });
 

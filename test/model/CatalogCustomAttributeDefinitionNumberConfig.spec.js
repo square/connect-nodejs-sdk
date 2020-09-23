@@ -20,13 +20,13 @@ describe('CatalogCustomAttributeDefinitionNumberConfig', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionNumberConfig', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionNumberConfig
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionNumberConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionNumberConfig();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionNumberConfig);
   });
 
   it('should have the property precision (base name: "precision")', function() {
     // uncomment below and update the code to test the property precision
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionNumberConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionNumberConfig();
     //expect(instance).to.be();
   });
 });

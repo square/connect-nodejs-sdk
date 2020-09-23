@@ -20,7 +20,7 @@ describe('OrderLineItemDiscountType', function() {
 
   it('should create an instance of OrderLineItemDiscountType', function() {
     // uncomment below and update the code to test OrderLineItemDiscountType
-    //var instane = new SquareConnect.OrderLineItemDiscountType();
+    //var instance = new SquareConnect.OrderLineItemDiscountType();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemDiscountType);
   });
 

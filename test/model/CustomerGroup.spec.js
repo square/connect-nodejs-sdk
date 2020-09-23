@@ -20,28 +20,28 @@ describe('CustomerGroup', function() {
 
   it('should create an instance of CustomerGroup', function() {
     // uncomment below and update the code to test CustomerGroup
-    //var instane = new SquareConnect.CustomerGroup();
+    //var instance = new SquareConnect.CustomerGroup();
     //expect(instance).to.be.a(SquareConnect.CustomerGroup);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.CustomerGroup();
+    //var instance = new SquareConnect.CustomerGroup();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CustomerGroup();
+    //var instance = new SquareConnect.CustomerGroup();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.CustomerGroup();
+    //var instance = new SquareConnect.CustomerGroup();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.CustomerGroup();
+    //var instance = new SquareConnect.CustomerGroup();
     //expect(instance).to.be();
   });
 });

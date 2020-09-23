@@ -20,13 +20,13 @@ describe('LoyaltyEventTypeFilter', function() {
 
   it('should create an instance of LoyaltyEventTypeFilter', function() {
     // uncomment below and update the code to test LoyaltyEventTypeFilter
-    //var instane = new SquareConnect.LoyaltyEventTypeFilter();
+    //var instance = new SquareConnect.LoyaltyEventTypeFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventTypeFilter);
   });
 
   it('should have the property types (base name: "types")', function() {
     // uncomment below and update the code to test the property types
-    //var instane = new SquareConnect.LoyaltyEventTypeFilter();
+    //var instance = new SquareConnect.LoyaltyEventTypeFilter();
     //expect(instance).to.be();
   });
 });

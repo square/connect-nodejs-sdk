@@ -21,128 +21,128 @@ describe('V1Payment', function() {
 
   it('should create an instance of V1Payment', function() {
     // uncomment below and update the code to test V1Payment
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be.a(SquareConnect.V1Payment);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property merchantId (base name: "merchant_id")', function() {
     // uncomment below and update the code to test the property merchantId
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property creatorId (base name: "creator_id")', function() {
     // uncomment below and update the code to test the property creatorId
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property device (base name: "device")', function() {
     // uncomment below and update the code to test the property device
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property paymentUrl (base name: "payment_url")', function() {
     // uncomment below and update the code to test the property paymentUrl
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property receiptUrl (base name: "receipt_url")', function() {
     // uncomment below and update the code to test the property receiptUrl
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property inclusiveTaxMoney (base name: "inclusive_tax_money")', function() {
     // uncomment below and update the code to test the property inclusiveTaxMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property additiveTaxMoney (base name: "additive_tax_money")', function() {
     // uncomment below and update the code to test the property additiveTaxMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property taxMoney (base name: "tax_money")', function() {
     // uncomment below and update the code to test the property taxMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property tipMoney (base name: "tip_money")', function() {
     // uncomment below and update the code to test the property tipMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property discountMoney (base name: "discount_money")', function() {
     // uncomment below and update the code to test the property discountMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property totalCollectedMoney (base name: "total_collected_money")', function() {
     // uncomment below and update the code to test the property totalCollectedMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property processingFeeMoney (base name: "processing_fee_money")', function() {
     // uncomment below and update the code to test the property processingFeeMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property netTotalMoney (base name: "net_total_money")', function() {
     // uncomment below and update the code to test the property netTotalMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property refundedMoney (base name: "refunded_money")', function() {
     // uncomment below and update the code to test the property refundedMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property swedishRoundingMoney (base name: "swedish_rounding_money")', function() {
     // uncomment below and update the code to test the property swedishRoundingMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property grossSalesMoney (base name: "gross_sales_money")', function() {
     // uncomment below and update the code to test the property grossSalesMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property netSalesMoney (base name: "net_sales_money")', function() {
     // uncomment below and update the code to test the property netSalesMoney
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property inclusiveTax (base name: "inclusive_tax")', function() {
     // uncomment below and update the code to test the property inclusiveTax
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property additiveTax (base name: "additive_tax")', function() {
     // uncomment below and update the code to test the property additiveTax
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property tender (base name: "tender")', function() {
     // uncomment below and update the code to test the property tender
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property refunds (base name: "refunds")', function() {
     // uncomment below and update the code to test the property refunds
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
   it('should have the property itemizations (base name: "itemizations")', function() {
     // uncomment below and update the code to test the property itemizations
-    //var instane = new SquareConnect.V1Payment();
+    //var instance = new SquareConnect.V1Payment();
     //expect(instance).to.be();
   });
 });

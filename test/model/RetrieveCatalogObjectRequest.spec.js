@@ -21,13 +21,13 @@ describe('RetrieveCatalogObjectRequest', function() {
 
   it('should create an instance of RetrieveCatalogObjectRequest', function() {
     // uncomment below and update the code to test RetrieveCatalogObjectRequest
-    //var instane = new SquareConnect.RetrieveCatalogObjectRequest();
+    //var instance = new SquareConnect.RetrieveCatalogObjectRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveCatalogObjectRequest);
   });
 
   it('should have the property includeRelatedObjects (base name: "include_related_objects")', function() {
     // uncomment below and update the code to test the property includeRelatedObjects
-    //var instane = new SquareConnect.RetrieveCatalogObjectRequest();
+    //var instance = new SquareConnect.RetrieveCatalogObjectRequest();
     //expect(instance).to.be();
   });
 });

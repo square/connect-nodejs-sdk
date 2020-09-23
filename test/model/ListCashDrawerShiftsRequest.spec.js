@@ -20,38 +20,38 @@ describe('ListCashDrawerShiftsRequest', function() {
 
   it('should create an instance of ListCashDrawerShiftsRequest', function() {
     // uncomment below and update the code to test ListCashDrawerShiftsRequest
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be.a(SquareConnect.ListCashDrawerShiftsRequest);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
 });

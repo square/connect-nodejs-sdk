@@ -19,7 +19,7 @@ describe('CardType', function() {
 
   it('should create an instance of CardType', function() {
     // uncomment below and update the code to test CardType
-    //var instane = new SquareConnect.CardType();
+    //var instance = new SquareConnect.CardType();
     //expect(instance).to.be.a(SquareConnect.CardType);
   });
 

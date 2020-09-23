@@ -19,7 +19,7 @@ describe('V1PageCellPlaceholderType', function() {
 
   it('should create an instance of V1PageCellPlaceholderType', function() {
     // uncomment below and update the code to test V1PageCellPlaceholderType
-    //var instane = new SquareConnect.V1PageCellPlaceholderType();
+    //var instance = new SquareConnect.V1PageCellPlaceholderType();
     //expect(instance).to.be.a(SquareConnect.V1PageCellPlaceholderType);
   });
 

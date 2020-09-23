@@ -20,13 +20,13 @@ describe('LoyaltyEventLocationFilter', function() {
 
   it('should create an instance of LoyaltyEventLocationFilter', function() {
     // uncomment below and update the code to test LoyaltyEventLocationFilter
-    //var instane = new SquareConnect.LoyaltyEventLocationFilter();
+    //var instance = new SquareConnect.LoyaltyEventLocationFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventLocationFilter);
   });
 
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.LoyaltyEventLocationFilter();
+    //var instance = new SquareConnect.LoyaltyEventLocationFilter();
     //expect(instance).to.be();
   });
 });

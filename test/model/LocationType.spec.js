@@ -20,7 +20,7 @@ describe('LocationType', function() {
 
   it('should create an instance of LocationType', function() {
     // uncomment below and update the code to test LocationType
-    //var instane = new SquareConnect.LocationType();
+    //var instance = new SquareConnect.LocationType();
     //expect(instance).to.be.a(SquareConnect.LocationType);
   });
 

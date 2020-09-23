@@ -20,18 +20,18 @@ describe('Range', function() {
 
   it('should create an instance of Range', function() {
     // uncomment below and update the code to test Range
-    //var instane = new SquareConnect.Range();
+    //var instance = new SquareConnect.Range();
     //expect(instance).to.be.a(SquareConnect.Range);
   });
 
   it('should have the property min (base name: "min")', function() {
     // uncomment below and update the code to test the property min
-    //var instane = new SquareConnect.Range();
+    //var instance = new SquareConnect.Range();
     //expect(instance).to.be();
   });
   it('should have the property max (base name: "max")', function() {
     // uncomment below and update the code to test the property max
-    //var instane = new SquareConnect.Range();
+    //var instance = new SquareConnect.Range();
     //expect(instance).to.be();
   });
 });

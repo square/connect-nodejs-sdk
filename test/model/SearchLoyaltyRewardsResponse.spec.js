@@ -20,23 +20,23 @@ describe('SearchLoyaltyRewardsResponse', function() {
 
   it('should create an instance of SearchLoyaltyRewardsResponse', function() {
     // uncomment below and update the code to test SearchLoyaltyRewardsResponse
-    //var instane = new SquareConnect.SearchLoyaltyRewardsResponse();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsResponse();
     //expect(instance).to.be.a(SquareConnect.SearchLoyaltyRewardsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.SearchLoyaltyRewardsResponse();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsResponse();
     //expect(instance).to.be();
   });
   it('should have the property rewards (base name: "rewards")', function() {
     // uncomment below and update the code to test the property rewards
-    //var instane = new SquareConnect.SearchLoyaltyRewardsResponse();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchLoyaltyRewardsResponse();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsResponse();
     //expect(instance).to.be();
   });
 });

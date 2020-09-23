@@ -20,13 +20,13 @@ describe('UpdateWageSettingRequest', function() {
 
   it('should create an instance of UpdateWageSettingRequest', function() {
     // uncomment below and update the code to test UpdateWageSettingRequest
-    //var instane = new SquareConnect.UpdateWageSettingRequest();
+    //var instance = new SquareConnect.UpdateWageSettingRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateWageSettingRequest);
   });
 
   it('should have the property wageSetting (base name: "wage_setting")', function() {
     // uncomment below and update the code to test the property wageSetting
-    //var instane = new SquareConnect.UpdateWageSettingRequest();
+    //var instance = new SquareConnect.UpdateWageSettingRequest();
     //expect(instance).to.be();
   });
 });

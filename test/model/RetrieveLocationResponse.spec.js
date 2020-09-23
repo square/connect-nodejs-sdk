@@ -20,18 +20,18 @@ describe('RetrieveLocationResponse', function() {
 
   it('should create an instance of RetrieveLocationResponse', function() {
     // uncomment below and update the code to test RetrieveLocationResponse
-    //var instane = new SquareConnect.RetrieveLocationResponse();
+    //var instance = new SquareConnect.RetrieveLocationResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveLocationResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveLocationResponse();
+    //var instance = new SquareConnect.RetrieveLocationResponse();
     //expect(instance).to.be();
   });
   it('should have the property location (base name: "location")', function() {
     // uncomment below and update the code to test the property location
-    //var instane = new SquareConnect.RetrieveLocationResponse();
+    //var instance = new SquareConnect.RetrieveLocationResponse();
     //expect(instance).to.be();
   });
 });

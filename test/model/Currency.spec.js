@@ -20,7 +20,7 @@ describe('Currency', function() {
 
   it('should create an instance of Currency', function() {
     // uncomment below and update the code to test Currency
-    //var instane = new SquareConnect.Currency();
+    //var instance = new SquareConnect.Currency();
     //expect(instance).to.be.a(SquareConnect.Currency);
   });
 

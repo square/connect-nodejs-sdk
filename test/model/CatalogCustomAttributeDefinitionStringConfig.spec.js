@@ -20,13 +20,13 @@ describe('CatalogCustomAttributeDefinitionStringConfig', function() {
 
   it('should create an instance of CatalogCustomAttributeDefinitionStringConfig', function() {
     // uncomment below and update the code to test CatalogCustomAttributeDefinitionStringConfig
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionStringConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionStringConfig();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeDefinitionStringConfig);
   });
 
   it('should have the property enforceUniqueness (base name: "enforce_uniqueness")', function() {
     // uncomment below and update the code to test the property enforceUniqueness
-    //var instane = new SquareConnect.CatalogCustomAttributeDefinitionStringConfig();
+    //var instance = new SquareConnect.CatalogCustomAttributeDefinitionStringConfig();
     //expect(instance).to.be();
   });
 });

@@ -20,68 +20,68 @@ describe('OrderReturnServiceCharge', function() {
 
   it('should create an instance of OrderReturnServiceCharge', function() {
     // uncomment below and update the code to test OrderReturnServiceCharge
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be.a(SquareConnect.OrderReturnServiceCharge);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property sourceServiceChargeUid (base name: "source_service_charge_uid")', function() {
     // uncomment below and update the code to test the property sourceServiceChargeUid
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property percentage (base name: "percentage")', function() {
     // uncomment below and update the code to test the property percentage
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property totalMoney (base name: "total_money")', function() {
     // uncomment below and update the code to test the property totalMoney
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property totalTaxMoney (base name: "total_tax_money")', function() {
     // uncomment below and update the code to test the property totalTaxMoney
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property calculationPhase (base name: "calculation_phase")', function() {
     // uncomment below and update the code to test the property calculationPhase
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property taxable (base name: "taxable")', function() {
     // uncomment below and update the code to test the property taxable
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
   it('should have the property returnTaxes (base name: "return_taxes")', function() {
     // uncomment below and update the code to test the property returnTaxes
-    //var instane = new SquareConnect.OrderReturnServiceCharge();
+    //var instance = new SquareConnect.OrderReturnServiceCharge();
     //expect(instance).to.be();
   });
 });

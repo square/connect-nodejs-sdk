@@ -19,7 +19,7 @@ describe('WebhookEvents', function() {
 
   it('should create an instance of WebhookEvents', function() {
     // uncomment below and update the code to test WebhookEvents
-    //var instane = new SquareConnect.WebhookEvents();
+    //var instance = new SquareConnect.WebhookEvents();
     //expect(instance).to.be.a(SquareConnect.WebhookEvents);
   });
 

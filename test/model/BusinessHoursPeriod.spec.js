@@ -20,23 +20,23 @@ describe('BusinessHoursPeriod', function() {
 
   it('should create an instance of BusinessHoursPeriod', function() {
     // uncomment below and update the code to test BusinessHoursPeriod
-    //var instane = new SquareConnect.BusinessHoursPeriod();
+    //var instance = new SquareConnect.BusinessHoursPeriod();
     //expect(instance).to.be.a(SquareConnect.BusinessHoursPeriod);
   });
 
   it('should have the property dayOfWeek (base name: "day_of_week")', function() {
     // uncomment below and update the code to test the property dayOfWeek
-    //var instane = new SquareConnect.BusinessHoursPeriod();
+    //var instance = new SquareConnect.BusinessHoursPeriod();
     //expect(instance).to.be();
   });
   it('should have the property startLocalTime (base name: "start_local_time")', function() {
     // uncomment below and update the code to test the property startLocalTime
-    //var instane = new SquareConnect.BusinessHoursPeriod();
+    //var instance = new SquareConnect.BusinessHoursPeriod();
     //expect(instance).to.be();
   });
   it('should have the property endLocalTime (base name: "end_local_time")', function() {
     // uncomment below and update the code to test the property endLocalTime
-    //var instane = new SquareConnect.BusinessHoursPeriod();
+    //var instance = new SquareConnect.BusinessHoursPeriod();
     //expect(instance).to.be();
   });
 });

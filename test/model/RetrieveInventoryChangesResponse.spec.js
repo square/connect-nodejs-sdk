@@ -20,23 +20,23 @@ describe('RetrieveInventoryChangesResponse', function() {
 
   it('should create an instance of RetrieveInventoryChangesResponse', function() {
     // uncomment below and update the code to test RetrieveInventoryChangesResponse
-    //var instane = new SquareConnect.RetrieveInventoryChangesResponse();
+    //var instance = new SquareConnect.RetrieveInventoryChangesResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryChangesResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveInventoryChangesResponse();
+    //var instance = new SquareConnect.RetrieveInventoryChangesResponse();
     //expect(instance).to.be();
   });
   it('should have the property changes (base name: "changes")', function() {
     // uncomment below and update the code to test the property changes
-    //var instane = new SquareConnect.RetrieveInventoryChangesResponse();
+    //var instance = new SquareConnect.RetrieveInventoryChangesResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.RetrieveInventoryChangesResponse();
+    //var instance = new SquareConnect.RetrieveInventoryChangesResponse();
     //expect(instance).to.be();
   });
 });

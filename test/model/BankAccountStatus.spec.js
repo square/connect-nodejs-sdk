@@ -19,7 +19,7 @@ describe('BankAccountStatus', function() {
 
   it('should create an instance of BankAccountStatus', function() {
     // uncomment below and update the code to test BankAccountStatus
-    //var instane = new SquareConnect.BankAccountStatus();
+    //var instance = new SquareConnect.BankAccountStatus();
     //expect(instance).to.be.a(SquareConnect.BankAccountStatus);
   });
 

@@ -20,68 +20,68 @@ describe('InvoicePaymentRequest', function() {
 
   it('should create an instance of InvoicePaymentRequest', function() {
     // uncomment below and update the code to test InvoicePaymentRequest
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be.a(SquareConnect.InvoicePaymentRequest);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property requestMethod (base name: "request_method")', function() {
     // uncomment below and update the code to test the property requestMethod
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property requestType (base name: "request_type")', function() {
     // uncomment below and update the code to test the property requestType
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property dueDate (base name: "due_date")', function() {
     // uncomment below and update the code to test the property dueDate
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property fixedAmountRequestedMoney (base name: "fixed_amount_requested_money")', function() {
     // uncomment below and update the code to test the property fixedAmountRequestedMoney
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property percentageRequested (base name: "percentage_requested")', function() {
     // uncomment below and update the code to test the property percentageRequested
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property tippingEnabled (base name: "tipping_enabled")', function() {
     // uncomment below and update the code to test the property tippingEnabled
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property cardId (base name: "card_id")', function() {
     // uncomment below and update the code to test the property cardId
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property reminders (base name: "reminders")', function() {
     // uncomment below and update the code to test the property reminders
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property computedAmountMoney (base name: "computed_amount_money")', function() {
     // uncomment below and update the code to test the property computedAmountMoney
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property totalCompletedAmountMoney (base name: "total_completed_amount_money")', function() {
     // uncomment below and update the code to test the property totalCompletedAmountMoney
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property roundingAdjustmentIncludedMoney (base name: "rounding_adjustment_included_money")', function() {
     // uncomment below and update the code to test the property roundingAdjustmentIncludedMoney
-    //var instane = new SquareConnect.InvoicePaymentRequest();
+    //var instance = new SquareConnect.InvoicePaymentRequest();
     //expect(instance).to.be();
   });
 });

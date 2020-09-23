@@ -20,38 +20,38 @@ describe('V1ListSettlementsRequest', function() {
 
   it('should create an instance of V1ListSettlementsRequest', function() {
     // uncomment below and update the code to test V1ListSettlementsRequest
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListSettlementsRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListSettlementsRequest();
+    //var instance = new SquareConnect.V1ListSettlementsRequest();
     //expect(instance).to.be();
   });
 });

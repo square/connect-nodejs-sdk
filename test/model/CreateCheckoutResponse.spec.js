@@ -21,18 +21,18 @@ describe('CreateCheckoutResponse', function() {
 
   it('should create an instance of CreateCheckoutResponse', function() {
     // uncomment below and update the code to test CreateCheckoutResponse
-    //var instane = new SquareConnect.CreateCheckoutResponse();
+    //var instance = new SquareConnect.CreateCheckoutResponse();
     //expect(instance).to.be.a(SquareConnect.CreateCheckoutResponse);
   });
 
   it('should have the property checkout (base name: "checkout")', function() {
     // uncomment below and update the code to test the property checkout
-    //var instane = new SquareConnect.CreateCheckoutResponse();
+    //var instance = new SquareConnect.CreateCheckoutResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateCheckoutResponse();
+    //var instance = new SquareConnect.CreateCheckoutResponse();
     //expect(instance).to.be();
   });
 });

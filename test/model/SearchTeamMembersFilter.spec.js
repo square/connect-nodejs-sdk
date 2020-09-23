@@ -20,18 +20,18 @@ describe('SearchTeamMembersFilter', function() {
 
   it('should create an instance of SearchTeamMembersFilter', function() {
     // uncomment below and update the code to test SearchTeamMembersFilter
-    //var instane = new SquareConnect.SearchTeamMembersFilter();
+    //var instance = new SquareConnect.SearchTeamMembersFilter();
     //expect(instance).to.be.a(SquareConnect.SearchTeamMembersFilter);
   });
 
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.SearchTeamMembersFilter();
+    //var instance = new SquareConnect.SearchTeamMembersFilter();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.SearchTeamMembersFilter();
+    //var instance = new SquareConnect.SearchTeamMembersFilter();
     //expect(instance).to.be();
   });
 });

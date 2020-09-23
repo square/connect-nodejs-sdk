@@ -20,13 +20,13 @@ describe('UpdateLocationRequest', function() {
 
   it('should create an instance of UpdateLocationRequest', function() {
     // uncomment below and update the code to test UpdateLocationRequest
-    //var instane = new SquareConnect.UpdateLocationRequest();
+    //var instance = new SquareConnect.UpdateLocationRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateLocationRequest);
   });
 
   it('should have the property location (base name: "location")', function() {
     // uncomment below and update the code to test the property location
-    //var instane = new SquareConnect.UpdateLocationRequest();
+    //var instance = new SquareConnect.UpdateLocationRequest();
     //expect(instance).to.be();
   });
 });

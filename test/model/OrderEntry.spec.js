@@ -20,18 +20,18 @@ describe('OrderEntry', function() {
 
   it('should create an instance of OrderEntry', function() {
     // uncomment below and update the code to test OrderEntry
-    //var instane = new SquareConnect.OrderEntry();
+    //var instance = new SquareConnect.OrderEntry();
     //expect(instance).to.be.a(SquareConnect.OrderEntry);
   });
 
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.OrderEntry();
+    //var instance = new SquareConnect.OrderEntry();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.OrderEntry();
+    //var instance = new SquareConnect.OrderEntry();
     //expect(instance).to.be();
   });
 });

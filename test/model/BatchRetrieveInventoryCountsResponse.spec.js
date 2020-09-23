@@ -20,23 +20,23 @@ describe('BatchRetrieveInventoryCountsResponse', function() {
 
   it('should create an instance of BatchRetrieveInventoryCountsResponse', function() {
     // uncomment below and update the code to test BatchRetrieveInventoryCountsResponse
-    //var instane = new SquareConnect.BatchRetrieveInventoryCountsResponse();
+    //var instance = new SquareConnect.BatchRetrieveInventoryCountsResponse();
     //expect(instance).to.be.a(SquareConnect.BatchRetrieveInventoryCountsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.BatchRetrieveInventoryCountsResponse();
+    //var instance = new SquareConnect.BatchRetrieveInventoryCountsResponse();
     //expect(instance).to.be();
   });
   it('should have the property counts (base name: "counts")', function() {
     // uncomment below and update the code to test the property counts
-    //var instane = new SquareConnect.BatchRetrieveInventoryCountsResponse();
+    //var instance = new SquareConnect.BatchRetrieveInventoryCountsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.BatchRetrieveInventoryCountsResponse();
+    //var instance = new SquareConnect.BatchRetrieveInventoryCountsResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,13 +20,13 @@ describe('BusinessHours', function() {
 
   it('should create an instance of BusinessHours', function() {
     // uncomment below and update the code to test BusinessHours
-    //var instane = new SquareConnect.BusinessHours();
+    //var instance = new SquareConnect.BusinessHours();
     //expect(instance).to.be.a(SquareConnect.BusinessHours);
   });
 
   it('should have the property periods (base name: "periods")', function() {
     // uncomment below and update the code to test the property periods
-    //var instane = new SquareConnect.BusinessHours();
+    //var instance = new SquareConnect.BusinessHours();
     //expect(instance).to.be();
   });
 });

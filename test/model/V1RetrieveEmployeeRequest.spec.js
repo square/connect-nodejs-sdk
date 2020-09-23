@@ -20,7 +20,7 @@ describe('V1RetrieveEmployeeRequest', function() {
 
   it('should create an instance of V1RetrieveEmployeeRequest', function() {
     // uncomment below and update the code to test V1RetrieveEmployeeRequest
-    //var instane = new SquareConnect.V1RetrieveEmployeeRequest();
+    //var instance = new SquareConnect.V1RetrieveEmployeeRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrieveEmployeeRequest);
   });
 

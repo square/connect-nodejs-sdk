@@ -21,18 +21,18 @@ describe('RetrieveTransactionResponse', function() {
 
   it('should create an instance of RetrieveTransactionResponse', function() {
     // uncomment below and update the code to test RetrieveTransactionResponse
-    //var instane = new SquareConnect.RetrieveTransactionResponse();
+    //var instance = new SquareConnect.RetrieveTransactionResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveTransactionResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveTransactionResponse();
+    //var instance = new SquareConnect.RetrieveTransactionResponse();
     //expect(instance).to.be();
   });
   it('should have the property transaction (base name: "transaction")', function() {
     // uncomment below and update the code to test the property transaction
-    //var instane = new SquareConnect.RetrieveTransactionResponse();
+    //var instance = new SquareConnect.RetrieveTransactionResponse();
     //expect(instance).to.be();
   });
 });

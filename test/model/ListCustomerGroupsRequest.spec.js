@@ -20,13 +20,13 @@ describe('ListCustomerGroupsRequest', function() {
 
   it('should create an instance of ListCustomerGroupsRequest', function() {
     // uncomment below and update the code to test ListCustomerGroupsRequest
-    //var instane = new SquareConnect.ListCustomerGroupsRequest();
+    //var instance = new SquareConnect.ListCustomerGroupsRequest();
     //expect(instance).to.be.a(SquareConnect.ListCustomerGroupsRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCustomerGroupsRequest();
+    //var instance = new SquareConnect.ListCustomerGroupsRequest();
     //expect(instance).to.be();
   });
 });

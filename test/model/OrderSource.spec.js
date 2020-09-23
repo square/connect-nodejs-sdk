@@ -20,13 +20,13 @@ describe('OrderSource', function() {
 
   it('should create an instance of OrderSource', function() {
     // uncomment below and update the code to test OrderSource
-    //var instane = new SquareConnect.OrderSource();
+    //var instance = new SquareConnect.OrderSource();
     //expect(instance).to.be.a(SquareConnect.OrderSource);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderSource();
+    //var instance = new SquareConnect.OrderSource();
     //expect(instance).to.be();
   });
 });

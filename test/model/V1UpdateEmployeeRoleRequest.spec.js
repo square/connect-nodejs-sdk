@@ -20,13 +20,13 @@ describe('V1UpdateEmployeeRoleRequest', function() {
 
   it('should create an instance of V1UpdateEmployeeRoleRequest', function() {
     // uncomment below and update the code to test V1UpdateEmployeeRoleRequest
-    //var instane = new SquareConnect.V1UpdateEmployeeRoleRequest();
+    //var instance = new SquareConnect.V1UpdateEmployeeRoleRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateEmployeeRoleRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1UpdateEmployeeRoleRequest();
+    //var instance = new SquareConnect.V1UpdateEmployeeRoleRequest();
     //expect(instance).to.be();
   });
 });

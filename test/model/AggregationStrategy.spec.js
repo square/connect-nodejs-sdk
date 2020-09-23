@@ -19,7 +19,7 @@ describe('AggregationStrategy', function() {
 
   it('should create an instance of AggregationStrategy', function() {
     // uncomment below and update the code to test AggregationStrategy
-    //var instane = new SquareConnect.AggregationStrategy();
+    //var instance = new SquareConnect.AggregationStrategy();
     //expect(instance).to.be.a(SquareConnect.AggregationStrategy);
   });
 

@@ -21,13 +21,13 @@ describe('RegisterDomainRequest', function() {
 
   it('should create an instance of RegisterDomainRequest', function() {
     // uncomment below and update the code to test RegisterDomainRequest
-    //var instane = new SquareConnect.RegisterDomainRequest();
+    //var instance = new SquareConnect.RegisterDomainRequest();
     //expect(instance).to.be.a(SquareConnect.RegisterDomainRequest);
   });
 
   it('should have the property domainName (base name: "domain_name")', function() {
     // uncomment below and update the code to test the property domainName
-    //var instane = new SquareConnect.RegisterDomainRequest();
+    //var instance = new SquareConnect.RegisterDomainRequest();
     //expect(instance).to.be();
   });
 });

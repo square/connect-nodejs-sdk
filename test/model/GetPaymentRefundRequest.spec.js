@@ -20,7 +20,7 @@ describe('GetPaymentRefundRequest', function() {
 
   it('should create an instance of GetPaymentRefundRequest', function() {
     // uncomment below and update the code to test GetPaymentRefundRequest
-    //var instane = new SquareConnect.GetPaymentRefundRequest();
+    //var instance = new SquareConnect.GetPaymentRefundRequest();
     //expect(instance).to.be.a(SquareConnect.GetPaymentRefundRequest);
   });
 

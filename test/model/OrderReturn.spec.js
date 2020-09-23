@@ -20,43 +20,43 @@ describe('OrderReturn', function() {
 
   it('should create an instance of OrderReturn', function() {
     // uncomment below and update the code to test OrderReturn
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be.a(SquareConnect.OrderReturn);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property sourceOrderId (base name: "source_order_id")', function() {
     // uncomment below and update the code to test the property sourceOrderId
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property returnLineItems (base name: "return_line_items")', function() {
     // uncomment below and update the code to test the property returnLineItems
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property returnTaxes (base name: "return_taxes")', function() {
     // uncomment below and update the code to test the property returnTaxes
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property returnDiscounts (base name: "return_discounts")', function() {
     // uncomment below and update the code to test the property returnDiscounts
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property roundingAdjustment (base name: "rounding_adjustment")', function() {
     // uncomment below and update the code to test the property roundingAdjustment
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
   it('should have the property returnAmounts (base name: "return_amounts")', function() {
     // uncomment below and update the code to test the property returnAmounts
-    //var instane = new SquareConnect.OrderReturn();
+    //var instance = new SquareConnect.OrderReturn();
     //expect(instance).to.be();
   });
 });

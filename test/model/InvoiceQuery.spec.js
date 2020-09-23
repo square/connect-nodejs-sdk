@@ -20,18 +20,18 @@ describe('InvoiceQuery', function() {
 
   it('should create an instance of InvoiceQuery', function() {
     // uncomment below and update the code to test InvoiceQuery
-    //var instane = new SquareConnect.InvoiceQuery();
+    //var instance = new SquareConnect.InvoiceQuery();
     //expect(instance).to.be.a(SquareConnect.InvoiceQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.InvoiceQuery();
+    //var instance = new SquareConnect.InvoiceQuery();
     //expect(instance).to.be();
   });
   it('should have the property sort (base name: "sort")', function() {
     // uncomment below and update the code to test the property sort
-    //var instane = new SquareConnect.InvoiceQuery();
+    //var instance = new SquareConnect.InvoiceQuery();
     //expect(instance).to.be();
   });
 });

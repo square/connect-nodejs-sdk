@@ -19,7 +19,7 @@ describe('TerminalCheckoutCancelReason', function() {
 
   it('should create an instance of TerminalCheckoutCancelReason', function() {
     // uncomment below and update the code to test TerminalCheckoutCancelReason
-    //var instane = new SquareConnect.TerminalCheckoutCancelReason();
+    //var instance = new SquareConnect.TerminalCheckoutCancelReason();
     //expect(instance).to.be.a(SquareConnect.TerminalCheckoutCancelReason);
   });
 

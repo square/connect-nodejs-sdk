@@ -19,7 +19,7 @@ describe('ShiftWorkdayMatcher', function() {
 
   it('should create an instance of ShiftWorkdayMatcher', function() {
     // uncomment below and update the code to test ShiftWorkdayMatcher
-    //var instane = new SquareConnect.ShiftWorkdayMatcher();
+    //var instance = new SquareConnect.ShiftWorkdayMatcher();
     //expect(instance).to.be.a(SquareConnect.ShiftWorkdayMatcher);
   });
 

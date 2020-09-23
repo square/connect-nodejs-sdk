@@ -19,7 +19,7 @@ describe('V1PaymentItemizationItemizationType', function() {
 
   it('should create an instance of V1PaymentItemizationItemizationType', function() {
     // uncomment below and update the code to test V1PaymentItemizationItemizationType
-    //var instane = new SquareConnect.V1PaymentItemizationItemizationType();
+    //var instance = new SquareConnect.V1PaymentItemizationItemizationType();
     //expect(instance).to.be.a(SquareConnect.V1PaymentItemizationItemizationType);
   });
 

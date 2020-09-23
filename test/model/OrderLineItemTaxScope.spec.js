@@ -19,7 +19,7 @@ describe('OrderLineItemTaxScope', function() {
 
   it('should create an instance of OrderLineItemTaxScope', function() {
     // uncomment below and update the code to test OrderLineItemTaxScope
-    //var instane = new SquareConnect.OrderLineItemTaxScope();
+    //var instance = new SquareConnect.OrderLineItemTaxScope();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemTaxScope);
   });
 

@@ -20,23 +20,23 @@ describe('ListCustomerGroupsResponse', function() {
 
   it('should create an instance of ListCustomerGroupsResponse', function() {
     // uncomment below and update the code to test ListCustomerGroupsResponse
-    //var instane = new SquareConnect.ListCustomerGroupsResponse();
+    //var instance = new SquareConnect.ListCustomerGroupsResponse();
     //expect(instance).to.be.a(SquareConnect.ListCustomerGroupsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListCustomerGroupsResponse();
+    //var instance = new SquareConnect.ListCustomerGroupsResponse();
     //expect(instance).to.be();
   });
   it('should have the property groups (base name: "groups")', function() {
     // uncomment below and update the code to test the property groups
-    //var instane = new SquareConnect.ListCustomerGroupsResponse();
+    //var instance = new SquareConnect.ListCustomerGroupsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCustomerGroupsResponse();
+    //var instance = new SquareConnect.ListCustomerGroupsResponse();
     //expect(instance).to.be();
   });
 });

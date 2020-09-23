@@ -19,7 +19,7 @@ describe('V1PaymentSurchargeType', function() {
 
   it('should create an instance of V1PaymentSurchargeType', function() {
     // uncomment below and update the code to test V1PaymentSurchargeType
-    //var instane = new SquareConnect.V1PaymentSurchargeType();
+    //var instance = new SquareConnect.V1PaymentSurchargeType();
     //expect(instance).to.be.a(SquareConnect.V1PaymentSurchargeType);
   });
 

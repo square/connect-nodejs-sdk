@@ -20,33 +20,33 @@ describe('InvoicePaymentReminder', function() {
 
   it('should create an instance of InvoicePaymentReminder', function() {
     // uncomment below and update the code to test InvoicePaymentReminder
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be.a(SquareConnect.InvoicePaymentReminder);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be();
   });
   it('should have the property relativeScheduledDays (base name: "relative_scheduled_days")', function() {
     // uncomment below and update the code to test the property relativeScheduledDays
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be();
   });
   it('should have the property message (base name: "message")', function() {
     // uncomment below and update the code to test the property message
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be();
   });
   it('should have the property sentAt (base name: "sent_at")', function() {
     // uncomment below and update the code to test the property sentAt
-    //var instane = new SquareConnect.InvoicePaymentReminder();
+    //var instance = new SquareConnect.InvoicePaymentReminder();
     //expect(instance).to.be();
   });
 });

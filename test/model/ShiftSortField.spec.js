@@ -19,7 +19,7 @@ describe('ShiftSortField', function() {
 
   it('should create an instance of ShiftSortField', function() {
     // uncomment below and update the code to test ShiftSortField
-    //var instane = new SquareConnect.ShiftSortField();
+    //var instance = new SquareConnect.ShiftSortField();
     //expect(instance).to.be.a(SquareConnect.ShiftSortField);
   });
 

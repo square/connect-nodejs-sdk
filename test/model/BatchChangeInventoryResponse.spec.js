@@ -20,18 +20,18 @@ describe('BatchChangeInventoryResponse', function() {
 
   it('should create an instance of BatchChangeInventoryResponse', function() {
     // uncomment below and update the code to test BatchChangeInventoryResponse
-    //var instane = new SquareConnect.BatchChangeInventoryResponse();
+    //var instance = new SquareConnect.BatchChangeInventoryResponse();
     //expect(instance).to.be.a(SquareConnect.BatchChangeInventoryResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.BatchChangeInventoryResponse();
+    //var instance = new SquareConnect.BatchChangeInventoryResponse();
     //expect(instance).to.be();
   });
   it('should have the property counts (base name: "counts")', function() {
     // uncomment below and update the code to test the property counts
-    //var instane = new SquareConnect.BatchChangeInventoryResponse();
+    //var instance = new SquareConnect.BatchChangeInventoryResponse();
     //expect(instance).to.be();
   });
 });

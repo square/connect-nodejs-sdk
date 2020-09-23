@@ -19,7 +19,7 @@ describe('DisputeReason', function() {
 
   it('should create an instance of DisputeReason', function() {
     // uncomment below and update the code to test DisputeReason
-    //var instane = new SquareConnect.DisputeReason();
+    //var instance = new SquareConnect.DisputeReason();
     //expect(instance).to.be.a(SquareConnect.DisputeReason);
   });
 

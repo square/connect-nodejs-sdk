@@ -20,23 +20,23 @@ describe('SearchInvoicesResponse', function() {
 
   it('should create an instance of SearchInvoicesResponse', function() {
     // uncomment below and update the code to test SearchInvoicesResponse
-    //var instane = new SquareConnect.SearchInvoicesResponse();
+    //var instance = new SquareConnect.SearchInvoicesResponse();
     //expect(instance).to.be.a(SquareConnect.SearchInvoicesResponse);
   });
 
   it('should have the property invoices (base name: "invoices")', function() {
     // uncomment below and update the code to test the property invoices
-    //var instane = new SquareConnect.SearchInvoicesResponse();
+    //var instance = new SquareConnect.SearchInvoicesResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchInvoicesResponse();
+    //var instance = new SquareConnect.SearchInvoicesResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.SearchInvoicesResponse();
+    //var instance = new SquareConnect.SearchInvoicesResponse();
     //expect(instance).to.be();
   });
 });

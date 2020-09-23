@@ -21,7 +21,7 @@ describe('VoidTransactionRequest', function() {
 
   it('should create an instance of VoidTransactionRequest', function() {
     // uncomment below and update the code to test VoidTransactionRequest
-    //var instane = new SquareConnect.VoidTransactionRequest();
+    //var instance = new SquareConnect.VoidTransactionRequest();
     //expect(instance).to.be.a(SquareConnect.VoidTransactionRequest);
   });
 
