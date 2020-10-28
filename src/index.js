@@ -63,6 +63,8 @@ var CancelSubscriptionRequest = require('./model/CancelSubscriptionRequest');
 var CancelSubscriptionResponse = require('./model/CancelSubscriptionResponse');
 var CancelTerminalCheckoutRequest = require('./model/CancelTerminalCheckoutRequest');
 var CancelTerminalCheckoutResponse = require('./model/CancelTerminalCheckoutResponse');
+var CancelTerminalRefundRequest = require('./model/CancelTerminalRefundRequest');
+var CancelTerminalRefundResponse = require('./model/CancelTerminalRefundResponse');
 var CaptureTransactionRequest = require('./model/CaptureTransactionRequest');
 var CaptureTransactionResponse = require('./model/CaptureTransactionResponse');
 var Card = require('./model/Card');
@@ -122,6 +124,7 @@ var CatalogQueryItemsForModifierList = require('./model/CatalogQueryItemsForModi
 var CatalogQueryItemsForTax = require('./model/CatalogQueryItemsForTax');
 var CatalogQueryPrefix = require('./model/CatalogQueryPrefix');
 var CatalogQueryRange = require('./model/CatalogQueryRange');
+var CatalogQuerySet = require('./model/CatalogQuerySet');
 var CatalogQuerySortedAttribute = require('./model/CatalogQuerySortedAttribute');
 var CatalogQueryText = require('./model/CatalogQueryText');
 var CatalogQuickAmount = require('./model/CatalogQuickAmount');
@@ -182,6 +185,8 @@ var CreateTeamMemberRequest = require('./model/CreateTeamMemberRequest');
 var CreateTeamMemberResponse = require('./model/CreateTeamMemberResponse');
 var CreateTerminalCheckoutRequest = require('./model/CreateTerminalCheckoutRequest');
 var CreateTerminalCheckoutResponse = require('./model/CreateTerminalCheckoutResponse');
+var CreateTerminalRefundRequest = require('./model/CreateTerminalRefundRequest');
+var CreateTerminalRefundResponse = require('./model/CreateTerminalRefundResponse');
 var Currency = require('./model/Currency');
 var CustomAttributeFilter = require('./model/CustomAttributeFilter');
 var Customer = require('./model/Customer');
@@ -258,6 +263,9 @@ var GetTeamMemberWageRequest = require('./model/GetTeamMemberWageRequest');
 var GetTeamMemberWageResponse = require('./model/GetTeamMemberWageResponse');
 var GetTerminalCheckoutRequest = require('./model/GetTerminalCheckoutRequest');
 var GetTerminalCheckoutResponse = require('./model/GetTerminalCheckoutResponse');
+var GetTerminalRefundRequest = require('./model/GetTerminalRefundRequest');
+var GetTerminalRefundResponse = require('./model/GetTerminalRefundResponse');
+var InlineTypes = require('./model/InlineTypes');
 var InventoryAdjustment = require('./model/InventoryAdjustment');
 var InventoryAlertType = require('./model/InventoryAlertType');
 var InventoryChange = require('./model/InventoryChange');
@@ -480,6 +488,8 @@ var RetrieveLoyaltyRewardRequest = require('./model/RetrieveLoyaltyRewardRequest
 var RetrieveLoyaltyRewardResponse = require('./model/RetrieveLoyaltyRewardResponse');
 var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
 var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
+var RetrieveOrderRequest = require('./model/RetrieveOrderRequest');
+var RetrieveOrderResponse = require('./model/RetrieveOrderResponse');
 var RetrieveSubscriptionRequest = require('./model/RetrieveSubscriptionRequest');
 var RetrieveSubscriptionResponse = require('./model/RetrieveSubscriptionResponse');
 var RetrieveTeamMemberRequest = require('./model/RetrieveTeamMemberRequest');
@@ -530,6 +540,8 @@ var SearchTeamMembersRequest = require('./model/SearchTeamMembersRequest');
 var SearchTeamMembersResponse = require('./model/SearchTeamMembersResponse');
 var SearchTerminalCheckoutsRequest = require('./model/SearchTerminalCheckoutsRequest');
 var SearchTerminalCheckoutsResponse = require('./model/SearchTerminalCheckoutsResponse');
+var SearchTerminalRefundsRequest = require('./model/SearchTerminalRefundsRequest');
+var SearchTerminalRefundsResponse = require('./model/SearchTerminalRefundsResponse');
 var Shift = require('./model/Shift');
 var ShiftFilter = require('./model/ShiftFilter');
 var ShiftFilterStatus = require('./model/ShiftFilterStatus');
@@ -560,8 +572,6 @@ var TeamMemberAssignedLocationsAssignmentType = require('./model/TeamMemberAssig
 var TeamMemberStatus = require('./model/TeamMemberStatus');
 var TeamMemberWage = require('./model/TeamMemberWage');
 var Tender = require('./model/Tender');
-var TenderBankTransferDetails = require('./model/TenderBankTransferDetails');
-var TenderBankTransferDetailsStatus = require('./model/TenderBankTransferDetailsStatus');
 var TenderCardDetails = require('./model/TenderCardDetails');
 var TenderCardDetailsEntryMethod = require('./model/TenderCardDetailsEntryMethod');
 var TenderCardDetailsStatus = require('./model/TenderCardDetailsStatus');
@@ -571,6 +581,10 @@ var TerminalCheckout = require('./model/TerminalCheckout');
 var TerminalCheckoutQuery = require('./model/TerminalCheckoutQuery');
 var TerminalCheckoutQueryFilter = require('./model/TerminalCheckoutQueryFilter');
 var TerminalCheckoutQuerySort = require('./model/TerminalCheckoutQuerySort');
+var TerminalRefund = require('./model/TerminalRefund');
+var TerminalRefundQuery = require('./model/TerminalRefundQuery');
+var TerminalRefundQueryFilter = require('./model/TerminalRefundQueryFilter');
+var TerminalRefundQuerySort = require('./model/TerminalRefundQuerySort');
 var TimeRange = require('./model/TimeRange');
 var TipSettings = require('./model/TipSettings');
 var Transaction = require('./model/Transaction');
@@ -764,6 +778,7 @@ var V1UpdateVariationRequest = require('./model/V1UpdateVariationRequest');
 var V1Variation = require('./model/V1Variation');
 var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertType');
 var V1VariationPricingType = require('./model/V1VariationPricingType');
+var VersionedCatalogObject = require('./model/VersionedCatalogObject');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
 var WageSetting = require('./model/WageSetting');
@@ -831,7 +846,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 4.20200923.4
+ * @version 4.20201028.5
  */
   module.exports = {
   /**
@@ -1089,6 +1104,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CancelTerminalCheckoutResponse}
    */
   CancelTerminalCheckoutResponse: CancelTerminalCheckoutResponse,
+  /**
+   * The CancelTerminalRefundRequest model constructor.
+   * @property {module:model/CancelTerminalRefundRequest}
+   */
+  CancelTerminalRefundRequest: CancelTerminalRefundRequest,
+  /**
+   * The CancelTerminalRefundResponse model constructor.
+   * @property {module:model/CancelTerminalRefundResponse}
+   */
+  CancelTerminalRefundResponse: CancelTerminalRefundResponse,
   /**
    * The CaptureTransactionRequest model constructor.
    * @property {module:model/CaptureTransactionRequest}
@@ -1384,6 +1409,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogQueryRange}
    */
   CatalogQueryRange: CatalogQueryRange,
+  /**
+   * The CatalogQuerySet model constructor.
+   * @property {module:model/CatalogQuerySet}
+   */
+  CatalogQuerySet: CatalogQuerySet,
   /**
    * The CatalogQuerySortedAttribute model constructor.
    * @property {module:model/CatalogQuerySortedAttribute}
@@ -1684,6 +1714,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateTerminalCheckoutResponse}
    */
   CreateTerminalCheckoutResponse: CreateTerminalCheckoutResponse,
+  /**
+   * The CreateTerminalRefundRequest model constructor.
+   * @property {module:model/CreateTerminalRefundRequest}
+   */
+  CreateTerminalRefundRequest: CreateTerminalRefundRequest,
+  /**
+   * The CreateTerminalRefundResponse model constructor.
+   * @property {module:model/CreateTerminalRefundResponse}
+   */
+  CreateTerminalRefundResponse: CreateTerminalRefundResponse,
   /**
    * The Currency model constructor.
    * @property {module:model/Currency}
@@ -2064,6 +2104,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/GetTerminalCheckoutResponse}
    */
   GetTerminalCheckoutResponse: GetTerminalCheckoutResponse,
+  /**
+   * The GetTerminalRefundRequest model constructor.
+   * @property {module:model/GetTerminalRefundRequest}
+   */
+  GetTerminalRefundRequest: GetTerminalRefundRequest,
+  /**
+   * The GetTerminalRefundResponse model constructor.
+   * @property {module:model/GetTerminalRefundResponse}
+   */
+  GetTerminalRefundResponse: GetTerminalRefundResponse,
+  /**
+   * The InlineTypes model constructor.
+   * @property {module:model/InlineTypes}
+   */
+  InlineTypes: InlineTypes,
   /**
    * The InventoryAdjustment model constructor.
    * @property {module:model/InventoryAdjustment}
@@ -3175,6 +3230,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveMerchantResponse: RetrieveMerchantResponse,
   /**
+   * The RetrieveOrderRequest model constructor.
+   * @property {module:model/RetrieveOrderRequest}
+   */
+  RetrieveOrderRequest: RetrieveOrderRequest,
+  /**
+   * The RetrieveOrderResponse model constructor.
+   * @property {module:model/RetrieveOrderResponse}
+   */
+  RetrieveOrderResponse: RetrieveOrderResponse,
+  /**
    * The RetrieveSubscriptionRequest model constructor.
    * @property {module:model/RetrieveSubscriptionRequest}
    */
@@ -3425,6 +3490,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchTerminalCheckoutsResponse: SearchTerminalCheckoutsResponse,
   /**
+   * The SearchTerminalRefundsRequest model constructor.
+   * @property {module:model/SearchTerminalRefundsRequest}
+   */
+  SearchTerminalRefundsRequest: SearchTerminalRefundsRequest,
+  /**
+   * The SearchTerminalRefundsResponse model constructor.
+   * @property {module:model/SearchTerminalRefundsResponse}
+   */
+  SearchTerminalRefundsResponse: SearchTerminalRefundsResponse,
+  /**
    * The Shift model constructor.
    * @property {module:model/Shift}
    */
@@ -3575,16 +3650,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Tender: Tender,
   /**
-   * The TenderBankTransferDetails model constructor.
-   * @property {module:model/TenderBankTransferDetails}
-   */
-  TenderBankTransferDetails: TenderBankTransferDetails,
-  /**
-   * The TenderBankTransferDetailsStatus model constructor.
-   * @property {module:model/TenderBankTransferDetailsStatus}
-   */
-  TenderBankTransferDetailsStatus: TenderBankTransferDetailsStatus,
-  /**
    * The TenderCardDetails model constructor.
    * @property {module:model/TenderCardDetails}
    */
@@ -3629,6 +3694,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/TerminalCheckoutQuerySort}
    */
   TerminalCheckoutQuerySort: TerminalCheckoutQuerySort,
+  /**
+   * The TerminalRefund model constructor.
+   * @property {module:model/TerminalRefund}
+   */
+  TerminalRefund: TerminalRefund,
+  /**
+   * The TerminalRefundQuery model constructor.
+   * @property {module:model/TerminalRefundQuery}
+   */
+  TerminalRefundQuery: TerminalRefundQuery,
+  /**
+   * The TerminalRefundQueryFilter model constructor.
+   * @property {module:model/TerminalRefundQueryFilter}
+   */
+  TerminalRefundQueryFilter: TerminalRefundQueryFilter,
+  /**
+   * The TerminalRefundQuerySort model constructor.
+   * @property {module:model/TerminalRefundQuerySort}
+   */
+  TerminalRefundQuerySort: TerminalRefundQuerySort,
   /**
    * The TimeRange model constructor.
    * @property {module:model/TimeRange}
@@ -4594,6 +4679,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1VariationPricingType}
    */
   V1VariationPricingType: V1VariationPricingType,
+  /**
+   * The VersionedCatalogObject model constructor.
+   * @property {module:model/VersionedCatalogObject}
+   */
+  VersionedCatalogObject: VersionedCatalogObject,
   /**
    * The VoidTransactionRequest model constructor.
    * @property {module:model/VoidTransactionRequest}

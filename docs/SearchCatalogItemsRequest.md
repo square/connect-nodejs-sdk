@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **enabled_location_ids** | **[String]** | The enabled-location query expression to return items and item variations having specified enabled locations. | [optional] 
 **cursor** | **String** | The pagination token, returned in the previous response, used to fetch the next batch of pending results. | [optional] 
 **limit** | **Number** | The maximum number of results to return per page. The default value is 100. | [optional] 
-**sort_order** | **String** | The order to sort the resutls. The default sort order is ascending (&#x60;ASC&#x60;). See [SortOrder](#type-sortorder) for possible values | [optional] 
+**sort_order** | **String** | The order to sort the results by item names. The default sort order is ascending (&#x60;ASC&#x60;). See [SortOrder](#type-sortorder) for possible values | [optional] 
 **product_types** | **[String]** | The product types query expression to return items or item variations having the specified product types. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values | [optional] 
 **custom_attribute_filters** | [**[CustomAttributeFilter]**](CustomAttributeFilter.md) | The customer-attribute filter to return items or item variations matching the specified custom attribute expressions. A maximum number of 10 custom attribute expressions are supported in a single call to the &#x60;SearchCatalogItems&#x60; endpoint. | [optional] 
 

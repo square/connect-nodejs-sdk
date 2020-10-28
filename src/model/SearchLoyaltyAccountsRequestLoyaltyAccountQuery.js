@@ -33,6 +33,7 @@ var exports = function() {
   var _this = this;
 
 
+
 };
 
 /**
@@ -49,15 +50,23 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('mappings')) {
       obj['mappings'] = ApiClient.convertToType(data['mappings'], [LoyaltyAccountMapping]);
     }
+      if (data.hasOwnProperty('customer_ids')) {
+      obj['customer_ids'] = ApiClient.convertToType(data['customer_ids'], ['String']);
+    }
     }
   return obj;
 }
 
 /**
- * The set of mappings to use in the loyalty account search.
+ * The set of mappings to use in the loyalty account search.    This cannot be combined with `customer_ids`.    Max: 30 mappings
  * @member {Array.<module:model/LoyaltyAccountMapping>} mappings
  */
 exports.prototype['mappings'] = undefined;
+/**
+ * The set of customer IDs to use in the loyalty account search.    This cannot be combined with `mappings`.    Max: 30 customer IDs
+ * @member {Array.<String>} customer_ids
+ */
+exports.prototype['customer_ids'] = undefined;
 
 
 

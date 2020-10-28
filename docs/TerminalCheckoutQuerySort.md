@@ -1,7 +1,6 @@
 # SquareConnect.TerminalCheckoutQuerySort
 
 ### Description
-**Note: This model is in beta.**
 
 
 

@@ -32,7 +32,7 @@ var SourceApplication = require('./SourceApplication');
  * @alias module:model/CatalogCustomAttributeDefinition
  * @class
  * @param type {String} The type of this custom attribute. Cannot be modified after creation. Required. See [CatalogCustomAttributeDefinitionType](#type-catalogcustomattributedefinitiontype) for possible values
- * @param name {String}  The name of this definition for API and seller-facing UI purposes. The name must be unique within the (merchant, application_id) pair. Required. May not be empty and may not exceed 255 characters. Can be modified after creation.
+ * @param name {String}  The name of this definition for API and seller-facing UI purposes. The name must be unique within the (merchant, application) pair. Required. May not be empty and may not exceed 255 characters. Can be modified after creation.
  * @param allowedObjectTypes {Array.<String>} The set of Catalog Object Types that this Custom Attribute may be applied to. Currently, only `ITEM` and `ITEM_VARIATION` are allowed. At least one type must be included. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  */
 var exports = function(type, name, allowedObjectTypes) {
@@ -109,7 +109,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['type'] = undefined;
 /**
- *  The name of this definition for API and seller-facing UI purposes. The name must be unique within the (merchant, application_id) pair. Required. May not be empty and may not exceed 255 characters. Can be modified after creation.
+ *  The name of this definition for API and seller-facing UI purposes. The name must be unique within the (merchant, application) pair. Required. May not be empty and may not exceed 255 characters. Can be modified after creation.
  * @member {String} name
  */
 exports.prototype['name'] = undefined;
@@ -144,7 +144,7 @@ exports.prototype['app_visibility'] = undefined;
  */
 exports.prototype['string_config'] = undefined;
 /**
- * 
+ * Optionally, populated when `type` = `NUMBER`, unset otherwise.
  * @member {module:model/CatalogCustomAttributeDefinitionNumberConfig} number_config
  */
 exports.prototype['number_config'] = undefined;
@@ -159,7 +159,7 @@ exports.prototype['selection_config'] = undefined;
  */
 exports.prototype['custom_attribute_usage_count'] = undefined;
 /**
- * The name of the desired custom attribute key that can be used to access the custom attribute value on catalog objects. Cannot be modified after the custom attribute definition has been created. Must be between 1 and 60 characters, and may only contain the characters [a-zA-Z0-9_-].
+ * The name of the desired custom attribute key that can be used to access the custom attribute value on catalog objects. Cannot be modified after the custom attribute definition has been created. Must be between 1 and 60 characters, and may only contain the characters `[a-zA-Z0-9_-]`.
  * @member {String} key
  */
 exports.prototype['key'] = undefined;

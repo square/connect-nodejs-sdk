@@ -97,7 +97,7 @@ exports.prototype['percentage'] = undefined;
  */
 exports.prototype['applies_to_custom_amounts'] = undefined;
 /**
- * If `true`, the tax will be shown as enabled in the Square Point of Sale app.
+ * A Boolean flag to indicate whether the tax is displayed as enabled (`true`) in the Square Point of Sale app or not (`false`).
  * @member {Boolean} enabled
  */
 exports.prototype['enabled'] = undefined;

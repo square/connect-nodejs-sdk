@@ -36,9 +36,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the original payment's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the original payment's associated location.
 
-var body = new SquareConnect.V1CreateRefundRequest(); // V1CreateRefundRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1TransactionsApi.constructFromObject({}); // V1CreateRefundRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createRefund(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -88,7 +88,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list bank accounts for.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the location to list bank accounts for.
 
 apiInstance.listBankAccounts(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -136,12 +136,12 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list online store orders for.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the location to list online store orders for.
 
 var opts = { 
-  'order': "order_example", // String | TThe order in which payments are listed in the response.
-  'limit': 56, // Number | The maximum number of payments to return in a single response. This value cannot exceed 200.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | TThe order in which payments are listed in the response.
+  'limit': SquareConnect.V1TransactionsApi.constructFromObject({});, // Number | The maximum number of payments to return in a single response. This value cannot exceed 200.
+  'batchToken': SquareConnect.V1TransactionsApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listOrders(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -192,15 +192,15 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list payments for. If you specify me, this endpoint returns payments aggregated from all of the business's locations.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the location to list payments for. If you specify me, this endpoint returns payments aggregated from all of the business's locations.
 
 var opts = { 
-  'order': "order_example", // String | The order in which payments are listed in the response.
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
-  'endTime': "endTime_example", // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-  'limit': 56, // Number | The maximum number of payments to return in a single response. This value cannot exceed 200.
-  'batchToken': "batchToken_example", // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
-  'includePartial': true // Boolean | Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
+  'order': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The order in which payments are listed in the response.
+  'beginTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
+  'endTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
+  'limit': SquareConnect.V1TransactionsApi.constructFromObject({});, // Number | The maximum number of payments to return in a single response. This value cannot exceed 200.
+  'batchToken': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'includePartial': SquareConnect.V1TransactionsApi.constructFromObject({}); // Boolean | Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
 };
 apiInstance.listPayments(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -254,14 +254,14 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list refunds for.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the location to list refunds for.
 
 var opts = { 
-  'order': "order_example", // String | TThe order in which payments are listed in the response.
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
-  'endTime': "endTime_example", // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-  'limit': 56, // Number | The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | TThe order in which payments are listed in the response.
+  'beginTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
+  'endTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
+  'limit': SquareConnect.V1TransactionsApi.constructFromObject({});, // Number | The approximate number of refunds to return in a single response. Default: 100. Max: 200. Response may contain more results than the prescribed limit when refunds are made simultaneously to multiple tenders in a payment or when refunds are generated in an exchange to account for the value of returned goods.
+  'batchToken': SquareConnect.V1TransactionsApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listRefunds(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -314,15 +314,15 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list settlements for. If you specify me, this endpoint returns settlements aggregated from all of the business's locations.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the location to list settlements for. If you specify me, this endpoint returns settlements aggregated from all of the business's locations.
 
 var opts = { 
-  'order': "order_example", // String | The order in which settlements are listed in the response.
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
-  'endTime': "endTime_example", // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
-  'limit': 56, // Number | The maximum number of settlements to return in a single response. This value cannot exceed 200.
-  'status': "status_example", // String | Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The order in which settlements are listed in the response.
+  'beginTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
+  'endTime': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
+  'limit': SquareConnect.V1TransactionsApi.constructFromObject({});, // Number | The maximum number of settlements to return in a single response. This value cannot exceed 200.
+  'status': SquareConnect.V1TransactionsApi.constructFromObject({});, // String | Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
+  'batchToken': SquareConnect.V1TransactionsApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listSettlements(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -377,9 +377,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the bank account's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the bank account's associated location.
 
-var bankAccountId = "bankAccountId_example"; // String | The bank account's Square-issued ID. You obtain this value from Settlement objects returned.
+var bankAccountId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The bank account's Square-issued ID. You obtain this value from Settlement objects returned.
 
 apiInstance.retrieveBankAccount(locationId, bankAccountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -428,9 +428,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the order's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the order's associated location.
 
-var orderId = "orderId_example"; // String | The order's Square-issued ID. You obtain this value from Order objects returned by the List Orders endpoint
+var orderId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The order's Square-issued ID. You obtain this value from Order objects returned by the List Orders endpoint
 
 apiInstance.retrieveOrder(locationId, orderId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -479,9 +479,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the payment's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the payment's associated location.
 
-var paymentId = "paymentId_example"; // String | The Square-issued payment ID. payment_id comes from Payment objects returned by the List Payments endpoint, Settlement objects returned by the List Settlements endpoint, or Refund objects returned by the List Refunds endpoint.
+var paymentId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The Square-issued payment ID. payment_id comes from Payment objects returned by the List Payments endpoint, Settlement objects returned by the List Settlements endpoint, or Refund objects returned by the List Refunds endpoint.
 
 apiInstance.retrievePayment(locationId, paymentId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -530,9 +530,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the settlements's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the settlements's associated location.
 
-var settlementId = "settlementId_example"; // String | The settlement's Square-issued ID. You obtain this value from Settlement objects returned by the List Settlements endpoint.
+var settlementId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The settlement's Square-issued ID. You obtain this value from Settlement objects returned by the List Settlements endpoint.
 
 apiInstance.retrieveSettlement(locationId, settlementId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -581,11 +581,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the order's associated location.
+var locationId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The ID of the order's associated location.
 
-var orderId = "orderId_example"; // String | The order's Square-issued ID. You obtain this value from Order objects returned by the List Orders endpoint
+var orderId = SquareConnect.V1TransactionsApi.constructFromObject({}); // String | The order's Square-issued ID. You obtain this value from Order objects returned by the List Orders endpoint
 
-var body = new SquareConnect.V1UpdateOrderRequest(); // V1UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1TransactionsApi.constructFromObject({}); // V1UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateOrder(locationId, orderId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

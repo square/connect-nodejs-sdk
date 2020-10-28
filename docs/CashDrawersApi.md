@@ -28,13 +28,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CashDrawersApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list cash drawer shifts for.
+var locationId = SquareConnect.CashDrawersApi.constructFromObject({}); // String | The ID of the location to list cash drawer shifts for.
 
-var shiftId = "shiftId_example"; // String | The shift ID.
+var shiftId = SquareConnect.CashDrawersApi.constructFromObject({}); // String | The shift ID.
 
 var opts = { 
-  'limit': 56, // Number | Number of resources to be returned in a page of results (200 by default, 1000 max).
-  'cursor': "cursor_example" // String | Opaque cursor for fetching the next page of results.
+  'limit': SquareConnect.CashDrawersApi.constructFromObject({});, // Number | Number of resources to be returned in a page of results (200 by default, 1000 max).
+  'cursor': SquareConnect.CashDrawersApi.constructFromObject({}); // String | Opaque cursor for fetching the next page of results.
 };
 apiInstance.listCashDrawerShiftEvents(locationId, shiftId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -85,14 +85,14 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CashDrawersApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to query for a list of cash drawer shifts.
+var locationId = SquareConnect.CashDrawersApi.constructFromObject({}); // String | The ID of the location to query for a list of cash drawer shifts.
 
 var opts = { 
-  'sortOrder': "sortOrder_example", // String | The order in which cash drawer shifts are listed in the response, based on their opened_at field. Default value: ASC
-  'beginTime': "beginTime_example", // String | The inclusive start time of the query on opened_at, in ISO 8601 format.
-  'endTime': "endTime_example", // String | The exclusive end date of the query on opened_at, in ISO 8601 format.
-  'limit': 56, // Number | Number of cash drawer shift events in a page of results (200 by default, 1000 max).
-  'cursor': "cursor_example" // String | Opaque cursor for fetching the next page of results.
+  'sortOrder': SquareConnect.CashDrawersApi.constructFromObject({});, // String | The order in which cash drawer shifts are listed in the response, based on their opened_at field. Default value: ASC
+  'beginTime': SquareConnect.CashDrawersApi.constructFromObject({});, // String | The inclusive start time of the query on opened_at, in ISO 8601 format.
+  'endTime': SquareConnect.CashDrawersApi.constructFromObject({});, // String | The exclusive end date of the query on opened_at, in ISO 8601 format.
+  'limit': SquareConnect.CashDrawersApi.constructFromObject({});, // Number | Number of cash drawer shift events in a page of results (200 by default, 1000 max).
+  'cursor': SquareConnect.CashDrawersApi.constructFromObject({}); // String | Opaque cursor for fetching the next page of results.
 };
 apiInstance.listCashDrawerShifts(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -145,9 +145,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CashDrawersApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to retrieve cash drawer shifts from.
+var locationId = SquareConnect.CashDrawersApi.constructFromObject({}); // String | The ID of the location to retrieve cash drawer shifts from.
 
-var shiftId = "shiftId_example"; // String | The shift ID.
+var shiftId = SquareConnect.CashDrawersApi.constructFromObject({}); // String | The shift ID.
 
 apiInstance.retrieveCashDrawerShift(locationId, shiftId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

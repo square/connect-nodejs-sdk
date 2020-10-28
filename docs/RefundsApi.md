@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 GetPaymentRefund
 
-Retrieves a specific &#x60;Refund&#x60; using the &#x60;refund_id&#x60;.
+Retrieves a specific refund using the &#x60;refund_id&#x60;.
 
 ### Example
 ```javascript
@@ -28,7 +28,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.RefundsApi();
 
-var refundId = "refundId_example"; // String | Unique ID for the desired `PaymentRefund`.
+var refundId = SquareConnect.RefundsApi.constructFromObject({}); // String | Unique ID for the desired `PaymentRefund`.
 
 apiInstance.getPaymentRefund(refundId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ListPaymentRefunds
 
-Retrieves a list of refunds for the account making the request.  Max results per page: 100
+Retrieves a list of refunds for the account making the request.  The maximum results per page is 100.
 
 ### Example
 ```javascript
@@ -77,14 +77,14 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.RefundsApi();
 
 var opts = { 
-  'beginTime': "beginTime_example", // String | Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
-  'endTime': "endTime_example", // String | Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
-  'sortOrder': "sortOrder_example", // String | The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-  'locationId': "locationId_example", // String | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
-  'status': "status_example", // String | If provided, only refunds with the given status are returned. For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
-  'sourceType': "sourceType_example", // String | If provided, only refunds with the given source type are returned. - `CARD` - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
-  'limit': 56 // Number | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
+  'beginTime': SquareConnect.RefundsApi.constructFromObject({});, // String | Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
+  'endTime': SquareConnect.RefundsApi.constructFromObject({});, // String | Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
+  'sortOrder': SquareConnect.RefundsApi.constructFromObject({});, // String | The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).
+  'cursor': SquareConnect.RefundsApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+  'locationId': SquareConnect.RefundsApi.constructFromObject({});, // String | Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
+  'status': SquareConnect.RefundsApi.constructFromObject({});, // String | If provided, only refunds with the given status are returned. For a list of refund status values, see `PaymentRefund`.  Default: If omitted refunds are returned regardless of status.
+  'sourceType': SquareConnect.RefundsApi.constructFromObject({});, // String | If provided, only refunds with the given source type are returned. - `CARD` - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
+  'limit': SquareConnect.RefundsApi.constructFromObject({}); // Number | Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: `100`
 };
 apiInstance.listPaymentRefunds(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -139,7 +139,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.RefundsApi();
 
-var body = new SquareConnect.RefundPaymentRequest(); // RefundPaymentRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.RefundsApi.constructFromObject({}); // RefundPaymentRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.refundPayment(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

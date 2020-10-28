@@ -55,7 +55,7 @@ module.exports = function(apiClient) {
   /**
    * AccumulateLoyaltyPoints
    * Note: This endpoint is in beta.
-   * Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  &#x60;CalculateLoyaltyPoints&#x60; to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.   For more information, see [Accumulate points](/docs/loyalty-api/overview/#accumulate-points).
+   * Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  [CalculateLoyaltyPoints](#endpoint-Loyalty-CalculateLoyaltyPoints) to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.
    * @param {String} accountId The &#x60;loyalty account&#x60; ID to which to add the points.
    * @param {module:model/AccumulateLoyaltyPointsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AccumulateLoyaltyPointsResponse} and HTTP response
@@ -81,7 +81,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -100,7 +100,7 @@ module.exports = function(apiClient) {
 
   /**
    * AccumulateLoyaltyPoints
-   * Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  &#x60;CalculateLoyaltyPoints&#x60; to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.   For more information, see [Accumulate points](/docs/loyalty-api/overview/#accumulate-points).
+   * Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  [CalculateLoyaltyPoints](#endpoint-Loyalty-CalculateLoyaltyPoints) to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.
    * @param {String} accountId The &#x60;loyalty account&#x60; ID to which to add the points.
    * @param {module:model/AccumulateLoyaltyPointsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AccumulateLoyaltyPointsResponse}
@@ -116,7 +116,7 @@ module.exports = function(apiClient) {
   /**
    * AdjustLoyaltyPoints
    * Note: This endpoint is in beta.
-   * Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](/reference/square/loyalty-api/accumulate-loyalty-points)  to add points when a buyer pays for the purchase.
+   * Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](#endpoint-Loyalty-AccumulateLoyaltyPoints)  to add points when a buyer pays for the purchase.
    * @param {String} accountId The ID of the &#x60;loyalty account&#x60; in which to adjust the points.
    * @param {module:model/AdjustLoyaltyPointsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AdjustLoyaltyPointsResponse} and HTTP response
@@ -142,7 +142,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -161,7 +161,7 @@ module.exports = function(apiClient) {
 
   /**
    * AdjustLoyaltyPoints
-   * Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](/reference/square/loyalty-api/accumulate-loyalty-points)  to add points when a buyer pays for the purchase.
+   * Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](#endpoint-Loyalty-AccumulateLoyaltyPoints)  to add points when a buyer pays for the purchase.
    * @param {String} accountId The ID of the &#x60;loyalty account&#x60; in which to adjust the points.
    * @param {module:model/AdjustLoyaltyPointsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AdjustLoyaltyPointsResponse}
@@ -203,7 +203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -238,7 +238,7 @@ module.exports = function(apiClient) {
   /**
    * CreateLoyaltyAccount
    * Note: This endpoint is in beta.
-   * Creates a loyalty account. For more information, see  [Create a loyalty account](/docs/loyalty-api/overview/#loyalty-overview-create-account).
+   * Creates a loyalty account.
    * @param {module:model/CreateLoyaltyAccountRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateLoyaltyAccountResponse} and HTTP response
    */
@@ -257,7 +257,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -276,7 +276,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateLoyaltyAccount
-   * Creates a loyalty account. For more information, see  [Create a loyalty account](/docs/loyalty-api/overview/#loyalty-overview-create-account).
+   * Creates a loyalty account.
    * @param {module:model/CreateLoyaltyAccountRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateLoyaltyAccountResponse}
    */
@@ -291,7 +291,7 @@ module.exports = function(apiClient) {
   /**
    * CreateLoyaltyReward
    * Note: This endpoint is in beta.
-   * Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.
    * @param {module:model/CreateLoyaltyRewardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateLoyaltyRewardResponse} and HTTP response
    */
@@ -310,7 +310,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -329,7 +329,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateLoyaltyReward
-   * Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.
    * @param {module:model/CreateLoyaltyRewardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateLoyaltyRewardResponse}
    */
@@ -344,7 +344,7 @@ module.exports = function(apiClient) {
   /**
    * DeleteLoyaltyReward
    * Note: This endpoint is in beta.
-   * Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](/reference/square/loyalty-api/create-loyalty-reward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](#endpoint-Loyalty-CreateLoyaltyReward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).
    * @param {String} rewardId The ID of the &#x60;loyalty reward&#x60; to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteLoyaltyRewardResponse} and HTTP response
    */
@@ -364,7 +364,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -383,7 +383,7 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteLoyaltyReward
-   * Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](/reference/square/loyalty-api/create-loyalty-reward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](#endpoint-Loyalty-CreateLoyaltyReward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).
    * @param {String} rewardId The ID of the &#x60;loyalty reward&#x60; to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteLoyaltyRewardResponse}
    */
@@ -398,7 +398,7 @@ module.exports = function(apiClient) {
   /**
    * ListLoyaltyPrograms
    * Note: This endpoint is in beta.
-   * Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program. For more information, see  [Loyalty Overview](/docs/loyalty/overview). .
+   * Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListLoyaltyProgramsResponse} and HTTP response
    */
   this.listLoyaltyProgramsWithHttpInfo = function() {
@@ -411,7 +411,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -430,7 +430,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListLoyaltyPrograms
-   * Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program. For more information, see  [Loyalty Overview](/docs/loyalty/overview). .
+   * Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListLoyaltyProgramsResponse}
    */
   this.listLoyaltyPrograms = function() {
@@ -444,7 +444,7 @@ module.exports = function(apiClient) {
   /**
    * RedeemLoyaltyReward
    * Note: This endpoint is in beta.
-   * Redeems a loyalty reward.  The endpoint sets the reward to the terminal state (&#x60;REDEEMED&#x60;).   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Redeems a loyalty reward.  The endpoint sets the reward to the &#x60;REDEEMED&#x60; terminal state.   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.
    * @param {String} rewardId The ID of the &#x60;loyalty reward&#x60; to redeem.
    * @param {module:model/RedeemLoyaltyRewardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RedeemLoyaltyRewardResponse} and HTTP response
@@ -470,7 +470,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -489,7 +489,7 @@ module.exports = function(apiClient) {
 
   /**
    * RedeemLoyaltyReward
-   * Redeems a loyalty reward.  The endpoint sets the reward to the terminal state (&#x60;REDEEMED&#x60;).   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+   * Redeems a loyalty reward.  The endpoint sets the reward to the &#x60;REDEEMED&#x60; terminal state.   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.
    * @param {String} rewardId The ID of the &#x60;loyalty reward&#x60; to redeem.
    * @param {module:model/RedeemLoyaltyRewardRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RedeemLoyaltyRewardResponse}
@@ -525,7 +525,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -579,7 +579,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -613,7 +613,7 @@ module.exports = function(apiClient) {
   /**
    * SearchLoyaltyAccounts
    * Note: This endpoint is in beta.
-   * Searches for loyalty accounts.  In the current implementation, you can search for a loyalty account using the phone number associated with the account.  If no phone number is provided, all loyalty accounts are returned.
+   * Searches for loyalty accounts in a loyalty program.    You can search for a loyalty account using the phone number or customer ID associated with the account. To return all loyalty accounts, specify an empty &#x60;query&#x60; object or omit it entirely.    Search results are sorted by &#x60;created_at&#x60; in ascending order.
    * @param {module:model/SearchLoyaltyAccountsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchLoyaltyAccountsResponse} and HTTP response
    */
@@ -632,7 +632,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -651,7 +651,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchLoyaltyAccounts
-   * Searches for loyalty accounts.  In the current implementation, you can search for a loyalty account using the phone number associated with the account.  If no phone number is provided, all loyalty accounts are returned.
+   * Searches for loyalty accounts in a loyalty program.    You can search for a loyalty account using the phone number or customer ID associated with the account. To return all loyalty accounts, specify an empty &#x60;query&#x60; object or omit it entirely.    Search results are sorted by &#x60;created_at&#x60; in ascending order.
    * @param {module:model/SearchLoyaltyAccountsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchLoyaltyAccountsResponse}
    */
@@ -666,7 +666,7 @@ module.exports = function(apiClient) {
   /**
    * SearchLoyaltyEvents
    * Note: This endpoint is in beta.
-   * Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.  For more information, see  [Loyalty events](/docs/loyalty-api/overview/#loyalty-events).
+   * Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.
    * @param {module:model/SearchLoyaltyEventsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchLoyaltyEventsResponse} and HTTP response
    */
@@ -685,7 +685,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -704,7 +704,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchLoyaltyEvents
-   * Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.  For more information, see  [Loyalty events](/docs/loyalty-api/overview/#loyalty-events).
+   * Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.
    * @param {module:model/SearchLoyaltyEventsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchLoyaltyEventsResponse}
    */
@@ -719,7 +719,7 @@ module.exports = function(apiClient) {
   /**
    * SearchLoyaltyRewards
    * Note: This endpoint is in beta.
-   * Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](/reference/square/loyalty-api/retrieve-loyalty-reward) endpoint.  For more information about loyalty rewards, see  [Loyalty Rewards](/docs/loyalty-api/overview/#loyalty-rewards).
+   * Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](#endpoint-Loyalty-RetrieveLoyaltyReward) endpoint.
    * @param {module:model/SearchLoyaltyRewardsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchLoyaltyRewardsResponse} and HTTP response
    */
@@ -738,7 +738,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -757,7 +757,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchLoyaltyRewards
-   * Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](/reference/square/loyalty-api/retrieve-loyalty-reward) endpoint.  For more information about loyalty rewards, see  [Loyalty Rewards](/docs/loyalty-api/overview/#loyalty-rewards).
+   * Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](#endpoint-Loyalty-RetrieveLoyaltyReward) endpoint.
    * @param {module:model/SearchLoyaltyRewardsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchLoyaltyRewardsResponse}
    */

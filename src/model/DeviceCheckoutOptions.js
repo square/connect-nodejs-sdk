@@ -19,7 +19,6 @@ var TipSettings = require('./TipSettings');
 
 /**
  * The DeviceCheckoutOptions model module.
- * Note: This model is in beta.
  * @module model/DeviceCheckoutOptions
  */
 
@@ -28,7 +27,7 @@ var TipSettings = require('./TipSettings');
  * 
  * @alias module:model/DeviceCheckoutOptions
  * @class
- * @param deviceId {String} The unique Id of the device intended for this `TerminalCheckout`. The Id can be retrieved from /v2/devices api.
+ * @param deviceId {String} The unique ID of the device intended for this `TerminalCheckout`. A list of `DeviceCode` objects can be retrieved from the /v2/devices/codes endpoint. Match a `DeviceCode.device_id` value with `device_id` to get the associated device code.
  */
 var exports = function(deviceId) {
   var _this = this;
@@ -63,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The unique Id of the device intended for this `TerminalCheckout`. The Id can be retrieved from /v2/devices api.
+ * The unique ID of the device intended for this `TerminalCheckout`. A list of `DeviceCode` objects can be retrieved from the /v2/devices/codes endpoint. Match a `DeviceCode.device_id` value with `device_id` to get the associated device code.
  * @member {String} device_id
  */
 exports.prototype['device_id'] = undefined;

@@ -184,6 +184,7 @@ Class | Method | HTTP request | Description
 *SquareConnect.OrdersApi* | [**calculateOrder**](docs/OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
 *SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
 *SquareConnect.OrdersApi* | [**payOrder**](docs/OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
+*SquareConnect.OrdersApi* | [**retrieveOrder**](docs/OrdersApi.md#retrieveOrder) | **GET** /v2/orders/{order_id} | RetrieveOrder
 *SquareConnect.OrdersApi* | [**searchOrders**](docs/OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
 *SquareConnect.OrdersApi* | [**updateOrder**](docs/OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
 *SquareConnect.PaymentsApi* | [**cancelPayment**](docs/PaymentsApi.md#cancelPayment) | **POST** /v2/payments/{payment_id}/cancel | CancelPayment
@@ -210,9 +211,13 @@ Class | Method | HTTP request | Description
 *SquareConnect.TeamApi* | [**updateTeamMember**](docs/TeamApi.md#updateTeamMember) | **PUT** /v2/team-members/{team_member_id} | UpdateTeamMember
 *SquareConnect.TeamApi* | [**updateWageSetting**](docs/TeamApi.md#updateWageSetting) | **PUT** /v2/team-members/{team_member_id}/wage-setting | UpdateWageSetting
 *SquareConnect.TerminalApi* | [**cancelTerminalCheckout**](docs/TerminalApi.md#cancelTerminalCheckout) | **POST** /v2/terminals/checkouts/{checkout_id}/cancel | CancelTerminalCheckout
+*SquareConnect.TerminalApi* | [**cancelTerminalRefund**](docs/TerminalApi.md#cancelTerminalRefund) | **POST** /v2/terminals/refunds/{terminal_refund_id}/cancel | CancelTerminalRefund
 *SquareConnect.TerminalApi* | [**createTerminalCheckout**](docs/TerminalApi.md#createTerminalCheckout) | **POST** /v2/terminals/checkouts | CreateTerminalCheckout
+*SquareConnect.TerminalApi* | [**createTerminalRefund**](docs/TerminalApi.md#createTerminalRefund) | **POST** /v2/terminals/refunds | CreateTerminalRefund
 *SquareConnect.TerminalApi* | [**getTerminalCheckout**](docs/TerminalApi.md#getTerminalCheckout) | **GET** /v2/terminals/checkouts/{checkout_id} | GetTerminalCheckout
+*SquareConnect.TerminalApi* | [**getTerminalRefund**](docs/TerminalApi.md#getTerminalRefund) | **GET** /v2/terminals/refunds/{terminal_refund_id} | GetTerminalRefund
 *SquareConnect.TerminalApi* | [**searchTerminalCheckouts**](docs/TerminalApi.md#searchTerminalCheckouts) | **POST** /v2/terminals/checkouts/search | SearchTerminalCheckouts
+*SquareConnect.TerminalApi* | [**searchTerminalRefunds**](docs/TerminalApi.md#searchTerminalRefunds) | **POST** /v2/terminals/refunds/search | SearchTerminalRefunds
 *SquareConnect.TransactionsApi* | [**captureTransaction**](docs/TransactionsApi.md#captureTransaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture | CaptureTransaction
 *SquareConnect.TransactionsApi* | [**charge**](docs/TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions | Charge
 *SquareConnect.TransactionsApi* | [**createRefund**](docs/TransactionsApi.md#createRefund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund | CreateRefund
@@ -343,6 +348,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CancelSubscriptionResponse](docs/CancelSubscriptionResponse.md)
  - [SquareConnect.CancelTerminalCheckoutRequest](docs/CancelTerminalCheckoutRequest.md)
  - [SquareConnect.CancelTerminalCheckoutResponse](docs/CancelTerminalCheckoutResponse.md)
+ - [SquareConnect.CancelTerminalRefundRequest](docs/CancelTerminalRefundRequest.md)
+ - [SquareConnect.CancelTerminalRefundResponse](docs/CancelTerminalRefundResponse.md)
  - [SquareConnect.CaptureTransactionRequest](docs/CaptureTransactionRequest.md)
  - [SquareConnect.CaptureTransactionResponse](docs/CaptureTransactionResponse.md)
  - [SquareConnect.Card](docs/Card.md)
@@ -402,6 +409,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CatalogQueryItemsForTax](docs/CatalogQueryItemsForTax.md)
  - [SquareConnect.CatalogQueryPrefix](docs/CatalogQueryPrefix.md)
  - [SquareConnect.CatalogQueryRange](docs/CatalogQueryRange.md)
+ - [SquareConnect.CatalogQuerySet](docs/CatalogQuerySet.md)
  - [SquareConnect.CatalogQuerySortedAttribute](docs/CatalogQuerySortedAttribute.md)
  - [SquareConnect.CatalogQueryText](docs/CatalogQueryText.md)
  - [SquareConnect.CatalogQuickAmount](docs/CatalogQuickAmount.md)
@@ -462,6 +470,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.CreateTeamMemberResponse](docs/CreateTeamMemberResponse.md)
  - [SquareConnect.CreateTerminalCheckoutRequest](docs/CreateTerminalCheckoutRequest.md)
  - [SquareConnect.CreateTerminalCheckoutResponse](docs/CreateTerminalCheckoutResponse.md)
+ - [SquareConnect.CreateTerminalRefundRequest](docs/CreateTerminalRefundRequest.md)
+ - [SquareConnect.CreateTerminalRefundResponse](docs/CreateTerminalRefundResponse.md)
  - [SquareConnect.Currency](docs/Currency.md)
  - [SquareConnect.CustomAttributeFilter](docs/CustomAttributeFilter.md)
  - [SquareConnect.Customer](docs/Customer.md)
@@ -538,6 +548,9 @@ Class | Method | HTTP request | Description
  - [SquareConnect.GetTeamMemberWageResponse](docs/GetTeamMemberWageResponse.md)
  - [SquareConnect.GetTerminalCheckoutRequest](docs/GetTerminalCheckoutRequest.md)
  - [SquareConnect.GetTerminalCheckoutResponse](docs/GetTerminalCheckoutResponse.md)
+ - [SquareConnect.GetTerminalRefundRequest](docs/GetTerminalRefundRequest.md)
+ - [SquareConnect.GetTerminalRefundResponse](docs/GetTerminalRefundResponse.md)
+ - [SquareConnect.InlineTypes](docs/InlineTypes.md)
  - [SquareConnect.InventoryAdjustment](docs/InventoryAdjustment.md)
  - [SquareConnect.InventoryAlertType](docs/InventoryAlertType.md)
  - [SquareConnect.InventoryChange](docs/InventoryChange.md)
@@ -760,6 +773,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.RetrieveLoyaltyRewardResponse](docs/RetrieveLoyaltyRewardResponse.md)
  - [SquareConnect.RetrieveMerchantRequest](docs/RetrieveMerchantRequest.md)
  - [SquareConnect.RetrieveMerchantResponse](docs/RetrieveMerchantResponse.md)
+ - [SquareConnect.RetrieveOrderRequest](docs/RetrieveOrderRequest.md)
+ - [SquareConnect.RetrieveOrderResponse](docs/RetrieveOrderResponse.md)
  - [SquareConnect.RetrieveSubscriptionRequest](docs/RetrieveSubscriptionRequest.md)
  - [SquareConnect.RetrieveSubscriptionResponse](docs/RetrieveSubscriptionResponse.md)
  - [SquareConnect.RetrieveTeamMemberRequest](docs/RetrieveTeamMemberRequest.md)
@@ -810,6 +825,8 @@ Class | Method | HTTP request | Description
  - [SquareConnect.SearchTeamMembersResponse](docs/SearchTeamMembersResponse.md)
  - [SquareConnect.SearchTerminalCheckoutsRequest](docs/SearchTerminalCheckoutsRequest.md)
  - [SquareConnect.SearchTerminalCheckoutsResponse](docs/SearchTerminalCheckoutsResponse.md)
+ - [SquareConnect.SearchTerminalRefundsRequest](docs/SearchTerminalRefundsRequest.md)
+ - [SquareConnect.SearchTerminalRefundsResponse](docs/SearchTerminalRefundsResponse.md)
  - [SquareConnect.Shift](docs/Shift.md)
  - [SquareConnect.ShiftFilter](docs/ShiftFilter.md)
  - [SquareConnect.ShiftFilterStatus](docs/ShiftFilterStatus.md)
@@ -840,8 +857,6 @@ Class | Method | HTTP request | Description
  - [SquareConnect.TeamMemberStatus](docs/TeamMemberStatus.md)
  - [SquareConnect.TeamMemberWage](docs/TeamMemberWage.md)
  - [SquareConnect.Tender](docs/Tender.md)
- - [SquareConnect.TenderBankTransferDetails](docs/TenderBankTransferDetails.md)
- - [SquareConnect.TenderBankTransferDetailsStatus](docs/TenderBankTransferDetailsStatus.md)
  - [SquareConnect.TenderCardDetails](docs/TenderCardDetails.md)
  - [SquareConnect.TenderCardDetailsEntryMethod](docs/TenderCardDetailsEntryMethod.md)
  - [SquareConnect.TenderCardDetailsStatus](docs/TenderCardDetailsStatus.md)
@@ -851,6 +866,10 @@ Class | Method | HTTP request | Description
  - [SquareConnect.TerminalCheckoutQuery](docs/TerminalCheckoutQuery.md)
  - [SquareConnect.TerminalCheckoutQueryFilter](docs/TerminalCheckoutQueryFilter.md)
  - [SquareConnect.TerminalCheckoutQuerySort](docs/TerminalCheckoutQuerySort.md)
+ - [SquareConnect.TerminalRefund](docs/TerminalRefund.md)
+ - [SquareConnect.TerminalRefundQuery](docs/TerminalRefundQuery.md)
+ - [SquareConnect.TerminalRefundQueryFilter](docs/TerminalRefundQueryFilter.md)
+ - [SquareConnect.TerminalRefundQuerySort](docs/TerminalRefundQuerySort.md)
  - [SquareConnect.TimeRange](docs/TimeRange.md)
  - [SquareConnect.TipSettings](docs/TipSettings.md)
  - [SquareConnect.Transaction](docs/Transaction.md)
@@ -1044,6 +1063,7 @@ Class | Method | HTTP request | Description
  - [SquareConnect.V1Variation](docs/V1Variation.md)
  - [SquareConnect.V1VariationInventoryAlertType](docs/V1VariationInventoryAlertType.md)
  - [SquareConnect.V1VariationPricingType](docs/V1VariationPricingType.md)
+ - [SquareConnect.VersionedCatalogObject](docs/VersionedCatalogObject.md)
  - [SquareConnect.VoidTransactionRequest](docs/VoidTransactionRequest.md)
  - [SquareConnect.VoidTransactionResponse](docs/VoidTransactionResponse.md)
  - [SquareConnect.WageSetting](docs/WageSetting.md)

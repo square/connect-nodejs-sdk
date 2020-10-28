@@ -1,7 +1,6 @@
 # SquareConnect.TipSettings
 
 ### Description
-**Note: This model is in beta.**
 
 
 

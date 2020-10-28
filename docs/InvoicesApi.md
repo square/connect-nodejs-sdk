@@ -34,9 +34,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = "invoiceId_example"; // String | The ID of the `invoice` to cancel.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The ID of the `invoice` to cancel.
 
-var body = new SquareConnect.CancelInvoiceRequest(); // CancelInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InvoicesApi.constructFromObject({}); // CancelInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.cancelInvoice(invoiceId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -86,7 +86,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var body = new SquareConnect.CreateInvoiceRequest(); // CreateInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InvoicesApi.constructFromObject({}); // CreateInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createInvoice(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -135,10 +135,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = "invoiceId_example"; // String | The ID of the invoice to delete.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The ID of the invoice to delete.
 
 var opts = { 
-  'version': 56 // Number | The version of the `invoice` to delete. If you do not know the version, you can call `GetInvoice` or  `ListInvoices`.
+  'version': SquareConnect.InvoicesApi.constructFromObject({}); // Number | The version of the `invoice` to delete. If you do not know the version, you can call `GetInvoice` or  `ListInvoices`.
 };
 apiInstance.deleteInvoice(invoiceId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -188,7 +188,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = "invoiceId_example"; // String | The id of the invoice to retrieve.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The id of the invoice to retrieve.
 
 apiInstance.getInvoice(invoiceId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -237,11 +237,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var locationId = "locationId_example"; // String | The ID of the location for which to list invoices.
+var locationId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The ID of the location for which to list invoices.
 
 var opts = { 
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint.  Provide this cursor to retrieve the next set of results for your original query.  For more information, see [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination).
-  'limit': 56 // Number | The maximum number of invoices to return (200 is the maximum `limit`).  If not provided, the server  uses a default limit of 100 invoices.
+  'cursor': SquareConnect.InvoicesApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint.  Provide this cursor to retrieve the next set of results for your original query.  For more information, see [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination).
+  'limit': SquareConnect.InvoicesApi.constructFromObject({}); // Number | The maximum number of invoices to return (200 is the maximum `limit`).  If not provided, the server  uses a default limit of 100 invoices.
 };
 apiInstance.listInvoices(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -292,9 +292,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = "invoiceId_example"; // String | The id of the invoice to publish.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The id of the invoice to publish.
 
-var body = new SquareConnect.PublishInvoiceRequest(); // PublishInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InvoicesApi.constructFromObject({}); // PublishInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.publishInvoice(invoiceId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -344,7 +344,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var body = new SquareConnect.SearchInvoicesRequest(); // SearchInvoicesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InvoicesApi.constructFromObject({}); // SearchInvoicesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchInvoices(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -393,9 +393,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = "invoiceId_example"; // String | The id of the invoice to update.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The id of the invoice to update.
 
-var body = new SquareConnect.UpdateInvoiceRequest(); // UpdateInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InvoicesApi.constructFromObject({}); // UpdateInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateInvoice(invoiceId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

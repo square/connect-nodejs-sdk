@@ -15,31 +15,31 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class TenderBankTransferDetailsStatus.
+ * Enum class InlineTypes.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "PENDING"
+   * value: "INLINE_NONE"
    * @const
    */
-  "PENDING": "PENDING",
+  "NONE": "INLINE_NONE",
   /**
-   * value: "COMPLETED"
+   * value: "INLINE_VARIATIONS"
    * @const
    */
-  "COMPLETED": "COMPLETED",
+  "VARIATIONS": "INLINE_VARIATIONS",
   /**
-   * value: "FAILED"
+   * value: "INLINE_ALL"
    * @const
    */
-  "FAILED": "FAILED"};
+  "ALL": "INLINE_ALL"};
 
 /**
- * Returns a <code>TenderBankTransferDetailsStatus</code> enum value from a Javascript object name.
+ * Returns a <code>InlineTypes</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/TenderBankTransferDetailsStatus} The enum <code>TenderBankTransferDetailsStatus</code> value.
+ * @return {module:model/InlineTypes} The enum <code>InlineTypes</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

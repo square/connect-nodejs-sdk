@@ -116,7 +116,7 @@ exports.prototype['cursor'] = undefined;
  */
 exports.prototype['limit'] = undefined;
 /**
- * The order to sort the resutls. The default sort order is ascending (`ASC`). See [SortOrder](#type-sortorder) for possible values
+ * The order to sort the results by item names. The default sort order is ascending (`ASC`). See [SortOrder](#type-sortorder) for possible values
  * @member {String} sort_order
  */
 exports.prototype['sort_order'] = undefined;

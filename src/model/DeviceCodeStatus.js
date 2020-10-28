@@ -21,6 +21,11 @@ var ApiClient = require('../ApiClient');
  */
 var exports = {
   /**
+   * value: "UNKNOWN"
+   * @const
+   */
+  "UNKNOWN": "UNKNOWN",
+  /**
    * value: "UNPAIRED"
    * @const
    */
@@ -29,7 +34,12 @@ var exports = {
    * value: "PAIRED"
    * @const
    */
-  "PAIRED": "PAIRED"};
+  "PAIRED": "PAIRED",
+  /**
+   * value: "EXPIRED"
+   * @const
+   */
+  "EXPIRED": "EXPIRED"};
 
 /**
  * Returns a <code>DeviceCodeStatus</code> enum value from a Javascript object name.

@@ -37,7 +37,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.BatchDeleteCatalogObjectsRequest(); // BatchDeleteCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // BatchDeleteCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchDeleteCatalogObjects(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -85,7 +85,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.BatchRetrieveCatalogObjectsRequest(); // BatchRetrieveCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // BatchRetrieveCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchRetrieveCatalogObjects(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -133,7 +133,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.BatchUpsertCatalogObjectsRequest(); // BatchUpsertCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // BatchUpsertCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchUpsertCatalogObjects(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -223,7 +223,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var objectId = "objectId_example"; // String | The ID of the catalog object to be deleted. When an object is deleted, other objects in the graph that depend on that object will be deleted as well (for example, deleting a catalog item will delete its catalog item variations).
+var objectId = SquareConnect.CatalogApi.constructFromObject({}); // String | The ID of the catalog object to be deleted. When an object is deleted, other objects in the graph that depend on that object will be deleted as well (for example, deleting a catalog item will delete its catalog item variations).
 
 apiInstance.deleteCatalogObject(objectId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -272,8 +272,8 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.CatalogApi();
 
 var opts = { 
-  'cursor': "cursor_example", // String | The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-  'types': "types_example" // String | An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY,IMAGE`.  The legal values are taken from the CatalogObjectType enum: `ITEM`, `ITEM_VARIATION`, `CATEGORY`, `DISCOUNT`, `TAX`, `MODIFIER`, `MODIFIER_LIST`, or `IMAGE`.
+  'cursor': SquareConnect.CatalogApi.constructFromObject({});, // String | The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+  'types': SquareConnect.CatalogApi.constructFromObject({}); // String | An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY,IMAGE`.  The legal values are taken from the CatalogObjectType enum: `ITEM`, `ITEM_VARIATION`, `CATEGORY`, `DISCOUNT`, `TAX`, `MODIFIER`, `MODIFIER_LIST`, or `IMAGE`.
 };
 apiInstance.listCatalog(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -322,10 +322,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var objectId = "objectId_example"; // String | The object ID of any type of catalog objects to be retrieved.
+var objectId = SquareConnect.CatalogApi.constructFromObject({}); // String | The object ID of any type of catalog objects to be retrieved.
 
 var opts = { 
-  'includeRelatedObjects': true // Boolean | If `true`, the response will include additional objects that are related to the requested object, as follows:  If the `object` field of the response contains a CatalogItem, its associated CatalogCategory, CatalogTax objects, CatalogImages and CatalogModifierLists will be returned in the `related_objects` field of the response. If the `object` field of the response contains a CatalogItemVariation, its parent CatalogItem will be returned in the `related_objects` field of the response.  Default value: `false`
+  'includeRelatedObjects': SquareConnect.CatalogApi.constructFromObject({}); // Boolean | If `true`, the response will include additional objects that are related to the requested object, as follows:  If the `object` field of the response contains a `CatalogItem`, its associated `CatalogCategory`, `CatalogTax`, `CatalogImage` and `CatalogModifierList` objects will be returned in the `related_objects` field of the response. If the `object` field of the response contains a `CatalogItemVariation`, its parent `CatalogItem` will be returned in the `related_objects` field of the response.  Default value: `false`
 };
 apiInstance.retrieveCatalogObject(objectId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -340,7 +340,7 @@ apiInstance.retrieveCatalogObject(objectId, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **objectId** | **String**| The object ID of any type of catalog objects to be retrieved. | 
- **includeRelatedObjects** | **Boolean**| If &#x60;true&#x60;, the response will include additional objects that are related to the requested object, as follows:  If the &#x60;object&#x60; field of the response contains a CatalogItem, its associated CatalogCategory, CatalogTax objects, CatalogImages and CatalogModifierLists will be returned in the &#x60;related_objects&#x60; field of the response. If the &#x60;object&#x60; field of the response contains a CatalogItemVariation, its parent CatalogItem will be returned in the &#x60;related_objects&#x60; field of the response.  Default value: &#x60;false&#x60; | [optional] 
+ **includeRelatedObjects** | **Boolean**| If &#x60;true&#x60;, the response will include additional objects that are related to the requested object, as follows:  If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItem&#x60;, its associated &#x60;CatalogCategory&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogImage&#x60; and &#x60;CatalogModifierList&#x60; objects will be returned in the &#x60;related_objects&#x60; field of the response. If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItemVariation&#x60;, its parent &#x60;CatalogItem&#x60; will be returned in the &#x60;related_objects&#x60; field of the response.  Default value: &#x60;false&#x60; | [optional] 
 
 ### Return type
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 SearchCatalogItems
 
-Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions,   This (&#x60;SearchCatalogItems&#x60;) endpoint differs from the [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints use different call conventions, including the query filter formats.
+Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions,  This (&#x60;SearchCatalogItems&#x60;) endpoint differs from the [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints use different call conventions, including the query filter formats.
 
 ### Example
 ```javascript
@@ -375,7 +375,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.SearchCatalogItemsRequest(); // SearchCatalogItemsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // SearchCatalogItemsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchCatalogItems(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 SearchCatalogObjects
 
-Searches for [CatalogObject](#type-CatalogObject) of any types against supported search attribute values,  excluding custom attribute values on items or item variations, against one or more of the specified query expressions,   This (&#x60;SearchCatalogObjects&#x60;) endpoint differs from the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints have different call conventions, including the query filter formats.
+Searches for [CatalogObject](#type-CatalogObject) of any types against supported search attribute values, excluding custom attribute values on items or item variations, against one or more of the specified query expressions,  This (&#x60;SearchCatalogObjects&#x60;) endpoint differs from the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint in the following aspects:  - &#x60;SearchCatalogItems&#x60; can only search for items or item variations, whereas &#x60;SearchCatalogObjects&#x60; can search for any type of catalog objects. - &#x60;SearchCatalogItems&#x60; supports the custom attribute query filters to return items or item variations that contain custom attribute values, where &#x60;SearchCatalogObjects&#x60; does not. - &#x60;SearchCatalogItems&#x60; does not support the &#x60;include_deleted_objects&#x60; filter to search for deleted items or item variations, whereas &#x60;SearchCatalogObjects&#x60; does. - The both endpoints have different call conventions, including the query filter formats.
 
 ### Example
 ```javascript
@@ -423,7 +423,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.SearchCatalogObjectsRequest(); // SearchCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // SearchCatalogObjectsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchCatalogObjects(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -471,7 +471,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.UpdateItemModifierListsRequest(); // UpdateItemModifierListsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // UpdateItemModifierListsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateItemModifierLists(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -519,7 +519,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.UpdateItemTaxesRequest(); // UpdateItemTaxesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // UpdateItemTaxesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateItemTaxes(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -567,7 +567,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CatalogApi();
 
-var body = new SquareConnect.UpsertCatalogObjectRequest(); // UpsertCatalogObjectRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CatalogApi.constructFromObject({}); // UpsertCatalogObjectRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.upsertCatalogObject(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

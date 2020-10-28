@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CompletePaymentRequest</code>.
- * Completes (captures) a payment.  By default, payments are set to autocomplete immediately after they are created. To complete payments manually, set &#x60;autocomplete&#x60; to false.
+ * Completes (captures) a payment.  By default, payments are set to &#x60;autocomplete&#x60; immediately after they are created. To complete payments manually, set &#x60;autocomplete&#x60; to &#x60;false&#x60;.
  * @alias module:model/CompletePaymentRequest
  * @class
  */

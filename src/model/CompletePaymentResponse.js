@@ -25,7 +25,7 @@ var Payment = require('./Payment');
 
 /**
  * Constructs a new <code>CompletePaymentResponse</code>.
- * Return value from a [CompletePayment](#endpoint-payments-completepayment) call.
+ * The return value from a [CompletePayment](#endpoint-payments-completepayment) call.
  * @alias module:model/CompletePaymentResponse
  * @class
  */
@@ -58,12 +58,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The successfully completed `Payment`.
+ * The successfully completed payment.
  * @member {module:model/Payment} payment
  */
 exports.prototype['payment'] = undefined;

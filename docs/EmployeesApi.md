@@ -29,10 +29,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.EmployeesApi();
 
 var opts = { 
-  'locationId': "locationId_example", // String | 
-  'status': "status_example", // String | Specifies the EmployeeStatus to filter the employee by.
-  'limit': 56, // Number | The number of employees to be returned on each page.
-  'cursor': "cursor_example" // String | The token required to retrieve the specified page of results.
+  'locationId': SquareConnect.EmployeesApi.constructFromObject({});, // String | 
+  'status': SquareConnect.EmployeesApi.constructFromObject({});, // String | Specifies the EmployeeStatus to filter the employee by.
+  'limit': SquareConnect.EmployeesApi.constructFromObject({});, // Number | The number of employees to be returned on each page.
+  'cursor': SquareConnect.EmployeesApi.constructFromObject({}); // String | The token required to retrieve the specified page of results.
 };
 apiInstance.listEmployees(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -84,7 +84,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.EmployeesApi();
 
-var id = "id_example"; // String | UUID for the employee that was requested.
+var id = SquareConnect.EmployeesApi.constructFromObject({}); // String | UUID for the employee that was requested.
 
 apiInstance.retrieveEmployee(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

@@ -39,7 +39,7 @@ module.exports = function(apiClient) {
   /**
    * CreateLocation
    * Note: This endpoint is in beta.
-   * Creates a location. For more information about locations, see [Locations API Overview](/locations-api).
+   * Creates a location.
    * @param {module:model/CreateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateLocationResponse} and HTTP response
    */
@@ -58,7 +58,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -77,7 +77,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateLocation
-   * Creates a location. For more information about locations, see [Locations API Overview](/locations-api).
+   * Creates a location.
    * @param {module:model/CreateLocationRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateLocationResponse}
    */
@@ -91,7 +91,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListLocations
-   * Provides information of all locations of a business.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
+   * Provides information of all locations of a business.  Many Square API endpoints require a &#x60;location_id&#x60; parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListLocationsResponse} and HTTP response
    */
   this.listLocationsWithHttpInfo = function() {
@@ -104,7 +104,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -123,7 +123,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListLocations
-   * Provides information of all locations of a business.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
+   * Provides information of all locations of a business.  Many Square API endpoints require a &#x60;location_id&#x60; parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListLocationsResponse}
    */
   this.listLocations = function() {
@@ -136,7 +136,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
-   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
+   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location.
    * @param {String} locationId The ID of the location to retrieve. If you specify the string \&quot;main\&quot;, then the endpoint returns the main location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveLocationResponse} and HTTP response
    */
@@ -156,7 +156,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -175,7 +175,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveLocation
-   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
+   * Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location.
    * @param {String} locationId The ID of the location to retrieve. If you specify the string \&quot;main\&quot;, then the endpoint returns the main location.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveLocationResponse}
    */
@@ -216,7 +216,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };

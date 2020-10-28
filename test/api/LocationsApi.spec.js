@@ -9,7 +9,7 @@ describe('LocationsApi', function () {
   beforeEach(function () {
     const defaultClient = SquareConnect.ApiClient.instance;
     const oauth2 = defaultClient.authentications['oauth2'];
-    oauth2.accessToken = accounts.production.access_token;
+    oauth2.accessToken = accounts.sandbox.access_token;
     this.api = new SquareConnect.LocationsApi();
   });
 
@@ -20,6 +20,6 @@ describe('LocationsApi', function () {
     const locations = resp.locations;
     expect(locations).to.exist;
     const locationIds = locations.map(location => location.id);
-    expect(locationIds).to.include(accounts.production.location_id);
+    expect(locationIds).to.include(accounts.sandbox.location_id);
   });
 });

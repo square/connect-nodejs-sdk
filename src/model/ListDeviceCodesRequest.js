@@ -18,7 +18,6 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The ListDeviceCodesRequest model module.
- * Note: This model is in beta.
  * @module model/ListDeviceCodesRequest
  */
 
@@ -30,6 +29,7 @@ var ApiClient = require('../ApiClient');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -56,6 +56,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('product_type')) {
       obj['product_type'] = ApiClient.convertToType(data['product_type'], 'String');
     }
+      if (data.hasOwnProperty('status')) {
+      obj['status'] = ApiClient.convertToType(data['status'], ['String']);
+    }
     }
   return obj;
 }
@@ -75,6 +78,11 @@ exports.prototype['location_id'] = undefined;
  * @member {String} product_type
  */
 exports.prototype['product_type'] = undefined;
+/**
+ * If specified, returns DeviceCodes with the specified statuses. Returns DeviceCodes of status `PAIRED` and `UNPAIRED` if empty. See [DeviceCodeStatus](#type-devicecodestatus) for possible values
+ * @member {Array.<String>} status
+ */
+exports.prototype['status'] = undefined;
 
 
 

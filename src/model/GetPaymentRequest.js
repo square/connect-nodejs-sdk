@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>GetPaymentRequest</code>.
- * Retrieve details for a specific Payment.
+ * Retrieve details for a specific payment.
  * @alias module:model/GetPaymentRequest
  * @class
  */

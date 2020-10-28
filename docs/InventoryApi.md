@@ -32,7 +32,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var body = new SquareConnect.BatchChangeInventoryRequest(); // BatchChangeInventoryRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InventoryApi.constructFromObject({}); // BatchChangeInventoryRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchChangeInventory(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -80,7 +80,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var body = new SquareConnect.BatchRetrieveInventoryChangesRequest(); // BatchRetrieveInventoryChangesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InventoryApi.constructFromObject({}); // BatchRetrieveInventoryChangesRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchRetrieveInventoryChanges(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -128,7 +128,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var body = new SquareConnect.BatchRetrieveInventoryCountsRequest(); // BatchRetrieveInventoryCountsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.InventoryApi.constructFromObject({}); // BatchRetrieveInventoryCountsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchRetrieveInventoryCounts(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -176,7 +176,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var adjustmentId = "adjustmentId_example"; // String | ID of the `InventoryAdjustment` to retrieve.
+var adjustmentId = SquareConnect.InventoryApi.constructFromObject({}); // String | ID of the `InventoryAdjustment` to retrieve.
 
 apiInstance.retrieveInventoryAdjustment(adjustmentId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -224,11 +224,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var catalogObjectId = "catalogObjectId_example"; // String | ID of the `CatalogObject` to retrieve.
+var catalogObjectId = SquareConnect.InventoryApi.constructFromObject({}); // String | ID of the `CatalogObject` to retrieve.
 
 var opts = { 
-  'locationIds': "locationIds_example", // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
+  'locationIds': SquareConnect.InventoryApi.constructFromObject({});, // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
+  'cursor': SquareConnect.InventoryApi.constructFromObject({}); // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
 };
 apiInstance.retrieveInventoryChanges(catalogObjectId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -278,11 +278,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var catalogObjectId = "catalogObjectId_example"; // String | ID of the `CatalogObject` to retrieve.
+var catalogObjectId = SquareConnect.InventoryApi.constructFromObject({}); // String | ID of the `CatalogObject` to retrieve.
 
 var opts = { 
-  'locationIds': "locationIds_example", // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+  'locationIds': SquareConnect.InventoryApi.constructFromObject({});, // String | The `Location` IDs to look up as a comma-separated list. An empty list queries all locations.
+  'cursor': SquareConnect.InventoryApi.constructFromObject({}); // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
 };
 apiInstance.retrieveInventoryCount(catalogObjectId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -332,7 +332,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InventoryApi();
 
-var physicalCountId = "physicalCountId_example"; // String | ID of the `InventoryPhysicalCount` to retrieve.
+var physicalCountId = SquareConnect.InventoryApi.constructFromObject({}); // String | ID of the `InventoryPhysicalCount` to retrieve.
 
 apiInstance.retrieveInventoryPhysicalCount(physicalCountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

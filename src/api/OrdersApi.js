@@ -20,6 +20,7 @@ var CreateOrderRequest = require('../model/CreateOrderRequest');
 var CreateOrderResponse = require('../model/CreateOrderResponse');
 var PayOrderRequest = require('../model/PayOrderRequest');
 var PayOrderResponse = require('../model/PayOrderResponse');
+var RetrieveOrderResponse = require('../model/RetrieveOrderResponse');
 var SearchOrdersRequest = require('../model/SearchOrdersRequest');
 var SearchOrdersResponse = require('../model/SearchOrdersResponse');
 var UpdateOrderRequest = require('../model/UpdateOrderRequest');
@@ -63,7 +64,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -116,7 +117,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -168,7 +169,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -228,7 +229,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -261,6 +262,59 @@ module.exports = function(apiClient) {
 
 
   /**
+   * RetrieveOrder
+   * Retrieves an [Order](#type-order) by ID.
+   * @param {String} orderId The ID of the order to retrieve.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveOrderResponse} and HTTP response
+   */
+  this.retrieveOrderWithHttpInfo = function(orderId) {
+    var postBody = null;
+
+    // verify the required parameter 'orderId' is set
+    if (orderId === undefined || orderId === null) {
+      throw new Error("Missing the required parameter 'orderId' when calling retrieveOrder");
+    }
+
+
+    var pathParams = {
+      'order_id': orderId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-10-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = RetrieveOrderResponse;
+
+    return this.apiClient.callApi(
+      '/v2/orders/{order_id}', 'GET',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * RetrieveOrder
+   * Retrieves an [Order](#type-order) by ID.
+   * @param {String} orderId The ID of the order to retrieve.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveOrderResponse}
+   */
+  this.retrieveOrder = function(orderId) {
+    return this.retrieveOrderWithHttpInfo(orderId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * SearchOrders
    * Search all orders for one or more locations. Orders include all sales, returns, and exchanges regardless of how or when they entered the Square Ecosystem (e.g. Point of Sale, Invoices, Connect APIs, etc).  SearchOrders requests need to specify which locations to search and define a [&#x60;SearchOrdersQuery&#x60;](#type-searchordersquery) object which controls how to sort or filter the results. Your SearchOrdersQuery can:    Set filter criteria.   Set sort order.   Determine whether to return results as complete Order objects, or as [OrderEntry](#type-orderentry) objects.  Note that details for orders processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline orders have a &#x60;created_at&#x60; value that reflects the time the order was created, not the time it was subsequently transmitted to Square.
    * @param {module:model/SearchOrdersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -281,7 +335,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -341,7 +395,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };

@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CatalogPricingRule</code>.
- * Defines how discounts are automatically applied to a set of items that match the pricing rule  during the active time period.
+ * Defines how discounts are automatically applied to a set of items that match the pricing rule during the active time period.
  * @alias module:model/CatalogPricingRule
  * @class
  */
@@ -107,7 +107,7 @@ exports.prototype['time_period_ids'] = undefined;
  */
 exports.prototype['discount_id'] = undefined;
 /**
- * Unique ID for the `CatalogProductSet` that will be matched by this rule. A match rule matches within the entire cart. A match rule can match multiple times in the cart. If no `ProductSet` is present, the rule will match all products.
+ * Unique ID for the `CatalogProductSet` that will be matched by this rule. A match rule matches within the entire cart, and can match multiple times. This field will always be set.
  * @member {String} match_products_id
  */
 exports.prototype['match_products_id'] = undefined;
@@ -122,22 +122,22 @@ exports.prototype['apply_products_id'] = undefined;
  */
 exports.prototype['exclude_products_id'] = undefined;
 /**
- * Represents the date the Pricing Rule is valid from. Represented in RFC3339 full-date format (YYYY-MM-DD).
+ * Represents the date the Pricing Rule is valid from. Represented in RFC 3339 full-date format (YYYY-MM-DD).
  * @member {String} valid_from_date
  */
 exports.prototype['valid_from_date'] = undefined;
 /**
- * Represents the local time the pricing rule should be valid from. Represented in RFC3339 partial-time format (HH:MM:SS). Partial seconds will be truncated.
+ * Represents the local time the pricing rule should be valid from. Represented in RFC 3339 partial-time format (HH:MM:SS). Partial seconds will be truncated.
  * @member {String} valid_from_local_time
  */
 exports.prototype['valid_from_local_time'] = undefined;
 /**
- * Represents the date the Pricing Rule is valid until. Represented in RFC3339 full-date format (YYYY-MM-DD).
+ * Represents the date the Pricing Rule is valid until. Represented in RFC 3339 full-date format (YYYY-MM-DD).
  * @member {String} valid_until_date
  */
 exports.prototype['valid_until_date'] = undefined;
 /**
- * Represents the local time the pricing rule should be valid until. Represented in RFC3339 partial-time format (HH:MM:SS). Partial seconds will be truncated.
+ * Represents the local time the pricing rule should be valid until. Represented in RFC 3339 partial-time format (HH:MM:SS). Partial seconds will be truncated.
  * @member {String} valid_until_local_time
  */
 exports.prototype['valid_until_local_time'] = undefined;

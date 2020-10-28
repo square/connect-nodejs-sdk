@@ -26,7 +26,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>InvoicePaymentRequest</code>.
- * Describes a specific payment request in an invoice. You can have  up to nine payment requests for an invoice.
+ * Describes a specific payment request in an invoice. Invoices that contain multiple payment requests can  specify a maximum of 12 &#x60;INSTALLMENT&#x60; request types. All of the payment requests must specify the same &#x60;request_method&#x60;.  For more information,  see [Payment requests](/docs/invoices-api/overview#payment-requests).
  * @alias module:model/InvoicePaymentRequest
  * @class
  */

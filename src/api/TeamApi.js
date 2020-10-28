@@ -65,7 +65,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -117,7 +117,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -150,7 +150,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateTeamMember
-   * Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;first_name&#x60; - &#x60;last_name&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
+   * Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;given_name&#x60; - &#x60;family_name&#x60;  Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
    * @param {module:model/CreateTeamMemberRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateTeamMemberResponse} and HTTP response
    */
@@ -169,7 +169,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -188,7 +188,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateTeamMember
-   * Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;first_name&#x60; - &#x60;last_name&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
+   * Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;given_name&#x60; - &#x60;family_name&#x60;  Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
    * @param {module:model/CreateTeamMemberRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateTeamMemberResponse}
    */
@@ -202,7 +202,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveTeamMember
-   * Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
+   * Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60;. Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
    * @param {String} teamMemberId The ID of the team member to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveTeamMemberResponse} and HTTP response
    */
@@ -222,7 +222,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -241,7 +241,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveTeamMember
-   * Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
+   * Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60;. Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
    * @param {String} teamMemberId The ID of the team member to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveTeamMemberResponse}
    */
@@ -275,7 +275,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -308,7 +308,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchTeamMembers
-   * Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;is_active&#x60;
+   * Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;status&#x60;
    * @param {module:model/SearchTeamMembersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchTeamMembersResponse} and HTTP response
    */
@@ -327,7 +327,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -346,7 +346,7 @@ module.exports = function(apiClient) {
 
   /**
    * SearchTeamMembers
-   * Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;is_active&#x60;
+   * Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;status&#x60;
    * @param {module:model/SearchTeamMembersRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchTeamMembersResponse}
    */
@@ -386,7 +386,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -446,7 +446,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };

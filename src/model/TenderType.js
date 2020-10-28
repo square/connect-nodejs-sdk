@@ -46,10 +46,10 @@ var exports = {
    */
   "NO_SALE": "NO_SALE",
   /**
-   * value: "BANK_TRANSFER"
+   * value: "WALLET"
    * @const
    */
-  "BANK_TRANSFER": "BANK_TRANSFER",
+  "WALLET": "WALLET",
   /**
    * value: "OTHER"
    * @const

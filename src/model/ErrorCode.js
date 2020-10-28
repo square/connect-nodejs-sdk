@@ -471,6 +471,16 @@ var exports = {
    */
   "INVALID_CARD_DATA": "INVALID_CARD_DATA",
   /**
+   * value: "SOURCE_USED"
+   * @const
+   */
+  "SOURCE_USED": "SOURCE_USED",
+  /**
+   * value: "SOURCE_EXPIRED"
+   * @const
+   */
+  "SOURCE_EXPIRED": "SOURCE_EXPIRED",
+  /**
    * value: "LOCATION_MISMATCH"
    * @const
    */

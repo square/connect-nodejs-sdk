@@ -23,7 +23,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CancelPaymentRequest</code>.
- * Cancels (voids) a payment before it has been completed. Note: only payments created with &#x60;autocomplete&#x60; set to false can be canceled.
+ * Cancels (voids) a payment before it has been completed. Note: Only payments created with &#x60;autocomplete&#x60; set to &#x60;false&#x60; can be canceled.
  * @alias module:model/CancelPaymentRequest
  * @class
  */

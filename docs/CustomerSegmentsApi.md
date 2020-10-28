@@ -29,7 +29,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.CustomerSegmentsApi();
 
 var opts = { 
-  'cursor': "cursor_example" // String | A pagination cursor returned by previous calls to __ListCustomerSegments__. Used to retrieve the next set of query results.  See the [Pagination guide](https://developer.squareup.com/docs/docs/working-with-apis/pagination) for more information.
+  'cursor': SquareConnect.CustomerSegmentsApi.constructFromObject({}); // String | A pagination cursor returned by previous calls to __ListCustomerSegments__. Used to retrieve the next set of query results.  See the [Pagination guide](https://developer.squareup.com/docs/docs/working-with-apis/pagination) for more information.
 };
 apiInstance.listCustomerSegments(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -78,7 +78,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomerSegmentsApi();
 
-var segmentId = "segmentId_example"; // String | The Square-issued ID of the customer segment.
+var segmentId = SquareConnect.CustomerSegmentsApi.constructFromObject({}); // String | The Square-issued ID of the customer segment.
 
 apiInstance.retrieveCustomerSegment(segmentId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

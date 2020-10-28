@@ -61,7 +61,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of Errors encountered.
+ * Any errors that occurred during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

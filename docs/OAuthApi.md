@@ -23,7 +23,7 @@ var SquareConnect = require('square-connect');
 
 var apiInstance = new SquareConnect.OAuthApi();
 
-var body = new SquareConnect.ObtainTokenRequest(); // ObtainTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OAuthApi.constructFromObject({}); // ObtainTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.obtainToken(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -73,9 +73,9 @@ oauth2ClientSecret.apiKeyPrefix = 'Client';
 
 var apiInstance = new SquareConnect.OAuthApi();
 
-var clientId = "clientId_example"; // String | Your application ID, available from the [application dashboard](https://connect.squareup.com/apps).
+var clientId = SquareConnect.OAuthApi.constructFromObject({}); // String | Your application ID, available from the [application dashboard](https://connect.squareup.com/apps).
 
-var body = new SquareConnect.RenewTokenRequest(); // RenewTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OAuthApi.constructFromObject({}); // RenewTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.renewToken(clientId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -125,7 +125,7 @@ oauth2ClientSecret.apiKeyPrefix = 'Client';
 
 var apiInstance = new SquareConnect.OAuthApi();
 
-var body = new SquareConnect.RevokeTokenRequest(); // RevokeTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OAuthApi.constructFromObject({}); // RevokeTokenRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.revokeToken(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

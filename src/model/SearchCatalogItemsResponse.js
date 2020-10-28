@@ -67,7 +67,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Errors detected when the call to `SearchCatalogItems` endpoint fails.
+ * Any errors that occurred during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

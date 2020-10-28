@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-Describes a specific payment request in an invoice. You can have  up to nine payment requests for an invoice.
+Describes a specific payment request in an invoice. Invoices that contain multiple payment requests can  specify a maximum of 12 `INSTALLMENT` request types. All of the payment requests must specify the same `request_method`.  For more information,  see [Payment requests](/docs/invoices-api/overview#payment-requests).
 
 ## Properties
 Name | Type | Description | Notes

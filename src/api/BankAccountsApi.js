@@ -35,7 +35,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetBankAccount
-   * Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account. For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+   * Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account.
    * @param {String} bankAccountId Square-issued ID of the desired &#x60;BankAccount&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBankAccountResponse} and HTTP response
    */
@@ -55,7 +55,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -74,7 +74,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetBankAccount
-   * Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account. For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+   * Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account.
    * @param {String} bankAccountId Square-issued ID of the desired &#x60;BankAccount&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBankAccountResponse}
    */
@@ -88,7 +88,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetBankAccountByV1Id
-   * Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.  For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-the-v1-bank-accounts-api).
+   * Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.
    * @param {String} v1BankAccountId Connect V1 ID of the desired &#x60;BankAccount&#x60;. For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](https://developer.squareup.com/docs/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-v1-bank-accounts-api).
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBankAccountByV1IdResponse} and HTTP response
    */
@@ -108,7 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -127,7 +127,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetBankAccountByV1Id
-   * Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.  For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-the-v1-bank-accounts-api).
+   * Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.
    * @param {String} v1BankAccountId Connect V1 ID of the desired &#x60;BankAccount&#x60;. For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](https://developer.squareup.com/docs/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-v1-bank-accounts-api).
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBankAccountByV1IdResponse}
    */
@@ -141,7 +141,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListBankAccounts
-   * Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.  For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+   * Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor The pagination cursor returned by a previous call to this endpoint. Use it in the next &#x60;ListBankAccounts&#x60; request to retrieve the next set  of results.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
    * @param {Number} opts.limit Upper limit on the number of bank accounts to return in the response.  Currently, 1000 is the largest supported limit. You can specify a limit  of up to 1000 bank accounts. This is also the default limit.
@@ -162,7 +162,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -181,7 +181,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListBankAccounts
-   * Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.  For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+   * Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor The pagination cursor returned by a previous call to this endpoint. Use it in the next &#x60;ListBankAccounts&#x60; request to retrieve the next set  of results.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
    * @param {Number} opts.limit Upper limit on the number of bank accounts to return in the response.  Currently, 1000 is the largest supported limit. You can specify a limit  of up to 1000 bank accounts. This is also the default limit.

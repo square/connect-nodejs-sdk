@@ -19,7 +19,6 @@ var TimeRange = require('./TimeRange');
 
 /**
  * The TerminalCheckoutQueryFilter model module.
- * Note: This model is in beta.
  * @module model/TerminalCheckoutQueryFilter
  */
 

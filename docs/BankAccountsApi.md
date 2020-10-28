@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 GetBankAccount
 
-Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account. For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+Returns details of a [BankAccount](#type-bankaccount)  linked to a Square account.
 
 ### Example
 ```javascript
@@ -28,7 +28,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.BankAccountsApi();
 
-var bankAccountId = "bankAccountId_example"; // String | Square-issued ID of the desired `BankAccount`.
+var bankAccountId = SquareConnect.BankAccountsApi.constructFromObject({}); // String | Square-issued ID of the desired `BankAccount`.
 
 apiInstance.getBankAccount(bankAccountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 GetBankAccountByV1Id
 
-Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.  For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-the-v1-bank-accounts-api).
+Returns details of a [BankAccount](#type-bankaccount) identified by V1 bank account ID.
 
 ### Example
 ```javascript
@@ -76,7 +76,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.BankAccountsApi();
 
-var v1BankAccountId = "v1BankAccountId_example"; // String | Connect V1 ID of the desired `BankAccount`. For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](https://developer.squareup.com/docs/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-v1-bank-accounts-api).
+var v1BankAccountId = SquareConnect.BankAccountsApi.constructFromObject({}); // String | Connect V1 ID of the desired `BankAccount`. For more information, see  [Retrieve a bank account by using an ID issued by V1 Bank Accounts API](https://developer.squareup.com/docs/docs/bank-accounts-api#retrieve-a-bank-account-by-using-an-id-issued-by-v1-bank-accounts-api).
 
 apiInstance.getBankAccountByV1Id(v1BankAccountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ListBankAccounts
 
-Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.  For more information, see  [Bank Accounts API](/docs/bank-accounts-api).
+Returns a list of [BankAccount](#type-bankaccount) objects linked to a Square account.
 
 ### Example
 ```javascript
@@ -125,9 +125,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.BankAccountsApi();
 
 var opts = { 
-  'cursor': "cursor_example", // String | The pagination cursor returned by a previous call to this endpoint. Use it in the next `ListBankAccounts` request to retrieve the next set  of results.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
-  'limit': 56, // Number | Upper limit on the number of bank accounts to return in the response.  Currently, 1000 is the largest supported limit. You can specify a limit  of up to 1000 bank accounts. This is also the default limit.
-  'locationId': "locationId_example" // String | Location ID. You can specify this optional filter  to retrieve only the linked bank accounts belonging to a specific location.
+  'cursor': SquareConnect.BankAccountsApi.constructFromObject({});, // String | The pagination cursor returned by a previous call to this endpoint. Use it in the next `ListBankAccounts` request to retrieve the next set  of results.  See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
+  'limit': SquareConnect.BankAccountsApi.constructFromObject({});, // Number | Upper limit on the number of bank accounts to return in the response.  Currently, 1000 is the largest supported limit. You can specify a limit  of up to 1000 bank accounts. This is also the default limit.
+  'locationId': SquareConnect.BankAccountsApi.constructFromObject({}); // String | Location ID. You can specify this optional filter  to retrieve only the linked bank accounts belonging to a specific location.
 };
 apiInstance.listBankAccounts(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

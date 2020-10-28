@@ -1,7 +1,6 @@
 # SquareConnect.GetDeviceCodeResponse
 
 ### Description
-**Note: This model is in beta.**
 
 
 

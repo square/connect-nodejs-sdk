@@ -20,7 +20,6 @@ var TerminalCheckout = require('./TerminalCheckout');
 
 /**
  * The CreateTerminalCheckoutResponse model module.
- * Note: This model is in beta.
  * @module model/CreateTerminalCheckoutResponse
  */
 

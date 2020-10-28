@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 CreateLocation
 
-Creates a location. For more information about locations, see [Locations API Overview](/locations-api).
+Creates a location.
 
 ### Example
 ```javascript
@@ -30,7 +30,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LocationsApi();
 
-var body = new SquareConnect.CreateLocationRequest(); // CreateLocationRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LocationsApi.constructFromObject({}); // CreateLocationRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createLocation(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ListLocations
 
-Provides information of all locations of a business.  Most other Connect API endpoints have a required &#x60;location_id&#x60; path parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
+Provides information of all locations of a business.  Many Square API endpoints require a &#x60;location_id&#x60; parameter. The &#x60;id&#x60; field of the [&#x60;Location&#x60;](#type-location) objects returned by this endpoint correspond to that &#x60;location_id&#x60; parameter.
 
 ### Example
 ```javascript
@@ -107,7 +107,7 @@ This endpoint does not need any parameter.
 
 RetrieveLocation
 
-Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location. For more information,  see [Locations API Overview](/docs/locations-api).
+Retrieves details of a location. You can specify \&quot;main\&quot;  as the location ID to retrieve details of the  main location.
 
 ### Example
 ```javascript
@@ -120,7 +120,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LocationsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to retrieve. If you specify the string \"main\", then the endpoint returns the main location.
+var locationId = SquareConnect.LocationsApi.constructFromObject({}); // String | The ID of the location to retrieve. If you specify the string \"main\", then the endpoint returns the main location.
 
 apiInstance.retrieveLocation(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -169,9 +169,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LocationsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to update.
+var locationId = SquareConnect.LocationsApi.constructFromObject({}); // String | The ID of the location to update.
 
-var body = new SquareConnect.UpdateLocationRequest(); // UpdateLocationRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LocationsApi.constructFromObject({}); // UpdateLocationRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateLocation(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

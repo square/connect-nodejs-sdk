@@ -28,7 +28,7 @@ var Invoice = require('./Invoice');
  * Describes a &#x60;UpdateInvoice&#x60; request.
  * @alias module:model/UpdateInvoiceRequest
  * @class
- * @param invoice {module:model/Invoice} The invoice fields to update. You need to only specify the fields you want to change. The current invoice version must be specified in the version field. For more information, see [Update an invoice](invoices-api/overview#update-an-invoice).
+ * @param invoice {module:model/Invoice} The invoice fields to update. You need to only specify the fields you want to change. The current invoice version must be specified in the `version` field. For more information, see [Update an invoice](https://developer.squareup.com/docs/docs/invoices-api/overview#update-an-invoice).
  */
 var exports = function(invoice) {
   var _this = this;
@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The invoice fields to update. You need to only specify the fields you want to change. The current invoice version must be specified in the version field. For more information, see [Update an invoice](invoices-api/overview#update-an-invoice).
+ * The invoice fields to update. You need to only specify the fields you want to change. The current invoice version must be specified in the `version` field. For more information, see [Update an invoice](https://developer.squareup.com/docs/docs/invoices-api/overview#update-an-invoice).
  * @member {module:model/Invoice} invoice
  */
 exports.prototype['invoice'] = undefined;

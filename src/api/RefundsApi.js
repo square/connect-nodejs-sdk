@@ -36,7 +36,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetPaymentRefund
-   * Retrieves a specific &#x60;Refund&#x60; using the &#x60;refund_id&#x60;.
+   * Retrieves a specific refund using the &#x60;refund_id&#x60;.
    * @param {String} refundId Unique ID for the desired &#x60;PaymentRefund&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetPaymentRefundResponse} and HTTP response
    */
@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -75,7 +75,7 @@ module.exports = function(apiClient) {
 
   /**
    * GetPaymentRefund
-   * Retrieves a specific &#x60;Refund&#x60; using the &#x60;refund_id&#x60;.
+   * Retrieves a specific refund using the &#x60;refund_id&#x60;.
    * @param {String} refundId Unique ID for the desired &#x60;PaymentRefund&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetPaymentRefundResponse}
    */
@@ -89,7 +89,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListPaymentRefunds
-   * Retrieves a list of refunds for the account making the request.  Max results per page: 100
+   * Retrieves a list of refunds for the account making the request.  The maximum results per page is 100.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
@@ -120,7 +120,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -139,7 +139,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListPaymentRefunds
-   * Retrieves a list of refunds for the account making the request.  Max results per page: 100
+   * Retrieves a list of refunds for the account making the request.  The maximum results per page is 100.
    * @param {Object} opts Optional parameters
    * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
    * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
@@ -180,7 +180,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
