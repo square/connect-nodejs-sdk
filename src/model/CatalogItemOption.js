@@ -37,7 +37,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -65,9 +64,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('values')) {
       obj['values'] = ApiClient.convertToType(data['values'], [CatalogObject]);
-    }
-      if (data.hasOwnProperty('item_count')) {
-      obj['item_count'] = ApiClient.convertToType(data['item_count'], 'Number');
     }
     }
   return obj;
@@ -98,11 +94,6 @@ exports.prototype['show_colors'] = undefined;
  * @member {Array.<module:model/CatalogObject>} values
  */
 exports.prototype['values'] = undefined;
-/**
- * The number of `CatalogItem`s currently associated with this item option. Present only if the `include_counts` was specified in the request. Any count over 100 will be returned as `100`.
- * @member {Number} item_count
- */
-exports.prototype['item_count'] = undefined;
 
 
 

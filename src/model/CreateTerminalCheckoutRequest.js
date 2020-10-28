@@ -19,7 +19,6 @@ var TerminalCheckout = require('./TerminalCheckout');
 
 /**
  * The CreateTerminalCheckoutRequest model module.
- * Note: This model is in beta.
  * @module model/CreateTerminalCheckoutRequest
  */
 
@@ -28,7 +27,7 @@ var TerminalCheckout = require('./TerminalCheckout');
  * 
  * @alias module:model/CreateTerminalCheckoutRequest
  * @class
- * @param idempotencyKey {String} A unique string that identifies this CreateCheckout request. Keys can be any valid string but must be unique for every CreateCheckout request.  See [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
+ * @param idempotencyKey {String} A unique string that identifies this `CreateCheckout` request. Keys can be any valid string but must be unique for every `CreateCheckout` request.  See [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
  * @param checkout {module:model/TerminalCheckout} The checkout to create.
  */
 var exports = function(idempotencyKey, checkout) {
@@ -60,7 +59,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A unique string that identifies this CreateCheckout request. Keys can be any valid string but must be unique for every CreateCheckout request.  See [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
+ * A unique string that identifies this `CreateCheckout` request. Keys can be any valid string but must be unique for every `CreateCheckout` request.  See [Idempotency keys](https://developer.squareup.com/docs/basics/api101/idempotency) for more information.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

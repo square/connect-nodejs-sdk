@@ -20,7 +20,6 @@ var TerminalCheckout = require('./TerminalCheckout');
 
 /**
  * The GetTerminalCheckoutResponse model module.
- * Note: This model is in beta.
  * @module model/GetTerminalCheckoutResponse
  */
 
@@ -64,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['errors'] = undefined;
 /**
- * The requested `Checkout`
+ * The requested `TerminalCheckout`
  * @member {module:model/TerminalCheckout} checkout
  */
 exports.prototype['checkout'] = undefined;

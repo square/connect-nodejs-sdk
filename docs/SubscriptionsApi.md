@@ -32,7 +32,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var subscriptionId = "subscriptionId_example"; // String | The ID of the subscription to cancel.
+var subscriptionId = SquareConnect.SubscriptionsApi.constructFromObject({}); // String | The ID of the subscription to cancel.
 
 apiInstance.cancelSubscription(subscriptionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -81,7 +81,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var body = new SquareConnect.CreateSubscriptionRequest(); // CreateSubscriptionRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.SubscriptionsApi.constructFromObject({}); // CreateSubscriptionRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createSubscription(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -130,11 +130,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var subscriptionId = "subscriptionId_example"; // String | The ID of the subscription to retrieve the events for.
+var subscriptionId = SquareConnect.SubscriptionsApi.constructFromObject({}); // String | The ID of the subscription to retrieve the events for.
 
 var opts = { 
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  For more information, see [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination).
-  'limit': 56 // Number | The upper limit on the number of subscription events to return  in the response.   Default: `200`
+  'cursor': SquareConnect.SubscriptionsApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  For more information, see [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination).
+  'limit': SquareConnect.SubscriptionsApi.constructFromObject({}); // Number | The upper limit on the number of subscription events to return  in the response.   Default: `200`
 };
 apiInstance.listSubscriptionEvents(subscriptionId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -185,7 +185,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var subscriptionId = "subscriptionId_example"; // String | The ID of the subscription to retrieve.
+var subscriptionId = SquareConnect.SubscriptionsApi.constructFromObject({}); // String | The ID of the subscription to retrieve.
 
 apiInstance.retrieveSubscription(subscriptionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -234,7 +234,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var body = new SquareConnect.SearchSubscriptionsRequest(); // SearchSubscriptionsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.SubscriptionsApi.constructFromObject({}); // SearchSubscriptionsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchSubscriptions(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -283,9 +283,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.SubscriptionsApi();
 
-var subscriptionId = "subscriptionId_example"; // String | The ID for the subscription to update.
+var subscriptionId = SquareConnect.SubscriptionsApi.constructFromObject({}); // String | The ID for the subscription to update.
 
-var body = new SquareConnect.UpdateSubscriptionRequest(); // UpdateSubscriptionRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.SubscriptionsApi.constructFromObject({}); // UpdateSubscriptionRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateSubscription(subscriptionId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

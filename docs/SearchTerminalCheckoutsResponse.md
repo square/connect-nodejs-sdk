@@ -1,7 +1,6 @@
 # SquareConnect.SearchTerminalCheckoutsResponse
 
 ### Description
-**Note: This model is in beta.**
 
 
 

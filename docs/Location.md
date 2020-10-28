@@ -29,8 +29,9 @@ Name | Type | Description | Notes
 **instagram_username** | **String** | The Instagram username of the location without the &#39;&amp;#64;&#39; symbol. | [optional] 
 **facebook_url** | **String** | The Facebook profile URL of the location. The URL should begin with &#39;facebook.com/&#39;. | [optional] 
 **coordinates** | [**Coordinates**](Coordinates.md) | The physical coordinates (latitude and longitude) of the location. | [optional] 
-**logo_url** | **String** | The URL of the logo image for the location. | [optional] 
+**logo_url** | **String** | The URL of the logo image for the location. The Seller must choose this logo in the Seller dashboard (Receipts section) for the logo to appear on transactions (such as receipts, invoices) that Square generates on behalf of the Seller. This image should have an aspect ratio close to 1:1 and is recommended to be at least 200x200 pixels. | [optional] 
 **pos_background_url** | **String** | The URL of the Point of Sale background image for the location. | [optional] 
 **mcc** | **String** | The merchant category code (MCC) of the location, as standardized by ISO 18245. The MCC describes the kind of goods or services sold at the location. | [optional] [beta]
+**full_format_logo_url** | **String** | The URL of a full-format logo image for the location. The Seller must choose this logo in the Seller dashboard (Receipts section) for the logo to appear on transactions (such as receipts, invoices) that Square generates on behalf of the Seller. This image can have an aspect ratio of 2:1 or greater and is recommended to be at least 1280x648 pixels. | [optional] 
 
 

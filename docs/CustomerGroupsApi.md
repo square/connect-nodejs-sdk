@@ -31,7 +31,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomerGroupsApi();
 
-var body = new SquareConnect.CreateCustomerGroupRequest(); // CreateCustomerGroupRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomerGroupsApi.constructFromObject({}); // CreateCustomerGroupRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createCustomerGroup(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -80,7 +80,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomerGroupsApi();
 
-var groupId = "groupId_example"; // String | The ID of the customer group to delete.
+var groupId = SquareConnect.CustomerGroupsApi.constructFromObject({}); // String | The ID of the customer group to delete.
 
 apiInstance.deleteCustomerGroup(groupId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -130,7 +130,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.CustomerGroupsApi();
 
 var opts = { 
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
+  'cursor': SquareConnect.CustomerGroupsApi.constructFromObject({}); // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
 };
 apiInstance.listCustomerGroups(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -179,7 +179,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomerGroupsApi();
 
-var groupId = "groupId_example"; // String | The ID of the customer group to retrieve.
+var groupId = SquareConnect.CustomerGroupsApi.constructFromObject({}); // String | The ID of the customer group to retrieve.
 
 apiInstance.retrieveCustomerGroup(groupId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -228,9 +228,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomerGroupsApi();
 
-var groupId = "groupId_example"; // String | The ID of the customer group to update.
+var groupId = SquareConnect.CustomerGroupsApi.constructFromObject({}); // String | The ID of the customer group to update.
 
-var body = new SquareConnect.UpdateCustomerGroupRequest(); // UpdateCustomerGroupRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomerGroupsApi.constructFromObject({}); // UpdateCustomerGroupRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateCustomerGroup(groupId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

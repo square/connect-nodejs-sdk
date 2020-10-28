@@ -66,11 +66,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var variationId = "variationId_example"; // String | The ID of the variation to adjust inventory information for.
+var variationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the variation to adjust inventory information for.
 
-var body = new SquareConnect.V1AdjustInventoryRequest(); // V1AdjustInventoryRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1AdjustInventoryRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.adjustInventory(locationId, variationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -121,11 +121,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the fee's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to add the fee to.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to add the fee to.
 
-var feeId = "feeId_example"; // String | The ID of the fee to apply.
+var feeId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee to apply.
 
 apiInstance.applyFee(locationId, itemId, feeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -176,11 +176,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to apply.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to apply.
 
-var itemId = "itemId_example"; // String | The ID of the item to add the modifier list to.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to add the modifier list to.
 
 apiInstance.applyModifierList(locationId, modifierListId, itemId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -231,9 +231,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create an item for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create an item for.
 
-var body = new SquareConnect.V1Category(); // V1Category | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Category | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createCategory(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -283,9 +283,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create an item for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create an item for.
 
-var body = new SquareConnect.V1Discount(); // V1Discount | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Discount | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createDiscount(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -335,9 +335,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create a fee for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create a fee for.
 
-var body = new SquareConnect.V1Fee(); // V1Fee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Fee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createFee(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -387,9 +387,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create an item for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create an item for.
 
-var body = new SquareConnect.V1Item(); // V1Item | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Item | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createItem(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -439,9 +439,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create a modifier list for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create a modifier list for.
 
-var body = new SquareConnect.V1ModifierList(); // V1ModifierList | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1ModifierList | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createModifierList(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -491,11 +491,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to edit.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to edit.
 
-var body = new SquareConnect.V1ModifierOption(); // V1ModifierOption | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1ModifierOption | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createModifierOption(locationId, modifierListId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -546,9 +546,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to create an item for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to create an item for.
 
-var body = new SquareConnect.V1Page(); // V1Page | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Page | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createPage(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -598,11 +598,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The item's ID.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The item's ID.
 
-var body = new SquareConnect.V1Variation(); // V1Variation | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Variation | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createVariation(locationId, itemId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -653,9 +653,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var categoryId = "categoryId_example"; // String | The ID of the category to delete.
+var categoryId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the category to delete.
 
 apiInstance.deleteCategory(locationId, categoryId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -705,9 +705,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var discountId = "discountId_example"; // String | The ID of the discount to delete.
+var discountId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the discount to delete.
 
 apiInstance.deleteDiscount(locationId, discountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -757,9 +757,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the fee's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee's associated location.
 
-var feeId = "feeId_example"; // String | The ID of the fee to delete.
+var feeId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee to delete.
 
 apiInstance.deleteFee(locationId, feeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -809,9 +809,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to modify.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to modify.
 
 apiInstance.deleteItem(locationId, itemId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -861,9 +861,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to delete.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to delete.
 
 apiInstance.deleteModifierList(locationId, modifierListId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -913,11 +913,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to delete.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to delete.
 
-var modifierOptionId = "modifierOptionId_example"; // String | The ID of the modifier list to edit.
+var modifierOptionId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to edit.
 
 apiInstance.deleteModifierOption(locationId, modifierListId, modifierOptionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -968,9 +968,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the Favorites page's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the Favorites page's associated location.
 
-var pageId = "pageId_example"; // String | The ID of the page to delete.
+var pageId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the page to delete.
 
 apiInstance.deletePage(locationId, pageId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1020,13 +1020,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the Favorites page's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the Favorites page's associated location.
 
-var pageId = "pageId_example"; // String | The ID of the page to delete.
+var pageId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the page to delete.
 
 var opts = { 
-  'row': "row_example", // String | The row of the cell to clear. Always an integer between 0 and 4, inclusive. Row 0 is the top row.
-  'column': "column_example" // String | The column of the cell to clear. Always an integer between 0 and 4, inclusive. Column 0 is the leftmost column.
+  'row': SquareConnect.V1ItemsApi.constructFromObject({});, // String | The row of the cell to clear. Always an integer between 0 and 4, inclusive. Row 0 is the top row.
+  'column': SquareConnect.V1ItemsApi.constructFromObject({}); // String | The column of the cell to clear. Always an integer between 0 and 4, inclusive. Column 0 is the leftmost column.
 };
 apiInstance.deletePageCell(locationId, pageId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1078,11 +1078,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to delete.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to delete.
 
-var variationId = "variationId_example"; // String | The ID of the variation to delete.
+var variationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the variation to delete.
 
 apiInstance.deleteVariation(locationId, itemId, variationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1133,7 +1133,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list categories for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list categories for.
 
 apiInstance.listCategories(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1182,7 +1182,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list categories for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list categories for.
 
 apiInstance.listDiscounts(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1231,7 +1231,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list fees for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list fees for.
 
 apiInstance.listFees(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1280,11 +1280,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
 var opts = { 
-  'limit': 56, // Number | The maximum number of inventory entries to return in a single response. This value cannot exceed 1000.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'limit': SquareConnect.V1ItemsApi.constructFromObject({});, // Number | The maximum number of inventory entries to return in a single response. This value cannot exceed 1000.
+  'batchToken': SquareConnect.V1ItemsApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listInventory(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1335,10 +1335,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list items for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list items for.
 
 var opts = { 
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'batchToken': SquareConnect.V1ItemsApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listItems(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1388,7 +1388,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list modifier lists for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list modifier lists for.
 
 apiInstance.listModifierLists(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1437,7 +1437,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list Favorites pages for.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the location to list Favorites pages for.
 
 apiInstance.listPages(locationId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1486,11 +1486,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the fee's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to add the fee to.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to add the fee to.
 
-var feeId = "feeId_example"; // String | The ID of the fee to apply.
+var feeId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee to apply.
 
 apiInstance.removeFee(locationId, itemId, feeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1541,11 +1541,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to remove.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to remove.
 
-var itemId = "itemId_example"; // String | The ID of the item to remove the modifier list from.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to remove the modifier list from.
 
 apiInstance.removeModifierList(locationId, modifierListId, itemId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1596,9 +1596,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The item's ID.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The item's ID.
 
 apiInstance.retrieveItem(locationId, itemId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1648,9 +1648,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The modifier list's ID.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The modifier list's ID.
 
 apiInstance.retrieveModifierList(locationId, modifierListId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1700,11 +1700,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the category's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the category's associated location.
 
-var categoryId = "categoryId_example"; // String | The ID of the category to edit.
+var categoryId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the category to edit.
 
-var body = new SquareConnect.V1Category(); // V1Category | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Category | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateCategory(locationId, categoryId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1755,11 +1755,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the category's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the category's associated location.
 
-var discountId = "discountId_example"; // String | The ID of the discount to edit.
+var discountId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the discount to edit.
 
-var body = new SquareConnect.V1Discount(); // V1Discount | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Discount | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateDiscount(locationId, discountId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1810,11 +1810,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the fee's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee's associated location.
 
-var feeId = "feeId_example"; // String | The ID of the fee to edit.
+var feeId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the fee to edit.
 
-var body = new SquareConnect.V1Fee(); // V1Fee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Fee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateFee(locationId, feeId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1865,11 +1865,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to modify.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to modify.
 
-var body = new SquareConnect.V1Item(); // V1Item | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Item | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateItem(locationId, itemId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1920,11 +1920,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to edit.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to edit.
 
-var body = new SquareConnect.V1UpdateModifierListRequest(); // V1UpdateModifierListRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1UpdateModifierListRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateModifierList(locationId, modifierListId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1975,13 +1975,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var modifierListId = "modifierListId_example"; // String | The ID of the modifier list to edit.
+var modifierListId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to edit.
 
-var modifierOptionId = "modifierOptionId_example"; // String | The ID of the modifier list to edit.
+var modifierOptionId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the modifier list to edit.
 
-var body = new SquareConnect.V1ModifierOption(); // V1ModifierOption | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1ModifierOption | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateModifierOption(locationId, modifierListId, modifierOptionId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -2033,11 +2033,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the Favorites page's associated location
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the Favorites page's associated location
 
-var pageId = "pageId_example"; // String | The ID of the page to modify.
+var pageId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the page to modify.
 
-var body = new SquareConnect.V1Page(); // V1Page | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Page | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updatePage(locationId, pageId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -2088,11 +2088,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the Favorites page's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the Favorites page's associated location.
 
-var pageId = "pageId_example"; // String | The ID of the page the cell belongs to.
+var pageId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the page the cell belongs to.
 
-var body = new SquareConnect.V1PageCell(); // V1PageCell | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1PageCell | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updatePageCell(locationId, pageId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -2143,13 +2143,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1ItemsApi();
 
-var locationId = "locationId_example"; // String | The ID of the item's associated location.
+var locationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item's associated location.
 
-var itemId = "itemId_example"; // String | The ID of the item to modify.
+var itemId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the item to modify.
 
-var variationId = "variationId_example"; // String | The ID of the variation to modify.
+var variationId = SquareConnect.V1ItemsApi.constructFromObject({}); // String | The ID of the variation to modify.
 
-var body = new SquareConnect.V1Variation(); // V1Variation | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1ItemsApi.constructFromObject({}); // V1Variation | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateVariation(locationId, itemId, variationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

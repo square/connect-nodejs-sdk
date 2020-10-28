@@ -58,6 +58,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -145,6 +146,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('mcc')) {
       obj['mcc'] = ApiClient.convertToType(data['mcc'], 'String');
+    }
+      if (data.hasOwnProperty('full_format_logo_url')) {
+      obj['full_format_logo_url'] = ApiClient.convertToType(data['full_format_logo_url'], 'String');
     }
     }
   return obj;
@@ -261,7 +265,7 @@ exports.prototype['facebook_url'] = undefined;
  */
 exports.prototype['coordinates'] = undefined;
 /**
- * The URL of the logo image for the location.
+ * The URL of the logo image for the location. The Seller must choose this logo in the Seller dashboard (Receipts section) for the logo to appear on transactions (such as receipts, invoices) that Square generates on behalf of the Seller. This image should have an aspect ratio close to 1:1 and is recommended to be at least 200x200 pixels.
  * @member {String} logo_url
  */
 exports.prototype['logo_url'] = undefined;
@@ -275,6 +279,11 @@ exports.prototype['pos_background_url'] = undefined;
  * @member {String} mcc
  */
 exports.prototype['mcc'] = undefined;
+/**
+ * The URL of a full-format logo image for the location. The Seller must choose this logo in the Seller dashboard (Receipts section) for the logo to appear on transactions (such as receipts, invoices) that Square generates on behalf of the Seller. This image can have an aspect ratio of 2:1 or greater and is recommended to be at least 1280x648 pixels.
+ * @member {String} full_format_logo_url
+ */
+exports.prototype['full_format_logo_url'] = undefined;
 
 
 

@@ -25,7 +25,7 @@ var Payment = require('./Payment');
 
 /**
  * Constructs a new <code>CreatePaymentResponse</code>.
- * Defines the fields that are included in the response body of a request to the [CreatePayment](#endpoint-payments-createpayment) endpoint.  Note: if there are errors processing the request, the payment field may not be present, or it may be present with a status of &#x60;FAILED&#x60;.
+ * Defines the fields that are included in the response body of a request to the [CreatePayment](#endpoint-payments-createpayment) endpoint.  Note: If there are errors processing the request, the payment field might not be present, or it might be present with a status of &#x60;FAILED&#x60;.
  * @alias module:model/CreatePaymentResponse
  * @class
  */
@@ -58,7 +58,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

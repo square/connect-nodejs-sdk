@@ -36,7 +36,6 @@ module.exports = function(apiClient) {
 
   /**
    * CreateDeviceCode
-   * Note: This endpoint is in beta.
    * Creates a DeviceCode that can be used to login to a Square Terminal device to enter the connected terminal mode.
    * @param {module:model/CreateDeviceCodeRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateDeviceCodeResponse} and HTTP response
@@ -56,7 +55,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -89,7 +88,6 @@ module.exports = function(apiClient) {
 
   /**
    * GetDeviceCode
-   * Note: This endpoint is in beta.
    * Retrieves DeviceCode with the associated ID.
    * @param {String} id The unique identifier for the device code.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetDeviceCodeResponse} and HTTP response
@@ -110,7 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -143,12 +141,12 @@ module.exports = function(apiClient) {
 
   /**
    * ListDeviceCodes
-   * Note: This endpoint is in beta.
    * Lists all DeviceCodes associated with the merchant.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
    * @param {String} opts.locationId If specified, only returns DeviceCodes of the specified location. Returns DeviceCodes of all locations if empty.
    * @param {String} opts.productType If specified, only returns DeviceCodes targeting the specified product type. Returns DeviceCodes of all product types if empty.
+   * @param {String} opts.status If specified, returns DeviceCodes with the specified statuses. Returns DeviceCodes of status &#x60;PAIRED&#x60; and &#x60;UNPAIRED&#x60; if empty.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListDeviceCodesResponse} and HTTP response
    */
   this.listDeviceCodesWithHttpInfo = function(opts) {
@@ -161,11 +159,12 @@ module.exports = function(apiClient) {
     var queryParams = {
       'cursor': opts['cursor'],
       'location_id': opts['locationId'],
-      'product_type': opts['productType']
+      'product_type': opts['productType'],
+      'status': opts['status']
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -189,6 +188,7 @@ module.exports = function(apiClient) {
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
    * @param {String} opts.locationId If specified, only returns DeviceCodes of the specified location. Returns DeviceCodes of all locations if empty.
    * @param {String} opts.productType If specified, only returns DeviceCodes targeting the specified product type. Returns DeviceCodes of all product types if empty.
+   * @param {String} opts.status If specified, returns DeviceCodes with the specified statuses. Returns DeviceCodes of status &#x60;PAIRED&#x60; and &#x60;UNPAIRED&#x60; if empty.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListDeviceCodesResponse}
    */
   this.listDeviceCodes = function(opts) {

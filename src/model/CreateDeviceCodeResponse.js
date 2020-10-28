@@ -20,7 +20,6 @@ var Error = require('./Error');
 
 /**
  * The CreateDeviceCodeResponse model module.
- * Note: This model is in beta.
  * @module model/CreateDeviceCodeResponse
  */
 

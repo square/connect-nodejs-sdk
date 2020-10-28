@@ -33,9 +33,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | 
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | 
 
-var transactionId = "transactionId_example"; // String | 
+var transactionId = SquareConnect.TransactionsApi.constructFromObject({}); // String | 
 
 apiInstance.captureTransaction(locationId, transactionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -85,9 +85,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to associate the created transaction with.
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the location to associate the created transaction with.
 
-var body = new SquareConnect.ChargeRequest(); // ChargeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TransactionsApi.constructFromObject({}); // ChargeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.charge(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -137,11 +137,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the original transaction's associated location.
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the original transaction's associated location.
 
-var transactionId = "transactionId_example"; // String | The ID of the original transaction that includes the tender to refund.
+var transactionId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the original transaction that includes the tender to refund.
 
-var body = new SquareConnect.CreateRefundRequest(); // CreateRefundRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TransactionsApi.constructFromObject({}); // CreateRefundRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createRefund(locationId, transactionId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -192,13 +192,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list refunds for.
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the location to list refunds for.
 
 var opts = { 
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
-  'endTime': "endTime_example", // String | The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
-  'sortOrder': "sortOrder_example", // String | The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+  'beginTime': SquareConnect.TransactionsApi.constructFromObject({});, // String | The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
+  'endTime': SquareConnect.TransactionsApi.constructFromObject({});, // String | The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
+  'sortOrder': SquareConnect.TransactionsApi.constructFromObject({});, // String | The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+  'cursor': SquareConnect.TransactionsApi.constructFromObject({}); // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 };
 apiInstance.listRefunds(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -251,13 +251,13 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list transactions for.
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the location to list transactions for.
 
 var opts = { 
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
-  'endTime': "endTime_example", // String | The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
-  'sortOrder': "sortOrder_example", // String | The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
-  'cursor': "cursor_example" // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+  'beginTime': SquareConnect.TransactionsApi.constructFromObject({});, // String | The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
+  'endTime': SquareConnect.TransactionsApi.constructFromObject({});, // String | The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
+  'sortOrder': SquareConnect.TransactionsApi.constructFromObject({});, // String | The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+  'cursor': SquareConnect.TransactionsApi.constructFromObject({}); // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 };
 apiInstance.listTransactions(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -310,9 +310,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | The ID of the transaction's associated location.
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the transaction's associated location.
 
-var transactionId = "transactionId_example"; // String | The ID of the transaction to retrieve.
+var transactionId = SquareConnect.TransactionsApi.constructFromObject({}); // String | The ID of the transaction to retrieve.
 
 apiInstance.retrieveTransaction(locationId, transactionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -362,9 +362,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-var locationId = "locationId_example"; // String | 
+var locationId = SquareConnect.TransactionsApi.constructFromObject({}); // String | 
 
-var transactionId = "transactionId_example"; // String | 
+var transactionId = SquareConnect.TransactionsApi.constructFromObject({}); // String | 
 
 apiInstance.voidTransaction(locationId, transactionId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

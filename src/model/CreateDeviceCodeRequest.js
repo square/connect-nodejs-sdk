@@ -19,7 +19,6 @@ var DeviceCode = require('./DeviceCode');
 
 /**
  * The CreateDeviceCodeRequest model module.
- * Note: This model is in beta.
  * @module model/CreateDeviceCodeRequest
  */
 

@@ -1,7 +1,6 @@
 # SquareConnect.CreateDeviceCodeRequest
 
 ### Description
-**Note: This model is in beta.**
 
 
 

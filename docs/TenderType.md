@@ -13,7 +13,7 @@
 
 * `NO_SALE` (value: `"NO_SALE"`)
 
-* `BANK_TRANSFER` (value: `"BANK_TRANSFER"`)
+* `WALLET` (value: `"WALLET"`)
 
 * `OTHER` (value: `"OTHER"`)
 

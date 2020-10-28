@@ -36,7 +36,6 @@ var exports = function() {
 
 
 
-
 };
 
 /**
@@ -64,9 +63,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('ordinal')) {
       obj['ordinal'] = ApiClient.convertToType(data['ordinal'], 'Number');
-    }
-      if (data.hasOwnProperty('item_variation_count')) {
-      obj['item_variation_count'] = ApiClient.convertToType(data['item_variation_count'], 'Number');
     }
     }
   return obj;
@@ -97,11 +93,6 @@ exports.prototype['color'] = undefined;
  * @member {Number} ordinal
  */
 exports.prototype['ordinal'] = undefined;
-/**
- * The number of `CatalogItemVariation`s that currently use this item option value. Present only if `retrieve_counts` was specified on the request used to retrieve the parent item option of this value.
- * @member {Number} item_variation_count
- */
-exports.prototype['item_variation_count'] = undefined;
 
 
 

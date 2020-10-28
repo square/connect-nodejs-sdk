@@ -26,9 +26,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CheckoutApi();
 
-var locationId = "locationId_example"; // String | The ID of the business location to associate the checkout with.
+var locationId = SquareConnect.CheckoutApi.constructFromObject({}); // String | The ID of the business location to associate the checkout with.
 
-var body = new SquareConnect.CreateCheckoutRequest(); // CreateCheckoutRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CheckoutApi.constructFromObject({}); // CreateCheckoutRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createCheckout(locationId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

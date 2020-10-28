@@ -121,7 +121,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['id'] = undefined;
 /**
- * The version number, which is incremented each time an update is committed to the invoice.
+ * The Square-assigned version number, which is incremented each time an update is committed to the invoice.
  * @member {Number} version
  */
 exports.prototype['version'] = undefined;
@@ -136,12 +136,12 @@ exports.prototype['location_id'] = undefined;
  */
 exports.prototype['order_id'] = undefined;
 /**
- * The customer who gets the invoice. Square uses the contact information to deliver the invoice. This field is required when creating an invoice.
+ * The customer who gets the invoice. Square uses the contact information to deliver the invoice. This field is required to publish an invoice.
  * @member {module:model/InvoiceRecipient} primary_recipient
  */
 exports.prototype['primary_recipient'] = undefined;
 /**
- * An array of `InvoicePaymentRequest` objects. Each object defines a payment request in an invoice payment schedule. It provides information such as when and how Square processes payments. You can specify maximum of nine payment requests. All all the payment requests must specify the same `request_method`.  This field is required when creating an invoice.
+ * An array of `InvoicePaymentRequest` objects. Each object defines a payment request in an invoice payment schedule. It provides information such as when and how Square processes payments. You must specify at least one payment request. For invoices  with multiple payment requests, you can specify a maximum of 12 `INSTALLMENT` request types. All of the payment requests must specify the same `request_method`.  This field is required when creating an invoice.
  * @member {Array.<module:model/InvoicePaymentRequest>} payment_requests
  */
 exports.prototype['payment_requests'] = undefined;

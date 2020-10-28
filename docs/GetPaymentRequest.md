@@ -2,7 +2,7 @@
 
 ### Description
 
-Retrieve details for a specific Payment.
+Retrieve details for a specific payment.
 
 ## Properties
 Name | Type | Description | Notes

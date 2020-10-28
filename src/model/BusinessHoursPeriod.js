@@ -65,12 +65,12 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['day_of_week'] = undefined;
 /**
- * The start time of a business hours period, specified in local time using partial-time RFC3339 format.
+ * The start time of a business hours period, specified in local time using partial-time RFC 3339 format.
  * @member {String} start_local_time
  */
 exports.prototype['start_local_time'] = undefined;
 /**
- * The end time of a business hours period, specified in local time using partial-time RFC3339 format.
+ * The end time of a business hours period, specified in local time using partial-time RFC 3339 format.
  * @member {String} end_local_time
  */
 exports.prototype['end_local_time'] = undefined;

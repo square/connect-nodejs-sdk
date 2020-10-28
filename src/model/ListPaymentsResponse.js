@@ -62,17 +62,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The requested list of `Payment`s.
+ * The requested list of payments.
  * @member {Array.<module:model/Payment>} payments
  */
 exports.prototype['payments'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If empty, this is the final response.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+ * The pagination cursor to be used in a subsequent request. If empty, this is the final response.  For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

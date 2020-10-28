@@ -23,10 +23,10 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CancelPaymentByIdempotencyKeyRequest</code>.
- * Specifies idempotency key of a payment to cancel.
+ * Specifies the idempotency key of a payment to cancel.
  * @alias module:model/CancelPaymentByIdempotencyKeyRequest
  * @class
- * @param idempotencyKey {String} `idempotency_key` identifying the payment to be canceled.
+ * @param idempotencyKey {String} The `idempotency_key` identifying the payment to be canceled.
  */
 var exports = function(idempotencyKey) {
   var _this = this;
@@ -53,7 +53,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * `idempotency_key` identifying the payment to be canceled.
+ * The `idempotency_key` identifying the payment to be canceled.
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

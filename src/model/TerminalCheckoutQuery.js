@@ -20,7 +20,6 @@ var TerminalCheckoutQuerySort = require('./TerminalCheckoutQuerySort');
 
 /**
  * The TerminalCheckoutQuery model module.
- * Note: This model is in beta.
  * @module model/TerminalCheckoutQuery
  */
 

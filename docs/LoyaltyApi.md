@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 AccumulateLoyaltyPoints
 
-Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  &#x60;CalculateLoyaltyPoints&#x60; to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.   For more information, see [Accumulate points](/docs/loyalty-api/overview/#accumulate-points).
+Adds points to a loyalty account.  - If you are using the Orders API to manage orders, you only provide the &#x60;order_id&#x60;.  The endpoint reads the order to compute points to add to the buyer&#39;s account. - If you are not using the Orders API to manage orders,  you first perform a client-side computation to compute the points.   For spend-based and visit-based programs, you can call  [CalculateLoyaltyPoints](#endpoint-Loyalty-CalculateLoyaltyPoints) to compute the points. For more information,  see [Loyalty Program Overview](/docs/loyalty/overview).  You then provide the points in a request to this endpoint.
 
 ### Example
 ```javascript
@@ -39,9 +39,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var accountId = "accountId_example"; // String | The `loyalty account` ID to which to add the points.
+var accountId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The `loyalty account` ID to which to add the points.
 
-var body = new SquareConnect.AccumulateLoyaltyPointsRequest(); // AccumulateLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // AccumulateLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.accumulateLoyaltyPoints(accountId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 
 AdjustLoyaltyPoints
 
-Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](/reference/square/loyalty-api/accumulate-loyalty-points)  to add points when a buyer pays for the purchase.
+Adds points to or subtracts points from a buyer&#39;s account.   Use this endpoint only when you need to manually adjust points. Otherwise, in your application flow, you call  [AccumulateLoyaltyPoints](#endpoint-Loyalty-AccumulateLoyaltyPoints)  to add points when a buyer pays for the purchase.
 
 ### Example
 ```javascript
@@ -91,9 +91,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var accountId = "accountId_example"; // String | The ID of the `loyalty account` in which to adjust the points.
+var accountId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The ID of the `loyalty account` in which to adjust the points.
 
-var body = new SquareConnect.AdjustLoyaltyPointsRequest(); // AdjustLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // AdjustLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.adjustLoyaltyPoints(accountId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -143,9 +143,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var programId = "programId_example"; // String | The `loyalty program` ID, which defines the rules for accruing points.
+var programId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The `loyalty program` ID, which defines the rules for accruing points.
 
-var body = new SquareConnect.CalculateLoyaltyPointsRequest(); // CalculateLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // CalculateLoyaltyPointsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.calculateLoyaltyPoints(programId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 CreateLoyaltyAccount
 
-Creates a loyalty account. For more information, see  [Create a loyalty account](/docs/loyalty-api/overview/#loyalty-overview-create-account).
+Creates a loyalty account.
 
 ### Example
 ```javascript
@@ -195,7 +195,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var body = new SquareConnect.CreateLoyaltyAccountRequest(); // CreateLoyaltyAccountRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // CreateLoyaltyAccountRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createLoyaltyAccount(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 CreateLoyaltyReward
 
-Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+Creates a loyalty reward. In the process, the endpoint does following:  - Uses the &#x60;reward_tier_id&#x60; in the request to determine the number of points  to lock for this reward.  - If the request includes &#x60;order_id&#x60;, it adds the reward and related discount to the order.   After a reward is created, the points are locked and  not available for the buyer to redeem another reward.
 
 ### Example
 ```javascript
@@ -244,7 +244,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var body = new SquareConnect.CreateLoyaltyRewardRequest(); // CreateLoyaltyRewardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // CreateLoyaltyRewardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createLoyaltyReward(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -280,7 +280,7 @@ Name | Type | Description  | Notes
 
 DeleteLoyaltyReward
 
-Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](/reference/square/loyalty-api/create-loyalty-reward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+Deletes a loyalty reward by doing the following:  - Returns the loyalty points back to the loyalty account. - If an order ID was specified when the reward was created  (see [CreateLoyaltyReward](#endpoint-Loyalty-CreateLoyaltyReward)),  it updates the order by removing the reward and related  discounts.  You cannot delete a reward that has reached the terminal state (REDEEMED).
 
 ### Example
 ```javascript
@@ -293,7 +293,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var rewardId = "rewardId_example"; // String | The ID of the `loyalty reward` to delete.
+var rewardId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The ID of the `loyalty reward` to delete.
 
 apiInstance.deleteLoyaltyReward(rewardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 
 ListLoyaltyPrograms
 
-Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program. For more information, see  [Loyalty Overview](/docs/loyalty/overview). .
+Returns a list of loyalty programs in the seller&#39;s account. Currently, a seller can only have one loyalty program.
 
 ### Example
 ```javascript
@@ -372,7 +372,7 @@ This endpoint does not need any parameter.
 
 RedeemLoyaltyReward
 
-Redeems a loyalty reward.  The endpoint sets the reward to the terminal state (&#x60;REDEEMED&#x60;).   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.  For more information, see  [Loyalty rewards](/docs/loyalty-api/overview/#loyalty-overview-loyalty-rewards).
+Redeems a loyalty reward.  The endpoint sets the reward to the &#x60;REDEEMED&#x60; terminal state.   If you are using your own order processing system (not using the  Orders API), you call this endpoint after the buyer paid for the  purchase.  After the reward reaches the terminal state, it cannot be deleted.  In other words, points used for the reward cannot be returned  to the account.
 
 ### Example
 ```javascript
@@ -385,9 +385,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var rewardId = "rewardId_example"; // String | The ID of the `loyalty reward` to redeem.
+var rewardId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The ID of the `loyalty reward` to redeem.
 
-var body = new SquareConnect.RedeemLoyaltyRewardRequest(); // RedeemLoyaltyRewardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // RedeemLoyaltyRewardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.redeemLoyaltyReward(rewardId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -437,7 +437,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var accountId = "accountId_example"; // String | The ID of the `loyalty account` to retrieve.
+var accountId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The ID of the `loyalty account` to retrieve.
 
 apiInstance.retrieveLoyaltyAccount(accountId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -486,7 +486,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var rewardId = "rewardId_example"; // String | The ID of the `loyalty reward` to retrieve.
+var rewardId = SquareConnect.LoyaltyApi.constructFromObject({}); // String | The ID of the `loyalty reward` to retrieve.
 
 apiInstance.retrieveLoyaltyReward(rewardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 
 SearchLoyaltyAccounts
 
-Searches for loyalty accounts.  In the current implementation, you can search for a loyalty account using the phone number associated with the account.  If no phone number is provided, all loyalty accounts are returned.
+Searches for loyalty accounts in a loyalty program.    You can search for a loyalty account using the phone number or customer ID associated with the account. To return all loyalty accounts, specify an empty &#x60;query&#x60; object or omit it entirely.    Search results are sorted by &#x60;created_at&#x60; in ascending order.
 
 ### Example
 ```javascript
@@ -535,7 +535,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var body = new SquareConnect.SearchLoyaltyAccountsRequest(); // SearchLoyaltyAccountsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // SearchLoyaltyAccountsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchLoyaltyAccounts(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -571,7 +571,7 @@ Name | Type | Description  | Notes
 
 SearchLoyaltyEvents
 
-Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.  For more information, see  [Loyalty events](/docs/loyalty-api/overview/#loyalty-events).
+Searches for loyalty events.  A Square loyalty program maintains a ledger of events that occur during the lifetime of a  buyer&#39;s loyalty account. Each change in the point balance  (for example, points earned, points redeemed, and points expired) is  recorded in the ledger. Using this endpoint, you can search the ledger for events.
 
 ### Example
 ```javascript
@@ -584,7 +584,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var body = new SquareConnect.SearchLoyaltyEventsRequest(); // SearchLoyaltyEventsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // SearchLoyaltyEventsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchLoyaltyEvents(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -620,7 +620,7 @@ Name | Type | Description  | Notes
 
 SearchLoyaltyRewards
 
-Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](/reference/square/loyalty-api/retrieve-loyalty-reward) endpoint.  For more information about loyalty rewards, see  [Loyalty Rewards](/docs/loyalty-api/overview/#loyalty-rewards).
+Searches for loyalty rewards in a loyalty account.   In the current implementation, the endpoint supports search by the reward &#x60;status&#x60;.  If you know a reward ID, use the  [RetrieveLoyaltyReward](#endpoint-Loyalty-RetrieveLoyaltyReward) endpoint.
 
 ### Example
 ```javascript
@@ -633,7 +633,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LoyaltyApi();
 
-var body = new SquareConnect.SearchLoyaltyRewardsRequest(); // SearchLoyaltyRewardsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LoyaltyApi.constructFromObject({}); // SearchLoyaltyRewardsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchLoyaltyRewards(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

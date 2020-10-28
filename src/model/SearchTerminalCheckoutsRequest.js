@@ -19,7 +19,6 @@ var TerminalCheckoutQuery = require('./TerminalCheckoutQuery');
 
 /**
  * The SearchTerminalCheckoutsRequest model module.
- * Note: This model is in beta.
  * @module model/SearchTerminalCheckoutsRequest
  */
 
@@ -62,12 +61,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Query the terminal checkouts based on given conditions and sort order. Calling SearchTerminalCheckouts without an explicitly query parameter will return all available checkouts with the default sort order.
+ * Queries terminal checkouts based on given conditions and sort order. Leaving this unset will return all checkouts with the default sort order.
  * @member {module:model/TerminalCheckoutQuery} query
  */
 exports.prototype['query'] = undefined;
 /**
- * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.
+ * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

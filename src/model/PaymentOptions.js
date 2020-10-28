@@ -18,7 +18,6 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The PaymentOptions model module.
- * Note: This model is in beta.
  * @module model/PaymentOptions
  */
 
@@ -53,7 +52,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Indicates whether the Payment objects created from this `TerminalCheckout` will automatically be COMPLETED or left in an APPROVED state for later modification.
+ * Indicates whether the Payment objects created from this `TerminalCheckout` will automatically be `COMPLETED` or left in an `APPROVED` state for later modification.
  * @member {Boolean} autocomplete
  */
 exports.prototype['autocomplete'] = undefined;

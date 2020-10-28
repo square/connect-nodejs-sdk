@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**calculateOrder**](OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
 [**createOrder**](OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
 [**payOrder**](OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
+[**retrieveOrder**](OrdersApi.md#retrieveOrder) | **GET** /v2/orders/{order_id} | RetrieveOrder
 [**searchOrders**](OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
 [**updateOrder**](OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
 
@@ -31,7 +32,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var body = new SquareConnect.BatchRetrieveOrdersRequest(); // BatchRetrieveOrdersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // BatchRetrieveOrdersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.batchRetrieveOrders(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -80,7 +81,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var body = new SquareConnect.CalculateOrderRequest(); // CalculateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // CalculateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.calculateOrder(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -128,7 +129,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var body = new SquareConnect.CreateOrderRequest(); // CreateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // CreateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createOrder(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -177,9 +178,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var orderId = "orderId_example"; // String | The ID of the order being paid.
+var orderId = SquareConnect.OrdersApi.constructFromObject({}); // String | The ID of the order being paid.
 
-var body = new SquareConnect.PayOrderRequest(); // PayOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // PayOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.payOrder(orderId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -209,6 +210,54 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="retrieveOrder"></a>
+# **retrieveOrder**
+> RetrieveOrderResponse retrieveOrder(orderId)
+
+RetrieveOrder
+
+Retrieves an [Order](#type-order) by ID.
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.OrdersApi();
+
+var orderId = SquareConnect.OrdersApi.constructFromObject({}); // String | The ID of the order to retrieve.
+
+apiInstance.retrieveOrder(orderId).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **String**| The ID of the order to retrieve. | 
+
+### Return type
+
+[**RetrieveOrderResponse**](RetrieveOrderResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="searchOrders"></a>
 # **searchOrders**
 > SearchOrdersResponse searchOrders(body)
@@ -228,7 +277,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var body = new SquareConnect.SearchOrdersRequest(); // SearchOrdersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // SearchOrdersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchOrders(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -277,9 +326,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.OrdersApi();
 
-var orderId = "orderId_example"; // String | The ID of the order to update.
+var orderId = SquareConnect.OrdersApi.constructFromObject({}); // String | The ID of the order to update.
 
-var body = new SquareConnect.UpdateOrderRequest(); // UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.OrdersApi.constructFromObject({}); // UpdateOrderRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateOrder(orderId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

@@ -19,6 +19,7 @@ var CatalogQueryItemsForModifierList = require('./CatalogQueryItemsForModifierLi
 var CatalogQueryItemsForTax = require('./CatalogQueryItemsForTax');
 var CatalogQueryPrefix = require('./CatalogQueryPrefix');
 var CatalogQueryRange = require('./CatalogQueryRange');
+var CatalogQuerySet = require('./CatalogQuerySet');
 var CatalogQuerySortedAttribute = require('./CatalogQuerySortedAttribute');
 var CatalogQueryText = require('./CatalogQueryText');
 
@@ -32,12 +33,13 @@ var CatalogQueryText = require('./CatalogQueryText');
 
 /**
  * Constructs a new <code>CatalogQuery</code>.
- * A query composed of one or more different types of filters to narrow the scope of targeted objects when calling the &#x60;SearchCatalogObjects&#x60; endpoint.  Although a query can have multiple filters, only one query is allowed per call to [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects).  When a query filter is based on an attribute, the attribute must be searchable.  Searchable attributes are listed as follows, along their parent types that can be searched for with applicable query filters.   Searchable attribute and objects queryable by searchable attributes **  - &#x60;name&#x60;:  &#x60;CatalogItem&#x60;, &#x60;CatalogItemVariation&#x60;, &#x60;CatelogCatogry&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogDiscount&#x60;, &#x60;CatalogModifier&#x60;, &#39;CatalogModifierList&#x60;, &#x60;CatalogItemOption&#x60;, &#x60;CatalogItemOptionValue&#x60;  - &#x60;description&#x60;: &#x60;CatalogItem&#x60;, &#x60;CatalogItemOptionValue&#x60;  - &#x60;abbreviation&#x60;: &#x60;CatalogItem&#x60;  - &#x60;upc&#x60;: &#x60;CatalogItemVariation&#x60;  - &#x60;sku&#x60;: &#x60;CatalogItemVariation&#x60;  - &#x60;caption&#x60;: &#x60;CatalogImage&#x60;  - &#x60;display_name&#x60;: &#x60;CatalogItemOption&#x60;   For example, to search for [CatalogItem](#type-CatalogItem) objects by searchable attributes, you can use  the &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, or &#x60;\&quot;abbreviation\&quot;&#x60; attribute in an applicable query filter.
+ * A query composed of one or more different types of filters to narrow the scope of targeted objects when calling the &#x60;SearchCatalogObjects&#x60; endpoint.  Although a query can have multiple filters, only one query is allowed per call to [SearchCatalogObjects](#endpoint-Catalog-SearchCatalogObjects).  When a query filter is based on an attribute, the attribute must be searchable. Searchable attributes are listed as follows, along their parent types that can be searched for with applicable query filters.  * Searchable attribute and objects queryable by searchable attributes ** - &#x60;name&#x60;:  &#x60;CatalogItem&#x60;, &#x60;CatalogItemVariation&#x60;, &#x60;CatelogCatogry&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogDiscount&#x60;, &#x60;CatalogModifier&#x60;, &#39;CatalogModifierList&#x60;, &#x60;CatalogItemOption&#x60;, &#x60;CatalogItemOptionValue&#x60; - &#x60;description&#x60;: &#x60;CatalogItem&#x60;, &#x60;CatalogItemOptionValue&#x60; - &#x60;abbreviation&#x60;: &#x60;CatalogItem&#x60; - &#x60;upc&#x60;: &#x60;CatalogItemVariation&#x60; - &#x60;sku&#x60;: &#x60;CatalogItemVariation&#x60; - &#x60;caption&#x60;: &#x60;CatalogImage&#x60; - &#x60;display_name&#x60;: &#x60;CatalogItemOption&#x60;  For example, to search for [CatalogItem](#type-CatalogItem) objects by searchable attributes, you can use the &#x60;\&quot;name\&quot;&#x60;, &#x60;\&quot;description\&quot;&#x60;, or &#x60;\&quot;abbreviation\&quot;&#x60; attribute in an applicable query filter.
  * @alias module:model/CatalogQuery
  * @class
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -66,6 +68,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('exact_query')) {
       obj['exact_query'] = CatalogQueryExact.constructFromObject(data['exact_query']);
+    }
+      if (data.hasOwnProperty('set_query')) {
+      obj['set_query'] = CatalogQuerySet.constructFromObject(data['set_query']);
     }
       if (data.hasOwnProperty('prefix_query')) {
       obj['prefix_query'] = CatalogQueryPrefix.constructFromObject(data['prefix_query']);
@@ -98,22 +103,27 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['sorted_attribute_query'] = undefined;
 /**
- * An exact query expression to return objects with attribute name and value   matching the specified attribute name and value exactly. Value matching is case insensitive.
+ * An exact query expression to return objects with attribute name and value matching the specified attribute name and value exactly. Value matching is case insensitive.
  * @member {module:model/CatalogQueryExact} exact_query
  */
 exports.prototype['exact_query'] = undefined;
 /**
- * A prefix query expression to return objects with attribute values  that have a prefix matching the specified string value. Value maching is case insensitive.
+ * A set query expression to return objects with attribute name and value matching the specified attribute name and any of the specified attribute values exactly. Value matching is case insensitive.
+ * @member {module:model/CatalogQuerySet} set_query
+ */
+exports.prototype['set_query'] = undefined;
+/**
+ * A prefix query expression to return objects with attribute values that have a prefix matching the specified string value. Value maching is case insensitive.
  * @member {module:model/CatalogQueryPrefix} prefix_query
  */
 exports.prototype['prefix_query'] = undefined;
 /**
- * A range query expression to return objects with numberic values  that lie in the specified range.
+ * A range query expression to return objects with numberic values that lie in the specified range.
  * @member {module:model/CatalogQueryRange} range_query
  */
 exports.prototype['range_query'] = undefined;
 /**
- * A text query expression to return objectd whose searchable attributes contain all of the given keywords, irrespective of their order. For example, if a `CatalogItem` contains custom attribute values of  `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, the query filter of `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}` returns this item.
+ * A text query expression to return objectd whose searchable attributes contain all of the given keywords, irrespective of their order. For example, if a `CatalogItem` contains custom attribute values of `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, the query filter of `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}` returns this item.
  * @member {module:model/CatalogQueryText} text_query
  */
 exports.prototype['text_query'] = undefined;
@@ -133,7 +143,7 @@ exports.prototype['items_for_modifier_list_query'] = undefined;
  */
 exports.prototype['items_for_item_options_query'] = undefined;
 /**
- * A query expression to return item variations (of the `CatalogItemVariation` that  contain all of the specified `CatalogItemOption` IDs.
+ * A query expression to return item variations (of the `CatalogItemVariation` that contain all of the specified `CatalogItemOption` IDs.
  * @member {module:model/CatalogQueryItemVariationsForItemOptionValues} item_variations_for_item_option_values_query
  */
 exports.prototype['item_variations_for_item_option_values_query'] = undefined;

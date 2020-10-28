@@ -41,7 +41,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var body = new SquareConnect.CreateBreakTypeRequest(); // CreateBreakTypeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // CreateBreakTypeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createBreakType(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -89,7 +89,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var body = new SquareConnect.CreateShiftRequest(); // CreateShiftRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // CreateShiftRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createShift(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -137,7 +137,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `BreakType` being deleted.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `BreakType` being deleted.
 
 apiInstance.deleteBreakType(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -185,7 +185,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `Shift` being deleted.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `Shift` being deleted.
 
 apiInstance.deleteShift(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -233,7 +233,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `BreakType` being retrieved.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `BreakType` being retrieved.
 
 apiInstance.getBreakType(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -282,7 +282,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `EmployeeWage` being retrieved.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `EmployeeWage` being retrieved.
 
 apiInstance.getEmployeeWage(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -330,7 +330,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `Shift` being retrieved.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `Shift` being retrieved.
 
 apiInstance.getShift(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -378,7 +378,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `TeamMemberWage` being retrieved.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `TeamMemberWage` being retrieved.
 
 apiInstance.getTeamMemberWage(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -427,9 +427,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.LaborApi();
 
 var opts = { 
-  'locationId': "locationId_example", // String | Filter Break Types returned to only those that are associated with the specified location.
-  'limit': 56, // Number | Maximum number of Break Types to return per page. Can range between 1 and 200. The default is the maximum at 200.
-  'cursor': "cursor_example" // String | Pointer to the next page of Break Type results to fetch.
+  'locationId': SquareConnect.LaborApi.constructFromObject({});, // String | Filter Break Types returned to only those that are associated with the specified location.
+  'limit': SquareConnect.LaborApi.constructFromObject({});, // Number | Maximum number of Break Types to return per page. Can range between 1 and 200. The default is the maximum at 200.
+  'cursor': SquareConnect.LaborApi.constructFromObject({}); // String | Pointer to the next page of Break Type results to fetch.
 };
 apiInstance.listBreakTypes(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -481,9 +481,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.LaborApi();
 
 var opts = { 
-  'employeeId': "employeeId_example", // String | Filter wages returned to only those that are associated with the specified employee.
-  'limit': 56, // Number | Maximum number of Employee Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
-  'cursor': "cursor_example" // String | Pointer to the next page of Employee Wage results to fetch.
+  'employeeId': SquareConnect.LaborApi.constructFromObject({});, // String | Filter wages returned to only those that are associated with the specified employee.
+  'limit': SquareConnect.LaborApi.constructFromObject({});, // Number | Maximum number of Employee Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
+  'cursor': SquareConnect.LaborApi.constructFromObject({}); // String | Pointer to the next page of Employee Wage results to fetch.
 };
 apiInstance.listEmployeeWages(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -534,9 +534,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.LaborApi();
 
 var opts = { 
-  'teamMemberId': "teamMemberId_example", // String | Filter wages returned to only those that are associated with the specified team member.
-  'limit': 56, // Number | Maximum number of Team Member Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
-  'cursor': "cursor_example" // String | Pointer to the next page of Employee Wage results to fetch.
+  'teamMemberId': SquareConnect.LaborApi.constructFromObject({});, // String | Filter wages returned to only those that are associated with the specified team member.
+  'limit': SquareConnect.LaborApi.constructFromObject({});, // Number | Maximum number of Team Member Wages to return per page. Can range between 1 and 200. The default is the maximum at 200.
+  'cursor': SquareConnect.LaborApi.constructFromObject({}); // String | Pointer to the next page of Employee Wage results to fetch.
 };
 apiInstance.listTeamMemberWages(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -587,8 +587,8 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.LaborApi();
 
 var opts = { 
-  'limit': 56, // Number | Maximum number of Workweek Configs to return per page.
-  'cursor': "cursor_example" // String | Pointer to the next page of Workweek Config results to fetch.
+  'limit': SquareConnect.LaborApi.constructFromObject({});, // Number | Maximum number of Workweek Configs to return per page.
+  'cursor': SquareConnect.LaborApi.constructFromObject({}); // String | Pointer to the next page of Workweek Config results to fetch.
 };
 apiInstance.listWorkweekConfigs(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -637,7 +637,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var body = new SquareConnect.SearchShiftsRequest(); // SearchShiftsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // SearchShiftsRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchShifts(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -685,9 +685,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `BreakType` being updated.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `BreakType` being updated.
 
-var body = new SquareConnect.UpdateBreakTypeRequest(); // UpdateBreakTypeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // UpdateBreakTypeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateBreakType(id, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -736,9 +736,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | ID of the object being updated.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | ID of the object being updated.
 
-var body = new SquareConnect.UpdateShiftRequest(); // UpdateShiftRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // UpdateShiftRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateShift(id, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -787,9 +787,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.LaborApi();
 
-var id = "id_example"; // String | UUID for the `WorkweekConfig` object being updated.
+var id = SquareConnect.LaborApi.constructFromObject({}); // String | UUID for the `WorkweekConfig` object being updated.
 
-var body = new SquareConnect.UpdateWorkweekConfigRequest(); // UpdateWorkweekConfigRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.LaborApi.constructFromObject({}); // UpdateWorkweekConfigRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateWorkweekConfig(id, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

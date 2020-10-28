@@ -11,7 +11,6 @@ Method | HTTP request | Description
 
 <a name="createDeviceCode"></a>
 # **createDeviceCode**
-**Note: This endpoint is in beta.**
 > CreateDeviceCodeResponse createDeviceCode(body)
 
 CreateDeviceCode
@@ -29,7 +28,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DevicesApi();
 
-var body = new SquareConnect.CreateDeviceCodeRequest(); // CreateDeviceCodeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.DevicesApi.constructFromObject({}); // CreateDeviceCodeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createDeviceCode(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -60,7 +59,6 @@ Name | Type | Description  | Notes
 
 <a name="getDeviceCode"></a>
 # **getDeviceCode**
-**Note: This endpoint is in beta.**
 > GetDeviceCodeResponse getDeviceCode(id)
 
 GetDeviceCode
@@ -78,7 +76,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DevicesApi();
 
-var id = "id_example"; // String | The unique identifier for the device code.
+var id = SquareConnect.DevicesApi.constructFromObject({}); // String | The unique identifier for the device code.
 
 apiInstance.getDeviceCode(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -109,7 +107,6 @@ Name | Type | Description  | Notes
 
 <a name="listDeviceCodes"></a>
 # **listDeviceCodes**
-**Note: This endpoint is in beta.**
 > ListDeviceCodesResponse listDeviceCodes(opts)
 
 ListDeviceCodes
@@ -128,9 +125,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.DevicesApi();
 
 var opts = { 
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
-  'locationId': "locationId_example", // String | If specified, only returns DeviceCodes of the specified location. Returns DeviceCodes of all locations if empty.
-  'productType': "productType_example" // String | If specified, only returns DeviceCodes targeting the specified product type. Returns DeviceCodes of all product types if empty.
+  'cursor': SquareConnect.DevicesApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+  'locationId': SquareConnect.DevicesApi.constructFromObject({});, // String | If specified, only returns DeviceCodes of the specified location. Returns DeviceCodes of all locations if empty.
+  'productType': SquareConnect.DevicesApi.constructFromObject({});, // String | If specified, only returns DeviceCodes targeting the specified product type. Returns DeviceCodes of all product types if empty.
+  'status': SquareConnect.DevicesApi.constructFromObject({}); // String | If specified, returns DeviceCodes with the specified statuses. Returns DeviceCodes of status `PAIRED` and `UNPAIRED` if empty.
 };
 apiInstance.listDeviceCodes(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -147,6 +145,7 @@ Name | Type | Description  | Notes
  **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information. | [optional] 
  **locationId** | **String**| If specified, only returns DeviceCodes of the specified location. Returns DeviceCodes of all locations if empty. | [optional] 
  **productType** | **String**| If specified, only returns DeviceCodes targeting the specified product type. Returns DeviceCodes of all product types if empty. | [optional] 
+ **status** | **String**| If specified, returns DeviceCodes with the specified statuses. Returns DeviceCodes of status &#x60;PAIRED&#x60; and &#x60;UNPAIRED&#x60; if empty. | [optional] 
 
 ### Return type
 

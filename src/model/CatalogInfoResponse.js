@@ -63,12 +63,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The set of errors encountered.
+ * Any errors that occurred during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * 
+ * Limits that apply to this API.
  * @member {module:model/CatalogInfoResponseLimits} limits
  */
 exports.prototype['limits'] = undefined;

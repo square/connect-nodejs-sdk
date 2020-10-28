@@ -1,7 +1,6 @@
 # SquareConnect.GetTerminalCheckoutResponse
 
 ### Description
-**Note: This model is in beta.**
 
 
 
@@ -9,6 +8,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **errors** | [**[Error]**](Error.md) | Information on errors encountered during the request. | [optional] 
-**checkout** | [**TerminalCheckout**](TerminalCheckout.md) | The requested &#x60;Checkout&#x60; | [optional] 
+**checkout** | [**TerminalCheckout**](TerminalCheckout.md) | The requested &#x60;TerminalCheckout&#x60; | [optional] 
 
 

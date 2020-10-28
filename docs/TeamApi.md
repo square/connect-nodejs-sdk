@@ -33,7 +33,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var body = new SquareConnect.BulkCreateTeamMembersRequest(); // BulkCreateTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // BulkCreateTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.bulkCreateTeamMembers(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -81,7 +81,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var body = new SquareConnect.BulkUpdateTeamMembersRequest(); // BulkUpdateTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // BulkUpdateTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.bulkUpdateTeamMembers(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 CreateTeamMember
 
-Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;first_name&#x60; - &#x60;last_name&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
+Creates a single &#x60;TeamMember&#x60; object. The &#x60;TeamMember&#x60; will be returned on successful creates. You must provide the following values in your request to this endpoint: - &#x60;given_name&#x60; - &#x60;family_name&#x60;  Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#createteammember).
 
 ### Example
 ```javascript
@@ -129,7 +129,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var body = new SquareConnect.CreateTeamMemberRequest(); // CreateTeamMemberRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // CreateTeamMemberRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createTeamMember(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 RetrieveTeamMember
 
-Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60; Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
+Retrieve a &#x60;TeamMember&#x60; object for the given &#x60;TeamMember.id&#x60;. Learn about [Troubleshooting the Teams API](/docs/team/troubleshooting#retrieveteammember).
 
 ### Example
 ```javascript
@@ -177,7 +177,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var teamMemberId = "teamMemberId_example"; // String | The ID of the team member to retrieve.
+var teamMemberId = SquareConnect.TeamApi.constructFromObject({}); // String | The ID of the team member to retrieve.
 
 apiInstance.retrieveTeamMember(teamMemberId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -225,7 +225,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var teamMemberId = "teamMemberId_example"; // String | The ID of the team member to retrieve wage setting for
+var teamMemberId = SquareConnect.TeamApi.constructFromObject({}); // String | The ID of the team member to retrieve wage setting for
 
 apiInstance.retrieveWageSetting(teamMemberId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 
 SearchTeamMembers
 
-Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;is_active&#x60;
+Returns a paginated list of &#x60;TeamMember&#x60; objects for a business. The list to be returned can be filtered by: - location IDs **and** - &#x60;status&#x60;
 
 ### Example
 ```javascript
@@ -273,7 +273,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var body = new SquareConnect.SearchTeamMembersRequest(); // SearchTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // SearchTeamMembersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchTeamMembers(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -321,9 +321,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var teamMemberId = "teamMemberId_example"; // String | The ID of the team member to update.
+var teamMemberId = SquareConnect.TeamApi.constructFromObject({}); // String | The ID of the team member to update.
 
-var body = new SquareConnect.UpdateTeamMemberRequest(); // UpdateTeamMemberRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // UpdateTeamMemberRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateTeamMember(teamMemberId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -372,9 +372,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.TeamApi();
 
-var teamMemberId = "teamMemberId_example"; // String | The ID of the team member to update the `WageSetting` object for.
+var teamMemberId = SquareConnect.TeamApi.constructFromObject({}); // String | The ID of the team member to update the `WageSetting` object for.
 
-var body = new SquareConnect.UpdateWageSettingRequest(); // UpdateWageSettingRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.TeamApi.constructFromObject({}); // UpdateWageSettingRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateWageSetting(teamMemberId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

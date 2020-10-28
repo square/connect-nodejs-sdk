@@ -34,7 +34,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | ID of the dispute you want to accept.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | ID of the dispute you want to accept.
 
 apiInstance.acceptDispute(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -83,9 +83,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute you want to upload evidence for.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want to upload evidence for.
 
-var body = new SquareConnect.CreateDisputeEvidenceTextRequest(); // CreateDisputeEvidenceTextRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.DisputesApi.constructFromObject({}); // CreateDisputeEvidenceTextRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createDisputeEvidenceText(disputeId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -135,7 +135,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute.
 
 apiInstance.listDisputeEvidence(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -185,9 +185,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.DisputesApi();
 
 var opts = { 
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query. For more information, see [Paginating](https://developer.squareup.com/docs/basics/api101/pagination).
-  'states': "states_example", // String | The dispute states to filter the result. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or `LOST`).
-  'locationId': "locationId_example" // String | The ID of the location for which to return  a list of disputes. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or  `LOST`) associated with all locations.
+  'cursor': SquareConnect.DisputesApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query. For more information, see [Paginating](https://developer.squareup.com/docs/basics/api101/pagination).
+  'states': SquareConnect.DisputesApi.constructFromObject({});, // String | The dispute states to filter the result. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or `LOST`).
+  'locationId': SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the location for which to return  a list of disputes. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or  `LOST`) associated with all locations.
 };
 apiInstance.listDisputes(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -238,9 +238,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute you want to remove evidence from.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want to remove evidence from.
 
-var evidenceId = "evidenceId_example"; // String | The ID of the evidence you want to remove.
+var evidenceId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the evidence you want to remove.
 
 apiInstance.removeDisputeEvidence(disputeId, evidenceId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -290,7 +290,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute you want more details about.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want more details about.
 
 apiInstance.retrieveDispute(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -339,9 +339,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute that you want to retrieve evidence from.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute that you want to retrieve evidence from.
 
-var evidenceId = "evidenceId_example"; // String | The ID of the evidence to retrieve.
+var evidenceId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the evidence to retrieve.
 
 apiInstance.retrieveDisputeEvidence(disputeId, evidenceId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -391,7 +391,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = "disputeId_example"; // String | The ID of the dispute you want to submit evidence for.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want to submit evidence for.
 
 apiInstance.submitEvidence(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

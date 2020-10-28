@@ -13,11 +13,17 @@
  */
 var ApiClient = require('../ApiClient');
 var CancelTerminalCheckoutResponse = require('../model/CancelTerminalCheckoutResponse');
+var CancelTerminalRefundResponse = require('../model/CancelTerminalRefundResponse');
 var CreateTerminalCheckoutRequest = require('../model/CreateTerminalCheckoutRequest');
 var CreateTerminalCheckoutResponse = require('../model/CreateTerminalCheckoutResponse');
+var CreateTerminalRefundRequest = require('../model/CreateTerminalRefundRequest');
+var CreateTerminalRefundResponse = require('../model/CreateTerminalRefundResponse');
 var GetTerminalCheckoutResponse = require('../model/GetTerminalCheckoutResponse');
+var GetTerminalRefundResponse = require('../model/GetTerminalRefundResponse');
 var SearchTerminalCheckoutsRequest = require('../model/SearchTerminalCheckoutsRequest');
 var SearchTerminalCheckoutsResponse = require('../model/SearchTerminalCheckoutsResponse');
+var SearchTerminalRefundsRequest = require('../model/SearchTerminalRefundsRequest');
+var SearchTerminalRefundsResponse = require('../model/SearchTerminalRefundsResponse');
 
 /**
  * Terminal service.
@@ -38,8 +44,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelTerminalCheckout
-   * Note: This endpoint is in beta.
-   * Cancels a Terminal checkout request, if the status of the request permits it.
+   * Cancels a Terminal checkout request if the status of the request permits it.
    * @param {String} checkoutId Unique ID for the desired &#x60;TerminalCheckout&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelTerminalCheckoutResponse} and HTTP response
    */
@@ -59,7 +64,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -78,7 +83,7 @@ module.exports = function(apiClient) {
 
   /**
    * CancelTerminalCheckout
-   * Cancels a Terminal checkout request, if the status of the request permits it.
+   * Cancels a Terminal checkout request if the status of the request permits it.
    * @param {String} checkoutId Unique ID for the desired &#x60;TerminalCheckout&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelTerminalCheckoutResponse}
    */
@@ -91,8 +96,61 @@ module.exports = function(apiClient) {
 
 
   /**
-   * CreateTerminalCheckout
+   * CancelTerminalRefund
    * Note: This endpoint is in beta.
+   * Cancels an Interac terminal refund request by refund request ID if the status of the request permits it.
+   * @param {String} terminalRefundId Unique ID for the desired &#x60;TerminalRefund&#x60;
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelTerminalRefundResponse} and HTTP response
+   */
+  this.cancelTerminalRefundWithHttpInfo = function(terminalRefundId) {
+    var postBody = null;
+
+    // verify the required parameter 'terminalRefundId' is set
+    if (terminalRefundId === undefined || terminalRefundId === null) {
+      throw new Error("Missing the required parameter 'terminalRefundId' when calling cancelTerminalRefund");
+    }
+
+
+    var pathParams = {
+      'terminal_refund_id': terminalRefundId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-10-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = CancelTerminalRefundResponse;
+
+    return this.apiClient.callApi(
+      '/v2/terminals/refunds/{terminal_refund_id}/cancel', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * CancelTerminalRefund
+   * Cancels an Interac terminal refund request by refund request ID if the status of the request permits it.
+   * @param {String} terminalRefundId Unique ID for the desired &#x60;TerminalRefund&#x60;
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelTerminalRefundResponse}
+   */
+  this.cancelTerminalRefund = function(terminalRefundId) {
+    return this.cancelTerminalRefundWithHttpInfo(terminalRefundId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * CreateTerminalCheckout
    * Creates a new Terminal checkout request and sends it to the specified device to take a payment for the requested amount.
    * @param {module:model/CreateTerminalCheckoutRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateTerminalCheckoutResponse} and HTTP response
@@ -112,7 +170,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -144,8 +202,60 @@ module.exports = function(apiClient) {
 
 
   /**
-   * GetTerminalCheckout
+   * CreateTerminalRefund
    * Note: This endpoint is in beta.
+   * Creates a request to refund an Interac payment completed on a Square Terminal.
+   * @param {module:model/CreateTerminalRefundRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateTerminalRefundResponse} and HTTP response
+   */
+  this.createTerminalRefundWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling createTerminalRefund");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-10-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = CreateTerminalRefundResponse;
+
+    return this.apiClient.callApi(
+      '/v2/terminals/refunds', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * CreateTerminalRefund
+   * Creates a request to refund an Interac payment completed on a Square Terminal.
+   * @param {module:model/CreateTerminalRefundRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateTerminalRefundResponse}
+   */
+  this.createTerminalRefund = function(body) {
+    return this.createTerminalRefundWithHttpInfo(body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * GetTerminalCheckout
    * Retrieves a Terminal checkout request by checkout_id.
    * @param {String} checkoutId Unique ID for the desired &#x60;TerminalCheckout&#x60;
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTerminalCheckoutResponse} and HTTP response
@@ -166,7 +276,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -198,8 +308,61 @@ module.exports = function(apiClient) {
 
 
   /**
-   * SearchTerminalCheckouts
+   * GetTerminalRefund
    * Note: This endpoint is in beta.
+   * Retrieves an Interac terminal refund object by ID.
+   * @param {String} terminalRefundId Unique ID for the desired &#x60;TerminalRefund&#x60;
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTerminalRefundResponse} and HTTP response
+   */
+  this.getTerminalRefundWithHttpInfo = function(terminalRefundId) {
+    var postBody = null;
+
+    // verify the required parameter 'terminalRefundId' is set
+    if (terminalRefundId === undefined || terminalRefundId === null) {
+      throw new Error("Missing the required parameter 'terminalRefundId' when calling getTerminalRefund");
+    }
+
+
+    var pathParams = {
+      'terminal_refund_id': terminalRefundId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-10-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = GetTerminalRefundResponse;
+
+    return this.apiClient.callApi(
+      '/v2/terminals/refunds/{terminal_refund_id}', 'GET',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * GetTerminalRefund
+   * Retrieves an Interac terminal refund object by ID.
+   * @param {String} terminalRefundId Unique ID for the desired &#x60;TerminalRefund&#x60;
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetTerminalRefundResponse}
+   */
+  this.getTerminalRefund = function(terminalRefundId) {
+    return this.getTerminalRefundWithHttpInfo(terminalRefundId)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * SearchTerminalCheckouts
    * Retrieves a filtered list of Terminal checkout requests created by the account making the request.
    * @param {module:model/SearchTerminalCheckoutsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchTerminalCheckoutsResponse} and HTTP response
@@ -219,7 +382,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-09-23';
+    headerParams['Square-Version'] = '2020-10-28';
 
     var formParams = {
     };
@@ -244,6 +407,59 @@ module.exports = function(apiClient) {
    */
   this.searchTerminalCheckouts = function(body) {
     return this.searchTerminalCheckoutsWithHttpInfo(body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
+   * SearchTerminalRefunds
+   * Note: This endpoint is in beta.
+   * Retrieves a filtered list of Terminal Interac refund requests created by the seller making the request.
+   * @param {module:model/SearchTerminalRefundsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchTerminalRefundsResponse} and HTTP response
+   */
+  this.searchTerminalRefundsWithHttpInfo = function(body) {
+    var postBody = body;
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling searchTerminalRefunds");
+    }
+
+
+    var pathParams = {
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-10-28';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = SearchTerminalRefundsResponse;
+
+    return this.apiClient.callApi(
+      '/v2/terminals/refunds/search', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * SearchTerminalRefunds
+   * Retrieves a filtered list of Terminal Interac refund requests created by the seller making the request.
+   * @param {module:model/SearchTerminalRefundsRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchTerminalRefundsResponse}
+   */
+  this.searchTerminalRefunds = function(body) {
+    return this.searchTerminalRefundsWithHttpInfo(body)
       .then(function(response_and_data) {
         return response_and_data.data;
       });

@@ -41,7 +41,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var body = new SquareConnect.V1Employee(); // V1Employee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1Employee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createEmployee(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -89,7 +89,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var employeeRole = new SquareConnect.V1EmployeeRole(); // V1EmployeeRole | An EmployeeRole object with a name and permissions, and an optional owner flag.
+var employeeRole = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1EmployeeRole | An EmployeeRole object with a name and permissions, and an optional owner flag.
 
 apiInstance.createEmployeeRole(employeeRole).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -138,7 +138,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var body = new SquareConnect.V1Timecard(); // V1Timecard | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1Timecard | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createTimecard(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -187,7 +187,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var timecardId = "timecardId_example"; // String | The ID of the timecard to delete.
+var timecardId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the timecard to delete.
 
 apiInstance.deleteTimecard(timecardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -236,12 +236,12 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list cash drawer shifts for.
+var locationId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the location to list cash drawer shifts for.
 
 var opts = { 
-  'order': "order_example", // String | The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
-  'beginTime': "beginTime_example", // String | The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time minus 90 days.
-  'endTime': "endTime_example" // String | The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time.
+  'order': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | The order in which cash drawer shifts are listed in the response, based on their created_at field. Default value: ASC
+  'beginTime': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time minus 90 days.
+  'endTime': SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The beginning of the requested reporting period, in ISO 8601 format. Default value: The current time.
 };
 apiInstance.listCashDrawerShifts(locationId, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -293,9 +293,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var opts = { 
-  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.Default value: ASC
-  'limit': 56, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | The order in which employees are listed in the response, based on their created_at field.Default value: ASC
+  'limit': SquareConnect.V1EmployeesApi.constructFromObject({});, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
+  'batchToken': SquareConnect.V1EmployeesApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listEmployeeRoles(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -346,15 +346,15 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var opts = { 
-  'order': "order_example", // String | The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
-  'beginUpdatedAt': "beginUpdatedAt_example", // String | If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
-  'endUpdatedAt': "endUpdatedAt_example", // String | If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
-  'beginCreatedAt': "beginCreatedAt_example", // String | If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
-  'endCreatedAt': "endCreatedAt_example", // String | If filtering results by their created_at field, the end of the requested reporting period, in ISO 8601 format.
-  'status': "status_example", // String | If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
-  'externalId': "externalId_example", // String | If provided, the endpoint returns only employee entities with the specified external_id.
-  'limit': 56, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
+  'beginUpdatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
+  'endUpdatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
+  'beginCreatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
+  'endCreatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their created_at field, the end of the requested reporting period, in ISO 8601 format.
+  'status': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
+  'externalId': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If provided, the endpoint returns only employee entities with the specified external_id.
+  'limit': SquareConnect.V1EmployeesApi.constructFromObject({});, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
+  'batchToken': SquareConnect.V1EmployeesApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listEmployees(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -411,7 +411,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var timecardId = "timecardId_example"; // String | The ID of the timecard to list events for.
+var timecardId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the timecard to list events for.
 
 apiInstance.listTimecardEvents(timecardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -461,17 +461,17 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
 var opts = { 
-  'order': "order_example", // String | The order in which timecards are listed in the response, based on their created_at field.
-  'employeeId': "employeeId_example", // String | If provided, the endpoint returns only timecards for the employee with the specified ID.
-  'beginClockinTime': "beginClockinTime_example", // String | If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601 format.
-  'endClockinTime': "endClockinTime_example", // String | If filtering results by their clockin_time field, the end of the requested reporting period, in ISO 8601 format.
-  'beginClockoutTime': "beginClockoutTime_example", // String | If filtering results by their clockout_time field, the beginning of the requested reporting period, in ISO 8601 format.
-  'endClockoutTime': "endClockoutTime_example", // String | If filtering results by their clockout_time field, the end of the requested reporting period, in ISO 8601 format.
-  'beginUpdatedAt': "beginUpdatedAt_example", // String | If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format.
-  'endUpdatedAt': "endUpdatedAt_example", // String | If filtering results by their updated_at field, the end of the requested reporting period, in ISO 8601 format.
-  'deleted': true, // Boolean | If true, only deleted timecards are returned. If false, only valid timecards are returned.If you don't provide this parameter, both valid and deleted timecards are returned.
-  'limit': 56, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
-  'batchToken': "batchToken_example" // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+  'order': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | The order in which timecards are listed in the response, based on their created_at field.
+  'employeeId': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If provided, the endpoint returns only timecards for the employee with the specified ID.
+  'beginClockinTime': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their clockin_time field, the beginning of the requested reporting period, in ISO 8601 format.
+  'endClockinTime': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their clockin_time field, the end of the requested reporting period, in ISO 8601 format.
+  'beginClockoutTime': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their clockout_time field, the beginning of the requested reporting period, in ISO 8601 format.
+  'endClockoutTime': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their clockout_time field, the end of the requested reporting period, in ISO 8601 format.
+  'beginUpdatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format.
+  'endUpdatedAt': SquareConnect.V1EmployeesApi.constructFromObject({});, // String | If filtering results by their updated_at field, the end of the requested reporting period, in ISO 8601 format.
+  'deleted': SquareConnect.V1EmployeesApi.constructFromObject({});, // Boolean | If true, only deleted timecards are returned. If false, only valid timecards are returned.If you don't provide this parameter, both valid and deleted timecards are returned.
+  'limit': SquareConnect.V1EmployeesApi.constructFromObject({});, // Number | The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
+  'batchToken': SquareConnect.V1EmployeesApi.constructFromObject({}); // String | A pagination cursor to retrieve the next set of results for your original query to the endpoint.
 };
 apiInstance.listTimecards(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -530,9 +530,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var locationId = "locationId_example"; // String | The ID of the location to list cash drawer shifts for.
+var locationId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the location to list cash drawer shifts for.
 
-var shiftId = "shiftId_example"; // String | The shift's ID.
+var shiftId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The shift's ID.
 
 apiInstance.retrieveCashDrawerShift(locationId, shiftId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -581,7 +581,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var employeeId = "employeeId_example"; // String | The employee's ID.
+var employeeId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The employee's ID.
 
 apiInstance.retrieveEmployee(employeeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -629,7 +629,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var roleId = "roleId_example"; // String | The role's ID.
+var roleId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The role's ID.
 
 apiInstance.retrieveEmployeeRole(roleId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -678,7 +678,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var timecardId = "timecardId_example"; // String | The timecard's ID.
+var timecardId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The timecard's ID.
 
 apiInstance.retrieveTimecard(timecardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -726,9 +726,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var employeeId = "employeeId_example"; // String | The ID of the role to modify.
+var employeeId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the role to modify.
 
-var body = new SquareConnect.V1Employee(); // V1Employee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1Employee | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateEmployee(employeeId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -777,9 +777,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var roleId = "roleId_example"; // String | The ID of the role to modify.
+var roleId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | The ID of the role to modify.
 
-var body = new SquareConnect.V1EmployeeRole(); // V1EmployeeRole | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1EmployeeRole | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateEmployeeRole(roleId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -829,9 +829,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.V1EmployeesApi();
 
-var timecardId = "timecardId_example"; // String | TThe ID of the timecard to modify.
+var timecardId = SquareConnect.V1EmployeesApi.constructFromObject({}); // String | TThe ID of the timecard to modify.
 
-var body = new SquareConnect.V1Timecard(); // V1Timecard | An object containing the fields to POST for the request. See the corresponding object definition for field details.
+var body = SquareConnect.V1EmployeesApi.constructFromObject({}); // V1Timecard | An object containing the fields to POST for the request. See the corresponding object definition for field details.
 
 apiInstance.updateTimecard(timecardId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

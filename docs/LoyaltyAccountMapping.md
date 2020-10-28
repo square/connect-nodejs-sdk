@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-Associates a loyalty account with the buyer's phone number. or more information, see  [Loyalty Overview](/docs/loyalty/overview).
+Associates a loyalty account with the buyer's phone number. For more information, see  [Loyalty Overview](/docs/loyalty/overview).
 
 ## Properties
 Name | Type | Description | Notes

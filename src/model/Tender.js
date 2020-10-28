@@ -14,7 +14,6 @@
 var ApiClient = require('../ApiClient');
 var AdditionalRecipient = require('./AdditionalRecipient');
 var Money = require('./Money');
-var TenderBankTransferDetails = require('./TenderBankTransferDetails');
 var TenderCardDetails = require('./TenderCardDetails');
 var TenderCashDetails = require('./TenderCashDetails');
 
@@ -46,7 +45,6 @@ var exports = function(type) {
 
 
   _this['type'] = type;
-
 
 
 
@@ -99,9 +97,6 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('cash_details')) {
       obj['cash_details'] = TenderCashDetails.constructFromObject(data['cash_details']);
-    }
-      if (data.hasOwnProperty('bank_transfer_details')) {
-      obj['bank_transfer_details'] = TenderBankTransferDetails.constructFromObject(data['bank_transfer_details']);
     }
       if (data.hasOwnProperty('additional_recipients')) {
       obj['additional_recipients'] = ApiClient.convertToType(data['additional_recipients'], [AdditionalRecipient]);
@@ -173,11 +168,6 @@ exports.prototype['card_details'] = undefined;
  * @member {module:model/TenderCashDetails} cash_details
  */
 exports.prototype['cash_details'] = undefined;
-/**
- * The details of the bank transfer tender.  This value is present only if the value of `type` is `BANK_TRANSFER`.
- * @member {module:model/TenderBankTransferDetails} bank_transfer_details
- */
-exports.prototype['bank_transfer_details'] = undefined;
 /**
  * Additional recipients (other than the merchant) receiving a portion of this tender. For example, fees assessed on the purchase by a third party integration.
  * @member {Array.<module:model/AdditionalRecipient>} additional_recipients

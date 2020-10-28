@@ -36,9 +36,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to add to a group.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer to add to a group.
 
-var groupId = "groupId_example"; // String | The ID of the customer group to add the customer to.
+var groupId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer group to add the customer to.
 
 apiInstance.addGroupToCustomer(customerId, groupId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -87,7 +87,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var body = new SquareConnect.CreateCustomerRequest(); // CreateCustomerRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomersApi.constructFromObject({}); // CreateCustomerRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createCustomer(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -135,9 +135,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The Square ID of the customer profile the card is linked to.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The Square ID of the customer profile the card is linked to.
 
-var body = new SquareConnect.CreateCustomerCardRequest(); // CreateCustomerCardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomersApi.constructFromObject({}); // CreateCustomerCardRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createCustomerCard(customerId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -186,7 +186,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to delete.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer to delete.
 
 apiInstance.deleteCustomer(customerId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -234,9 +234,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer that the card on file belongs to.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer that the card on file belongs to.
 
-var cardId = "cardId_example"; // String | The ID of the card on file to delete.
+var cardId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the card on file to delete.
 
 apiInstance.deleteCustomerCard(customerId, cardId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 ListCustomers
 
-Lists customer profiles associated with a Square account.  Under normal operating conditions, newly created or updated customer profiles become available  for the listing operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
+Lists customer profiles associated with a Square account.  Under normal operating conditions, newly created or updated customer profiles become available for the listing operation in well under 30 seconds. Occasionally, propagation of the new or updated profiles can take closer to one minute or longer, especially during network incidents and outages.
 
 ### Example
 ```javascript
@@ -286,9 +286,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.CustomersApi();
 
 var opts = { 
-  'cursor': "cursor_example", // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
-  'sortField': "sortField_example", // String | Indicates how Customers should be sorted.  Default: `DEFAULT`.
-  'sortOrder': "sortOrder_example" // String | Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order.  Default: `ASC`.
+  'cursor': SquareConnect.CustomersApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
+  'sortField': SquareConnect.CustomersApi.constructFromObject({});, // String | Indicates how Customers should be sorted.  Default: `DEFAULT`.
+  'sortOrder': SquareConnect.CustomersApi.constructFromObject({}); // String | Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order.  Default: `ASC`.
 };
 apiInstance.listCustomers(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -339,9 +339,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to remove from the group.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer to remove from the group.
 
-var groupId = "groupId_example"; // String | The ID of the customer group to remove the customer from.
+var groupId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer group to remove the customer from.
 
 apiInstance.removeGroupFromCustomer(customerId, groupId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -390,7 +390,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to retrieve.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer to retrieve.
 
 apiInstance.retrieveCustomer(customerId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 
 SearchCustomers
 
-Searches the customer profiles associated with a Square account using  one or more supported query filters.   Calling &#x60;SearchCustomers&#x60; without any explicit query filter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.  Under normal operating conditions, newly created or updated customer profiles become available  for the search operation in well under 30 seconds. Occasionally, propagation of the new or updated  profiles can take closer to one minute or longer, espeically during network incidents and outages.
+Searches the customer profiles associated with a Square account using a supported query filter.  Calling &#x60;SearchCustomers&#x60; without any explicit query filter returns all customer profiles ordered alphabetically based on &#x60;given_name&#x60; and &#x60;family_name&#x60;.  Under normal operating conditions, newly created or updated customer profiles become available for the search operation in well under 30 seconds. Occasionally, propagation of the new or updated profiles can take closer to one minute or longer, especially during network incidents and outages.
 
 ### Example
 ```javascript
@@ -438,7 +438,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var body = new SquareConnect.SearchCustomersRequest(); // SearchCustomersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomersApi.constructFromObject({}); // SearchCustomersRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.searchCustomers(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 UpdateCustomer
 
-Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
+Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new &#x60;customer_id&#x60;. You must use the new &#x60;customer_id&#x60; to update merged profiles.  You cannot edit a customer&#39;s cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-Customers-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-Customers-createcustomercard) endpoint.
 
 ### Example
 ```javascript
@@ -486,9 +486,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.CustomersApi();
 
-var customerId = "customerId_example"; // String | The ID of the customer to update.
+var customerId = SquareConnect.CustomersApi.constructFromObject({}); // String | The ID of the customer to update.
 
-var body = new SquareConnect.UpdateCustomerRequest(); // UpdateCustomerRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.CustomersApi.constructFromObject({}); // UpdateCustomerRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.updateCustomer(customerId, body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

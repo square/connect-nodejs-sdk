@@ -26,7 +26,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.ApplePayApi();
 
-var body = new SquareConnect.RegisterDomainRequest(); // RegisterDomainRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.ApplePayApi.constructFromObject({}); // RegisterDomainRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.registerDomain(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

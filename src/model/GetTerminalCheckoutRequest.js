@@ -18,7 +18,6 @@ var ApiClient = require('../ApiClient');
 
 /**
  * The GetTerminalCheckoutRequest model module.
- * Note: This model is in beta.
  * @module model/GetTerminalCheckoutRequest
  */
 

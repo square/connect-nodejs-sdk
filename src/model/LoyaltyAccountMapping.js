@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>LoyaltyAccountMapping</code>.
- * Associates a loyalty account with the buyer&#39;s phone number. or more information, see  [Loyalty Overview](/docs/loyalty/overview).
+ * Associates a loyalty account with the buyer&#39;s phone number. For more information, see  [Loyalty Overview](/docs/loyalty/overview).
  * @alias module:model/LoyaltyAccountMapping
  * @class
  * @param type {String} The type of mapping. See [LoyaltyAccountMappingType](#type-loyaltyaccountmappingtype) for possible values

@@ -25,7 +25,7 @@ var Range = require('./Range');
 
 /**
  * Constructs a new <code>CustomAttributeFilter</code>.
- * Supported custom attribute query expressions for calling the  [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems)  endpoint to search for items or item variations.
+ * Supported custom attribute query expressions for calling the [SearchCatalogItems](#endpoint-Catalog-SearchCatalogItems) endpoint to search for items or item variations.
  * @alias module:model/CustomAttributeFilter
  * @class
  */
@@ -74,17 +74,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * A query expression to filter items or item variations by matching their custom attributes'  `custom_attribute_definition_id`   property value against the the specified id.
+ * A query expression to filter items or item variations by matching their custom attributes' `custom_attribute_definition_id` property value against the the specified id.
  * @member {String} custom_attribute_definition_id
  */
 exports.prototype['custom_attribute_definition_id'] = undefined;
 /**
- * A query expression to filter items or item variations by matching their custom attributes' `key` property value against  the specified key.
+ * A query expression to filter items or item variations by matching their custom attributes' `key` property value against the specified key.
  * @member {String} key
  */
 exports.prototype['key'] = undefined;
 /**
- * A query expression to filter items or item variations by matching their custom attributes'  `string_value`  property value  against the specified text.
+ * A query expression to filter items or item variations by matching their custom attributes' `string_value`  property value against the specified text.
  * @member {String} string_filter
  */
 exports.prototype['string_filter'] = undefined;
@@ -94,12 +94,12 @@ exports.prototype['string_filter'] = undefined;
  */
 exports.prototype['number_filter'] = undefined;
 /**
- * A query expression to filter items or item variations by matching  their custom attributes'  `selection_uid_values`  values against the specified selection uids.
+ * A query expression to filter items or item variations by matching  their custom attributes' `selection_uid_values` values against the specified selection uids.
  * @member {Array.<String>} selection_uids_filter
  */
 exports.prototype['selection_uids_filter'] = undefined;
 /**
- * A query expression to filter items or item variations by matching their custom attributes' `boolean_value` property values  against the specified Boolean expression.
+ * A query expression to filter items or item variations by matching their custom attributes' `boolean_value` property values against the specified Boolean expression.
  * @member {Boolean} bool_filter
  */
 exports.prototype['bool_filter'] = undefined;

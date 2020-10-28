@@ -26,7 +26,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.MobileAuthorizationApi();
 
-var body = new SquareConnect.CreateMobileAuthorizationCodeRequest(); // CreateMobileAuthorizationCodeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+var body = SquareConnect.MobileAuthorizationApi.constructFromObject({}); // CreateMobileAuthorizationCodeRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
 apiInstance.createMobileAuthorizationCode(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

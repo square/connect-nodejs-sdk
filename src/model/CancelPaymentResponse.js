@@ -25,7 +25,7 @@ var Payment = require('./Payment');
 
 /**
  * Constructs a new <code>CancelPaymentResponse</code>.
- * Return value from the [CancelPayment](#endpoint-payments-cancelpayment) endpoint.
+ * The return value from the [CancelPayment](#endpoint-payments-cancelpayment) endpoint.
  * @alias module:model/CancelPaymentResponse
  * @class
  */
@@ -58,7 +58,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
