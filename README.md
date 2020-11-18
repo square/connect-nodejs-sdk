@@ -3,7 +3,7 @@
 ---
 
 [![Build Status](https://travis-ci.org/square/connect-nodejs-sdk.svg?branch=master)](https://travis-ci.org/square/connect-nodejs-sdk)
-[![Node.js version](https://badge.fury.io/ph/square%2Fconnect.svg)](https://badge.fury.io/ph/square%2Fconnect)
+[![npm version](https://badge.fury.io/js/square-connect.svg)](https://badge.fury.io/js/square-connect)
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ==================
 
