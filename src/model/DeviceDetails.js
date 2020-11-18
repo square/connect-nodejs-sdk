@@ -60,17 +60,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Square-issued ID of the device.
+ * The Square-issued ID of the device.
  * @member {String} device_id
  */
 exports.prototype['device_id'] = undefined;
 /**
- * Square-issued installation ID for the device.
+ * The Square-issued installation ID for the device.
  * @member {String} device_installation_id
  */
 exports.prototype['device_installation_id'] = undefined;
 /**
- * The name of the device set by the merchant.
+ * The name of the device set by the seller.
  * @member {String} device_name
  */
 exports.prototype['device_name'] = undefined;

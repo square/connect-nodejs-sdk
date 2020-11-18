@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CreateCatalogImageRequest', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CreateCatalogImageRequest();
+    // this.api = new SquareConnect.CreateCatalogImageRequest();
   });
 
   it('should create an instance of CreateCatalogImageRequest', function() {

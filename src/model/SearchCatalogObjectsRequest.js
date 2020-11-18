@@ -82,7 +82,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['cursor'] = undefined;
 /**
- * The desired set of object types to appear in the search results. The legal values are taken from the CatalogObjectType enum: `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`. See [CatalogObjectType](#type-catalogobjecttype) for possible values
+ * The desired set of object types to appear in the search results. See [CatalogObjectType](#type-catalogobjecttype) for possible values
  * @member {Array.<String>} object_types
  */
 exports.prototype['object_types'] = undefined;

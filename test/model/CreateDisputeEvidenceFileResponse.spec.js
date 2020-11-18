@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CreateDisputeEvidenceFileResponse', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CreateDisputeEvidenceFileResponse();
+    // this.api = new SquareConnect.CreateDisputeEvidenceFileResponse();
   });
 
   it('should create an instance of CreateDisputeEvidenceFileResponse', function() {

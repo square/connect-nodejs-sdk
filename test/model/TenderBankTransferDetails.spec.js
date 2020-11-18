@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('TenderBankTransferDetails', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.TenderBankTransferDetails();
+    // this.api = new SquareConnect.TenderBankTransferDetails();
   });
 
   it('should create an instance of TenderBankTransferDetails', function() {

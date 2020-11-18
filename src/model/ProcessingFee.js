@@ -24,7 +24,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>ProcessingFee</code>.
- * Represents Square processing fee.
+ * Represents the Square processing fee.
  * @alias module:model/ProcessingFee
  * @class
  */
@@ -61,17 +61,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Timestamp of when the fee takes effect, in RFC 3339 format.
+ * The timestamp of when the fee takes effect, in RFC 3339 format.
  * @member {String} effective_at
  */
 exports.prototype['effective_at'] = undefined;
 /**
- * The type of fee assessed or adjusted. Can be one of: `INITIAL`, `ADJUSTMENT`.
+ * The type of fee assessed or adjusted. The fee type can be `INITIAL` or `ADJUSTMENT`.
  * @member {String} type
  */
 exports.prototype['type'] = undefined;
 /**
- * The fee amount assessed or adjusted by Square. May be negative.  Positive values represent funds being assessed, while negative values represent funds being returned.
+ * The fee amount, which might be negative, that is assessed or adjusted by Square.  Positive values represent funds being assessed, while negative values represent funds being returned.
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;

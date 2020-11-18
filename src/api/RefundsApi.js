@@ -37,7 +37,7 @@ module.exports = function(apiClient) {
   /**
    * GetPaymentRefund
    * Retrieves a specific refund using the &#x60;refund_id&#x60;.
-   * @param {String} refundId Unique ID for the desired &#x60;PaymentRefund&#x60;.
+   * @param {String} refundId The unique ID for the desired &#x60;PaymentRefund&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetPaymentRefundResponse} and HTTP response
    */
   this.getPaymentRefundWithHttpInfo = function(refundId) {
@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };
@@ -76,7 +76,7 @@ module.exports = function(apiClient) {
   /**
    * GetPaymentRefund
    * Retrieves a specific refund using the &#x60;refund_id&#x60;.
-   * @param {String} refundId Unique ID for the desired &#x60;PaymentRefund&#x60;.
+   * @param {String} refundId The unique ID for the desired &#x60;PaymentRefund&#x60;.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetPaymentRefundResponse}
    */
   this.getPaymentRefund = function(refundId) {
@@ -91,14 +91,14 @@ module.exports = function(apiClient) {
    * ListPaymentRefunds
    * Retrieves a list of refunds for the account making the request.  The maximum results per page is 100.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
-   * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
-   * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
-   * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
-   * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
-   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
+   * @param {String} opts.beginTime The timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
+   * @param {String} opts.endTime The timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
+   * @param {String} opts.sortOrder The order in which results are listed: - &#x60;ASC&#x60; - Oldest to newest. - &#x60;DESC&#x60; - Newest to oldest (default).
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this cursor to retrieve the next set of results for the original query.  For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the seller.
+   * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted, refunds are returned regardless of their status.
+   * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where &#x60;CARD&#x60; was specified as the payment source.  Default: If omitted, refunds are returned regardless of the source type.
+   * @param {Number} opts.limit The maximum number of results to be returned in a single page.  It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, no more than 100 results are returned.  Default: 100
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListPaymentRefundsResponse} and HTTP response
    */
   this.listPaymentRefundsWithHttpInfo = function(opts) {
@@ -120,7 +120,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };
@@ -141,14 +141,14 @@ module.exports = function(apiClient) {
    * ListPaymentRefunds
    * Retrieves a list of refunds for the account making the request.  The maximum results per page is 100.
    * @param {Object} opts Optional parameters
-   * @param {String} opts.beginTime Timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
-   * @param {String} opts.endTime Timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
-   * @param {String} opts.sortOrder The order in which results are listed. - &#x60;ASC&#x60; - oldest to newest - &#x60;DESC&#x60; - newest to oldest (default).
-   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
-   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the merchant.
-   * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted refunds are returned regardless of status.
-   * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where card was specified as payment source.  Default: If omitted refunds are returned regardless of source type.
-   * @param {Number} opts.limit Maximum number of results to be returned in a single page. It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, at most 100 results will be returned.  Default: &#x60;100&#x60;
+   * @param {String} opts.beginTime The timestamp for the beginning of the requested reporting period, in RFC 3339 format.  Default: The current time minus one year.
+   * @param {String} opts.endTime The timestamp for the end of the requested reporting period, in RFC 3339 format.  Default: The current time.
+   * @param {String} opts.sortOrder The order in which results are listed: - &#x60;ASC&#x60; - Oldest to newest. - &#x60;DESC&#x60; - Newest to oldest (default).
+   * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this cursor to retrieve the next set of results for the original query.  For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
+   * @param {String} opts.locationId Limit results to the location supplied. By default, results are returned for all locations associated with the seller.
+   * @param {String} opts.status If provided, only refunds with the given status are returned. For a list of refund status values, see &#x60;PaymentRefund&#x60;.  Default: If omitted, refunds are returned regardless of their status.
+   * @param {String} opts.sourceType If provided, only refunds with the given source type are returned. - &#x60;CARD&#x60; - List refunds only for payments where &#x60;CARD&#x60; was specified as the payment source.  Default: If omitted, refunds are returned regardless of the source type.
+   * @param {Number} opts.limit The maximum number of results to be returned in a single page.  It is possible to receive fewer results than the specified limit on a given page.  If the supplied value is greater than 100, no more than 100 results are returned.  Default: 100
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListPaymentRefundsResponse}
    */
   this.listPaymentRefunds = function(opts) {
@@ -180,7 +180,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };

@@ -33,6 +33,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -55,6 +57,12 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('custom_tip_field')) {
       obj['custom_tip_field'] = ApiClient.convertToType(data['custom_tip_field'], 'Boolean');
     }
+      if (data.hasOwnProperty('tip_percentages')) {
+      obj['tip_percentages'] = ApiClient.convertToType(data['tip_percentages'], ['Number']);
+    }
+      if (data.hasOwnProperty('smart_tipping')) {
+      obj['smart_tipping'] = ApiClient.convertToType(data['smart_tipping'], 'Boolean');
+    }
     }
   return obj;
 }
@@ -74,6 +82,16 @@ exports.prototype['separate_tip_screen'] = undefined;
  * @member {Boolean} custom_tip_field
  */
 exports.prototype['custom_tip_field'] = undefined;
+/**
+ * A list of tip percentages that should be presented during the checkout flow. Specified as up to 3 non-negative integers from 0 to 100 (inclusive). Defaults to [15, 20, 25]
+ * @member {Array.<Number>} tip_percentages
+ */
+exports.prototype['tip_percentages'] = undefined;
+/**
+ * Enables the \"Smart Tip Amounts\" behavior described in https://squareup.com/help/us/en/article/5069-accept-tips-with-the-square-app. Exact tipping options depend on the region the Square seller is active in.  In the United States and Canada, tipping options will be presented in whole dollar amounts for payments under 10 USD/CAD respectively.  If set to true, the tip_percentages settings is ignored. Defaults to false.
+ * @member {Boolean} smart_tipping
+ */
+exports.prototype['smart_tipping'] = undefined;
 
 
 

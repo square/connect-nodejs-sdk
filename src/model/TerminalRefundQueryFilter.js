@@ -72,7 +72,7 @@ exports.prototype['device_id'] = undefined;
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Filtered results with the desired status of the `TerminalRefund` Options: `PENDING`, `IN\\_PROGRESS`, `CANCEL\\_REQUESTED`, `CANCELED`, `COMPLETED`
+ * Filtered results with the desired status of the `TerminalRefund` Options: `PENDING`, `IN_PROGRESS`, `CANCEL_REQUESTED`, `CANCELED`, `COMPLETED`
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

@@ -38,6 +38,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -75,12 +76,15 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('refresh_token')) {
       obj['refresh_token'] = ApiClient.convertToType(data['refresh_token'], 'String');
     }
+      if (data.hasOwnProperty('short_lived')) {
+      obj['short_lived'] = ApiClient.convertToType(data['short_lived'], 'Boolean');
+    }
     }
   return obj;
 }
 
 /**
- * A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](https://developer.squareup.com/docs/authz/oauth/build-with-the-api) guide for more information.
+ * A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See [OAuth API: Walkthrough](https://developer.squareup.com/docs/oauth-api/walkthrough) for more information.
  * @member {String} access_token
  */
 exports.prototype['access_token'] = undefined;
@@ -105,7 +109,7 @@ exports.prototype['merchant_id'] = undefined;
  */
 exports.prototype['subscription_id'] = undefined;
 /**
- * T__LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+ * __LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
  * @member {String} plan_id
  */
 exports.prototype['plan_id'] = undefined;
@@ -119,6 +123,11 @@ exports.prototype['id_token'] = undefined;
  * @member {String} refresh_token
  */
 exports.prototype['refresh_token'] = undefined;
+/**
+ * A boolean indicating the access token is a short-lived access token. The short-lived access token returned in the response will expire in 24 hours.
+ * @member {Boolean} short_lived
+ */
+exports.prototype['short_lived'] = undefined;
 
 
 

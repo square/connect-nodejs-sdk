@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 
 RetrieveCashDrawerShift
 
-Provides the summary details for a single cash drawer shift. See RetrieveCashDrawerShiftEvents for a list of cash drawer shift events.
+Provides the summary details for a single cash drawer shift. See [ListCashDrawerShiftEvents](#endpoint-CashDrawers-ListCashDrawerShiftEvents) for a list of cash drawer shift events.
 
 ### Example
 ```javascript

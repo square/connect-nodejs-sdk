@@ -16,7 +16,7 @@ const SquareConnect = require('../../src/index');
 
 describe('ListAdditionalRecipientReceivableRefundsResponse', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.ListAdditionalRecipientReceivableRefundsResponse();
+    // this.api = new SquareConnect.ListAdditionalRecipientReceivableRefundsResponse();
   });
 
   it('should create an instance of ListAdditionalRecipientReceivableRefundsResponse', function() {
