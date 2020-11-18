@@ -25,7 +25,7 @@ var PaymentRefund = require('./PaymentRefund');
 
 /**
  * Constructs a new <code>ListPaymentRefundsResponse</code>.
- * Defines the fields that are included in the response body of a request to the [ListPaymentRefunds](#endpoint-refunds-listpaymentrefunds) endpoint.  One of &#x60;errors&#x60; or &#x60;refunds&#x60; is present in a given response (never both).
+ * Defines the fields that are included in the response body of a request to the [ListPaymentRefunds](#endpoint-refunds-listpaymentrefunds) endpoint.  Either &#x60;errors&#x60; or &#x60;refunds&#x60; is present in a given response (never both).
  * @alias module:model/ListPaymentRefundsResponse
  * @class
  */
@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
@@ -72,7 +72,7 @@ exports.prototype['errors'] = undefined;
  */
 exports.prototype['refunds'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If empty, this is the final response.  See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
+ * The pagination cursor to be used in a subsequent request. If empty, this is the final response.  For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

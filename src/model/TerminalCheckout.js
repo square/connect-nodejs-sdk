@@ -121,12 +121,12 @@ exports.prototype['note'] = undefined;
  */
 exports.prototype['device_options'] = undefined;
 /**
- * The duration as an RFC 3339 duration, after which the checkout will be automatically canceled. TerminalCheckouts that are `PENDING` will be automatically `CANCELED` and have a cancellation reason of `TIMED\\_OUT`.  Default: 5 minutes from creation  Maximum: 5 minutes
+ * The duration as an RFC 3339 duration, after which the checkout will be automatically canceled. TerminalCheckouts that are `PENDING` will be automatically `CANCELED` and have a cancellation reason of `TIMED_OUT`.  Default: 5 minutes from creation  Maximum: 5 minutes
  * @member {String} deadline_duration
  */
 exports.prototype['deadline_duration'] = undefined;
 /**
- * The status of the `TerminalCheckout`. Options: `PENDING`, `IN\\_PROGRESS`, `CANCEL\\_REQUESTED`, `CANCELED`, `COMPLETED`
+ * The status of the `TerminalCheckout`. Options: `PENDING`, `IN_PROGRESS`, `CANCEL_REQUESTED`, `CANCELED`, `COMPLETED`
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

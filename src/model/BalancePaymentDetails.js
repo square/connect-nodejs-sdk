@@ -56,12 +56,12 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * ID for the account used to fund the payment.
+ * The ID of the account used to fund the payment.
  * @member {String} account_id
  */
 exports.prototype['account_id'] = undefined;
 /**
- * The balance payment’s current state. Can be `COMPLETED` or `FAILED`.
+ * The balance payment’s current state. The state can be COMPLETED or FAILED.
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

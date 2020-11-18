@@ -25,7 +25,7 @@ var PaymentRefund = require('./PaymentRefund');
 
 /**
  * Constructs a new <code>GetPaymentRefundResponse</code>.
- * Defines the fields that are included in the response body of a request to the [GetRefund](#endpoint-refunds-getpaymentrefund) endpoint.  Note: if there are errors processing the request, the refund field may not be present, or it may be present in a FAILED state.
+ * Defines the fields that are included in the response body of a request to the [GetRefund](#endpoint-refunds-getpaymentrefund) endpoint.  Note: If there are errors processing the request, the refund field might not be present or it might be present in a FAILED state.
  * @alias module:model/GetPaymentRefundResponse
  * @class
  */
@@ -58,7 +58,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

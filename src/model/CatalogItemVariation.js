@@ -48,6 +48,8 @@ var exports = function() {
 
 
 
+
+
 };
 
 /**
@@ -100,11 +102,17 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('service_duration')) {
       obj['service_duration'] = ApiClient.convertToType(data['service_duration'], 'Number');
     }
+      if (data.hasOwnProperty('available_for_booking')) {
+      obj['available_for_booking'] = ApiClient.convertToType(data['available_for_booking'], 'Boolean');
+    }
       if (data.hasOwnProperty('item_option_values')) {
       obj['item_option_values'] = ApiClient.convertToType(data['item_option_values'], [CatalogItemOptionValueForItemVariation]);
     }
       if (data.hasOwnProperty('measurement_unit_id')) {
       obj['measurement_unit_id'] = ApiClient.convertToType(data['measurement_unit_id'], 'String');
+    }
+      if (data.hasOwnProperty('team_member_ids')) {
+      obj['team_member_ids'] = ApiClient.convertToType(data['team_member_ids'], ['String']);
     }
     }
   return obj;
@@ -126,7 +134,7 @@ exports.prototype['name'] = undefined;
  */
 exports.prototype['sku'] = undefined;
 /**
- * The item variation's UPC, if any. This is a searchable attribute for use in applicable query filters. It is only accessible through the Square API, and not exposed in the Square Seller Dashboard, Square Point of Sale or Retail Point of Sale apps.
+ * The universal product code (UPC) of the item variation, if any. This is a searchable attribute for use in applicable query filters.  The value of this attribute should be a number of 12-14 digits long.  This restriction is enforced on the Square Seller Dashboard,  Square Point of Sale or Retail Point of Sale apps, where this attribute shows in the GTIN field. If a non-compliant UPC value is assigned  to this attribute using the API, the value is not editable on the Seller Dashboard, Square Point of Sale or Retail Point of Sale apps  unless it is updated to fit the expected format.
  * @member {String} upc
  */
 exports.prototype['upc'] = undefined;
@@ -176,6 +184,11 @@ exports.prototype['user_data'] = undefined;
  */
 exports.prototype['service_duration'] = undefined;
 /**
+ * If the `CatalogItem` that owns this item variation is of type `APPOINTMENTS_SERVICE`, a bool representing whether this service is available for booking.
+ * @member {Boolean} available_for_booking
+ */
+exports.prototype['available_for_booking'] = undefined;
+/**
  * List of item option values associated with this item variation. Listed in the same order as the item options of the parent item.
  * @member {Array.<module:model/CatalogItemOptionValueForItemVariation>} item_option_values
  */
@@ -185,6 +198,11 @@ exports.prototype['item_option_values'] = undefined;
  * @member {String} measurement_unit_id
  */
 exports.prototype['measurement_unit_id'] = undefined;
+/**
+ * Tokens of employees that can perform the service represented by this variation. Only valid for variations of type `APPOINTMENTS_SERVICE`.
+ * @member {Array.<String>} team_member_ids
+ */
+exports.prototype['team_member_ids'] = undefined;
 
 
 

@@ -24,6 +24,8 @@ var AdditionalRecipient = require('./model/AdditionalRecipient');
 var Address = require('./model/Address');
 var AdjustLoyaltyPointsRequest = require('./model/AdjustLoyaltyPointsRequest');
 var AdjustLoyaltyPointsResponse = require('./model/AdjustLoyaltyPointsResponse');
+var AppointmentSegment = require('./model/AppointmentSegment');
+var Availability = require('./model/Availability');
 var BalancePaymentDetails = require('./model/BalancePaymentDetails');
 var BankAccount = require('./model/BankAccount');
 var BankAccountStatus = require('./model/BankAccountStatus');
@@ -42,11 +44,21 @@ var BatchRetrieveOrdersRequest = require('./model/BatchRetrieveOrdersRequest');
 var BatchRetrieveOrdersResponse = require('./model/BatchRetrieveOrdersResponse');
 var BatchUpsertCatalogObjectsRequest = require('./model/BatchUpsertCatalogObjectsRequest');
 var BatchUpsertCatalogObjectsResponse = require('./model/BatchUpsertCatalogObjectsResponse');
+var Booking = require('./model/Booking');
+var BookingStatus = require('./model/BookingStatus');
 var BreakType = require('./model/BreakType');
 var BulkCreateTeamMembersRequest = require('./model/BulkCreateTeamMembersRequest');
 var BulkCreateTeamMembersResponse = require('./model/BulkCreateTeamMembersResponse');
 var BulkUpdateTeamMembersRequest = require('./model/BulkUpdateTeamMembersRequest');
 var BulkUpdateTeamMembersResponse = require('./model/BulkUpdateTeamMembersResponse');
+var BusinessAppointmentSettings = require('./model/BusinessAppointmentSettings');
+var BusinessAppointmentSettingsAlignmentTime = require('./model/BusinessAppointmentSettingsAlignmentTime');
+var BusinessAppointmentSettingsBookingLocationType = require('./model/BusinessAppointmentSettingsBookingLocationType');
+var BusinessAppointmentSettingsCancellationPolicy = require('./model/BusinessAppointmentSettingsCancellationPolicy');
+var BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType = require('./model/BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType');
+var BusinessBookingProfile = require('./model/BusinessBookingProfile');
+var BusinessBookingProfileBookingPolicy = require('./model/BusinessBookingProfileBookingPolicy');
+var BusinessBookingProfileCustomerTimezoneChoice = require('./model/BusinessBookingProfileCustomerTimezoneChoice');
 var BusinessHours = require('./model/BusinessHours');
 var BusinessHoursPeriod = require('./model/BusinessHoursPeriod');
 var CalculateLoyaltyPointsRequest = require('./model/CalculateLoyaltyPointsRequest');
@@ -138,15 +150,17 @@ var CatalogV1Id = require('./model/CatalogV1Id');
 var ChargeRequest = require('./model/ChargeRequest');
 var ChargeRequestAdditionalRecipient = require('./model/ChargeRequestAdditionalRecipient');
 var ChargeResponse = require('./model/ChargeResponse');
+var CheckAppointmentsOnboardedRequest = require('./model/CheckAppointmentsOnboardedRequest');
+var CheckAppointmentsOnboardedResponse = require('./model/CheckAppointmentsOnboardedResponse');
 var Checkout = require('./model/Checkout');
 var CompletePaymentRequest = require('./model/CompletePaymentRequest');
 var CompletePaymentResponse = require('./model/CompletePaymentResponse');
 var Coordinates = require('./model/Coordinates');
 var Country = require('./model/Country');
+var CreateBookingRequest = require('./model/CreateBookingRequest');
+var CreateBookingResponse = require('./model/CreateBookingResponse');
 var CreateBreakTypeRequest = require('./model/CreateBreakTypeRequest');
 var CreateBreakTypeResponse = require('./model/CreateBreakTypeResponse');
-var CreateCatalogImageRequest = require('./model/CreateCatalogImageRequest');
-var CreateCatalogImageResponse = require('./model/CreateCatalogImageResponse');
 var CreateCheckoutRequest = require('./model/CreateCheckoutRequest');
 var CreateCheckoutResponse = require('./model/CreateCheckoutResponse');
 var CreateCustomerCardRequest = require('./model/CreateCustomerCardRequest');
@@ -157,8 +171,6 @@ var CreateCustomerRequest = require('./model/CreateCustomerRequest');
 var CreateCustomerResponse = require('./model/CreateCustomerResponse');
 var CreateDeviceCodeRequest = require('./model/CreateDeviceCodeRequest');
 var CreateDeviceCodeResponse = require('./model/CreateDeviceCodeResponse');
-var CreateDisputeEvidenceFileRequest = require('./model/CreateDisputeEvidenceFileRequest');
-var CreateDisputeEvidenceFileResponse = require('./model/CreateDisputeEvidenceFileResponse');
 var CreateDisputeEvidenceTextRequest = require('./model/CreateDisputeEvidenceTextRequest');
 var CreateDisputeEvidenceTextResponse = require('./model/CreateDisputeEvidenceTextResponse');
 var CreateInvoiceRequest = require('./model/CreateInvoiceRequest');
@@ -331,6 +343,8 @@ var ListRefundsRequest = require('./model/ListRefundsRequest');
 var ListRefundsResponse = require('./model/ListRefundsResponse');
 var ListSubscriptionEventsRequest = require('./model/ListSubscriptionEventsRequest');
 var ListSubscriptionEventsResponse = require('./model/ListSubscriptionEventsResponse');
+var ListTeamMemberBookingProfilesRequest = require('./model/ListTeamMemberBookingProfilesRequest');
+var ListTeamMemberBookingProfilesResponse = require('./model/ListTeamMemberBookingProfilesResponse');
 var ListTeamMemberWagesRequest = require('./model/ListTeamMemberWagesRequest');
 var ListTeamMemberWagesResponse = require('./model/ListTeamMemberWagesResponse');
 var ListTransactionsRequest = require('./model/ListTransactionsRequest');
@@ -388,6 +402,8 @@ var ModelBreak = require('./model/ModelBreak');
 var Money = require('./model/Money');
 var ObtainTokenRequest = require('./model/ObtainTokenRequest');
 var ObtainTokenResponse = require('./model/ObtainTokenResponse');
+var OnboardAppointmentsRequest = require('./model/OnboardAppointmentsRequest');
+var OnboardAppointmentsResponse = require('./model/OnboardAppointmentsResponse');
 var Order = require('./model/Order');
 var OrderCreated = require('./model/OrderCreated');
 var OrderCreatedObject = require('./model/OrderCreatedObject');
@@ -456,6 +472,10 @@ var RemoveGroupFromCustomerRequest = require('./model/RemoveGroupFromCustomerReq
 var RemoveGroupFromCustomerResponse = require('./model/RemoveGroupFromCustomerResponse');
 var RenewTokenRequest = require('./model/RenewTokenRequest');
 var RenewTokenResponse = require('./model/RenewTokenResponse');
+var RetrieveBookingRequest = require('./model/RetrieveBookingRequest');
+var RetrieveBookingResponse = require('./model/RetrieveBookingResponse');
+var RetrieveBusinessBookingProfileRequest = require('./model/RetrieveBusinessBookingProfileRequest');
+var RetrieveBusinessBookingProfileResponse = require('./model/RetrieveBusinessBookingProfileResponse');
 var RetrieveCashDrawerShiftRequest = require('./model/RetrieveCashDrawerShiftRequest');
 var RetrieveCashDrawerShiftResponse = require('./model/RetrieveCashDrawerShiftResponse');
 var RetrieveCatalogObjectRequest = require('./model/RetrieveCatalogObjectRequest');
@@ -488,10 +508,14 @@ var RetrieveLoyaltyRewardRequest = require('./model/RetrieveLoyaltyRewardRequest
 var RetrieveLoyaltyRewardResponse = require('./model/RetrieveLoyaltyRewardResponse');
 var RetrieveMerchantRequest = require('./model/RetrieveMerchantRequest');
 var RetrieveMerchantResponse = require('./model/RetrieveMerchantResponse');
+var RetrieveObsMigrationProfileRequest = require('./model/RetrieveObsMigrationProfileRequest');
+var RetrieveObsMigrationProfileResponse = require('./model/RetrieveObsMigrationProfileResponse');
 var RetrieveOrderRequest = require('./model/RetrieveOrderRequest');
 var RetrieveOrderResponse = require('./model/RetrieveOrderResponse');
 var RetrieveSubscriptionRequest = require('./model/RetrieveSubscriptionRequest');
 var RetrieveSubscriptionResponse = require('./model/RetrieveSubscriptionResponse');
+var RetrieveTeamMemberBookingProfileRequest = require('./model/RetrieveTeamMemberBookingProfileRequest');
+var RetrieveTeamMemberBookingProfileResponse = require('./model/RetrieveTeamMemberBookingProfileResponse');
 var RetrieveTeamMemberRequest = require('./model/RetrieveTeamMemberRequest');
 var RetrieveTeamMemberResponse = require('./model/RetrieveTeamMemberResponse');
 var RetrieveTransactionRequest = require('./model/RetrieveTransactionRequest');
@@ -500,6 +524,12 @@ var RetrieveWageSettingRequest = require('./model/RetrieveWageSettingRequest');
 var RetrieveWageSettingResponse = require('./model/RetrieveWageSettingResponse');
 var RevokeTokenRequest = require('./model/RevokeTokenRequest');
 var RevokeTokenResponse = require('./model/RevokeTokenResponse');
+var RiskEvaluation = require('./model/RiskEvaluation');
+var RiskEvaluationRiskLevel = require('./model/RiskEvaluationRiskLevel');
+var SearchAvailabilityFilter = require('./model/SearchAvailabilityFilter');
+var SearchAvailabilityQuery = require('./model/SearchAvailabilityQuery');
+var SearchAvailabilityRequest = require('./model/SearchAvailabilityRequest');
+var SearchAvailabilityResponse = require('./model/SearchAvailabilityResponse');
 var SearchCatalogItemsRequest = require('./model/SearchCatalogItemsRequest');
 var SearchCatalogItemsRequestStockLevel = require('./model/SearchCatalogItemsRequestStockLevel');
 var SearchCatalogItemsResponse = require('./model/SearchCatalogItemsResponse');
@@ -542,6 +572,7 @@ var SearchTerminalCheckoutsRequest = require('./model/SearchTerminalCheckoutsReq
 var SearchTerminalCheckoutsResponse = require('./model/SearchTerminalCheckoutsResponse');
 var SearchTerminalRefundsRequest = require('./model/SearchTerminalRefundsRequest');
 var SearchTerminalRefundsResponse = require('./model/SearchTerminalRefundsResponse');
+var SegmentFilter = require('./model/SegmentFilter');
 var Shift = require('./model/Shift');
 var ShiftFilter = require('./model/ShiftFilter');
 var ShiftFilterStatus = require('./model/ShiftFilterStatus');
@@ -569,6 +600,7 @@ var TaxInclusionType = require('./model/TaxInclusionType');
 var TeamMember = require('./model/TeamMember');
 var TeamMemberAssignedLocations = require('./model/TeamMemberAssignedLocations');
 var TeamMemberAssignedLocationsAssignmentType = require('./model/TeamMemberAssignedLocationsAssignmentType');
+var TeamMemberBookingProfile = require('./model/TeamMemberBookingProfile');
 var TeamMemberStatus = require('./model/TeamMemberStatus');
 var TeamMemberWage = require('./model/TeamMemberWage');
 var Tender = require('./model/Tender');
@@ -590,6 +622,8 @@ var TipSettings = require('./model/TipSettings');
 var Transaction = require('./model/Transaction');
 var TransactionProduct = require('./model/TransactionProduct');
 var TransactionType = require('./model/TransactionType');
+var UpdateBookingRequest = require('./model/UpdateBookingRequest');
+var UpdateBookingResponse = require('./model/UpdateBookingResponse');
 var UpdateBreakTypeRequest = require('./model/UpdateBreakTypeRequest');
 var UpdateBreakTypeResponse = require('./model/UpdateBreakTypeResponse');
 var UpdateCustomerGroupRequest = require('./model/UpdateCustomerGroupRequest');
@@ -778,7 +812,6 @@ var V1UpdateVariationRequest = require('./model/V1UpdateVariationRequest');
 var V1Variation = require('./model/V1Variation');
 var V1VariationInventoryAlertType = require('./model/V1VariationInventoryAlertType');
 var V1VariationPricingType = require('./model/V1VariationPricingType');
-var VersionedCatalogObject = require('./model/VersionedCatalogObject');
 var VoidTransactionRequest = require('./model/VoidTransactionRequest');
 var VoidTransactionResponse = require('./model/VoidTransactionResponse');
 var WageSetting = require('./model/WageSetting');
@@ -787,6 +820,7 @@ var WorkweekConfig = require('./model/WorkweekConfig');
 
 var ApplePayApi = require('./api/ApplePayApi');
 var BankAccountsApi = require('./api/BankAccountsApi');
+var BookingsApi = require('./api/BookingsApi');
 var CashDrawersApi = require('./api/CashDrawersApi');
 var CatalogApi = require('./api/CatalogApi');
 var CheckoutApi = require('./api/CheckoutApi');
@@ -846,7 +880,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 4.20201028.5
+ * @version 5.20201118.0
  */
   module.exports = {
   /**
@@ -909,6 +943,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/AdjustLoyaltyPointsResponse}
    */
   AdjustLoyaltyPointsResponse: AdjustLoyaltyPointsResponse,
+  /**
+   * The AppointmentSegment model constructor.
+   * @property {module:model/AppointmentSegment}
+   */
+  AppointmentSegment: AppointmentSegment,
+  /**
+   * The Availability model constructor.
+   * @property {module:model/Availability}
+   */
+  Availability: Availability,
   /**
    * The BalancePaymentDetails model constructor.
    * @property {module:model/BalancePaymentDetails}
@@ -1000,6 +1044,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   BatchUpsertCatalogObjectsResponse: BatchUpsertCatalogObjectsResponse,
   /**
+   * The Booking model constructor.
+   * @property {module:model/Booking}
+   */
+  Booking: Booking,
+  /**
+   * The BookingStatus model constructor.
+   * @property {module:model/BookingStatus}
+   */
+  BookingStatus: BookingStatus,
+  /**
    * The BreakType model constructor.
    * @property {module:model/BreakType}
    */
@@ -1024,6 +1078,46 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/BulkUpdateTeamMembersResponse}
    */
   BulkUpdateTeamMembersResponse: BulkUpdateTeamMembersResponse,
+  /**
+   * The BusinessAppointmentSettings model constructor.
+   * @property {module:model/BusinessAppointmentSettings}
+   */
+  BusinessAppointmentSettings: BusinessAppointmentSettings,
+  /**
+   * The BusinessAppointmentSettingsAlignmentTime model constructor.
+   * @property {module:model/BusinessAppointmentSettingsAlignmentTime}
+   */
+  BusinessAppointmentSettingsAlignmentTime: BusinessAppointmentSettingsAlignmentTime,
+  /**
+   * The BusinessAppointmentSettingsBookingLocationType model constructor.
+   * @property {module:model/BusinessAppointmentSettingsBookingLocationType}
+   */
+  BusinessAppointmentSettingsBookingLocationType: BusinessAppointmentSettingsBookingLocationType,
+  /**
+   * The BusinessAppointmentSettingsCancellationPolicy model constructor.
+   * @property {module:model/BusinessAppointmentSettingsCancellationPolicy}
+   */
+  BusinessAppointmentSettingsCancellationPolicy: BusinessAppointmentSettingsCancellationPolicy,
+  /**
+   * The BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType model constructor.
+   * @property {module:model/BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType}
+   */
+  BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType: BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType,
+  /**
+   * The BusinessBookingProfile model constructor.
+   * @property {module:model/BusinessBookingProfile}
+   */
+  BusinessBookingProfile: BusinessBookingProfile,
+  /**
+   * The BusinessBookingProfileBookingPolicy model constructor.
+   * @property {module:model/BusinessBookingProfileBookingPolicy}
+   */
+  BusinessBookingProfileBookingPolicy: BusinessBookingProfileBookingPolicy,
+  /**
+   * The BusinessBookingProfileCustomerTimezoneChoice model constructor.
+   * @property {module:model/BusinessBookingProfileCustomerTimezoneChoice}
+   */
+  BusinessBookingProfileCustomerTimezoneChoice: BusinessBookingProfileCustomerTimezoneChoice,
   /**
    * The BusinessHours model constructor.
    * @property {module:model/BusinessHours}
@@ -1480,6 +1574,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ChargeResponse: ChargeResponse,
   /**
+   * The CheckAppointmentsOnboardedRequest model constructor.
+   * @property {module:model/CheckAppointmentsOnboardedRequest}
+   */
+  CheckAppointmentsOnboardedRequest: CheckAppointmentsOnboardedRequest,
+  /**
+   * The CheckAppointmentsOnboardedResponse model constructor.
+   * @property {module:model/CheckAppointmentsOnboardedResponse}
+   */
+  CheckAppointmentsOnboardedResponse: CheckAppointmentsOnboardedResponse,
+  /**
    * The Checkout model constructor.
    * @property {module:model/Checkout}
    */
@@ -1505,6 +1609,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Country: Country,
   /**
+   * The CreateBookingRequest model constructor.
+   * @property {module:model/CreateBookingRequest}
+   */
+  CreateBookingRequest: CreateBookingRequest,
+  /**
+   * The CreateBookingResponse model constructor.
+   * @property {module:model/CreateBookingResponse}
+   */
+  CreateBookingResponse: CreateBookingResponse,
+  /**
    * The CreateBreakTypeRequest model constructor.
    * @property {module:model/CreateBreakTypeRequest}
    */
@@ -1514,16 +1628,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateBreakTypeResponse}
    */
   CreateBreakTypeResponse: CreateBreakTypeResponse,
-  /**
-   * The CreateCatalogImageRequest model constructor.
-   * @property {module:model/CreateCatalogImageRequest}
-   */
-  CreateCatalogImageRequest: CreateCatalogImageRequest,
-  /**
-   * The CreateCatalogImageResponse model constructor.
-   * @property {module:model/CreateCatalogImageResponse}
-   */
-  CreateCatalogImageResponse: CreateCatalogImageResponse,
   /**
    * The CreateCheckoutRequest model constructor.
    * @property {module:model/CreateCheckoutRequest}
@@ -1574,16 +1678,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CreateDeviceCodeResponse}
    */
   CreateDeviceCodeResponse: CreateDeviceCodeResponse,
-  /**
-   * The CreateDisputeEvidenceFileRequest model constructor.
-   * @property {module:model/CreateDisputeEvidenceFileRequest}
-   */
-  CreateDisputeEvidenceFileRequest: CreateDisputeEvidenceFileRequest,
-  /**
-   * The CreateDisputeEvidenceFileResponse model constructor.
-   * @property {module:model/CreateDisputeEvidenceFileResponse}
-   */
-  CreateDisputeEvidenceFileResponse: CreateDisputeEvidenceFileResponse,
   /**
    * The CreateDisputeEvidenceTextRequest model constructor.
    * @property {module:model/CreateDisputeEvidenceTextRequest}
@@ -2445,6 +2539,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   ListSubscriptionEventsResponse: ListSubscriptionEventsResponse,
   /**
+   * The ListTeamMemberBookingProfilesRequest model constructor.
+   * @property {module:model/ListTeamMemberBookingProfilesRequest}
+   */
+  ListTeamMemberBookingProfilesRequest: ListTeamMemberBookingProfilesRequest,
+  /**
+   * The ListTeamMemberBookingProfilesResponse model constructor.
+   * @property {module:model/ListTeamMemberBookingProfilesResponse}
+   */
+  ListTeamMemberBookingProfilesResponse: ListTeamMemberBookingProfilesResponse,
+  /**
    * The ListTeamMemberWagesRequest model constructor.
    * @property {module:model/ListTeamMemberWagesRequest}
    */
@@ -2729,6 +2833,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/ObtainTokenResponse}
    */
   ObtainTokenResponse: ObtainTokenResponse,
+  /**
+   * The OnboardAppointmentsRequest model constructor.
+   * @property {module:model/OnboardAppointmentsRequest}
+   */
+  OnboardAppointmentsRequest: OnboardAppointmentsRequest,
+  /**
+   * The OnboardAppointmentsResponse model constructor.
+   * @property {module:model/OnboardAppointmentsResponse}
+   */
+  OnboardAppointmentsResponse: OnboardAppointmentsResponse,
   /**
    * The Order model constructor.
    * @property {module:model/Order}
@@ -3070,6 +3184,26 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RenewTokenResponse: RenewTokenResponse,
   /**
+   * The RetrieveBookingRequest model constructor.
+   * @property {module:model/RetrieveBookingRequest}
+   */
+  RetrieveBookingRequest: RetrieveBookingRequest,
+  /**
+   * The RetrieveBookingResponse model constructor.
+   * @property {module:model/RetrieveBookingResponse}
+   */
+  RetrieveBookingResponse: RetrieveBookingResponse,
+  /**
+   * The RetrieveBusinessBookingProfileRequest model constructor.
+   * @property {module:model/RetrieveBusinessBookingProfileRequest}
+   */
+  RetrieveBusinessBookingProfileRequest: RetrieveBusinessBookingProfileRequest,
+  /**
+   * The RetrieveBusinessBookingProfileResponse model constructor.
+   * @property {module:model/RetrieveBusinessBookingProfileResponse}
+   */
+  RetrieveBusinessBookingProfileResponse: RetrieveBusinessBookingProfileResponse,
+  /**
    * The RetrieveCashDrawerShiftRequest model constructor.
    * @property {module:model/RetrieveCashDrawerShiftRequest}
    */
@@ -3230,6 +3364,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   RetrieveMerchantResponse: RetrieveMerchantResponse,
   /**
+   * The RetrieveObsMigrationProfileRequest model constructor.
+   * @property {module:model/RetrieveObsMigrationProfileRequest}
+   */
+  RetrieveObsMigrationProfileRequest: RetrieveObsMigrationProfileRequest,
+  /**
+   * The RetrieveObsMigrationProfileResponse model constructor.
+   * @property {module:model/RetrieveObsMigrationProfileResponse}
+   */
+  RetrieveObsMigrationProfileResponse: RetrieveObsMigrationProfileResponse,
+  /**
    * The RetrieveOrderRequest model constructor.
    * @property {module:model/RetrieveOrderRequest}
    */
@@ -3249,6 +3393,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RetrieveSubscriptionResponse}
    */
   RetrieveSubscriptionResponse: RetrieveSubscriptionResponse,
+  /**
+   * The RetrieveTeamMemberBookingProfileRequest model constructor.
+   * @property {module:model/RetrieveTeamMemberBookingProfileRequest}
+   */
+  RetrieveTeamMemberBookingProfileRequest: RetrieveTeamMemberBookingProfileRequest,
+  /**
+   * The RetrieveTeamMemberBookingProfileResponse model constructor.
+   * @property {module:model/RetrieveTeamMemberBookingProfileResponse}
+   */
+  RetrieveTeamMemberBookingProfileResponse: RetrieveTeamMemberBookingProfileResponse,
   /**
    * The RetrieveTeamMemberRequest model constructor.
    * @property {module:model/RetrieveTeamMemberRequest}
@@ -3289,6 +3443,36 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/RevokeTokenResponse}
    */
   RevokeTokenResponse: RevokeTokenResponse,
+  /**
+   * The RiskEvaluation model constructor.
+   * @property {module:model/RiskEvaluation}
+   */
+  RiskEvaluation: RiskEvaluation,
+  /**
+   * The RiskEvaluationRiskLevel model constructor.
+   * @property {module:model/RiskEvaluationRiskLevel}
+   */
+  RiskEvaluationRiskLevel: RiskEvaluationRiskLevel,
+  /**
+   * The SearchAvailabilityFilter model constructor.
+   * @property {module:model/SearchAvailabilityFilter}
+   */
+  SearchAvailabilityFilter: SearchAvailabilityFilter,
+  /**
+   * The SearchAvailabilityQuery model constructor.
+   * @property {module:model/SearchAvailabilityQuery}
+   */
+  SearchAvailabilityQuery: SearchAvailabilityQuery,
+  /**
+   * The SearchAvailabilityRequest model constructor.
+   * @property {module:model/SearchAvailabilityRequest}
+   */
+  SearchAvailabilityRequest: SearchAvailabilityRequest,
+  /**
+   * The SearchAvailabilityResponse model constructor.
+   * @property {module:model/SearchAvailabilityResponse}
+   */
+  SearchAvailabilityResponse: SearchAvailabilityResponse,
   /**
    * The SearchCatalogItemsRequest model constructor.
    * @property {module:model/SearchCatalogItemsRequest}
@@ -3500,6 +3684,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   SearchTerminalRefundsResponse: SearchTerminalRefundsResponse,
   /**
+   * The SegmentFilter model constructor.
+   * @property {module:model/SegmentFilter}
+   */
+  SegmentFilter: SegmentFilter,
+  /**
    * The Shift model constructor.
    * @property {module:model/Shift}
    */
@@ -3635,6 +3824,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   TeamMemberAssignedLocationsAssignmentType: TeamMemberAssignedLocationsAssignmentType,
   /**
+   * The TeamMemberBookingProfile model constructor.
+   * @property {module:model/TeamMemberBookingProfile}
+   */
+  TeamMemberBookingProfile: TeamMemberBookingProfile,
+  /**
    * The TeamMemberStatus model constructor.
    * @property {module:model/TeamMemberStatus}
    */
@@ -3739,6 +3933,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/TransactionType}
    */
   TransactionType: TransactionType,
+  /**
+   * The UpdateBookingRequest model constructor.
+   * @property {module:model/UpdateBookingRequest}
+   */
+  UpdateBookingRequest: UpdateBookingRequest,
+  /**
+   * The UpdateBookingResponse model constructor.
+   * @property {module:model/UpdateBookingResponse}
+   */
+  UpdateBookingResponse: UpdateBookingResponse,
   /**
    * The UpdateBreakTypeRequest model constructor.
    * @property {module:model/UpdateBreakTypeRequest}
@@ -4680,11 +4884,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1VariationPricingType: V1VariationPricingType,
   /**
-   * The VersionedCatalogObject model constructor.
-   * @property {module:model/VersionedCatalogObject}
-   */
-  VersionedCatalogObject: VersionedCatalogObject,
-  /**
    * The VoidTransactionRequest model constructor.
    * @property {module:model/VoidTransactionRequest}
    */
@@ -4719,6 +4918,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/BankAccountsApi}
    */
   BankAccountsApi: BankAccountsApi,
+  /**
+   * The BookingsApi service constructor.
+   * @property {module:api/BookingsApi}
+   */
+  BookingsApi: BookingsApi,
   /**
    * The CashDrawersApi service constructor.
    * @property {module:api/CashDrawersApi}

@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('MethodErrorCodes', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.MethodErrorCodes();
+    // this.api = new SquareConnect.MethodErrorCodes();
   });
 
   it('should create an instance of MethodErrorCodes', function() {

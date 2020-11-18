@@ -71,7 +71,7 @@ exports.prototype['device_id'] = undefined;
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Filtered results with the desired status of the `TerminalCheckout` Options: PENDING, IN\\_PROGRESS, CANCELED, COMPLETED
+ * Filtered results with the desired status of the `TerminalCheckout` Options: PENDING, IN_PROGRESS, CANCELED, COMPLETED
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

@@ -1,5 +1,31 @@
 # Change Log
 
+## Version 5.20201118.0 (2020-11-18T00:00)
+## New API releases
+
+* **Bookings API** (beta). The Bookings API lets you create applications to set up and manage bookings for appointments of fixed duration in which selected staff members of a Square seller provide specified services in supported locations for particular customers.   
+  * For an overview, see [Manage Bookings for Square Sellers.](https://developer.squareup.com/docs/bookings-api/what-it-is)
+  * For technical reference, see [Bookings API](https://developer.squareup.com/reference/square_2020-11-18/bookings-api).
+    
+## Existing API updates
+
+*  **Payments API:** 
+   *  [Payment.](https://developer.squareup.com/reference/square_2020-11-18/objects/Payment) The object now includes the `risk_evaluation` field to identify the Square-assigned risk level associated with the payment. Sellers can use this information to provide the goods and services or refund the payment.
+
+## New SDK release
+* **New Square Node.js SDK (beta)**  
+
+  The new [Square Node.js SDK](https://github.com/square/square-nodejs-sdk) is available in beta and will eventually replace the deprecated Connect Node.js SDK. For migration information, see the [Connect SDK README.](https://github.com/square/connect-nodejs-sdk/blob/master/README.md) The following topics are updated to use the new SDK:
+   * [Walkthrough: Integrate Square Payments in a Website](https://developer.squareup.com/docs/payment-form/payment-form-walkthrough)
+   * [Verify the Buyer When Using a Nonce for an Online Payment](https://developer.squareup.com/docs/payment-form/cookbook/verify-buyer-on-card-charge)
+   * [Create a Gift Card Payment Endpoint](https://developer.squareup.com/docs/payment-form/gift-cards/part-2)
+
+## Documentation updates
+
+* The Testing topics are moved from the end of the table of contents to the top, in the Home section under [Testing your Application.](https://developer.squareup.com/docs/testing-your-app)
+* [Pay for Orders.](https://developer.squareup.com/docs/orders-api/pay-for-orders) The topic is revised to add clarity for when to use the Payments API and Orders API to pay for an order. The [Orders integration](https://developer.squareup.com/docs/payments-api/take-payments?preview=true#orders-integration) section for the Payments API is simplified accordingly.
+
+
 ## Version 4.20201028.5 (2020-10-28T00:00)
 
 ## Existing API updates
@@ -247,8 +273,8 @@
 
 ## Version 3.20200325.0 (2020-03-25)
 ## Existing API updates
-* **[Payments API](https://developer.squareup.com/reference/square/payments-api).** In support of the existing [Delayed capture](payments-api/take-payments) for payments, the following fields are added to the [Payment](https://developer.squareup.com/reference/square/objects/Payment) type:
-   * `delay_duration`. In a [CreatePayment](https://developer.squareup.com/reference/square/payments-api/create-payment) request, you can set `autocomplete` to false to get  payment approval but not charge the payment source. You can now add this field to specify a time period to complete (or cancel) the payment. For more information, see [Delay capture](payments-api/take-payments).
+* **[Payments API](https://developer.squareup.com/reference/square/payments-api).** In support of the existing [Delayed capturehttps://developer.squareup.com/docs/payments-api/take-payments) for payments, the following fields are added to the [Payment](https://developer.squareup.com/reference/square/objects/Payment) type:
+   * `delay_duration`. In a [CreatePayment](https://developer.squareup.com/reference/square/payments-api/create-payment) request, you can set `autocomplete` to false to get  payment approval but not charge the payment source. You can now add this field to specify a time period to complete (or cancel) the payment. For more information, see [Delay capturehttps://developer.squareup.com/docs/payments-api/take-payments).
    * `delay_action`. Defines the action that Square takes on the payment when the `delay_duration` elapses. In this release, the API supports only the cancel payment action.
    * `delayed_until`. Provides the date and time on Square servers when Square applies `delay_action` on the payment.
 

@@ -16,6 +16,7 @@ var Address = require('./Address');
 var CardPaymentDetails = require('./CardPaymentDetails');
 var Money = require('./Money');
 var ProcessingFee = require('./ProcessingFee');
+var RiskEvaluation = require('./RiskEvaluation');
 
 
 
@@ -33,6 +34,7 @@ var ProcessingFee = require('./ProcessingFee');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -138,6 +140,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('refund_ids')) {
       obj['refund_ids'] = ApiClient.convertToType(data['refund_ids'], ['String']);
     }
+      if (data.hasOwnProperty('risk_evaluation')) {
+      obj['risk_evaluation'] = RiskEvaluation.constructFromObject(data['risk_evaluation']);
+    }
       if (data.hasOwnProperty('buyer_email_address')) {
       obj['buyer_email_address'] = ApiClient.convertToType(data['buyer_email_address'], 'String');
     }
@@ -164,92 +169,92 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID for the payment.
+ * A unique ID for the payment.
  * @member {String} id
  */
 exports.prototype['id'] = undefined;
 /**
- * Timestamp of when the payment was created, in RFC 3339 format.
+ * The timestamp of when the payment was created, in RFC 3339 format.
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
 /**
- * Timestamp of when the payment was last updated, in RFC 3339 format.
+ * The timestamp of when the payment was last updated, in RFC 3339 format.
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
 /**
- * The amount of money processed for this payment, not including `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents. For more information, see [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
+ * The amount processed for this payment, not including `tip_money`.  The amount is specified in the smallest denomination of the applicable currency (for example, US dollar amounts are specified in cents). For more information, see [Working with Monetary Amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} amount_money
  */
 exports.prototype['amount_money'] = undefined;
 /**
- * The amount designated as a tip. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
+ * The amount designated as a tip.   This amount is specified in the smallest denomination of the applicable currency (for example, US dollar amounts are specified in cents). For more information, see [Working with Monetary Amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} tip_money
  */
 exports.prototype['tip_money'] = undefined;
 /**
- * The total money for the payment, including `amount_money` and `tip_money`. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
+ * The total amount for the payment, including `amount_money` and `tip_money`. This amount is specified in the smallest denomination of the applicable currency (for example, US dollar amounts are specified in cents). For more information, see [Working with Monetary Amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts).
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
 /**
- * The amount of money the developer is taking as a fee for facilitating the payment on behalf of the seller. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.  For more information, see [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  Cannot be more than 90% of the `total_money` value.
+ * The amount the developer is taking as a fee for facilitating the payment on behalf of the seller. This amount is specified in the smallest denomination of the applicable currency (for example, US dollar amounts are specified in cents). For more information, see [Take Payments and Collect Fees](https://developer.squareup.com/docs/payments-api/take-payments-and-collect-fees).  The amount cannot be more than 90% of the `total_money` value.
  * @member {module:model/Money} app_fee_money
  */
 exports.prototype['app_fee_money'] = undefined;
 /**
- * Processing fees and fee adjustments assessed by Square on this payment.
+ * The processing fees and fee adjustments assessed by Square for this payment.
  * @member {Array.<module:model/ProcessingFee>} processing_fee
  */
 exports.prototype['processing_fee'] = undefined;
 /**
- * Total amount of the payment refunded to-date. Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
+ * The total amount of the payment refunded to date.   This amount is specified in the smallest denomination of the applicable currency (for example, US dollar amounts are specified in cents).
  * @member {module:model/Money} refunded_money
  */
 exports.prototype['refunded_money'] = undefined;
 /**
- * Indicates whether the payment is `APPROVED`, `COMPLETED`, `CANCELED`, or `FAILED`.
+ * Indicates whether the payment is APPROVED, COMPLETED, CANCELED, or FAILED.
  * @member {String} status
  */
 exports.prototype['status'] = undefined;
 /**
- * The duration of time after the payment's creation when Square automatically applies the `delay_action` to the payment. This automatic `delay_action` applies only to payments that don't reach a terminal state (COMPLETED, CANCELED, or FAILED) before the `delay_duration` time period.  This field is specified as a time duration, in RFC 3339 format.  Notes: This feature is only supported for card payments.  Default:  - Card Present payments: \"PT36H\" (36 hours) from the creation time. - Card Not Present payments: \"P7D\" (7 days) from the creation time.
+ * The duration of time after the payment's creation when Square automatically applies the `delay_action` to the payment. This automatic `delay_action` applies only to payments that do not reach a terminal state (COMPLETED, CANCELED, or FAILED) before the `delay_duration` time period.  This field is specified as a time duration, in RFC 3339 format.  Notes: This feature is only supported for card payments.  Default:  - Card-present payments: \"PT36H\" (36 hours) from the creation time. - Card-not-present payments: \"P7D\" (7 days) from the creation time.
  * @member {String} delay_duration
  */
 exports.prototype['delay_duration'] = undefined;
 /**
- * The action to be applied to the payment when the `delay_duration` has elapsed. This field is read only.  Current values include: `CANCEL`
+ * The action to be applied to the payment when the `delay_duration` has elapsed. This field is read-only.  Current values include `CANCEL`.
  * @member {String} delay_action
  */
 exports.prototype['delay_action'] = undefined;
 /**
- * Read only timestamp of when the `delay_action` will automatically be applied, in RFC 3339 format.  Note that this field is calculated by summing the payment's `delay_duration` and `created_at` fields. The `created_at` field is generated by Square and may not exactly match the time on your local machine.
+ * The read-only timestamp of when the `delay_action` is automatically applied, in RFC 3339 format.  Note that this field is calculated by summing the payment's `delay_duration` and `created_at` fields. The `created_at` field is generated by Square and might not exactly match the time on your local machine.
  * @member {String} delayed_until
  */
 exports.prototype['delayed_until'] = undefined;
 /**
- * The source type for this payment  Current values include: `CARD`.
+ * The source type for this payment.  Current values include `CARD`.
  * @member {String} source_type
  */
 exports.prototype['source_type'] = undefined;
 /**
- * Non-confidential details about the source. Only populated if the `source_type` is `CARD`.
+ * Non-confidential details about the source. The details are only populated if the `source_type` is `CARD`.
  * @member {module:model/CardPaymentDetails} card_details
  */
 exports.prototype['card_details'] = undefined;
 /**
- * ID of the location associated with the payment.
+ * The ID of the location associated with the payment.
  * @member {String} location_id
  */
 exports.prototype['location_id'] = undefined;
 /**
- * ID of the order associated with this payment.
+ * The ID of the order associated with the payment.
  * @member {String} order_id
  */
 exports.prototype['order_id'] = undefined;
 /**
- * An optional ID that associates this payment with an entity in another system.
+ * An optional ID that associates the payment with an entity in another system.
  * @member {String} reference_id
  */
 exports.prototype['reference_id'] = undefined;
@@ -259,47 +264,52 @@ exports.prototype['reference_id'] = undefined;
  */
 exports.prototype['customer_id'] = undefined;
 /**
- * An optional ID of the employee associated with taking this payment.
+ * An optional ID of the employee associated with taking the payment.
  * @member {String} employee_id
  */
 exports.prototype['employee_id'] = undefined;
 /**
- * List of `refund_id`s identifying refunds for this payment.
+ * A list of `refund_id`s identifying refunds for the payment.
  * @member {Array.<String>} refund_ids
  */
 exports.prototype['refund_ids'] = undefined;
 /**
- * The buyer's e-mail address
+ * Provides information about the risk associated with the payment, as determined by Square. This field is present for payments to sellers that have opted in to receive risk evaluations.
+ * @member {module:model/RiskEvaluation} risk_evaluation
+ */
+exports.prototype['risk_evaluation'] = undefined;
+/**
+ * The buyer's email address.
  * @member {String} buyer_email_address
  */
 exports.prototype['buyer_email_address'] = undefined;
 /**
- * The buyer's billing address
+ * The buyer's billing address.
  * @member {module:model/Address} billing_address
  */
 exports.prototype['billing_address'] = undefined;
 /**
- * The buyer's shipping address
+ * The buyer's shipping address.
  * @member {module:model/Address} shipping_address
  */
 exports.prototype['shipping_address'] = undefined;
 /**
- * An optional note to include when creating a payment
+ * An optional note to include when creating a payment.
  * @member {String} note
  */
 exports.prototype['note'] = undefined;
 /**
- * Additional payment information that gets added on the customer's card statement as part of the statement description.  Note that the `statement_description_identifier` may get truncated on the statement description to fit the required information including the Square identifier (SQ *) and name of the merchant taking the payment.
+ * Additional payment information that gets added to the customer's card statement as part of the statement description.  Note that the `statement_description_identifier` might get truncated on the statement description to fit the required information including the Square identifier (SQ *) and the name of the seller taking the payment.
  * @member {String} statement_description_identifier
  */
 exports.prototype['statement_description_identifier'] = undefined;
 /**
- * The payment's receipt number. The field will be missing if a payment is CANCELED
+ * The payment's receipt number. The field is missing if a payment is canceled.
  * @member {String} receipt_number
  */
 exports.prototype['receipt_number'] = undefined;
 /**
- * The URL for the payment's receipt. The field will only be populated for COMPLETED payments.
+ * The URL for the payment's receipt. The field is only populated for COMPLETED payments.
  * @member {String} receipt_url
  */
 exports.prototype['receipt_url'] = undefined;

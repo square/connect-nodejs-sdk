@@ -140,7 +140,7 @@ exports.prototype['device_id'] = undefined;
  */
 exports.prototype['deadline_duration'] = undefined;
 /**
- * The status of the `TerminalRefund`. Options: `PENDING`, `IN\\_PROGRESS`, `CANCELED`, `COMPLETED`
+ * The status of the `TerminalRefund`. Options: `PENDING`, `IN_PROGRESS`, `CANCELED`, `COMPLETED`
  * @member {String} status
  */
 exports.prototype['status'] = undefined;

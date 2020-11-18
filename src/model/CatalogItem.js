@@ -26,7 +26,7 @@ var CatalogObject = require('./CatalogObject');
 
 /**
  * Constructs a new <code>CatalogItem</code>.
- * An [CatalogObject](#type-CatalogObject) instance of the &#x60;ITEM&#x60; type, also referred to as an item, in the catalog.
+ * A [CatalogObject](#type-CatalogObject) instance of the &#x60;ITEM&#x60; type, also referred to as an item, in the catalog.
  * @alias module:model/CatalogItem
  * @class
  */

@@ -68,7 +68,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };
@@ -137,7 +137,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };
@@ -176,7 +176,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCashDrawerShift
-   * Provides the summary details for a single cash drawer shift. See RetrieveCashDrawerShiftEvents for a list of cash drawer shift events.
+   * Provides the summary details for a single cash drawer shift. See [ListCashDrawerShiftEvents](#endpoint-CashDrawers-ListCashDrawerShiftEvents) for a list of cash drawer shift events.
    * @param {String} locationId The ID of the location to retrieve cash drawer shifts from.
    * @param {String} shiftId The shift ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveCashDrawerShiftResponse} and HTTP response
@@ -203,7 +203,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-10-28';
+    headerParams['Square-Version'] = '2020-11-18';
 
     var formParams = {
     };
@@ -222,7 +222,7 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCashDrawerShift
-   * Provides the summary details for a single cash drawer shift. See RetrieveCashDrawerShiftEvents for a list of cash drawer shift events.
+   * Provides the summary details for a single cash drawer shift. See [ListCashDrawerShiftEvents](#endpoint-CashDrawers-ListCashDrawerShiftEvents) for a list of cash drawer shift events.
    * @param {String} locationId The ID of the location to retrieve cash drawer shifts from.
    * @param {String} shiftId The shift ID.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveCashDrawerShiftResponse}

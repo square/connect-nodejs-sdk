@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('VersionedCatalogObject', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.VersionedCatalogObject();
+    // this.api = new SquareConnect.VersionedCatalogObject();
   });
 
   it('should create an instance of VersionedCatalogObject', function() {

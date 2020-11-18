@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **reason** | **String** | A description of the reason for the refund. Note: maximum 192 characters | [optional] 
 **device_id** | **String** | The unique Id of the device intended for this &#x60;TerminalRefund&#x60;. The Id can be retrieved from /v2/devices api. | [optional] 
 **deadline_duration** | **String** | The duration as an RFC 3339 duration, after which the refund will be automatically canceled. TerminalRefunds that are &#x60;PENDING&#x60; will be automatically &#x60;CANCELED&#x60; and have a cancellation reason of &#x60;TIMED_OUT&#x60;  Default: 5 minutes from creation  Maximum: 5 minutes | [optional] 
-**status** | **String** | The status of the &#x60;TerminalRefund&#x60;. Options: &#x60;PENDING&#x60;, &#x60;IN\\_PROGRESS&#x60;, &#x60;CANCELED&#x60;, &#x60;COMPLETED&#x60; | [optional] 
+**status** | **String** | The status of the &#x60;TerminalRefund&#x60;. Options: &#x60;PENDING&#x60;, &#x60;IN_PROGRESS&#x60;, &#x60;CANCELED&#x60;, &#x60;COMPLETED&#x60; | [optional] 
 **cancel_reason** | **String** | Present if the status is &#x60;CANCELED&#x60;. See [ActionCancelReason](#type-actioncancelreason) for possible values | [optional] 
 **created_at** | **String** | The time when the &#x60;TerminalRefund&#x60; was created as an RFC 3339 timestamp. | [optional] 
 **updated_at** | **String** | The time when the &#x60;TerminalRefund&#x60; was last updated as an RFC 3339 timestamp. | [optional] 

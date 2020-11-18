@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('CreateCatalogImageResponse', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.CreateCatalogImageResponse();
+    // this.api = new SquareConnect.CreateCatalogImageResponse();
   });
 
   it('should create an instance of CreateCatalogImageResponse', function() {
