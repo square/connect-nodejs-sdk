@@ -8,6 +8,7 @@ const {
 describe('LocationsApi', function () {
   beforeEach(function () {
     const defaultClient = SquareConnect.ApiClient.instance;
+    defaultClient.basePath = 'https://connect.squareupsandbox.com';
     const oauth2 = defaultClient.authentications['oauth2'];
     oauth2.accessToken = accounts.sandbox.access_token;
     this.api = new SquareConnect.LocationsApi();
