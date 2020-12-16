@@ -24,10 +24,10 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>CreateDisputeEvidenceTextRequest</code>.
- * Defines parameters for a CreateDisputeEvidenceText request.
+ * Defines the parameters for a &#x60;CreateDisputeEvidenceText&#x60; request.
  * @alias module:model/CreateDisputeEvidenceTextRequest
  * @class
- * @param idempotencyKey {String} Unique ID. For more information, see [Idempotency](https://developer.squareup.com/docs/docs/working-with-apis/idempotency).
+ * @param idempotencyKey {String} The Unique ID. For more information, see [Idempotency](https://developer.squareup.com/docs/docs/working-with-apis/idempotency).
  * @param evidenceText {String} The evidence string.
  */
 var exports = function(idempotencyKey, evidenceText) {
@@ -63,7 +63,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Unique ID. For more information, see [Idempotency](https://developer.squareup.com/docs/docs/working-with-apis/idempotency).
+ * The Unique ID. For more information, see [Idempotency](https://developer.squareup.com/docs/docs/working-with-apis/idempotency).
  * @member {String} idempotency_key
  */
 exports.prototype['idempotency_key'] = undefined;

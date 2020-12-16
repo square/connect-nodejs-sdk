@@ -24,5 +24,6 @@ Name | Type | Description | Notes
 **total_tax_money** | [**Money**](Money.md) | The total tax amount of money to collect for the line item. | [optional] 
 **total_discount_money** | [**Money**](Money.md) | The total discount amount of money to collect for the line item. | [optional] 
 **total_money** | [**Money**](Money.md) | The total amount of money to collect for this line item. | [optional] 
+**pricing_blocklists** | [**OrderLineItemPricingBlocklists**](OrderLineItemPricingBlocklists.md) | Describes pricing adjustments that are blocked from manual and automatic application to a line item. For more information, see [Apply Taxes and Discounts](https://developer.squareup.com/docs/docs/orders-api/apply-taxes-and-discounts). | [optional] 
 
 

@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **preferences** | [**CustomerPreferences**](CustomerPreferences.md) | Represents general customer preferences. | [optional] 
 **groups** | [**[CustomerGroupInfo]**](CustomerGroupInfo.md) | The customer groups and segments the customer belongs to. This deprecated field has been replaced with  the dedicated &#x60;group_ids&#x60; for customer groups and the dedicated &#x60;segment_ids&#x60; field for customer segments. You can retrieve information about a given customer group and segment respectively using the Customer Groups API and Customer Segments API. | [optional] [deprecated]
 **creation_source** | **String** | A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values | [optional] 
-**group_ids** | **[String]** | The IDs of customer groups the customer belongs to. | [optional] [beta]
-**segment_ids** | **[String]** | The IDs of segments the customer belongs to. | [optional] [beta]
+**group_ids** | **[String]** | The IDs of customer groups the customer belongs to. | [optional] 
+**segment_ids** | **[String]** | The IDs of segments the customer belongs to. | [optional] 
 
 

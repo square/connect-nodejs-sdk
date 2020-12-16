@@ -7,16 +7,16 @@
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ==================
 
-## NOTICE: The Square Connect Node.js SDK is deprecated and will be replaced by [square/square-nodejs-sdk] (currently in beta)
-This Square Connect Node.js SDK is deprecated. The SDK will enter a security maintenance phase in Q4 2020 and will be RETIRED (EOL) in Q2 2021. In the security maintenance phase, the SDK will continue to receive support and security patches but will no longer receive bug fixes or product updates. Once it is retired, support and security patches will no longer be available.
+## NOTICE: The Square Connect Node.js SDK is deprecated and replaced by [square/square-nodejs-sdk]
+This Square Connect Node.js SDK is deprecated. This SDK entered security maintenance phase on 2020-12-16 and will be RETIRED (EOL) in Q2, 2021. In the security maintenance phase, this SDK will continue to receive support and security patches but will no longer receive bug fixes or API updates. Once it is retired, support and security patches will no longer be available.
 
-The SDK itself will continue to work indefinitely until such time that the underlying APIs are retired, at which point portions of the SDK may stop functioning. For a full list of API retirement dates, please see our [Square API Lifecycle documentation].
+This SDK itself will continue to work indefinitely until such time that the underlying APIs are retired, at which point portions of this SDK may stop functioning. For a full list of API retirement dates, please see our [Square API Lifecycle documentation].
 
 | Security Maintenance | Retired (EOL) |
 | -------- | -------- |
-| Q4, 2020 | Q2, 2021 |
+| December 16, 2020 | Q2, 2021 |
 
-To ensure that you continue to receive API updates and SDK improvements, you should plan to migrate to the new [Square Node.js SDK] after it reaches GA. Please follow the instructions below to migrate to the new SDK.
+To ensure that you continue to receive API updates and SDK improvements, you should migrate to the new [Square Node.js SDK]. Please follow the instructions below to migrate to the new SDK.
 
 The old Connect SDK documentation is available under the [/docs] folder.
 
@@ -36,28 +36,12 @@ The old Connect SDK documentation is available under the [/docs] folder.
 
 ## Migrate to the Square Node.js SDK
 
-Follow the instructions below to migrate your apps from this deprecated Connect Node.js SDK to the new [Square Node.js SDK] after it reaches GA. You need to install the new SDK and update your application code.
+Follow the instructions below to migrate your apps from this deprecated Connect Node.js SDK to the new [Square Node.js SDK]. You need to install the new SDK and update your application code.
 
-### Install the SDK
+### Install the Square Node.js SDK
 
-#### Option 1: Install the latest SDK version using npm
 ```sh
 $ npm install square
-```
-
-#### Option 2: Install the latest SDK version using GitHub
-First clone the repo:
-```sh
-git clone https://github.com/square/square-nodejs-sdk.git
-```
-Then, build the SDK:
-```sh
-$ cd square-nodejs-sdk
-$ npm link
-```
-Lastly, run the following in the directory that contains your code:
-```sh
-$ npm link square
 ```
 
 ### Update your application code

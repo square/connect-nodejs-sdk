@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>CreateDisputeEvidenceTextResponse</code>.
- * Defines fields in a CreateDisputeEvidenceText response.
+ * Defines the fields in a &#x60;CreateDisputeEvidenceText&#x60; response.
  * @alias module:model/CreateDisputeEvidenceTextResponse
  * @class
  */

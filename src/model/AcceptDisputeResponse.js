@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>AcceptDisputeResponse</code>.
- * Defines fields in a AcceptDispute response.
+ * Defines the fields in an &#x60;AcceptDispute&#x60; response.
  * @alias module:model/AcceptDisputeResponse
  * @class
  */
@@ -59,7 +59,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 CreateEmployee
 
- Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
+ Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt;
 
 ### Example
 ```javascript
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 
 ListTimecardEvents
 
-Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+Provides summary information for all events associated with a particular timecard.   Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
 
 ### Example
 ```javascript

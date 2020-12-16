@@ -31,6 +31,7 @@ var exports = function() {
   var _this = this;
 
 
+
 };
 
 /**
@@ -47,6 +48,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('include_related_objects')) {
       obj['include_related_objects'] = ApiClient.convertToType(data['include_related_objects'], 'Boolean');
     }
+      if (data.hasOwnProperty('catalog_version')) {
+      obj['catalog_version'] = ApiClient.convertToType(data['catalog_version'], 'Number');
+    }
     }
   return obj;
 }
@@ -56,6 +60,11 @@ exports.constructFromObject = function(data, obj) {
  * @member {Boolean} include_related_objects
  */
 exports.prototype['include_related_objects'] = undefined;
+/**
+ * Requests objects as of a specific version of the catalog. This allows you to retrieve historical versions of objects. The value to retrieve a specific version of an object can be found in the version field of `CatalogObject`s.
+ * @member {Number} catalog_version
+ */
+exports.prototype['catalog_version'] = undefined;
 
 
 

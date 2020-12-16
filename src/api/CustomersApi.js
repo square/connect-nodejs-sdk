@@ -46,7 +46,6 @@ module.exports = function(apiClient) {
 
   /**
    * AddGroupToCustomer
-   * Note: This endpoint is in beta.
    * Adds a group membership to a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to add to a group.
    * @param {String} groupId The ID of the customer group to add the customer to.
@@ -74,7 +73,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -127,7 +126,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -186,7 +185,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -240,7 +239,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -300,7 +299,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -355,7 +354,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -391,7 +390,6 @@ module.exports = function(apiClient) {
 
   /**
    * RemoveGroupFromCustomer
-   * Note: This endpoint is in beta.
    * Removes a group membership from a customer.   The customer is identified by the &#x60;customer_id&#x60; value  and the customer group is identified by the &#x60;group_id&#x60; value.
    * @param {String} customerId The ID of the customer to remove from the group.
    * @param {String} groupId The ID of the customer group to remove the customer from.
@@ -419,7 +417,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -473,7 +471,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -525,7 +523,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -584,7 +582,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

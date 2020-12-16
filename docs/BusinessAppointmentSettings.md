@@ -8,7 +8,7 @@ The service appointment settings, including where and how the service is provide
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**location_types** | [**[BusinessAppointmentSettingsBookingLocationType]**](BusinessAppointmentSettingssBookingLocationType.md) | Types of the location allowed for bookings. | [optional] 
+**location_types** | [**[BusinessAppointmentSettingsBookingLocationType]**](BusinessAppointmentSettingsBookingLocationType.md) | Types of the location allowed for bookings. | [optional] 
 **alignment_time** | [**BusinessAppointmentSettingsAlignmentTime**](BusinessAppointmentSettingsAlignmentTime.md) | The time unit of the service duration for bookings. | [optional] 
 **min_booking_lead_time_seconds** | **Number** | The minimum lead time in seconds before a service can be booked. Bookings must be created at least this far ahead of the booking&#39;s starting time. | [optional] 
 **max_booking_lead_time_seconds** | **Number** | The maximum lead time in seconds before a service can be booked. Bookings must be created at most this far ahead of the booking&#39;s starting time. | [optional] 

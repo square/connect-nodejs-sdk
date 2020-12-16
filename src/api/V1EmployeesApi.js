@@ -37,7 +37,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateEmployee
-   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
+   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt;
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/V1Employee} and HTTP response
    */
@@ -56,7 +56,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -75,7 +75,7 @@ module.exports = function(apiClient) {
 
   /**
    * CreateEmployee
-   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  &lt;aside class&#x3D;\&quot;important\&quot;&gt; Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt; &lt;/aside&gt;
+   *  Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of &#x60;INACTIVE&#x60;. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  Employee entities cannot be deleted. To disable employee profiles, set the employee&#39;s status to &lt;code&gt;INACTIVE&lt;/code&gt;
    * @param {module:model/V1Employee} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/V1Employee}
    */
@@ -108,7 +108,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -162,7 +162,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -217,7 +217,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -280,7 +280,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -338,7 +338,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -407,7 +407,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -450,7 +450,7 @@ module.exports = function(apiClient) {
   /**
    * @deprecated
    * ListTimecardEvents
-   * Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides summary information for all events associated with a particular timecard.   Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/V1TimecardEvent>} and HTTP response
    */
@@ -471,7 +471,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -490,7 +490,7 @@ module.exports = function(apiClient) {
 
   /**
    * ListTimecardEvents
-   * Provides summary information for all events associated with a particular timecard.   &lt;aside&gt; Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. &lt;/aside&gt;
+   * Provides summary information for all events associated with a particular timecard.   Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API.
    * @param {String} timecardId The ID of the timecard to list events for.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/V1TimecardEvent>}
    */
@@ -543,7 +543,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -616,7 +616,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -670,7 +670,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -723,7 +723,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -778,7 +778,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -837,7 +837,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -897,7 +897,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -959,7 +959,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

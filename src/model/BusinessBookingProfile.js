@@ -12,9 +12,9 @@
  *
  */
 var ApiClient = require('../ApiClient');
-var BookingPolicy = require('./BusinessBookingProfileBookingPolicy');
 var BusinessAppointmentSettings = require('./BusinessAppointmentSettings');
-var CustomerTimezoneChoice = require('./BusinessBookingProfileCustomerTimezoneChoice');
+var BusinessBookingProfileBookingPolicy = require('./BusinessBookingProfileBookingPolicy');
+var BusinessBookingProfileCustomerTimezoneChoice = require('./BusinessBookingProfileCustomerTimezoneChoice');
 
 
 
@@ -27,7 +27,7 @@ var CustomerTimezoneChoice = require('./BusinessBookingProfileCustomerTimezoneCh
 
 /**
  * Constructs a new <code>BusinessBookingProfile</code>.
- *
+ * 
  * @alias module:model/BusinessBookingProfile
  * @class
  */
@@ -64,10 +64,10 @@ exports.constructFromObject = function(data, obj) {
       obj['booking_enabled'] = ApiClient.convertToType(data['booking_enabled'], 'Boolean');
     }
       if (data.hasOwnProperty('customer_timezone_choice')) {
-      obj['customer_timezone_choice'] = CustomerTimezoneChoice.constructFromObject(data['customer_timezone_choice']);
+      obj['customer_timezone_choice'] = BusinessBookingProfileCustomerTimezoneChoice.constructFromObject(data['customer_timezone_choice']);
     }
       if (data.hasOwnProperty('booking_policy')) {
-      obj['booking_policy'] = BookingPolicy.constructFromObject(data['booking_policy']);
+      obj['booking_policy'] = BusinessBookingProfileBookingPolicy.constructFromObject(data['booking_policy']);
     }
       if (data.hasOwnProperty('allow_user_cancel')) {
       obj['allow_user_cancel'] = ApiClient.convertToType(data['allow_user_cancel'], 'Boolean');

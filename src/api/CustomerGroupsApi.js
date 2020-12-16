@@ -39,7 +39,6 @@ module.exports = function(apiClient) {
 
   /**
    * CreateCustomerGroup
-   * Note: This endpoint is in beta.
    * Creates a new customer group for a business.   The request must include the &#x60;name&#x60; value of the group.
    * @param {module:model/CreateCustomerGroupRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCustomerGroupResponse} and HTTP response
@@ -59,7 +58,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -92,7 +91,6 @@ module.exports = function(apiClient) {
 
   /**
    * DeleteCustomerGroup
-   * Note: This endpoint is in beta.
    * Deletes a customer group as identified by the &#x60;group_id&#x60; value.
    * @param {String} groupId The ID of the customer group to delete.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteCustomerGroupResponse} and HTTP response
@@ -113,7 +111,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -146,7 +144,6 @@ module.exports = function(apiClient) {
 
   /**
    * ListCustomerGroups
-   * Note: This endpoint is in beta.
    * Retrieves the list of customer groups of a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
@@ -164,7 +161,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -198,7 +195,6 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCustomerGroup
-   * Note: This endpoint is in beta.
    * Retrieves a specific customer group as identified by the &#x60;group_id&#x60; value.
    * @param {String} groupId The ID of the customer group to retrieve.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveCustomerGroupResponse} and HTTP response
@@ -219,7 +215,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -252,7 +248,6 @@ module.exports = function(apiClient) {
 
   /**
    * UpdateCustomerGroup
-   * Note: This endpoint is in beta.
    * Updates a customer group as identified by the &#x60;group_id&#x60; value.
    * @param {String} groupId The ID of the customer group to update.
    * @param {module:model/UpdateCustomerGroupRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
@@ -279,7 +274,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

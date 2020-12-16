@@ -481,6 +481,11 @@ var exports = {
    */
   "SOURCE_EXPIRED": "SOURCE_EXPIRED",
   /**
+   * value: "UNSUPPORTED_LOYALTY_REWARD_TIER"
+   * @const
+   */
+  "UNSUPPORTED_LOYALTY_REWARD_TIER": "UNSUPPORTED_LOYALTY_REWARD_TIER",
+  /**
    * value: "LOCATION_MISMATCH"
    * @const
    */

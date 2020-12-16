@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>SubmitEvidenceResponse</code>.
- * Defines fields in a SubmitEvidence response.
+ * Defines the fields in a &#x60;SubmitEvidence&#x60; response.
  * @alias module:model/SubmitEvidenceResponse
  * @class
  */
@@ -59,7 +59,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

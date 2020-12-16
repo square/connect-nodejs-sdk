@@ -12,7 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
-var RiskLevel = require('./RiskEvaluationRiskLevel');
+var RiskEvaluationRiskLevel = require('./RiskEvaluationRiskLevel');
 
 
 
@@ -51,7 +51,7 @@ exports.constructFromObject = function(data, obj) {
       obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
     }
       if (data.hasOwnProperty('risk_level')) {
-      obj['risk_level'] = RiskLevel.constructFromObject(data['risk_level']);
+      obj['risk_level'] = RiskEvaluationRiskLevel.constructFromObject(data['risk_level']);
     }
     }
   return obj;

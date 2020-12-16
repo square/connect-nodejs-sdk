@@ -18,7 +18,6 @@ Method | HTTP request | Description
 
 <a name="addGroupToCustomer"></a>
 # **addGroupToCustomer**
-**Note: This endpoint is in beta.**
 > AddGroupToCustomerResponse addGroupToCustomer(customerId, groupId)
 
 AddGroupToCustomer
@@ -321,7 +320,6 @@ Name | Type | Description  | Notes
 
 <a name="removeGroupFromCustomer"></a>
 # **removeGroupFromCustomer**
-**Note: This endpoint is in beta.**
 > RemoveGroupFromCustomerResponse removeGroupFromCustomer(customerId, groupId)
 
 RemoveGroupFromCustomer

@@ -1,7 +1,6 @@
 # SquareConnect.CustomerTextFilter
 
 ### Description
-**Note: This model is in beta.**
 
 A filter to select customers based on exact or fuzzy matching of customer attributes against a specified query. Depending on customer attributes,  the filter can be case sensitive. This filter can be either exact or fuzzy. It cannot be both.
 

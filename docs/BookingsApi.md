@@ -4,6 +4,7 @@ All URIs are relative to *https://connect.squareup.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**cancelBooking**](BookingsApi.md#cancelBooking) | **POST** /v2/bookings/{booking_id}/cancel | CancelBooking
 [**createBooking**](BookingsApi.md#createBooking) | **POST** /v2/bookings | CreateBooking
 [**listTeamMemberBookingProfiles**](BookingsApi.md#listTeamMemberBookingProfiles) | **GET** /v2/bookings/team-member-booking-profiles | ListTeamMemberBookingProfiles
 [**retrieveBooking**](BookingsApi.md#retrieveBooking) | **GET** /v2/bookings/{booking_id} | RetrieveBooking
@@ -12,6 +13,58 @@ Method | HTTP request | Description
 [**searchAvailability**](BookingsApi.md#searchAvailability) | **POST** /v2/bookings/availability/search | SearchAvailability
 [**updateBooking**](BookingsApi.md#updateBooking) | **PUT** /v2/bookings/{booking_id} | UpdateBooking
 
+
+<a name="cancelBooking"></a>
+# **cancelBooking**
+**Note: This endpoint is in beta.**
+> CancelBookingResponse cancelBooking(bookingId, body)
+
+CancelBooking
+
+Cancels an existing booking.
+
+### Example
+```javascript
+var SquareConnect = require('square-connect');
+var defaultClient = SquareConnect.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new SquareConnect.BookingsApi();
+
+var bookingId = SquareConnect.BookingsApi.constructFromObject({}); // String | The ID of the `Booking` object representing the to-be-cancelled booking.
+
+var body = SquareConnect.BookingsApi.constructFromObject({}); // CancelBookingRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+
+apiInstance.cancelBooking(bookingId, body).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bookingId** | **String**| The ID of the &#x60;Booking&#x60; object representing the to-be-cancelled booking. | 
+ **body** | [**CancelBookingRequest**](CancelBookingRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
+
+### Return type
+
+[**CancelBookingResponse**](CancelBookingResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 <a name="createBooking"></a>
 # **createBooking**

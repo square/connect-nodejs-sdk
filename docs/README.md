@@ -76,1039 +76,1039 @@ All URIs are relative to *https://connect.squareup.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*SquareConnect.ApplePayApi* | [**registerDomain**](ApplePayApi.md#registerDomain) | **POST** /v2/apple-pay/domains | RegisterDomain
-*SquareConnect.BankAccountsApi* | [**getBankAccount**](BankAccountsApi.md#getBankAccount) | **GET** /v2/bank-accounts/{bank_account_id} | GetBankAccount
-*SquareConnect.BankAccountsApi* | [**getBankAccountByV1Id**](BankAccountsApi.md#getBankAccountByV1Id) | **GET** /v2/bank-accounts/by-v1-id/{v1_bank_account_id} | GetBankAccountByV1Id
-*SquareConnect.BankAccountsApi* | [**listBankAccounts**](BankAccountsApi.md#listBankAccounts) | **GET** /v2/bank-accounts | ListBankAccounts
-*SquareConnect.BookingsApi* | [**createBooking**](BookingsApi.md#createBooking) | **POST** /v2/bookings | CreateBooking
-*SquareConnect.BookingsApi* | [**listTeamMemberBookingProfiles**](BookingsApi.md#listTeamMemberBookingProfiles) | **GET** /v2/bookings/team-member-booking-profiles | ListTeamMemberBookingProfiles
-*SquareConnect.BookingsApi* | [**retrieveBooking**](BookingsApi.md#retrieveBooking) | **GET** /v2/bookings/{booking_id} | RetrieveBooking
-*SquareConnect.BookingsApi* | [**retrieveBusinessBookingProfile**](BookingsApi.md#retrieveBusinessBookingProfile) | **GET** /v2/bookings/business-booking-profile | RetrieveBusinessBookingProfile
-*SquareConnect.BookingsApi* | [**retrieveTeamMemberBookingProfile**](BookingsApi.md#retrieveTeamMemberBookingProfile) | **GET** /v2/bookings/team-member-booking-profiles/{team_member_id} | RetrieveTeamMemberBookingProfile
-*SquareConnect.BookingsApi* | [**searchAvailability**](BookingsApi.md#searchAvailability) | **POST** /v2/bookings/availability/search | SearchAvailability
-*SquareConnect.BookingsApi* | [**updateBooking**](BookingsApi.md#updateBooking) | **PUT** /v2/bookings/{booking_id} | UpdateBooking
-*SquareConnect.CashDrawersApi* | [**listCashDrawerShiftEvents**](CashDrawersApi.md#listCashDrawerShiftEvents) | **GET** /v2/cash-drawers/shifts/{shift_id}/events | ListCashDrawerShiftEvents
-*SquareConnect.CashDrawersApi* | [**listCashDrawerShifts**](CashDrawersApi.md#listCashDrawerShifts) | **GET** /v2/cash-drawers/shifts | ListCashDrawerShifts
-*SquareConnect.CashDrawersApi* | [**retrieveCashDrawerShift**](CashDrawersApi.md#retrieveCashDrawerShift) | **GET** /v2/cash-drawers/shifts/{shift_id} | RetrieveCashDrawerShift
-*SquareConnect.CatalogApi* | [**batchDeleteCatalogObjects**](CatalogApi.md#batchDeleteCatalogObjects) | **POST** /v2/catalog/batch-delete | BatchDeleteCatalogObjects
-*SquareConnect.CatalogApi* | [**batchRetrieveCatalogObjects**](CatalogApi.md#batchRetrieveCatalogObjects) | **POST** /v2/catalog/batch-retrieve | BatchRetrieveCatalogObjects
-*SquareConnect.CatalogApi* | [**batchUpsertCatalogObjects**](CatalogApi.md#batchUpsertCatalogObjects) | **POST** /v2/catalog/batch-upsert | BatchUpsertCatalogObjects
-*SquareConnect.CatalogApi* | [**catalogInfo**](CatalogApi.md#catalogInfo) | **GET** /v2/catalog/info | CatalogInfo
-*SquareConnect.CatalogApi* | [**deleteCatalogObject**](CatalogApi.md#deleteCatalogObject) | **DELETE** /v2/catalog/object/{object_id} | DeleteCatalogObject
-*SquareConnect.CatalogApi* | [**listCatalog**](CatalogApi.md#listCatalog) | **GET** /v2/catalog/list | ListCatalog
-*SquareConnect.CatalogApi* | [**retrieveCatalogObject**](CatalogApi.md#retrieveCatalogObject) | **GET** /v2/catalog/object/{object_id} | RetrieveCatalogObject
-*SquareConnect.CatalogApi* | [**searchCatalogItems**](CatalogApi.md#searchCatalogItems) | **POST** /v2/catalog/search-catalog-items | SearchCatalogItems
-*SquareConnect.CatalogApi* | [**searchCatalogObjects**](CatalogApi.md#searchCatalogObjects) | **POST** /v2/catalog/search | SearchCatalogObjects
-*SquareConnect.CatalogApi* | [**updateItemModifierLists**](CatalogApi.md#updateItemModifierLists) | **POST** /v2/catalog/update-item-modifier-lists | UpdateItemModifierLists
-*SquareConnect.CatalogApi* | [**updateItemTaxes**](CatalogApi.md#updateItemTaxes) | **POST** /v2/catalog/update-item-taxes | UpdateItemTaxes
-*SquareConnect.CatalogApi* | [**upsertCatalogObject**](CatalogApi.md#upsertCatalogObject) | **POST** /v2/catalog/object | UpsertCatalogObject
-*SquareConnect.CheckoutApi* | [**createCheckout**](CheckoutApi.md#createCheckout) | **POST** /v2/locations/{location_id}/checkouts | CreateCheckout
-*SquareConnect.CustomerGroupsApi* | [**createCustomerGroup**](CustomerGroupsApi.md#createCustomerGroup) | **POST** /v2/customers/groups | CreateCustomerGroup
-*SquareConnect.CustomerGroupsApi* | [**deleteCustomerGroup**](CustomerGroupsApi.md#deleteCustomerGroup) | **DELETE** /v2/customers/groups/{group_id} | DeleteCustomerGroup
-*SquareConnect.CustomerGroupsApi* | [**listCustomerGroups**](CustomerGroupsApi.md#listCustomerGroups) | **GET** /v2/customers/groups | ListCustomerGroups
-*SquareConnect.CustomerGroupsApi* | [**retrieveCustomerGroup**](CustomerGroupsApi.md#retrieveCustomerGroup) | **GET** /v2/customers/groups/{group_id} | RetrieveCustomerGroup
-*SquareConnect.CustomerGroupsApi* | [**updateCustomerGroup**](CustomerGroupsApi.md#updateCustomerGroup) | **PUT** /v2/customers/groups/{group_id} | UpdateCustomerGroup
-*SquareConnect.CustomerSegmentsApi* | [**listCustomerSegments**](CustomerSegmentsApi.md#listCustomerSegments) | **GET** /v2/customers/segments | ListCustomerSegments
-*SquareConnect.CustomerSegmentsApi* | [**retrieveCustomerSegment**](CustomerSegmentsApi.md#retrieveCustomerSegment) | **GET** /v2/customers/segments/{segment_id} | RetrieveCustomerSegment
-*SquareConnect.CustomersApi* | [**addGroupToCustomer**](CustomersApi.md#addGroupToCustomer) | **PUT** /v2/customers/{customer_id}/groups/{group_id} | AddGroupToCustomer
-*SquareConnect.CustomersApi* | [**createCustomer**](CustomersApi.md#createCustomer) | **POST** /v2/customers | CreateCustomer
-*SquareConnect.CustomersApi* | [**createCustomerCard**](CustomersApi.md#createCustomerCard) | **POST** /v2/customers/{customer_id}/cards | CreateCustomerCard
-*SquareConnect.CustomersApi* | [**deleteCustomer**](CustomersApi.md#deleteCustomer) | **DELETE** /v2/customers/{customer_id} | DeleteCustomer
-*SquareConnect.CustomersApi* | [**deleteCustomerCard**](CustomersApi.md#deleteCustomerCard) | **DELETE** /v2/customers/{customer_id}/cards/{card_id} | DeleteCustomerCard
-*SquareConnect.CustomersApi* | [**listCustomers**](CustomersApi.md#listCustomers) | **GET** /v2/customers | ListCustomers
-*SquareConnect.CustomersApi* | [**removeGroupFromCustomer**](CustomersApi.md#removeGroupFromCustomer) | **DELETE** /v2/customers/{customer_id}/groups/{group_id} | RemoveGroupFromCustomer
-*SquareConnect.CustomersApi* | [**retrieveCustomer**](CustomersApi.md#retrieveCustomer) | **GET** /v2/customers/{customer_id} | RetrieveCustomer
-*SquareConnect.CustomersApi* | [**searchCustomers**](CustomersApi.md#searchCustomers) | **POST** /v2/customers/search | SearchCustomers
-*SquareConnect.CustomersApi* | [**updateCustomer**](CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
-*SquareConnect.DevicesApi* | [**createDeviceCode**](DevicesApi.md#createDeviceCode) | **POST** /v2/devices/codes | CreateDeviceCode
-*SquareConnect.DevicesApi* | [**getDeviceCode**](DevicesApi.md#getDeviceCode) | **GET** /v2/devices/codes/{id} | GetDeviceCode
-*SquareConnect.DevicesApi* | [**listDeviceCodes**](DevicesApi.md#listDeviceCodes) | **GET** /v2/devices/codes | ListDeviceCodes
-*SquareConnect.DisputesApi* | [**acceptDispute**](DisputesApi.md#acceptDispute) | **POST** /v2/disputes/{dispute_id}/accept | AcceptDispute
-*SquareConnect.DisputesApi* | [**createDisputeEvidenceText**](DisputesApi.md#createDisputeEvidenceText) | **POST** /v2/disputes/{dispute_id}/evidence_text | CreateDisputeEvidenceText
-*SquareConnect.DisputesApi* | [**listDisputeEvidence**](DisputesApi.md#listDisputeEvidence) | **GET** /v2/disputes/{dispute_id}/evidence | ListDisputeEvidence
-*SquareConnect.DisputesApi* | [**listDisputes**](DisputesApi.md#listDisputes) | **GET** /v2/disputes | ListDisputes
-*SquareConnect.DisputesApi* | [**removeDisputeEvidence**](DisputesApi.md#removeDisputeEvidence) | **DELETE** /v2/disputes/{dispute_id}/evidence/{evidence_id} | RemoveDisputeEvidence
-*SquareConnect.DisputesApi* | [**retrieveDispute**](DisputesApi.md#retrieveDispute) | **GET** /v2/disputes/{dispute_id} | RetrieveDispute
-*SquareConnect.DisputesApi* | [**retrieveDisputeEvidence**](DisputesApi.md#retrieveDisputeEvidence) | **GET** /v2/disputes/{dispute_id}/evidence/{evidence_id} | RetrieveDisputeEvidence
-*SquareConnect.DisputesApi* | [**submitEvidence**](DisputesApi.md#submitEvidence) | **POST** /v2/disputes/{dispute_id}/submit-evidence | SubmitEvidence
-*SquareConnect.EmployeesApi* | [**listEmployees**](EmployeesApi.md#listEmployees) | **GET** /v2/employees | ListEmployees
-*SquareConnect.EmployeesApi* | [**retrieveEmployee**](EmployeesApi.md#retrieveEmployee) | **GET** /v2/employees/{id} | RetrieveEmployee
-*SquareConnect.InventoryApi* | [**batchChangeInventory**](InventoryApi.md#batchChangeInventory) | **POST** /v2/inventory/batch-change | BatchChangeInventory
-*SquareConnect.InventoryApi* | [**batchRetrieveInventoryChanges**](InventoryApi.md#batchRetrieveInventoryChanges) | **POST** /v2/inventory/batch-retrieve-changes | BatchRetrieveInventoryChanges
-*SquareConnect.InventoryApi* | [**batchRetrieveInventoryCounts**](InventoryApi.md#batchRetrieveInventoryCounts) | **POST** /v2/inventory/batch-retrieve-counts | BatchRetrieveInventoryCounts
-*SquareConnect.InventoryApi* | [**retrieveInventoryAdjustment**](InventoryApi.md#retrieveInventoryAdjustment) | **GET** /v2/inventory/adjustment/{adjustment_id} | RetrieveInventoryAdjustment
-*SquareConnect.InventoryApi* | [**retrieveInventoryChanges**](InventoryApi.md#retrieveInventoryChanges) | **GET** /v2/inventory/{catalog_object_id}/changes | RetrieveInventoryChanges
-*SquareConnect.InventoryApi* | [**retrieveInventoryCount**](InventoryApi.md#retrieveInventoryCount) | **GET** /v2/inventory/{catalog_object_id} | RetrieveInventoryCount
-*SquareConnect.InventoryApi* | [**retrieveInventoryPhysicalCount**](InventoryApi.md#retrieveInventoryPhysicalCount) | **GET** /v2/inventory/physical-count/{physical_count_id} | RetrieveInventoryPhysicalCount
-*SquareConnect.InvoicesApi* | [**cancelInvoice**](InvoicesApi.md#cancelInvoice) | **POST** /v2/invoices/{invoice_id}/cancel | CancelInvoice
-*SquareConnect.InvoicesApi* | [**createInvoice**](InvoicesApi.md#createInvoice) | **POST** /v2/invoices | CreateInvoice
-*SquareConnect.InvoicesApi* | [**deleteInvoice**](InvoicesApi.md#deleteInvoice) | **DELETE** /v2/invoices/{invoice_id} | DeleteInvoice
-*SquareConnect.InvoicesApi* | [**getInvoice**](InvoicesApi.md#getInvoice) | **GET** /v2/invoices/{invoice_id} | GetInvoice
-*SquareConnect.InvoicesApi* | [**listInvoices**](InvoicesApi.md#listInvoices) | **GET** /v2/invoices | ListInvoices
-*SquareConnect.InvoicesApi* | [**publishInvoice**](InvoicesApi.md#publishInvoice) | **POST** /v2/invoices/{invoice_id}/publish | PublishInvoice
-*SquareConnect.InvoicesApi* | [**searchInvoices**](InvoicesApi.md#searchInvoices) | **POST** /v2/invoices/search | SearchInvoices
-*SquareConnect.InvoicesApi* | [**updateInvoice**](InvoicesApi.md#updateInvoice) | **PUT** /v2/invoices/{invoice_id} | UpdateInvoice
-*SquareConnect.LaborApi* | [**createBreakType**](LaborApi.md#createBreakType) | **POST** /v2/labor/break-types | CreateBreakType
-*SquareConnect.LaborApi* | [**createShift**](LaborApi.md#createShift) | **POST** /v2/labor/shifts | CreateShift
-*SquareConnect.LaborApi* | [**deleteBreakType**](LaborApi.md#deleteBreakType) | **DELETE** /v2/labor/break-types/{id} | DeleteBreakType
-*SquareConnect.LaborApi* | [**deleteShift**](LaborApi.md#deleteShift) | **DELETE** /v2/labor/shifts/{id} | DeleteShift
-*SquareConnect.LaborApi* | [**getBreakType**](LaborApi.md#getBreakType) | **GET** /v2/labor/break-types/{id} | GetBreakType
-*SquareConnect.LaborApi* | [**getEmployeeWage**](LaborApi.md#getEmployeeWage) | **GET** /v2/labor/employee-wages/{id} | GetEmployeeWage
-*SquareConnect.LaborApi* | [**getShift**](LaborApi.md#getShift) | **GET** /v2/labor/shifts/{id} | GetShift
-*SquareConnect.LaborApi* | [**getTeamMemberWage**](LaborApi.md#getTeamMemberWage) | **GET** /v2/labor/team-member-wages/{id} | GetTeamMemberWage
-*SquareConnect.LaborApi* | [**listBreakTypes**](LaborApi.md#listBreakTypes) | **GET** /v2/labor/break-types | ListBreakTypes
-*SquareConnect.LaborApi* | [**listEmployeeWages**](LaborApi.md#listEmployeeWages) | **GET** /v2/labor/employee-wages | ListEmployeeWages
-*SquareConnect.LaborApi* | [**listTeamMemberWages**](LaborApi.md#listTeamMemberWages) | **GET** /v2/labor/team-member-wages | ListTeamMemberWages
-*SquareConnect.LaborApi* | [**listWorkweekConfigs**](LaborApi.md#listWorkweekConfigs) | **GET** /v2/labor/workweek-configs | ListWorkweekConfigs
-*SquareConnect.LaborApi* | [**searchShifts**](LaborApi.md#searchShifts) | **POST** /v2/labor/shifts/search | SearchShifts
-*SquareConnect.LaborApi* | [**updateBreakType**](LaborApi.md#updateBreakType) | **PUT** /v2/labor/break-types/{id} | UpdateBreakType
-*SquareConnect.LaborApi* | [**updateShift**](LaborApi.md#updateShift) | **PUT** /v2/labor/shifts/{id} | UpdateShift
-*SquareConnect.LaborApi* | [**updateWorkweekConfig**](LaborApi.md#updateWorkweekConfig) | **PUT** /v2/labor/workweek-configs/{id} | UpdateWorkweekConfig
-*SquareConnect.LocationsApi* | [**createLocation**](LocationsApi.md#createLocation) | **POST** /v2/locations | CreateLocation
-*SquareConnect.LocationsApi* | [**listLocations**](LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
-*SquareConnect.LocationsApi* | [**retrieveLocation**](LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
-*SquareConnect.LocationsApi* | [**updateLocation**](LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
-*SquareConnect.LoyaltyApi* | [**accumulateLoyaltyPoints**](LoyaltyApi.md#accumulateLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/accumulate | AccumulateLoyaltyPoints
-*SquareConnect.LoyaltyApi* | [**adjustLoyaltyPoints**](LoyaltyApi.md#adjustLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/adjust | AdjustLoyaltyPoints
-*SquareConnect.LoyaltyApi* | [**calculateLoyaltyPoints**](LoyaltyApi.md#calculateLoyaltyPoints) | **POST** /v2/loyalty/programs/{program_id}/calculate | CalculateLoyaltyPoints
-*SquareConnect.LoyaltyApi* | [**createLoyaltyAccount**](LoyaltyApi.md#createLoyaltyAccount) | **POST** /v2/loyalty/accounts | CreateLoyaltyAccount
-*SquareConnect.LoyaltyApi* | [**createLoyaltyReward**](LoyaltyApi.md#createLoyaltyReward) | **POST** /v2/loyalty/rewards | CreateLoyaltyReward
-*SquareConnect.LoyaltyApi* | [**deleteLoyaltyReward**](LoyaltyApi.md#deleteLoyaltyReward) | **DELETE** /v2/loyalty/rewards/{reward_id} | DeleteLoyaltyReward
-*SquareConnect.LoyaltyApi* | [**listLoyaltyPrograms**](LoyaltyApi.md#listLoyaltyPrograms) | **GET** /v2/loyalty/programs | ListLoyaltyPrograms
-*SquareConnect.LoyaltyApi* | [**redeemLoyaltyReward**](LoyaltyApi.md#redeemLoyaltyReward) | **POST** /v2/loyalty/rewards/{reward_id}/redeem | RedeemLoyaltyReward
-*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyAccount**](LoyaltyApi.md#retrieveLoyaltyAccount) | **GET** /v2/loyalty/accounts/{account_id} | RetrieveLoyaltyAccount
-*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyReward**](LoyaltyApi.md#retrieveLoyaltyReward) | **GET** /v2/loyalty/rewards/{reward_id} | RetrieveLoyaltyReward
-*SquareConnect.LoyaltyApi* | [**searchLoyaltyAccounts**](LoyaltyApi.md#searchLoyaltyAccounts) | **POST** /v2/loyalty/accounts/search | SearchLoyaltyAccounts
-*SquareConnect.LoyaltyApi* | [**searchLoyaltyEvents**](LoyaltyApi.md#searchLoyaltyEvents) | **POST** /v2/loyalty/events/search | SearchLoyaltyEvents
-*SquareConnect.LoyaltyApi* | [**searchLoyaltyRewards**](LoyaltyApi.md#searchLoyaltyRewards) | **POST** /v2/loyalty/rewards/search | SearchLoyaltyRewards
-*SquareConnect.MerchantsApi* | [**listMerchants**](MerchantsApi.md#listMerchants) | **GET** /v2/merchants | ListMerchants
-*SquareConnect.MerchantsApi* | [**retrieveMerchant**](MerchantsApi.md#retrieveMerchant) | **GET** /v2/merchants/{merchant_id} | RetrieveMerchant
-*SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
-*SquareConnect.OAuthApi* | [**obtainToken**](OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
-*SquareConnect.OAuthApi* | [**renewToken**](OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
-*SquareConnect.OAuthApi* | [**revokeToken**](OAuthApi.md#revokeToken) | **POST** /oauth2/revoke | RevokeToken
-*SquareConnect.OrdersApi* | [**batchRetrieveOrders**](OrdersApi.md#batchRetrieveOrders) | **POST** /v2/orders/batch-retrieve | BatchRetrieveOrders
-*SquareConnect.OrdersApi* | [**calculateOrder**](OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
-*SquareConnect.OrdersApi* | [**createOrder**](OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
-*SquareConnect.OrdersApi* | [**payOrder**](OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
-*SquareConnect.OrdersApi* | [**retrieveOrder**](OrdersApi.md#retrieveOrder) | **GET** /v2/orders/{order_id} | RetrieveOrder
-*SquareConnect.OrdersApi* | [**searchOrders**](OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
-*SquareConnect.OrdersApi* | [**updateOrder**](OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
-*SquareConnect.PaymentsApi* | [**cancelPayment**](PaymentsApi.md#cancelPayment) | **POST** /v2/payments/{payment_id}/cancel | CancelPayment
-*SquareConnect.PaymentsApi* | [**cancelPaymentByIdempotencyKey**](PaymentsApi.md#cancelPaymentByIdempotencyKey) | **POST** /v2/payments/cancel | CancelPaymentByIdempotencyKey
-*SquareConnect.PaymentsApi* | [**completePayment**](PaymentsApi.md#completePayment) | **POST** /v2/payments/{payment_id}/complete | CompletePayment
-*SquareConnect.PaymentsApi* | [**createPayment**](PaymentsApi.md#createPayment) | **POST** /v2/payments | CreatePayment
-*SquareConnect.PaymentsApi* | [**getPayment**](PaymentsApi.md#getPayment) | **GET** /v2/payments/{payment_id} | GetPayment
-*SquareConnect.PaymentsApi* | [**listPayments**](PaymentsApi.md#listPayments) | **GET** /v2/payments | ListPayments
-*SquareConnect.RefundsApi* | [**getPaymentRefund**](RefundsApi.md#getPaymentRefund) | **GET** /v2/refunds/{refund_id} | GetPaymentRefund
-*SquareConnect.RefundsApi* | [**listPaymentRefunds**](RefundsApi.md#listPaymentRefunds) | **GET** /v2/refunds | ListPaymentRefunds
-*SquareConnect.RefundsApi* | [**refundPayment**](RefundsApi.md#refundPayment) | **POST** /v2/refunds | RefundPayment
-*SquareConnect.SubscriptionsApi* | [**cancelSubscription**](SubscriptionsApi.md#cancelSubscription) | **POST** /v2/subscriptions/{subscription_id}/cancel | CancelSubscription
-*SquareConnect.SubscriptionsApi* | [**createSubscription**](SubscriptionsApi.md#createSubscription) | **POST** /v2/subscriptions | CreateSubscription
-*SquareConnect.SubscriptionsApi* | [**listSubscriptionEvents**](SubscriptionsApi.md#listSubscriptionEvents) | **GET** /v2/subscriptions/{subscription_id}/events | ListSubscriptionEvents
-*SquareConnect.SubscriptionsApi* | [**retrieveSubscription**](SubscriptionsApi.md#retrieveSubscription) | **GET** /v2/subscriptions/{subscription_id} | RetrieveSubscription
-*SquareConnect.SubscriptionsApi* | [**searchSubscriptions**](SubscriptionsApi.md#searchSubscriptions) | **POST** /v2/subscriptions/search | SearchSubscriptions
-*SquareConnect.SubscriptionsApi* | [**updateSubscription**](SubscriptionsApi.md#updateSubscription) | **PUT** /v2/subscriptions/{subscription_id} | UpdateSubscription
-*SquareConnect.TeamApi* | [**bulkCreateTeamMembers**](TeamApi.md#bulkCreateTeamMembers) | **POST** /v2/team-members/bulk-create | BulkCreateTeamMembers
-*SquareConnect.TeamApi* | [**bulkUpdateTeamMembers**](TeamApi.md#bulkUpdateTeamMembers) | **POST** /v2/team-members/bulk-update | BulkUpdateTeamMembers
-*SquareConnect.TeamApi* | [**createTeamMember**](TeamApi.md#createTeamMember) | **POST** /v2/team-members | CreateTeamMember
-*SquareConnect.TeamApi* | [**retrieveTeamMember**](TeamApi.md#retrieveTeamMember) | **GET** /v2/team-members/{team_member_id} | RetrieveTeamMember
-*SquareConnect.TeamApi* | [**retrieveWageSetting**](TeamApi.md#retrieveWageSetting) | **GET** /v2/team-members/{team_member_id}/wage-setting | RetrieveWageSetting
-*SquareConnect.TeamApi* | [**searchTeamMembers**](TeamApi.md#searchTeamMembers) | **POST** /v2/team-members/search | SearchTeamMembers
-*SquareConnect.TeamApi* | [**updateTeamMember**](TeamApi.md#updateTeamMember) | **PUT** /v2/team-members/{team_member_id} | UpdateTeamMember
-*SquareConnect.TeamApi* | [**updateWageSetting**](TeamApi.md#updateWageSetting) | **PUT** /v2/team-members/{team_member_id}/wage-setting | UpdateWageSetting
-*SquareConnect.TerminalApi* | [**cancelTerminalCheckout**](TerminalApi.md#cancelTerminalCheckout) | **POST** /v2/terminals/checkouts/{checkout_id}/cancel | CancelTerminalCheckout
-*SquareConnect.TerminalApi* | [**cancelTerminalRefund**](TerminalApi.md#cancelTerminalRefund) | **POST** /v2/terminals/refunds/{terminal_refund_id}/cancel | CancelTerminalRefund
-*SquareConnect.TerminalApi* | [**createTerminalCheckout**](TerminalApi.md#createTerminalCheckout) | **POST** /v2/terminals/checkouts | CreateTerminalCheckout
-*SquareConnect.TerminalApi* | [**createTerminalRefund**](TerminalApi.md#createTerminalRefund) | **POST** /v2/terminals/refunds | CreateTerminalRefund
-*SquareConnect.TerminalApi* | [**getTerminalCheckout**](TerminalApi.md#getTerminalCheckout) | **GET** /v2/terminals/checkouts/{checkout_id} | GetTerminalCheckout
-*SquareConnect.TerminalApi* | [**getTerminalRefund**](TerminalApi.md#getTerminalRefund) | **GET** /v2/terminals/refunds/{terminal_refund_id} | GetTerminalRefund
-*SquareConnect.TerminalApi* | [**searchTerminalCheckouts**](TerminalApi.md#searchTerminalCheckouts) | **POST** /v2/terminals/checkouts/search | SearchTerminalCheckouts
-*SquareConnect.TerminalApi* | [**searchTerminalRefunds**](TerminalApi.md#searchTerminalRefunds) | **POST** /v2/terminals/refunds/search | SearchTerminalRefunds
-*SquareConnect.TransactionsApi* | [**captureTransaction**](TransactionsApi.md#captureTransaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture | CaptureTransaction
-*SquareConnect.TransactionsApi* | [**charge**](TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions | Charge
-*SquareConnect.TransactionsApi* | [**createRefund**](TransactionsApi.md#createRefund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund | CreateRefund
-*SquareConnect.TransactionsApi* | [**listRefunds**](TransactionsApi.md#listRefunds) | **GET** /v2/locations/{location_id}/refunds | ListRefunds
-*SquareConnect.TransactionsApi* | [**listTransactions**](TransactionsApi.md#listTransactions) | **GET** /v2/locations/{location_id}/transactions | ListTransactions
-*SquareConnect.TransactionsApi* | [**retrieveTransaction**](TransactionsApi.md#retrieveTransaction) | **GET** /v2/locations/{location_id}/transactions/{transaction_id} | RetrieveTransaction
-*SquareConnect.TransactionsApi* | [**voidTransaction**](TransactionsApi.md#voidTransaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/void | VoidTransaction
-*SquareConnect.V1EmployeesApi* | [**createEmployee**](V1EmployeesApi.md#createEmployee) | **POST** /v1/me/employees | CreateEmployee
-*SquareConnect.V1EmployeesApi* | [**createEmployeeRole**](V1EmployeesApi.md#createEmployeeRole) | **POST** /v1/me/roles | CreateEmployeeRole
-*SquareConnect.V1EmployeesApi* | [**createTimecard**](V1EmployeesApi.md#createTimecard) | **POST** /v1/me/timecards | CreateTimecard
-*SquareConnect.V1EmployeesApi* | [**deleteTimecard**](V1EmployeesApi.md#deleteTimecard) | **DELETE** /v1/me/timecards/{timecard_id} | DeleteTimecard
-*SquareConnect.V1EmployeesApi* | [**listCashDrawerShifts**](V1EmployeesApi.md#listCashDrawerShifts) | **GET** /v1/{location_id}/cash-drawer-shifts | ListCashDrawerShifts
-*SquareConnect.V1EmployeesApi* | [**listEmployeeRoles**](V1EmployeesApi.md#listEmployeeRoles) | **GET** /v1/me/roles | ListEmployeeRoles
-*SquareConnect.V1EmployeesApi* | [**listEmployees**](V1EmployeesApi.md#listEmployees) | **GET** /v1/me/employees | ListEmployees
-*SquareConnect.V1EmployeesApi* | [**listTimecardEvents**](V1EmployeesApi.md#listTimecardEvents) | **GET** /v1/me/timecards/{timecard_id}/events | ListTimecardEvents
-*SquareConnect.V1EmployeesApi* | [**listTimecards**](V1EmployeesApi.md#listTimecards) | **GET** /v1/me/timecards | ListTimecards
-*SquareConnect.V1EmployeesApi* | [**retrieveCashDrawerShift**](V1EmployeesApi.md#retrieveCashDrawerShift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id} | RetrieveCashDrawerShift
-*SquareConnect.V1EmployeesApi* | [**retrieveEmployee**](V1EmployeesApi.md#retrieveEmployee) | **GET** /v1/me/employees/{employee_id} | RetrieveEmployee
-*SquareConnect.V1EmployeesApi* | [**retrieveEmployeeRole**](V1EmployeesApi.md#retrieveEmployeeRole) | **GET** /v1/me/roles/{role_id} | RetrieveEmployeeRole
-*SquareConnect.V1EmployeesApi* | [**retrieveTimecard**](V1EmployeesApi.md#retrieveTimecard) | **GET** /v1/me/timecards/{timecard_id} | RetrieveTimecard
-*SquareConnect.V1EmployeesApi* | [**updateEmployee**](V1EmployeesApi.md#updateEmployee) | **PUT** /v1/me/employees/{employee_id} | UpdateEmployee
-*SquareConnect.V1EmployeesApi* | [**updateEmployeeRole**](V1EmployeesApi.md#updateEmployeeRole) | **PUT** /v1/me/roles/{role_id} | UpdateEmployeeRole
-*SquareConnect.V1EmployeesApi* | [**updateTimecard**](V1EmployeesApi.md#updateTimecard) | **PUT** /v1/me/timecards/{timecard_id} | UpdateTimecard
-*SquareConnect.V1ItemsApi* | [**adjustInventory**](V1ItemsApi.md#adjustInventory) | **POST** /v1/{location_id}/inventory/{variation_id} | AdjustInventory
-*SquareConnect.V1ItemsApi* | [**applyFee**](V1ItemsApi.md#applyFee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id} | ApplyFee
-*SquareConnect.V1ItemsApi* | [**applyModifierList**](V1ItemsApi.md#applyModifierList) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | ApplyModifierList
-*SquareConnect.V1ItemsApi* | [**createCategory**](V1ItemsApi.md#createCategory) | **POST** /v1/{location_id}/categories | CreateCategory
-*SquareConnect.V1ItemsApi* | [**createDiscount**](V1ItemsApi.md#createDiscount) | **POST** /v1/{location_id}/discounts | CreateDiscount
-*SquareConnect.V1ItemsApi* | [**createFee**](V1ItemsApi.md#createFee) | **POST** /v1/{location_id}/fees | CreateFee
-*SquareConnect.V1ItemsApi* | [**createItem**](V1ItemsApi.md#createItem) | **POST** /v1/{location_id}/items | CreateItem
-*SquareConnect.V1ItemsApi* | [**createModifierList**](V1ItemsApi.md#createModifierList) | **POST** /v1/{location_id}/modifier-lists | CreateModifierList
-*SquareConnect.V1ItemsApi* | [**createModifierOption**](V1ItemsApi.md#createModifierOption) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options | CreateModifierOption
-*SquareConnect.V1ItemsApi* | [**createPage**](V1ItemsApi.md#createPage) | **POST** /v1/{location_id}/pages | CreatePage
-*SquareConnect.V1ItemsApi* | [**createVariation**](V1ItemsApi.md#createVariation) | **POST** /v1/{location_id}/items/{item_id}/variations | CreateVariation
-*SquareConnect.V1ItemsApi* | [**deleteCategory**](V1ItemsApi.md#deleteCategory) | **DELETE** /v1/{location_id}/categories/{category_id} | DeleteCategory
-*SquareConnect.V1ItemsApi* | [**deleteDiscount**](V1ItemsApi.md#deleteDiscount) | **DELETE** /v1/{location_id}/discounts/{discount_id} | DeleteDiscount
-*SquareConnect.V1ItemsApi* | [**deleteFee**](V1ItemsApi.md#deleteFee) | **DELETE** /v1/{location_id}/fees/{fee_id} | DeleteFee
-*SquareConnect.V1ItemsApi* | [**deleteItem**](V1ItemsApi.md#deleteItem) | **DELETE** /v1/{location_id}/items/{item_id} | DeleteItem
-*SquareConnect.V1ItemsApi* | [**deleteModifierList**](V1ItemsApi.md#deleteModifierList) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id} | DeleteModifierList
-*SquareConnect.V1ItemsApi* | [**deleteModifierOption**](V1ItemsApi.md#deleteModifierOption) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | DeleteModifierOption
-*SquareConnect.V1ItemsApi* | [**deletePage**](V1ItemsApi.md#deletePage) | **DELETE** /v1/{location_id}/pages/{page_id} | DeletePage
-*SquareConnect.V1ItemsApi* | [**deletePageCell**](V1ItemsApi.md#deletePageCell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells | DeletePageCell
-*SquareConnect.V1ItemsApi* | [**deleteVariation**](V1ItemsApi.md#deleteVariation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id} | DeleteVariation
-*SquareConnect.V1ItemsApi* | [**listCategories**](V1ItemsApi.md#listCategories) | **GET** /v1/{location_id}/categories | ListCategories
-*SquareConnect.V1ItemsApi* | [**listDiscounts**](V1ItemsApi.md#listDiscounts) | **GET** /v1/{location_id}/discounts | ListDiscounts
-*SquareConnect.V1ItemsApi* | [**listFees**](V1ItemsApi.md#listFees) | **GET** /v1/{location_id}/fees | ListFees
-*SquareConnect.V1ItemsApi* | [**listInventory**](V1ItemsApi.md#listInventory) | **GET** /v1/{location_id}/inventory | ListInventory
-*SquareConnect.V1ItemsApi* | [**listItems**](V1ItemsApi.md#listItems) | **GET** /v1/{location_id}/items | ListItems
-*SquareConnect.V1ItemsApi* | [**listModifierLists**](V1ItemsApi.md#listModifierLists) | **GET** /v1/{location_id}/modifier-lists | ListModifierLists
-*SquareConnect.V1ItemsApi* | [**listPages**](V1ItemsApi.md#listPages) | **GET** /v1/{location_id}/pages | ListPages
-*SquareConnect.V1ItemsApi* | [**removeFee**](V1ItemsApi.md#removeFee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id} | RemoveFee
-*SquareConnect.V1ItemsApi* | [**removeModifierList**](V1ItemsApi.md#removeModifierList) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | RemoveModifierList
-*SquareConnect.V1ItemsApi* | [**retrieveItem**](V1ItemsApi.md#retrieveItem) | **GET** /v1/{location_id}/items/{item_id} | RetrieveItem
-*SquareConnect.V1ItemsApi* | [**retrieveModifierList**](V1ItemsApi.md#retrieveModifierList) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id} | RetrieveModifierList
-*SquareConnect.V1ItemsApi* | [**updateCategory**](V1ItemsApi.md#updateCategory) | **PUT** /v1/{location_id}/categories/{category_id} | UpdateCategory
-*SquareConnect.V1ItemsApi* | [**updateDiscount**](V1ItemsApi.md#updateDiscount) | **PUT** /v1/{location_id}/discounts/{discount_id} | UpdateDiscount
-*SquareConnect.V1ItemsApi* | [**updateFee**](V1ItemsApi.md#updateFee) | **PUT** /v1/{location_id}/fees/{fee_id} | UpdateFee
-*SquareConnect.V1ItemsApi* | [**updateItem**](V1ItemsApi.md#updateItem) | **PUT** /v1/{location_id}/items/{item_id} | UpdateItem
-*SquareConnect.V1ItemsApi* | [**updateModifierList**](V1ItemsApi.md#updateModifierList) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id} | UpdateModifierList
-*SquareConnect.V1ItemsApi* | [**updateModifierOption**](V1ItemsApi.md#updateModifierOption) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | UpdateModifierOption
-*SquareConnect.V1ItemsApi* | [**updatePage**](V1ItemsApi.md#updatePage) | **PUT** /v1/{location_id}/pages/{page_id} | UpdatePage
-*SquareConnect.V1ItemsApi* | [**updatePageCell**](V1ItemsApi.md#updatePageCell) | **PUT** /v1/{location_id}/pages/{page_id}/cells | UpdatePageCell
-*SquareConnect.V1ItemsApi* | [**updateVariation**](V1ItemsApi.md#updateVariation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id} | UpdateVariation
-*SquareConnect.V1LocationsApi* | [**listLocations**](V1LocationsApi.md#listLocations) | **GET** /v1/me/locations | ListLocations
-*SquareConnect.V1LocationsApi* | [**retrieveBusiness**](V1LocationsApi.md#retrieveBusiness) | **GET** /v1/me | RetrieveBusiness
-*SquareConnect.V1TransactionsApi* | [**createRefund**](V1TransactionsApi.md#createRefund) | **POST** /v1/{location_id}/refunds | CreateRefund
-*SquareConnect.V1TransactionsApi* | [**listBankAccounts**](V1TransactionsApi.md#listBankAccounts) | **GET** /v1/{location_id}/bank-accounts | ListBankAccounts
-*SquareConnect.V1TransactionsApi* | [**listOrders**](V1TransactionsApi.md#listOrders) | **GET** /v1/{location_id}/orders | ListOrders
-*SquareConnect.V1TransactionsApi* | [**listPayments**](V1TransactionsApi.md#listPayments) | **GET** /v1/{location_id}/payments | ListPayments
-*SquareConnect.V1TransactionsApi* | [**listRefunds**](V1TransactionsApi.md#listRefunds) | **GET** /v1/{location_id}/refunds | ListRefunds
-*SquareConnect.V1TransactionsApi* | [**listSettlements**](V1TransactionsApi.md#listSettlements) | **GET** /v1/{location_id}/settlements | ListSettlements
-*SquareConnect.V1TransactionsApi* | [**retrieveBankAccount**](V1TransactionsApi.md#retrieveBankAccount) | **GET** /v1/{location_id}/bank-accounts/{bank_account_id} | RetrieveBankAccount
-*SquareConnect.V1TransactionsApi* | [**retrieveOrder**](V1TransactionsApi.md#retrieveOrder) | **GET** /v1/{location_id}/orders/{order_id} | RetrieveOrder
-*SquareConnect.V1TransactionsApi* | [**retrievePayment**](V1TransactionsApi.md#retrievePayment) | **GET** /v1/{location_id}/payments/{payment_id} | RetrievePayment
-*SquareConnect.V1TransactionsApi* | [**retrieveSettlement**](V1TransactionsApi.md#retrieveSettlement) | **GET** /v1/{location_id}/settlements/{settlement_id} | RetrieveSettlement
-*SquareConnect.V1TransactionsApi* | [**updateOrder**](V1TransactionsApi.md#updateOrder) | **PUT** /v1/{location_id}/orders/{order_id} | UpdateOrder
+*SquareConnect.ApplePayApi* | [**registerDomain**](docs/ApplePayApi.md#registerDomain) | **POST** /v2/apple-pay/domains | RegisterDomain
+*SquareConnect.BankAccountsApi* | [**getBankAccount**](docs/BankAccountsApi.md#getBankAccount) | **GET** /v2/bank-accounts/{bank_account_id} | GetBankAccount
+*SquareConnect.BankAccountsApi* | [**getBankAccountByV1Id**](docs/BankAccountsApi.md#getBankAccountByV1Id) | **GET** /v2/bank-accounts/by-v1-id/{v1_bank_account_id} | GetBankAccountByV1Id
+*SquareConnect.BankAccountsApi* | [**listBankAccounts**](docs/BankAccountsApi.md#listBankAccounts) | **GET** /v2/bank-accounts | ListBankAccounts
+*SquareConnect.BookingsApi* | [**cancelBooking**](docs/BookingsApi.md#cancelBooking) | **POST** /v2/bookings/{booking_id}/cancel | CancelBooking
+*SquareConnect.BookingsApi* | [**createBooking**](docs/BookingsApi.md#createBooking) | **POST** /v2/bookings | CreateBooking
+*SquareConnect.BookingsApi* | [**listTeamMemberBookingProfiles**](docs/BookingsApi.md#listTeamMemberBookingProfiles) | **GET** /v2/bookings/team-member-booking-profiles | ListTeamMemberBookingProfiles
+*SquareConnect.BookingsApi* | [**retrieveBooking**](docs/BookingsApi.md#retrieveBooking) | **GET** /v2/bookings/{booking_id} | RetrieveBooking
+*SquareConnect.BookingsApi* | [**retrieveBusinessBookingProfile**](docs/BookingsApi.md#retrieveBusinessBookingProfile) | **GET** /v2/bookings/business-booking-profile | RetrieveBusinessBookingProfile
+*SquareConnect.BookingsApi* | [**retrieveTeamMemberBookingProfile**](docs/BookingsApi.md#retrieveTeamMemberBookingProfile) | **GET** /v2/bookings/team-member-booking-profiles/{team_member_id} | RetrieveTeamMemberBookingProfile
+*SquareConnect.BookingsApi* | [**searchAvailability**](docs/BookingsApi.md#searchAvailability) | **POST** /v2/bookings/availability/search | SearchAvailability
+*SquareConnect.BookingsApi* | [**updateBooking**](docs/BookingsApi.md#updateBooking) | **PUT** /v2/bookings/{booking_id} | UpdateBooking
+*SquareConnect.CashDrawersApi* | [**listCashDrawerShiftEvents**](docs/CashDrawersApi.md#listCashDrawerShiftEvents) | **GET** /v2/cash-drawers/shifts/{shift_id}/events | ListCashDrawerShiftEvents
+*SquareConnect.CashDrawersApi* | [**listCashDrawerShifts**](docs/CashDrawersApi.md#listCashDrawerShifts) | **GET** /v2/cash-drawers/shifts | ListCashDrawerShifts
+*SquareConnect.CashDrawersApi* | [**retrieveCashDrawerShift**](docs/CashDrawersApi.md#retrieveCashDrawerShift) | **GET** /v2/cash-drawers/shifts/{shift_id} | RetrieveCashDrawerShift
+*SquareConnect.CatalogApi* | [**batchDeleteCatalogObjects**](docs/CatalogApi.md#batchDeleteCatalogObjects) | **POST** /v2/catalog/batch-delete | BatchDeleteCatalogObjects
+*SquareConnect.CatalogApi* | [**batchRetrieveCatalogObjects**](docs/CatalogApi.md#batchRetrieveCatalogObjects) | **POST** /v2/catalog/batch-retrieve | BatchRetrieveCatalogObjects
+*SquareConnect.CatalogApi* | [**batchUpsertCatalogObjects**](docs/CatalogApi.md#batchUpsertCatalogObjects) | **POST** /v2/catalog/batch-upsert | BatchUpsertCatalogObjects
+*SquareConnect.CatalogApi* | [**catalogInfo**](docs/CatalogApi.md#catalogInfo) | **GET** /v2/catalog/info | CatalogInfo
+*SquareConnect.CatalogApi* | [**deleteCatalogObject**](docs/CatalogApi.md#deleteCatalogObject) | **DELETE** /v2/catalog/object/{object_id} | DeleteCatalogObject
+*SquareConnect.CatalogApi* | [**listCatalog**](docs/CatalogApi.md#listCatalog) | **GET** /v2/catalog/list | ListCatalog
+*SquareConnect.CatalogApi* | [**retrieveCatalogObject**](docs/CatalogApi.md#retrieveCatalogObject) | **GET** /v2/catalog/object/{object_id} | RetrieveCatalogObject
+*SquareConnect.CatalogApi* | [**searchCatalogItems**](docs/CatalogApi.md#searchCatalogItems) | **POST** /v2/catalog/search-catalog-items | SearchCatalogItems
+*SquareConnect.CatalogApi* | [**searchCatalogObjects**](docs/CatalogApi.md#searchCatalogObjects) | **POST** /v2/catalog/search | SearchCatalogObjects
+*SquareConnect.CatalogApi* | [**updateItemModifierLists**](docs/CatalogApi.md#updateItemModifierLists) | **POST** /v2/catalog/update-item-modifier-lists | UpdateItemModifierLists
+*SquareConnect.CatalogApi* | [**updateItemTaxes**](docs/CatalogApi.md#updateItemTaxes) | **POST** /v2/catalog/update-item-taxes | UpdateItemTaxes
+*SquareConnect.CatalogApi* | [**upsertCatalogObject**](docs/CatalogApi.md#upsertCatalogObject) | **POST** /v2/catalog/object | UpsertCatalogObject
+*SquareConnect.CheckoutApi* | [**createCheckout**](docs/CheckoutApi.md#createCheckout) | **POST** /v2/locations/{location_id}/checkouts | CreateCheckout
+*SquareConnect.CustomerGroupsApi* | [**createCustomerGroup**](docs/CustomerGroupsApi.md#createCustomerGroup) | **POST** /v2/customers/groups | CreateCustomerGroup
+*SquareConnect.CustomerGroupsApi* | [**deleteCustomerGroup**](docs/CustomerGroupsApi.md#deleteCustomerGroup) | **DELETE** /v2/customers/groups/{group_id} | DeleteCustomerGroup
+*SquareConnect.CustomerGroupsApi* | [**listCustomerGroups**](docs/CustomerGroupsApi.md#listCustomerGroups) | **GET** /v2/customers/groups | ListCustomerGroups
+*SquareConnect.CustomerGroupsApi* | [**retrieveCustomerGroup**](docs/CustomerGroupsApi.md#retrieveCustomerGroup) | **GET** /v2/customers/groups/{group_id} | RetrieveCustomerGroup
+*SquareConnect.CustomerGroupsApi* | [**updateCustomerGroup**](docs/CustomerGroupsApi.md#updateCustomerGroup) | **PUT** /v2/customers/groups/{group_id} | UpdateCustomerGroup
+*SquareConnect.CustomerSegmentsApi* | [**listCustomerSegments**](docs/CustomerSegmentsApi.md#listCustomerSegments) | **GET** /v2/customers/segments | ListCustomerSegments
+*SquareConnect.CustomerSegmentsApi* | [**retrieveCustomerSegment**](docs/CustomerSegmentsApi.md#retrieveCustomerSegment) | **GET** /v2/customers/segments/{segment_id} | RetrieveCustomerSegment
+*SquareConnect.CustomersApi* | [**addGroupToCustomer**](docs/CustomersApi.md#addGroupToCustomer) | **PUT** /v2/customers/{customer_id}/groups/{group_id} | AddGroupToCustomer
+*SquareConnect.CustomersApi* | [**createCustomer**](docs/CustomersApi.md#createCustomer) | **POST** /v2/customers | CreateCustomer
+*SquareConnect.CustomersApi* | [**createCustomerCard**](docs/CustomersApi.md#createCustomerCard) | **POST** /v2/customers/{customer_id}/cards | CreateCustomerCard
+*SquareConnect.CustomersApi* | [**deleteCustomer**](docs/CustomersApi.md#deleteCustomer) | **DELETE** /v2/customers/{customer_id} | DeleteCustomer
+*SquareConnect.CustomersApi* | [**deleteCustomerCard**](docs/CustomersApi.md#deleteCustomerCard) | **DELETE** /v2/customers/{customer_id}/cards/{card_id} | DeleteCustomerCard
+*SquareConnect.CustomersApi* | [**listCustomers**](docs/CustomersApi.md#listCustomers) | **GET** /v2/customers | ListCustomers
+*SquareConnect.CustomersApi* | [**removeGroupFromCustomer**](docs/CustomersApi.md#removeGroupFromCustomer) | **DELETE** /v2/customers/{customer_id}/groups/{group_id} | RemoveGroupFromCustomer
+*SquareConnect.CustomersApi* | [**retrieveCustomer**](docs/CustomersApi.md#retrieveCustomer) | **GET** /v2/customers/{customer_id} | RetrieveCustomer
+*SquareConnect.CustomersApi* | [**searchCustomers**](docs/CustomersApi.md#searchCustomers) | **POST** /v2/customers/search | SearchCustomers
+*SquareConnect.CustomersApi* | [**updateCustomer**](docs/CustomersApi.md#updateCustomer) | **PUT** /v2/customers/{customer_id} | UpdateCustomer
+*SquareConnect.DevicesApi* | [**createDeviceCode**](docs/DevicesApi.md#createDeviceCode) | **POST** /v2/devices/codes | CreateDeviceCode
+*SquareConnect.DevicesApi* | [**getDeviceCode**](docs/DevicesApi.md#getDeviceCode) | **GET** /v2/devices/codes/{id} | GetDeviceCode
+*SquareConnect.DevicesApi* | [**listDeviceCodes**](docs/DevicesApi.md#listDeviceCodes) | **GET** /v2/devices/codes | ListDeviceCodes
+*SquareConnect.DisputesApi* | [**acceptDispute**](docs/DisputesApi.md#acceptDispute) | **POST** /v2/disputes/{dispute_id}/accept | AcceptDispute
+*SquareConnect.DisputesApi* | [**createDisputeEvidenceText**](docs/DisputesApi.md#createDisputeEvidenceText) | **POST** /v2/disputes/{dispute_id}/evidence_text | CreateDisputeEvidenceText
+*SquareConnect.DisputesApi* | [**listDisputeEvidence**](docs/DisputesApi.md#listDisputeEvidence) | **GET** /v2/disputes/{dispute_id}/evidence | ListDisputeEvidence
+*SquareConnect.DisputesApi* | [**listDisputes**](docs/DisputesApi.md#listDisputes) | **GET** /v2/disputes | ListDisputes
+*SquareConnect.DisputesApi* | [**removeDisputeEvidence**](docs/DisputesApi.md#removeDisputeEvidence) | **DELETE** /v2/disputes/{dispute_id}/evidence/{evidence_id} | RemoveDisputeEvidence
+*SquareConnect.DisputesApi* | [**retrieveDispute**](docs/DisputesApi.md#retrieveDispute) | **GET** /v2/disputes/{dispute_id} | RetrieveDispute
+*SquareConnect.DisputesApi* | [**retrieveDisputeEvidence**](docs/DisputesApi.md#retrieveDisputeEvidence) | **GET** /v2/disputes/{dispute_id}/evidence/{evidence_id} | RetrieveDisputeEvidence
+*SquareConnect.DisputesApi* | [**submitEvidence**](docs/DisputesApi.md#submitEvidence) | **POST** /v2/disputes/{dispute_id}/submit-evidence | SubmitEvidence
+*SquareConnect.EmployeesApi* | [**listEmployees**](docs/EmployeesApi.md#listEmployees) | **GET** /v2/employees | ListEmployees
+*SquareConnect.EmployeesApi* | [**retrieveEmployee**](docs/EmployeesApi.md#retrieveEmployee) | **GET** /v2/employees/{id} | RetrieveEmployee
+*SquareConnect.InventoryApi* | [**batchChangeInventory**](docs/InventoryApi.md#batchChangeInventory) | **POST** /v2/inventory/batch-change | BatchChangeInventory
+*SquareConnect.InventoryApi* | [**batchRetrieveInventoryChanges**](docs/InventoryApi.md#batchRetrieveInventoryChanges) | **POST** /v2/inventory/batch-retrieve-changes | BatchRetrieveInventoryChanges
+*SquareConnect.InventoryApi* | [**batchRetrieveInventoryCounts**](docs/InventoryApi.md#batchRetrieveInventoryCounts) | **POST** /v2/inventory/batch-retrieve-counts | BatchRetrieveInventoryCounts
+*SquareConnect.InventoryApi* | [**retrieveInventoryAdjustment**](docs/InventoryApi.md#retrieveInventoryAdjustment) | **GET** /v2/inventory/adjustment/{adjustment_id} | RetrieveInventoryAdjustment
+*SquareConnect.InventoryApi* | [**retrieveInventoryChanges**](docs/InventoryApi.md#retrieveInventoryChanges) | **GET** /v2/inventory/{catalog_object_id}/changes | RetrieveInventoryChanges
+*SquareConnect.InventoryApi* | [**retrieveInventoryCount**](docs/InventoryApi.md#retrieveInventoryCount) | **GET** /v2/inventory/{catalog_object_id} | RetrieveInventoryCount
+*SquareConnect.InventoryApi* | [**retrieveInventoryPhysicalCount**](docs/InventoryApi.md#retrieveInventoryPhysicalCount) | **GET** /v2/inventory/physical-count/{physical_count_id} | RetrieveInventoryPhysicalCount
+*SquareConnect.InvoicesApi* | [**cancelInvoice**](docs/InvoicesApi.md#cancelInvoice) | **POST** /v2/invoices/{invoice_id}/cancel | CancelInvoice
+*SquareConnect.InvoicesApi* | [**createInvoice**](docs/InvoicesApi.md#createInvoice) | **POST** /v2/invoices | CreateInvoice
+*SquareConnect.InvoicesApi* | [**deleteInvoice**](docs/InvoicesApi.md#deleteInvoice) | **DELETE** /v2/invoices/{invoice_id} | DeleteInvoice
+*SquareConnect.InvoicesApi* | [**getInvoice**](docs/InvoicesApi.md#getInvoice) | **GET** /v2/invoices/{invoice_id} | GetInvoice
+*SquareConnect.InvoicesApi* | [**listInvoices**](docs/InvoicesApi.md#listInvoices) | **GET** /v2/invoices | ListInvoices
+*SquareConnect.InvoicesApi* | [**publishInvoice**](docs/InvoicesApi.md#publishInvoice) | **POST** /v2/invoices/{invoice_id}/publish | PublishInvoice
+*SquareConnect.InvoicesApi* | [**searchInvoices**](docs/InvoicesApi.md#searchInvoices) | **POST** /v2/invoices/search | SearchInvoices
+*SquareConnect.InvoicesApi* | [**updateInvoice**](docs/InvoicesApi.md#updateInvoice) | **PUT** /v2/invoices/{invoice_id} | UpdateInvoice
+*SquareConnect.LaborApi* | [**createBreakType**](docs/LaborApi.md#createBreakType) | **POST** /v2/labor/break-types | CreateBreakType
+*SquareConnect.LaborApi* | [**createShift**](docs/LaborApi.md#createShift) | **POST** /v2/labor/shifts | CreateShift
+*SquareConnect.LaborApi* | [**deleteBreakType**](docs/LaborApi.md#deleteBreakType) | **DELETE** /v2/labor/break-types/{id} | DeleteBreakType
+*SquareConnect.LaborApi* | [**deleteShift**](docs/LaborApi.md#deleteShift) | **DELETE** /v2/labor/shifts/{id} | DeleteShift
+*SquareConnect.LaborApi* | [**getBreakType**](docs/LaborApi.md#getBreakType) | **GET** /v2/labor/break-types/{id} | GetBreakType
+*SquareConnect.LaborApi* | [**getEmployeeWage**](docs/LaborApi.md#getEmployeeWage) | **GET** /v2/labor/employee-wages/{id} | GetEmployeeWage
+*SquareConnect.LaborApi* | [**getShift**](docs/LaborApi.md#getShift) | **GET** /v2/labor/shifts/{id} | GetShift
+*SquareConnect.LaborApi* | [**getTeamMemberWage**](docs/LaborApi.md#getTeamMemberWage) | **GET** /v2/labor/team-member-wages/{id} | GetTeamMemberWage
+*SquareConnect.LaborApi* | [**listBreakTypes**](docs/LaborApi.md#listBreakTypes) | **GET** /v2/labor/break-types | ListBreakTypes
+*SquareConnect.LaborApi* | [**listEmployeeWages**](docs/LaborApi.md#listEmployeeWages) | **GET** /v2/labor/employee-wages | ListEmployeeWages
+*SquareConnect.LaborApi* | [**listTeamMemberWages**](docs/LaborApi.md#listTeamMemberWages) | **GET** /v2/labor/team-member-wages | ListTeamMemberWages
+*SquareConnect.LaborApi* | [**listWorkweekConfigs**](docs/LaborApi.md#listWorkweekConfigs) | **GET** /v2/labor/workweek-configs | ListWorkweekConfigs
+*SquareConnect.LaborApi* | [**searchShifts**](docs/LaborApi.md#searchShifts) | **POST** /v2/labor/shifts/search | SearchShifts
+*SquareConnect.LaborApi* | [**updateBreakType**](docs/LaborApi.md#updateBreakType) | **PUT** /v2/labor/break-types/{id} | UpdateBreakType
+*SquareConnect.LaborApi* | [**updateShift**](docs/LaborApi.md#updateShift) | **PUT** /v2/labor/shifts/{id} | UpdateShift
+*SquareConnect.LaborApi* | [**updateWorkweekConfig**](docs/LaborApi.md#updateWorkweekConfig) | **PUT** /v2/labor/workweek-configs/{id} | UpdateWorkweekConfig
+*SquareConnect.LocationsApi* | [**createLocation**](docs/LocationsApi.md#createLocation) | **POST** /v2/locations | CreateLocation
+*SquareConnect.LocationsApi* | [**listLocations**](docs/LocationsApi.md#listLocations) | **GET** /v2/locations | ListLocations
+*SquareConnect.LocationsApi* | [**retrieveLocation**](docs/LocationsApi.md#retrieveLocation) | **GET** /v2/locations/{location_id} | RetrieveLocation
+*SquareConnect.LocationsApi* | [**updateLocation**](docs/LocationsApi.md#updateLocation) | **PUT** /v2/locations/{location_id} | UpdateLocation
+*SquareConnect.LoyaltyApi* | [**accumulateLoyaltyPoints**](docs/LoyaltyApi.md#accumulateLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/accumulate | AccumulateLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**adjustLoyaltyPoints**](docs/LoyaltyApi.md#adjustLoyaltyPoints) | **POST** /v2/loyalty/accounts/{account_id}/adjust | AdjustLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**calculateLoyaltyPoints**](docs/LoyaltyApi.md#calculateLoyaltyPoints) | **POST** /v2/loyalty/programs/{program_id}/calculate | CalculateLoyaltyPoints
+*SquareConnect.LoyaltyApi* | [**createLoyaltyAccount**](docs/LoyaltyApi.md#createLoyaltyAccount) | **POST** /v2/loyalty/accounts | CreateLoyaltyAccount
+*SquareConnect.LoyaltyApi* | [**createLoyaltyReward**](docs/LoyaltyApi.md#createLoyaltyReward) | **POST** /v2/loyalty/rewards | CreateLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**deleteLoyaltyReward**](docs/LoyaltyApi.md#deleteLoyaltyReward) | **DELETE** /v2/loyalty/rewards/{reward_id} | DeleteLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**listLoyaltyPrograms**](docs/LoyaltyApi.md#listLoyaltyPrograms) | **GET** /v2/loyalty/programs | ListLoyaltyPrograms
+*SquareConnect.LoyaltyApi* | [**redeemLoyaltyReward**](docs/LoyaltyApi.md#redeemLoyaltyReward) | **POST** /v2/loyalty/rewards/{reward_id}/redeem | RedeemLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyAccount**](docs/LoyaltyApi.md#retrieveLoyaltyAccount) | **GET** /v2/loyalty/accounts/{account_id} | RetrieveLoyaltyAccount
+*SquareConnect.LoyaltyApi* | [**retrieveLoyaltyReward**](docs/LoyaltyApi.md#retrieveLoyaltyReward) | **GET** /v2/loyalty/rewards/{reward_id} | RetrieveLoyaltyReward
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyAccounts**](docs/LoyaltyApi.md#searchLoyaltyAccounts) | **POST** /v2/loyalty/accounts/search | SearchLoyaltyAccounts
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyEvents**](docs/LoyaltyApi.md#searchLoyaltyEvents) | **POST** /v2/loyalty/events/search | SearchLoyaltyEvents
+*SquareConnect.LoyaltyApi* | [**searchLoyaltyRewards**](docs/LoyaltyApi.md#searchLoyaltyRewards) | **POST** /v2/loyalty/rewards/search | SearchLoyaltyRewards
+*SquareConnect.MerchantsApi* | [**listMerchants**](docs/MerchantsApi.md#listMerchants) | **GET** /v2/merchants | ListMerchants
+*SquareConnect.MerchantsApi* | [**retrieveMerchant**](docs/MerchantsApi.md#retrieveMerchant) | **GET** /v2/merchants/{merchant_id} | RetrieveMerchant
+*SquareConnect.MobileAuthorizationApi* | [**createMobileAuthorizationCode**](docs/MobileAuthorizationApi.md#createMobileAuthorizationCode) | **POST** /mobile/authorization-code | CreateMobileAuthorizationCode
+*SquareConnect.OAuthApi* | [**obtainToken**](docs/OAuthApi.md#obtainToken) | **POST** /oauth2/token | ObtainToken
+*SquareConnect.OAuthApi* | [**renewToken**](docs/OAuthApi.md#renewToken) | **POST** /oauth2/clients/{client_id}/access-token/renew | RenewToken
+*SquareConnect.OAuthApi* | [**revokeToken**](docs/OAuthApi.md#revokeToken) | **POST** /oauth2/revoke | RevokeToken
+*SquareConnect.OrdersApi* | [**batchRetrieveOrders**](docs/OrdersApi.md#batchRetrieveOrders) | **POST** /v2/orders/batch-retrieve | BatchRetrieveOrders
+*SquareConnect.OrdersApi* | [**calculateOrder**](docs/OrdersApi.md#calculateOrder) | **POST** /v2/orders/calculate | CalculateOrder
+*SquareConnect.OrdersApi* | [**createOrder**](docs/OrdersApi.md#createOrder) | **POST** /v2/orders | CreateOrder
+*SquareConnect.OrdersApi* | [**payOrder**](docs/OrdersApi.md#payOrder) | **POST** /v2/orders/{order_id}/pay | PayOrder
+*SquareConnect.OrdersApi* | [**retrieveOrder**](docs/OrdersApi.md#retrieveOrder) | **GET** /v2/orders/{order_id} | RetrieveOrder
+*SquareConnect.OrdersApi* | [**searchOrders**](docs/OrdersApi.md#searchOrders) | **POST** /v2/orders/search | SearchOrders
+*SquareConnect.OrdersApi* | [**updateOrder**](docs/OrdersApi.md#updateOrder) | **PUT** /v2/orders/{order_id} | UpdateOrder
+*SquareConnect.PaymentsApi* | [**cancelPayment**](docs/PaymentsApi.md#cancelPayment) | **POST** /v2/payments/{payment_id}/cancel | CancelPayment
+*SquareConnect.PaymentsApi* | [**cancelPaymentByIdempotencyKey**](docs/PaymentsApi.md#cancelPaymentByIdempotencyKey) | **POST** /v2/payments/cancel | CancelPaymentByIdempotencyKey
+*SquareConnect.PaymentsApi* | [**completePayment**](docs/PaymentsApi.md#completePayment) | **POST** /v2/payments/{payment_id}/complete | CompletePayment
+*SquareConnect.PaymentsApi* | [**createPayment**](docs/PaymentsApi.md#createPayment) | **POST** /v2/payments | CreatePayment
+*SquareConnect.PaymentsApi* | [**getPayment**](docs/PaymentsApi.md#getPayment) | **GET** /v2/payments/{payment_id} | GetPayment
+*SquareConnect.PaymentsApi* | [**listPayments**](docs/PaymentsApi.md#listPayments) | **GET** /v2/payments | ListPayments
+*SquareConnect.RefundsApi* | [**getPaymentRefund**](docs/RefundsApi.md#getPaymentRefund) | **GET** /v2/refunds/{refund_id} | GetPaymentRefund
+*SquareConnect.RefundsApi* | [**listPaymentRefunds**](docs/RefundsApi.md#listPaymentRefunds) | **GET** /v2/refunds | ListPaymentRefunds
+*SquareConnect.RefundsApi* | [**refundPayment**](docs/RefundsApi.md#refundPayment) | **POST** /v2/refunds | RefundPayment
+*SquareConnect.SubscriptionsApi* | [**cancelSubscription**](docs/SubscriptionsApi.md#cancelSubscription) | **POST** /v2/subscriptions/{subscription_id}/cancel | CancelSubscription
+*SquareConnect.SubscriptionsApi* | [**createSubscription**](docs/SubscriptionsApi.md#createSubscription) | **POST** /v2/subscriptions | CreateSubscription
+*SquareConnect.SubscriptionsApi* | [**listSubscriptionEvents**](docs/SubscriptionsApi.md#listSubscriptionEvents) | **GET** /v2/subscriptions/{subscription_id}/events | ListSubscriptionEvents
+*SquareConnect.SubscriptionsApi* | [**retrieveSubscription**](docs/SubscriptionsApi.md#retrieveSubscription) | **GET** /v2/subscriptions/{subscription_id} | RetrieveSubscription
+*SquareConnect.SubscriptionsApi* | [**searchSubscriptions**](docs/SubscriptionsApi.md#searchSubscriptions) | **POST** /v2/subscriptions/search | SearchSubscriptions
+*SquareConnect.SubscriptionsApi* | [**updateSubscription**](docs/SubscriptionsApi.md#updateSubscription) | **PUT** /v2/subscriptions/{subscription_id} | UpdateSubscription
+*SquareConnect.TeamApi* | [**bulkCreateTeamMembers**](docs/TeamApi.md#bulkCreateTeamMembers) | **POST** /v2/team-members/bulk-create | BulkCreateTeamMembers
+*SquareConnect.TeamApi* | [**bulkUpdateTeamMembers**](docs/TeamApi.md#bulkUpdateTeamMembers) | **POST** /v2/team-members/bulk-update | BulkUpdateTeamMembers
+*SquareConnect.TeamApi* | [**createTeamMember**](docs/TeamApi.md#createTeamMember) | **POST** /v2/team-members | CreateTeamMember
+*SquareConnect.TeamApi* | [**retrieveTeamMember**](docs/TeamApi.md#retrieveTeamMember) | **GET** /v2/team-members/{team_member_id} | RetrieveTeamMember
+*SquareConnect.TeamApi* | [**retrieveWageSetting**](docs/TeamApi.md#retrieveWageSetting) | **GET** /v2/team-members/{team_member_id}/wage-setting | RetrieveWageSetting
+*SquareConnect.TeamApi* | [**searchTeamMembers**](docs/TeamApi.md#searchTeamMembers) | **POST** /v2/team-members/search | SearchTeamMembers
+*SquareConnect.TeamApi* | [**updateTeamMember**](docs/TeamApi.md#updateTeamMember) | **PUT** /v2/team-members/{team_member_id} | UpdateTeamMember
+*SquareConnect.TeamApi* | [**updateWageSetting**](docs/TeamApi.md#updateWageSetting) | **PUT** /v2/team-members/{team_member_id}/wage-setting | UpdateWageSetting
+*SquareConnect.TerminalApi* | [**cancelTerminalCheckout**](docs/TerminalApi.md#cancelTerminalCheckout) | **POST** /v2/terminals/checkouts/{checkout_id}/cancel | CancelTerminalCheckout
+*SquareConnect.TerminalApi* | [**cancelTerminalRefund**](docs/TerminalApi.md#cancelTerminalRefund) | **POST** /v2/terminals/refunds/{terminal_refund_id}/cancel | CancelTerminalRefund
+*SquareConnect.TerminalApi* | [**createTerminalCheckout**](docs/TerminalApi.md#createTerminalCheckout) | **POST** /v2/terminals/checkouts | CreateTerminalCheckout
+*SquareConnect.TerminalApi* | [**createTerminalRefund**](docs/TerminalApi.md#createTerminalRefund) | **POST** /v2/terminals/refunds | CreateTerminalRefund
+*SquareConnect.TerminalApi* | [**getTerminalCheckout**](docs/TerminalApi.md#getTerminalCheckout) | **GET** /v2/terminals/checkouts/{checkout_id} | GetTerminalCheckout
+*SquareConnect.TerminalApi* | [**getTerminalRefund**](docs/TerminalApi.md#getTerminalRefund) | **GET** /v2/terminals/refunds/{terminal_refund_id} | GetTerminalRefund
+*SquareConnect.TerminalApi* | [**searchTerminalCheckouts**](docs/TerminalApi.md#searchTerminalCheckouts) | **POST** /v2/terminals/checkouts/search | SearchTerminalCheckouts
+*SquareConnect.TerminalApi* | [**searchTerminalRefunds**](docs/TerminalApi.md#searchTerminalRefunds) | **POST** /v2/terminals/refunds/search | SearchTerminalRefunds
+*SquareConnect.TransactionsApi* | [**captureTransaction**](docs/TransactionsApi.md#captureTransaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture | CaptureTransaction
+*SquareConnect.TransactionsApi* | [**charge**](docs/TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions | Charge
+*SquareConnect.TransactionsApi* | [**createRefund**](docs/TransactionsApi.md#createRefund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund | CreateRefund
+*SquareConnect.TransactionsApi* | [**listRefunds**](docs/TransactionsApi.md#listRefunds) | **GET** /v2/locations/{location_id}/refunds | ListRefunds
+*SquareConnect.TransactionsApi* | [**listTransactions**](docs/TransactionsApi.md#listTransactions) | **GET** /v2/locations/{location_id}/transactions | ListTransactions
+*SquareConnect.TransactionsApi* | [**retrieveTransaction**](docs/TransactionsApi.md#retrieveTransaction) | **GET** /v2/locations/{location_id}/transactions/{transaction_id} | RetrieveTransaction
+*SquareConnect.TransactionsApi* | [**voidTransaction**](docs/TransactionsApi.md#voidTransaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/void | VoidTransaction
+*SquareConnect.V1EmployeesApi* | [**createEmployee**](docs/V1EmployeesApi.md#createEmployee) | **POST** /v1/me/employees | CreateEmployee
+*SquareConnect.V1EmployeesApi* | [**createEmployeeRole**](docs/V1EmployeesApi.md#createEmployeeRole) | **POST** /v1/me/roles | CreateEmployeeRole
+*SquareConnect.V1EmployeesApi* | [**createTimecard**](docs/V1EmployeesApi.md#createTimecard) | **POST** /v1/me/timecards | CreateTimecard
+*SquareConnect.V1EmployeesApi* | [**deleteTimecard**](docs/V1EmployeesApi.md#deleteTimecard) | **DELETE** /v1/me/timecards/{timecard_id} | DeleteTimecard
+*SquareConnect.V1EmployeesApi* | [**listCashDrawerShifts**](docs/V1EmployeesApi.md#listCashDrawerShifts) | **GET** /v1/{location_id}/cash-drawer-shifts | ListCashDrawerShifts
+*SquareConnect.V1EmployeesApi* | [**listEmployeeRoles**](docs/V1EmployeesApi.md#listEmployeeRoles) | **GET** /v1/me/roles | ListEmployeeRoles
+*SquareConnect.V1EmployeesApi* | [**listEmployees**](docs/V1EmployeesApi.md#listEmployees) | **GET** /v1/me/employees | ListEmployees
+*SquareConnect.V1EmployeesApi* | [**listTimecardEvents**](docs/V1EmployeesApi.md#listTimecardEvents) | **GET** /v1/me/timecards/{timecard_id}/events | ListTimecardEvents
+*SquareConnect.V1EmployeesApi* | [**listTimecards**](docs/V1EmployeesApi.md#listTimecards) | **GET** /v1/me/timecards | ListTimecards
+*SquareConnect.V1EmployeesApi* | [**retrieveCashDrawerShift**](docs/V1EmployeesApi.md#retrieveCashDrawerShift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id} | RetrieveCashDrawerShift
+*SquareConnect.V1EmployeesApi* | [**retrieveEmployee**](docs/V1EmployeesApi.md#retrieveEmployee) | **GET** /v1/me/employees/{employee_id} | RetrieveEmployee
+*SquareConnect.V1EmployeesApi* | [**retrieveEmployeeRole**](docs/V1EmployeesApi.md#retrieveEmployeeRole) | **GET** /v1/me/roles/{role_id} | RetrieveEmployeeRole
+*SquareConnect.V1EmployeesApi* | [**retrieveTimecard**](docs/V1EmployeesApi.md#retrieveTimecard) | **GET** /v1/me/timecards/{timecard_id} | RetrieveTimecard
+*SquareConnect.V1EmployeesApi* | [**updateEmployee**](docs/V1EmployeesApi.md#updateEmployee) | **PUT** /v1/me/employees/{employee_id} | UpdateEmployee
+*SquareConnect.V1EmployeesApi* | [**updateEmployeeRole**](docs/V1EmployeesApi.md#updateEmployeeRole) | **PUT** /v1/me/roles/{role_id} | UpdateEmployeeRole
+*SquareConnect.V1EmployeesApi* | [**updateTimecard**](docs/V1EmployeesApi.md#updateTimecard) | **PUT** /v1/me/timecards/{timecard_id} | UpdateTimecard
+*SquareConnect.V1ItemsApi* | [**adjustInventory**](docs/V1ItemsApi.md#adjustInventory) | **POST** /v1/{location_id}/inventory/{variation_id} | AdjustInventory
+*SquareConnect.V1ItemsApi* | [**applyFee**](docs/V1ItemsApi.md#applyFee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id} | ApplyFee
+*SquareConnect.V1ItemsApi* | [**applyModifierList**](docs/V1ItemsApi.md#applyModifierList) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | ApplyModifierList
+*SquareConnect.V1ItemsApi* | [**createCategory**](docs/V1ItemsApi.md#createCategory) | **POST** /v1/{location_id}/categories | CreateCategory
+*SquareConnect.V1ItemsApi* | [**createDiscount**](docs/V1ItemsApi.md#createDiscount) | **POST** /v1/{location_id}/discounts | CreateDiscount
+*SquareConnect.V1ItemsApi* | [**createFee**](docs/V1ItemsApi.md#createFee) | **POST** /v1/{location_id}/fees | CreateFee
+*SquareConnect.V1ItemsApi* | [**createItem**](docs/V1ItemsApi.md#createItem) | **POST** /v1/{location_id}/items | CreateItem
+*SquareConnect.V1ItemsApi* | [**createModifierList**](docs/V1ItemsApi.md#createModifierList) | **POST** /v1/{location_id}/modifier-lists | CreateModifierList
+*SquareConnect.V1ItemsApi* | [**createModifierOption**](docs/V1ItemsApi.md#createModifierOption) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options | CreateModifierOption
+*SquareConnect.V1ItemsApi* | [**createPage**](docs/V1ItemsApi.md#createPage) | **POST** /v1/{location_id}/pages | CreatePage
+*SquareConnect.V1ItemsApi* | [**createVariation**](docs/V1ItemsApi.md#createVariation) | **POST** /v1/{location_id}/items/{item_id}/variations | CreateVariation
+*SquareConnect.V1ItemsApi* | [**deleteCategory**](docs/V1ItemsApi.md#deleteCategory) | **DELETE** /v1/{location_id}/categories/{category_id} | DeleteCategory
+*SquareConnect.V1ItemsApi* | [**deleteDiscount**](docs/V1ItemsApi.md#deleteDiscount) | **DELETE** /v1/{location_id}/discounts/{discount_id} | DeleteDiscount
+*SquareConnect.V1ItemsApi* | [**deleteFee**](docs/V1ItemsApi.md#deleteFee) | **DELETE** /v1/{location_id}/fees/{fee_id} | DeleteFee
+*SquareConnect.V1ItemsApi* | [**deleteItem**](docs/V1ItemsApi.md#deleteItem) | **DELETE** /v1/{location_id}/items/{item_id} | DeleteItem
+*SquareConnect.V1ItemsApi* | [**deleteModifierList**](docs/V1ItemsApi.md#deleteModifierList) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id} | DeleteModifierList
+*SquareConnect.V1ItemsApi* | [**deleteModifierOption**](docs/V1ItemsApi.md#deleteModifierOption) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | DeleteModifierOption
+*SquareConnect.V1ItemsApi* | [**deletePage**](docs/V1ItemsApi.md#deletePage) | **DELETE** /v1/{location_id}/pages/{page_id} | DeletePage
+*SquareConnect.V1ItemsApi* | [**deletePageCell**](docs/V1ItemsApi.md#deletePageCell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells | DeletePageCell
+*SquareConnect.V1ItemsApi* | [**deleteVariation**](docs/V1ItemsApi.md#deleteVariation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id} | DeleteVariation
+*SquareConnect.V1ItemsApi* | [**listCategories**](docs/V1ItemsApi.md#listCategories) | **GET** /v1/{location_id}/categories | ListCategories
+*SquareConnect.V1ItemsApi* | [**listDiscounts**](docs/V1ItemsApi.md#listDiscounts) | **GET** /v1/{location_id}/discounts | ListDiscounts
+*SquareConnect.V1ItemsApi* | [**listFees**](docs/V1ItemsApi.md#listFees) | **GET** /v1/{location_id}/fees | ListFees
+*SquareConnect.V1ItemsApi* | [**listInventory**](docs/V1ItemsApi.md#listInventory) | **GET** /v1/{location_id}/inventory | ListInventory
+*SquareConnect.V1ItemsApi* | [**listItems**](docs/V1ItemsApi.md#listItems) | **GET** /v1/{location_id}/items | ListItems
+*SquareConnect.V1ItemsApi* | [**listModifierLists**](docs/V1ItemsApi.md#listModifierLists) | **GET** /v1/{location_id}/modifier-lists | ListModifierLists
+*SquareConnect.V1ItemsApi* | [**listPages**](docs/V1ItemsApi.md#listPages) | **GET** /v1/{location_id}/pages | ListPages
+*SquareConnect.V1ItemsApi* | [**removeFee**](docs/V1ItemsApi.md#removeFee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id} | RemoveFee
+*SquareConnect.V1ItemsApi* | [**removeModifierList**](docs/V1ItemsApi.md#removeModifierList) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id} | RemoveModifierList
+*SquareConnect.V1ItemsApi* | [**retrieveItem**](docs/V1ItemsApi.md#retrieveItem) | **GET** /v1/{location_id}/items/{item_id} | RetrieveItem
+*SquareConnect.V1ItemsApi* | [**retrieveModifierList**](docs/V1ItemsApi.md#retrieveModifierList) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id} | RetrieveModifierList
+*SquareConnect.V1ItemsApi* | [**updateCategory**](docs/V1ItemsApi.md#updateCategory) | **PUT** /v1/{location_id}/categories/{category_id} | UpdateCategory
+*SquareConnect.V1ItemsApi* | [**updateDiscount**](docs/V1ItemsApi.md#updateDiscount) | **PUT** /v1/{location_id}/discounts/{discount_id} | UpdateDiscount
+*SquareConnect.V1ItemsApi* | [**updateFee**](docs/V1ItemsApi.md#updateFee) | **PUT** /v1/{location_id}/fees/{fee_id} | UpdateFee
+*SquareConnect.V1ItemsApi* | [**updateItem**](docs/V1ItemsApi.md#updateItem) | **PUT** /v1/{location_id}/items/{item_id} | UpdateItem
+*SquareConnect.V1ItemsApi* | [**updateModifierList**](docs/V1ItemsApi.md#updateModifierList) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id} | UpdateModifierList
+*SquareConnect.V1ItemsApi* | [**updateModifierOption**](docs/V1ItemsApi.md#updateModifierOption) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id} | UpdateModifierOption
+*SquareConnect.V1ItemsApi* | [**updatePage**](docs/V1ItemsApi.md#updatePage) | **PUT** /v1/{location_id}/pages/{page_id} | UpdatePage
+*SquareConnect.V1ItemsApi* | [**updatePageCell**](docs/V1ItemsApi.md#updatePageCell) | **PUT** /v1/{location_id}/pages/{page_id}/cells | UpdatePageCell
+*SquareConnect.V1ItemsApi* | [**updateVariation**](docs/V1ItemsApi.md#updateVariation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id} | UpdateVariation
+*SquareConnect.V1TransactionsApi* | [**createRefund**](docs/V1TransactionsApi.md#createRefund) | **POST** /v1/{location_id}/refunds | CreateRefund
+*SquareConnect.V1TransactionsApi* | [**listBankAccounts**](docs/V1TransactionsApi.md#listBankAccounts) | **GET** /v1/{location_id}/bank-accounts | ListBankAccounts
+*SquareConnect.V1TransactionsApi* | [**listOrders**](docs/V1TransactionsApi.md#listOrders) | **GET** /v1/{location_id}/orders | ListOrders
+*SquareConnect.V1TransactionsApi* | [**listPayments**](docs/V1TransactionsApi.md#listPayments) | **GET** /v1/{location_id}/payments | ListPayments
+*SquareConnect.V1TransactionsApi* | [**listRefunds**](docs/V1TransactionsApi.md#listRefunds) | **GET** /v1/{location_id}/refunds | ListRefunds
+*SquareConnect.V1TransactionsApi* | [**listSettlements**](docs/V1TransactionsApi.md#listSettlements) | **GET** /v1/{location_id}/settlements | ListSettlements
+*SquareConnect.V1TransactionsApi* | [**retrieveBankAccount**](docs/V1TransactionsApi.md#retrieveBankAccount) | **GET** /v1/{location_id}/bank-accounts/{bank_account_id} | RetrieveBankAccount
+*SquareConnect.V1TransactionsApi* | [**retrieveOrder**](docs/V1TransactionsApi.md#retrieveOrder) | **GET** /v1/{location_id}/orders/{order_id} | RetrieveOrder
+*SquareConnect.V1TransactionsApi* | [**retrievePayment**](docs/V1TransactionsApi.md#retrievePayment) | **GET** /v1/{location_id}/payments/{payment_id} | RetrievePayment
+*SquareConnect.V1TransactionsApi* | [**retrieveSettlement**](docs/V1TransactionsApi.md#retrieveSettlement) | **GET** /v1/{location_id}/settlements/{settlement_id} | RetrieveSettlement
+*SquareConnect.V1TransactionsApi* | [**updateOrder**](docs/V1TransactionsApi.md#updateOrder) | **PUT** /v1/{location_id}/orders/{order_id} | UpdateOrder
 
 
 ## Documentation for Models
 
- - [SquareConnect.AcceptDisputeRequest](AcceptDisputeRequest.md)
- - [SquareConnect.AcceptDisputeResponse](AcceptDisputeResponse.md)
- - [SquareConnect.AccumulateLoyaltyPointsRequest](AccumulateLoyaltyPointsRequest.md)
- - [SquareConnect.AccumulateLoyaltyPointsResponse](AccumulateLoyaltyPointsResponse.md)
- - [SquareConnect.ActionCancelReason](ActionCancelReason.md)
- - [SquareConnect.AddGroupToCustomerRequest](AddGroupToCustomerRequest.md)
- - [SquareConnect.AddGroupToCustomerResponse](AddGroupToCustomerResponse.md)
- - [SquareConnect.AdditionalRecipient](AdditionalRecipient.md)
- - [SquareConnect.Address](Address.md)
- - [SquareConnect.AdjustLoyaltyPointsRequest](AdjustLoyaltyPointsRequest.md)
- - [SquareConnect.AdjustLoyaltyPointsResponse](AdjustLoyaltyPointsResponse.md)
- - [SquareConnect.AppointmentSegment](AppointmentSegment.md)
- - [SquareConnect.Availability](Availability.md)
- - [SquareConnect.BalancePaymentDetails](BalancePaymentDetails.md)
- - [SquareConnect.BankAccount](BankAccount.md)
- - [SquareConnect.BankAccountStatus](BankAccountStatus.md)
- - [SquareConnect.BankAccountType](BankAccountType.md)
- - [SquareConnect.BatchChangeInventoryRequest](BatchChangeInventoryRequest.md)
- - [SquareConnect.BatchChangeInventoryResponse](BatchChangeInventoryResponse.md)
- - [SquareConnect.BatchDeleteCatalogObjectsRequest](BatchDeleteCatalogObjectsRequest.md)
- - [SquareConnect.BatchDeleteCatalogObjectsResponse](BatchDeleteCatalogObjectsResponse.md)
- - [SquareConnect.BatchRetrieveCatalogObjectsRequest](BatchRetrieveCatalogObjectsRequest.md)
- - [SquareConnect.BatchRetrieveCatalogObjectsResponse](BatchRetrieveCatalogObjectsResponse.md)
- - [SquareConnect.BatchRetrieveInventoryChangesRequest](BatchRetrieveInventoryChangesRequest.md)
- - [SquareConnect.BatchRetrieveInventoryChangesResponse](BatchRetrieveInventoryChangesResponse.md)
- - [SquareConnect.BatchRetrieveInventoryCountsRequest](BatchRetrieveInventoryCountsRequest.md)
- - [SquareConnect.BatchRetrieveInventoryCountsResponse](BatchRetrieveInventoryCountsResponse.md)
- - [SquareConnect.BatchRetrieveOrdersRequest](BatchRetrieveOrdersRequest.md)
- - [SquareConnect.BatchRetrieveOrdersResponse](BatchRetrieveOrdersResponse.md)
- - [SquareConnect.BatchUpsertCatalogObjectsRequest](BatchUpsertCatalogObjectsRequest.md)
- - [SquareConnect.BatchUpsertCatalogObjectsResponse](BatchUpsertCatalogObjectsResponse.md)
- - [SquareConnect.Booking](Booking.md)
- - [SquareConnect.BookingStatus](BookingStatus.md)
- - [SquareConnect.BreakType](BreakType.md)
- - [SquareConnect.BulkCreateTeamMembersRequest](BulkCreateTeamMembersRequest.md)
- - [SquareConnect.BulkCreateTeamMembersResponse](BulkCreateTeamMembersResponse.md)
- - [SquareConnect.BulkUpdateTeamMembersRequest](BulkUpdateTeamMembersRequest.md)
- - [SquareConnect.BulkUpdateTeamMembersResponse](BulkUpdateTeamMembersResponse.md)
- - [SquareConnect.BusinessAppointmentSettings](BusinessAppointmentSettings.md)
- - [SquareConnect.BusinessAppointmentSettingsAlignmentTime](BusinessAppointmentSettingsAlignmentTime.md)
- - [SquareConnect.BusinessAppointmentSettingsBookingLocationType](BusinessAppointmentSettingsBookingLocationType.md)
- - [SquareConnect.BusinessAppointmentSettingsCancellationPolicy](BusinessAppointmentSettingsCancellationPolicy.md)
- - [SquareConnect.BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType](BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType.md)
- - [SquareConnect.BusinessBookingProfile](BusinessBookingProfile.md)
- - [SquareConnect.BusinessBookingProfileBookingPolicy](BusinessBookingProfileBookingPolicy.md)
- - [SquareConnect.BusinessBookingProfileCustomerTimezoneChoice](BusinessBookingProfileCustomerTimezoneChoice.md)
- - [SquareConnect.BusinessHours](BusinessHours.md)
- - [SquareConnect.BusinessHoursPeriod](BusinessHoursPeriod.md)
- - [SquareConnect.CalculateLoyaltyPointsRequest](CalculateLoyaltyPointsRequest.md)
- - [SquareConnect.CalculateLoyaltyPointsResponse](CalculateLoyaltyPointsResponse.md)
- - [SquareConnect.CalculateOrderRequest](CalculateOrderRequest.md)
- - [SquareConnect.CalculateOrderResponse](CalculateOrderResponse.md)
- - [SquareConnect.CancelInvoiceRequest](CancelInvoiceRequest.md)
- - [SquareConnect.CancelInvoiceResponse](CancelInvoiceResponse.md)
- - [SquareConnect.CancelPaymentByIdempotencyKeyRequest](CancelPaymentByIdempotencyKeyRequest.md)
- - [SquareConnect.CancelPaymentByIdempotencyKeyResponse](CancelPaymentByIdempotencyKeyResponse.md)
- - [SquareConnect.CancelPaymentRequest](CancelPaymentRequest.md)
- - [SquareConnect.CancelPaymentResponse](CancelPaymentResponse.md)
- - [SquareConnect.CancelSubscriptionRequest](CancelSubscriptionRequest.md)
- - [SquareConnect.CancelSubscriptionResponse](CancelSubscriptionResponse.md)
- - [SquareConnect.CancelTerminalCheckoutRequest](CancelTerminalCheckoutRequest.md)
- - [SquareConnect.CancelTerminalCheckoutResponse](CancelTerminalCheckoutResponse.md)
- - [SquareConnect.CancelTerminalRefundRequest](CancelTerminalRefundRequest.md)
- - [SquareConnect.CancelTerminalRefundResponse](CancelTerminalRefundResponse.md)
- - [SquareConnect.CaptureTransactionRequest](CaptureTransactionRequest.md)
- - [SquareConnect.CaptureTransactionResponse](CaptureTransactionResponse.md)
- - [SquareConnect.Card](Card.md)
- - [SquareConnect.CardBrand](CardBrand.md)
- - [SquareConnect.CardPaymentDetails](CardPaymentDetails.md)
- - [SquareConnect.CardPrepaidType](CardPrepaidType.md)
- - [SquareConnect.CardSquareProduct](CardSquareProduct.md)
- - [SquareConnect.CardType](CardType.md)
- - [SquareConnect.CashDrawerDevice](CashDrawerDevice.md)
- - [SquareConnect.CashDrawerEventType](CashDrawerEventType.md)
- - [SquareConnect.CashDrawerShift](CashDrawerShift.md)
- - [SquareConnect.CashDrawerShiftEvent](CashDrawerShiftEvent.md)
- - [SquareConnect.CashDrawerShiftState](CashDrawerShiftState.md)
- - [SquareConnect.CashDrawerShiftSummary](CashDrawerShiftSummary.md)
- - [SquareConnect.CatalogCategory](CatalogCategory.md)
- - [SquareConnect.CatalogCustomAttributeDefinition](CatalogCustomAttributeDefinition.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionAppVisibility](CatalogCustomAttributeDefinitionAppVisibility.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionNumberConfig](CatalogCustomAttributeDefinitionNumberConfig.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig](CatalogCustomAttributeDefinitionSelectionConfig.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection](CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility](CatalogCustomAttributeDefinitionSellerVisibility.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionStringConfig](CatalogCustomAttributeDefinitionStringConfig.md)
- - [SquareConnect.CatalogCustomAttributeDefinitionType](CatalogCustomAttributeDefinitionType.md)
- - [SquareConnect.CatalogCustomAttributeValue](CatalogCustomAttributeValue.md)
- - [SquareConnect.CatalogDiscount](CatalogDiscount.md)
- - [SquareConnect.CatalogDiscountModifyTaxBasis](CatalogDiscountModifyTaxBasis.md)
- - [SquareConnect.CatalogDiscountType](CatalogDiscountType.md)
- - [SquareConnect.CatalogIdMapping](CatalogIdMapping.md)
- - [SquareConnect.CatalogImage](CatalogImage.md)
- - [SquareConnect.CatalogInfoRequest](CatalogInfoRequest.md)
- - [SquareConnect.CatalogInfoResponse](CatalogInfoResponse.md)
- - [SquareConnect.CatalogInfoResponseLimits](CatalogInfoResponseLimits.md)
- - [SquareConnect.CatalogItem](CatalogItem.md)
- - [SquareConnect.CatalogItemModifierListInfo](CatalogItemModifierListInfo.md)
- - [SquareConnect.CatalogItemOption](CatalogItemOption.md)
- - [SquareConnect.CatalogItemOptionForItem](CatalogItemOptionForItem.md)
- - [SquareConnect.CatalogItemOptionValue](CatalogItemOptionValue.md)
- - [SquareConnect.CatalogItemOptionValueForItemVariation](CatalogItemOptionValueForItemVariation.md)
- - [SquareConnect.CatalogItemProductType](CatalogItemProductType.md)
- - [SquareConnect.CatalogItemVariation](CatalogItemVariation.md)
- - [SquareConnect.CatalogMeasurementUnit](CatalogMeasurementUnit.md)
- - [SquareConnect.CatalogModifier](CatalogModifier.md)
- - [SquareConnect.CatalogModifierList](CatalogModifierList.md)
- - [SquareConnect.CatalogModifierListSelectionType](CatalogModifierListSelectionType.md)
- - [SquareConnect.CatalogModifierOverride](CatalogModifierOverride.md)
- - [SquareConnect.CatalogObject](CatalogObject.md)
- - [SquareConnect.CatalogObjectBatch](CatalogObjectBatch.md)
- - [SquareConnect.CatalogObjectType](CatalogObjectType.md)
- - [SquareConnect.CatalogPricingRule](CatalogPricingRule.md)
- - [SquareConnect.CatalogPricingType](CatalogPricingType.md)
- - [SquareConnect.CatalogProductSet](CatalogProductSet.md)
- - [SquareConnect.CatalogQuery](CatalogQuery.md)
- - [SquareConnect.CatalogQueryExact](CatalogQueryExact.md)
- - [SquareConnect.CatalogQueryItemVariationsForItemOptionValues](CatalogQueryItemVariationsForItemOptionValues.md)
- - [SquareConnect.CatalogQueryItemsForItemOptions](CatalogQueryItemsForItemOptions.md)
- - [SquareConnect.CatalogQueryItemsForModifierList](CatalogQueryItemsForModifierList.md)
- - [SquareConnect.CatalogQueryItemsForTax](CatalogQueryItemsForTax.md)
- - [SquareConnect.CatalogQueryPrefix](CatalogQueryPrefix.md)
- - [SquareConnect.CatalogQueryRange](CatalogQueryRange.md)
- - [SquareConnect.CatalogQuerySet](CatalogQuerySet.md)
- - [SquareConnect.CatalogQuerySortedAttribute](CatalogQuerySortedAttribute.md)
- - [SquareConnect.CatalogQueryText](CatalogQueryText.md)
- - [SquareConnect.CatalogQuickAmount](CatalogQuickAmount.md)
- - [SquareConnect.CatalogQuickAmountType](CatalogQuickAmountType.md)
- - [SquareConnect.CatalogQuickAmountsSettings](CatalogQuickAmountsSettings.md)
- - [SquareConnect.CatalogQuickAmountsSettingsOption](CatalogQuickAmountsSettingsOption.md)
- - [SquareConnect.CatalogSubscriptionPlan](CatalogSubscriptionPlan.md)
- - [SquareConnect.CatalogTax](CatalogTax.md)
- - [SquareConnect.CatalogTimePeriod](CatalogTimePeriod.md)
- - [SquareConnect.CatalogV1Id](CatalogV1Id.md)
- - [SquareConnect.ChargeRequest](ChargeRequest.md)
- - [SquareConnect.ChargeRequestAdditionalRecipient](ChargeRequestAdditionalRecipient.md)
- - [SquareConnect.ChargeResponse](ChargeResponse.md)
- - [SquareConnect.CheckAppointmentsOnboardedRequest](CheckAppointmentsOnboardedRequest.md)
- - [SquareConnect.CheckAppointmentsOnboardedResponse](CheckAppointmentsOnboardedResponse.md)
- - [SquareConnect.Checkout](Checkout.md)
- - [SquareConnect.CompletePaymentRequest](CompletePaymentRequest.md)
- - [SquareConnect.CompletePaymentResponse](CompletePaymentResponse.md)
- - [SquareConnect.Coordinates](Coordinates.md)
- - [SquareConnect.Country](Country.md)
- - [SquareConnect.CreateBookingRequest](CreateBookingRequest.md)
- - [SquareConnect.CreateBookingResponse](CreateBookingResponse.md)
- - [SquareConnect.CreateBreakTypeRequest](CreateBreakTypeRequest.md)
- - [SquareConnect.CreateBreakTypeResponse](CreateBreakTypeResponse.md)
- - [SquareConnect.CreateCheckoutRequest](CreateCheckoutRequest.md)
- - [SquareConnect.CreateCheckoutResponse](CreateCheckoutResponse.md)
- - [SquareConnect.CreateCustomerCardRequest](CreateCustomerCardRequest.md)
- - [SquareConnect.CreateCustomerCardResponse](CreateCustomerCardResponse.md)
- - [SquareConnect.CreateCustomerGroupRequest](CreateCustomerGroupRequest.md)
- - [SquareConnect.CreateCustomerGroupResponse](CreateCustomerGroupResponse.md)
- - [SquareConnect.CreateCustomerRequest](CreateCustomerRequest.md)
- - [SquareConnect.CreateCustomerResponse](CreateCustomerResponse.md)
- - [SquareConnect.CreateDeviceCodeRequest](CreateDeviceCodeRequest.md)
- - [SquareConnect.CreateDeviceCodeResponse](CreateDeviceCodeResponse.md)
- - [SquareConnect.CreateDisputeEvidenceTextRequest](CreateDisputeEvidenceTextRequest.md)
- - [SquareConnect.CreateDisputeEvidenceTextResponse](CreateDisputeEvidenceTextResponse.md)
- - [SquareConnect.CreateInvoiceRequest](CreateInvoiceRequest.md)
- - [SquareConnect.CreateInvoiceResponse](CreateInvoiceResponse.md)
- - [SquareConnect.CreateLocationRequest](CreateLocationRequest.md)
- - [SquareConnect.CreateLocationResponse](CreateLocationResponse.md)
- - [SquareConnect.CreateLoyaltyAccountRequest](CreateLoyaltyAccountRequest.md)
- - [SquareConnect.CreateLoyaltyAccountResponse](CreateLoyaltyAccountResponse.md)
- - [SquareConnect.CreateLoyaltyRewardRequest](CreateLoyaltyRewardRequest.md)
- - [SquareConnect.CreateLoyaltyRewardResponse](CreateLoyaltyRewardResponse.md)
- - [SquareConnect.CreateMobileAuthorizationCodeRequest](CreateMobileAuthorizationCodeRequest.md)
- - [SquareConnect.CreateMobileAuthorizationCodeResponse](CreateMobileAuthorizationCodeResponse.md)
- - [SquareConnect.CreateOrderRequest](CreateOrderRequest.md)
- - [SquareConnect.CreateOrderResponse](CreateOrderResponse.md)
- - [SquareConnect.CreatePaymentRequest](CreatePaymentRequest.md)
- - [SquareConnect.CreatePaymentResponse](CreatePaymentResponse.md)
- - [SquareConnect.CreateRefundRequest](CreateRefundRequest.md)
- - [SquareConnect.CreateRefundResponse](CreateRefundResponse.md)
- - [SquareConnect.CreateShiftRequest](CreateShiftRequest.md)
- - [SquareConnect.CreateShiftResponse](CreateShiftResponse.md)
- - [SquareConnect.CreateSubscriptionRequest](CreateSubscriptionRequest.md)
- - [SquareConnect.CreateSubscriptionResponse](CreateSubscriptionResponse.md)
- - [SquareConnect.CreateTeamMemberRequest](CreateTeamMemberRequest.md)
- - [SquareConnect.CreateTeamMemberResponse](CreateTeamMemberResponse.md)
- - [SquareConnect.CreateTerminalCheckoutRequest](CreateTerminalCheckoutRequest.md)
- - [SquareConnect.CreateTerminalCheckoutResponse](CreateTerminalCheckoutResponse.md)
- - [SquareConnect.CreateTerminalRefundRequest](CreateTerminalRefundRequest.md)
- - [SquareConnect.CreateTerminalRefundResponse](CreateTerminalRefundResponse.md)
- - [SquareConnect.Currency](Currency.md)
- - [SquareConnect.CustomAttributeFilter](CustomAttributeFilter.md)
- - [SquareConnect.Customer](Customer.md)
- - [SquareConnect.CustomerCreationSource](CustomerCreationSource.md)
- - [SquareConnect.CustomerCreationSourceFilter](CustomerCreationSourceFilter.md)
- - [SquareConnect.CustomerFilter](CustomerFilter.md)
- - [SquareConnect.CustomerGroup](CustomerGroup.md)
- - [SquareConnect.CustomerGroupInfo](CustomerGroupInfo.md)
- - [SquareConnect.CustomerInclusionExclusion](CustomerInclusionExclusion.md)
- - [SquareConnect.CustomerPreferences](CustomerPreferences.md)
- - [SquareConnect.CustomerQuery](CustomerQuery.md)
- - [SquareConnect.CustomerSegment](CustomerSegment.md)
- - [SquareConnect.CustomerSort](CustomerSort.md)
- - [SquareConnect.CustomerSortField](CustomerSortField.md)
- - [SquareConnect.CustomerTextFilter](CustomerTextFilter.md)
- - [SquareConnect.DateRange](DateRange.md)
- - [SquareConnect.DayOfWeek](DayOfWeek.md)
- - [SquareConnect.DeleteBreakTypeRequest](DeleteBreakTypeRequest.md)
- - [SquareConnect.DeleteBreakTypeResponse](DeleteBreakTypeResponse.md)
- - [SquareConnect.DeleteCatalogObjectRequest](DeleteCatalogObjectRequest.md)
- - [SquareConnect.DeleteCatalogObjectResponse](DeleteCatalogObjectResponse.md)
- - [SquareConnect.DeleteCustomerCardRequest](DeleteCustomerCardRequest.md)
- - [SquareConnect.DeleteCustomerCardResponse](DeleteCustomerCardResponse.md)
- - [SquareConnect.DeleteCustomerGroupRequest](DeleteCustomerGroupRequest.md)
- - [SquareConnect.DeleteCustomerGroupResponse](DeleteCustomerGroupResponse.md)
- - [SquareConnect.DeleteCustomerRequest](DeleteCustomerRequest.md)
- - [SquareConnect.DeleteCustomerResponse](DeleteCustomerResponse.md)
- - [SquareConnect.DeleteInvoiceRequest](DeleteInvoiceRequest.md)
- - [SquareConnect.DeleteInvoiceResponse](DeleteInvoiceResponse.md)
- - [SquareConnect.DeleteLoyaltyRewardRequest](DeleteLoyaltyRewardRequest.md)
- - [SquareConnect.DeleteLoyaltyRewardResponse](DeleteLoyaltyRewardResponse.md)
- - [SquareConnect.DeleteShiftRequest](DeleteShiftRequest.md)
- - [SquareConnect.DeleteShiftResponse](DeleteShiftResponse.md)
- - [SquareConnect.Device](Device.md)
- - [SquareConnect.DeviceCheckoutOptions](DeviceCheckoutOptions.md)
- - [SquareConnect.DeviceCode](DeviceCode.md)
- - [SquareConnect.DeviceCodeStatus](DeviceCodeStatus.md)
- - [SquareConnect.DeviceDetails](DeviceDetails.md)
- - [SquareConnect.Dispute](Dispute.md)
- - [SquareConnect.DisputeEvidence](DisputeEvidence.md)
- - [SquareConnect.DisputeEvidenceFile](DisputeEvidenceFile.md)
- - [SquareConnect.DisputeEvidenceType](DisputeEvidenceType.md)
- - [SquareConnect.DisputeReason](DisputeReason.md)
- - [SquareConnect.DisputeState](DisputeState.md)
- - [SquareConnect.DisputedPayment](DisputedPayment.md)
- - [SquareConnect.EcomVisibility](EcomVisibility.md)
- - [SquareConnect.Employee](Employee.md)
- - [SquareConnect.EmployeeStatus](EmployeeStatus.md)
- - [SquareConnect.EmployeeWage](EmployeeWage.md)
- - [SquareConnect.Error](Error.md)
- - [SquareConnect.ErrorCategory](ErrorCategory.md)
- - [SquareConnect.ErrorCode](ErrorCode.md)
- - [SquareConnect.ExcludeStrategy](ExcludeStrategy.md)
- - [SquareConnect.FilterValue](FilterValue.md)
- - [SquareConnect.GetBankAccountByV1IdRequest](GetBankAccountByV1IdRequest.md)
- - [SquareConnect.GetBankAccountByV1IdResponse](GetBankAccountByV1IdResponse.md)
- - [SquareConnect.GetBankAccountRequest](GetBankAccountRequest.md)
- - [SquareConnect.GetBankAccountResponse](GetBankAccountResponse.md)
- - [SquareConnect.GetBreakTypeRequest](GetBreakTypeRequest.md)
- - [SquareConnect.GetBreakTypeResponse](GetBreakTypeResponse.md)
- - [SquareConnect.GetDeviceCodeRequest](GetDeviceCodeRequest.md)
- - [SquareConnect.GetDeviceCodeResponse](GetDeviceCodeResponse.md)
- - [SquareConnect.GetEmployeeWageRequest](GetEmployeeWageRequest.md)
- - [SquareConnect.GetEmployeeWageResponse](GetEmployeeWageResponse.md)
- - [SquareConnect.GetInvoiceRequest](GetInvoiceRequest.md)
- - [SquareConnect.GetInvoiceResponse](GetInvoiceResponse.md)
- - [SquareConnect.GetPaymentRefundRequest](GetPaymentRefundRequest.md)
- - [SquareConnect.GetPaymentRefundResponse](GetPaymentRefundResponse.md)
- - [SquareConnect.GetPaymentRequest](GetPaymentRequest.md)
- - [SquareConnect.GetPaymentResponse](GetPaymentResponse.md)
- - [SquareConnect.GetShiftRequest](GetShiftRequest.md)
- - [SquareConnect.GetShiftResponse](GetShiftResponse.md)
- - [SquareConnect.GetTeamMemberWageRequest](GetTeamMemberWageRequest.md)
- - [SquareConnect.GetTeamMemberWageResponse](GetTeamMemberWageResponse.md)
- - [SquareConnect.GetTerminalCheckoutRequest](GetTerminalCheckoutRequest.md)
- - [SquareConnect.GetTerminalCheckoutResponse](GetTerminalCheckoutResponse.md)
- - [SquareConnect.GetTerminalRefundRequest](GetTerminalRefundRequest.md)
- - [SquareConnect.GetTerminalRefundResponse](GetTerminalRefundResponse.md)
- - [SquareConnect.InlineTypes](InlineTypes.md)
- - [SquareConnect.InventoryAdjustment](InventoryAdjustment.md)
- - [SquareConnect.InventoryAlertType](InventoryAlertType.md)
- - [SquareConnect.InventoryChange](InventoryChange.md)
- - [SquareConnect.InventoryChangeType](InventoryChangeType.md)
- - [SquareConnect.InventoryCount](InventoryCount.md)
- - [SquareConnect.InventoryPhysicalCount](InventoryPhysicalCount.md)
- - [SquareConnect.InventoryState](InventoryState.md)
- - [SquareConnect.InventoryTransfer](InventoryTransfer.md)
- - [SquareConnect.Invoice](Invoice.md)
- - [SquareConnect.InvoiceFilter](InvoiceFilter.md)
- - [SquareConnect.InvoicePaymentReminder](InvoicePaymentReminder.md)
- - [SquareConnect.InvoicePaymentReminderStatus](InvoicePaymentReminderStatus.md)
- - [SquareConnect.InvoicePaymentRequest](InvoicePaymentRequest.md)
- - [SquareConnect.InvoiceQuery](InvoiceQuery.md)
- - [SquareConnect.InvoiceRecipient](InvoiceRecipient.md)
- - [SquareConnect.InvoiceRequestMethod](InvoiceRequestMethod.md)
- - [SquareConnect.InvoiceRequestType](InvoiceRequestType.md)
- - [SquareConnect.InvoiceSort](InvoiceSort.md)
- - [SquareConnect.InvoiceSortField](InvoiceSortField.md)
- - [SquareConnect.InvoiceStatus](InvoiceStatus.md)
- - [SquareConnect.ItemVariationLocationOverrides](ItemVariationLocationOverrides.md)
- - [SquareConnect.JobAssignment](JobAssignment.md)
- - [SquareConnect.JobAssignmentPayType](JobAssignmentPayType.md)
- - [SquareConnect.ListBankAccountsRequest](ListBankAccountsRequest.md)
- - [SquareConnect.ListBankAccountsResponse](ListBankAccountsResponse.md)
- - [SquareConnect.ListBreakTypesRequest](ListBreakTypesRequest.md)
- - [SquareConnect.ListBreakTypesResponse](ListBreakTypesResponse.md)
- - [SquareConnect.ListCashDrawerShiftEventsRequest](ListCashDrawerShiftEventsRequest.md)
- - [SquareConnect.ListCashDrawerShiftEventsResponse](ListCashDrawerShiftEventsResponse.md)
- - [SquareConnect.ListCashDrawerShiftsRequest](ListCashDrawerShiftsRequest.md)
- - [SquareConnect.ListCashDrawerShiftsResponse](ListCashDrawerShiftsResponse.md)
- - [SquareConnect.ListCatalogRequest](ListCatalogRequest.md)
- - [SquareConnect.ListCatalogResponse](ListCatalogResponse.md)
- - [SquareConnect.ListCustomerGroupsRequest](ListCustomerGroupsRequest.md)
- - [SquareConnect.ListCustomerGroupsResponse](ListCustomerGroupsResponse.md)
- - [SquareConnect.ListCustomerSegmentsRequest](ListCustomerSegmentsRequest.md)
- - [SquareConnect.ListCustomerSegmentsResponse](ListCustomerSegmentsResponse.md)
- - [SquareConnect.ListCustomersRequest](ListCustomersRequest.md)
- - [SquareConnect.ListCustomersResponse](ListCustomersResponse.md)
- - [SquareConnect.ListDeviceCodesRequest](ListDeviceCodesRequest.md)
- - [SquareConnect.ListDeviceCodesResponse](ListDeviceCodesResponse.md)
- - [SquareConnect.ListDisputeEvidenceRequest](ListDisputeEvidenceRequest.md)
- - [SquareConnect.ListDisputeEvidenceResponse](ListDisputeEvidenceResponse.md)
- - [SquareConnect.ListDisputesRequest](ListDisputesRequest.md)
- - [SquareConnect.ListDisputesResponse](ListDisputesResponse.md)
- - [SquareConnect.ListEmployeeWagesRequest](ListEmployeeWagesRequest.md)
- - [SquareConnect.ListEmployeeWagesResponse](ListEmployeeWagesResponse.md)
- - [SquareConnect.ListEmployeesRequest](ListEmployeesRequest.md)
- - [SquareConnect.ListEmployeesResponse](ListEmployeesResponse.md)
- - [SquareConnect.ListInvoicesRequest](ListInvoicesRequest.md)
- - [SquareConnect.ListInvoicesResponse](ListInvoicesResponse.md)
- - [SquareConnect.ListLocationsRequest](ListLocationsRequest.md)
- - [SquareConnect.ListLocationsResponse](ListLocationsResponse.md)
- - [SquareConnect.ListLoyaltyProgramsRequest](ListLoyaltyProgramsRequest.md)
- - [SquareConnect.ListLoyaltyProgramsResponse](ListLoyaltyProgramsResponse.md)
- - [SquareConnect.ListMerchantsRequest](ListMerchantsRequest.md)
- - [SquareConnect.ListMerchantsResponse](ListMerchantsResponse.md)
- - [SquareConnect.ListPaymentRefundsRequest](ListPaymentRefundsRequest.md)
- - [SquareConnect.ListPaymentRefundsResponse](ListPaymentRefundsResponse.md)
- - [SquareConnect.ListPaymentsRequest](ListPaymentsRequest.md)
- - [SquareConnect.ListPaymentsResponse](ListPaymentsResponse.md)
- - [SquareConnect.ListRefundsRequest](ListRefundsRequest.md)
- - [SquareConnect.ListRefundsResponse](ListRefundsResponse.md)
- - [SquareConnect.ListSubscriptionEventsRequest](ListSubscriptionEventsRequest.md)
- - [SquareConnect.ListSubscriptionEventsResponse](ListSubscriptionEventsResponse.md)
- - [SquareConnect.ListTeamMemberBookingProfilesRequest](ListTeamMemberBookingProfilesRequest.md)
- - [SquareConnect.ListTeamMemberBookingProfilesResponse](ListTeamMemberBookingProfilesResponse.md)
- - [SquareConnect.ListTeamMemberWagesRequest](ListTeamMemberWagesRequest.md)
- - [SquareConnect.ListTeamMemberWagesResponse](ListTeamMemberWagesResponse.md)
- - [SquareConnect.ListTransactionsRequest](ListTransactionsRequest.md)
- - [SquareConnect.ListTransactionsResponse](ListTransactionsResponse.md)
- - [SquareConnect.ListWorkweekConfigsRequest](ListWorkweekConfigsRequest.md)
- - [SquareConnect.ListWorkweekConfigsResponse](ListWorkweekConfigsResponse.md)
- - [SquareConnect.Location](Location.md)
- - [SquareConnect.LocationCapability](LocationCapability.md)
- - [SquareConnect.LocationStatus](LocationStatus.md)
- - [SquareConnect.LocationType](LocationType.md)
- - [SquareConnect.LoyaltyAccount](LoyaltyAccount.md)
- - [SquareConnect.LoyaltyAccountMapping](LoyaltyAccountMapping.md)
- - [SquareConnect.LoyaltyAccountMappingType](LoyaltyAccountMappingType.md)
- - [SquareConnect.LoyaltyEvent](LoyaltyEvent.md)
- - [SquareConnect.LoyaltyEventAccumulatePoints](LoyaltyEventAccumulatePoints.md)
- - [SquareConnect.LoyaltyEventAdjustPoints](LoyaltyEventAdjustPoints.md)
- - [SquareConnect.LoyaltyEventCreateReward](LoyaltyEventCreateReward.md)
- - [SquareConnect.LoyaltyEventDateTimeFilter](LoyaltyEventDateTimeFilter.md)
- - [SquareConnect.LoyaltyEventDeleteReward](LoyaltyEventDeleteReward.md)
- - [SquareConnect.LoyaltyEventExpirePoints](LoyaltyEventExpirePoints.md)
- - [SquareConnect.LoyaltyEventFilter](LoyaltyEventFilter.md)
- - [SquareConnect.LoyaltyEventLocationFilter](LoyaltyEventLocationFilter.md)
- - [SquareConnect.LoyaltyEventLoyaltyAccountFilter](LoyaltyEventLoyaltyAccountFilter.md)
- - [SquareConnect.LoyaltyEventOrderFilter](LoyaltyEventOrderFilter.md)
- - [SquareConnect.LoyaltyEventOther](LoyaltyEventOther.md)
- - [SquareConnect.LoyaltyEventQuery](LoyaltyEventQuery.md)
- - [SquareConnect.LoyaltyEventRedeemReward](LoyaltyEventRedeemReward.md)
- - [SquareConnect.LoyaltyEventSource](LoyaltyEventSource.md)
- - [SquareConnect.LoyaltyEventType](LoyaltyEventType.md)
- - [SquareConnect.LoyaltyEventTypeFilter](LoyaltyEventTypeFilter.md)
- - [SquareConnect.LoyaltyProgram](LoyaltyProgram.md)
- - [SquareConnect.LoyaltyProgramAccrualRule](LoyaltyProgramAccrualRule.md)
- - [SquareConnect.LoyaltyProgramAccrualRuleType](LoyaltyProgramAccrualRuleType.md)
- - [SquareConnect.LoyaltyProgramExpirationPolicy](LoyaltyProgramExpirationPolicy.md)
- - [SquareConnect.LoyaltyProgramRewardDefinition](LoyaltyProgramRewardDefinition.md)
- - [SquareConnect.LoyaltyProgramRewardDefinitionScope](LoyaltyProgramRewardDefinitionScope.md)
- - [SquareConnect.LoyaltyProgramRewardDefinitionType](LoyaltyProgramRewardDefinitionType.md)
- - [SquareConnect.LoyaltyProgramRewardTier](LoyaltyProgramRewardTier.md)
- - [SquareConnect.LoyaltyProgramStatus](LoyaltyProgramStatus.md)
- - [SquareConnect.LoyaltyProgramTerminology](LoyaltyProgramTerminology.md)
- - [SquareConnect.LoyaltyReward](LoyaltyReward.md)
- - [SquareConnect.LoyaltyRewardStatus](LoyaltyRewardStatus.md)
- - [SquareConnect.MeasurementUnit](MeasurementUnit.md)
- - [SquareConnect.MeasurementUnitArea](MeasurementUnitArea.md)
- - [SquareConnect.MeasurementUnitCustom](MeasurementUnitCustom.md)
- - [SquareConnect.MeasurementUnitGeneric](MeasurementUnitGeneric.md)
- - [SquareConnect.MeasurementUnitLength](MeasurementUnitLength.md)
- - [SquareConnect.MeasurementUnitTime](MeasurementUnitTime.md)
- - [SquareConnect.MeasurementUnitUnitType](MeasurementUnitUnitType.md)
- - [SquareConnect.MeasurementUnitVolume](MeasurementUnitVolume.md)
- - [SquareConnect.MeasurementUnitWeight](MeasurementUnitWeight.md)
- - [SquareConnect.Merchant](Merchant.md)
- - [SquareConnect.MerchantStatus](MerchantStatus.md)
- - [SquareConnect.ModelBreak](ModelBreak.md)
- - [SquareConnect.Money](Money.md)
- - [SquareConnect.ObtainTokenRequest](ObtainTokenRequest.md)
- - [SquareConnect.ObtainTokenResponse](ObtainTokenResponse.md)
- - [SquareConnect.OnboardAppointmentsRequest](OnboardAppointmentsRequest.md)
- - [SquareConnect.OnboardAppointmentsResponse](OnboardAppointmentsResponse.md)
- - [SquareConnect.Order](Order.md)
- - [SquareConnect.OrderCreated](OrderCreated.md)
- - [SquareConnect.OrderCreatedObject](OrderCreatedObject.md)
- - [SquareConnect.OrderEntry](OrderEntry.md)
- - [SquareConnect.OrderFulfillment](OrderFulfillment.md)
- - [SquareConnect.OrderFulfillmentPickupDetails](OrderFulfillmentPickupDetails.md)
- - [SquareConnect.OrderFulfillmentPickupDetailsCurbsidePickupDetails](OrderFulfillmentPickupDetailsCurbsidePickupDetails.md)
- - [SquareConnect.OrderFulfillmentPickupDetailsScheduleType](OrderFulfillmentPickupDetailsScheduleType.md)
- - [SquareConnect.OrderFulfillmentRecipient](OrderFulfillmentRecipient.md)
- - [SquareConnect.OrderFulfillmentShipmentDetails](OrderFulfillmentShipmentDetails.md)
- - [SquareConnect.OrderFulfillmentState](OrderFulfillmentState.md)
- - [SquareConnect.OrderFulfillmentType](OrderFulfillmentType.md)
- - [SquareConnect.OrderFulfillmentUpdated](OrderFulfillmentUpdated.md)
- - [SquareConnect.OrderFulfillmentUpdatedObject](OrderFulfillmentUpdatedObject.md)
- - [SquareConnect.OrderFulfillmentUpdatedUpdate](OrderFulfillmentUpdatedUpdate.md)
- - [SquareConnect.OrderLineItem](OrderLineItem.md)
- - [SquareConnect.OrderLineItemAppliedDiscount](OrderLineItemAppliedDiscount.md)
- - [SquareConnect.OrderLineItemAppliedTax](OrderLineItemAppliedTax.md)
- - [SquareConnect.OrderLineItemDiscount](OrderLineItemDiscount.md)
- - [SquareConnect.OrderLineItemDiscountScope](OrderLineItemDiscountScope.md)
- - [SquareConnect.OrderLineItemDiscountType](OrderLineItemDiscountType.md)
- - [SquareConnect.OrderLineItemModifier](OrderLineItemModifier.md)
- - [SquareConnect.OrderLineItemTax](OrderLineItemTax.md)
- - [SquareConnect.OrderLineItemTaxScope](OrderLineItemTaxScope.md)
- - [SquareConnect.OrderLineItemTaxType](OrderLineItemTaxType.md)
- - [SquareConnect.OrderMoneyAmounts](OrderMoneyAmounts.md)
- - [SquareConnect.OrderPricingOptions](OrderPricingOptions.md)
- - [SquareConnect.OrderQuantityUnit](OrderQuantityUnit.md)
- - [SquareConnect.OrderReturn](OrderReturn.md)
- - [SquareConnect.OrderReturnDiscount](OrderReturnDiscount.md)
- - [SquareConnect.OrderReturnLineItem](OrderReturnLineItem.md)
- - [SquareConnect.OrderReturnLineItemModifier](OrderReturnLineItemModifier.md)
- - [SquareConnect.OrderReturnServiceCharge](OrderReturnServiceCharge.md)
- - [SquareConnect.OrderReturnTax](OrderReturnTax.md)
- - [SquareConnect.OrderReward](OrderReward.md)
- - [SquareConnect.OrderRoundingAdjustment](OrderRoundingAdjustment.md)
- - [SquareConnect.OrderServiceCharge](OrderServiceCharge.md)
- - [SquareConnect.OrderServiceChargeCalculationPhase](OrderServiceChargeCalculationPhase.md)
- - [SquareConnect.OrderSource](OrderSource.md)
- - [SquareConnect.OrderState](OrderState.md)
- - [SquareConnect.OrderUpdated](OrderUpdated.md)
- - [SquareConnect.OrderUpdatedObject](OrderUpdatedObject.md)
- - [SquareConnect.PayOrderRequest](PayOrderRequest.md)
- - [SquareConnect.PayOrderResponse](PayOrderResponse.md)
- - [SquareConnect.Payment](Payment.md)
- - [SquareConnect.PaymentOptions](PaymentOptions.md)
- - [SquareConnect.PaymentRefund](PaymentRefund.md)
- - [SquareConnect.ProcessingFee](ProcessingFee.md)
- - [SquareConnect.Product](Product.md)
- - [SquareConnect.ProductType](ProductType.md)
- - [SquareConnect.PublishInvoiceRequest](PublishInvoiceRequest.md)
- - [SquareConnect.PublishInvoiceResponse](PublishInvoiceResponse.md)
- - [SquareConnect.Range](Range.md)
- - [SquareConnect.RedeemLoyaltyRewardRequest](RedeemLoyaltyRewardRequest.md)
- - [SquareConnect.RedeemLoyaltyRewardResponse](RedeemLoyaltyRewardResponse.md)
- - [SquareConnect.Refund](Refund.md)
- - [SquareConnect.RefundPaymentRequest](RefundPaymentRequest.md)
- - [SquareConnect.RefundPaymentResponse](RefundPaymentResponse.md)
- - [SquareConnect.RefundStatus](RefundStatus.md)
- - [SquareConnect.RegisterDomainRequest](RegisterDomainRequest.md)
- - [SquareConnect.RegisterDomainResponse](RegisterDomainResponse.md)
- - [SquareConnect.RegisterDomainResponseStatus](RegisterDomainResponseStatus.md)
- - [SquareConnect.RemoveDisputeEvidenceRequest](RemoveDisputeEvidenceRequest.md)
- - [SquareConnect.RemoveDisputeEvidenceResponse](RemoveDisputeEvidenceResponse.md)
- - [SquareConnect.RemoveGroupFromCustomerRequest](RemoveGroupFromCustomerRequest.md)
- - [SquareConnect.RemoveGroupFromCustomerResponse](RemoveGroupFromCustomerResponse.md)
- - [SquareConnect.RenewTokenRequest](RenewTokenRequest.md)
- - [SquareConnect.RenewTokenResponse](RenewTokenResponse.md)
- - [SquareConnect.RetrieveBookingRequest](RetrieveBookingRequest.md)
- - [SquareConnect.RetrieveBookingResponse](RetrieveBookingResponse.md)
- - [SquareConnect.RetrieveBusinessBookingProfileRequest](RetrieveBusinessBookingProfileRequest.md)
- - [SquareConnect.RetrieveBusinessBookingProfileResponse](RetrieveBusinessBookingProfileResponse.md)
- - [SquareConnect.RetrieveCashDrawerShiftRequest](RetrieveCashDrawerShiftRequest.md)
- - [SquareConnect.RetrieveCashDrawerShiftResponse](RetrieveCashDrawerShiftResponse.md)
- - [SquareConnect.RetrieveCatalogObjectRequest](RetrieveCatalogObjectRequest.md)
- - [SquareConnect.RetrieveCatalogObjectResponse](RetrieveCatalogObjectResponse.md)
- - [SquareConnect.RetrieveCustomerGroupRequest](RetrieveCustomerGroupRequest.md)
- - [SquareConnect.RetrieveCustomerGroupResponse](RetrieveCustomerGroupResponse.md)
- - [SquareConnect.RetrieveCustomerRequest](RetrieveCustomerRequest.md)
- - [SquareConnect.RetrieveCustomerResponse](RetrieveCustomerResponse.md)
- - [SquareConnect.RetrieveCustomerSegmentRequest](RetrieveCustomerSegmentRequest.md)
- - [SquareConnect.RetrieveCustomerSegmentResponse](RetrieveCustomerSegmentResponse.md)
- - [SquareConnect.RetrieveDisputeEvidenceRequest](RetrieveDisputeEvidenceRequest.md)
- - [SquareConnect.RetrieveDisputeEvidenceResponse](RetrieveDisputeEvidenceResponse.md)
- - [SquareConnect.RetrieveDisputeRequest](RetrieveDisputeRequest.md)
- - [SquareConnect.RetrieveDisputeResponse](RetrieveDisputeResponse.md)
- - [SquareConnect.RetrieveEmployeeRequest](RetrieveEmployeeRequest.md)
- - [SquareConnect.RetrieveEmployeeResponse](RetrieveEmployeeResponse.md)
- - [SquareConnect.RetrieveInventoryAdjustmentRequest](RetrieveInventoryAdjustmentRequest.md)
- - [SquareConnect.RetrieveInventoryAdjustmentResponse](RetrieveInventoryAdjustmentResponse.md)
- - [SquareConnect.RetrieveInventoryChangesRequest](RetrieveInventoryChangesRequest.md)
- - [SquareConnect.RetrieveInventoryChangesResponse](RetrieveInventoryChangesResponse.md)
- - [SquareConnect.RetrieveInventoryCountRequest](RetrieveInventoryCountRequest.md)
- - [SquareConnect.RetrieveInventoryCountResponse](RetrieveInventoryCountResponse.md)
- - [SquareConnect.RetrieveInventoryPhysicalCountRequest](RetrieveInventoryPhysicalCountRequest.md)
- - [SquareConnect.RetrieveInventoryPhysicalCountResponse](RetrieveInventoryPhysicalCountResponse.md)
- - [SquareConnect.RetrieveLocationRequest](RetrieveLocationRequest.md)
- - [SquareConnect.RetrieveLocationResponse](RetrieveLocationResponse.md)
- - [SquareConnect.RetrieveLoyaltyAccountRequest](RetrieveLoyaltyAccountRequest.md)
- - [SquareConnect.RetrieveLoyaltyAccountResponse](RetrieveLoyaltyAccountResponse.md)
- - [SquareConnect.RetrieveLoyaltyRewardRequest](RetrieveLoyaltyRewardRequest.md)
- - [SquareConnect.RetrieveLoyaltyRewardResponse](RetrieveLoyaltyRewardResponse.md)
- - [SquareConnect.RetrieveMerchantRequest](RetrieveMerchantRequest.md)
- - [SquareConnect.RetrieveMerchantResponse](RetrieveMerchantResponse.md)
- - [SquareConnect.RetrieveObsMigrationProfileRequest](RetrieveObsMigrationProfileRequest.md)
- - [SquareConnect.RetrieveObsMigrationProfileResponse](RetrieveObsMigrationProfileResponse.md)
- - [SquareConnect.RetrieveOrderRequest](RetrieveOrderRequest.md)
- - [SquareConnect.RetrieveOrderResponse](RetrieveOrderResponse.md)
- - [SquareConnect.RetrieveSubscriptionRequest](RetrieveSubscriptionRequest.md)
- - [SquareConnect.RetrieveSubscriptionResponse](RetrieveSubscriptionResponse.md)
- - [SquareConnect.RetrieveTeamMemberBookingProfileRequest](RetrieveTeamMemberBookingProfileRequest.md)
- - [SquareConnect.RetrieveTeamMemberBookingProfileResponse](RetrieveTeamMemberBookingProfileResponse.md)
- - [SquareConnect.RetrieveTeamMemberRequest](RetrieveTeamMemberRequest.md)
- - [SquareConnect.RetrieveTeamMemberResponse](RetrieveTeamMemberResponse.md)
- - [SquareConnect.RetrieveTransactionRequest](RetrieveTransactionRequest.md)
- - [SquareConnect.RetrieveTransactionResponse](RetrieveTransactionResponse.md)
- - [SquareConnect.RetrieveWageSettingRequest](RetrieveWageSettingRequest.md)
- - [SquareConnect.RetrieveWageSettingResponse](RetrieveWageSettingResponse.md)
- - [SquareConnect.RevokeTokenRequest](RevokeTokenRequest.md)
- - [SquareConnect.RevokeTokenResponse](RevokeTokenResponse.md)
- - [SquareConnect.RiskEvaluation](RiskEvaluation.md)
- - [SquareConnect.RiskEvaluationRiskLevel](RiskEvaluationRiskLevel.md)
- - [SquareConnect.SearchAvailabilityFilter](SearchAvailabilityFilter.md)
- - [SquareConnect.SearchAvailabilityQuery](SearchAvailabilityQuery.md)
- - [SquareConnect.SearchAvailabilityRequest](SearchAvailabilityRequest.md)
- - [SquareConnect.SearchAvailabilityResponse](SearchAvailabilityResponse.md)
- - [SquareConnect.SearchCatalogItemsRequest](SearchCatalogItemsRequest.md)
- - [SquareConnect.SearchCatalogItemsRequestStockLevel](SearchCatalogItemsRequestStockLevel.md)
- - [SquareConnect.SearchCatalogItemsResponse](SearchCatalogItemsResponse.md)
- - [SquareConnect.SearchCatalogObjectsRequest](SearchCatalogObjectsRequest.md)
- - [SquareConnect.SearchCatalogObjectsResponse](SearchCatalogObjectsResponse.md)
- - [SquareConnect.SearchCustomersRequest](SearchCustomersRequest.md)
- - [SquareConnect.SearchCustomersResponse](SearchCustomersResponse.md)
- - [SquareConnect.SearchInvoicesRequest](SearchInvoicesRequest.md)
- - [SquareConnect.SearchInvoicesResponse](SearchInvoicesResponse.md)
- - [SquareConnect.SearchLoyaltyAccountsRequest](SearchLoyaltyAccountsRequest.md)
- - [SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery](SearchLoyaltyAccountsRequestLoyaltyAccountQuery.md)
- - [SquareConnect.SearchLoyaltyAccountsResponse](SearchLoyaltyAccountsResponse.md)
- - [SquareConnect.SearchLoyaltyEventsRequest](SearchLoyaltyEventsRequest.md)
- - [SquareConnect.SearchLoyaltyEventsResponse](SearchLoyaltyEventsResponse.md)
- - [SquareConnect.SearchLoyaltyRewardsRequest](SearchLoyaltyRewardsRequest.md)
- - [SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery](SearchLoyaltyRewardsRequestLoyaltyRewardQuery.md)
- - [SquareConnect.SearchLoyaltyRewardsResponse](SearchLoyaltyRewardsResponse.md)
- - [SquareConnect.SearchOrdersCustomerFilter](SearchOrdersCustomerFilter.md)
- - [SquareConnect.SearchOrdersDateTimeFilter](SearchOrdersDateTimeFilter.md)
- - [SquareConnect.SearchOrdersFilter](SearchOrdersFilter.md)
- - [SquareConnect.SearchOrdersFulfillmentFilter](SearchOrdersFulfillmentFilter.md)
- - [SquareConnect.SearchOrdersQuery](SearchOrdersQuery.md)
- - [SquareConnect.SearchOrdersRequest](SearchOrdersRequest.md)
- - [SquareConnect.SearchOrdersResponse](SearchOrdersResponse.md)
- - [SquareConnect.SearchOrdersSort](SearchOrdersSort.md)
- - [SquareConnect.SearchOrdersSortField](SearchOrdersSortField.md)
- - [SquareConnect.SearchOrdersSourceFilter](SearchOrdersSourceFilter.md)
- - [SquareConnect.SearchOrdersStateFilter](SearchOrdersStateFilter.md)
- - [SquareConnect.SearchShiftsRequest](SearchShiftsRequest.md)
- - [SquareConnect.SearchShiftsResponse](SearchShiftsResponse.md)
- - [SquareConnect.SearchSubscriptionsFilter](SearchSubscriptionsFilter.md)
- - [SquareConnect.SearchSubscriptionsQuery](SearchSubscriptionsQuery.md)
- - [SquareConnect.SearchSubscriptionsRequest](SearchSubscriptionsRequest.md)
- - [SquareConnect.SearchSubscriptionsResponse](SearchSubscriptionsResponse.md)
- - [SquareConnect.SearchTeamMembersFilter](SearchTeamMembersFilter.md)
- - [SquareConnect.SearchTeamMembersQuery](SearchTeamMembersQuery.md)
- - [SquareConnect.SearchTeamMembersRequest](SearchTeamMembersRequest.md)
- - [SquareConnect.SearchTeamMembersResponse](SearchTeamMembersResponse.md)
- - [SquareConnect.SearchTerminalCheckoutsRequest](SearchTerminalCheckoutsRequest.md)
- - [SquareConnect.SearchTerminalCheckoutsResponse](SearchTerminalCheckoutsResponse.md)
- - [SquareConnect.SearchTerminalRefundsRequest](SearchTerminalRefundsRequest.md)
- - [SquareConnect.SearchTerminalRefundsResponse](SearchTerminalRefundsResponse.md)
- - [SquareConnect.SegmentFilter](SegmentFilter.md)
- - [SquareConnect.Shift](Shift.md)
- - [SquareConnect.ShiftFilter](ShiftFilter.md)
- - [SquareConnect.ShiftFilterStatus](ShiftFilterStatus.md)
- - [SquareConnect.ShiftQuery](ShiftQuery.md)
- - [SquareConnect.ShiftSort](ShiftSort.md)
- - [SquareConnect.ShiftSortField](ShiftSortField.md)
- - [SquareConnect.ShiftStatus](ShiftStatus.md)
- - [SquareConnect.ShiftWage](ShiftWage.md)
- - [SquareConnect.ShiftWorkday](ShiftWorkday.md)
- - [SquareConnect.ShiftWorkdayMatcher](ShiftWorkdayMatcher.md)
- - [SquareConnect.SortOrder](SortOrder.md)
- - [SquareConnect.SourceApplication](SourceApplication.md)
- - [SquareConnect.StandardUnitDescription](StandardUnitDescription.md)
- - [SquareConnect.StandardUnitDescriptionGroup](StandardUnitDescriptionGroup.md)
- - [SquareConnect.SubmitEvidenceRequest](SubmitEvidenceRequest.md)
- - [SquareConnect.SubmitEvidenceResponse](SubmitEvidenceResponse.md)
- - [SquareConnect.Subscription](Subscription.md)
- - [SquareConnect.SubscriptionCadence](SubscriptionCadence.md)
- - [SquareConnect.SubscriptionEvent](SubscriptionEvent.md)
- - [SquareConnect.SubscriptionEventSubscriptionEventType](SubscriptionEventSubscriptionEventType.md)
- - [SquareConnect.SubscriptionPhase](SubscriptionPhase.md)
- - [SquareConnect.SubscriptionStatus](SubscriptionStatus.md)
- - [SquareConnect.TaxCalculationPhase](TaxCalculationPhase.md)
- - [SquareConnect.TaxInclusionType](TaxInclusionType.md)
- - [SquareConnect.TeamMember](TeamMember.md)
- - [SquareConnect.TeamMemberAssignedLocations](TeamMemberAssignedLocations.md)
- - [SquareConnect.TeamMemberAssignedLocationsAssignmentType](TeamMemberAssignedLocationsAssignmentType.md)
- - [SquareConnect.TeamMemberBookingProfile](TeamMemberBookingProfile.md)
- - [SquareConnect.TeamMemberStatus](TeamMemberStatus.md)
- - [SquareConnect.TeamMemberWage](TeamMemberWage.md)
- - [SquareConnect.Tender](Tender.md)
- - [SquareConnect.TenderCardDetails](TenderCardDetails.md)
- - [SquareConnect.TenderCardDetailsEntryMethod](TenderCardDetailsEntryMethod.md)
- - [SquareConnect.TenderCardDetailsStatus](TenderCardDetailsStatus.md)
- - [SquareConnect.TenderCashDetails](TenderCashDetails.md)
- - [SquareConnect.TenderType](TenderType.md)
- - [SquareConnect.TerminalCheckout](TerminalCheckout.md)
- - [SquareConnect.TerminalCheckoutQuery](TerminalCheckoutQuery.md)
- - [SquareConnect.TerminalCheckoutQueryFilter](TerminalCheckoutQueryFilter.md)
- - [SquareConnect.TerminalCheckoutQuerySort](TerminalCheckoutQuerySort.md)
- - [SquareConnect.TerminalRefund](TerminalRefund.md)
- - [SquareConnect.TerminalRefundQuery](TerminalRefundQuery.md)
- - [SquareConnect.TerminalRefundQueryFilter](TerminalRefundQueryFilter.md)
- - [SquareConnect.TerminalRefundQuerySort](TerminalRefundQuerySort.md)
- - [SquareConnect.TimeRange](TimeRange.md)
- - [SquareConnect.TipSettings](TipSettings.md)
- - [SquareConnect.Transaction](Transaction.md)
- - [SquareConnect.TransactionProduct](TransactionProduct.md)
- - [SquareConnect.TransactionType](TransactionType.md)
- - [SquareConnect.UpdateBookingRequest](UpdateBookingRequest.md)
- - [SquareConnect.UpdateBookingResponse](UpdateBookingResponse.md)
- - [SquareConnect.UpdateBreakTypeRequest](UpdateBreakTypeRequest.md)
- - [SquareConnect.UpdateBreakTypeResponse](UpdateBreakTypeResponse.md)
- - [SquareConnect.UpdateCustomerGroupRequest](UpdateCustomerGroupRequest.md)
- - [SquareConnect.UpdateCustomerGroupResponse](UpdateCustomerGroupResponse.md)
- - [SquareConnect.UpdateCustomerRequest](UpdateCustomerRequest.md)
- - [SquareConnect.UpdateCustomerResponse](UpdateCustomerResponse.md)
- - [SquareConnect.UpdateInvoiceRequest](UpdateInvoiceRequest.md)
- - [SquareConnect.UpdateInvoiceResponse](UpdateInvoiceResponse.md)
- - [SquareConnect.UpdateItemModifierListsRequest](UpdateItemModifierListsRequest.md)
- - [SquareConnect.UpdateItemModifierListsResponse](UpdateItemModifierListsResponse.md)
- - [SquareConnect.UpdateItemTaxesRequest](UpdateItemTaxesRequest.md)
- - [SquareConnect.UpdateItemTaxesResponse](UpdateItemTaxesResponse.md)
- - [SquareConnect.UpdateLocationRequest](UpdateLocationRequest.md)
- - [SquareConnect.UpdateLocationResponse](UpdateLocationResponse.md)
- - [SquareConnect.UpdateOrderRequest](UpdateOrderRequest.md)
- - [SquareConnect.UpdateOrderResponse](UpdateOrderResponse.md)
- - [SquareConnect.UpdateShiftRequest](UpdateShiftRequest.md)
- - [SquareConnect.UpdateShiftResponse](UpdateShiftResponse.md)
- - [SquareConnect.UpdateSubscriptionRequest](UpdateSubscriptionRequest.md)
- - [SquareConnect.UpdateSubscriptionResponse](UpdateSubscriptionResponse.md)
- - [SquareConnect.UpdateTeamMemberRequest](UpdateTeamMemberRequest.md)
- - [SquareConnect.UpdateTeamMemberResponse](UpdateTeamMemberResponse.md)
- - [SquareConnect.UpdateWageSettingRequest](UpdateWageSettingRequest.md)
- - [SquareConnect.UpdateWageSettingResponse](UpdateWageSettingResponse.md)
- - [SquareConnect.UpdateWorkweekConfigRequest](UpdateWorkweekConfigRequest.md)
- - [SquareConnect.UpdateWorkweekConfigResponse](UpdateWorkweekConfigResponse.md)
- - [SquareConnect.UpsertCatalogObjectRequest](UpsertCatalogObjectRequest.md)
- - [SquareConnect.UpsertCatalogObjectResponse](UpsertCatalogObjectResponse.md)
- - [SquareConnect.V1AdjustInventoryRequest](V1AdjustInventoryRequest.md)
- - [SquareConnect.V1AdjustInventoryRequestAdjustmentType](V1AdjustInventoryRequestAdjustmentType.md)
- - [SquareConnect.V1ApplyFeeRequest](V1ApplyFeeRequest.md)
- - [SquareConnect.V1ApplyModifierListRequest](V1ApplyModifierListRequest.md)
- - [SquareConnect.V1BankAccount](V1BankAccount.md)
- - [SquareConnect.V1BankAccountType](V1BankAccountType.md)
- - [SquareConnect.V1CashDrawerEvent](V1CashDrawerEvent.md)
- - [SquareConnect.V1CashDrawerEventEventType](V1CashDrawerEventEventType.md)
- - [SquareConnect.V1CashDrawerShift](V1CashDrawerShift.md)
- - [SquareConnect.V1CashDrawerShiftEventType](V1CashDrawerShiftEventType.md)
- - [SquareConnect.V1Category](V1Category.md)
- - [SquareConnect.V1CreateCategoryRequest](V1CreateCategoryRequest.md)
- - [SquareConnect.V1CreateDiscountRequest](V1CreateDiscountRequest.md)
- - [SquareConnect.V1CreateEmployeeRoleRequest](V1CreateEmployeeRoleRequest.md)
- - [SquareConnect.V1CreateFeeRequest](V1CreateFeeRequest.md)
- - [SquareConnect.V1CreateItemRequest](V1CreateItemRequest.md)
- - [SquareConnect.V1CreateModifierListRequest](V1CreateModifierListRequest.md)
- - [SquareConnect.V1CreateModifierOptionRequest](V1CreateModifierOptionRequest.md)
- - [SquareConnect.V1CreatePageRequest](V1CreatePageRequest.md)
- - [SquareConnect.V1CreateRefundRequest](V1CreateRefundRequest.md)
- - [SquareConnect.V1CreateRefundRequestType](V1CreateRefundRequestType.md)
- - [SquareConnect.V1CreateVariationRequest](V1CreateVariationRequest.md)
- - [SquareConnect.V1DeleteCategoryRequest](V1DeleteCategoryRequest.md)
- - [SquareConnect.V1DeleteDiscountRequest](V1DeleteDiscountRequest.md)
- - [SquareConnect.V1DeleteFeeRequest](V1DeleteFeeRequest.md)
- - [SquareConnect.V1DeleteItemRequest](V1DeleteItemRequest.md)
- - [SquareConnect.V1DeleteModifierListRequest](V1DeleteModifierListRequest.md)
- - [SquareConnect.V1DeleteModifierOptionRequest](V1DeleteModifierOptionRequest.md)
- - [SquareConnect.V1DeletePageCellRequest](V1DeletePageCellRequest.md)
- - [SquareConnect.V1DeletePageRequest](V1DeletePageRequest.md)
- - [SquareConnect.V1DeleteTimecardRequest](V1DeleteTimecardRequest.md)
- - [SquareConnect.V1DeleteTimecardResponse](V1DeleteTimecardResponse.md)
- - [SquareConnect.V1DeleteVariationRequest](V1DeleteVariationRequest.md)
- - [SquareConnect.V1Discount](V1Discount.md)
- - [SquareConnect.V1DiscountColor](V1DiscountColor.md)
- - [SquareConnect.V1DiscountDiscountType](V1DiscountDiscountType.md)
- - [SquareConnect.V1Employee](V1Employee.md)
- - [SquareConnect.V1EmployeeRole](V1EmployeeRole.md)
- - [SquareConnect.V1EmployeeRolePermissions](V1EmployeeRolePermissions.md)
- - [SquareConnect.V1EmployeeStatus](V1EmployeeStatus.md)
- - [SquareConnect.V1Fee](V1Fee.md)
- - [SquareConnect.V1FeeAdjustmentType](V1FeeAdjustmentType.md)
- - [SquareConnect.V1FeeCalculationPhase](V1FeeCalculationPhase.md)
- - [SquareConnect.V1FeeInclusionType](V1FeeInclusionType.md)
- - [SquareConnect.V1FeeType](V1FeeType.md)
- - [SquareConnect.V1InventoryEntry](V1InventoryEntry.md)
- - [SquareConnect.V1Item](V1Item.md)
- - [SquareConnect.V1ItemColor](V1ItemColor.md)
- - [SquareConnect.V1ItemImage](V1ItemImage.md)
- - [SquareConnect.V1ItemType](V1ItemType.md)
- - [SquareConnect.V1ItemVisibility](V1ItemVisibility.md)
- - [SquareConnect.V1ListBankAccountsRequest](V1ListBankAccountsRequest.md)
- - [SquareConnect.V1ListBankAccountsResponse](V1ListBankAccountsResponse.md)
- - [SquareConnect.V1ListCashDrawerShiftsRequest](V1ListCashDrawerShiftsRequest.md)
- - [SquareConnect.V1ListCashDrawerShiftsResponse](V1ListCashDrawerShiftsResponse.md)
- - [SquareConnect.V1ListCategoriesRequest](V1ListCategoriesRequest.md)
- - [SquareConnect.V1ListCategoriesResponse](V1ListCategoriesResponse.md)
- - [SquareConnect.V1ListDiscountsRequest](V1ListDiscountsRequest.md)
- - [SquareConnect.V1ListDiscountsResponse](V1ListDiscountsResponse.md)
- - [SquareConnect.V1ListEmployeeRolesRequest](V1ListEmployeeRolesRequest.md)
- - [SquareConnect.V1ListEmployeeRolesResponse](V1ListEmployeeRolesResponse.md)
- - [SquareConnect.V1ListEmployeesRequest](V1ListEmployeesRequest.md)
- - [SquareConnect.V1ListEmployeesRequestStatus](V1ListEmployeesRequestStatus.md)
- - [SquareConnect.V1ListEmployeesResponse](V1ListEmployeesResponse.md)
- - [SquareConnect.V1ListFeesRequest](V1ListFeesRequest.md)
- - [SquareConnect.V1ListFeesResponse](V1ListFeesResponse.md)
- - [SquareConnect.V1ListInventoryRequest](V1ListInventoryRequest.md)
- - [SquareConnect.V1ListInventoryResponse](V1ListInventoryResponse.md)
- - [SquareConnect.V1ListItemsRequest](V1ListItemsRequest.md)
- - [SquareConnect.V1ListItemsResponse](V1ListItemsResponse.md)
- - [SquareConnect.V1ListLocationsRequest](V1ListLocationsRequest.md)
- - [SquareConnect.V1ListLocationsResponse](V1ListLocationsResponse.md)
- - [SquareConnect.V1ListModifierListsRequest](V1ListModifierListsRequest.md)
- - [SquareConnect.V1ListModifierListsResponse](V1ListModifierListsResponse.md)
- - [SquareConnect.V1ListOrdersRequest](V1ListOrdersRequest.md)
- - [SquareConnect.V1ListOrdersResponse](V1ListOrdersResponse.md)
- - [SquareConnect.V1ListPagesRequest](V1ListPagesRequest.md)
- - [SquareConnect.V1ListPagesResponse](V1ListPagesResponse.md)
- - [SquareConnect.V1ListPaymentsRequest](V1ListPaymentsRequest.md)
- - [SquareConnect.V1ListPaymentsResponse](V1ListPaymentsResponse.md)
- - [SquareConnect.V1ListRefundsRequest](V1ListRefundsRequest.md)
- - [SquareConnect.V1ListRefundsResponse](V1ListRefundsResponse.md)
- - [SquareConnect.V1ListSettlementsRequest](V1ListSettlementsRequest.md)
- - [SquareConnect.V1ListSettlementsRequestStatus](V1ListSettlementsRequestStatus.md)
- - [SquareConnect.V1ListSettlementsResponse](V1ListSettlementsResponse.md)
- - [SquareConnect.V1ListTimecardEventsRequest](V1ListTimecardEventsRequest.md)
- - [SquareConnect.V1ListTimecardEventsResponse](V1ListTimecardEventsResponse.md)
- - [SquareConnect.V1ListTimecardsRequest](V1ListTimecardsRequest.md)
- - [SquareConnect.V1ListTimecardsResponse](V1ListTimecardsResponse.md)
- - [SquareConnect.V1Merchant](V1Merchant.md)
- - [SquareConnect.V1MerchantAccountType](V1MerchantAccountType.md)
- - [SquareConnect.V1MerchantBusinessType](V1MerchantBusinessType.md)
- - [SquareConnect.V1MerchantLocationDetails](V1MerchantLocationDetails.md)
- - [SquareConnect.V1ModifierList](V1ModifierList.md)
- - [SquareConnect.V1ModifierListSelectionType](V1ModifierListSelectionType.md)
- - [SquareConnect.V1ModifierOption](V1ModifierOption.md)
- - [SquareConnect.V1Money](V1Money.md)
- - [SquareConnect.V1Order](V1Order.md)
- - [SquareConnect.V1OrderHistoryEntry](V1OrderHistoryEntry.md)
- - [SquareConnect.V1OrderHistoryEntryAction](V1OrderHistoryEntryAction.md)
- - [SquareConnect.V1OrderState](V1OrderState.md)
- - [SquareConnect.V1Page](V1Page.md)
- - [SquareConnect.V1PageCell](V1PageCell.md)
- - [SquareConnect.V1PageCellObjectType](V1PageCellObjectType.md)
- - [SquareConnect.V1PageCellPlaceholderType](V1PageCellPlaceholderType.md)
- - [SquareConnect.V1Payment](V1Payment.md)
- - [SquareConnect.V1PaymentDiscount](V1PaymentDiscount.md)
- - [SquareConnect.V1PaymentItemDetail](V1PaymentItemDetail.md)
- - [SquareConnect.V1PaymentItemization](V1PaymentItemization.md)
- - [SquareConnect.V1PaymentItemizationItemizationType](V1PaymentItemizationItemizationType.md)
- - [SquareConnect.V1PaymentModifier](V1PaymentModifier.md)
- - [SquareConnect.V1PaymentSurcharge](V1PaymentSurcharge.md)
- - [SquareConnect.V1PaymentSurchargeType](V1PaymentSurchargeType.md)
- - [SquareConnect.V1PaymentTax](V1PaymentTax.md)
- - [SquareConnect.V1PaymentTaxInclusionType](V1PaymentTaxInclusionType.md)
- - [SquareConnect.V1PhoneNumber](V1PhoneNumber.md)
- - [SquareConnect.V1Refund](V1Refund.md)
- - [SquareConnect.V1RefundType](V1RefundType.md)
- - [SquareConnect.V1RemoveFeeRequest](V1RemoveFeeRequest.md)
- - [SquareConnect.V1RemoveModifierListRequest](V1RemoveModifierListRequest.md)
- - [SquareConnect.V1RetrieveBankAccountRequest](V1RetrieveBankAccountRequest.md)
- - [SquareConnect.V1RetrieveBusinessRequest](V1RetrieveBusinessRequest.md)
- - [SquareConnect.V1RetrieveCashDrawerShiftRequest](V1RetrieveCashDrawerShiftRequest.md)
- - [SquareConnect.V1RetrieveEmployeeRequest](V1RetrieveEmployeeRequest.md)
- - [SquareConnect.V1RetrieveEmployeeRoleRequest](V1RetrieveEmployeeRoleRequest.md)
- - [SquareConnect.V1RetrieveItemRequest](V1RetrieveItemRequest.md)
- - [SquareConnect.V1RetrieveModifierListRequest](V1RetrieveModifierListRequest.md)
- - [SquareConnect.V1RetrieveOrderRequest](V1RetrieveOrderRequest.md)
- - [SquareConnect.V1RetrievePaymentRequest](V1RetrievePaymentRequest.md)
- - [SquareConnect.V1RetrieveSettlementRequest](V1RetrieveSettlementRequest.md)
- - [SquareConnect.V1RetrieveTimecardRequest](V1RetrieveTimecardRequest.md)
- - [SquareConnect.V1Settlement](V1Settlement.md)
- - [SquareConnect.V1SettlementEntry](V1SettlementEntry.md)
- - [SquareConnect.V1SettlementEntryType](V1SettlementEntryType.md)
- - [SquareConnect.V1SettlementStatus](V1SettlementStatus.md)
- - [SquareConnect.V1Tender](V1Tender.md)
- - [SquareConnect.V1TenderCardBrand](V1TenderCardBrand.md)
- - [SquareConnect.V1TenderEntryMethod](V1TenderEntryMethod.md)
- - [SquareConnect.V1TenderType](V1TenderType.md)
- - [SquareConnect.V1Timecard](V1Timecard.md)
- - [SquareConnect.V1TimecardEvent](V1TimecardEvent.md)
- - [SquareConnect.V1TimecardEventEventType](V1TimecardEventEventType.md)
- - [SquareConnect.V1UpdateCategoryRequest](V1UpdateCategoryRequest.md)
- - [SquareConnect.V1UpdateDiscountRequest](V1UpdateDiscountRequest.md)
- - [SquareConnect.V1UpdateEmployeeRequest](V1UpdateEmployeeRequest.md)
- - [SquareConnect.V1UpdateEmployeeRoleRequest](V1UpdateEmployeeRoleRequest.md)
- - [SquareConnect.V1UpdateFeeRequest](V1UpdateFeeRequest.md)
- - [SquareConnect.V1UpdateItemRequest](V1UpdateItemRequest.md)
- - [SquareConnect.V1UpdateModifierListRequest](V1UpdateModifierListRequest.md)
- - [SquareConnect.V1UpdateModifierListRequestSelectionType](V1UpdateModifierListRequestSelectionType.md)
- - [SquareConnect.V1UpdateModifierOptionRequest](V1UpdateModifierOptionRequest.md)
- - [SquareConnect.V1UpdateOrderRequest](V1UpdateOrderRequest.md)
- - [SquareConnect.V1UpdateOrderRequestAction](V1UpdateOrderRequestAction.md)
- - [SquareConnect.V1UpdatePageCellRequest](V1UpdatePageCellRequest.md)
- - [SquareConnect.V1UpdatePageRequest](V1UpdatePageRequest.md)
- - [SquareConnect.V1UpdateTimecardRequest](V1UpdateTimecardRequest.md)
- - [SquareConnect.V1UpdateVariationRequest](V1UpdateVariationRequest.md)
- - [SquareConnect.V1Variation](V1Variation.md)
- - [SquareConnect.V1VariationInventoryAlertType](V1VariationInventoryAlertType.md)
- - [SquareConnect.V1VariationPricingType](V1VariationPricingType.md)
- - [SquareConnect.VoidTransactionRequest](VoidTransactionRequest.md)
- - [SquareConnect.VoidTransactionResponse](VoidTransactionResponse.md)
- - [SquareConnect.WageSetting](WageSetting.md)
- - [SquareConnect.Weekday](Weekday.md)
- - [SquareConnect.WorkweekConfig](WorkweekConfig.md)
+ - [SquareConnect.AcceptDisputeRequest](docs/AcceptDisputeRequest.md)
+ - [SquareConnect.AcceptDisputeResponse](docs/AcceptDisputeResponse.md)
+ - [SquareConnect.AccumulateLoyaltyPointsRequest](docs/AccumulateLoyaltyPointsRequest.md)
+ - [SquareConnect.AccumulateLoyaltyPointsResponse](docs/AccumulateLoyaltyPointsResponse.md)
+ - [SquareConnect.ActionCancelReason](docs/ActionCancelReason.md)
+ - [SquareConnect.AddGroupToCustomerRequest](docs/AddGroupToCustomerRequest.md)
+ - [SquareConnect.AddGroupToCustomerResponse](docs/AddGroupToCustomerResponse.md)
+ - [SquareConnect.AdditionalRecipient](docs/AdditionalRecipient.md)
+ - [SquareConnect.Address](docs/Address.md)
+ - [SquareConnect.AdjustLoyaltyPointsRequest](docs/AdjustLoyaltyPointsRequest.md)
+ - [SquareConnect.AdjustLoyaltyPointsResponse](docs/AdjustLoyaltyPointsResponse.md)
+ - [SquareConnect.AppointmentSegment](docs/AppointmentSegment.md)
+ - [SquareConnect.Availability](docs/Availability.md)
+ - [SquareConnect.BalancePaymentDetails](docs/BalancePaymentDetails.md)
+ - [SquareConnect.BankAccount](docs/BankAccount.md)
+ - [SquareConnect.BankAccountStatus](docs/BankAccountStatus.md)
+ - [SquareConnect.BankAccountType](docs/BankAccountType.md)
+ - [SquareConnect.BatchChangeInventoryRequest](docs/BatchChangeInventoryRequest.md)
+ - [SquareConnect.BatchChangeInventoryResponse](docs/BatchChangeInventoryResponse.md)
+ - [SquareConnect.BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)
+ - [SquareConnect.BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
+ - [SquareConnect.BatchRetrieveCatalogObjectsRequest](docs/BatchRetrieveCatalogObjectsRequest.md)
+ - [SquareConnect.BatchRetrieveCatalogObjectsResponse](docs/BatchRetrieveCatalogObjectsResponse.md)
+ - [SquareConnect.BatchRetrieveInventoryChangesRequest](docs/BatchRetrieveInventoryChangesRequest.md)
+ - [SquareConnect.BatchRetrieveInventoryChangesResponse](docs/BatchRetrieveInventoryChangesResponse.md)
+ - [SquareConnect.BatchRetrieveInventoryCountsRequest](docs/BatchRetrieveInventoryCountsRequest.md)
+ - [SquareConnect.BatchRetrieveInventoryCountsResponse](docs/BatchRetrieveInventoryCountsResponse.md)
+ - [SquareConnect.BatchRetrieveOrdersRequest](docs/BatchRetrieveOrdersRequest.md)
+ - [SquareConnect.BatchRetrieveOrdersResponse](docs/BatchRetrieveOrdersResponse.md)
+ - [SquareConnect.BatchUpsertCatalogObjectsRequest](docs/BatchUpsertCatalogObjectsRequest.md)
+ - [SquareConnect.BatchUpsertCatalogObjectsResponse](docs/BatchUpsertCatalogObjectsResponse.md)
+ - [SquareConnect.Booking](docs/Booking.md)
+ - [SquareConnect.BookingStatus](docs/BookingStatus.md)
+ - [SquareConnect.BreakType](docs/BreakType.md)
+ - [SquareConnect.BulkCreateTeamMembersRequest](docs/BulkCreateTeamMembersRequest.md)
+ - [SquareConnect.BulkCreateTeamMembersResponse](docs/BulkCreateTeamMembersResponse.md)
+ - [SquareConnect.BulkUpdateTeamMembersRequest](docs/BulkUpdateTeamMembersRequest.md)
+ - [SquareConnect.BulkUpdateTeamMembersResponse](docs/BulkUpdateTeamMembersResponse.md)
+ - [SquareConnect.BusinessAppointmentSettings](docs/BusinessAppointmentSettings.md)
+ - [SquareConnect.BusinessAppointmentSettingsAlignmentTime](docs/BusinessAppointmentSettingsAlignmentTime.md)
+ - [SquareConnect.BusinessAppointmentSettingsBookingLocationType](docs/BusinessAppointmentSettingsBookingLocationType.md)
+ - [SquareConnect.BusinessAppointmentSettingsCancellationPolicy](docs/BusinessAppointmentSettingsCancellationPolicy.md)
+ - [SquareConnect.BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType](docs/BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType.md)
+ - [SquareConnect.BusinessBookingProfile](docs/BusinessBookingProfile.md)
+ - [SquareConnect.BusinessBookingProfileBookingPolicy](docs/BusinessBookingProfileBookingPolicy.md)
+ - [SquareConnect.BusinessBookingProfileCustomerTimezoneChoice](docs/BusinessBookingProfileCustomerTimezoneChoice.md)
+ - [SquareConnect.BusinessHours](docs/BusinessHours.md)
+ - [SquareConnect.BusinessHoursPeriod](docs/BusinessHoursPeriod.md)
+ - [SquareConnect.CalculateLoyaltyPointsRequest](docs/CalculateLoyaltyPointsRequest.md)
+ - [SquareConnect.CalculateLoyaltyPointsResponse](docs/CalculateLoyaltyPointsResponse.md)
+ - [SquareConnect.CalculateOrderRequest](docs/CalculateOrderRequest.md)
+ - [SquareConnect.CalculateOrderResponse](docs/CalculateOrderResponse.md)
+ - [SquareConnect.CancelBookingRequest](docs/CancelBookingRequest.md)
+ - [SquareConnect.CancelBookingResponse](docs/CancelBookingResponse.md)
+ - [SquareConnect.CancelInvoiceRequest](docs/CancelInvoiceRequest.md)
+ - [SquareConnect.CancelInvoiceResponse](docs/CancelInvoiceResponse.md)
+ - [SquareConnect.CancelPaymentByIdempotencyKeyRequest](docs/CancelPaymentByIdempotencyKeyRequest.md)
+ - [SquareConnect.CancelPaymentByIdempotencyKeyResponse](docs/CancelPaymentByIdempotencyKeyResponse.md)
+ - [SquareConnect.CancelPaymentRequest](docs/CancelPaymentRequest.md)
+ - [SquareConnect.CancelPaymentResponse](docs/CancelPaymentResponse.md)
+ - [SquareConnect.CancelSubscriptionRequest](docs/CancelSubscriptionRequest.md)
+ - [SquareConnect.CancelSubscriptionResponse](docs/CancelSubscriptionResponse.md)
+ - [SquareConnect.CancelTerminalCheckoutRequest](docs/CancelTerminalCheckoutRequest.md)
+ - [SquareConnect.CancelTerminalCheckoutResponse](docs/CancelTerminalCheckoutResponse.md)
+ - [SquareConnect.CancelTerminalRefundRequest](docs/CancelTerminalRefundRequest.md)
+ - [SquareConnect.CancelTerminalRefundResponse](docs/CancelTerminalRefundResponse.md)
+ - [SquareConnect.CaptureTransactionRequest](docs/CaptureTransactionRequest.md)
+ - [SquareConnect.CaptureTransactionResponse](docs/CaptureTransactionResponse.md)
+ - [SquareConnect.Card](docs/Card.md)
+ - [SquareConnect.CardBrand](docs/CardBrand.md)
+ - [SquareConnect.CardPaymentDetails](docs/CardPaymentDetails.md)
+ - [SquareConnect.CardPrepaidType](docs/CardPrepaidType.md)
+ - [SquareConnect.CardSquareProduct](docs/CardSquareProduct.md)
+ - [SquareConnect.CardType](docs/CardType.md)
+ - [SquareConnect.CashDrawerDevice](docs/CashDrawerDevice.md)
+ - [SquareConnect.CashDrawerEventType](docs/CashDrawerEventType.md)
+ - [SquareConnect.CashDrawerShift](docs/CashDrawerShift.md)
+ - [SquareConnect.CashDrawerShiftEvent](docs/CashDrawerShiftEvent.md)
+ - [SquareConnect.CashDrawerShiftState](docs/CashDrawerShiftState.md)
+ - [SquareConnect.CashDrawerShiftSummary](docs/CashDrawerShiftSummary.md)
+ - [SquareConnect.CatalogCategory](docs/CatalogCategory.md)
+ - [SquareConnect.CatalogCustomAttributeDefinition](docs/CatalogCustomAttributeDefinition.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionAppVisibility](docs/CatalogCustomAttributeDefinitionAppVisibility.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionNumberConfig](docs/CatalogCustomAttributeDefinitionNumberConfig.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfig](docs/CatalogCustomAttributeDefinitionSelectionConfig.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection](docs/CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionSellerVisibility](docs/CatalogCustomAttributeDefinitionSellerVisibility.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionStringConfig](docs/CatalogCustomAttributeDefinitionStringConfig.md)
+ - [SquareConnect.CatalogCustomAttributeDefinitionType](docs/CatalogCustomAttributeDefinitionType.md)
+ - [SquareConnect.CatalogCustomAttributeValue](docs/CatalogCustomAttributeValue.md)
+ - [SquareConnect.CatalogDiscount](docs/CatalogDiscount.md)
+ - [SquareConnect.CatalogDiscountModifyTaxBasis](docs/CatalogDiscountModifyTaxBasis.md)
+ - [SquareConnect.CatalogDiscountType](docs/CatalogDiscountType.md)
+ - [SquareConnect.CatalogIdMapping](docs/CatalogIdMapping.md)
+ - [SquareConnect.CatalogImage](docs/CatalogImage.md)
+ - [SquareConnect.CatalogInfoRequest](docs/CatalogInfoRequest.md)
+ - [SquareConnect.CatalogInfoResponse](docs/CatalogInfoResponse.md)
+ - [SquareConnect.CatalogInfoResponseLimits](docs/CatalogInfoResponseLimits.md)
+ - [SquareConnect.CatalogItem](docs/CatalogItem.md)
+ - [SquareConnect.CatalogItemModifierListInfo](docs/CatalogItemModifierListInfo.md)
+ - [SquareConnect.CatalogItemOption](docs/CatalogItemOption.md)
+ - [SquareConnect.CatalogItemOptionForItem](docs/CatalogItemOptionForItem.md)
+ - [SquareConnect.CatalogItemOptionValue](docs/CatalogItemOptionValue.md)
+ - [SquareConnect.CatalogItemOptionValueForItemVariation](docs/CatalogItemOptionValueForItemVariation.md)
+ - [SquareConnect.CatalogItemProductType](docs/CatalogItemProductType.md)
+ - [SquareConnect.CatalogItemVariation](docs/CatalogItemVariation.md)
+ - [SquareConnect.CatalogMeasurementUnit](docs/CatalogMeasurementUnit.md)
+ - [SquareConnect.CatalogModifier](docs/CatalogModifier.md)
+ - [SquareConnect.CatalogModifierList](docs/CatalogModifierList.md)
+ - [SquareConnect.CatalogModifierListSelectionType](docs/CatalogModifierListSelectionType.md)
+ - [SquareConnect.CatalogModifierOverride](docs/CatalogModifierOverride.md)
+ - [SquareConnect.CatalogObject](docs/CatalogObject.md)
+ - [SquareConnect.CatalogObjectBatch](docs/CatalogObjectBatch.md)
+ - [SquareConnect.CatalogObjectReference](docs/CatalogObjectReference.md)
+ - [SquareConnect.CatalogObjectType](docs/CatalogObjectType.md)
+ - [SquareConnect.CatalogPricingRule](docs/CatalogPricingRule.md)
+ - [SquareConnect.CatalogPricingType](docs/CatalogPricingType.md)
+ - [SquareConnect.CatalogProductSet](docs/CatalogProductSet.md)
+ - [SquareConnect.CatalogQuery](docs/CatalogQuery.md)
+ - [SquareConnect.CatalogQueryExact](docs/CatalogQueryExact.md)
+ - [SquareConnect.CatalogQueryItemVariationsForItemOptionValues](docs/CatalogQueryItemVariationsForItemOptionValues.md)
+ - [SquareConnect.CatalogQueryItemsForItemOptions](docs/CatalogQueryItemsForItemOptions.md)
+ - [SquareConnect.CatalogQueryItemsForModifierList](docs/CatalogQueryItemsForModifierList.md)
+ - [SquareConnect.CatalogQueryItemsForTax](docs/CatalogQueryItemsForTax.md)
+ - [SquareConnect.CatalogQueryPrefix](docs/CatalogQueryPrefix.md)
+ - [SquareConnect.CatalogQueryRange](docs/CatalogQueryRange.md)
+ - [SquareConnect.CatalogQuerySet](docs/CatalogQuerySet.md)
+ - [SquareConnect.CatalogQuerySortedAttribute](docs/CatalogQuerySortedAttribute.md)
+ - [SquareConnect.CatalogQueryText](docs/CatalogQueryText.md)
+ - [SquareConnect.CatalogQuickAmount](docs/CatalogQuickAmount.md)
+ - [SquareConnect.CatalogQuickAmountType](docs/CatalogQuickAmountType.md)
+ - [SquareConnect.CatalogQuickAmountsSettings](docs/CatalogQuickAmountsSettings.md)
+ - [SquareConnect.CatalogQuickAmountsSettingsOption](docs/CatalogQuickAmountsSettingsOption.md)
+ - [SquareConnect.CatalogSubscriptionPlan](docs/CatalogSubscriptionPlan.md)
+ - [SquareConnect.CatalogTax](docs/CatalogTax.md)
+ - [SquareConnect.CatalogTimePeriod](docs/CatalogTimePeriod.md)
+ - [SquareConnect.CatalogV1Id](docs/CatalogV1Id.md)
+ - [SquareConnect.ChargeRequest](docs/ChargeRequest.md)
+ - [SquareConnect.ChargeRequestAdditionalRecipient](docs/ChargeRequestAdditionalRecipient.md)
+ - [SquareConnect.ChargeResponse](docs/ChargeResponse.md)
+ - [SquareConnect.CheckAppointmentsOnboardedRequest](docs/CheckAppointmentsOnboardedRequest.md)
+ - [SquareConnect.CheckAppointmentsOnboardedResponse](docs/CheckAppointmentsOnboardedResponse.md)
+ - [SquareConnect.Checkout](docs/Checkout.md)
+ - [SquareConnect.CompletePaymentRequest](docs/CompletePaymentRequest.md)
+ - [SquareConnect.CompletePaymentResponse](docs/CompletePaymentResponse.md)
+ - [SquareConnect.Coordinates](docs/Coordinates.md)
+ - [SquareConnect.Country](docs/Country.md)
+ - [SquareConnect.CreateBookingRequest](docs/CreateBookingRequest.md)
+ - [SquareConnect.CreateBookingResponse](docs/CreateBookingResponse.md)
+ - [SquareConnect.CreateBreakTypeRequest](docs/CreateBreakTypeRequest.md)
+ - [SquareConnect.CreateBreakTypeResponse](docs/CreateBreakTypeResponse.md)
+ - [SquareConnect.CreateCheckoutRequest](docs/CreateCheckoutRequest.md)
+ - [SquareConnect.CreateCheckoutResponse](docs/CreateCheckoutResponse.md)
+ - [SquareConnect.CreateCustomerCardRequest](docs/CreateCustomerCardRequest.md)
+ - [SquareConnect.CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
+ - [SquareConnect.CreateCustomerGroupRequest](docs/CreateCustomerGroupRequest.md)
+ - [SquareConnect.CreateCustomerGroupResponse](docs/CreateCustomerGroupResponse.md)
+ - [SquareConnect.CreateCustomerRequest](docs/CreateCustomerRequest.md)
+ - [SquareConnect.CreateCustomerResponse](docs/CreateCustomerResponse.md)
+ - [SquareConnect.CreateDeviceCodeRequest](docs/CreateDeviceCodeRequest.md)
+ - [SquareConnect.CreateDeviceCodeResponse](docs/CreateDeviceCodeResponse.md)
+ - [SquareConnect.CreateDisputeEvidenceTextRequest](docs/CreateDisputeEvidenceTextRequest.md)
+ - [SquareConnect.CreateDisputeEvidenceTextResponse](docs/CreateDisputeEvidenceTextResponse.md)
+ - [SquareConnect.CreateInvoiceRequest](docs/CreateInvoiceRequest.md)
+ - [SquareConnect.CreateInvoiceResponse](docs/CreateInvoiceResponse.md)
+ - [SquareConnect.CreateLocationRequest](docs/CreateLocationRequest.md)
+ - [SquareConnect.CreateLocationResponse](docs/CreateLocationResponse.md)
+ - [SquareConnect.CreateLoyaltyAccountRequest](docs/CreateLoyaltyAccountRequest.md)
+ - [SquareConnect.CreateLoyaltyAccountResponse](docs/CreateLoyaltyAccountResponse.md)
+ - [SquareConnect.CreateLoyaltyRewardRequest](docs/CreateLoyaltyRewardRequest.md)
+ - [SquareConnect.CreateLoyaltyRewardResponse](docs/CreateLoyaltyRewardResponse.md)
+ - [SquareConnect.CreateMobileAuthorizationCodeRequest](docs/CreateMobileAuthorizationCodeRequest.md)
+ - [SquareConnect.CreateMobileAuthorizationCodeResponse](docs/CreateMobileAuthorizationCodeResponse.md)
+ - [SquareConnect.CreateOrderRequest](docs/CreateOrderRequest.md)
+ - [SquareConnect.CreateOrderResponse](docs/CreateOrderResponse.md)
+ - [SquareConnect.CreatePaymentRequest](docs/CreatePaymentRequest.md)
+ - [SquareConnect.CreatePaymentResponse](docs/CreatePaymentResponse.md)
+ - [SquareConnect.CreateRefundRequest](docs/CreateRefundRequest.md)
+ - [SquareConnect.CreateRefundResponse](docs/CreateRefundResponse.md)
+ - [SquareConnect.CreateShiftRequest](docs/CreateShiftRequest.md)
+ - [SquareConnect.CreateShiftResponse](docs/CreateShiftResponse.md)
+ - [SquareConnect.CreateSubscriptionRequest](docs/CreateSubscriptionRequest.md)
+ - [SquareConnect.CreateSubscriptionResponse](docs/CreateSubscriptionResponse.md)
+ - [SquareConnect.CreateTeamMemberRequest](docs/CreateTeamMemberRequest.md)
+ - [SquareConnect.CreateTeamMemberResponse](docs/CreateTeamMemberResponse.md)
+ - [SquareConnect.CreateTerminalCheckoutRequest](docs/CreateTerminalCheckoutRequest.md)
+ - [SquareConnect.CreateTerminalCheckoutResponse](docs/CreateTerminalCheckoutResponse.md)
+ - [SquareConnect.CreateTerminalRefundRequest](docs/CreateTerminalRefundRequest.md)
+ - [SquareConnect.CreateTerminalRefundResponse](docs/CreateTerminalRefundResponse.md)
+ - [SquareConnect.Currency](docs/Currency.md)
+ - [SquareConnect.CustomAttributeFilter](docs/CustomAttributeFilter.md)
+ - [SquareConnect.Customer](docs/Customer.md)
+ - [SquareConnect.CustomerCreationSource](docs/CustomerCreationSource.md)
+ - [SquareConnect.CustomerCreationSourceFilter](docs/CustomerCreationSourceFilter.md)
+ - [SquareConnect.CustomerFilter](docs/CustomerFilter.md)
+ - [SquareConnect.CustomerGroup](docs/CustomerGroup.md)
+ - [SquareConnect.CustomerGroupInfo](docs/CustomerGroupInfo.md)
+ - [SquareConnect.CustomerInclusionExclusion](docs/CustomerInclusionExclusion.md)
+ - [SquareConnect.CustomerPreferences](docs/CustomerPreferences.md)
+ - [SquareConnect.CustomerQuery](docs/CustomerQuery.md)
+ - [SquareConnect.CustomerSegment](docs/CustomerSegment.md)
+ - [SquareConnect.CustomerSort](docs/CustomerSort.md)
+ - [SquareConnect.CustomerSortField](docs/CustomerSortField.md)
+ - [SquareConnect.CustomerTextFilter](docs/CustomerTextFilter.md)
+ - [SquareConnect.DateRange](docs/DateRange.md)
+ - [SquareConnect.DayOfWeek](docs/DayOfWeek.md)
+ - [SquareConnect.DeleteBreakTypeRequest](docs/DeleteBreakTypeRequest.md)
+ - [SquareConnect.DeleteBreakTypeResponse](docs/DeleteBreakTypeResponse.md)
+ - [SquareConnect.DeleteCatalogObjectRequest](docs/DeleteCatalogObjectRequest.md)
+ - [SquareConnect.DeleteCatalogObjectResponse](docs/DeleteCatalogObjectResponse.md)
+ - [SquareConnect.DeleteCustomerCardRequest](docs/DeleteCustomerCardRequest.md)
+ - [SquareConnect.DeleteCustomerCardResponse](docs/DeleteCustomerCardResponse.md)
+ - [SquareConnect.DeleteCustomerGroupRequest](docs/DeleteCustomerGroupRequest.md)
+ - [SquareConnect.DeleteCustomerGroupResponse](docs/DeleteCustomerGroupResponse.md)
+ - [SquareConnect.DeleteCustomerRequest](docs/DeleteCustomerRequest.md)
+ - [SquareConnect.DeleteCustomerResponse](docs/DeleteCustomerResponse.md)
+ - [SquareConnect.DeleteInvoiceRequest](docs/DeleteInvoiceRequest.md)
+ - [SquareConnect.DeleteInvoiceResponse](docs/DeleteInvoiceResponse.md)
+ - [SquareConnect.DeleteLoyaltyRewardRequest](docs/DeleteLoyaltyRewardRequest.md)
+ - [SquareConnect.DeleteLoyaltyRewardResponse](docs/DeleteLoyaltyRewardResponse.md)
+ - [SquareConnect.DeleteShiftRequest](docs/DeleteShiftRequest.md)
+ - [SquareConnect.DeleteShiftResponse](docs/DeleteShiftResponse.md)
+ - [SquareConnect.Device](docs/Device.md)
+ - [SquareConnect.DeviceCheckoutOptions](docs/DeviceCheckoutOptions.md)
+ - [SquareConnect.DeviceCode](docs/DeviceCode.md)
+ - [SquareConnect.DeviceCodeStatus](docs/DeviceCodeStatus.md)
+ - [SquareConnect.DeviceDetails](docs/DeviceDetails.md)
+ - [SquareConnect.Dispute](docs/Dispute.md)
+ - [SquareConnect.DisputeEvidence](docs/DisputeEvidence.md)
+ - [SquareConnect.DisputeEvidenceFile](docs/DisputeEvidenceFile.md)
+ - [SquareConnect.DisputeEvidenceType](docs/DisputeEvidenceType.md)
+ - [SquareConnect.DisputeReason](docs/DisputeReason.md)
+ - [SquareConnect.DisputeState](docs/DisputeState.md)
+ - [SquareConnect.DisputedPayment](docs/DisputedPayment.md)
+ - [SquareConnect.EcomVisibility](docs/EcomVisibility.md)
+ - [SquareConnect.Employee](docs/Employee.md)
+ - [SquareConnect.EmployeeStatus](docs/EmployeeStatus.md)
+ - [SquareConnect.EmployeeWage](docs/EmployeeWage.md)
+ - [SquareConnect.Error](docs/Error.md)
+ - [SquareConnect.ErrorCategory](docs/ErrorCategory.md)
+ - [SquareConnect.ErrorCode](docs/ErrorCode.md)
+ - [SquareConnect.ExcludeStrategy](docs/ExcludeStrategy.md)
+ - [SquareConnect.FilterValue](docs/FilterValue.md)
+ - [SquareConnect.GetBankAccountByV1IdRequest](docs/GetBankAccountByV1IdRequest.md)
+ - [SquareConnect.GetBankAccountByV1IdResponse](docs/GetBankAccountByV1IdResponse.md)
+ - [SquareConnect.GetBankAccountRequest](docs/GetBankAccountRequest.md)
+ - [SquareConnect.GetBankAccountResponse](docs/GetBankAccountResponse.md)
+ - [SquareConnect.GetBreakTypeRequest](docs/GetBreakTypeRequest.md)
+ - [SquareConnect.GetBreakTypeResponse](docs/GetBreakTypeResponse.md)
+ - [SquareConnect.GetDeviceCodeRequest](docs/GetDeviceCodeRequest.md)
+ - [SquareConnect.GetDeviceCodeResponse](docs/GetDeviceCodeResponse.md)
+ - [SquareConnect.GetEmployeeWageRequest](docs/GetEmployeeWageRequest.md)
+ - [SquareConnect.GetEmployeeWageResponse](docs/GetEmployeeWageResponse.md)
+ - [SquareConnect.GetInvoiceRequest](docs/GetInvoiceRequest.md)
+ - [SquareConnect.GetInvoiceResponse](docs/GetInvoiceResponse.md)
+ - [SquareConnect.GetPaymentRefundRequest](docs/GetPaymentRefundRequest.md)
+ - [SquareConnect.GetPaymentRefundResponse](docs/GetPaymentRefundResponse.md)
+ - [SquareConnect.GetPaymentRequest](docs/GetPaymentRequest.md)
+ - [SquareConnect.GetPaymentResponse](docs/GetPaymentResponse.md)
+ - [SquareConnect.GetShiftRequest](docs/GetShiftRequest.md)
+ - [SquareConnect.GetShiftResponse](docs/GetShiftResponse.md)
+ - [SquareConnect.GetTeamMemberWageRequest](docs/GetTeamMemberWageRequest.md)
+ - [SquareConnect.GetTeamMemberWageResponse](docs/GetTeamMemberWageResponse.md)
+ - [SquareConnect.GetTerminalCheckoutRequest](docs/GetTerminalCheckoutRequest.md)
+ - [SquareConnect.GetTerminalCheckoutResponse](docs/GetTerminalCheckoutResponse.md)
+ - [SquareConnect.GetTerminalRefundRequest](docs/GetTerminalRefundRequest.md)
+ - [SquareConnect.GetTerminalRefundResponse](docs/GetTerminalRefundResponse.md)
+ - [SquareConnect.InlineTypes](docs/InlineTypes.md)
+ - [SquareConnect.InventoryAdjustment](docs/InventoryAdjustment.md)
+ - [SquareConnect.InventoryAlertType](docs/InventoryAlertType.md)
+ - [SquareConnect.InventoryChange](docs/InventoryChange.md)
+ - [SquareConnect.InventoryChangeType](docs/InventoryChangeType.md)
+ - [SquareConnect.InventoryCount](docs/InventoryCount.md)
+ - [SquareConnect.InventoryPhysicalCount](docs/InventoryPhysicalCount.md)
+ - [SquareConnect.InventoryState](docs/InventoryState.md)
+ - [SquareConnect.InventoryTransfer](docs/InventoryTransfer.md)
+ - [SquareConnect.Invoice](docs/Invoice.md)
+ - [SquareConnect.InvoiceCustomField](docs/InvoiceCustomField.md)
+ - [SquareConnect.InvoiceCustomFieldPlacement](docs/InvoiceCustomFieldPlacement.md)
+ - [SquareConnect.InvoiceFilter](docs/InvoiceFilter.md)
+ - [SquareConnect.InvoicePaymentReminder](docs/InvoicePaymentReminder.md)
+ - [SquareConnect.InvoicePaymentReminderStatus](docs/InvoicePaymentReminderStatus.md)
+ - [SquareConnect.InvoicePaymentRequest](docs/InvoicePaymentRequest.md)
+ - [SquareConnect.InvoiceQuery](docs/InvoiceQuery.md)
+ - [SquareConnect.InvoiceRecipient](docs/InvoiceRecipient.md)
+ - [SquareConnect.InvoiceRequestMethod](docs/InvoiceRequestMethod.md)
+ - [SquareConnect.InvoiceRequestType](docs/InvoiceRequestType.md)
+ - [SquareConnect.InvoiceSort](docs/InvoiceSort.md)
+ - [SquareConnect.InvoiceSortField](docs/InvoiceSortField.md)
+ - [SquareConnect.InvoiceStatus](docs/InvoiceStatus.md)
+ - [SquareConnect.ItemVariationLocationOverrides](docs/ItemVariationLocationOverrides.md)
+ - [SquareConnect.JobAssignment](docs/JobAssignment.md)
+ - [SquareConnect.JobAssignmentPayType](docs/JobAssignmentPayType.md)
+ - [SquareConnect.ListBankAccountsRequest](docs/ListBankAccountsRequest.md)
+ - [SquareConnect.ListBankAccountsResponse](docs/ListBankAccountsResponse.md)
+ - [SquareConnect.ListBreakTypesRequest](docs/ListBreakTypesRequest.md)
+ - [SquareConnect.ListBreakTypesResponse](docs/ListBreakTypesResponse.md)
+ - [SquareConnect.ListCashDrawerShiftEventsRequest](docs/ListCashDrawerShiftEventsRequest.md)
+ - [SquareConnect.ListCashDrawerShiftEventsResponse](docs/ListCashDrawerShiftEventsResponse.md)
+ - [SquareConnect.ListCashDrawerShiftsRequest](docs/ListCashDrawerShiftsRequest.md)
+ - [SquareConnect.ListCashDrawerShiftsResponse](docs/ListCashDrawerShiftsResponse.md)
+ - [SquareConnect.ListCatalogRequest](docs/ListCatalogRequest.md)
+ - [SquareConnect.ListCatalogResponse](docs/ListCatalogResponse.md)
+ - [SquareConnect.ListCustomerGroupsRequest](docs/ListCustomerGroupsRequest.md)
+ - [SquareConnect.ListCustomerGroupsResponse](docs/ListCustomerGroupsResponse.md)
+ - [SquareConnect.ListCustomerSegmentsRequest](docs/ListCustomerSegmentsRequest.md)
+ - [SquareConnect.ListCustomerSegmentsResponse](docs/ListCustomerSegmentsResponse.md)
+ - [SquareConnect.ListCustomersRequest](docs/ListCustomersRequest.md)
+ - [SquareConnect.ListCustomersResponse](docs/ListCustomersResponse.md)
+ - [SquareConnect.ListDeviceCodesRequest](docs/ListDeviceCodesRequest.md)
+ - [SquareConnect.ListDeviceCodesResponse](docs/ListDeviceCodesResponse.md)
+ - [SquareConnect.ListDisputeEvidenceRequest](docs/ListDisputeEvidenceRequest.md)
+ - [SquareConnect.ListDisputeEvidenceResponse](docs/ListDisputeEvidenceResponse.md)
+ - [SquareConnect.ListDisputesRequest](docs/ListDisputesRequest.md)
+ - [SquareConnect.ListDisputesResponse](docs/ListDisputesResponse.md)
+ - [SquareConnect.ListEmployeeWagesRequest](docs/ListEmployeeWagesRequest.md)
+ - [SquareConnect.ListEmployeeWagesResponse](docs/ListEmployeeWagesResponse.md)
+ - [SquareConnect.ListEmployeesRequest](docs/ListEmployeesRequest.md)
+ - [SquareConnect.ListEmployeesResponse](docs/ListEmployeesResponse.md)
+ - [SquareConnect.ListInvoicesRequest](docs/ListInvoicesRequest.md)
+ - [SquareConnect.ListInvoicesResponse](docs/ListInvoicesResponse.md)
+ - [SquareConnect.ListLocationsRequest](docs/ListLocationsRequest.md)
+ - [SquareConnect.ListLocationsResponse](docs/ListLocationsResponse.md)
+ - [SquareConnect.ListLoyaltyProgramsRequest](docs/ListLoyaltyProgramsRequest.md)
+ - [SquareConnect.ListLoyaltyProgramsResponse](docs/ListLoyaltyProgramsResponse.md)
+ - [SquareConnect.ListMerchantsRequest](docs/ListMerchantsRequest.md)
+ - [SquareConnect.ListMerchantsResponse](docs/ListMerchantsResponse.md)
+ - [SquareConnect.ListPaymentRefundsRequest](docs/ListPaymentRefundsRequest.md)
+ - [SquareConnect.ListPaymentRefundsResponse](docs/ListPaymentRefundsResponse.md)
+ - [SquareConnect.ListPaymentsRequest](docs/ListPaymentsRequest.md)
+ - [SquareConnect.ListPaymentsResponse](docs/ListPaymentsResponse.md)
+ - [SquareConnect.ListRefundsRequest](docs/ListRefundsRequest.md)
+ - [SquareConnect.ListRefundsResponse](docs/ListRefundsResponse.md)
+ - [SquareConnect.ListSubscriptionEventsRequest](docs/ListSubscriptionEventsRequest.md)
+ - [SquareConnect.ListSubscriptionEventsResponse](docs/ListSubscriptionEventsResponse.md)
+ - [SquareConnect.ListTeamMemberBookingProfilesRequest](docs/ListTeamMemberBookingProfilesRequest.md)
+ - [SquareConnect.ListTeamMemberBookingProfilesResponse](docs/ListTeamMemberBookingProfilesResponse.md)
+ - [SquareConnect.ListTeamMemberWagesRequest](docs/ListTeamMemberWagesRequest.md)
+ - [SquareConnect.ListTeamMemberWagesResponse](docs/ListTeamMemberWagesResponse.md)
+ - [SquareConnect.ListTransactionsRequest](docs/ListTransactionsRequest.md)
+ - [SquareConnect.ListTransactionsResponse](docs/ListTransactionsResponse.md)
+ - [SquareConnect.ListWorkweekConfigsRequest](docs/ListWorkweekConfigsRequest.md)
+ - [SquareConnect.ListWorkweekConfigsResponse](docs/ListWorkweekConfigsResponse.md)
+ - [SquareConnect.Location](docs/Location.md)
+ - [SquareConnect.LocationCapability](docs/LocationCapability.md)
+ - [SquareConnect.LocationStatus](docs/LocationStatus.md)
+ - [SquareConnect.LocationType](docs/LocationType.md)
+ - [SquareConnect.LoyaltyAccount](docs/LoyaltyAccount.md)
+ - [SquareConnect.LoyaltyAccountMapping](docs/LoyaltyAccountMapping.md)
+ - [SquareConnect.LoyaltyAccountMappingType](docs/LoyaltyAccountMappingType.md)
+ - [SquareConnect.LoyaltyEvent](docs/LoyaltyEvent.md)
+ - [SquareConnect.LoyaltyEventAccumulatePoints](docs/LoyaltyEventAccumulatePoints.md)
+ - [SquareConnect.LoyaltyEventAdjustPoints](docs/LoyaltyEventAdjustPoints.md)
+ - [SquareConnect.LoyaltyEventCreateReward](docs/LoyaltyEventCreateReward.md)
+ - [SquareConnect.LoyaltyEventDateTimeFilter](docs/LoyaltyEventDateTimeFilter.md)
+ - [SquareConnect.LoyaltyEventDeleteReward](docs/LoyaltyEventDeleteReward.md)
+ - [SquareConnect.LoyaltyEventExpirePoints](docs/LoyaltyEventExpirePoints.md)
+ - [SquareConnect.LoyaltyEventFilter](docs/LoyaltyEventFilter.md)
+ - [SquareConnect.LoyaltyEventLocationFilter](docs/LoyaltyEventLocationFilter.md)
+ - [SquareConnect.LoyaltyEventLoyaltyAccountFilter](docs/LoyaltyEventLoyaltyAccountFilter.md)
+ - [SquareConnect.LoyaltyEventOrderFilter](docs/LoyaltyEventOrderFilter.md)
+ - [SquareConnect.LoyaltyEventOther](docs/LoyaltyEventOther.md)
+ - [SquareConnect.LoyaltyEventQuery](docs/LoyaltyEventQuery.md)
+ - [SquareConnect.LoyaltyEventRedeemReward](docs/LoyaltyEventRedeemReward.md)
+ - [SquareConnect.LoyaltyEventSource](docs/LoyaltyEventSource.md)
+ - [SquareConnect.LoyaltyEventType](docs/LoyaltyEventType.md)
+ - [SquareConnect.LoyaltyEventTypeFilter](docs/LoyaltyEventTypeFilter.md)
+ - [SquareConnect.LoyaltyProgram](docs/LoyaltyProgram.md)
+ - [SquareConnect.LoyaltyProgramAccrualRule](docs/LoyaltyProgramAccrualRule.md)
+ - [SquareConnect.LoyaltyProgramAccrualRuleType](docs/LoyaltyProgramAccrualRuleType.md)
+ - [SquareConnect.LoyaltyProgramExpirationPolicy](docs/LoyaltyProgramExpirationPolicy.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinition](docs/LoyaltyProgramRewardDefinition.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinitionScope](docs/LoyaltyProgramRewardDefinitionScope.md)
+ - [SquareConnect.LoyaltyProgramRewardDefinitionType](docs/LoyaltyProgramRewardDefinitionType.md)
+ - [SquareConnect.LoyaltyProgramRewardTier](docs/LoyaltyProgramRewardTier.md)
+ - [SquareConnect.LoyaltyProgramStatus](docs/LoyaltyProgramStatus.md)
+ - [SquareConnect.LoyaltyProgramTerminology](docs/LoyaltyProgramTerminology.md)
+ - [SquareConnect.LoyaltyReward](docs/LoyaltyReward.md)
+ - [SquareConnect.LoyaltyRewardStatus](docs/LoyaltyRewardStatus.md)
+ - [SquareConnect.MeasurementUnit](docs/MeasurementUnit.md)
+ - [SquareConnect.MeasurementUnitArea](docs/MeasurementUnitArea.md)
+ - [SquareConnect.MeasurementUnitCustom](docs/MeasurementUnitCustom.md)
+ - [SquareConnect.MeasurementUnitGeneric](docs/MeasurementUnitGeneric.md)
+ - [SquareConnect.MeasurementUnitLength](docs/MeasurementUnitLength.md)
+ - [SquareConnect.MeasurementUnitTime](docs/MeasurementUnitTime.md)
+ - [SquareConnect.MeasurementUnitUnitType](docs/MeasurementUnitUnitType.md)
+ - [SquareConnect.MeasurementUnitVolume](docs/MeasurementUnitVolume.md)
+ - [SquareConnect.MeasurementUnitWeight](docs/MeasurementUnitWeight.md)
+ - [SquareConnect.Merchant](docs/Merchant.md)
+ - [SquareConnect.MerchantStatus](docs/MerchantStatus.md)
+ - [SquareConnect.ModelBreak](docs/ModelBreak.md)
+ - [SquareConnect.Money](docs/Money.md)
+ - [SquareConnect.ObtainTokenRequest](docs/ObtainTokenRequest.md)
+ - [SquareConnect.ObtainTokenResponse](docs/ObtainTokenResponse.md)
+ - [SquareConnect.OnboardAppointmentsRequest](docs/OnboardAppointmentsRequest.md)
+ - [SquareConnect.OnboardAppointmentsResponse](docs/OnboardAppointmentsResponse.md)
+ - [SquareConnect.Order](docs/Order.md)
+ - [SquareConnect.OrderCreated](docs/OrderCreated.md)
+ - [SquareConnect.OrderCreatedObject](docs/OrderCreatedObject.md)
+ - [SquareConnect.OrderEntry](docs/OrderEntry.md)
+ - [SquareConnect.OrderFulfillment](docs/OrderFulfillment.md)
+ - [SquareConnect.OrderFulfillmentPickupDetails](docs/OrderFulfillmentPickupDetails.md)
+ - [SquareConnect.OrderFulfillmentPickupDetailsCurbsidePickupDetails](docs/OrderFulfillmentPickupDetailsCurbsidePickupDetails.md)
+ - [SquareConnect.OrderFulfillmentPickupDetailsScheduleType](docs/OrderFulfillmentPickupDetailsScheduleType.md)
+ - [SquareConnect.OrderFulfillmentRecipient](docs/OrderFulfillmentRecipient.md)
+ - [SquareConnect.OrderFulfillmentShipmentDetails](docs/OrderFulfillmentShipmentDetails.md)
+ - [SquareConnect.OrderFulfillmentState](docs/OrderFulfillmentState.md)
+ - [SquareConnect.OrderFulfillmentType](docs/OrderFulfillmentType.md)
+ - [SquareConnect.OrderFulfillmentUpdated](docs/OrderFulfillmentUpdated.md)
+ - [SquareConnect.OrderFulfillmentUpdatedObject](docs/OrderFulfillmentUpdatedObject.md)
+ - [SquareConnect.OrderFulfillmentUpdatedUpdate](docs/OrderFulfillmentUpdatedUpdate.md)
+ - [SquareConnect.OrderLineItem](docs/OrderLineItem.md)
+ - [SquareConnect.OrderLineItemAppliedDiscount](docs/OrderLineItemAppliedDiscount.md)
+ - [SquareConnect.OrderLineItemAppliedTax](docs/OrderLineItemAppliedTax.md)
+ - [SquareConnect.OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
+ - [SquareConnect.OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
+ - [SquareConnect.OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
+ - [SquareConnect.OrderLineItemModifier](docs/OrderLineItemModifier.md)
+ - [SquareConnect.OrderLineItemPricingBlocklists](docs/OrderLineItemPricingBlocklists.md)
+ - [SquareConnect.OrderLineItemPricingBlocklistsBlockedDiscount](docs/OrderLineItemPricingBlocklistsBlockedDiscount.md)
+ - [SquareConnect.OrderLineItemPricingBlocklistsBlockedTax](docs/OrderLineItemPricingBlocklistsBlockedTax.md)
+ - [SquareConnect.OrderLineItemTax](docs/OrderLineItemTax.md)
+ - [SquareConnect.OrderLineItemTaxScope](docs/OrderLineItemTaxScope.md)
+ - [SquareConnect.OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
+ - [SquareConnect.OrderMoneyAmounts](docs/OrderMoneyAmounts.md)
+ - [SquareConnect.OrderPricingOptions](docs/OrderPricingOptions.md)
+ - [SquareConnect.OrderQuantityUnit](docs/OrderQuantityUnit.md)
+ - [SquareConnect.OrderReturn](docs/OrderReturn.md)
+ - [SquareConnect.OrderReturnDiscount](docs/OrderReturnDiscount.md)
+ - [SquareConnect.OrderReturnLineItem](docs/OrderReturnLineItem.md)
+ - [SquareConnect.OrderReturnLineItemModifier](docs/OrderReturnLineItemModifier.md)
+ - [SquareConnect.OrderReturnServiceCharge](docs/OrderReturnServiceCharge.md)
+ - [SquareConnect.OrderReturnTax](docs/OrderReturnTax.md)
+ - [SquareConnect.OrderReward](docs/OrderReward.md)
+ - [SquareConnect.OrderRoundingAdjustment](docs/OrderRoundingAdjustment.md)
+ - [SquareConnect.OrderServiceCharge](docs/OrderServiceCharge.md)
+ - [SquareConnect.OrderServiceChargeCalculationPhase](docs/OrderServiceChargeCalculationPhase.md)
+ - [SquareConnect.OrderSource](docs/OrderSource.md)
+ - [SquareConnect.OrderState](docs/OrderState.md)
+ - [SquareConnect.OrderUpdated](docs/OrderUpdated.md)
+ - [SquareConnect.OrderUpdatedObject](docs/OrderUpdatedObject.md)
+ - [SquareConnect.PayOrderRequest](docs/PayOrderRequest.md)
+ - [SquareConnect.PayOrderResponse](docs/PayOrderResponse.md)
+ - [SquareConnect.Payment](docs/Payment.md)
+ - [SquareConnect.PaymentOptions](docs/PaymentOptions.md)
+ - [SquareConnect.PaymentRefund](docs/PaymentRefund.md)
+ - [SquareConnect.ProcessingFee](docs/ProcessingFee.md)
+ - [SquareConnect.Product](docs/Product.md)
+ - [SquareConnect.ProductType](docs/ProductType.md)
+ - [SquareConnect.PublishInvoiceRequest](docs/PublishInvoiceRequest.md)
+ - [SquareConnect.PublishInvoiceResponse](docs/PublishInvoiceResponse.md)
+ - [SquareConnect.Range](docs/Range.md)
+ - [SquareConnect.RedeemLoyaltyRewardRequest](docs/RedeemLoyaltyRewardRequest.md)
+ - [SquareConnect.RedeemLoyaltyRewardResponse](docs/RedeemLoyaltyRewardResponse.md)
+ - [SquareConnect.Refund](docs/Refund.md)
+ - [SquareConnect.RefundPaymentRequest](docs/RefundPaymentRequest.md)
+ - [SquareConnect.RefundPaymentResponse](docs/RefundPaymentResponse.md)
+ - [SquareConnect.RefundStatus](docs/RefundStatus.md)
+ - [SquareConnect.RegisterDomainRequest](docs/RegisterDomainRequest.md)
+ - [SquareConnect.RegisterDomainResponse](docs/RegisterDomainResponse.md)
+ - [SquareConnect.RegisterDomainResponseStatus](docs/RegisterDomainResponseStatus.md)
+ - [SquareConnect.RemoveDisputeEvidenceRequest](docs/RemoveDisputeEvidenceRequest.md)
+ - [SquareConnect.RemoveDisputeEvidenceResponse](docs/RemoveDisputeEvidenceResponse.md)
+ - [SquareConnect.RemoveGroupFromCustomerRequest](docs/RemoveGroupFromCustomerRequest.md)
+ - [SquareConnect.RemoveGroupFromCustomerResponse](docs/RemoveGroupFromCustomerResponse.md)
+ - [SquareConnect.RenewTokenRequest](docs/RenewTokenRequest.md)
+ - [SquareConnect.RenewTokenResponse](docs/RenewTokenResponse.md)
+ - [SquareConnect.RetrieveBookingRequest](docs/RetrieveBookingRequest.md)
+ - [SquareConnect.RetrieveBookingResponse](docs/RetrieveBookingResponse.md)
+ - [SquareConnect.RetrieveBusinessBookingProfileRequest](docs/RetrieveBusinessBookingProfileRequest.md)
+ - [SquareConnect.RetrieveBusinessBookingProfileResponse](docs/RetrieveBusinessBookingProfileResponse.md)
+ - [SquareConnect.RetrieveCashDrawerShiftRequest](docs/RetrieveCashDrawerShiftRequest.md)
+ - [SquareConnect.RetrieveCashDrawerShiftResponse](docs/RetrieveCashDrawerShiftResponse.md)
+ - [SquareConnect.RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
+ - [SquareConnect.RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
+ - [SquareConnect.RetrieveCustomerGroupRequest](docs/RetrieveCustomerGroupRequest.md)
+ - [SquareConnect.RetrieveCustomerGroupResponse](docs/RetrieveCustomerGroupResponse.md)
+ - [SquareConnect.RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
+ - [SquareConnect.RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
+ - [SquareConnect.RetrieveCustomerSegmentRequest](docs/RetrieveCustomerSegmentRequest.md)
+ - [SquareConnect.RetrieveCustomerSegmentResponse](docs/RetrieveCustomerSegmentResponse.md)
+ - [SquareConnect.RetrieveDisputeEvidenceRequest](docs/RetrieveDisputeEvidenceRequest.md)
+ - [SquareConnect.RetrieveDisputeEvidenceResponse](docs/RetrieveDisputeEvidenceResponse.md)
+ - [SquareConnect.RetrieveDisputeRequest](docs/RetrieveDisputeRequest.md)
+ - [SquareConnect.RetrieveDisputeResponse](docs/RetrieveDisputeResponse.md)
+ - [SquareConnect.RetrieveEmployeeRequest](docs/RetrieveEmployeeRequest.md)
+ - [SquareConnect.RetrieveEmployeeResponse](docs/RetrieveEmployeeResponse.md)
+ - [SquareConnect.RetrieveInventoryAdjustmentRequest](docs/RetrieveInventoryAdjustmentRequest.md)
+ - [SquareConnect.RetrieveInventoryAdjustmentResponse](docs/RetrieveInventoryAdjustmentResponse.md)
+ - [SquareConnect.RetrieveInventoryChangesRequest](docs/RetrieveInventoryChangesRequest.md)
+ - [SquareConnect.RetrieveInventoryChangesResponse](docs/RetrieveInventoryChangesResponse.md)
+ - [SquareConnect.RetrieveInventoryCountRequest](docs/RetrieveInventoryCountRequest.md)
+ - [SquareConnect.RetrieveInventoryCountResponse](docs/RetrieveInventoryCountResponse.md)
+ - [SquareConnect.RetrieveInventoryPhysicalCountRequest](docs/RetrieveInventoryPhysicalCountRequest.md)
+ - [SquareConnect.RetrieveInventoryPhysicalCountResponse](docs/RetrieveInventoryPhysicalCountResponse.md)
+ - [SquareConnect.RetrieveLocationRequest](docs/RetrieveLocationRequest.md)
+ - [SquareConnect.RetrieveLocationResponse](docs/RetrieveLocationResponse.md)
+ - [SquareConnect.RetrieveLoyaltyAccountRequest](docs/RetrieveLoyaltyAccountRequest.md)
+ - [SquareConnect.RetrieveLoyaltyAccountResponse](docs/RetrieveLoyaltyAccountResponse.md)
+ - [SquareConnect.RetrieveLoyaltyRewardRequest](docs/RetrieveLoyaltyRewardRequest.md)
+ - [SquareConnect.RetrieveLoyaltyRewardResponse](docs/RetrieveLoyaltyRewardResponse.md)
+ - [SquareConnect.RetrieveMerchantRequest](docs/RetrieveMerchantRequest.md)
+ - [SquareConnect.RetrieveMerchantResponse](docs/RetrieveMerchantResponse.md)
+ - [SquareConnect.RetrieveObsMigrationProfileRequest](docs/RetrieveObsMigrationProfileRequest.md)
+ - [SquareConnect.RetrieveObsMigrationProfileResponse](docs/RetrieveObsMigrationProfileResponse.md)
+ - [SquareConnect.RetrieveOrderRequest](docs/RetrieveOrderRequest.md)
+ - [SquareConnect.RetrieveOrderResponse](docs/RetrieveOrderResponse.md)
+ - [SquareConnect.RetrieveSubscriptionRequest](docs/RetrieveSubscriptionRequest.md)
+ - [SquareConnect.RetrieveSubscriptionResponse](docs/RetrieveSubscriptionResponse.md)
+ - [SquareConnect.RetrieveTeamMemberBookingProfileRequest](docs/RetrieveTeamMemberBookingProfileRequest.md)
+ - [SquareConnect.RetrieveTeamMemberBookingProfileResponse](docs/RetrieveTeamMemberBookingProfileResponse.md)
+ - [SquareConnect.RetrieveTeamMemberRequest](docs/RetrieveTeamMemberRequest.md)
+ - [SquareConnect.RetrieveTeamMemberResponse](docs/RetrieveTeamMemberResponse.md)
+ - [SquareConnect.RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
+ - [SquareConnect.RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
+ - [SquareConnect.RetrieveWageSettingRequest](docs/RetrieveWageSettingRequest.md)
+ - [SquareConnect.RetrieveWageSettingResponse](docs/RetrieveWageSettingResponse.md)
+ - [SquareConnect.RevokeTokenRequest](docs/RevokeTokenRequest.md)
+ - [SquareConnect.RevokeTokenResponse](docs/RevokeTokenResponse.md)
+ - [SquareConnect.RiskEvaluation](docs/RiskEvaluation.md)
+ - [SquareConnect.RiskEvaluationRiskLevel](docs/RiskEvaluationRiskLevel.md)
+ - [SquareConnect.SearchAvailabilityFilter](docs/SearchAvailabilityFilter.md)
+ - [SquareConnect.SearchAvailabilityQuery](docs/SearchAvailabilityQuery.md)
+ - [SquareConnect.SearchAvailabilityRequest](docs/SearchAvailabilityRequest.md)
+ - [SquareConnect.SearchAvailabilityResponse](docs/SearchAvailabilityResponse.md)
+ - [SquareConnect.SearchCatalogItemsRequest](docs/SearchCatalogItemsRequest.md)
+ - [SquareConnect.SearchCatalogItemsRequestStockLevel](docs/SearchCatalogItemsRequestStockLevel.md)
+ - [SquareConnect.SearchCatalogItemsResponse](docs/SearchCatalogItemsResponse.md)
+ - [SquareConnect.SearchCatalogObjectsRequest](docs/SearchCatalogObjectsRequest.md)
+ - [SquareConnect.SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
+ - [SquareConnect.SearchCustomersRequest](docs/SearchCustomersRequest.md)
+ - [SquareConnect.SearchCustomersResponse](docs/SearchCustomersResponse.md)
+ - [SquareConnect.SearchInvoicesRequest](docs/SearchInvoicesRequest.md)
+ - [SquareConnect.SearchInvoicesResponse](docs/SearchInvoicesResponse.md)
+ - [SquareConnect.SearchLoyaltyAccountsRequest](docs/SearchLoyaltyAccountsRequest.md)
+ - [SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery](docs/SearchLoyaltyAccountsRequestLoyaltyAccountQuery.md)
+ - [SquareConnect.SearchLoyaltyAccountsResponse](docs/SearchLoyaltyAccountsResponse.md)
+ - [SquareConnect.SearchLoyaltyEventsRequest](docs/SearchLoyaltyEventsRequest.md)
+ - [SquareConnect.SearchLoyaltyEventsResponse](docs/SearchLoyaltyEventsResponse.md)
+ - [SquareConnect.SearchLoyaltyRewardsRequest](docs/SearchLoyaltyRewardsRequest.md)
+ - [SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery](docs/SearchLoyaltyRewardsRequestLoyaltyRewardQuery.md)
+ - [SquareConnect.SearchLoyaltyRewardsResponse](docs/SearchLoyaltyRewardsResponse.md)
+ - [SquareConnect.SearchOrdersCustomerFilter](docs/SearchOrdersCustomerFilter.md)
+ - [SquareConnect.SearchOrdersDateTimeFilter](docs/SearchOrdersDateTimeFilter.md)
+ - [SquareConnect.SearchOrdersFilter](docs/SearchOrdersFilter.md)
+ - [SquareConnect.SearchOrdersFulfillmentFilter](docs/SearchOrdersFulfillmentFilter.md)
+ - [SquareConnect.SearchOrdersQuery](docs/SearchOrdersQuery.md)
+ - [SquareConnect.SearchOrdersRequest](docs/SearchOrdersRequest.md)
+ - [SquareConnect.SearchOrdersResponse](docs/SearchOrdersResponse.md)
+ - [SquareConnect.SearchOrdersSort](docs/SearchOrdersSort.md)
+ - [SquareConnect.SearchOrdersSortField](docs/SearchOrdersSortField.md)
+ - [SquareConnect.SearchOrdersSourceFilter](docs/SearchOrdersSourceFilter.md)
+ - [SquareConnect.SearchOrdersStateFilter](docs/SearchOrdersStateFilter.md)
+ - [SquareConnect.SearchShiftsRequest](docs/SearchShiftsRequest.md)
+ - [SquareConnect.SearchShiftsResponse](docs/SearchShiftsResponse.md)
+ - [SquareConnect.SearchSubscriptionsFilter](docs/SearchSubscriptionsFilter.md)
+ - [SquareConnect.SearchSubscriptionsQuery](docs/SearchSubscriptionsQuery.md)
+ - [SquareConnect.SearchSubscriptionsRequest](docs/SearchSubscriptionsRequest.md)
+ - [SquareConnect.SearchSubscriptionsResponse](docs/SearchSubscriptionsResponse.md)
+ - [SquareConnect.SearchTeamMembersFilter](docs/SearchTeamMembersFilter.md)
+ - [SquareConnect.SearchTeamMembersQuery](docs/SearchTeamMembersQuery.md)
+ - [SquareConnect.SearchTeamMembersRequest](docs/SearchTeamMembersRequest.md)
+ - [SquareConnect.SearchTeamMembersResponse](docs/SearchTeamMembersResponse.md)
+ - [SquareConnect.SearchTerminalCheckoutsRequest](docs/SearchTerminalCheckoutsRequest.md)
+ - [SquareConnect.SearchTerminalCheckoutsResponse](docs/SearchTerminalCheckoutsResponse.md)
+ - [SquareConnect.SearchTerminalRefundsRequest](docs/SearchTerminalRefundsRequest.md)
+ - [SquareConnect.SearchTerminalRefundsResponse](docs/SearchTerminalRefundsResponse.md)
+ - [SquareConnect.SegmentFilter](docs/SegmentFilter.md)
+ - [SquareConnect.Shift](docs/Shift.md)
+ - [SquareConnect.ShiftFilter](docs/ShiftFilter.md)
+ - [SquareConnect.ShiftFilterStatus](docs/ShiftFilterStatus.md)
+ - [SquareConnect.ShiftQuery](docs/ShiftQuery.md)
+ - [SquareConnect.ShiftSort](docs/ShiftSort.md)
+ - [SquareConnect.ShiftSortField](docs/ShiftSortField.md)
+ - [SquareConnect.ShiftStatus](docs/ShiftStatus.md)
+ - [SquareConnect.ShiftWage](docs/ShiftWage.md)
+ - [SquareConnect.ShiftWorkday](docs/ShiftWorkday.md)
+ - [SquareConnect.ShiftWorkdayMatcher](docs/ShiftWorkdayMatcher.md)
+ - [SquareConnect.SortOrder](docs/SortOrder.md)
+ - [SquareConnect.SourceApplication](docs/SourceApplication.md)
+ - [SquareConnect.StandardUnitDescription](docs/StandardUnitDescription.md)
+ - [SquareConnect.StandardUnitDescriptionGroup](docs/StandardUnitDescriptionGroup.md)
+ - [SquareConnect.SubmitEvidenceRequest](docs/SubmitEvidenceRequest.md)
+ - [SquareConnect.SubmitEvidenceResponse](docs/SubmitEvidenceResponse.md)
+ - [SquareConnect.Subscription](docs/Subscription.md)
+ - [SquareConnect.SubscriptionCadence](docs/SubscriptionCadence.md)
+ - [SquareConnect.SubscriptionEvent](docs/SubscriptionEvent.md)
+ - [SquareConnect.SubscriptionEventSubscriptionEventType](docs/SubscriptionEventSubscriptionEventType.md)
+ - [SquareConnect.SubscriptionPhase](docs/SubscriptionPhase.md)
+ - [SquareConnect.SubscriptionStatus](docs/SubscriptionStatus.md)
+ - [SquareConnect.TaxCalculationPhase](docs/TaxCalculationPhase.md)
+ - [SquareConnect.TaxInclusionType](docs/TaxInclusionType.md)
+ - [SquareConnect.TeamMember](docs/TeamMember.md)
+ - [SquareConnect.TeamMemberAssignedLocations](docs/TeamMemberAssignedLocations.md)
+ - [SquareConnect.TeamMemberAssignedLocationsAssignmentType](docs/TeamMemberAssignedLocationsAssignmentType.md)
+ - [SquareConnect.TeamMemberBookingProfile](docs/TeamMemberBookingProfile.md)
+ - [SquareConnect.TeamMemberStatus](docs/TeamMemberStatus.md)
+ - [SquareConnect.TeamMemberWage](docs/TeamMemberWage.md)
+ - [SquareConnect.Tender](docs/Tender.md)
+ - [SquareConnect.TenderCardDetails](docs/TenderCardDetails.md)
+ - [SquareConnect.TenderCardDetailsEntryMethod](docs/TenderCardDetailsEntryMethod.md)
+ - [SquareConnect.TenderCardDetailsStatus](docs/TenderCardDetailsStatus.md)
+ - [SquareConnect.TenderCashDetails](docs/TenderCashDetails.md)
+ - [SquareConnect.TenderType](docs/TenderType.md)
+ - [SquareConnect.TerminalCheckout](docs/TerminalCheckout.md)
+ - [SquareConnect.TerminalCheckoutQuery](docs/TerminalCheckoutQuery.md)
+ - [SquareConnect.TerminalCheckoutQueryFilter](docs/TerminalCheckoutQueryFilter.md)
+ - [SquareConnect.TerminalCheckoutQuerySort](docs/TerminalCheckoutQuerySort.md)
+ - [SquareConnect.TerminalRefund](docs/TerminalRefund.md)
+ - [SquareConnect.TerminalRefundQuery](docs/TerminalRefundQuery.md)
+ - [SquareConnect.TerminalRefundQueryFilter](docs/TerminalRefundQueryFilter.md)
+ - [SquareConnect.TerminalRefundQuerySort](docs/TerminalRefundQuerySort.md)
+ - [SquareConnect.TimeRange](docs/TimeRange.md)
+ - [SquareConnect.TipSettings](docs/TipSettings.md)
+ - [SquareConnect.Transaction](docs/Transaction.md)
+ - [SquareConnect.TransactionProduct](docs/TransactionProduct.md)
+ - [SquareConnect.TransactionType](docs/TransactionType.md)
+ - [SquareConnect.UpdateBookingRequest](docs/UpdateBookingRequest.md)
+ - [SquareConnect.UpdateBookingResponse](docs/UpdateBookingResponse.md)
+ - [SquareConnect.UpdateBreakTypeRequest](docs/UpdateBreakTypeRequest.md)
+ - [SquareConnect.UpdateBreakTypeResponse](docs/UpdateBreakTypeResponse.md)
+ - [SquareConnect.UpdateCustomerGroupRequest](docs/UpdateCustomerGroupRequest.md)
+ - [SquareConnect.UpdateCustomerGroupResponse](docs/UpdateCustomerGroupResponse.md)
+ - [SquareConnect.UpdateCustomerRequest](docs/UpdateCustomerRequest.md)
+ - [SquareConnect.UpdateCustomerResponse](docs/UpdateCustomerResponse.md)
+ - [SquareConnect.UpdateInvoiceRequest](docs/UpdateInvoiceRequest.md)
+ - [SquareConnect.UpdateInvoiceResponse](docs/UpdateInvoiceResponse.md)
+ - [SquareConnect.UpdateItemModifierListsRequest](docs/UpdateItemModifierListsRequest.md)
+ - [SquareConnect.UpdateItemModifierListsResponse](docs/UpdateItemModifierListsResponse.md)
+ - [SquareConnect.UpdateItemTaxesRequest](docs/UpdateItemTaxesRequest.md)
+ - [SquareConnect.UpdateItemTaxesResponse](docs/UpdateItemTaxesResponse.md)
+ - [SquareConnect.UpdateLocationRequest](docs/UpdateLocationRequest.md)
+ - [SquareConnect.UpdateLocationResponse](docs/UpdateLocationResponse.md)
+ - [SquareConnect.UpdateOrderRequest](docs/UpdateOrderRequest.md)
+ - [SquareConnect.UpdateOrderResponse](docs/UpdateOrderResponse.md)
+ - [SquareConnect.UpdateShiftRequest](docs/UpdateShiftRequest.md)
+ - [SquareConnect.UpdateShiftResponse](docs/UpdateShiftResponse.md)
+ - [SquareConnect.UpdateSubscriptionRequest](docs/UpdateSubscriptionRequest.md)
+ - [SquareConnect.UpdateSubscriptionResponse](docs/UpdateSubscriptionResponse.md)
+ - [SquareConnect.UpdateTeamMemberRequest](docs/UpdateTeamMemberRequest.md)
+ - [SquareConnect.UpdateTeamMemberResponse](docs/UpdateTeamMemberResponse.md)
+ - [SquareConnect.UpdateWageSettingRequest](docs/UpdateWageSettingRequest.md)
+ - [SquareConnect.UpdateWageSettingResponse](docs/UpdateWageSettingResponse.md)
+ - [SquareConnect.UpdateWorkweekConfigRequest](docs/UpdateWorkweekConfigRequest.md)
+ - [SquareConnect.UpdateWorkweekConfigResponse](docs/UpdateWorkweekConfigResponse.md)
+ - [SquareConnect.UpsertCatalogObjectRequest](docs/UpsertCatalogObjectRequest.md)
+ - [SquareConnect.UpsertCatalogObjectResponse](docs/UpsertCatalogObjectResponse.md)
+ - [SquareConnect.V1AdjustInventoryRequest](docs/V1AdjustInventoryRequest.md)
+ - [SquareConnect.V1AdjustInventoryRequestAdjustmentType](docs/V1AdjustInventoryRequestAdjustmentType.md)
+ - [SquareConnect.V1ApplyFeeRequest](docs/V1ApplyFeeRequest.md)
+ - [SquareConnect.V1ApplyModifierListRequest](docs/V1ApplyModifierListRequest.md)
+ - [SquareConnect.V1BankAccount](docs/V1BankAccount.md)
+ - [SquareConnect.V1BankAccountType](docs/V1BankAccountType.md)
+ - [SquareConnect.V1CashDrawerEvent](docs/V1CashDrawerEvent.md)
+ - [SquareConnect.V1CashDrawerEventEventType](docs/V1CashDrawerEventEventType.md)
+ - [SquareConnect.V1CashDrawerShift](docs/V1CashDrawerShift.md)
+ - [SquareConnect.V1CashDrawerShiftEventType](docs/V1CashDrawerShiftEventType.md)
+ - [SquareConnect.V1Category](docs/V1Category.md)
+ - [SquareConnect.V1CreateCategoryRequest](docs/V1CreateCategoryRequest.md)
+ - [SquareConnect.V1CreateDiscountRequest](docs/V1CreateDiscountRequest.md)
+ - [SquareConnect.V1CreateEmployeeRoleRequest](docs/V1CreateEmployeeRoleRequest.md)
+ - [SquareConnect.V1CreateFeeRequest](docs/V1CreateFeeRequest.md)
+ - [SquareConnect.V1CreateItemRequest](docs/V1CreateItemRequest.md)
+ - [SquareConnect.V1CreateModifierListRequest](docs/V1CreateModifierListRequest.md)
+ - [SquareConnect.V1CreateModifierOptionRequest](docs/V1CreateModifierOptionRequest.md)
+ - [SquareConnect.V1CreatePageRequest](docs/V1CreatePageRequest.md)
+ - [SquareConnect.V1CreateRefundRequest](docs/V1CreateRefundRequest.md)
+ - [SquareConnect.V1CreateRefundRequestType](docs/V1CreateRefundRequestType.md)
+ - [SquareConnect.V1CreateVariationRequest](docs/V1CreateVariationRequest.md)
+ - [SquareConnect.V1DeleteCategoryRequest](docs/V1DeleteCategoryRequest.md)
+ - [SquareConnect.V1DeleteDiscountRequest](docs/V1DeleteDiscountRequest.md)
+ - [SquareConnect.V1DeleteFeeRequest](docs/V1DeleteFeeRequest.md)
+ - [SquareConnect.V1DeleteItemRequest](docs/V1DeleteItemRequest.md)
+ - [SquareConnect.V1DeleteModifierListRequest](docs/V1DeleteModifierListRequest.md)
+ - [SquareConnect.V1DeleteModifierOptionRequest](docs/V1DeleteModifierOptionRequest.md)
+ - [SquareConnect.V1DeletePageCellRequest](docs/V1DeletePageCellRequest.md)
+ - [SquareConnect.V1DeletePageRequest](docs/V1DeletePageRequest.md)
+ - [SquareConnect.V1DeleteTimecardRequest](docs/V1DeleteTimecardRequest.md)
+ - [SquareConnect.V1DeleteTimecardResponse](docs/V1DeleteTimecardResponse.md)
+ - [SquareConnect.V1DeleteVariationRequest](docs/V1DeleteVariationRequest.md)
+ - [SquareConnect.V1Discount](docs/V1Discount.md)
+ - [SquareConnect.V1DiscountColor](docs/V1DiscountColor.md)
+ - [SquareConnect.V1DiscountDiscountType](docs/V1DiscountDiscountType.md)
+ - [SquareConnect.V1Employee](docs/V1Employee.md)
+ - [SquareConnect.V1EmployeeRole](docs/V1EmployeeRole.md)
+ - [SquareConnect.V1EmployeeRolePermissions](docs/V1EmployeeRolePermissions.md)
+ - [SquareConnect.V1EmployeeStatus](docs/V1EmployeeStatus.md)
+ - [SquareConnect.V1Fee](docs/V1Fee.md)
+ - [SquareConnect.V1FeeAdjustmentType](docs/V1FeeAdjustmentType.md)
+ - [SquareConnect.V1FeeCalculationPhase](docs/V1FeeCalculationPhase.md)
+ - [SquareConnect.V1FeeInclusionType](docs/V1FeeInclusionType.md)
+ - [SquareConnect.V1FeeType](docs/V1FeeType.md)
+ - [SquareConnect.V1InventoryEntry](docs/V1InventoryEntry.md)
+ - [SquareConnect.V1Item](docs/V1Item.md)
+ - [SquareConnect.V1ItemColor](docs/V1ItemColor.md)
+ - [SquareConnect.V1ItemImage](docs/V1ItemImage.md)
+ - [SquareConnect.V1ItemType](docs/V1ItemType.md)
+ - [SquareConnect.V1ItemVisibility](docs/V1ItemVisibility.md)
+ - [SquareConnect.V1ListBankAccountsRequest](docs/V1ListBankAccountsRequest.md)
+ - [SquareConnect.V1ListBankAccountsResponse](docs/V1ListBankAccountsResponse.md)
+ - [SquareConnect.V1ListCashDrawerShiftsRequest](docs/V1ListCashDrawerShiftsRequest.md)
+ - [SquareConnect.V1ListCashDrawerShiftsResponse](docs/V1ListCashDrawerShiftsResponse.md)
+ - [SquareConnect.V1ListCategoriesRequest](docs/V1ListCategoriesRequest.md)
+ - [SquareConnect.V1ListCategoriesResponse](docs/V1ListCategoriesResponse.md)
+ - [SquareConnect.V1ListDiscountsRequest](docs/V1ListDiscountsRequest.md)
+ - [SquareConnect.V1ListDiscountsResponse](docs/V1ListDiscountsResponse.md)
+ - [SquareConnect.V1ListEmployeeRolesRequest](docs/V1ListEmployeeRolesRequest.md)
+ - [SquareConnect.V1ListEmployeeRolesResponse](docs/V1ListEmployeeRolesResponse.md)
+ - [SquareConnect.V1ListEmployeesRequest](docs/V1ListEmployeesRequest.md)
+ - [SquareConnect.V1ListEmployeesRequestStatus](docs/V1ListEmployeesRequestStatus.md)
+ - [SquareConnect.V1ListEmployeesResponse](docs/V1ListEmployeesResponse.md)
+ - [SquareConnect.V1ListFeesRequest](docs/V1ListFeesRequest.md)
+ - [SquareConnect.V1ListFeesResponse](docs/V1ListFeesResponse.md)
+ - [SquareConnect.V1ListInventoryRequest](docs/V1ListInventoryRequest.md)
+ - [SquareConnect.V1ListInventoryResponse](docs/V1ListInventoryResponse.md)
+ - [SquareConnect.V1ListItemsRequest](docs/V1ListItemsRequest.md)
+ - [SquareConnect.V1ListItemsResponse](docs/V1ListItemsResponse.md)
+ - [SquareConnect.V1ListModifierListsRequest](docs/V1ListModifierListsRequest.md)
+ - [SquareConnect.V1ListModifierListsResponse](docs/V1ListModifierListsResponse.md)
+ - [SquareConnect.V1ListOrdersRequest](docs/V1ListOrdersRequest.md)
+ - [SquareConnect.V1ListOrdersResponse](docs/V1ListOrdersResponse.md)
+ - [SquareConnect.V1ListPagesRequest](docs/V1ListPagesRequest.md)
+ - [SquareConnect.V1ListPagesResponse](docs/V1ListPagesResponse.md)
+ - [SquareConnect.V1ListPaymentsRequest](docs/V1ListPaymentsRequest.md)
+ - [SquareConnect.V1ListPaymentsResponse](docs/V1ListPaymentsResponse.md)
+ - [SquareConnect.V1ListRefundsRequest](docs/V1ListRefundsRequest.md)
+ - [SquareConnect.V1ListRefundsResponse](docs/V1ListRefundsResponse.md)
+ - [SquareConnect.V1ListSettlementsRequest](docs/V1ListSettlementsRequest.md)
+ - [SquareConnect.V1ListSettlementsRequestStatus](docs/V1ListSettlementsRequestStatus.md)
+ - [SquareConnect.V1ListSettlementsResponse](docs/V1ListSettlementsResponse.md)
+ - [SquareConnect.V1ListTimecardEventsRequest](docs/V1ListTimecardEventsRequest.md)
+ - [SquareConnect.V1ListTimecardEventsResponse](docs/V1ListTimecardEventsResponse.md)
+ - [SquareConnect.V1ListTimecardsRequest](docs/V1ListTimecardsRequest.md)
+ - [SquareConnect.V1ListTimecardsResponse](docs/V1ListTimecardsResponse.md)
+ - [SquareConnect.V1ModifierList](docs/V1ModifierList.md)
+ - [SquareConnect.V1ModifierListSelectionType](docs/V1ModifierListSelectionType.md)
+ - [SquareConnect.V1ModifierOption](docs/V1ModifierOption.md)
+ - [SquareConnect.V1Money](docs/V1Money.md)
+ - [SquareConnect.V1Order](docs/V1Order.md)
+ - [SquareConnect.V1OrderHistoryEntry](docs/V1OrderHistoryEntry.md)
+ - [SquareConnect.V1OrderHistoryEntryAction](docs/V1OrderHistoryEntryAction.md)
+ - [SquareConnect.V1OrderState](docs/V1OrderState.md)
+ - [SquareConnect.V1Page](docs/V1Page.md)
+ - [SquareConnect.V1PageCell](docs/V1PageCell.md)
+ - [SquareConnect.V1PageCellObjectType](docs/V1PageCellObjectType.md)
+ - [SquareConnect.V1PageCellPlaceholderType](docs/V1PageCellPlaceholderType.md)
+ - [SquareConnect.V1Payment](docs/V1Payment.md)
+ - [SquareConnect.V1PaymentDiscount](docs/V1PaymentDiscount.md)
+ - [SquareConnect.V1PaymentItemDetail](docs/V1PaymentItemDetail.md)
+ - [SquareConnect.V1PaymentItemization](docs/V1PaymentItemization.md)
+ - [SquareConnect.V1PaymentItemizationItemizationType](docs/V1PaymentItemizationItemizationType.md)
+ - [SquareConnect.V1PaymentModifier](docs/V1PaymentModifier.md)
+ - [SquareConnect.V1PaymentSurcharge](docs/V1PaymentSurcharge.md)
+ - [SquareConnect.V1PaymentSurchargeType](docs/V1PaymentSurchargeType.md)
+ - [SquareConnect.V1PaymentTax](docs/V1PaymentTax.md)
+ - [SquareConnect.V1PaymentTaxInclusionType](docs/V1PaymentTaxInclusionType.md)
+ - [SquareConnect.V1PhoneNumber](docs/V1PhoneNumber.md)
+ - [SquareConnect.V1Refund](docs/V1Refund.md)
+ - [SquareConnect.V1RefundType](docs/V1RefundType.md)
+ - [SquareConnect.V1RemoveFeeRequest](docs/V1RemoveFeeRequest.md)
+ - [SquareConnect.V1RemoveModifierListRequest](docs/V1RemoveModifierListRequest.md)
+ - [SquareConnect.V1RetrieveBankAccountRequest](docs/V1RetrieveBankAccountRequest.md)
+ - [SquareConnect.V1RetrieveCashDrawerShiftRequest](docs/V1RetrieveCashDrawerShiftRequest.md)
+ - [SquareConnect.V1RetrieveEmployeeRequest](docs/V1RetrieveEmployeeRequest.md)
+ - [SquareConnect.V1RetrieveEmployeeRoleRequest](docs/V1RetrieveEmployeeRoleRequest.md)
+ - [SquareConnect.V1RetrieveItemRequest](docs/V1RetrieveItemRequest.md)
+ - [SquareConnect.V1RetrieveModifierListRequest](docs/V1RetrieveModifierListRequest.md)
+ - [SquareConnect.V1RetrieveOrderRequest](docs/V1RetrieveOrderRequest.md)
+ - [SquareConnect.V1RetrievePaymentRequest](docs/V1RetrievePaymentRequest.md)
+ - [SquareConnect.V1RetrieveSettlementRequest](docs/V1RetrieveSettlementRequest.md)
+ - [SquareConnect.V1RetrieveTimecardRequest](docs/V1RetrieveTimecardRequest.md)
+ - [SquareConnect.V1Settlement](docs/V1Settlement.md)
+ - [SquareConnect.V1SettlementEntry](docs/V1SettlementEntry.md)
+ - [SquareConnect.V1SettlementEntryType](docs/V1SettlementEntryType.md)
+ - [SquareConnect.V1SettlementStatus](docs/V1SettlementStatus.md)
+ - [SquareConnect.V1Tender](docs/V1Tender.md)
+ - [SquareConnect.V1TenderCardBrand](docs/V1TenderCardBrand.md)
+ - [SquareConnect.V1TenderEntryMethod](docs/V1TenderEntryMethod.md)
+ - [SquareConnect.V1TenderType](docs/V1TenderType.md)
+ - [SquareConnect.V1Timecard](docs/V1Timecard.md)
+ - [SquareConnect.V1TimecardEvent](docs/V1TimecardEvent.md)
+ - [SquareConnect.V1TimecardEventEventType](docs/V1TimecardEventEventType.md)
+ - [SquareConnect.V1UpdateCategoryRequest](docs/V1UpdateCategoryRequest.md)
+ - [SquareConnect.V1UpdateDiscountRequest](docs/V1UpdateDiscountRequest.md)
+ - [SquareConnect.V1UpdateEmployeeRequest](docs/V1UpdateEmployeeRequest.md)
+ - [SquareConnect.V1UpdateEmployeeRoleRequest](docs/V1UpdateEmployeeRoleRequest.md)
+ - [SquareConnect.V1UpdateFeeRequest](docs/V1UpdateFeeRequest.md)
+ - [SquareConnect.V1UpdateItemRequest](docs/V1UpdateItemRequest.md)
+ - [SquareConnect.V1UpdateModifierListRequest](docs/V1UpdateModifierListRequest.md)
+ - [SquareConnect.V1UpdateModifierListRequestSelectionType](docs/V1UpdateModifierListRequestSelectionType.md)
+ - [SquareConnect.V1UpdateModifierOptionRequest](docs/V1UpdateModifierOptionRequest.md)
+ - [SquareConnect.V1UpdateOrderRequest](docs/V1UpdateOrderRequest.md)
+ - [SquareConnect.V1UpdateOrderRequestAction](docs/V1UpdateOrderRequestAction.md)
+ - [SquareConnect.V1UpdatePageCellRequest](docs/V1UpdatePageCellRequest.md)
+ - [SquareConnect.V1UpdatePageRequest](docs/V1UpdatePageRequest.md)
+ - [SquareConnect.V1UpdateTimecardRequest](docs/V1UpdateTimecardRequest.md)
+ - [SquareConnect.V1UpdateVariationRequest](docs/V1UpdateVariationRequest.md)
+ - [SquareConnect.V1Variation](docs/V1Variation.md)
+ - [SquareConnect.V1VariationInventoryAlertType](docs/V1VariationInventoryAlertType.md)
+ - [SquareConnect.V1VariationPricingType](docs/V1VariationPricingType.md)
+ - [SquareConnect.VoidTransactionRequest](docs/VoidTransactionRequest.md)
+ - [SquareConnect.VoidTransactionResponse](docs/VoidTransactionResponse.md)
+ - [SquareConnect.WageSetting](docs/WageSetting.md)
+ - [SquareConnect.Weekday](docs/Weekday.md)
+ - [SquareConnect.WorkweekConfig](docs/WorkweekConfig.md)
 
 
 ## Documentation for Authorization

@@ -19,7 +19,6 @@ var CustomerGroup = require('./CustomerGroup');
 
 /**
  * The UpdateCustomerGroupRequest model module.
- * Note: This model is in beta.
  * @module model/UpdateCustomerGroupRequest
  */
 

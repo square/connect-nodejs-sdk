@@ -34,7 +34,12 @@ var exports = {
    * value: "SHARE_MANUALLY"
    * @const
    */
-  "SHARE_MANUALLY": "SHARE_MANUALLY"};
+  "SHARE_MANUALLY": "SHARE_MANUALLY",
+  /**
+   * value: "CHARGE_BANK_ON_FILE"
+   * @const
+   */
+  "CHARGE_BANK_ON_FILE": "CHARGE_BANK_ON_FILE"};
 
 /**
  * Returns a <code>InvoiceRequestMethod</code> enum value from a Javascript object name.

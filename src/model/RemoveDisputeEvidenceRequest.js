@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>RemoveDisputeEvidenceRequest</code>.
- * Defines parameters for a RemoveDisputeEvidence request.
+ * Defines the parameters for a &#x60;RemoveDisputeEvidence&#x60; request.
  * @alias module:model/RemoveDisputeEvidenceRequest
  * @class
  */

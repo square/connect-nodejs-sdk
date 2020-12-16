@@ -9,6 +9,6 @@ A file to be uploaded as dispute evidence.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **filename** | **String** | The file name including the file extension. For example: \&quot;receipt.tiff\&quot;. | [optional] 
-**filetype** | **String** | Dispute evidence files must one of application/pdf, image/heic, image/heif, image/jpeg, image/png, image/tiff formats. | [optional] 
+**filetype** | **String** | Dispute evidence files must be application/pdf, image/heic, image/heif, image/jpeg, image/png, or image/tiff formats. | [optional] 
 
 

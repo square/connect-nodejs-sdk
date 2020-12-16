@@ -71,7 +71,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -123,7 +123,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -175,7 +175,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -221,7 +221,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -273,7 +273,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -310,6 +310,7 @@ module.exports = function(apiClient) {
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.types An optional case-insensitive, comma-separated list of object types to retrieve, for example &#x60;ITEM,ITEM_VARIATION,CATEGORY,IMAGE&#x60;.  The legal values are taken from the CatalogObjectType enum: &#x60;ITEM&#x60;, &#x60;ITEM_VARIATION&#x60;, &#x60;CATEGORY&#x60;, &#x60;DISCOUNT&#x60;, &#x60;TAX&#x60;, &#x60;MODIFIER&#x60;, &#x60;MODIFIER_LIST&#x60;, or &#x60;IMAGE&#x60;.
+   * @param {Number} opts.catalogVersion The specific version of the catalog objects to be included in the response.  This allows you to retrieve historical versions of objects. The specified version value is matched against the &#x60;CatalogObject&#x60;s&#39; &#x60;version&#x60; attribute.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListCatalogResponse} and HTTP response
    */
   this.listCatalogWithHttpInfo = function(opts) {
@@ -321,11 +322,12 @@ module.exports = function(apiClient) {
     };
     var queryParams = {
       'cursor': opts['cursor'],
-      'types': opts['types']
+      'types': opts['types'],
+      'catalog_version': opts['catalogVersion']
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -348,6 +350,7 @@ module.exports = function(apiClient) {
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
    * @param {String} opts.types An optional case-insensitive, comma-separated list of object types to retrieve, for example &#x60;ITEM,ITEM_VARIATION,CATEGORY,IMAGE&#x60;.  The legal values are taken from the CatalogObjectType enum: &#x60;ITEM&#x60;, &#x60;ITEM_VARIATION&#x60;, &#x60;CATEGORY&#x60;, &#x60;DISCOUNT&#x60;, &#x60;TAX&#x60;, &#x60;MODIFIER&#x60;, &#x60;MODIFIER_LIST&#x60;, or &#x60;IMAGE&#x60;.
+   * @param {Number} opts.catalogVersion The specific version of the catalog objects to be included in the response.  This allows you to retrieve historical versions of objects. The specified version value is matched against the &#x60;CatalogObject&#x60;s&#39; &#x60;version&#x60; attribute.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListCatalogResponse}
    */
   this.listCatalog = function(opts) {
@@ -364,6 +367,7 @@ module.exports = function(apiClient) {
    * @param {String} objectId The object ID of any type of catalog objects to be retrieved.
    * @param {Object} opts Optional parameters
    * @param {Boolean} opts.includeRelatedObjects If &#x60;true&#x60;, the response will include additional objects that are related to the requested object, as follows:  If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItem&#x60;, its associated &#x60;CatalogCategory&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogImage&#x60; and &#x60;CatalogModifierList&#x60; objects will be returned in the &#x60;related_objects&#x60; field of the response. If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItemVariation&#x60;, its parent &#x60;CatalogItem&#x60; will be returned in the &#x60;related_objects&#x60; field of the response.  Default value: &#x60;false&#x60;
+   * @param {Number} opts.catalogVersion Requests objects as of a specific version of the catalog. This allows you to retrieve historical versions of objects. The value to retrieve a specific version of an object can be found in the version field of &#x60;CatalogObject&#x60;s.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveCatalogObjectResponse} and HTTP response
    */
   this.retrieveCatalogObjectWithHttpInfo = function(objectId, opts) {
@@ -380,11 +384,12 @@ module.exports = function(apiClient) {
       'object_id': objectId
     };
     var queryParams = {
-      'include_related_objects': opts['includeRelatedObjects']
+      'include_related_objects': opts['includeRelatedObjects'],
+      'catalog_version': opts['catalogVersion']
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -407,6 +412,7 @@ module.exports = function(apiClient) {
    * @param {String} objectId The object ID of any type of catalog objects to be retrieved.
    * @param {Object} opts Optional parameters
    * @param {Boolean} opts.includeRelatedObjects If &#x60;true&#x60;, the response will include additional objects that are related to the requested object, as follows:  If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItem&#x60;, its associated &#x60;CatalogCategory&#x60;, &#x60;CatalogTax&#x60;, &#x60;CatalogImage&#x60; and &#x60;CatalogModifierList&#x60; objects will be returned in the &#x60;related_objects&#x60; field of the response. If the &#x60;object&#x60; field of the response contains a &#x60;CatalogItemVariation&#x60;, its parent &#x60;CatalogItem&#x60; will be returned in the &#x60;related_objects&#x60; field of the response.  Default value: &#x60;false&#x60;
+   * @param {Number} opts.catalogVersion Requests objects as of a specific version of the catalog. This allows you to retrieve historical versions of objects. The value to retrieve a specific version of an object can be found in the version field of &#x60;CatalogObject&#x60;s.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/RetrieveCatalogObjectResponse}
    */
   this.retrieveCatalogObject = function(objectId, opts) {
@@ -439,7 +445,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -491,7 +497,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -543,7 +549,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -595,7 +601,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -647,7 +653,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

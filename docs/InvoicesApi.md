@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 DeleteInvoice
 
-Deletes the specified invoice. When an invoice is deleted, the  associated Order status changes to CANCELED. You can only delete a draft  invoice (you cannot delete an invoice scheduled for publication, or a  published invoice).
+Deletes the specified invoice. When an invoice is deleted, the  associated Order status changes to CANCELED. You can only delete a draft  invoice (you cannot delete a published invoice, including one that is scheduled for processing).
 
 ### Example
 ```javascript
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 UpdateInvoice
 
-Updates an invoice by modifying field values, clearing field values, or both  as specified in the request.  There are no restrictions to updating an invoice in a draft state.  However, there are guidelines for updating a published invoice.
+Updates an invoice by modifying fields, clearing fields, or both. For most updates, you can use a sparse  &#x60;Invoice&#x60; object to add fields or change values, and use the &#x60;fields_to_clear&#x60; field to specify fields to clear.  However, some restrictions apply. For example, you cannot change the &#x60;order_id&#x60; or &#x60;location_id&#x60; field, and you  must provide the complete &#x60;custom_fields&#x60; list to update a custom field. Published invoices have additional restrictions.
 
 ### Example
 ```javascript
@@ -393,7 +393,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.InvoicesApi();
 
-var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The id of the invoice to update.
+var invoiceId = SquareConnect.InvoicesApi.constructFromObject({}); // String | The ID of the invoice to update.
 
 var body = SquareConnect.InvoicesApi.constructFromObject({}); // UpdateInvoiceRequest | An object containing the fields to POST for the request.  See the corresponding object definition for field details.
 
@@ -409,7 +409,7 @@ apiInstance.updateInvoice(invoiceId, body).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **invoiceId** | **String**| The id of the invoice to update. | 
+ **invoiceId** | **String**| The ID of the invoice to update. | 
  **body** | [**UpdateInvoiceRequest**](UpdateInvoiceRequest.md)| An object containing the fields to POST for the request.  See the corresponding object definition for field details. | 
 
 ### Return type

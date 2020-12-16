@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 AcceptDispute
 
-Accepts loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account balance does not have sufficient funds, Square debits the associated bank account.
+Accepts the loss on a dispute. Square returns the disputed amount to the cardholder and updates the dispute state to ACCEPTED.  Square debits the disputed amount from the seller’s Square account. If the Square account does not have sufficient funds, Square debits the associated bank account.
 
 ### Example
 ```javascript
@@ -34,7 +34,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | ID of the dispute you want to accept.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want to accept.
 
 apiInstance.acceptDispute(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -48,7 +48,7 @@ apiInstance.acceptDispute(disputeId).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **disputeId** | **String**| ID of the dispute you want to accept. | 
+ **disputeId** | **String**| The ID of the dispute you want to accept. | 
 
 ### Return type
 
@@ -185,9 +185,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new SquareConnect.DisputesApi();
 
 var opts = { 
-  'cursor': SquareConnect.DisputesApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query. For more information, see [Paginating](https://developer.squareup.com/docs/basics/api101/pagination).
-  'states': SquareConnect.DisputesApi.constructFromObject({});, // String | The dispute states to filter the result. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or `LOST`).
-  'locationId': SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the location for which to return  a list of disputes. If not specified, the endpoint returns all open disputes (dispute status is not `INQUIRY_CLOSED`, `WON`, or  `LOST`) associated with all locations.
+  'cursor': SquareConnect.DisputesApi.constructFromObject({});, // String | A pagination cursor returned by a previous call to this endpoint. Provide this cursor to retrieve the next set of results for the original query. For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
+  'states': SquareConnect.DisputesApi.constructFromObject({});, // String | The dispute states to filter the result. If not specified, the endpoint returns all open disputes (the dispute status is not `INQUIRY_CLOSED`, `WON`, or `LOST`).
+  'locationId': SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the location for which to return a list of disputes. If not specified, the endpoint returns all open disputes (the dispute status is not `INQUIRY_CLOSED`, `WON`, or `LOST`) associated with all locations.
 };
 apiInstance.listDisputes(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -201,9 +201,9 @@ apiInstance.listDisputes(opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query. For more information, see [Paginating](https://developer.squareup.com/docs/basics/api101/pagination). | [optional] 
- **states** | **String**| The dispute states to filter the result. If not specified, the endpoint returns all open disputes (dispute status is not &#x60;INQUIRY_CLOSED&#x60;, &#x60;WON&#x60;, or &#x60;LOST&#x60;). | [optional] 
- **locationId** | **String**| The ID of the location for which to return  a list of disputes. If not specified, the endpoint returns all open disputes (dispute status is not &#x60;INQUIRY_CLOSED&#x60;, &#x60;WON&#x60;, or  &#x60;LOST&#x60;) associated with all locations. | [optional] 
+ **cursor** | **String**| A pagination cursor returned by a previous call to this endpoint. Provide this cursor to retrieve the next set of results for the original query. For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination). | [optional] 
+ **states** | **String**| The dispute states to filter the result. If not specified, the endpoint returns all open disputes (the dispute status is not &#x60;INQUIRY_CLOSED&#x60;, &#x60;WON&#x60;, or &#x60;LOST&#x60;). | [optional] 
+ **locationId** | **String**| The ID of the location for which to return a list of disputes. If not specified, the endpoint returns all open disputes (the dispute status is not &#x60;INQUIRY_CLOSED&#x60;, &#x60;WON&#x60;, or &#x60;LOST&#x60;) associated with all locations. | [optional] 
 
 ### Return type
 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 RetrieveDispute
 
-Returns details of a specific dispute.
+Returns details about a specific dispute.
 
 ### Example
 ```javascript
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 SubmitEvidence
 
-Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints, and evidence automatically provided by Square, when available.
+Submits evidence to the cardholder&#39;s bank.  Before submitting evidence, Square compiles all available evidence. This includes evidence uploaded using the [CreateDisputeEvidenceFile](/reference/square/disputes-api/create-dispute-evidence-file) and [CreateDisputeEvidenceText](/reference/square/disputes-api/create-dispute-evidence-text) endpoints and evidence automatically provided by Square, when available.
 
 ### Example
 ```javascript
@@ -391,7 +391,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SquareConnect.DisputesApi();
 
-var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute you want to submit evidence for.
+var disputeId = SquareConnect.DisputesApi.constructFromObject({}); // String | The ID of the dispute that you want to submit evidence for.
 
 apiInstance.submitEvidence(disputeId).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -405,7 +405,7 @@ apiInstance.submitEvidence(disputeId).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **disputeId** | **String**| The ID of the dispute you want to submit evidence for. | 
+ **disputeId** | **String**| The ID of the dispute that you want to submit evidence for. | 
 
 ### Return type
 
