@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>ListDisputesResponse</code>.
- * Defines fields in a ListDisputes response.
+ * Defines fields in a &#x60;ListDisputes&#x60; response.
  * @alias module:model/ListDisputesResponse
  * @class
  */
@@ -63,17 +63,17 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;
 /**
- * The list of Disputes.
+ * The list of disputes.
  * @member {Array.<module:model/Dispute>} disputes
  */
 exports.prototype['disputes'] = undefined;
 /**
- * The pagination cursor to be used in a subsequent request. If unset, this is the final response. For more information, see [Paginating](https://developer.squareup.com/docs/basics/api101/pagination).
+ * The pagination cursor to be used in a subsequent request. If unset, this is the final response. For more information, see [Pagination](https://developer.squareup.com/docs/basics/api101/pagination).
  * @member {String} cursor
  */
 exports.prototype['cursor'] = undefined;

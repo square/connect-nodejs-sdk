@@ -15,7 +15,7 @@ const SquareConnect = require('../../src/index');
 
 describe('V1ListLocationsRequest', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.V1ListLocationsRequest();
+    // this.api = new SquareConnect.V1ListLocationsRequest();
   });
 
   it('should create an instance of V1ListLocationsRequest', function() {

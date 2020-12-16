@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>SubmitEvidenceRequest</code>.
- * Defines parameters for a SubmitEvidence request.
+ * Defines the parameters for a &#x60;SubmitEvidence&#x60; request.
  * @alias module:model/SubmitEvidenceRequest
  * @class
  */

@@ -19,7 +19,6 @@ var Error = require('./Error');
 
 /**
  * The DeleteCustomerGroupResponse model module.
- * Note: This model is in beta.
  * @module model/DeleteCustomerGroupResponse
  */
 

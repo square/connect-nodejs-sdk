@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-Defines fields in a RetrieveDisputeEvidence response.
+Defines the fields in a `RetrieveDisputeEvidence` response.
 
 ## Properties
 Name | Type | Description | Notes

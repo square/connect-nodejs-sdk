@@ -26,7 +26,7 @@ var Money = require('./Money');
 
 /**
  * Constructs a new <code>InvoicePaymentRequest</code>.
- * Describes a specific payment request in an invoice. Invoices that contain multiple payment requests can  specify a maximum of 12 &#x60;INSTALLMENT&#x60; request types. All of the payment requests must specify the same &#x60;request_method&#x60;.  For more information,  see [Payment requests](/docs/invoices-api/overview#payment-requests).
+ * Represents a payment request for an [invoice](#type-Invoice). Invoices can specify a maximum of 13 payment requests, with up to 12 &#x60;INSTALLMENT&#x60; request types.  For more information,  see [Payment requests](/docs/invoices-api/overview#payment-requests).
  * @alias module:model/InvoicePaymentRequest
  * @class
  */
@@ -134,7 +134,7 @@ exports.prototype['percentage_requested'] = undefined;
  */
 exports.prototype['tipping_enabled'] = undefined;
 /**
- * If the request method is `CHARGE_CARD_ON_FILE`, this field provides the  card to charge.
+ * The ID of the card on file to charge for the payment request. To get the customer’s card on file, use the `customer_id` of the invoice recipient to call `RetrieveCustomer` in the Customers API. Then, get the ID of the target card from the `cards` field in the response.
  * @member {String} card_id
  */
 exports.prototype['card_id'] = undefined;
@@ -144,7 +144,7 @@ exports.prototype['card_id'] = undefined;
  */
 exports.prototype['reminders'] = undefined;
 /**
- * The payment request amount, computed using the order amount and information from the various payment request fields (`invoice_request_type`,  `fixed_amount_requested_money`, and `percentage_requested`).
+ * The amount of the payment request, computed using the order amount and information from the various payment request fields (`request_type`,  `fixed_amount_requested_money`, and `percentage_requested`).
  * @member {module:model/Money} computed_amount_money
  */
 exports.prototype['computed_amount_money'] = undefined;

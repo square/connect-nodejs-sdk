@@ -3,7 +3,7 @@
 ### Description
 **Note: This model is in beta.**
 
-Defines parameters for a SubmitEvidence request.
+Defines the parameters for a `SubmitEvidence` request.
 
 ## Properties
 Name | Type | Description | Notes

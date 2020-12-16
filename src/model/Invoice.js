@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var InvoiceCustomField = require('./InvoiceCustomField');
 var InvoicePaymentRequest = require('./InvoicePaymentRequest');
 var InvoiceRecipient = require('./InvoiceRecipient');
 var Money = require('./Money');
@@ -33,6 +34,7 @@ var Money = require('./Money');
  */
 var exports = function() {
   var _this = this;
+
 
 
 
@@ -111,6 +113,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('updated_at')) {
       obj['updated_at'] = ApiClient.convertToType(data['updated_at'], 'String');
     }
+      if (data.hasOwnProperty('custom_fields')) {
+      obj['custom_fields'] = ApiClient.convertToType(data['custom_fields'], [InvoiceCustomField]);
+    }
     }
   return obj;
 }
@@ -141,7 +146,7 @@ exports.prototype['order_id'] = undefined;
  */
 exports.prototype['primary_recipient'] = undefined;
 /**
- * An array of `InvoicePaymentRequest` objects. Each object defines a payment request in an invoice payment schedule. It provides information such as when and how Square processes payments. You must specify at least one payment request. For invoices  with multiple payment requests, you can specify a maximum of 12 `INSTALLMENT` request types. All of the payment requests must specify the same `request_method`.  This field is required when creating an invoice.
+ * The payment schedule for the invoice, represented by one or more payment requests that define payment settings, such as amount due and due date. You can specify a maximum of 13 payment requests, with up to 12 `INSTALLMENT` request types. For more information, see [Payment requests](https://developer.squareup.com/docs/docs/invoices-api/overview#payment-requests).  This field is required when creating an invoice. It must contain at least one payment request.
  * @member {Array.<module:model/InvoicePaymentRequest>} payment_requests
  */
 exports.prototype['payment_requests'] = undefined;
@@ -156,12 +161,12 @@ exports.prototype['invoice_number'] = undefined;
  */
 exports.prototype['title'] = undefined;
 /**
- * The description of the invoice. This is visible the customer receiving the invoice.
+ * The description of the invoice. This is visible to the customer receiving the invoice.
  * @member {String} description
  */
 exports.prototype['description'] = undefined;
 /**
- * The timestamp when the invoice is scheduled for processing, in RFC 3339 format. At the specified time, depending on the `request_method`, Square sends the invoice to the customer's email address or charge the customer's card on file.  If the field is not set, Square processes the invoice immediately after publication.
+ * The timestamp when the invoice is scheduled for processing, in RFC 3339 format. After the invoice is published, Square processes the invoice on the specified date, based on the settings for the invoice payment requests.  If the field is not set, Square processes the invoice immediately after it is published.
  * @member {String} scheduled_at
  */
 exports.prototype['scheduled_at'] = undefined;
@@ -195,6 +200,11 @@ exports.prototype['created_at'] = undefined;
  * @member {String} updated_at
  */
 exports.prototype['updated_at'] = undefined;
+/**
+ * Additional seller-defined fields to render on the invoice. These fields are visible to sellers and buyers on the Square-hosted invoice page and in emailed or PDF copies of invoices. For more information, see [Custom fields](https://developer.squareup.com/docs/docs/invoices-api/overview#custom-fields).  Max: 2 custom fields
+ * @member {Array.<module:model/InvoiceCustomField>} custom_fields
+ */
+exports.prototype['custom_fields'] = undefined;
 
 
 

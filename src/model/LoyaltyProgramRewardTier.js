@@ -12,6 +12,7 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var CatalogObjectReference = require('./CatalogObjectReference');
 var LoyaltyProgramRewardDefinition = require('./LoyaltyProgramRewardDefinition');
 
 
@@ -31,7 +32,7 @@ var LoyaltyProgramRewardDefinition = require('./LoyaltyProgramRewardDefinition')
  * @param id {String} The Square-assigned ID of the reward tier.
  * @param points {Number} The points exchanged for the reward tier.
  * @param name {String} The name of the reward tier.
- * @param definition {module:model/LoyaltyProgramRewardDefinition} Provides details about the reward tier definition.
+ * @param definition {module:model/LoyaltyProgramRewardDefinition} Provides details about the reward tier definition. DEPRECATED at version 2020-12-16. Replaced by the `pricing_rule_reference` field.
  * @param createdAt {String} The timestamp when the reward tier was created, in RFC 3339 format.
  */
 var exports = function(id, points, name, definition, createdAt) {
@@ -42,6 +43,7 @@ var exports = function(id, points, name, definition, createdAt) {
   _this['name'] = name;
   _this['definition'] = definition;
   _this['created_at'] = createdAt;
+
 };
 
 /**
@@ -70,6 +72,9 @@ exports.constructFromObject = function(data, obj) {
       if (data.hasOwnProperty('created_at')) {
       obj['created_at'] = ApiClient.convertToType(data['created_at'], 'String');
     }
+      if (data.hasOwnProperty('pricing_rule_reference')) {
+      obj['pricing_rule_reference'] = CatalogObjectReference.constructFromObject(data['pricing_rule_reference']);
+    }
     }
   return obj;
 }
@@ -90,7 +95,7 @@ exports.prototype['points'] = undefined;
  */
 exports.prototype['name'] = undefined;
 /**
- * Provides details about the reward tier definition.
+ * Provides details about the reward tier definition. DEPRECATED at version 2020-12-16. Replaced by the `pricing_rule_reference` field.
  * @member {module:model/LoyaltyProgramRewardDefinition} definition
  */
 exports.prototype['definition'] = undefined;
@@ -99,6 +104,11 @@ exports.prototype['definition'] = undefined;
  * @member {String} created_at
  */
 exports.prototype['created_at'] = undefined;
+/**
+ * A reference to the specific version of a `PRICING_RULE` catalog object that contains information about the reward tier discount.  Use `object_id` and `catalog_version` with the `RetrieveCatalogObject` endpoint to get discount details. Make sure to set `include_related_objects` to true in the request to retrieve all catalog objects that define the discount. For more information, see [Get discount details for the reward](https://developer.squareup.com/docs/docs/loyalty-api/overview#get-discount-details).
+ * @member {module:model/CatalogObjectReference} pricing_rule_reference
+ */
+exports.prototype['pricing_rule_reference'] = undefined;
 
 
 

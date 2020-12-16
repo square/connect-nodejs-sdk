@@ -19,7 +19,6 @@ var Error = require('./Error');
 
 /**
  * The RemoveGroupFromCustomerResponse model module.
- * Note: This model is in beta.
  * @module model/RemoveGroupFromCustomerResponse
  */
 

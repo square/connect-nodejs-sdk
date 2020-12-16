@@ -39,6 +39,7 @@ var exports = function() {
 
 
 
+
 };
 
 /**
@@ -75,6 +76,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('scope')) {
       obj['scope'] = ApiClient.convertToType(data['scope'], 'String');
+    }
+      if (data.hasOwnProperty('auto_applied')) {
+      obj['auto_applied'] = ApiClient.convertToType(data['auto_applied'], 'Boolean');
     }
     }
   return obj;
@@ -120,6 +124,11 @@ exports.prototype['applied_money'] = undefined;
  * @member {String} scope
  */
 exports.prototype['scope'] = undefined;
+/**
+ * Determines whether the tax was automatically applied to the order based on the catalog configuration. For an example, see  [Automatically Apply Taxes to an Order](https://developer.squareup.com/docs/docs/orders-api/apply-taxes-and-discounts/auto-apply-taxes).
+ * @member {Boolean} auto_applied
+ */
+exports.prototype['auto_applied'] = undefined;
 
 
 

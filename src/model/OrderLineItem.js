@@ -16,6 +16,7 @@ var Money = require('./Money');
 var OrderLineItemAppliedDiscount = require('./OrderLineItemAppliedDiscount');
 var OrderLineItemAppliedTax = require('./OrderLineItemAppliedTax');
 var OrderLineItemModifier = require('./OrderLineItemModifier');
+var OrderLineItemPricingBlocklists = require('./OrderLineItemPricingBlocklists');
 var OrderQuantityUnit = require('./OrderQuantityUnit');
 
 
@@ -39,6 +40,7 @@ var exports = function(quantity) {
 
 
   _this['quantity'] = quantity;
+
 
 
 
@@ -116,6 +118,9 @@ exports.constructFromObject = function(data, obj) {
     }
       if (data.hasOwnProperty('total_money')) {
       obj['total_money'] = Money.constructFromObject(data['total_money']);
+    }
+      if (data.hasOwnProperty('pricing_blocklists')) {
+      obj['pricing_blocklists'] = OrderLineItemPricingBlocklists.constructFromObject(data['pricing_blocklists']);
     }
     }
   return obj;
@@ -206,6 +211,11 @@ exports.prototype['total_discount_money'] = undefined;
  * @member {module:model/Money} total_money
  */
 exports.prototype['total_money'] = undefined;
+/**
+ * Describes pricing adjustments that are blocked from manual and automatic application to a line item. For more information, see [Apply Taxes and Discounts](https://developer.squareup.com/docs/docs/orders-api/apply-taxes-and-discounts).
+ * @member {module:model/OrderLineItemPricingBlocklists} pricing_blocklists
+ */
+exports.prototype['pricing_blocklists'] = undefined;
 
 
 

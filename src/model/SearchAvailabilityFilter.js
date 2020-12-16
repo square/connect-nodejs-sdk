@@ -29,7 +29,7 @@ var TimeRange = require('./TimeRange');
  * A query filter to search for availabilities by.
  * @alias module:model/SearchAvailabilityFilter
  * @class
- * @param startAtRange {module:model/TimeRange} The query expression to search for availabilities matching the specified range of starting times.
+ * @param startAtRange {module:model/TimeRange} The query expression to search for availabilities matching the specified range of starting times. The range must be at least 24 hours and at most 31 days in length.
  */
 var exports = function(startAtRange) {
   var _this = this;
@@ -68,7 +68,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * The query expression to search for availabilities matching the specified range of starting times.
+ * The query expression to search for availabilities matching the specified range of starting times. The range must be at least 24 hours and at most 31 days in length.
  * @member {module:model/TimeRange} start_at_range
  */
 exports.prototype['start_at_range'] = undefined;

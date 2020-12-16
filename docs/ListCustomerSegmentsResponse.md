@@ -1,7 +1,6 @@
 # SquareConnect.ListCustomerSegmentsResponse
 
 ### Description
-**Note: This model is in beta.**
 
 Defines the fields included in the response body for requests to __ListCustomerSegments__.  One of `errors` or `segments` is present in a given response (never both).
 

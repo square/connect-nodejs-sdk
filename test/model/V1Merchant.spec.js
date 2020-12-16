@@ -16,7 +16,7 @@ const SquareConnect = require('../../src/index');
 
 describe('V1Merchant', function() {
   beforeEach(function() {
-    this.api = new SquareConnect.V1Merchant();
+    // this.api = new SquareConnect.V1Merchant();
   });
 
   it('should create an instance of V1Merchant', function() {

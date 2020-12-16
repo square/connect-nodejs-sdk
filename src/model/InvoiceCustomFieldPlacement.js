@@ -15,26 +15,26 @@ var ApiClient = require('../ApiClient');
 
 
 /**
- * Enum class V1MerchantAccountType.
+ * Enum class InvoiceCustomFieldPlacement.
  * @enum {}
  * @readonly
  */
 var exports = {
   /**
-   * value: "LOCATION"
+   * value: "ABOVE_LINE_ITEMS"
    * @const
    */
-  "LOCATION": "LOCATION",
+  "ABOVE_LINE_ITEMS": "ABOVE_LINE_ITEMS",
   /**
-   * value: "BUSINESS"
+   * value: "BELOW_LINE_ITEMS"
    * @const
    */
-  "BUSINESS": "BUSINESS"};
+  "BELOW_LINE_ITEMS": "BELOW_LINE_ITEMS"};
 
 /**
- * Returns a <code>V1MerchantAccountType</code> enum value from a Javascript object name.
+ * Returns a <code>InvoiceCustomFieldPlacement</code> enum value from a Javascript object name.
  * @param {Object} data The plain JavaScript object containing the name of the enum value.
- * @return {module:model/V1MerchantAccountType} The enum <code>V1MerchantAccountType</code> value.
+ * @return {module:model/InvoiceCustomFieldPlacement} The enum <code>InvoiceCustomFieldPlacement</code> value.
  */
 exports.constructFromObject = function(object) {
   return object;

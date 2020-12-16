@@ -10,7 +10,6 @@ Method | HTTP request | Description
 
 <a name="listCustomerSegments"></a>
 # **listCustomerSegments**
-**Note: This endpoint is in beta.**
 > ListCustomerSegmentsResponse listCustomerSegments(opts)
 
 ListCustomerSegments
@@ -60,7 +59,6 @@ Name | Type | Description  | Notes
 
 <a name="retrieveCustomerSegment"></a>
 # **retrieveCustomerSegment**
-**Note: This endpoint is in beta.**
 > RetrieveCustomerSegmentResponse retrieveCustomerSegment(segmentId)
 
 RetrieveCustomerSegment

@@ -62,7 +62,7 @@ exports.constructFromObject = function(data, obj) {
  */
 exports.prototype['filename'] = undefined;
 /**
- * Dispute evidence files must one of application/pdf, image/heic, image/heif, image/jpeg, image/png, image/tiff formats.
+ * Dispute evidence files must be application/pdf, image/heic, image/heif, image/jpeg, image/png, or image/tiff formats.
  * @member {String} filetype
  */
 exports.prototype['filetype'] = undefined;

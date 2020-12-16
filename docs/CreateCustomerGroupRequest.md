@@ -1,7 +1,6 @@
 # SquareConnect.CreateCustomerGroupRequest
 
 ### Description
-**Note: This model is in beta.**
 
 Defines the body parameters that can be provided in a request to the [CreateCustomerGroup](#endpoint-createcustomegroup) endpoint.
 

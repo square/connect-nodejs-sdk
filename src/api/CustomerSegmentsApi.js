@@ -34,7 +34,6 @@ module.exports = function(apiClient) {
 
   /**
    * ListCustomerSegments
-   * Note: This endpoint is in beta.
    * Retrieves the list of customer segments of a business.
    * @param {Object} opts Optional parameters
    * @param {String} opts.cursor A pagination cursor returned by previous calls to __ListCustomerSegments__. Used to retrieve the next set of query results.  See the [Pagination guide](https://developer.squareup.com/docs/docs/working-with-apis/pagination) for more information.
@@ -52,7 +51,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -86,7 +85,6 @@ module.exports = function(apiClient) {
 
   /**
    * RetrieveCustomerSegment
-   * Note: This endpoint is in beta.
    * Retrieves a specific customer segment as identified by the &#x60;segment_id&#x60; value.
    * @param {String} segmentId The Square-issued ID of the customer segment.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/RetrieveCustomerSegmentResponse} and HTTP response
@@ -107,7 +105,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

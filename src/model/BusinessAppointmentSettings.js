@@ -12,10 +12,10 @@
  *
  */
 var ApiClient = require('../ApiClient');
-var AlignmentTime = require('./BusinessAppointmentSettingsAlignmentTime');
-var BookingLocationType = require('./BusinessAppointmentSettingsBookingLocationType');
-var CancellationPolicy = require('./BusinessAppointmentSettingsCancellationPolicy');
-var MaxAppointmentsPerDayLimitType = require('./BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType');
+var BusinessAppointmentSettingsAlignmentTime = require('./BusinessAppointmentSettingsAlignmentTime');
+var BusinessAppointmentSettingsBookingLocationType = require('./BusinessAppointmentSettingsBookingLocationType');
+var BusinessAppointmentSettingsCancellationPolicy = require('./BusinessAppointmentSettingsCancellationPolicy');
+var BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType = require('./BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType');
 var Money = require('./Money');
 
 
@@ -63,10 +63,10 @@ exports.constructFromObject = function(data, obj) {
     obj = obj || new exports();
 
       if (data.hasOwnProperty('location_types')) {
-      obj['location_types'] = ApiClient.convertToType(data['location_types'], [BookingLocationType]);
+      obj['location_types'] = ApiClient.convertToType(data['location_types'], [BusinessAppointmentSettingsBookingLocationType]);
     }
       if (data.hasOwnProperty('alignment_time')) {
-      obj['alignment_time'] = AlignmentTime.constructFromObject(data['alignment_time']);
+      obj['alignment_time'] = BusinessAppointmentSettingsAlignmentTime.constructFromObject(data['alignment_time']);
     }
       if (data.hasOwnProperty('min_booking_lead_time_seconds')) {
       obj['min_booking_lead_time_seconds'] = ApiClient.convertToType(data['min_booking_lead_time_seconds'], 'Number');
@@ -81,7 +81,7 @@ exports.constructFromObject = function(data, obj) {
       obj['multiple_service_booking_enabled'] = ApiClient.convertToType(data['multiple_service_booking_enabled'], 'Boolean');
     }
       if (data.hasOwnProperty('max_appointments_per_day_limit_type')) {
-      obj['max_appointments_per_day_limit_type'] = MaxAppointmentsPerDayLimitType.constructFromObject(data['max_appointments_per_day_limit_type']);
+      obj['max_appointments_per_day_limit_type'] = BusinessAppointmentSettingsMaxAppointmentsPerDayLimitType.constructFromObject(data['max_appointments_per_day_limit_type']);
     }
       if (data.hasOwnProperty('max_appointments_per_day_limit')) {
       obj['max_appointments_per_day_limit'] = ApiClient.convertToType(data['max_appointments_per_day_limit'], 'Number');
@@ -93,7 +93,7 @@ exports.constructFromObject = function(data, obj) {
       obj['cancellation_fee_money'] = Money.constructFromObject(data['cancellation_fee_money']);
     }
       if (data.hasOwnProperty('cancellation_policy')) {
-      obj['cancellation_policy'] = CancellationPolicy.constructFromObject(data['cancellation_policy']);
+      obj['cancellation_policy'] = BusinessAppointmentSettingsCancellationPolicy.constructFromObject(data['cancellation_policy']);
     }
       if (data.hasOwnProperty('cancellation_policy_text')) {
       obj['cancellation_policy_text'] = ApiClient.convertToType(data['cancellation_policy_text'], 'String');
@@ -157,7 +157,7 @@ exports.prototype['cancellation_window_seconds'] = undefined;
 exports.prototype['cancellation_fee_money'] = undefined;
 /**
  * The cancellation policy adopted by the seller.
- * @member {module:model/BusinessAppointmentSettingssCancellationPolicy} cancellation_policy
+ * @member {module:model/BusinessAppointmentSettingsCancellationPolicy} cancellation_policy
  */
 exports.prototype['cancellation_policy'] = undefined;
 /**

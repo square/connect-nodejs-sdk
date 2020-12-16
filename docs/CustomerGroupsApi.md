@@ -13,7 +13,6 @@ Method | HTTP request | Description
 
 <a name="createCustomerGroup"></a>
 # **createCustomerGroup**
-**Note: This endpoint is in beta.**
 > CreateCustomerGroupResponse createCustomerGroup(body)
 
 CreateCustomerGroup
@@ -62,7 +61,6 @@ Name | Type | Description  | Notes
 
 <a name="deleteCustomerGroup"></a>
 # **deleteCustomerGroup**
-**Note: This endpoint is in beta.**
 > DeleteCustomerGroupResponse deleteCustomerGroup(groupId)
 
 DeleteCustomerGroup
@@ -111,7 +109,6 @@ Name | Type | Description  | Notes
 
 <a name="listCustomerGroups"></a>
 # **listCustomerGroups**
-**Note: This endpoint is in beta.**
 > ListCustomerGroupsResponse listCustomerGroups(opts)
 
 ListCustomerGroups
@@ -161,7 +158,6 @@ Name | Type | Description  | Notes
 
 <a name="retrieveCustomerGroup"></a>
 # **retrieveCustomerGroup**
-**Note: This endpoint is in beta.**
 > RetrieveCustomerGroupResponse retrieveCustomerGroup(groupId)
 
 RetrieveCustomerGroup
@@ -210,7 +206,6 @@ Name | Type | Description  | Notes
 
 <a name="updateCustomerGroup"></a>
 # **updateCustomerGroup**
-**Note: This endpoint is in beta.**
 > UpdateCustomerGroupResponse updateCustomerGroup(groupId, body)
 
 UpdateCustomerGroup

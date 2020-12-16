@@ -24,7 +24,7 @@ var ApiClient = require('../ApiClient');
 
 /**
  * Constructs a new <code>AcceptDisputeRequest</code>.
- * Defines request parameters for the AcceptDispute endpoint.
+ * Defines the request parameters for the &#x60;AcceptDispute&#x60; endpoint.
  * @alias module:model/AcceptDisputeRequest
  * @class
  */

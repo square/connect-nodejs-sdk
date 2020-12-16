@@ -26,7 +26,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RetrieveDisputeEvidenceResponse</code>.
- * Defines fields in a RetrieveDisputeEvidence response.
+ * Defines the fields in a &#x60;RetrieveDisputeEvidence&#x60; response.
  * @alias module:model/RetrieveDisputeEvidenceResponse
  * @class
  */

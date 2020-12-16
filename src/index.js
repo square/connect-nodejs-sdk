@@ -65,6 +65,8 @@ var CalculateLoyaltyPointsRequest = require('./model/CalculateLoyaltyPointsReque
 var CalculateLoyaltyPointsResponse = require('./model/CalculateLoyaltyPointsResponse');
 var CalculateOrderRequest = require('./model/CalculateOrderRequest');
 var CalculateOrderResponse = require('./model/CalculateOrderResponse');
+var CancelBookingRequest = require('./model/CancelBookingRequest');
+var CancelBookingResponse = require('./model/CancelBookingResponse');
 var CancelInvoiceRequest = require('./model/CancelInvoiceRequest');
 var CancelInvoiceResponse = require('./model/CancelInvoiceResponse');
 var CancelPaymentByIdempotencyKeyRequest = require('./model/CancelPaymentByIdempotencyKeyRequest');
@@ -124,6 +126,7 @@ var CatalogModifierListSelectionType = require('./model/CatalogModifierListSelec
 var CatalogModifierOverride = require('./model/CatalogModifierOverride');
 var CatalogObject = require('./model/CatalogObject');
 var CatalogObjectBatch = require('./model/CatalogObjectBatch');
+var CatalogObjectReference = require('./model/CatalogObjectReference');
 var CatalogObjectType = require('./model/CatalogObjectType');
 var CatalogPricingRule = require('./model/CatalogPricingRule');
 var CatalogPricingType = require('./model/CatalogPricingType');
@@ -287,6 +290,8 @@ var InventoryPhysicalCount = require('./model/InventoryPhysicalCount');
 var InventoryState = require('./model/InventoryState');
 var InventoryTransfer = require('./model/InventoryTransfer');
 var Invoice = require('./model/Invoice');
+var InvoiceCustomField = require('./model/InvoiceCustomField');
+var InvoiceCustomFieldPlacement = require('./model/InvoiceCustomFieldPlacement');
 var InvoiceFilter = require('./model/InvoiceFilter');
 var InvoicePaymentReminder = require('./model/InvoicePaymentReminder');
 var InvoicePaymentReminderStatus = require('./model/InvoicePaymentReminderStatus');
@@ -426,6 +431,9 @@ var OrderLineItemDiscount = require('./model/OrderLineItemDiscount');
 var OrderLineItemDiscountScope = require('./model/OrderLineItemDiscountScope');
 var OrderLineItemDiscountType = require('./model/OrderLineItemDiscountType');
 var OrderLineItemModifier = require('./model/OrderLineItemModifier');
+var OrderLineItemPricingBlocklists = require('./model/OrderLineItemPricingBlocklists');
+var OrderLineItemPricingBlocklistsBlockedDiscount = require('./model/OrderLineItemPricingBlocklistsBlockedDiscount');
+var OrderLineItemPricingBlocklistsBlockedTax = require('./model/OrderLineItemPricingBlocklistsBlockedTax');
 var OrderLineItemTax = require('./model/OrderLineItemTax');
 var OrderLineItemTaxScope = require('./model/OrderLineItemTaxScope');
 var OrderLineItemTaxType = require('./model/OrderLineItemTaxType');
@@ -722,8 +730,6 @@ var V1ListInventoryRequest = require('./model/V1ListInventoryRequest');
 var V1ListInventoryResponse = require('./model/V1ListInventoryResponse');
 var V1ListItemsRequest = require('./model/V1ListItemsRequest');
 var V1ListItemsResponse = require('./model/V1ListItemsResponse');
-var V1ListLocationsRequest = require('./model/V1ListLocationsRequest');
-var V1ListLocationsResponse = require('./model/V1ListLocationsResponse');
 var V1ListModifierListsRequest = require('./model/V1ListModifierListsRequest');
 var V1ListModifierListsResponse = require('./model/V1ListModifierListsResponse');
 var V1ListOrdersRequest = require('./model/V1ListOrdersRequest');
@@ -741,10 +747,6 @@ var V1ListTimecardEventsRequest = require('./model/V1ListTimecardEventsRequest')
 var V1ListTimecardEventsResponse = require('./model/V1ListTimecardEventsResponse');
 var V1ListTimecardsRequest = require('./model/V1ListTimecardsRequest');
 var V1ListTimecardsResponse = require('./model/V1ListTimecardsResponse');
-var V1Merchant = require('./model/V1Merchant');
-var V1MerchantAccountType = require('./model/V1MerchantAccountType');
-var V1MerchantBusinessType = require('./model/V1MerchantBusinessType');
-var V1MerchantLocationDetails = require('./model/V1MerchantLocationDetails');
 var V1ModifierList = require('./model/V1ModifierList');
 var V1ModifierListSelectionType = require('./model/V1ModifierListSelectionType');
 var V1ModifierOption = require('./model/V1ModifierOption');
@@ -773,7 +775,6 @@ var V1RefundType = require('./model/V1RefundType');
 var V1RemoveFeeRequest = require('./model/V1RemoveFeeRequest');
 var V1RemoveModifierListRequest = require('./model/V1RemoveModifierListRequest');
 var V1RetrieveBankAccountRequest = require('./model/V1RetrieveBankAccountRequest');
-var V1RetrieveBusinessRequest = require('./model/V1RetrieveBusinessRequest');
 var V1RetrieveCashDrawerShiftRequest = require('./model/V1RetrieveCashDrawerShiftRequest');
 var V1RetrieveEmployeeRequest = require('./model/V1RetrieveEmployeeRequest');
 var V1RetrieveEmployeeRoleRequest = require('./model/V1RetrieveEmployeeRoleRequest');
@@ -847,7 +848,6 @@ var TerminalApi = require('./api/TerminalApi');
 var TransactionsApi = require('./api/TransactionsApi');
 var V1EmployeesApi = require('./api/V1EmployeesApi');
 var V1ItemsApi = require('./api/V1ItemsApi');
-var V1LocationsApi = require('./api/V1LocationsApi');
 var V1TransactionsApi = require('./api/V1TransactionsApi');
 
 
@@ -880,7 +880,7 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
  * </pre>
  * </p>
  * @module index
- * @version 5.20201118.0
+ * @version 6.20201216.0
  */
   module.exports = {
   /**
@@ -1148,6 +1148,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CalculateOrderResponse}
    */
   CalculateOrderResponse: CalculateOrderResponse,
+  /**
+   * The CancelBookingRequest model constructor.
+   * @property {module:model/CancelBookingRequest}
+   */
+  CancelBookingRequest: CancelBookingRequest,
+  /**
+   * The CancelBookingResponse model constructor.
+   * @property {module:model/CancelBookingResponse}
+   */
+  CancelBookingResponse: CancelBookingResponse,
   /**
    * The CancelInvoiceRequest model constructor.
    * @property {module:model/CancelInvoiceRequest}
@@ -1443,6 +1453,11 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/CatalogObjectBatch}
    */
   CatalogObjectBatch: CatalogObjectBatch,
+  /**
+   * The CatalogObjectReference model constructor.
+   * @property {module:model/CatalogObjectReference}
+   */
+  CatalogObjectReference: CatalogObjectReference,
   /**
    * The CatalogObjectType model constructor.
    * @property {module:model/CatalogObjectType}
@@ -2259,6 +2274,16 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   Invoice: Invoice,
   /**
+   * The InvoiceCustomField model constructor.
+   * @property {module:model/InvoiceCustomField}
+   */
+  InvoiceCustomField: InvoiceCustomField,
+  /**
+   * The InvoiceCustomFieldPlacement model constructor.
+   * @property {module:model/InvoiceCustomFieldPlacement}
+   */
+  InvoiceCustomFieldPlacement: InvoiceCustomFieldPlacement,
+  /**
    * The InvoiceFilter model constructor.
    * @property {module:model/InvoiceFilter}
    */
@@ -2953,6 +2978,21 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/OrderLineItemModifier}
    */
   OrderLineItemModifier: OrderLineItemModifier,
+  /**
+   * The OrderLineItemPricingBlocklists model constructor.
+   * @property {module:model/OrderLineItemPricingBlocklists}
+   */
+  OrderLineItemPricingBlocklists: OrderLineItemPricingBlocklists,
+  /**
+   * The OrderLineItemPricingBlocklistsBlockedDiscount model constructor.
+   * @property {module:model/OrderLineItemPricingBlocklistsBlockedDiscount}
+   */
+  OrderLineItemPricingBlocklistsBlockedDiscount: OrderLineItemPricingBlocklistsBlockedDiscount,
+  /**
+   * The OrderLineItemPricingBlocklistsBlockedTax model constructor.
+   * @property {module:model/OrderLineItemPricingBlocklistsBlockedTax}
+   */
+  OrderLineItemPricingBlocklistsBlockedTax: OrderLineItemPricingBlocklistsBlockedTax,
   /**
    * The OrderLineItemTax model constructor.
    * @property {module:model/OrderLineItemTax}
@@ -4434,16 +4474,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    */
   V1ListItemsResponse: V1ListItemsResponse,
   /**
-   * The V1ListLocationsRequest model constructor.
-   * @property {module:model/V1ListLocationsRequest}
-   */
-  V1ListLocationsRequest: V1ListLocationsRequest,
-  /**
-   * The V1ListLocationsResponse model constructor.
-   * @property {module:model/V1ListLocationsResponse}
-   */
-  V1ListLocationsResponse: V1ListLocationsResponse,
-  /**
    * The V1ListModifierListsRequest model constructor.
    * @property {module:model/V1ListModifierListsRequest}
    */
@@ -4528,26 +4558,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1ListTimecardsResponse}
    */
   V1ListTimecardsResponse: V1ListTimecardsResponse,
-  /**
-   * The V1Merchant model constructor.
-   * @property {module:model/V1Merchant}
-   */
-  V1Merchant: V1Merchant,
-  /**
-   * The V1MerchantAccountType model constructor.
-   * @property {module:model/V1MerchantAccountType}
-   */
-  V1MerchantAccountType: V1MerchantAccountType,
-  /**
-   * The V1MerchantBusinessType model constructor.
-   * @property {module:model/V1MerchantBusinessType}
-   */
-  V1MerchantBusinessType: V1MerchantBusinessType,
-  /**
-   * The V1MerchantLocationDetails model constructor.
-   * @property {module:model/V1MerchantLocationDetails}
-   */
-  V1MerchantLocationDetails: V1MerchantLocationDetails,
   /**
    * The V1ModifierList model constructor.
    * @property {module:model/V1ModifierList}
@@ -4688,11 +4698,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:model/V1RetrieveBankAccountRequest}
    */
   V1RetrieveBankAccountRequest: V1RetrieveBankAccountRequest,
-  /**
-   * The V1RetrieveBusinessRequest model constructor.
-   * @property {module:model/V1RetrieveBusinessRequest}
-   */
-  V1RetrieveBusinessRequest: V1RetrieveBusinessRequest,
   /**
    * The V1RetrieveCashDrawerShiftRequest model constructor.
    * @property {module:model/V1RetrieveCashDrawerShiftRequest}
@@ -5053,11 +5058,6 @@ var V1TransactionsApi = require('./api/V1TransactionsApi');
    * @property {module:api/V1ItemsApi}
    */
   V1ItemsApi: V1ItemsApi,
-  /**
-   * The V1LocationsApi service constructor.
-   * @property {module:api/V1LocationsApi}
-   */
-  V1LocationsApi: V1LocationsApi,
   /**
    * The V1TransactionsApi service constructor.
    * @property {module:api/V1TransactionsApi}

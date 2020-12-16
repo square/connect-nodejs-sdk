@@ -25,7 +25,7 @@ var Error = require('./Error');
 
 /**
  * Constructs a new <code>RemoveDisputeEvidenceResponse</code>.
- * Defines fields in a RemoveDisputeEvidence response.
+ * Defines the fields in a &#x60;RemoveDisputeEvidence&#x60; response.
  * @alias module:model/RemoveDisputeEvidenceResponse
  * @class
  */
@@ -54,7 +54,7 @@ exports.constructFromObject = function(data, obj) {
 }
 
 /**
- * Information on errors encountered during the request.
+ * Information about errors encountered during the request.
  * @member {Array.<module:model/Error>} errors
  */
 exports.prototype['errors'] = undefined;

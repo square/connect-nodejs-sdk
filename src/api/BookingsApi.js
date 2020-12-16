@@ -12,6 +12,8 @@
  *
  */
 var ApiClient = require('../ApiClient');
+var CancelBookingRequest = require('../model/CancelBookingRequest');
+var CancelBookingResponse = require('../model/CancelBookingResponse');
 var CreateBookingRequest = require('../model/CreateBookingRequest');
 var CreateBookingResponse = require('../model/CreateBookingResponse');
 var ListTeamMemberBookingProfilesResponse = require('../model/ListTeamMemberBookingProfilesResponse');
@@ -41,6 +43,67 @@ module.exports = function(apiClient) {
 
 
   /**
+   * CancelBooking
+   * Note: This endpoint is in beta.
+   * Cancels an existing booking.
+   * @param {String} bookingId The ID of the &#x60;Booking&#x60; object representing the to-be-cancelled booking.
+   * @param {module:model/CancelBookingRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CancelBookingResponse} and HTTP response
+   */
+  this.cancelBookingWithHttpInfo = function(bookingId, body) {
+    var postBody = body;
+
+    // verify the required parameter 'bookingId' is set
+    if (bookingId === undefined || bookingId === null) {
+      throw new Error("Missing the required parameter 'bookingId' when calling cancelBooking");
+    }
+
+    // verify the required parameter 'body' is set
+    if (body === undefined || body === null) {
+      throw new Error("Missing the required parameter 'body' when calling cancelBooking");
+    }
+
+
+    var pathParams = {
+      'booking_id': bookingId
+    };
+    var queryParams = {
+    };
+    var headerParams = {
+    };
+    headerParams['Square-Version'] = '2020-12-16';
+
+    var formParams = {
+    };
+
+    var authNames = ['oauth2'];
+    var contentTypes = ['application/json'];
+    var accepts = ['application/json'];
+    var returnType = CancelBookingResponse;
+
+    return this.apiClient.callApi(
+      '/v2/bookings/{booking_id}/cancel', 'POST',
+      pathParams, queryParams, headerParams, formParams, postBody,
+      authNames, contentTypes, accepts, returnType
+    );
+  }
+
+  /**
+   * CancelBooking
+   * Cancels an existing booking.
+   * @param {String} bookingId The ID of the &#x60;Booking&#x60; object representing the to-be-cancelled booking.
+   * @param {module:model/CancelBookingRequest} body An object containing the fields to POST for the request.  See the corresponding object definition for field details.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CancelBookingResponse}
+   */
+  this.cancelBooking = function(bookingId, body) {
+    return this.cancelBookingWithHttpInfo(bookingId, body)
+      .then(function(response_and_data) {
+        return response_and_data.data;
+      });
+  }
+
+
+  /**
    * CreateBooking
    * Note: This endpoint is in beta.
    * Creates a booking.
@@ -62,7 +125,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -119,7 +182,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -177,7 +240,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -224,7 +287,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -277,7 +340,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -330,7 +393,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };
@@ -390,7 +453,7 @@ module.exports = function(apiClient) {
     };
     var headerParams = {
     };
-    headerParams['Square-Version'] = '2020-11-18';
+    headerParams['Square-Version'] = '2020-12-16';
 
     var formParams = {
     };

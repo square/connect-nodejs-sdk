@@ -1,7 +1,6 @@
 # SquareConnect.UpdateCustomerGroupRequest
 
 ### Description
-**Note: This model is in beta.**
 
 Defines the body parameters that can be provided in a request to the [UpdateCustomerGroup](#endpoint-updatecustomergroup) endpoint.
 
