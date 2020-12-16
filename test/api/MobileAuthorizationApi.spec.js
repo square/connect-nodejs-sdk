@@ -8,6 +8,7 @@ const {
 describe('MobileAuthorizationApi', function() {
   beforeEach(function() {
     const defaultClient = SquareConnect.ApiClient.instance;
+    defaultClient.basePath = 'https://connect.squareup.com';
     const oauth2 = defaultClient.authentications['oauth2'];
     oauth2.accessToken = accounts.production.access_token;
     this.api  = new SquareConnect.MobileAuthorizationApi();
