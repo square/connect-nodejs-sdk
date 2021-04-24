@@ -20,48 +20,48 @@ describe('ListPaymentsRequest', function() {
 
   it('should create an instance of ListPaymentsRequest', function() {
     // uncomment below and update the code to test ListPaymentsRequest
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be.a(SquareConnect.ListPaymentsRequest);
   });
 
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property total (base name: "total")', function() {
     // uncomment below and update the code to test the property total
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property last4 (base name: "last_4")', function() {
     // uncomment below and update the code to test the property last4
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cardBrand (base name: "card_brand")', function() {
     // uncomment below and update the code to test the property cardBrand
-    //var instane = new SquareConnect.ListPaymentsRequest();
+    //var instance = new SquareConnect.ListPaymentsRequest();
     //expect(instance).to.be();
   });
 });

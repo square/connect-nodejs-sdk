@@ -20,23 +20,23 @@ describe('CatalogQuickAmountsSettings', function() {
 
   it('should create an instance of CatalogQuickAmountsSettings', function() {
     // uncomment below and update the code to test CatalogQuickAmountsSettings
-    //var instane = new SquareConnect.CatalogQuickAmountsSettings();
+    //var instance = new SquareConnect.CatalogQuickAmountsSettings();
     //expect(instance).to.be.a(SquareConnect.CatalogQuickAmountsSettings);
   });
 
   it('should have the property option (base name: "option")', function() {
     // uncomment below and update the code to test the property option
-    //var instane = new SquareConnect.CatalogQuickAmountsSettings();
+    //var instance = new SquareConnect.CatalogQuickAmountsSettings();
     //expect(instance).to.be();
   });
   it('should have the property eligibleForAutoAmounts (base name: "eligible_for_auto_amounts")', function() {
     // uncomment below and update the code to test the property eligibleForAutoAmounts
-    //var instane = new SquareConnect.CatalogQuickAmountsSettings();
+    //var instance = new SquareConnect.CatalogQuickAmountsSettings();
     //expect(instance).to.be();
   });
   it('should have the property amounts (base name: "amounts")', function() {
     // uncomment below and update the code to test the property amounts
-    //var instane = new SquareConnect.CatalogQuickAmountsSettings();
+    //var instance = new SquareConnect.CatalogQuickAmountsSettings();
     //expect(instance).to.be();
   });
 });

@@ -19,7 +19,7 @@ describe('LoyaltyProgramAccrualRuleType', function() {
 
   it('should create an instance of LoyaltyProgramAccrualRuleType', function() {
     // uncomment below and update the code to test LoyaltyProgramAccrualRuleType
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRuleType();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRuleType();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramAccrualRuleType);
   });
 

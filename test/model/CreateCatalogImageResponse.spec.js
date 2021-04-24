@@ -20,18 +20,18 @@ describe('CreateCatalogImageResponse', function() {
 
   it('should create an instance of CreateCatalogImageResponse', function() {
     // uncomment below and update the code to test CreateCatalogImageResponse
-    //var instane = new SquareConnect.CreateCatalogImageResponse();
+    //var instance = new SquareConnect.CreateCatalogImageResponse();
     //expect(instance).to.be.a(SquareConnect.CreateCatalogImageResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateCatalogImageResponse();
+    //var instance = new SquareConnect.CreateCatalogImageResponse();
     //expect(instance).to.be();
   });
   it('should have the property image (base name: "image")', function() {
     // uncomment below and update the code to test the property image
-    //var instane = new SquareConnect.CreateCatalogImageResponse();
+    //var instance = new SquareConnect.CreateCatalogImageResponse();
     //expect(instance).to.be();
   });
 });

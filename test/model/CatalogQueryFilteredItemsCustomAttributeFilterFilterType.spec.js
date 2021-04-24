@@ -19,7 +19,7 @@ describe('CatalogQueryFilteredItemsCustomAttributeFilterFilterType', function() 
 
   it('should create an instance of CatalogQueryFilteredItemsCustomAttributeFilterFilterType', function() {
     // uncomment below and update the code to test CatalogQueryFilteredItemsCustomAttributeFilterFilterType
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilterFilterType();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilterFilterType();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilterFilterType);
   });
 

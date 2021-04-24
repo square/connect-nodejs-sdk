@@ -19,7 +19,7 @@ describe('InvoiceRequestMethod', function() {
 
   it('should create an instance of InvoiceRequestMethod', function() {
     // uncomment below and update the code to test InvoiceRequestMethod
-    //var instane = new SquareConnect.InvoiceRequestMethod();
+    //var instance = new SquareConnect.InvoiceRequestMethod();
     //expect(instance).to.be.a(SquareConnect.InvoiceRequestMethod);
   });
 

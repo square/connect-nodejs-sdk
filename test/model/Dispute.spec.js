@@ -20,78 +20,78 @@ describe('Dispute', function() {
 
   it('should create an instance of Dispute', function() {
     // uncomment below and update the code to test Dispute
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be.a(SquareConnect.Dispute);
   });
 
   it('should have the property disputeId (base name: "dispute_id")', function() {
     // uncomment below and update the code to test the property disputeId
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property reason (base name: "reason")', function() {
     // uncomment below and update the code to test the property reason
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property state (base name: "state")', function() {
     // uncomment below and update the code to test the property state
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property dueAt (base name: "due_at")', function() {
     // uncomment below and update the code to test the property dueAt
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property disputedPayment (base name: "disputed_payment")', function() {
     // uncomment below and update the code to test the property disputedPayment
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property evidenceIds (base name: "evidence_ids")', function() {
     // uncomment below and update the code to test the property evidenceIds
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property cardBrand (base name: "card_brand")', function() {
     // uncomment below and update the code to test the property cardBrand
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property brandDisputeId (base name: "brand_dispute_id")', function() {
     // uncomment below and update the code to test the property brandDisputeId
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property reportedDate (base name: "reported_date")', function() {
     // uncomment below and update the code to test the property reportedDate
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.Dispute();
+    //var instance = new SquareConnect.Dispute();
     //expect(instance).to.be();
   });
 });

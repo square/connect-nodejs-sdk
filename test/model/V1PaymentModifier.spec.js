@@ -21,23 +21,23 @@ describe('V1PaymentModifier', function() {
 
   it('should create an instance of V1PaymentModifier', function() {
     // uncomment below and update the code to test V1PaymentModifier
-    //var instane = new SquareConnect.V1PaymentModifier();
+    //var instance = new SquareConnect.V1PaymentModifier();
     //expect(instance).to.be.a(SquareConnect.V1PaymentModifier);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1PaymentModifier();
+    //var instance = new SquareConnect.V1PaymentModifier();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.V1PaymentModifier();
+    //var instance = new SquareConnect.V1PaymentModifier();
     //expect(instance).to.be();
   });
   it('should have the property modifierOptionId (base name: "modifier_option_id")', function() {
     // uncomment below and update the code to test the property modifierOptionId
-    //var instane = new SquareConnect.V1PaymentModifier();
+    //var instance = new SquareConnect.V1PaymentModifier();
     //expect(instance).to.be();
   });
 });

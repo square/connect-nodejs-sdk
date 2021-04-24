@@ -20,23 +20,23 @@ describe('UpdateInvoiceRequest', function() {
 
   it('should create an instance of UpdateInvoiceRequest', function() {
     // uncomment below and update the code to test UpdateInvoiceRequest
-    //var instane = new SquareConnect.UpdateInvoiceRequest();
+    //var instance = new SquareConnect.UpdateInvoiceRequest();
     //expect(instance).to.be.a(SquareConnect.UpdateInvoiceRequest);
   });
 
   it('should have the property invoice (base name: "invoice")', function() {
     // uncomment below and update the code to test the property invoice
-    //var instane = new SquareConnect.UpdateInvoiceRequest();
+    //var instance = new SquareConnect.UpdateInvoiceRequest();
     //expect(instance).to.be();
   });
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.UpdateInvoiceRequest();
+    //var instance = new SquareConnect.UpdateInvoiceRequest();
     //expect(instance).to.be();
   });
   it('should have the property fieldsToClear (base name: "fields_to_clear")', function() {
     // uncomment below and update the code to test the property fieldsToClear
-    //var instane = new SquareConnect.UpdateInvoiceRequest();
+    //var instance = new SquareConnect.UpdateInvoiceRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('InvoiceFilter', function() {
 
   it('should create an instance of InvoiceFilter', function() {
     // uncomment below and update the code to test InvoiceFilter
-    //var instane = new SquareConnect.InvoiceFilter();
+    //var instance = new SquareConnect.InvoiceFilter();
     //expect(instance).to.be.a(SquareConnect.InvoiceFilter);
   });
 
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.InvoiceFilter();
+    //var instance = new SquareConnect.InvoiceFilter();
     //expect(instance).to.be();
   });
   it('should have the property customerIds (base name: "customer_ids")', function() {
     // uncomment below and update the code to test the property customerIds
-    //var instane = new SquareConnect.InvoiceFilter();
+    //var instance = new SquareConnect.InvoiceFilter();
     //expect(instance).to.be();
   });
 });

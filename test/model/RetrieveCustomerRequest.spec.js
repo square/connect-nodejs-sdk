@@ -21,7 +21,7 @@ describe('RetrieveCustomerRequest', function() {
 
   it('should create an instance of RetrieveCustomerRequest', function() {
     // uncomment below and update the code to test RetrieveCustomerRequest
-    //var instane = new SquareConnect.RetrieveCustomerRequest();
+    //var instance = new SquareConnect.RetrieveCustomerRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveCustomerRequest);
   });
 

@@ -19,7 +19,7 @@ describe('DisputeEvidenceType', function() {
 
   it('should create an instance of DisputeEvidenceType', function() {
     // uncomment below and update the code to test DisputeEvidenceType
-    //var instane = new SquareConnect.DisputeEvidenceType();
+    //var instance = new SquareConnect.DisputeEvidenceType();
     //expect(instance).to.be.a(SquareConnect.DisputeEvidenceType);
   });
 

@@ -20,23 +20,23 @@ describe('DeviceCheckoutOptions', function() {
 
   it('should create an instance of DeviceCheckoutOptions', function() {
     // uncomment below and update the code to test DeviceCheckoutOptions
-    //var instane = new SquareConnect.DeviceCheckoutOptions();
+    //var instance = new SquareConnect.DeviceCheckoutOptions();
     //expect(instance).to.be.a(SquareConnect.DeviceCheckoutOptions);
   });
 
   it('should have the property deviceId (base name: "device_id")', function() {
     // uncomment below and update the code to test the property deviceId
-    //var instane = new SquareConnect.DeviceCheckoutOptions();
+    //var instance = new SquareConnect.DeviceCheckoutOptions();
     //expect(instance).to.be();
   });
   it('should have the property skipReceiptScreen (base name: "skip_receipt_screen")', function() {
     // uncomment below and update the code to test the property skipReceiptScreen
-    //var instane = new SquareConnect.DeviceCheckoutOptions();
+    //var instance = new SquareConnect.DeviceCheckoutOptions();
     //expect(instance).to.be();
   });
   it('should have the property tipSettings (base name: "tip_settings")', function() {
     // uncomment below and update the code to test the property tipSettings
-    //var instane = new SquareConnect.DeviceCheckoutOptions();
+    //var instance = new SquareConnect.DeviceCheckoutOptions();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('V1DeleteModifierOptionRequest', function() {
 
   it('should create an instance of V1DeleteModifierOptionRequest', function() {
     // uncomment below and update the code to test V1DeleteModifierOptionRequest
-    //var instane = new SquareConnect.V1DeleteModifierOptionRequest();
+    //var instance = new SquareConnect.V1DeleteModifierOptionRequest();
     //expect(instance).to.be.a(SquareConnect.V1DeleteModifierOptionRequest);
   });
 

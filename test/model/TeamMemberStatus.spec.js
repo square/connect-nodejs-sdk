@@ -19,7 +19,7 @@ describe('TeamMemberStatus', function() {
 
   it('should create an instance of TeamMemberStatus', function() {
     // uncomment below and update the code to test TeamMemberStatus
-    //var instane = new SquareConnect.TeamMemberStatus();
+    //var instance = new SquareConnect.TeamMemberStatus();
     //expect(instance).to.be.a(SquareConnect.TeamMemberStatus);
   });
 

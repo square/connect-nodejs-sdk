@@ -20,58 +20,58 @@ describe('CreateSubscriptionRequest', function() {
 
   it('should create an instance of CreateSubscriptionRequest', function() {
     // uncomment below and update the code to test CreateSubscriptionRequest
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be.a(SquareConnect.CreateSubscriptionRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property planId (base name: "plan_id")', function() {
     // uncomment below and update the code to test the property planId
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property customerId (base name: "customer_id")', function() {
     // uncomment below and update the code to test the property customerId
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property startDate (base name: "start_date")', function() {
     // uncomment below and update the code to test the property startDate
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property canceledDate (base name: "canceled_date")', function() {
     // uncomment below and update the code to test the property canceledDate
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property taxPercentage (base name: "tax_percentage")', function() {
     // uncomment below and update the code to test the property taxPercentage
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property priceOverrideMoney (base name: "price_override_money")', function() {
     // uncomment below and update the code to test the property priceOverrideMoney
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property cardId (base name: "card_id")', function() {
     // uncomment below and update the code to test the property cardId
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
   it('should have the property timezone (base name: "timezone")', function() {
     // uncomment below and update the code to test the property timezone
-    //var instane = new SquareConnect.CreateSubscriptionRequest();
+    //var instance = new SquareConnect.CreateSubscriptionRequest();
     //expect(instance).to.be();
   });
 });

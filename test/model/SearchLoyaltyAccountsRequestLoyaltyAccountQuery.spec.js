@@ -20,13 +20,13 @@ describe('SearchLoyaltyAccountsRequestLoyaltyAccountQuery', function() {
 
   it('should create an instance of SearchLoyaltyAccountsRequestLoyaltyAccountQuery', function() {
     // uncomment below and update the code to test SearchLoyaltyAccountsRequestLoyaltyAccountQuery
-    //var instane = new SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery();
+    //var instance = new SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery();
     //expect(instance).to.be.a(SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery);
   });
 
   it('should have the property mappings (base name: "mappings")', function() {
     // uncomment below and update the code to test the property mappings
-    //var instane = new SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery();
+    //var instance = new SquareConnect.SearchLoyaltyAccountsRequestLoyaltyAccountQuery();
     //expect(instance).to.be();
   });
 });

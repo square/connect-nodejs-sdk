@@ -21,13 +21,13 @@ describe('CatalogQueryItemsForModifierList', function() {
 
   it('should create an instance of CatalogQueryItemsForModifierList', function() {
     // uncomment below and update the code to test CatalogQueryItemsForModifierList
-    //var instane = new SquareConnect.CatalogQueryItemsForModifierList();
+    //var instance = new SquareConnect.CatalogQueryItemsForModifierList();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryItemsForModifierList);
   });
 
   it('should have the property modifierListIds (base name: "modifier_list_ids")', function() {
     // uncomment below and update the code to test the property modifierListIds
-    //var instane = new SquareConnect.CatalogQueryItemsForModifierList();
+    //var instance = new SquareConnect.CatalogQueryItemsForModifierList();
     //expect(instance).to.be();
   });
 });

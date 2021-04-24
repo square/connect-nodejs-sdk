@@ -20,53 +20,53 @@ describe('CashDrawerShiftSummary', function() {
 
   it('should create an instance of CashDrawerShiftSummary', function() {
     // uncomment below and update the code to test CashDrawerShiftSummary
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be.a(SquareConnect.CashDrawerShiftSummary);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property state (base name: "state")', function() {
     // uncomment below and update the code to test the property state
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property openedAt (base name: "opened_at")', function() {
     // uncomment below and update the code to test the property openedAt
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property endedAt (base name: "ended_at")', function() {
     // uncomment below and update the code to test the property endedAt
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property closedAt (base name: "closed_at")', function() {
     // uncomment below and update the code to test the property closedAt
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property description (base name: "description")', function() {
     // uncomment below and update the code to test the property description
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property openedCashMoney (base name: "opened_cash_money")', function() {
     // uncomment below and update the code to test the property openedCashMoney
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property expectedCashMoney (base name: "expected_cash_money")', function() {
     // uncomment below and update the code to test the property expectedCashMoney
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
   it('should have the property closedCashMoney (base name: "closed_cash_money")', function() {
     // uncomment below and update the code to test the property closedCashMoney
-    //var instane = new SquareConnect.CashDrawerShiftSummary();
+    //var instance = new SquareConnect.CashDrawerShiftSummary();
     //expect(instance).to.be();
   });
 });

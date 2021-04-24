@@ -20,18 +20,18 @@ describe('CreateTeamMemberRequest', function() {
 
   it('should create an instance of CreateTeamMemberRequest', function() {
     // uncomment below and update the code to test CreateTeamMemberRequest
-    //var instane = new SquareConnect.CreateTeamMemberRequest();
+    //var instance = new SquareConnect.CreateTeamMemberRequest();
     //expect(instance).to.be.a(SquareConnect.CreateTeamMemberRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateTeamMemberRequest();
+    //var instance = new SquareConnect.CreateTeamMemberRequest();
     //expect(instance).to.be();
   });
   it('should have the property teamMember (base name: "team_member")', function() {
     // uncomment below and update the code to test the property teamMember
-    //var instane = new SquareConnect.CreateTeamMemberRequest();
+    //var instance = new SquareConnect.CreateTeamMemberRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('UpdateWorkweekConfigResponse', function() {
 
   it('should create an instance of UpdateWorkweekConfigResponse', function() {
     // uncomment below and update the code to test UpdateWorkweekConfigResponse
-    //var instane = new SquareConnect.UpdateWorkweekConfigResponse();
+    //var instance = new SquareConnect.UpdateWorkweekConfigResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateWorkweekConfigResponse);
   });
 
   it('should have the property workweekConfig (base name: "workweek_config")', function() {
     // uncomment below and update the code to test the property workweekConfig
-    //var instane = new SquareConnect.UpdateWorkweekConfigResponse();
+    //var instance = new SquareConnect.UpdateWorkweekConfigResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateWorkweekConfigResponse();
+    //var instance = new SquareConnect.UpdateWorkweekConfigResponse();
     //expect(instance).to.be();
   });
 });

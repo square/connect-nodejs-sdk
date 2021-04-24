@@ -20,23 +20,23 @@ describe('ListBankAccountsRequest', function() {
 
   it('should create an instance of ListBankAccountsRequest', function() {
     // uncomment below and update the code to test ListBankAccountsRequest
-    //var instane = new SquareConnect.ListBankAccountsRequest();
+    //var instance = new SquareConnect.ListBankAccountsRequest();
     //expect(instance).to.be.a(SquareConnect.ListBankAccountsRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListBankAccountsRequest();
+    //var instance = new SquareConnect.ListBankAccountsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListBankAccountsRequest();
+    //var instance = new SquareConnect.ListBankAccountsRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListBankAccountsRequest();
+    //var instance = new SquareConnect.ListBankAccountsRequest();
     //expect(instance).to.be();
   });
 });

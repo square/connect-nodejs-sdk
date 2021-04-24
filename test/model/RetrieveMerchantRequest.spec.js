@@ -20,7 +20,7 @@ describe('RetrieveMerchantRequest', function() {
 
   it('should create an instance of RetrieveMerchantRequest', function() {
     // uncomment below and update the code to test RetrieveMerchantRequest
-    //var instane = new SquareConnect.RetrieveMerchantRequest();
+    //var instance = new SquareConnect.RetrieveMerchantRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveMerchantRequest);
   });
 

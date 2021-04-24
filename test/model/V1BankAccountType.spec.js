@@ -19,7 +19,7 @@ describe('V1BankAccountType', function() {
 
   it('should create an instance of V1BankAccountType', function() {
     // uncomment below and update the code to test V1BankAccountType
-    //var instane = new SquareConnect.V1BankAccountType();
+    //var instance = new SquareConnect.V1BankAccountType();
     //expect(instance).to.be.a(SquareConnect.V1BankAccountType);
   });
 

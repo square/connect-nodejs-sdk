@@ -19,7 +19,7 @@ describe('CustomerInclusionExclusion', function() {
 
   it('should create an instance of CustomerInclusionExclusion', function() {
     // uncomment below and update the code to test CustomerInclusionExclusion
-    //var instane = new SquareConnect.CustomerInclusionExclusion();
+    //var instance = new SquareConnect.CustomerInclusionExclusion();
     //expect(instance).to.be.a(SquareConnect.CustomerInclusionExclusion);
   });
 

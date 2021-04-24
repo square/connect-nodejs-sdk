@@ -20,28 +20,28 @@ describe('ObtainTokenRequest', function() {
 
   it('should create an instance of ObtainTokenRequest', function() {
     // uncomment below and update the code to test ObtainTokenRequest
-    //var instane = new SquareConnect.ObtainTokenRequest();
+    //var instance = new SquareConnect.ObtainTokenRequest();
     //expect(instance).to.be.a(SquareConnect.ObtainTokenRequest);
   });
 
   it('should have the property clientId (base name: "client_id")', function() {
     // uncomment below and update the code to test the property clientId
-    //var instane = new SquareConnect.ObtainTokenRequest();
+    //var instance = new SquareConnect.ObtainTokenRequest();
     //expect(instance).to.be();
   });
   it('should have the property clientSecret (base name: "client_secret")', function() {
     // uncomment below and update the code to test the property clientSecret
-    //var instane = new SquareConnect.ObtainTokenRequest();
+    //var instance = new SquareConnect.ObtainTokenRequest();
     //expect(instance).to.be();
   });
   it('should have the property code (base name: "code")', function() {
     // uncomment below and update the code to test the property code
-    //var instane = new SquareConnect.ObtainTokenRequest();
+    //var instance = new SquareConnect.ObtainTokenRequest();
     //expect(instance).to.be();
   });
   it('should have the property redirectUri (base name: "redirect_uri")', function() {
     // uncomment below and update the code to test the property redirectUri
-    //var instane = new SquareConnect.ObtainTokenRequest();
+    //var instance = new SquareConnect.ObtainTokenRequest();
     //expect(instance).to.be();
   });
 });

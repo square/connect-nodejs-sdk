@@ -20,23 +20,23 @@ describe('CustomerFilter', function() {
 
   it('should create an instance of CustomerFilter', function() {
     // uncomment below and update the code to test CustomerFilter
-    //var instane = new SquareConnect.CustomerFilter();
+    //var instance = new SquareConnect.CustomerFilter();
     //expect(instance).to.be.a(SquareConnect.CustomerFilter);
   });
 
   it('should have the property creationSource (base name: "creation_source")', function() {
     // uncomment below and update the code to test the property creationSource
-    //var instane = new SquareConnect.CustomerFilter();
+    //var instance = new SquareConnect.CustomerFilter();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.CustomerFilter();
+    //var instance = new SquareConnect.CustomerFilter();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.CustomerFilter();
+    //var instance = new SquareConnect.CustomerFilter();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('DeviceDetails', function() {
 
   it('should create an instance of DeviceDetails', function() {
     // uncomment below and update the code to test DeviceDetails
-    //var instane = new SquareConnect.DeviceDetails();
+    //var instance = new SquareConnect.DeviceDetails();
     //expect(instance).to.be.a(SquareConnect.DeviceDetails);
   });
 
   it('should have the property deviceId (base name: "device_id")', function() {
     // uncomment below and update the code to test the property deviceId
-    //var instane = new SquareConnect.DeviceDetails();
+    //var instance = new SquareConnect.DeviceDetails();
     //expect(instance).to.be();
   });
   it('should have the property deviceName (base name: "device_name")', function() {
     // uncomment below and update the code to test the property deviceName
-    //var instane = new SquareConnect.DeviceDetails();
+    //var instance = new SquareConnect.DeviceDetails();
     //expect(instance).to.be();
   });
 });

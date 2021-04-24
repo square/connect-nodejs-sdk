@@ -20,18 +20,18 @@ describe('CreateLoyaltyAccountResponse', function() {
 
   it('should create an instance of CreateLoyaltyAccountResponse', function() {
     // uncomment below and update the code to test CreateLoyaltyAccountResponse
-    //var instane = new SquareConnect.CreateLoyaltyAccountResponse();
+    //var instance = new SquareConnect.CreateLoyaltyAccountResponse();
     //expect(instance).to.be.a(SquareConnect.CreateLoyaltyAccountResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateLoyaltyAccountResponse();
+    //var instance = new SquareConnect.CreateLoyaltyAccountResponse();
     //expect(instance).to.be();
   });
   it('should have the property loyaltyAccount (base name: "loyalty_account")', function() {
     // uncomment below and update the code to test the property loyaltyAccount
-    //var instane = new SquareConnect.CreateLoyaltyAccountResponse();
+    //var instance = new SquareConnect.CreateLoyaltyAccountResponse();
     //expect(instance).to.be();
   });
 });

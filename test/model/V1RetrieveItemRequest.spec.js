@@ -20,7 +20,7 @@ describe('V1RetrieveItemRequest', function() {
 
   it('should create an instance of V1RetrieveItemRequest', function() {
     // uncomment below and update the code to test V1RetrieveItemRequest
-    //var instane = new SquareConnect.V1RetrieveItemRequest();
+    //var instance = new SquareConnect.V1RetrieveItemRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrieveItemRequest);
   });
 

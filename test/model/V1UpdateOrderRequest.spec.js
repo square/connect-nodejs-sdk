@@ -21,33 +21,33 @@ describe('V1UpdateOrderRequest', function() {
 
   it('should create an instance of V1UpdateOrderRequest', function() {
     // uncomment below and update the code to test V1UpdateOrderRequest
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateOrderRequest);
   });
 
   it('should have the property action (base name: "action")', function() {
     // uncomment below and update the code to test the property action
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property shippedTrackingNumber (base name: "shipped_tracking_number")', function() {
     // uncomment below and update the code to test the property shippedTrackingNumber
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property completedNote (base name: "completed_note")', function() {
     // uncomment below and update the code to test the property completedNote
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property refundedNote (base name: "refunded_note")', function() {
     // uncomment below and update the code to test the property refundedNote
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property canceledNote (base name: "canceled_note")', function() {
     // uncomment below and update the code to test the property canceledNote
-    //var instane = new SquareConnect.V1UpdateOrderRequest();
+    //var instance = new SquareConnect.V1UpdateOrderRequest();
     //expect(instance).to.be();
   });
 });

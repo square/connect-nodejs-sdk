@@ -20,23 +20,23 @@ describe('SourceApplication', function() {
 
   it('should create an instance of SourceApplication', function() {
     // uncomment below and update the code to test SourceApplication
-    //var instane = new SquareConnect.SourceApplication();
+    //var instance = new SquareConnect.SourceApplication();
     //expect(instance).to.be.a(SquareConnect.SourceApplication);
   });
 
   it('should have the property product (base name: "product")', function() {
     // uncomment below and update the code to test the property product
-    //var instane = new SquareConnect.SourceApplication();
+    //var instance = new SquareConnect.SourceApplication();
     //expect(instance).to.be();
   });
   it('should have the property applicationId (base name: "application_id")', function() {
     // uncomment below and update the code to test the property applicationId
-    //var instane = new SquareConnect.SourceApplication();
+    //var instance = new SquareConnect.SourceApplication();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.SourceApplication();
+    //var instance = new SquareConnect.SourceApplication();
     //expect(instance).to.be();
   });
 });

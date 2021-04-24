@@ -21,23 +21,23 @@ describe('V1AdjustInventoryRequest', function() {
 
   it('should create an instance of V1AdjustInventoryRequest', function() {
     // uncomment below and update the code to test V1AdjustInventoryRequest
-    //var instane = new SquareConnect.V1AdjustInventoryRequest();
+    //var instance = new SquareConnect.V1AdjustInventoryRequest();
     //expect(instance).to.be.a(SquareConnect.V1AdjustInventoryRequest);
   });
 
   it('should have the property quantityDelta (base name: "quantity_delta")', function() {
     // uncomment below and update the code to test the property quantityDelta
-    //var instane = new SquareConnect.V1AdjustInventoryRequest();
+    //var instance = new SquareConnect.V1AdjustInventoryRequest();
     //expect(instance).to.be();
   });
   it('should have the property adjustmentType (base name: "adjustment_type")', function() {
     // uncomment below and update the code to test the property adjustmentType
-    //var instane = new SquareConnect.V1AdjustInventoryRequest();
+    //var instance = new SquareConnect.V1AdjustInventoryRequest();
     //expect(instance).to.be();
   });
   it('should have the property memo (base name: "memo")', function() {
     // uncomment below and update the code to test the property memo
-    //var instane = new SquareConnect.V1AdjustInventoryRequest();
+    //var instance = new SquareConnect.V1AdjustInventoryRequest();
     //expect(instance).to.be();
   });
 });

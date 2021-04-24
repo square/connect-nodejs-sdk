@@ -20,18 +20,18 @@ describe('UpdateTeamMemberResponse', function() {
 
   it('should create an instance of UpdateTeamMemberResponse', function() {
     // uncomment below and update the code to test UpdateTeamMemberResponse
-    //var instane = new SquareConnect.UpdateTeamMemberResponse();
+    //var instance = new SquareConnect.UpdateTeamMemberResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateTeamMemberResponse);
   });
 
   it('should have the property teamMember (base name: "team_member")', function() {
     // uncomment below and update the code to test the property teamMember
-    //var instane = new SquareConnect.UpdateTeamMemberResponse();
+    //var instance = new SquareConnect.UpdateTeamMemberResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateTeamMemberResponse();
+    //var instance = new SquareConnect.UpdateTeamMemberResponse();
     //expect(instance).to.be();
   });
 });

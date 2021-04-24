@@ -20,38 +20,38 @@ describe('ShiftFilter', function() {
 
   it('should create an instance of ShiftFilter', function() {
     // uncomment below and update the code to test ShiftFilter
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be.a(SquareConnect.ShiftFilter);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
   it('should have the property employeeId (base name: "employee_id")', function() {
     // uncomment below and update the code to test the property employeeId
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
   it('should have the property start (base name: "start")', function() {
     // uncomment below and update the code to test the property start
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
   it('should have the property end (base name: "end")', function() {
     // uncomment below and update the code to test the property end
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
   it('should have the property workday (base name: "workday")', function() {
     // uncomment below and update the code to test the property workday
-    //var instane = new SquareConnect.ShiftFilter();
+    //var instance = new SquareConnect.ShiftFilter();
     //expect(instance).to.be();
   });
 });

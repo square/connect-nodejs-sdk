@@ -20,7 +20,7 @@ describe('CatalogDiscountType', function() {
 
   it('should create an instance of CatalogDiscountType', function() {
     // uncomment below and update the code to test CatalogDiscountType
-    //var instane = new SquareConnect.CatalogDiscountType();
+    //var instance = new SquareConnect.CatalogDiscountType();
     //expect(instance).to.be.a(SquareConnect.CatalogDiscountType);
   });
 

@@ -21,7 +21,7 @@ describe('CaptureTransactionRequest', function() {
 
   it('should create an instance of CaptureTransactionRequest', function() {
     // uncomment below and update the code to test CaptureTransactionRequest
-    //var instane = new SquareConnect.CaptureTransactionRequest();
+    //var instance = new SquareConnect.CaptureTransactionRequest();
     //expect(instance).to.be.a(SquareConnect.CaptureTransactionRequest);
   });
 

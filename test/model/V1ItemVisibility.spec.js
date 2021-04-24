@@ -19,7 +19,7 @@ describe('V1ItemVisibility', function() {
 
   it('should create an instance of V1ItemVisibility', function() {
     // uncomment below and update the code to test V1ItemVisibility
-    //var instane = new SquareConnect.V1ItemVisibility();
+    //var instance = new SquareConnect.V1ItemVisibility();
     //expect(instance).to.be.a(SquareConnect.V1ItemVisibility);
   });
 

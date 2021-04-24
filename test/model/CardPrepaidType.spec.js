@@ -19,7 +19,7 @@ describe('CardPrepaidType', function() {
 
   it('should create an instance of CardPrepaidType', function() {
     // uncomment below and update the code to test CardPrepaidType
-    //var instane = new SquareConnect.CardPrepaidType();
+    //var instance = new SquareConnect.CardPrepaidType();
     //expect(instance).to.be.a(SquareConnect.CardPrepaidType);
   });
 

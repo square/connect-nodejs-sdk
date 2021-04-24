@@ -21,13 +21,13 @@ describe('V1MerchantLocationDetails', function() {
 
   it('should create an instance of V1MerchantLocationDetails', function() {
     // uncomment below and update the code to test V1MerchantLocationDetails
-    //var instane = new SquareConnect.V1MerchantLocationDetails();
+    //var instance = new SquareConnect.V1MerchantLocationDetails();
     //expect(instance).to.be.a(SquareConnect.V1MerchantLocationDetails);
   });
 
   it('should have the property nickname (base name: "nickname")', function() {
     // uncomment below and update the code to test the property nickname
-    //var instane = new SquareConnect.V1MerchantLocationDetails();
+    //var instance = new SquareConnect.V1MerchantLocationDetails();
     //expect(instance).to.be();
   });
 });

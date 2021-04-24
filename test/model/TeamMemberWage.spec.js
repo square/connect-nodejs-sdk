@@ -20,28 +20,28 @@ describe('TeamMemberWage', function() {
 
   it('should create an instance of TeamMemberWage', function() {
     // uncomment below and update the code to test TeamMemberWage
-    //var instane = new SquareConnect.TeamMemberWage();
+    //var instance = new SquareConnect.TeamMemberWage();
     //expect(instance).to.be.a(SquareConnect.TeamMemberWage);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.TeamMemberWage();
+    //var instance = new SquareConnect.TeamMemberWage();
     //expect(instance).to.be();
   });
   it('should have the property teamMemberId (base name: "team_member_id")', function() {
     // uncomment below and update the code to test the property teamMemberId
-    //var instane = new SquareConnect.TeamMemberWage();
+    //var instance = new SquareConnect.TeamMemberWage();
     //expect(instance).to.be();
   });
   it('should have the property title (base name: "title")', function() {
     // uncomment below and update the code to test the property title
-    //var instane = new SquareConnect.TeamMemberWage();
+    //var instance = new SquareConnect.TeamMemberWage();
     //expect(instance).to.be();
   });
   it('should have the property hourlyRate (base name: "hourly_rate")', function() {
     // uncomment below and update the code to test the property hourlyRate
-    //var instane = new SquareConnect.TeamMemberWage();
+    //var instance = new SquareConnect.TeamMemberWage();
     //expect(instance).to.be();
   });
 });

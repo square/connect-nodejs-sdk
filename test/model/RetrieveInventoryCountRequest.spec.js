@@ -20,18 +20,18 @@ describe('RetrieveInventoryCountRequest', function() {
 
   it('should create an instance of RetrieveInventoryCountRequest', function() {
     // uncomment below and update the code to test RetrieveInventoryCountRequest
-    //var instane = new SquareConnect.RetrieveInventoryCountRequest();
+    //var instance = new SquareConnect.RetrieveInventoryCountRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryCountRequest);
   });
 
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.RetrieveInventoryCountRequest();
+    //var instance = new SquareConnect.RetrieveInventoryCountRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.RetrieveInventoryCountRequest();
+    //var instance = new SquareConnect.RetrieveInventoryCountRequest();
     //expect(instance).to.be();
   });
 });

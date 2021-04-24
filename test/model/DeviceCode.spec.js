@@ -20,63 +20,63 @@ describe('DeviceCode', function() {
 
   it('should create an instance of DeviceCode', function() {
     // uncomment below and update the code to test DeviceCode
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be.a(SquareConnect.DeviceCode);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property code (base name: "code")', function() {
     // uncomment below and update the code to test the property code
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property deviceId (base name: "device_id")', function() {
     // uncomment below and update the code to test the property deviceId
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property productType (base name: "product_type")', function() {
     // uncomment below and update the code to test the property productType
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property pairBy (base name: "pair_by")', function() {
     // uncomment below and update the code to test the property pairBy
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property statusChangedAt (base name: "status_changed_at")', function() {
     // uncomment below and update the code to test the property statusChangedAt
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
   it('should have the property pairedAt (base name: "paired_at")', function() {
     // uncomment below and update the code to test the property pairedAt
-    //var instane = new SquareConnect.DeviceCode();
+    //var instance = new SquareConnect.DeviceCode();
     //expect(instance).to.be();
   });
 });

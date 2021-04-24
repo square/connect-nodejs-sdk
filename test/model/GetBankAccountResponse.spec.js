@@ -20,18 +20,18 @@ describe('GetBankAccountResponse', function() {
 
   it('should create an instance of GetBankAccountResponse', function() {
     // uncomment below and update the code to test GetBankAccountResponse
-    //var instane = new SquareConnect.GetBankAccountResponse();
+    //var instance = new SquareConnect.GetBankAccountResponse();
     //expect(instance).to.be.a(SquareConnect.GetBankAccountResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.GetBankAccountResponse();
+    //var instance = new SquareConnect.GetBankAccountResponse();
     //expect(instance).to.be();
   });
   it('should have the property bankAccount (base name: "bank_account")', function() {
     // uncomment below and update the code to test the property bankAccount
-    //var instane = new SquareConnect.GetBankAccountResponse();
+    //var instance = new SquareConnect.GetBankAccountResponse();
     //expect(instance).to.be();
   });
 });

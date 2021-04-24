@@ -21,88 +21,88 @@ describe('CatalogObject', function() {
 
   it('should create an instance of CatalogObject', function() {
     // uncomment below and update the code to test CatalogObject
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be.a(SquareConnect.CatalogObject);
   });
 
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property isDeleted (base name: "is_deleted")', function() {
     // uncomment below and update the code to test the property isDeleted
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property catalogV1Ids (base name: "catalog_v1_ids")', function() {
     // uncomment below and update the code to test the property catalogV1Ids
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property presentAtAllLocations (base name: "present_at_all_locations")', function() {
     // uncomment below and update the code to test the property presentAtAllLocations
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property presentAtLocationIds (base name: "present_at_location_ids")', function() {
     // uncomment below and update the code to test the property presentAtLocationIds
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property absentAtLocationIds (base name: "absent_at_location_ids")', function() {
     // uncomment below and update the code to test the property absentAtLocationIds
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property itemData (base name: "item_data")', function() {
     // uncomment below and update the code to test the property itemData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property categoryData (base name: "category_data")', function() {
     // uncomment below and update the code to test the property categoryData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property itemVariationData (base name: "item_variation_data")', function() {
     // uncomment below and update the code to test the property itemVariationData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property taxData (base name: "tax_data")', function() {
     // uncomment below and update the code to test the property taxData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property discountData (base name: "discount_data")', function() {
     // uncomment below and update the code to test the property discountData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property modifierListData (base name: "modifier_list_data")', function() {
     // uncomment below and update the code to test the property modifierListData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
   it('should have the property modifierData (base name: "modifier_data")', function() {
     // uncomment below and update the code to test the property modifierData
-    //var instane = new SquareConnect.CatalogObject();
+    //var instance = new SquareConnect.CatalogObject();
     //expect(instance).to.be();
   });
 });

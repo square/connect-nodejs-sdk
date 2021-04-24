@@ -21,38 +21,38 @@ describe('AdditionalRecipientReceivableRefund', function() {
 
   it('should create an instance of AdditionalRecipientReceivableRefund', function() {
     // uncomment below and update the code to test AdditionalRecipientReceivableRefund
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be.a(SquareConnect.AdditionalRecipientReceivableRefund);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
   it('should have the property receivableId (base name: "receivable_id")', function() {
     // uncomment below and update the code to test the property receivableId
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
   it('should have the property refundId (base name: "refund_id")', function() {
     // uncomment below and update the code to test the property refundId
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
   it('should have the property transactionLocationId (base name: "transaction_location_id")', function() {
     // uncomment below and update the code to test the property transactionLocationId
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.AdditionalRecipientReceivableRefund();
+    //var instance = new SquareConnect.AdditionalRecipientReceivableRefund();
     //expect(instance).to.be();
   });
 });

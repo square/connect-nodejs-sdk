@@ -20,13 +20,13 @@ describe('LoyaltyEventDateTimeFilter', function() {
 
   it('should create an instance of LoyaltyEventDateTimeFilter', function() {
     // uncomment below and update the code to test LoyaltyEventDateTimeFilter
-    //var instane = new SquareConnect.LoyaltyEventDateTimeFilter();
+    //var instance = new SquareConnect.LoyaltyEventDateTimeFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventDateTimeFilter);
   });
 
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyEventDateTimeFilter();
+    //var instance = new SquareConnect.LoyaltyEventDateTimeFilter();
     //expect(instance).to.be();
   });
 });

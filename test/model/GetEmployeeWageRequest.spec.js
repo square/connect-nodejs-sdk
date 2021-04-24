@@ -20,7 +20,7 @@ describe('GetEmployeeWageRequest', function() {
 
   it('should create an instance of GetEmployeeWageRequest', function() {
     // uncomment below and update the code to test GetEmployeeWageRequest
-    //var instane = new SquareConnect.GetEmployeeWageRequest();
+    //var instance = new SquareConnect.GetEmployeeWageRequest();
     //expect(instance).to.be.a(SquareConnect.GetEmployeeWageRequest);
   });
 

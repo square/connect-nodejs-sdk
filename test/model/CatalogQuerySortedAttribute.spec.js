@@ -21,23 +21,23 @@ describe('CatalogQuerySortedAttribute', function() {
 
   it('should create an instance of CatalogQuerySortedAttribute', function() {
     // uncomment below and update the code to test CatalogQuerySortedAttribute
-    //var instane = new SquareConnect.CatalogQuerySortedAttribute();
+    //var instance = new SquareConnect.CatalogQuerySortedAttribute();
     //expect(instance).to.be.a(SquareConnect.CatalogQuerySortedAttribute);
   });
 
   it('should have the property attributeName (base name: "attribute_name")', function() {
     // uncomment below and update the code to test the property attributeName
-    //var instane = new SquareConnect.CatalogQuerySortedAttribute();
+    //var instance = new SquareConnect.CatalogQuerySortedAttribute();
     //expect(instance).to.be();
   });
   it('should have the property initialAttributeValue (base name: "initial_attribute_value")', function() {
     // uncomment below and update the code to test the property initialAttributeValue
-    //var instane = new SquareConnect.CatalogQuerySortedAttribute();
+    //var instance = new SquareConnect.CatalogQuerySortedAttribute();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.CatalogQuerySortedAttribute();
+    //var instance = new SquareConnect.CatalogQuerySortedAttribute();
     //expect(instance).to.be();
   });
 });

@@ -20,38 +20,38 @@ describe('CatalogItemOptionValue', function() {
 
   it('should create an instance of CatalogItemOptionValue', function() {
     // uncomment below and update the code to test CatalogItemOptionValue
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be.a(SquareConnect.CatalogItemOptionValue);
   });
 
   it('should have the property itemOptionId (base name: "item_option_id")', function() {
     // uncomment below and update the code to test the property itemOptionId
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
   it('should have the property description (base name: "description")', function() {
     // uncomment below and update the code to test the property description
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
   it('should have the property color (base name: "color")', function() {
     // uncomment below and update the code to test the property color
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
   it('should have the property ordinal (base name: "ordinal")', function() {
     // uncomment below and update the code to test the property ordinal
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
   it('should have the property itemVariationCount (base name: "item_variation_count")', function() {
     // uncomment below and update the code to test the property itemVariationCount
-    //var instane = new SquareConnect.CatalogItemOptionValue();
+    //var instance = new SquareConnect.CatalogItemOptionValue();
     //expect(instance).to.be();
   });
 });

@@ -20,23 +20,23 @@ describe('ListCustomerSegmentsResponse', function() {
 
   it('should create an instance of ListCustomerSegmentsResponse', function() {
     // uncomment below and update the code to test ListCustomerSegmentsResponse
-    //var instane = new SquareConnect.ListCustomerSegmentsResponse();
+    //var instance = new SquareConnect.ListCustomerSegmentsResponse();
     //expect(instance).to.be.a(SquareConnect.ListCustomerSegmentsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListCustomerSegmentsResponse();
+    //var instance = new SquareConnect.ListCustomerSegmentsResponse();
     //expect(instance).to.be();
   });
   it('should have the property segments (base name: "segments")', function() {
     // uncomment below and update the code to test the property segments
-    //var instane = new SquareConnect.ListCustomerSegmentsResponse();
+    //var instance = new SquareConnect.ListCustomerSegmentsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCustomerSegmentsResponse();
+    //var instance = new SquareConnect.ListCustomerSegmentsResponse();
     //expect(instance).to.be();
   });
 });

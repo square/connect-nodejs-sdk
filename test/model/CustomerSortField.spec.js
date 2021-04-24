@@ -19,7 +19,7 @@ describe('CustomerSortField', function() {
 
   it('should create an instance of CustomerSortField', function() {
     // uncomment below and update the code to test CustomerSortField
-    //var instane = new SquareConnect.CustomerSortField();
+    //var instance = new SquareConnect.CustomerSortField();
     //expect(instance).to.be.a(SquareConnect.CustomerSortField);
   });
 

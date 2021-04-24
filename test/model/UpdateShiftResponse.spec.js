@@ -20,18 +20,18 @@ describe('UpdateShiftResponse', function() {
 
   it('should create an instance of UpdateShiftResponse', function() {
     // uncomment below and update the code to test UpdateShiftResponse
-    //var instane = new SquareConnect.UpdateShiftResponse();
+    //var instance = new SquareConnect.UpdateShiftResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateShiftResponse);
   });
 
   it('should have the property shift (base name: "shift")', function() {
     // uncomment below and update the code to test the property shift
-    //var instane = new SquareConnect.UpdateShiftResponse();
+    //var instance = new SquareConnect.UpdateShiftResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateShiftResponse();
+    //var instance = new SquareConnect.UpdateShiftResponse();
     //expect(instance).to.be();
   });
 });

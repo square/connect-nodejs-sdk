@@ -20,23 +20,23 @@ describe('ListWorkweekConfigsResponse', function() {
 
   it('should create an instance of ListWorkweekConfigsResponse', function() {
     // uncomment below and update the code to test ListWorkweekConfigsResponse
-    //var instane = new SquareConnect.ListWorkweekConfigsResponse();
+    //var instance = new SquareConnect.ListWorkweekConfigsResponse();
     //expect(instance).to.be.a(SquareConnect.ListWorkweekConfigsResponse);
   });
 
   it('should have the property workweekConfigs (base name: "workweek_configs")', function() {
     // uncomment below and update the code to test the property workweekConfigs
-    //var instane = new SquareConnect.ListWorkweekConfigsResponse();
+    //var instance = new SquareConnect.ListWorkweekConfigsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListWorkweekConfigsResponse();
+    //var instance = new SquareConnect.ListWorkweekConfigsResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListWorkweekConfigsResponse();
+    //var instance = new SquareConnect.ListWorkweekConfigsResponse();
     //expect(instance).to.be();
   });
 });

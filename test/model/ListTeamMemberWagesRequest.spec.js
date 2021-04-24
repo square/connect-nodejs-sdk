@@ -20,23 +20,23 @@ describe('ListTeamMemberWagesRequest', function() {
 
   it('should create an instance of ListTeamMemberWagesRequest', function() {
     // uncomment below and update the code to test ListTeamMemberWagesRequest
-    //var instane = new SquareConnect.ListTeamMemberWagesRequest();
+    //var instance = new SquareConnect.ListTeamMemberWagesRequest();
     //expect(instance).to.be.a(SquareConnect.ListTeamMemberWagesRequest);
   });
 
   it('should have the property teamMemberId (base name: "team_member_id")', function() {
     // uncomment below and update the code to test the property teamMemberId
-    //var instane = new SquareConnect.ListTeamMemberWagesRequest();
+    //var instance = new SquareConnect.ListTeamMemberWagesRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListTeamMemberWagesRequest();
+    //var instance = new SquareConnect.ListTeamMemberWagesRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListTeamMemberWagesRequest();
+    //var instance = new SquareConnect.ListTeamMemberWagesRequest();
     //expect(instance).to.be();
   });
 });

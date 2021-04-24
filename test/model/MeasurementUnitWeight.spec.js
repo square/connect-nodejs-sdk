@@ -19,7 +19,7 @@ describe('MeasurementUnitWeight', function() {
 
   it('should create an instance of MeasurementUnitWeight', function() {
     // uncomment below and update the code to test MeasurementUnitWeight
-    //var instane = new SquareConnect.MeasurementUnitWeight();
+    //var instance = new SquareConnect.MeasurementUnitWeight();
     //expect(instance).to.be.a(SquareConnect.MeasurementUnitWeight);
   });
 

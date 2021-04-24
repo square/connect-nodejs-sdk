@@ -21,33 +21,33 @@ describe('CatalogItemModifierListInfo', function() {
 
   it('should create an instance of CatalogItemModifierListInfo', function() {
     // uncomment below and update the code to test CatalogItemModifierListInfo
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be.a(SquareConnect.CatalogItemModifierListInfo);
   });
 
   it('should have the property modifierListId (base name: "modifier_list_id")', function() {
     // uncomment below and update the code to test the property modifierListId
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be();
   });
   it('should have the property modifierOverrides (base name: "modifier_overrides")', function() {
     // uncomment below and update the code to test the property modifierOverrides
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be();
   });
   it('should have the property minSelectedModifiers (base name: "min_selected_modifiers")', function() {
     // uncomment below and update the code to test the property minSelectedModifiers
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be();
   });
   it('should have the property maxSelectedModifiers (base name: "max_selected_modifiers")', function() {
     // uncomment below and update the code to test the property maxSelectedModifiers
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be();
   });
   it('should have the property enabled (base name: "enabled")', function() {
     // uncomment below and update the code to test the property enabled
-    //var instane = new SquareConnect.CatalogItemModifierListInfo();
+    //var instance = new SquareConnect.CatalogItemModifierListInfo();
     //expect(instance).to.be();
   });
 });

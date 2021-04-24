@@ -21,18 +21,18 @@ describe('V1ItemImage', function() {
 
   it('should create an instance of V1ItemImage', function() {
     // uncomment below and update the code to test V1ItemImage
-    //var instane = new SquareConnect.V1ItemImage();
+    //var instance = new SquareConnect.V1ItemImage();
     //expect(instance).to.be.a(SquareConnect.V1ItemImage);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1ItemImage();
+    //var instance = new SquareConnect.V1ItemImage();
     //expect(instance).to.be();
   });
   it('should have the property url (base name: "url")', function() {
     // uncomment below and update the code to test the property url
-    //var instane = new SquareConnect.V1ItemImage();
+    //var instance = new SquareConnect.V1ItemImage();
     //expect(instance).to.be();
   });
 });

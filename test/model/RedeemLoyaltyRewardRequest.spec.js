@@ -20,18 +20,18 @@ describe('RedeemLoyaltyRewardRequest', function() {
 
   it('should create an instance of RedeemLoyaltyRewardRequest', function() {
     // uncomment below and update the code to test RedeemLoyaltyRewardRequest
-    //var instane = new SquareConnect.RedeemLoyaltyRewardRequest();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardRequest();
     //expect(instance).to.be.a(SquareConnect.RedeemLoyaltyRewardRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.RedeemLoyaltyRewardRequest();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.RedeemLoyaltyRewardRequest();
+    //var instance = new SquareConnect.RedeemLoyaltyRewardRequest();
     //expect(instance).to.be();
   });
 });

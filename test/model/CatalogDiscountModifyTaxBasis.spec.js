@@ -19,7 +19,7 @@ describe('CatalogDiscountModifyTaxBasis', function() {
 
   it('should create an instance of CatalogDiscountModifyTaxBasis', function() {
     // uncomment below and update the code to test CatalogDiscountModifyTaxBasis
-    //var instane = new SquareConnect.CatalogDiscountModifyTaxBasis();
+    //var instance = new SquareConnect.CatalogDiscountModifyTaxBasis();
     //expect(instance).to.be.a(SquareConnect.CatalogDiscountModifyTaxBasis);
   });
 

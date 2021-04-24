@@ -21,18 +21,18 @@ describe('ListLocationsResponse', function() {
 
   it('should create an instance of ListLocationsResponse', function() {
     // uncomment below and update the code to test ListLocationsResponse
-    //var instane = new SquareConnect.ListLocationsResponse();
+    //var instance = new SquareConnect.ListLocationsResponse();
     //expect(instance).to.be.a(SquareConnect.ListLocationsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListLocationsResponse();
+    //var instance = new SquareConnect.ListLocationsResponse();
     //expect(instance).to.be();
   });
   it('should have the property locations (base name: "locations")', function() {
     // uncomment below and update the code to test the property locations
-    //var instane = new SquareConnect.ListLocationsResponse();
+    //var instance = new SquareConnect.ListLocationsResponse();
     //expect(instance).to.be();
   });
 });

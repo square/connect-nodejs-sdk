@@ -20,28 +20,28 @@ describe('SubscriptionEvent', function() {
 
   it('should create an instance of SubscriptionEvent', function() {
     // uncomment below and update the code to test SubscriptionEvent
-    //var instane = new SquareConnect.SubscriptionEvent();
+    //var instance = new SquareConnect.SubscriptionEvent();
     //expect(instance).to.be.a(SquareConnect.SubscriptionEvent);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.SubscriptionEvent();
+    //var instance = new SquareConnect.SubscriptionEvent();
     //expect(instance).to.be();
   });
   it('should have the property subscriptionEventType (base name: "subscription_event_type")', function() {
     // uncomment below and update the code to test the property subscriptionEventType
-    //var instane = new SquareConnect.SubscriptionEvent();
+    //var instance = new SquareConnect.SubscriptionEvent();
     //expect(instance).to.be();
   });
   it('should have the property effectiveDate (base name: "effective_date")', function() {
     // uncomment below and update the code to test the property effectiveDate
-    //var instane = new SquareConnect.SubscriptionEvent();
+    //var instance = new SquareConnect.SubscriptionEvent();
     //expect(instance).to.be();
   });
   it('should have the property planId (base name: "plan_id")', function() {
     // uncomment below and update the code to test the property planId
-    //var instane = new SquareConnect.SubscriptionEvent();
+    //var instance = new SquareConnect.SubscriptionEvent();
     //expect(instance).to.be();
   });
 });

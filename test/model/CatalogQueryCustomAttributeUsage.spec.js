@@ -20,18 +20,18 @@ describe('CatalogQueryCustomAttributeUsage', function() {
 
   it('should create an instance of CatalogQueryCustomAttributeUsage', function() {
     // uncomment below and update the code to test CatalogQueryCustomAttributeUsage
-    //var instane = new SquareConnect.CatalogQueryCustomAttributeUsage();
+    //var instance = new SquareConnect.CatalogQueryCustomAttributeUsage();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryCustomAttributeUsage);
   });
 
   it('should have the property customAttributeDefinitionIds (base name: "custom_attribute_definition_ids")', function() {
     // uncomment below and update the code to test the property customAttributeDefinitionIds
-    //var instane = new SquareConnect.CatalogQueryCustomAttributeUsage();
+    //var instance = new SquareConnect.CatalogQueryCustomAttributeUsage();
     //expect(instance).to.be();
   });
   it('should have the property hasValue (base name: "has_value")', function() {
     // uncomment below and update the code to test the property hasValue
-    //var instane = new SquareConnect.CatalogQueryCustomAttributeUsage();
+    //var instance = new SquareConnect.CatalogQueryCustomAttributeUsage();
     //expect(instance).to.be();
   });
 });

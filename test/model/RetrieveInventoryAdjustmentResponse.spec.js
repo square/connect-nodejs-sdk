@@ -20,18 +20,18 @@ describe('RetrieveInventoryAdjustmentResponse', function() {
 
   it('should create an instance of RetrieveInventoryAdjustmentResponse', function() {
     // uncomment below and update the code to test RetrieveInventoryAdjustmentResponse
-    //var instane = new SquareConnect.RetrieveInventoryAdjustmentResponse();
+    //var instance = new SquareConnect.RetrieveInventoryAdjustmentResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryAdjustmentResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveInventoryAdjustmentResponse();
+    //var instance = new SquareConnect.RetrieveInventoryAdjustmentResponse();
     //expect(instance).to.be();
   });
   it('should have the property adjustment (base name: "adjustment")', function() {
     // uncomment below and update the code to test the property adjustment
-    //var instane = new SquareConnect.RetrieveInventoryAdjustmentResponse();
+    //var instance = new SquareConnect.RetrieveInventoryAdjustmentResponse();
     //expect(instance).to.be();
   });
 });

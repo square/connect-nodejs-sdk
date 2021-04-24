@@ -21,7 +21,7 @@ describe('ListLocationsRequest', function() {
 
   it('should create an instance of ListLocationsRequest', function() {
     // uncomment below and update the code to test ListLocationsRequest
-    //var instane = new SquareConnect.ListLocationsRequest();
+    //var instance = new SquareConnect.ListLocationsRequest();
     //expect(instance).to.be.a(SquareConnect.ListLocationsRequest);
   });
 

@@ -20,7 +20,7 @@ describe('RetrieveTeamMemberRequest', function() {
 
   it('should create an instance of RetrieveTeamMemberRequest', function() {
     // uncomment below and update the code to test RetrieveTeamMemberRequest
-    //var instane = new SquareConnect.RetrieveTeamMemberRequest();
+    //var instance = new SquareConnect.RetrieveTeamMemberRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveTeamMemberRequest);
   });
 

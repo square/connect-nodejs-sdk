@@ -20,23 +20,23 @@ describe('SearchOrdersDateTimeFilter', function() {
 
   it('should create an instance of SearchOrdersDateTimeFilter', function() {
     // uncomment below and update the code to test SearchOrdersDateTimeFilter
-    //var instane = new SquareConnect.SearchOrdersDateTimeFilter();
+    //var instance = new SquareConnect.SearchOrdersDateTimeFilter();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersDateTimeFilter);
   });
 
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.SearchOrdersDateTimeFilter();
+    //var instance = new SquareConnect.SearchOrdersDateTimeFilter();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.SearchOrdersDateTimeFilter();
+    //var instance = new SquareConnect.SearchOrdersDateTimeFilter();
     //expect(instance).to.be();
   });
   it('should have the property closedAt (base name: "closed_at")', function() {
     // uncomment below and update the code to test the property closedAt
-    //var instane = new SquareConnect.SearchOrdersDateTimeFilter();
+    //var instance = new SquareConnect.SearchOrdersDateTimeFilter();
     //expect(instance).to.be();
   });
 });

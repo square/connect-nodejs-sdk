@@ -21,43 +21,43 @@ describe('Order', function() {
 
   it('should create an instance of Order', function() {
     // uncomment below and update the code to test Order
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be.a(SquareConnect.Order);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property lineItems (base name: "line_items")', function() {
     // uncomment below and update the code to test the property lineItems
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property totalMoney (base name: "total_money")', function() {
     // uncomment below and update the code to test the property totalMoney
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property totalTaxMoney (base name: "total_tax_money")', function() {
     // uncomment below and update the code to test the property totalTaxMoney
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
   it('should have the property totalDiscountMoney (base name: "total_discount_money")', function() {
     // uncomment below and update the code to test the property totalDiscountMoney
-    //var instane = new SquareConnect.Order();
+    //var instance = new SquareConnect.Order();
     //expect(instance).to.be();
   });
 });

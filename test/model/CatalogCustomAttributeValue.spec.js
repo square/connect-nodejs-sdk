@@ -20,48 +20,48 @@ describe('CatalogCustomAttributeValue', function() {
 
   it('should create an instance of CatalogCustomAttributeValue', function() {
     // uncomment below and update the code to test CatalogCustomAttributeValue
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be.a(SquareConnect.CatalogCustomAttributeValue);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property stringValue (base name: "string_value")', function() {
     // uncomment below and update the code to test the property stringValue
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeDefinitionId (base name: "custom_attribute_definition_id")', function() {
     // uncomment below and update the code to test the property customAttributeDefinitionId
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property numberValue (base name: "number_value")', function() {
     // uncomment below and update the code to test the property numberValue
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property booleanValue (base name: "boolean_value")', function() {
     // uncomment below and update the code to test the property booleanValue
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property selectionUidValues (base name: "selection_uid_values")', function() {
     // uncomment below and update the code to test the property selectionUidValues
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
   it('should have the property key (base name: "key")', function() {
     // uncomment below and update the code to test the property key
-    //var instane = new SquareConnect.CatalogCustomAttributeValue();
+    //var instance = new SquareConnect.CatalogCustomAttributeValue();
     //expect(instance).to.be();
   });
 });

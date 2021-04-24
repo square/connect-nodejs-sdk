@@ -19,7 +19,7 @@ describe('V1TenderCardBrand', function() {
 
   it('should create an instance of V1TenderCardBrand', function() {
     // uncomment below and update the code to test V1TenderCardBrand
-    //var instane = new SquareConnect.V1TenderCardBrand();
+    //var instance = new SquareConnect.V1TenderCardBrand();
     //expect(instance).to.be.a(SquareConnect.V1TenderCardBrand);
   });
 

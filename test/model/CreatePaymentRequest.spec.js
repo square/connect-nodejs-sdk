@@ -20,88 +20,88 @@ describe('CreatePaymentRequest', function() {
 
   it('should create an instance of CreatePaymentRequest', function() {
     // uncomment below and update the code to test CreatePaymentRequest
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be.a(SquareConnect.CreatePaymentRequest);
   });
 
   it('should have the property sourceId (base name: "source_id")', function() {
     // uncomment below and update the code to test the property sourceId
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property tipMoney (base name: "tip_money")', function() {
     // uncomment below and update the code to test the property tipMoney
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property appFeeMoney (base name: "app_fee_money")', function() {
     // uncomment below and update the code to test the property appFeeMoney
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property autocomplete (base name: "autocomplete")', function() {
     // uncomment below and update the code to test the property autocomplete
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property customerId (base name: "customer_id")', function() {
     // uncomment below and update the code to test the property customerId
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property verificationToken (base name: "verification_token")', function() {
     // uncomment below and update the code to test the property verificationToken
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property acceptPartialAuthorization (base name: "accept_partial_authorization")', function() {
     // uncomment below and update the code to test the property acceptPartialAuthorization
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property buyerEmailAddress (base name: "buyer_email_address")', function() {
     // uncomment below and update the code to test the property buyerEmailAddress
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property billingAddress (base name: "billing_address")', function() {
     // uncomment below and update the code to test the property billingAddress
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property shippingAddress (base name: "shipping_address")', function() {
     // uncomment below and update the code to test the property shippingAddress
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
   it('should have the property note (base name: "note")', function() {
     // uncomment below and update the code to test the property note
-    //var instane = new SquareConnect.CreatePaymentRequest();
+    //var instance = new SquareConnect.CreatePaymentRequest();
     //expect(instance).to.be();
   });
 });

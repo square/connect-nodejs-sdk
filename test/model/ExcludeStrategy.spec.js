@@ -19,7 +19,7 @@ describe('ExcludeStrategy', function() {
 
   it('should create an instance of ExcludeStrategy', function() {
     // uncomment below and update the code to test ExcludeStrategy
-    //var instane = new SquareConnect.ExcludeStrategy();
+    //var instance = new SquareConnect.ExcludeStrategy();
     //expect(instance).to.be.a(SquareConnect.ExcludeStrategy);
   });
 

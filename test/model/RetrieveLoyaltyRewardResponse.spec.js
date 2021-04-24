@@ -20,18 +20,18 @@ describe('RetrieveLoyaltyRewardResponse', function() {
 
   it('should create an instance of RetrieveLoyaltyRewardResponse', function() {
     // uncomment below and update the code to test RetrieveLoyaltyRewardResponse
-    //var instane = new SquareConnect.RetrieveLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RetrieveLoyaltyRewardResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveLoyaltyRewardResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RetrieveLoyaltyRewardResponse();
     //expect(instance).to.be();
   });
   it('should have the property reward (base name: "reward")', function() {
     // uncomment below and update the code to test the property reward
-    //var instane = new SquareConnect.RetrieveLoyaltyRewardResponse();
+    //var instance = new SquareConnect.RetrieveLoyaltyRewardResponse();
     //expect(instance).to.be();
   });
 });

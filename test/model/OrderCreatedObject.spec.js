@@ -20,13 +20,13 @@ describe('OrderCreatedObject', function() {
 
   it('should create an instance of OrderCreatedObject', function() {
     // uncomment below and update the code to test OrderCreatedObject
-    //var instane = new SquareConnect.OrderCreatedObject();
+    //var instance = new SquareConnect.OrderCreatedObject();
     //expect(instance).to.be.a(SquareConnect.OrderCreatedObject);
   });
 
   it('should have the property orderCreated (base name: "order_created")', function() {
     // uncomment below and update the code to test the property orderCreated
-    //var instane = new SquareConnect.OrderCreatedObject();
+    //var instance = new SquareConnect.OrderCreatedObject();
     //expect(instance).to.be();
   });
 });

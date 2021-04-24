@@ -20,13 +20,13 @@ describe('OrderFulfillmentUpdatedObject', function() {
 
   it('should create an instance of OrderFulfillmentUpdatedObject', function() {
     // uncomment below and update the code to test OrderFulfillmentUpdatedObject
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedObject();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedObject();
     //expect(instance).to.be.a(SquareConnect.OrderFulfillmentUpdatedObject);
   });
 
   it('should have the property orderFulfillmentUpdated (base name: "order_fulfillment_updated")', function() {
     // uncomment below and update the code to test the property orderFulfillmentUpdated
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedObject();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedObject();
     //expect(instance).to.be();
   });
 });

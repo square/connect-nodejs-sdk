@@ -20,28 +20,28 @@ describe('ListEmployeesRequest', function() {
 
   it('should create an instance of ListEmployeesRequest', function() {
     // uncomment below and update the code to test ListEmployeesRequest
-    //var instane = new SquareConnect.ListEmployeesRequest();
+    //var instance = new SquareConnect.ListEmployeesRequest();
     //expect(instance).to.be.a(SquareConnect.ListEmployeesRequest);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListEmployeesRequest();
+    //var instance = new SquareConnect.ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.ListEmployeesRequest();
+    //var instance = new SquareConnect.ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.ListEmployeesRequest();
+    //var instance = new SquareConnect.ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListEmployeesRequest();
+    //var instance = new SquareConnect.ListEmployeesRequest();
     //expect(instance).to.be();
   });
 });

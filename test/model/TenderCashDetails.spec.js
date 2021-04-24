@@ -21,18 +21,18 @@ describe('TenderCashDetails', function() {
 
   it('should create an instance of TenderCashDetails', function() {
     // uncomment below and update the code to test TenderCashDetails
-    //var instane = new SquareConnect.TenderCashDetails();
+    //var instance = new SquareConnect.TenderCashDetails();
     //expect(instance).to.be.a(SquareConnect.TenderCashDetails);
   });
 
   it('should have the property buyerTenderedMoney (base name: "buyer_tendered_money")', function() {
     // uncomment below and update the code to test the property buyerTenderedMoney
-    //var instane = new SquareConnect.TenderCashDetails();
+    //var instance = new SquareConnect.TenderCashDetails();
     //expect(instance).to.be();
   });
   it('should have the property changeBackMoney (base name: "change_back_money")', function() {
     // uncomment below and update the code to test the property changeBackMoney
-    //var instane = new SquareConnect.TenderCashDetails();
+    //var instance = new SquareConnect.TenderCashDetails();
     //expect(instance).to.be();
   });
 });

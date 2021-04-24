@@ -19,7 +19,7 @@ describe('ShiftFilterStatus', function() {
 
   it('should create an instance of ShiftFilterStatus', function() {
     // uncomment below and update the code to test ShiftFilterStatus
-    //var instane = new SquareConnect.ShiftFilterStatus();
+    //var instance = new SquareConnect.ShiftFilterStatus();
     //expect(instance).to.be.a(SquareConnect.ShiftFilterStatus);
   });
 

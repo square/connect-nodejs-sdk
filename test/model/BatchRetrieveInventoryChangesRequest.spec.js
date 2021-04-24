@@ -20,43 +20,43 @@ describe('BatchRetrieveInventoryChangesRequest', function() {
 
   it('should create an instance of BatchRetrieveInventoryChangesRequest', function() {
     // uncomment below and update the code to test BatchRetrieveInventoryChangesRequest
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be.a(SquareConnect.BatchRetrieveInventoryChangesRequest);
   });
 
   it('should have the property catalogObjectIds (base name: "catalog_object_ids")', function() {
     // uncomment below and update the code to test the property catalogObjectIds
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property types (base name: "types")', function() {
     // uncomment below and update the code to test the property types
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property states (base name: "states")', function() {
     // uncomment below and update the code to test the property states
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property updatedAfter (base name: "updated_after")', function() {
     // uncomment below and update the code to test the property updatedAfter
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property updatedBefore (base name: "updated_before")', function() {
     // uncomment below and update the code to test the property updatedBefore
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.BatchRetrieveInventoryChangesRequest();
+    //var instance = new SquareConnect.BatchRetrieveInventoryChangesRequest();
     //expect(instance).to.be();
   });
 });

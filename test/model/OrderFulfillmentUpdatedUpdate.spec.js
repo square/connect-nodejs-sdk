@@ -20,23 +20,23 @@ describe('OrderFulfillmentUpdatedUpdate', function() {
 
   it('should create an instance of OrderFulfillmentUpdatedUpdate', function() {
     // uncomment below and update the code to test OrderFulfillmentUpdatedUpdate
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedUpdate();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedUpdate();
     //expect(instance).to.be.a(SquareConnect.OrderFulfillmentUpdatedUpdate);
   });
 
   it('should have the property fulfillmentUid (base name: "fulfillment_uid")', function() {
     // uncomment below and update the code to test the property fulfillmentUid
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedUpdate();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedUpdate();
     //expect(instance).to.be();
   });
   it('should have the property oldState (base name: "old_state")', function() {
     // uncomment below and update the code to test the property oldState
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedUpdate();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedUpdate();
     //expect(instance).to.be();
   });
   it('should have the property newState (base name: "new_state")', function() {
     // uncomment below and update the code to test the property newState
-    //var instane = new SquareConnect.OrderFulfillmentUpdatedUpdate();
+    //var instance = new SquareConnect.OrderFulfillmentUpdatedUpdate();
     //expect(instance).to.be();
   });
 });

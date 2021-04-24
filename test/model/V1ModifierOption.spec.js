@@ -21,38 +21,38 @@ describe('V1ModifierOption', function() {
 
   it('should create an instance of V1ModifierOption', function() {
     // uncomment below and update the code to test V1ModifierOption
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be.a(SquareConnect.V1ModifierOption);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
   it('should have the property priceMoney (base name: "price_money")', function() {
     // uncomment below and update the code to test the property priceMoney
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
   it('should have the property onByDefault (base name: "on_by_default")', function() {
     // uncomment below and update the code to test the property onByDefault
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
   it('should have the property ordinal (base name: "ordinal")', function() {
     // uncomment below and update the code to test the property ordinal
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
   it('should have the property modifierListId (base name: "modifier_list_id")', function() {
     // uncomment below and update the code to test the property modifierListId
-    //var instane = new SquareConnect.V1ModifierOption();
+    //var instance = new SquareConnect.V1ModifierOption();
     //expect(instance).to.be();
   });
 });

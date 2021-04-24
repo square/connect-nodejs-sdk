@@ -20,7 +20,7 @@ describe('TransactionProduct', function() {
 
   it('should create an instance of TransactionProduct', function() {
     // uncomment below and update the code to test TransactionProduct
-    //var instane = new SquareConnect.TransactionProduct();
+    //var instance = new SquareConnect.TransactionProduct();
     //expect(instance).to.be.a(SquareConnect.TransactionProduct);
   });
 

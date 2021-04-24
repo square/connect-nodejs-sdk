@@ -20,23 +20,23 @@ describe('OrderRoundingAdjustment', function() {
 
   it('should create an instance of OrderRoundingAdjustment', function() {
     // uncomment below and update the code to test OrderRoundingAdjustment
-    //var instane = new SquareConnect.OrderRoundingAdjustment();
+    //var instance = new SquareConnect.OrderRoundingAdjustment();
     //expect(instance).to.be.a(SquareConnect.OrderRoundingAdjustment);
   });
 
   it('should have the property uid (base name: "uid")', function() {
     // uncomment below and update the code to test the property uid
-    //var instane = new SquareConnect.OrderRoundingAdjustment();
+    //var instance = new SquareConnect.OrderRoundingAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderRoundingAdjustment();
+    //var instance = new SquareConnect.OrderRoundingAdjustment();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.OrderRoundingAdjustment();
+    //var instance = new SquareConnect.OrderRoundingAdjustment();
     //expect(instance).to.be();
   });
 });

@@ -20,28 +20,28 @@ describe('InventoryChange', function() {
 
   it('should create an instance of InventoryChange', function() {
     // uncomment below and update the code to test InventoryChange
-    //var instane = new SquareConnect.InventoryChange();
+    //var instance = new SquareConnect.InventoryChange();
     //expect(instance).to.be.a(SquareConnect.InventoryChange);
   });
 
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.InventoryChange();
+    //var instance = new SquareConnect.InventoryChange();
     //expect(instance).to.be();
   });
   it('should have the property physicalCount (base name: "physical_count")', function() {
     // uncomment below and update the code to test the property physicalCount
-    //var instane = new SquareConnect.InventoryChange();
+    //var instance = new SquareConnect.InventoryChange();
     //expect(instance).to.be();
   });
   it('should have the property adjustment (base name: "adjustment")', function() {
     // uncomment below and update the code to test the property adjustment
-    //var instane = new SquareConnect.InventoryChange();
+    //var instance = new SquareConnect.InventoryChange();
     //expect(instance).to.be();
   });
   it('should have the property transfer (base name: "transfer")', function() {
     // uncomment below and update the code to test the property transfer
-    //var instane = new SquareConnect.InventoryChange();
+    //var instance = new SquareConnect.InventoryChange();
     //expect(instance).to.be();
   });
 });

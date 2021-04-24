@@ -21,18 +21,18 @@ describe('CreateRefundResponse', function() {
 
   it('should create an instance of CreateRefundResponse', function() {
     // uncomment below and update the code to test CreateRefundResponse
-    //var instane = new SquareConnect.CreateRefundResponse();
+    //var instance = new SquareConnect.CreateRefundResponse();
     //expect(instance).to.be.a(SquareConnect.CreateRefundResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateRefundResponse();
+    //var instance = new SquareConnect.CreateRefundResponse();
     //expect(instance).to.be();
   });
   it('should have the property refund (base name: "refund")', function() {
     // uncomment below and update the code to test the property refund
-    //var instane = new SquareConnect.CreateRefundResponse();
+    //var instance = new SquareConnect.CreateRefundResponse();
     //expect(instance).to.be();
   });
 });

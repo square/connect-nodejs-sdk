@@ -20,23 +20,23 @@ describe('RevokeTokenRequest', function() {
 
   it('should create an instance of RevokeTokenRequest', function() {
     // uncomment below and update the code to test RevokeTokenRequest
-    //var instane = new SquareConnect.RevokeTokenRequest();
+    //var instance = new SquareConnect.RevokeTokenRequest();
     //expect(instance).to.be.a(SquareConnect.RevokeTokenRequest);
   });
 
   it('should have the property clientId (base name: "client_id")', function() {
     // uncomment below and update the code to test the property clientId
-    //var instane = new SquareConnect.RevokeTokenRequest();
+    //var instance = new SquareConnect.RevokeTokenRequest();
     //expect(instance).to.be();
   });
   it('should have the property accessToken (base name: "access_token")', function() {
     // uncomment below and update the code to test the property accessToken
-    //var instane = new SquareConnect.RevokeTokenRequest();
+    //var instance = new SquareConnect.RevokeTokenRequest();
     //expect(instance).to.be();
   });
   it('should have the property merchantId (base name: "merchant_id")', function() {
     // uncomment below and update the code to test the property merchantId
-    //var instane = new SquareConnect.RevokeTokenRequest();
+    //var instance = new SquareConnect.RevokeTokenRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,63 +20,63 @@ describe('TerminalCheckout', function() {
 
   it('should create an instance of TerminalCheckout', function() {
     // uncomment below and update the code to test TerminalCheckout
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be.a(SquareConnect.TerminalCheckout);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property note (base name: "note")', function() {
     // uncomment below and update the code to test the property note
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property deviceOptions (base name: "device_options")', function() {
     // uncomment below and update the code to test the property deviceOptions
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property deadlineDuration (base name: "deadline_duration")', function() {
     // uncomment below and update the code to test the property deadlineDuration
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property cancelReason (base name: "cancel_reason")', function() {
     // uncomment below and update the code to test the property cancelReason
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property paymentIds (base name: "payment_ids")', function() {
     // uncomment below and update the code to test the property paymentIds
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.TerminalCheckout();
+    //var instance = new SquareConnect.TerminalCheckout();
     //expect(instance).to.be();
   });
 });

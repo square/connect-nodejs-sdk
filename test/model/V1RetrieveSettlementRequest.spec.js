@@ -20,7 +20,7 @@ describe('V1RetrieveSettlementRequest', function() {
 
   it('should create an instance of V1RetrieveSettlementRequest', function() {
     // uncomment below and update the code to test V1RetrieveSettlementRequest
-    //var instane = new SquareConnect.V1RetrieveSettlementRequest();
+    //var instance = new SquareConnect.V1RetrieveSettlementRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrieveSettlementRequest);
   });
 

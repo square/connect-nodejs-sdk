@@ -21,28 +21,28 @@ describe('ListTransactionsRequest', function() {
 
   it('should create an instance of ListTransactionsRequest', function() {
     // uncomment below and update the code to test ListTransactionsRequest
-    //var instane = new SquareConnect.ListTransactionsRequest();
+    //var instance = new SquareConnect.ListTransactionsRequest();
     //expect(instance).to.be.a(SquareConnect.ListTransactionsRequest);
   });
 
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.ListTransactionsRequest();
+    //var instance = new SquareConnect.ListTransactionsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.ListTransactionsRequest();
+    //var instance = new SquareConnect.ListTransactionsRequest();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.ListTransactionsRequest();
+    //var instance = new SquareConnect.ListTransactionsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListTransactionsRequest();
+    //var instance = new SquareConnect.ListTransactionsRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,53 +20,53 @@ describe('LoyaltyAccount', function() {
 
   it('should create an instance of LoyaltyAccount', function() {
     // uncomment below and update the code to test LoyaltyAccount
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be.a(SquareConnect.LoyaltyAccount);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property mappings (base name: "mappings")', function() {
     // uncomment below and update the code to test the property mappings
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property programId (base name: "program_id")', function() {
     // uncomment below and update the code to test the property programId
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property balance (base name: "balance")', function() {
     // uncomment below and update the code to test the property balance
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property lifetimePoints (base name: "lifetime_points")', function() {
     // uncomment below and update the code to test the property lifetimePoints
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property customerId (base name: "customer_id")', function() {
     // uncomment below and update the code to test the property customerId
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property enrolledAt (base name: "enrolled_at")', function() {
     // uncomment below and update the code to test the property enrolledAt
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.LoyaltyAccount();
+    //var instance = new SquareConnect.LoyaltyAccount();
     //expect(instance).to.be();
   });
 });

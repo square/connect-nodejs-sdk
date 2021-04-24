@@ -20,13 +20,13 @@ describe('DeleteShiftResponse', function() {
 
   it('should create an instance of DeleteShiftResponse', function() {
     // uncomment below and update the code to test DeleteShiftResponse
-    //var instane = new SquareConnect.DeleteShiftResponse();
+    //var instance = new SquareConnect.DeleteShiftResponse();
     //expect(instance).to.be.a(SquareConnect.DeleteShiftResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.DeleteShiftResponse();
+    //var instance = new SquareConnect.DeleteShiftResponse();
     //expect(instance).to.be();
   });
 });

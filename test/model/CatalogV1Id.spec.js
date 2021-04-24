@@ -21,18 +21,18 @@ describe('CatalogV1Id', function() {
 
   it('should create an instance of CatalogV1Id', function() {
     // uncomment below and update the code to test CatalogV1Id
-    //var instane = new SquareConnect.CatalogV1Id();
+    //var instance = new SquareConnect.CatalogV1Id();
     //expect(instance).to.be.a(SquareConnect.CatalogV1Id);
   });
 
   it('should have the property catalogV1Id (base name: "catalog_v1_id")', function() {
     // uncomment below and update the code to test the property catalogV1Id
-    //var instane = new SquareConnect.CatalogV1Id();
+    //var instance = new SquareConnect.CatalogV1Id();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.CatalogV1Id();
+    //var instance = new SquareConnect.CatalogV1Id();
     //expect(instance).to.be();
   });
 });

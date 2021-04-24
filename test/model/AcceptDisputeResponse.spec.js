@@ -20,18 +20,18 @@ describe('AcceptDisputeResponse', function() {
 
   it('should create an instance of AcceptDisputeResponse', function() {
     // uncomment below and update the code to test AcceptDisputeResponse
-    //var instane = new SquareConnect.AcceptDisputeResponse();
+    //var instance = new SquareConnect.AcceptDisputeResponse();
     //expect(instance).to.be.a(SquareConnect.AcceptDisputeResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.AcceptDisputeResponse();
+    //var instance = new SquareConnect.AcceptDisputeResponse();
     //expect(instance).to.be();
   });
   it('should have the property dispute (base name: "dispute")', function() {
     // uncomment below and update the code to test the property dispute
-    //var instane = new SquareConnect.AcceptDisputeResponse();
+    //var instance = new SquareConnect.AcceptDisputeResponse();
     //expect(instance).to.be();
   });
 });

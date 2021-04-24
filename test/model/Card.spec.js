@@ -21,48 +21,48 @@ describe('Card', function() {
 
   it('should create an instance of Card', function() {
     // uncomment below and update the code to test Card
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be.a(SquareConnect.Card);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property cardBrand (base name: "card_brand")', function() {
     // uncomment below and update the code to test the property cardBrand
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property last4 (base name: "last_4")', function() {
     // uncomment below and update the code to test the property last4
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property expMonth (base name: "exp_month")', function() {
     // uncomment below and update the code to test the property expMonth
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property expYear (base name: "exp_year")', function() {
     // uncomment below and update the code to test the property expYear
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property cardholderName (base name: "cardholder_name")', function() {
     // uncomment below and update the code to test the property cardholderName
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property billingAddress (base name: "billing_address")', function() {
     // uncomment below and update the code to test the property billingAddress
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
   it('should have the property fingerprint (base name: "fingerprint")', function() {
     // uncomment below and update the code to test the property fingerprint
-    //var instane = new SquareConnect.Card();
+    //var instance = new SquareConnect.Card();
     //expect(instance).to.be();
   });
 });

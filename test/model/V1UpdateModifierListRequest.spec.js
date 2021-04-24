@@ -21,18 +21,18 @@ describe('V1UpdateModifierListRequest', function() {
 
   it('should create an instance of V1UpdateModifierListRequest', function() {
     // uncomment below and update the code to test V1UpdateModifierListRequest
-    //var instane = new SquareConnect.V1UpdateModifierListRequest();
+    //var instance = new SquareConnect.V1UpdateModifierListRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateModifierListRequest);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1UpdateModifierListRequest();
+    //var instance = new SquareConnect.V1UpdateModifierListRequest();
     //expect(instance).to.be();
   });
   it('should have the property selectionType (base name: "selection_type")', function() {
     // uncomment below and update the code to test the property selectionType
-    //var instane = new SquareConnect.V1UpdateModifierListRequest();
+    //var instance = new SquareConnect.V1UpdateModifierListRequest();
     //expect(instance).to.be();
   });
 });

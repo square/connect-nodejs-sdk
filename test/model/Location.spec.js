@@ -21,83 +21,83 @@ describe('Location', function() {
 
   it('should create an instance of Location', function() {
     // uncomment below and update the code to test Location
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be.a(SquareConnect.Location);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property address (base name: "address")', function() {
     // uncomment below and update the code to test the property address
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property timezone (base name: "timezone")', function() {
     // uncomment below and update the code to test the property timezone
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property capabilities (base name: "capabilities")', function() {
     // uncomment below and update the code to test the property capabilities
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property merchantId (base name: "merchant_id")', function() {
     // uncomment below and update the code to test the property merchantId
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property country (base name: "country")', function() {
     // uncomment below and update the code to test the property country
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property languageCode (base name: "language_code")', function() {
     // uncomment below and update the code to test the property languageCode
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property currency (base name: "currency")', function() {
     // uncomment below and update the code to test the property currency
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property phoneNumber (base name: "phone_number")', function() {
     // uncomment below and update the code to test the property phoneNumber
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property businessName (base name: "business_name")', function() {
     // uncomment below and update the code to test the property businessName
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
   it('should have the property websiteUrl (base name: "website_url")', function() {
     // uncomment below and update the code to test the property websiteUrl
-    //var instane = new SquareConnect.Location();
+    //var instance = new SquareConnect.Location();
     //expect(instance).to.be();
   });
 });

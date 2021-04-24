@@ -19,7 +19,7 @@ describe('LoyaltyEventType', function() {
 
   it('should create an instance of LoyaltyEventType', function() {
     // uncomment below and update the code to test LoyaltyEventType
-    //var instane = new SquareConnect.LoyaltyEventType();
+    //var instance = new SquareConnect.LoyaltyEventType();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventType);
   });
 

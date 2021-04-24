@@ -19,7 +19,7 @@ describe('MeasurementUnitTime', function() {
 
   it('should create an instance of MeasurementUnitTime', function() {
     // uncomment below and update the code to test MeasurementUnitTime
-    //var instane = new SquareConnect.MeasurementUnitTime();
+    //var instance = new SquareConnect.MeasurementUnitTime();
     //expect(instance).to.be.a(SquareConnect.MeasurementUnitTime);
   });
 

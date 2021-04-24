@@ -19,7 +19,7 @@ describe('CatalogQuickAmountsSettingsOption', function() {
 
   it('should create an instance of CatalogQuickAmountsSettingsOption', function() {
     // uncomment below and update the code to test CatalogQuickAmountsSettingsOption
-    //var instane = new SquareConnect.CatalogQuickAmountsSettingsOption();
+    //var instance = new SquareConnect.CatalogQuickAmountsSettingsOption();
     //expect(instance).to.be.a(SquareConnect.CatalogQuickAmountsSettingsOption);
   });
 

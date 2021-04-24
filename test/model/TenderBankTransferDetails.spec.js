@@ -20,13 +20,13 @@ describe('TenderBankTransferDetails', function() {
 
   it('should create an instance of TenderBankTransferDetails', function() {
     // uncomment below and update the code to test TenderBankTransferDetails
-    //var instane = new SquareConnect.TenderBankTransferDetails();
+    //var instance = new SquareConnect.TenderBankTransferDetails();
     //expect(instance).to.be.a(SquareConnect.TenderBankTransferDetails);
   });
 
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.TenderBankTransferDetails();
+    //var instance = new SquareConnect.TenderBankTransferDetails();
     //expect(instance).to.be();
   });
 });

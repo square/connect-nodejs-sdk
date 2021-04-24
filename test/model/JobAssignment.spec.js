@@ -20,33 +20,33 @@ describe('JobAssignment', function() {
 
   it('should create an instance of JobAssignment', function() {
     // uncomment below and update the code to test JobAssignment
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be.a(SquareConnect.JobAssignment);
   });
 
   it('should have the property jobTitle (base name: "job_title")', function() {
     // uncomment below and update the code to test the property jobTitle
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be();
   });
   it('should have the property payType (base name: "pay_type")', function() {
     // uncomment below and update the code to test the property payType
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be();
   });
   it('should have the property hourlyRate (base name: "hourly_rate")', function() {
     // uncomment below and update the code to test the property hourlyRate
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be();
   });
   it('should have the property annualRate (base name: "annual_rate")', function() {
     // uncomment below and update the code to test the property annualRate
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be();
   });
   it('should have the property weeklyHours (base name: "weekly_hours")', function() {
     // uncomment below and update the code to test the property weeklyHours
-    //var instane = new SquareConnect.JobAssignment();
+    //var instance = new SquareConnect.JobAssignment();
     //expect(instance).to.be();
   });
 });

@@ -20,58 +20,58 @@ describe('PaymentRefund', function() {
 
   it('should create an instance of PaymentRefund', function() {
     // uncomment below and update the code to test PaymentRefund
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be.a(SquareConnect.PaymentRefund);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property appFeeMoney (base name: "app_fee_money")', function() {
     // uncomment below and update the code to test the property appFeeMoney
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property processingFee (base name: "processing_fee")', function() {
     // uncomment below and update the code to test the property processingFee
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property paymentId (base name: "payment_id")', function() {
     // uncomment below and update the code to test the property paymentId
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property reason (base name: "reason")', function() {
     // uncomment below and update the code to test the property reason
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.PaymentRefund();
+    //var instance = new SquareConnect.PaymentRefund();
     //expect(instance).to.be();
   });
 });

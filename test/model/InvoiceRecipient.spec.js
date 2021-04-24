@@ -20,43 +20,43 @@ describe('InvoiceRecipient', function() {
 
   it('should create an instance of InvoiceRecipient', function() {
     // uncomment below and update the code to test InvoiceRecipient
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be.a(SquareConnect.InvoiceRecipient);
   });
 
   it('should have the property customerId (base name: "customer_id")', function() {
     // uncomment below and update the code to test the property customerId
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property givenName (base name: "given_name")', function() {
     // uncomment below and update the code to test the property givenName
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property familyName (base name: "family_name")', function() {
     // uncomment below and update the code to test the property familyName
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property emailAddress (base name: "email_address")', function() {
     // uncomment below and update the code to test the property emailAddress
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property address (base name: "address")', function() {
     // uncomment below and update the code to test the property address
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property phoneNumber (base name: "phone_number")', function() {
     // uncomment below and update the code to test the property phoneNumber
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
   it('should have the property companyName (base name: "company_name")', function() {
     // uncomment below and update the code to test the property companyName
-    //var instane = new SquareConnect.InvoiceRecipient();
+    //var instance = new SquareConnect.InvoiceRecipient();
     //expect(instance).to.be();
   });
 });

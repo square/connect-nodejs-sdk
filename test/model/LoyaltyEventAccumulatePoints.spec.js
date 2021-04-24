@@ -20,23 +20,23 @@ describe('LoyaltyEventAccumulatePoints', function() {
 
   it('should create an instance of LoyaltyEventAccumulatePoints', function() {
     // uncomment below and update the code to test LoyaltyEventAccumulatePoints
-    //var instane = new SquareConnect.LoyaltyEventAccumulatePoints();
+    //var instance = new SquareConnect.LoyaltyEventAccumulatePoints();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventAccumulatePoints);
   });
 
   it('should have the property loyaltyProgramId (base name: "loyalty_program_id")', function() {
     // uncomment below and update the code to test the property loyaltyProgramId
-    //var instane = new SquareConnect.LoyaltyEventAccumulatePoints();
+    //var instance = new SquareConnect.LoyaltyEventAccumulatePoints();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyEventAccumulatePoints();
+    //var instance = new SquareConnect.LoyaltyEventAccumulatePoints();
     //expect(instance).to.be();
   });
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.LoyaltyEventAccumulatePoints();
+    //var instance = new SquareConnect.LoyaltyEventAccumulatePoints();
     //expect(instance).to.be();
   });
 });

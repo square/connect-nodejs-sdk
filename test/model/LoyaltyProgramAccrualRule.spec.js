@@ -20,33 +20,33 @@ describe('LoyaltyProgramAccrualRule', function() {
 
   it('should create an instance of LoyaltyProgramAccrualRule', function() {
     // uncomment below and update the code to test LoyaltyProgramAccrualRule
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramAccrualRule);
   });
 
   it('should have the property accrualType (base name: "accrual_type")', function() {
     // uncomment below and update the code to test the property accrualType
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be();
   });
   it('should have the property visitMinimumAmountMoney (base name: "visit_minimum_amount_money")', function() {
     // uncomment below and update the code to test the property visitMinimumAmountMoney
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be();
   });
   it('should have the property spendAmountMoney (base name: "spend_amount_money")', function() {
     // uncomment below and update the code to test the property spendAmountMoney
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.LoyaltyProgramAccrualRule();
+    //var instance = new SquareConnect.LoyaltyProgramAccrualRule();
     //expect(instance).to.be();
   });
 });

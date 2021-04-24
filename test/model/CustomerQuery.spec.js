@@ -20,18 +20,18 @@ describe('CustomerQuery', function() {
 
   it('should create an instance of CustomerQuery', function() {
     // uncomment below and update the code to test CustomerQuery
-    //var instane = new SquareConnect.CustomerQuery();
+    //var instance = new SquareConnect.CustomerQuery();
     //expect(instance).to.be.a(SquareConnect.CustomerQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.CustomerQuery();
+    //var instance = new SquareConnect.CustomerQuery();
     //expect(instance).to.be();
   });
   it('should have the property sort (base name: "sort")', function() {
     // uncomment below and update the code to test the property sort
-    //var instane = new SquareConnect.CustomerQuery();
+    //var instance = new SquareConnect.CustomerQuery();
     //expect(instance).to.be();
   });
 });

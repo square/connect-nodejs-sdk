@@ -19,7 +19,7 @@ describe('V1DiscountDiscountType', function() {
 
   it('should create an instance of V1DiscountDiscountType', function() {
     // uncomment below and update the code to test V1DiscountDiscountType
-    //var instane = new SquareConnect.V1DiscountDiscountType();
+    //var instance = new SquareConnect.V1DiscountDiscountType();
     //expect(instance).to.be.a(SquareConnect.V1DiscountDiscountType);
   });
 

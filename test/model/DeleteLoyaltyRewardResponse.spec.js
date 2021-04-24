@@ -20,13 +20,13 @@ describe('DeleteLoyaltyRewardResponse', function() {
 
   it('should create an instance of DeleteLoyaltyRewardResponse', function() {
     // uncomment below and update the code to test DeleteLoyaltyRewardResponse
-    //var instane = new SquareConnect.DeleteLoyaltyRewardResponse();
+    //var instance = new SquareConnect.DeleteLoyaltyRewardResponse();
     //expect(instance).to.be.a(SquareConnect.DeleteLoyaltyRewardResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.DeleteLoyaltyRewardResponse();
+    //var instance = new SquareConnect.DeleteLoyaltyRewardResponse();
     //expect(instance).to.be();
   });
 });

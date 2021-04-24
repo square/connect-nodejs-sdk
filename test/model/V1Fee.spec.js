@@ -21,53 +21,53 @@ describe('V1Fee', function() {
 
   it('should create an instance of V1Fee', function() {
     // uncomment below and update the code to test V1Fee
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be.a(SquareConnect.V1Fee);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property rate (base name: "rate")', function() {
     // uncomment below and update the code to test the property rate
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property calculationPhase (base name: "calculation_phase")', function() {
     // uncomment below and update the code to test the property calculationPhase
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property adjustmentType (base name: "adjustment_type")', function() {
     // uncomment below and update the code to test the property adjustmentType
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property appliesToCustomAmounts (base name: "applies_to_custom_amounts")', function() {
     // uncomment below and update the code to test the property appliesToCustomAmounts
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property enabled (base name: "enabled")', function() {
     // uncomment below and update the code to test the property enabled
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property inclusionType (base name: "inclusion_type")', function() {
     // uncomment below and update the code to test the property inclusionType
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.V1Fee();
+    //var instance = new SquareConnect.V1Fee();
     //expect(instance).to.be();
   });
 });

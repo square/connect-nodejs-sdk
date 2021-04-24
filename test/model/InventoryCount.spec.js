@@ -20,38 +20,38 @@ describe('InventoryCount', function() {
 
   it('should create an instance of InventoryCount', function() {
     // uncomment below and update the code to test InventoryCount
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be.a(SquareConnect.InventoryCount);
   });
 
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
   it('should have the property catalogObjectType (base name: "catalog_object_type")', function() {
     // uncomment below and update the code to test the property catalogObjectType
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
   it('should have the property state (base name: "state")', function() {
     // uncomment below and update the code to test the property state
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
   it('should have the property quantity (base name: "quantity")', function() {
     // uncomment below and update the code to test the property quantity
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
   it('should have the property calculatedAt (base name: "calculated_at")', function() {
     // uncomment below and update the code to test the property calculatedAt
-    //var instane = new SquareConnect.InventoryCount();
+    //var instance = new SquareConnect.InventoryCount();
     //expect(instance).to.be();
   });
 });

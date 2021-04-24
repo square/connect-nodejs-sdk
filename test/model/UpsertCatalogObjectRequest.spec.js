@@ -21,18 +21,18 @@ describe('UpsertCatalogObjectRequest', function() {
 
   it('should create an instance of UpsertCatalogObjectRequest', function() {
     // uncomment below and update the code to test UpsertCatalogObjectRequest
-    //var instane = new SquareConnect.UpsertCatalogObjectRequest();
+    //var instance = new SquareConnect.UpsertCatalogObjectRequest();
     //expect(instance).to.be.a(SquareConnect.UpsertCatalogObjectRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.UpsertCatalogObjectRequest();
+    //var instance = new SquareConnect.UpsertCatalogObjectRequest();
     //expect(instance).to.be();
   });
   it('should have the property _object (base name: "object")', function() {
     // uncomment below and update the code to test the property _object
-    //var instane = new SquareConnect.UpsertCatalogObjectRequest();
+    //var instance = new SquareConnect.UpsertCatalogObjectRequest();
     //expect(instance).to.be();
   });
 });

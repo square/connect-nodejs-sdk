@@ -20,13 +20,13 @@ describe('RemoveGroupFromCustomerResponse', function() {
 
   it('should create an instance of RemoveGroupFromCustomerResponse', function() {
     // uncomment below and update the code to test RemoveGroupFromCustomerResponse
-    //var instane = new SquareConnect.RemoveGroupFromCustomerResponse();
+    //var instance = new SquareConnect.RemoveGroupFromCustomerResponse();
     //expect(instance).to.be.a(SquareConnect.RemoveGroupFromCustomerResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RemoveGroupFromCustomerResponse();
+    //var instance = new SquareConnect.RemoveGroupFromCustomerResponse();
     //expect(instance).to.be();
   });
 });

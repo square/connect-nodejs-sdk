@@ -21,23 +21,23 @@ describe('BatchDeleteCatalogObjectsResponse', function() {
 
   it('should create an instance of BatchDeleteCatalogObjectsResponse', function() {
     // uncomment below and update the code to test BatchDeleteCatalogObjectsResponse
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsResponse();
     //expect(instance).to.be.a(SquareConnect.BatchDeleteCatalogObjectsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property deletedObjectIds (base name: "deleted_object_ids")', function() {
     // uncomment below and update the code to test the property deletedObjectIds
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property deletedAt (base name: "deleted_at")', function() {
     // uncomment below and update the code to test the property deletedAt
-    //var instane = new SquareConnect.BatchDeleteCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchDeleteCatalogObjectsResponse();
     //expect(instance).to.be();
   });
 });

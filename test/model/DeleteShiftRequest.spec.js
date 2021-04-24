@@ -20,7 +20,7 @@ describe('DeleteShiftRequest', function() {
 
   it('should create an instance of DeleteShiftRequest', function() {
     // uncomment below and update the code to test DeleteShiftRequest
-    //var instane = new SquareConnect.DeleteShiftRequest();
+    //var instance = new SquareConnect.DeleteShiftRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteShiftRequest);
   });
 

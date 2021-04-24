@@ -20,23 +20,23 @@ describe('V1ListCashDrawerShiftsRequest', function() {
 
   it('should create an instance of V1ListCashDrawerShiftsRequest', function() {
     // uncomment below and update the code to test V1ListCashDrawerShiftsRequest
-    //var instane = new SquareConnect.V1ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.V1ListCashDrawerShiftsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListCashDrawerShiftsRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.V1ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.V1ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.V1ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.V1ListCashDrawerShiftsRequest();
+    //var instance = new SquareConnect.V1ListCashDrawerShiftsRequest();
     //expect(instance).to.be();
   });
 });

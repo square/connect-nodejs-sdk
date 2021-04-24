@@ -20,28 +20,28 @@ describe('DisputeEvidence', function() {
 
   it('should create an instance of DisputeEvidence', function() {
     // uncomment below and update the code to test DisputeEvidence
-    //var instane = new SquareConnect.DisputeEvidence();
+    //var instance = new SquareConnect.DisputeEvidence();
     //expect(instance).to.be.a(SquareConnect.DisputeEvidence);
   });
 
   it('should have the property evidenceId (base name: "evidence_id")', function() {
     // uncomment below and update the code to test the property evidenceId
-    //var instane = new SquareConnect.DisputeEvidence();
+    //var instance = new SquareConnect.DisputeEvidence();
     //expect(instance).to.be();
   });
   it('should have the property disputeId (base name: "dispute_id")', function() {
     // uncomment below and update the code to test the property disputeId
-    //var instane = new SquareConnect.DisputeEvidence();
+    //var instance = new SquareConnect.DisputeEvidence();
     //expect(instance).to.be();
   });
   it('should have the property uploadedAt (base name: "uploaded_at")', function() {
     // uncomment below and update the code to test the property uploadedAt
-    //var instane = new SquareConnect.DisputeEvidence();
+    //var instance = new SquareConnect.DisputeEvidence();
     //expect(instance).to.be();
   });
   it('should have the property evidenceType (base name: "evidence_type")', function() {
     // uncomment below and update the code to test the property evidenceType
-    //var instane = new SquareConnect.DisputeEvidence();
+    //var instance = new SquareConnect.DisputeEvidence();
     //expect(instance).to.be();
   });
 });

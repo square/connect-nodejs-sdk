@@ -19,7 +19,7 @@ describe('CatalogQueryFilteredItemsNullableAttribute', function() {
 
   it('should create an instance of CatalogQueryFilteredItemsNullableAttribute', function() {
     // uncomment below and update the code to test CatalogQueryFilteredItemsNullableAttribute
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsNullableAttribute();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsNullableAttribute();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryFilteredItemsNullableAttribute);
   });
 

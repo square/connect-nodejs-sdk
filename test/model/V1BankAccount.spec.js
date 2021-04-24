@@ -21,48 +21,48 @@ describe('V1BankAccount', function() {
 
   it('should create an instance of V1BankAccount', function() {
     // uncomment below and update the code to test V1BankAccount
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be.a(SquareConnect.V1BankAccount);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property merchantId (base name: "merchant_id")', function() {
     // uncomment below and update the code to test the property merchantId
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property bankName (base name: "bank_name")', function() {
     // uncomment below and update the code to test the property bankName
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property routingNumber (base name: "routing_number")', function() {
     // uncomment below and update the code to test the property routingNumber
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property accountNumberSuffix (base name: "account_number_suffix")', function() {
     // uncomment below and update the code to test the property accountNumberSuffix
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property currencyCode (base name: "currency_code")', function() {
     // uncomment below and update the code to test the property currencyCode
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.V1BankAccount();
+    //var instance = new SquareConnect.V1BankAccount();
     //expect(instance).to.be();
   });
 });

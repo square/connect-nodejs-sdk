@@ -20,18 +20,18 @@ describe('UpdateSubscriptionResponse', function() {
 
   it('should create an instance of UpdateSubscriptionResponse', function() {
     // uncomment below and update the code to test UpdateSubscriptionResponse
-    //var instane = new SquareConnect.UpdateSubscriptionResponse();
+    //var instance = new SquareConnect.UpdateSubscriptionResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateSubscriptionResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateSubscriptionResponse();
+    //var instance = new SquareConnect.UpdateSubscriptionResponse();
     //expect(instance).to.be();
   });
   it('should have the property subscription (base name: "subscription")', function() {
     // uncomment below and update the code to test the property subscription
-    //var instane = new SquareConnect.UpdateSubscriptionResponse();
+    //var instance = new SquareConnect.UpdateSubscriptionResponse();
     //expect(instance).to.be();
   });
 });

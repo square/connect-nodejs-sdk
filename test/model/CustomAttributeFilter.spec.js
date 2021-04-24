@@ -20,38 +20,38 @@ describe('CustomAttributeFilter', function() {
 
   it('should create an instance of CustomAttributeFilter', function() {
     // uncomment below and update the code to test CustomAttributeFilter
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be.a(SquareConnect.CustomAttributeFilter);
   });
 
   it('should have the property customAttributeDefinitionId (base name: "custom_attribute_definition_id")', function() {
     // uncomment below and update the code to test the property customAttributeDefinitionId
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property key (base name: "key")', function() {
     // uncomment below and update the code to test the property key
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property stringFilter (base name: "string_filter")', function() {
     // uncomment below and update the code to test the property stringFilter
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property numberFilter (base name: "number_filter")', function() {
     // uncomment below and update the code to test the property numberFilter
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property selectionUidsFilter (base name: "selection_uids_filter")', function() {
     // uncomment below and update the code to test the property selectionUidsFilter
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property boolFilter (base name: "bool_filter")', function() {
     // uncomment below and update the code to test the property boolFilter
-    //var instane = new SquareConnect.CustomAttributeFilter();
+    //var instance = new SquareConnect.CustomAttributeFilter();
     //expect(instance).to.be();
   });
 });

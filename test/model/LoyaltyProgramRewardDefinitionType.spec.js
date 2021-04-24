@@ -19,7 +19,7 @@ describe('LoyaltyProgramRewardDefinitionType', function() {
 
   it('should create an instance of LoyaltyProgramRewardDefinitionType', function() {
     // uncomment below and update the code to test LoyaltyProgramRewardDefinitionType
-    //var instane = new SquareConnect.LoyaltyProgramRewardDefinitionType();
+    //var instance = new SquareConnect.LoyaltyProgramRewardDefinitionType();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramRewardDefinitionType);
   });
 

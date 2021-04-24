@@ -21,23 +21,23 @@ describe('CatalogQueryRange', function() {
 
   it('should create an instance of CatalogQueryRange', function() {
     // uncomment below and update the code to test CatalogQueryRange
-    //var instane = new SquareConnect.CatalogQueryRange();
+    //var instance = new SquareConnect.CatalogQueryRange();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryRange);
   });
 
   it('should have the property attributeName (base name: "attribute_name")', function() {
     // uncomment below and update the code to test the property attributeName
-    //var instane = new SquareConnect.CatalogQueryRange();
+    //var instance = new SquareConnect.CatalogQueryRange();
     //expect(instance).to.be();
   });
   it('should have the property attributeMinValue (base name: "attribute_min_value")', function() {
     // uncomment below and update the code to test the property attributeMinValue
-    //var instane = new SquareConnect.CatalogQueryRange();
+    //var instance = new SquareConnect.CatalogQueryRange();
     //expect(instance).to.be();
   });
   it('should have the property attributeMaxValue (base name: "attribute_max_value")', function() {
     // uncomment below and update the code to test the property attributeMaxValue
-    //var instane = new SquareConnect.CatalogQueryRange();
+    //var instance = new SquareConnect.CatalogQueryRange();
     //expect(instance).to.be();
   });
 });

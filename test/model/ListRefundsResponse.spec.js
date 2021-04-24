@@ -21,23 +21,23 @@ describe('ListRefundsResponse', function() {
 
   it('should create an instance of ListRefundsResponse', function() {
     // uncomment below and update the code to test ListRefundsResponse
-    //var instane = new SquareConnect.ListRefundsResponse();
+    //var instance = new SquareConnect.ListRefundsResponse();
     //expect(instance).to.be.a(SquareConnect.ListRefundsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListRefundsResponse();
+    //var instance = new SquareConnect.ListRefundsResponse();
     //expect(instance).to.be();
   });
   it('should have the property refunds (base name: "refunds")', function() {
     // uncomment below and update the code to test the property refunds
-    //var instane = new SquareConnect.ListRefundsResponse();
+    //var instance = new SquareConnect.ListRefundsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListRefundsResponse();
+    //var instance = new SquareConnect.ListRefundsResponse();
     //expect(instance).to.be();
   });
 });

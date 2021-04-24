@@ -20,18 +20,18 @@ describe('CreateDeviceCodeRequest', function() {
 
   it('should create an instance of CreateDeviceCodeRequest', function() {
     // uncomment below and update the code to test CreateDeviceCodeRequest
-    //var instane = new SquareConnect.CreateDeviceCodeRequest();
+    //var instance = new SquareConnect.CreateDeviceCodeRequest();
     //expect(instance).to.be.a(SquareConnect.CreateDeviceCodeRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateDeviceCodeRequest();
+    //var instance = new SquareConnect.CreateDeviceCodeRequest();
     //expect(instance).to.be();
   });
   it('should have the property deviceCode (base name: "device_code")', function() {
     // uncomment below and update the code to test the property deviceCode
-    //var instane = new SquareConnect.CreateDeviceCodeRequest();
+    //var instance = new SquareConnect.CreateDeviceCodeRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,23 +20,23 @@ describe('CreateCatalogImageRequest', function() {
 
   it('should create an instance of CreateCatalogImageRequest', function() {
     // uncomment below and update the code to test CreateCatalogImageRequest
-    //var instane = new SquareConnect.CreateCatalogImageRequest();
+    //var instance = new SquareConnect.CreateCatalogImageRequest();
     //expect(instance).to.be.a(SquareConnect.CreateCatalogImageRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateCatalogImageRequest();
+    //var instance = new SquareConnect.CreateCatalogImageRequest();
     //expect(instance).to.be();
   });
   it('should have the property objectId (base name: "object_id")', function() {
     // uncomment below and update the code to test the property objectId
-    //var instane = new SquareConnect.CreateCatalogImageRequest();
+    //var instance = new SquareConnect.CreateCatalogImageRequest();
     //expect(instance).to.be();
   });
   it('should have the property image (base name: "image")', function() {
     // uncomment below and update the code to test the property image
-    //var instane = new SquareConnect.CreateCatalogImageRequest();
+    //var instance = new SquareConnect.CreateCatalogImageRequest();
     //expect(instance).to.be();
   });
 });

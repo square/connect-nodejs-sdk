@@ -19,7 +19,7 @@ describe('V1MerchantBusinessType', function() {
 
   it('should create an instance of V1MerchantBusinessType', function() {
     // uncomment below and update the code to test V1MerchantBusinessType
-    //var instane = new SquareConnect.V1MerchantBusinessType();
+    //var instance = new SquareConnect.V1MerchantBusinessType();
     //expect(instance).to.be.a(SquareConnect.V1MerchantBusinessType);
   });
 

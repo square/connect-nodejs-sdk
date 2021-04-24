@@ -20,18 +20,18 @@ describe('GetDeviceCodeResponse', function() {
 
   it('should create an instance of GetDeviceCodeResponse', function() {
     // uncomment below and update the code to test GetDeviceCodeResponse
-    //var instane = new SquareConnect.GetDeviceCodeResponse();
+    //var instance = new SquareConnect.GetDeviceCodeResponse();
     //expect(instance).to.be.a(SquareConnect.GetDeviceCodeResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.GetDeviceCodeResponse();
+    //var instance = new SquareConnect.GetDeviceCodeResponse();
     //expect(instance).to.be();
   });
   it('should have the property deviceCode (base name: "device_code")', function() {
     // uncomment below and update the code to test the property deviceCode
-    //var instane = new SquareConnect.GetDeviceCodeResponse();
+    //var instance = new SquareConnect.GetDeviceCodeResponse();
     //expect(instance).to.be();
   });
 });

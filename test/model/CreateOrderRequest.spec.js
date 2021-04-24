@@ -21,33 +21,33 @@ describe('CreateOrderRequest', function() {
 
   it('should create an instance of CreateOrderRequest', function() {
     // uncomment below and update the code to test CreateOrderRequest
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be.a(SquareConnect.CreateOrderRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property referenceId (base name: "reference_id")', function() {
     // uncomment below and update the code to test the property referenceId
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property lineItems (base name: "line_items")', function() {
     // uncomment below and update the code to test the property lineItems
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property taxes (base name: "taxes")', function() {
     // uncomment below and update the code to test the property taxes
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be();
   });
   it('should have the property discounts (base name: "discounts")', function() {
     // uncomment below and update the code to test the property discounts
-    //var instane = new SquareConnect.CreateOrderRequest();
+    //var instance = new SquareConnect.CreateOrderRequest();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('CatalogSubscriptionPlan', function() {
 
   it('should create an instance of CatalogSubscriptionPlan', function() {
     // uncomment below and update the code to test CatalogSubscriptionPlan
-    //var instane = new SquareConnect.CatalogSubscriptionPlan();
+    //var instance = new SquareConnect.CatalogSubscriptionPlan();
     //expect(instance).to.be.a(SquareConnect.CatalogSubscriptionPlan);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogSubscriptionPlan();
+    //var instance = new SquareConnect.CatalogSubscriptionPlan();
     //expect(instance).to.be();
   });
   it('should have the property phases (base name: "phases")', function() {
     // uncomment below and update the code to test the property phases
-    //var instane = new SquareConnect.CatalogSubscriptionPlan();
+    //var instance = new SquareConnect.CatalogSubscriptionPlan();
     //expect(instance).to.be();
   });
 });

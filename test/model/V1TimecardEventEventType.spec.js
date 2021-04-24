@@ -19,7 +19,7 @@ describe('V1TimecardEventEventType', function() {
 
   it('should create an instance of V1TimecardEventEventType', function() {
     // uncomment below and update the code to test V1TimecardEventEventType
-    //var instane = new SquareConnect.V1TimecardEventEventType();
+    //var instance = new SquareConnect.V1TimecardEventEventType();
     //expect(instance).to.be.a(SquareConnect.V1TimecardEventEventType);
   });
 

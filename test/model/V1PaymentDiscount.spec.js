@@ -21,23 +21,23 @@ describe('V1PaymentDiscount', function() {
 
   it('should create an instance of V1PaymentDiscount', function() {
     // uncomment below and update the code to test V1PaymentDiscount
-    //var instane = new SquareConnect.V1PaymentDiscount();
+    //var instance = new SquareConnect.V1PaymentDiscount();
     //expect(instance).to.be.a(SquareConnect.V1PaymentDiscount);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1PaymentDiscount();
+    //var instance = new SquareConnect.V1PaymentDiscount();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.V1PaymentDiscount();
+    //var instance = new SquareConnect.V1PaymentDiscount();
     //expect(instance).to.be();
   });
   it('should have the property discountId (base name: "discount_id")', function() {
     // uncomment below and update the code to test the property discountId
-    //var instane = new SquareConnect.V1PaymentDiscount();
+    //var instance = new SquareConnect.V1PaymentDiscount();
     //expect(instance).to.be();
   });
 });

@@ -20,53 +20,53 @@ describe('V1ListEmployeesRequest', function() {
 
   it('should create an instance of V1ListEmployeesRequest', function() {
     // uncomment below and update the code to test V1ListEmployeesRequest
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListEmployeesRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginUpdatedAt (base name: "begin_updated_at")', function() {
     // uncomment below and update the code to test the property beginUpdatedAt
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property endUpdatedAt (base name: "end_updated_at")', function() {
     // uncomment below and update the code to test the property endUpdatedAt
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginCreatedAt (base name: "begin_created_at")', function() {
     // uncomment below and update the code to test the property beginCreatedAt
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property endCreatedAt (base name: "end_created_at")', function() {
     // uncomment below and update the code to test the property endCreatedAt
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property externalId (base name: "external_id")', function() {
     // uncomment below and update the code to test the property externalId
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListEmployeesRequest();
+    //var instance = new SquareConnect.V1ListEmployeesRequest();
     //expect(instance).to.be();
   });
 });

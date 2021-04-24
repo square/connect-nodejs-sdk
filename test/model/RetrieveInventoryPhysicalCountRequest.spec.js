@@ -20,7 +20,7 @@ describe('RetrieveInventoryPhysicalCountRequest', function() {
 
   it('should create an instance of RetrieveInventoryPhysicalCountRequest', function() {
     // uncomment below and update the code to test RetrieveInventoryPhysicalCountRequest
-    //var instane = new SquareConnect.RetrieveInventoryPhysicalCountRequest();
+    //var instance = new SquareConnect.RetrieveInventoryPhysicalCountRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveInventoryPhysicalCountRequest);
   });
 

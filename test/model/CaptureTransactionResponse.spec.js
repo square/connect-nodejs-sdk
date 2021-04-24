@@ -21,13 +21,13 @@ describe('CaptureTransactionResponse', function() {
 
   it('should create an instance of CaptureTransactionResponse', function() {
     // uncomment below and update the code to test CaptureTransactionResponse
-    //var instane = new SquareConnect.CaptureTransactionResponse();
+    //var instance = new SquareConnect.CaptureTransactionResponse();
     //expect(instance).to.be.a(SquareConnect.CaptureTransactionResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CaptureTransactionResponse();
+    //var instance = new SquareConnect.CaptureTransactionResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,43 +20,43 @@ describe('ListPaymentRefundsRequest', function() {
 
   it('should create an instance of ListPaymentRefundsRequest', function() {
     // uncomment below and update the code to test ListPaymentRefundsRequest
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be.a(SquareConnect.ListPaymentRefundsRequest);
   });
 
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property sortOrder (base name: "sort_order")', function() {
     // uncomment below and update the code to test the property sortOrder
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
   it('should have the property sourceType (base name: "source_type")', function() {
     // uncomment below and update the code to test the property sourceType
-    //var instane = new SquareConnect.ListPaymentRefundsRequest();
+    //var instance = new SquareConnect.ListPaymentRefundsRequest();
     //expect(instance).to.be();
   });
 });

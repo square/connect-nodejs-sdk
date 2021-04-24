@@ -20,38 +20,38 @@ describe('WageSetting', function() {
 
   it('should create an instance of WageSetting', function() {
     // uncomment below and update the code to test WageSetting
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be.a(SquareConnect.WageSetting);
   });
 
   it('should have the property teamMemberId (base name: "team_member_id")', function() {
     // uncomment below and update the code to test the property teamMemberId
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
   it('should have the property jobAssignments (base name: "job_assignments")', function() {
     // uncomment below and update the code to test the property jobAssignments
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
   it('should have the property isOvertimeExempt (base name: "is_overtime_exempt")', function() {
     // uncomment below and update the code to test the property isOvertimeExempt
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.WageSetting();
+    //var instance = new SquareConnect.WageSetting();
     //expect(instance).to.be();
   });
 });

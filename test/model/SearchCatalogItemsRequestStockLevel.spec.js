@@ -19,7 +19,7 @@ describe('SearchCatalogItemsRequestStockLevel', function() {
 
   it('should create an instance of SearchCatalogItemsRequestStockLevel', function() {
     // uncomment below and update the code to test SearchCatalogItemsRequestStockLevel
-    //var instane = new SquareConnect.SearchCatalogItemsRequestStockLevel();
+    //var instance = new SquareConnect.SearchCatalogItemsRequestStockLevel();
     //expect(instance).to.be.a(SquareConnect.SearchCatalogItemsRequestStockLevel);
   });
 

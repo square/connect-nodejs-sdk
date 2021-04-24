@@ -20,13 +20,13 @@ describe('OrderPricingOptions', function() {
 
   it('should create an instance of OrderPricingOptions', function() {
     // uncomment below and update the code to test OrderPricingOptions
-    //var instane = new SquareConnect.OrderPricingOptions();
+    //var instance = new SquareConnect.OrderPricingOptions();
     //expect(instance).to.be.a(SquareConnect.OrderPricingOptions);
   });
 
   it('should have the property autoApplyDiscounts (base name: "auto_apply_discounts")', function() {
     // uncomment below and update the code to test the property autoApplyDiscounts
-    //var instane = new SquareConnect.OrderPricingOptions();
+    //var instance = new SquareConnect.OrderPricingOptions();
     //expect(instance).to.be();
   });
 });

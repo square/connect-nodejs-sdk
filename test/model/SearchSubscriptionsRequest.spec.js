@@ -20,23 +20,23 @@ describe('SearchSubscriptionsRequest', function() {
 
   it('should create an instance of SearchSubscriptionsRequest', function() {
     // uncomment below and update the code to test SearchSubscriptionsRequest
-    //var instane = new SquareConnect.SearchSubscriptionsRequest();
+    //var instance = new SquareConnect.SearchSubscriptionsRequest();
     //expect(instance).to.be.a(SquareConnect.SearchSubscriptionsRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.SearchSubscriptionsRequest();
+    //var instance = new SquareConnect.SearchSubscriptionsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.SearchSubscriptionsRequest();
+    //var instance = new SquareConnect.SearchSubscriptionsRequest();
     //expect(instance).to.be();
   });
   it('should have the property query (base name: "query")', function() {
     // uncomment below and update the code to test the property query
-    //var instane = new SquareConnect.SearchSubscriptionsRequest();
+    //var instance = new SquareConnect.SearchSubscriptionsRequest();
     //expect(instance).to.be();
   });
 });

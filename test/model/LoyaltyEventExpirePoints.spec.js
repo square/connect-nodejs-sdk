@@ -20,18 +20,18 @@ describe('LoyaltyEventExpirePoints', function() {
 
   it('should create an instance of LoyaltyEventExpirePoints', function() {
     // uncomment below and update the code to test LoyaltyEventExpirePoints
-    //var instane = new SquareConnect.LoyaltyEventExpirePoints();
+    //var instance = new SquareConnect.LoyaltyEventExpirePoints();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventExpirePoints);
   });
 
   it('should have the property loyaltyProgramId (base name: "loyalty_program_id")', function() {
     // uncomment below and update the code to test the property loyaltyProgramId
-    //var instane = new SquareConnect.LoyaltyEventExpirePoints();
+    //var instance = new SquareConnect.LoyaltyEventExpirePoints();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyEventExpirePoints();
+    //var instance = new SquareConnect.LoyaltyEventExpirePoints();
     //expect(instance).to.be();
   });
 });

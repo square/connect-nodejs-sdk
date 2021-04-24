@@ -20,7 +20,7 @@ describe('SubmitEvidenceRequest', function() {
 
   it('should create an instance of SubmitEvidenceRequest', function() {
     // uncomment below and update the code to test SubmitEvidenceRequest
-    //var instane = new SquareConnect.SubmitEvidenceRequest();
+    //var instance = new SquareConnect.SubmitEvidenceRequest();
     //expect(instance).to.be.a(SquareConnect.SubmitEvidenceRequest);
   });
 

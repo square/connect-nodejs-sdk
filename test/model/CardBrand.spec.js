@@ -20,7 +20,7 @@ describe('CardBrand', function() {
 
   it('should create an instance of CardBrand', function() {
     // uncomment below and update the code to test CardBrand
-    //var instane = new SquareConnect.CardBrand();
+    //var instance = new SquareConnect.CardBrand();
     //expect(instance).to.be.a(SquareConnect.CardBrand);
   });
 

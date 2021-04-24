@@ -21,23 +21,23 @@ describe('BatchRetrieveCatalogObjectsResponse', function() {
 
   it('should create an instance of BatchRetrieveCatalogObjectsResponse', function() {
     // uncomment below and update the code to test BatchRetrieveCatalogObjectsResponse
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
     //expect(instance).to.be.a(SquareConnect.BatchRetrieveCatalogObjectsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property objects (base name: "objects")', function() {
     // uncomment below and update the code to test the property objects
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
     //expect(instance).to.be();
   });
   it('should have the property relatedObjects (base name: "related_objects")', function() {
     // uncomment below and update the code to test the property relatedObjects
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsResponse();
     //expect(instance).to.be();
   });
 });

@@ -20,7 +20,7 @@ describe('CancelSubscriptionRequest', function() {
 
   it('should create an instance of CancelSubscriptionRequest', function() {
     // uncomment below and update the code to test CancelSubscriptionRequest
-    //var instane = new SquareConnect.CancelSubscriptionRequest();
+    //var instance = new SquareConnect.CancelSubscriptionRequest();
     //expect(instance).to.be.a(SquareConnect.CancelSubscriptionRequest);
   });
 

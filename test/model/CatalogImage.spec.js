@@ -20,23 +20,23 @@ describe('CatalogImage', function() {
 
   it('should create an instance of CatalogImage', function() {
     // uncomment below and update the code to test CatalogImage
-    //var instane = new SquareConnect.CatalogImage();
+    //var instance = new SquareConnect.CatalogImage();
     //expect(instance).to.be.a(SquareConnect.CatalogImage);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogImage();
+    //var instance = new SquareConnect.CatalogImage();
     //expect(instance).to.be();
   });
   it('should have the property url (base name: "url")', function() {
     // uncomment below and update the code to test the property url
-    //var instane = new SquareConnect.CatalogImage();
+    //var instance = new SquareConnect.CatalogImage();
     //expect(instance).to.be();
   });
   it('should have the property caption (base name: "caption")', function() {
     // uncomment below and update the code to test the property caption
-    //var instane = new SquareConnect.CatalogImage();
+    //var instance = new SquareConnect.CatalogImage();
     //expect(instance).to.be();
   });
 });

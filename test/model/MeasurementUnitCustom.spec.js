@@ -20,18 +20,18 @@ describe('MeasurementUnitCustom', function() {
 
   it('should create an instance of MeasurementUnitCustom', function() {
     // uncomment below and update the code to test MeasurementUnitCustom
-    //var instane = new SquareConnect.MeasurementUnitCustom();
+    //var instance = new SquareConnect.MeasurementUnitCustom();
     //expect(instance).to.be.a(SquareConnect.MeasurementUnitCustom);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.MeasurementUnitCustom();
+    //var instance = new SquareConnect.MeasurementUnitCustom();
     //expect(instance).to.be();
   });
   it('should have the property abbreviation (base name: "abbreviation")', function() {
     // uncomment below and update the code to test the property abbreviation
-    //var instane = new SquareConnect.MeasurementUnitCustom();
+    //var instance = new SquareConnect.MeasurementUnitCustom();
     //expect(instance).to.be();
   });
 });

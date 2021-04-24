@@ -20,7 +20,7 @@ describe('TaxCalculationPhase', function() {
 
   it('should create an instance of TaxCalculationPhase', function() {
     // uncomment below and update the code to test TaxCalculationPhase
-    //var instane = new SquareConnect.TaxCalculationPhase();
+    //var instance = new SquareConnect.TaxCalculationPhase();
     //expect(instance).to.be.a(SquareConnect.TaxCalculationPhase);
   });
 

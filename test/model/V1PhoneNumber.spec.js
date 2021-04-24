@@ -21,18 +21,18 @@ describe('V1PhoneNumber', function() {
 
   it('should create an instance of V1PhoneNumber', function() {
     // uncomment below and update the code to test V1PhoneNumber
-    //var instane = new SquareConnect.V1PhoneNumber();
+    //var instance = new SquareConnect.V1PhoneNumber();
     //expect(instance).to.be.a(SquareConnect.V1PhoneNumber);
   });
 
   it('should have the property callingCode (base name: "calling_code")', function() {
     // uncomment below and update the code to test the property callingCode
-    //var instane = new SquareConnect.V1PhoneNumber();
+    //var instance = new SquareConnect.V1PhoneNumber();
     //expect(instance).to.be();
   });
   it('should have the property _number (base name: "number")', function() {
     // uncomment below and update the code to test the property _number
-    //var instane = new SquareConnect.V1PhoneNumber();
+    //var instance = new SquareConnect.V1PhoneNumber();
     //expect(instance).to.be();
   });
 });

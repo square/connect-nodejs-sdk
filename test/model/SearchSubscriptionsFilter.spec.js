@@ -20,18 +20,18 @@ describe('SearchSubscriptionsFilter', function() {
 
   it('should create an instance of SearchSubscriptionsFilter', function() {
     // uncomment below and update the code to test SearchSubscriptionsFilter
-    //var instane = new SquareConnect.SearchSubscriptionsFilter();
+    //var instance = new SquareConnect.SearchSubscriptionsFilter();
     //expect(instance).to.be.a(SquareConnect.SearchSubscriptionsFilter);
   });
 
   it('should have the property customerIds (base name: "customer_ids")', function() {
     // uncomment below and update the code to test the property customerIds
-    //var instane = new SquareConnect.SearchSubscriptionsFilter();
+    //var instance = new SquareConnect.SearchSubscriptionsFilter();
     //expect(instance).to.be();
   });
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.SearchSubscriptionsFilter();
+    //var instance = new SquareConnect.SearchSubscriptionsFilter();
     //expect(instance).to.be();
   });
 });

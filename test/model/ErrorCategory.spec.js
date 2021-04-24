@@ -20,7 +20,7 @@ describe('ErrorCategory', function() {
 
   it('should create an instance of ErrorCategory', function() {
     // uncomment below and update the code to test ErrorCategory
-    //var instane = new SquareConnect.ErrorCategory();
+    //var instance = new SquareConnect.ErrorCategory();
     //expect(instance).to.be.a(SquareConnect.ErrorCategory);
   });
 

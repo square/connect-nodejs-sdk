@@ -20,43 +20,43 @@ describe('Employee', function() {
 
   it('should create an instance of Employee', function() {
     // uncomment below and update the code to test Employee
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be.a(SquareConnect.Employee);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property firstName (base name: "first_name")', function() {
     // uncomment below and update the code to test the property firstName
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property lastName (base name: "last_name")', function() {
     // uncomment below and update the code to test the property lastName
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property locationIds (base name: "location_ids")', function() {
     // uncomment below and update the code to test the property locationIds
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.Employee();
+    //var instance = new SquareConnect.Employee();
     //expect(instance).to.be();
   });
 });

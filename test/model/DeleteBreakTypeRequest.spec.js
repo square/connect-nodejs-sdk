@@ -20,7 +20,7 @@ describe('DeleteBreakTypeRequest', function() {
 
   it('should create an instance of DeleteBreakTypeRequest', function() {
     // uncomment below and update the code to test DeleteBreakTypeRequest
-    //var instane = new SquareConnect.DeleteBreakTypeRequest();
+    //var instance = new SquareConnect.DeleteBreakTypeRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteBreakTypeRequest);
   });
 

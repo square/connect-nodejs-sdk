@@ -20,7 +20,7 @@ describe('LocationStatus', function() {
 
   it('should create an instance of LocationStatus', function() {
     // uncomment below and update the code to test LocationStatus
-    //var instane = new SquareConnect.LocationStatus();
+    //var instance = new SquareConnect.LocationStatus();
     //expect(instance).to.be.a(SquareConnect.LocationStatus);
   });
 

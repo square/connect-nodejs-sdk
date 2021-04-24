@@ -19,7 +19,7 @@ describe('InvoicePaymentReminderStatus', function() {
 
   it('should create an instance of InvoicePaymentReminderStatus', function() {
     // uncomment below and update the code to test InvoicePaymentReminderStatus
-    //var instane = new SquareConnect.InvoicePaymentReminderStatus();
+    //var instance = new SquareConnect.InvoicePaymentReminderStatus();
     //expect(instance).to.be.a(SquareConnect.InvoicePaymentReminderStatus);
   });
 

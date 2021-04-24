@@ -20,7 +20,7 @@ describe('TaxInclusionType', function() {
 
   it('should create an instance of TaxInclusionType', function() {
     // uncomment below and update the code to test TaxInclusionType
-    //var instane = new SquareConnect.TaxInclusionType();
+    //var instance = new SquareConnect.TaxInclusionType();
     //expect(instance).to.be.a(SquareConnect.TaxInclusionType);
   });
 

@@ -20,13 +20,13 @@ describe('LoyaltyEventOrderFilter', function() {
 
   it('should create an instance of LoyaltyEventOrderFilter', function() {
     // uncomment below and update the code to test LoyaltyEventOrderFilter
-    //var instane = new SquareConnect.LoyaltyEventOrderFilter();
+    //var instance = new SquareConnect.LoyaltyEventOrderFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventOrderFilter);
   });
 
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.LoyaltyEventOrderFilter();
+    //var instance = new SquareConnect.LoyaltyEventOrderFilter();
     //expect(instance).to.be();
   });
 });

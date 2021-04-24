@@ -19,7 +19,7 @@ describe('V1FeeInclusionType', function() {
 
   it('should create an instance of V1FeeInclusionType', function() {
     // uncomment below and update the code to test V1FeeInclusionType
-    //var instane = new SquareConnect.V1FeeInclusionType();
+    //var instance = new SquareConnect.V1FeeInclusionType();
     //expect(instance).to.be.a(SquareConnect.V1FeeInclusionType);
   });
 

@@ -21,7 +21,7 @@ describe('DeleteCatalogObjectRequest', function() {
 
   it('should create an instance of DeleteCatalogObjectRequest', function() {
     // uncomment below and update the code to test DeleteCatalogObjectRequest
-    //var instane = new SquareConnect.DeleteCatalogObjectRequest();
+    //var instance = new SquareConnect.DeleteCatalogObjectRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteCatalogObjectRequest);
   });
 

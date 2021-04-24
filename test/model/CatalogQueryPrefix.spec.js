@@ -21,18 +21,18 @@ describe('CatalogQueryPrefix', function() {
 
   it('should create an instance of CatalogQueryPrefix', function() {
     // uncomment below and update the code to test CatalogQueryPrefix
-    //var instane = new SquareConnect.CatalogQueryPrefix();
+    //var instance = new SquareConnect.CatalogQueryPrefix();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryPrefix);
   });
 
   it('should have the property attributeName (base name: "attribute_name")', function() {
     // uncomment below and update the code to test the property attributeName
-    //var instane = new SquareConnect.CatalogQueryPrefix();
+    //var instance = new SquareConnect.CatalogQueryPrefix();
     //expect(instance).to.be();
   });
   it('should have the property attributePrefix (base name: "attribute_prefix")', function() {
     // uncomment below and update the code to test the property attributePrefix
-    //var instane = new SquareConnect.CatalogQueryPrefix();
+    //var instance = new SquareConnect.CatalogQueryPrefix();
     //expect(instance).to.be();
   });
 });

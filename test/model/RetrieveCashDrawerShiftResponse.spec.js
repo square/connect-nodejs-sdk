@@ -20,18 +20,18 @@ describe('RetrieveCashDrawerShiftResponse', function() {
 
   it('should create an instance of RetrieveCashDrawerShiftResponse', function() {
     // uncomment below and update the code to test RetrieveCashDrawerShiftResponse
-    //var instane = new SquareConnect.RetrieveCashDrawerShiftResponse();
+    //var instance = new SquareConnect.RetrieveCashDrawerShiftResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveCashDrawerShiftResponse);
   });
 
   it('should have the property cashDrawerShift (base name: "cash_drawer_shift")', function() {
     // uncomment below and update the code to test the property cashDrawerShift
-    //var instane = new SquareConnect.RetrieveCashDrawerShiftResponse();
+    //var instance = new SquareConnect.RetrieveCashDrawerShiftResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveCashDrawerShiftResponse();
+    //var instance = new SquareConnect.RetrieveCashDrawerShiftResponse();
     //expect(instance).to.be();
   });
 });

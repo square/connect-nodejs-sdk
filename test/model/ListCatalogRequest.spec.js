@@ -21,18 +21,18 @@ describe('ListCatalogRequest', function() {
 
   it('should create an instance of ListCatalogRequest', function() {
     // uncomment below and update the code to test ListCatalogRequest
-    //var instane = new SquareConnect.ListCatalogRequest();
+    //var instance = new SquareConnect.ListCatalogRequest();
     //expect(instance).to.be.a(SquareConnect.ListCatalogRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCatalogRequest();
+    //var instance = new SquareConnect.ListCatalogRequest();
     //expect(instance).to.be();
   });
   it('should have the property types (base name: "types")', function() {
     // uncomment below and update the code to test the property types
-    //var instane = new SquareConnect.ListCatalogRequest();
+    //var instance = new SquareConnect.ListCatalogRequest();
     //expect(instance).to.be();
   });
 });

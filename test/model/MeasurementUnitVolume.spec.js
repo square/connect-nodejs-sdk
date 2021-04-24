@@ -19,7 +19,7 @@ describe('MeasurementUnitVolume', function() {
 
   it('should create an instance of MeasurementUnitVolume', function() {
     // uncomment below and update the code to test MeasurementUnitVolume
-    //var instane = new SquareConnect.MeasurementUnitVolume();
+    //var instance = new SquareConnect.MeasurementUnitVolume();
     //expect(instance).to.be.a(SquareConnect.MeasurementUnitVolume);
   });
 

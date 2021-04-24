@@ -21,13 +21,13 @@ describe('CatalogQueryText', function() {
 
   it('should create an instance of CatalogQueryText', function() {
     // uncomment below and update the code to test CatalogQueryText
-    //var instane = new SquareConnect.CatalogQueryText();
+    //var instance = new SquareConnect.CatalogQueryText();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryText);
   });
 
   it('should have the property keywords (base name: "keywords")', function() {
     // uncomment below and update the code to test the property keywords
-    //var instane = new SquareConnect.CatalogQueryText();
+    //var instance = new SquareConnect.CatalogQueryText();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('CashDrawerDevice', function() {
 
   it('should create an instance of CashDrawerDevice', function() {
     // uncomment below and update the code to test CashDrawerDevice
-    //var instane = new SquareConnect.CashDrawerDevice();
+    //var instance = new SquareConnect.CashDrawerDevice();
     //expect(instance).to.be.a(SquareConnect.CashDrawerDevice);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.CashDrawerDevice();
+    //var instance = new SquareConnect.CashDrawerDevice();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CashDrawerDevice();
+    //var instance = new SquareConnect.CashDrawerDevice();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('CalculateOrderResponse', function() {
 
   it('should create an instance of CalculateOrderResponse', function() {
     // uncomment below and update the code to test CalculateOrderResponse
-    //var instane = new SquareConnect.CalculateOrderResponse();
+    //var instance = new SquareConnect.CalculateOrderResponse();
     //expect(instance).to.be.a(SquareConnect.CalculateOrderResponse);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.CalculateOrderResponse();
+    //var instance = new SquareConnect.CalculateOrderResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CalculateOrderResponse();
+    //var instance = new SquareConnect.CalculateOrderResponse();
     //expect(instance).to.be();
   });
 });

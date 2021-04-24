@@ -21,23 +21,23 @@ describe('CatalogModifierList', function() {
 
   it('should create an instance of CatalogModifierList', function() {
     // uncomment below and update the code to test CatalogModifierList
-    //var instane = new SquareConnect.CatalogModifierList();
+    //var instance = new SquareConnect.CatalogModifierList();
     //expect(instance).to.be.a(SquareConnect.CatalogModifierList);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogModifierList();
+    //var instance = new SquareConnect.CatalogModifierList();
     //expect(instance).to.be();
   });
   it('should have the property selectionType (base name: "selection_type")', function() {
     // uncomment below and update the code to test the property selectionType
-    //var instane = new SquareConnect.CatalogModifierList();
+    //var instance = new SquareConnect.CatalogModifierList();
     //expect(instance).to.be();
   });
   it('should have the property modifiers (base name: "modifiers")', function() {
     // uncomment below and update the code to test the property modifiers
-    //var instane = new SquareConnect.CatalogModifierList();
+    //var instance = new SquareConnect.CatalogModifierList();
     //expect(instance).to.be();
   });
 });

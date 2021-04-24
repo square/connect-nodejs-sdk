@@ -19,7 +19,7 @@ describe('CashDrawerShiftState', function() {
 
   it('should create an instance of CashDrawerShiftState', function() {
     // uncomment below and update the code to test CashDrawerShiftState
-    //var instane = new SquareConnect.CashDrawerShiftState();
+    //var instance = new SquareConnect.CashDrawerShiftState();
     //expect(instance).to.be.a(SquareConnect.CashDrawerShiftState);
   });
 

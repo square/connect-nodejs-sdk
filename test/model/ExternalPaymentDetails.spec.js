@@ -20,28 +20,28 @@ describe('ExternalPaymentDetails', function() {
 
   it('should create an instance of ExternalPaymentDetails', function() {
     // uncomment below and update the code to test ExternalPaymentDetails
-    //var instane = new SquareConnect.ExternalPaymentDetails();
+    //var instance = new SquareConnect.ExternalPaymentDetails();
     //expect(instance).to.be.a(SquareConnect.ExternalPaymentDetails);
   });
 
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.ExternalPaymentDetails();
+    //var instance = new SquareConnect.ExternalPaymentDetails();
     //expect(instance).to.be();
   });
   it('should have the property source (base name: "source")', function() {
     // uncomment below and update the code to test the property source
-    //var instane = new SquareConnect.ExternalPaymentDetails();
+    //var instance = new SquareConnect.ExternalPaymentDetails();
     //expect(instance).to.be();
   });
   it('should have the property sourceId (base name: "source_id")', function() {
     // uncomment below and update the code to test the property sourceId
-    //var instane = new SquareConnect.ExternalPaymentDetails();
+    //var instance = new SquareConnect.ExternalPaymentDetails();
     //expect(instance).to.be();
   });
   it('should have the property sourceFeeMoney (base name: "source_fee_money")', function() {
     // uncomment below and update the code to test the property sourceFeeMoney
-    //var instane = new SquareConnect.ExternalPaymentDetails();
+    //var instance = new SquareConnect.ExternalPaymentDetails();
     //expect(instance).to.be();
   });
 });

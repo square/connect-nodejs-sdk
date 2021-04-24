@@ -20,73 +20,73 @@ describe('LoyaltyEvent', function() {
 
   it('should create an instance of LoyaltyEvent', function() {
     // uncomment below and update the code to test LoyaltyEvent
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEvent);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property accumulatePoints (base name: "accumulate_points")', function() {
     // uncomment below and update the code to test the property accumulatePoints
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property createReward (base name: "create_reward")', function() {
     // uncomment below and update the code to test the property createReward
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property redeemReward (base name: "redeem_reward")', function() {
     // uncomment below and update the code to test the property redeemReward
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property deleteReward (base name: "delete_reward")', function() {
     // uncomment below and update the code to test the property deleteReward
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property adjustPoints (base name: "adjust_points")', function() {
     // uncomment below and update the code to test the property adjustPoints
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property loyaltyAccountId (base name: "loyalty_account_id")', function() {
     // uncomment below and update the code to test the property loyaltyAccountId
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property source (base name: "source")', function() {
     // uncomment below and update the code to test the property source
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property expirePoints (base name: "expire_points")', function() {
     // uncomment below and update the code to test the property expirePoints
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
   it('should have the property otherEvent (base name: "other_event")', function() {
     // uncomment below and update the code to test the property otherEvent
-    //var instane = new SquareConnect.LoyaltyEvent();
+    //var instance = new SquareConnect.LoyaltyEvent();
     //expect(instance).to.be();
   });
 });

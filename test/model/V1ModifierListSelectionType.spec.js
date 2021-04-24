@@ -19,7 +19,7 @@ describe('V1ModifierListSelectionType', function() {
 
   it('should create an instance of V1ModifierListSelectionType', function() {
     // uncomment below and update the code to test V1ModifierListSelectionType
-    //var instane = new SquareConnect.V1ModifierListSelectionType();
+    //var instance = new SquareConnect.V1ModifierListSelectionType();
     //expect(instance).to.be.a(SquareConnect.V1ModifierListSelectionType);
   });
 

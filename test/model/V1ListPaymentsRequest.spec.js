@@ -20,38 +20,38 @@ describe('V1ListPaymentsRequest', function() {
 
   it('should create an instance of V1ListPaymentsRequest', function() {
     // uncomment below and update the code to test V1ListPaymentsRequest
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListPaymentsRequest);
   });
 
   it('should have the property order (base name: "order")', function() {
     // uncomment below and update the code to test the property order
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property beginTime (base name: "begin_time")', function() {
     // uncomment below and update the code to test the property beginTime
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property endTime (base name: "end_time")', function() {
     // uncomment below and update the code to test the property endTime
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property limit (base name: "limit")', function() {
     // uncomment below and update the code to test the property limit
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
   it('should have the property includePartial (base name: "include_partial")', function() {
     // uncomment below and update the code to test the property includePartial
-    //var instane = new SquareConnect.V1ListPaymentsRequest();
+    //var instance = new SquareConnect.V1ListPaymentsRequest();
     //expect(instance).to.be();
   });
 });

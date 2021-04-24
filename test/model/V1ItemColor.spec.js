@@ -19,7 +19,7 @@ describe('V1ItemColor', function() {
 
   it('should create an instance of V1ItemColor', function() {
     // uncomment below and update the code to test V1ItemColor
-    //var instane = new SquareConnect.V1ItemColor();
+    //var instance = new SquareConnect.V1ItemColor();
     //expect(instance).to.be.a(SquareConnect.V1ItemColor);
   });
 

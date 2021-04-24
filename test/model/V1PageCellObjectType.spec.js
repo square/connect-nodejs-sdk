@@ -19,7 +19,7 @@ describe('V1PageCellObjectType', function() {
 
   it('should create an instance of V1PageCellObjectType', function() {
     // uncomment below and update the code to test V1PageCellObjectType
-    //var instane = new SquareConnect.V1PageCellObjectType();
+    //var instance = new SquareConnect.V1PageCellObjectType();
     //expect(instance).to.be.a(SquareConnect.V1PageCellObjectType);
   });
 

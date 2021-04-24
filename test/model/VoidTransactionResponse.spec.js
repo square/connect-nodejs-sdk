@@ -21,13 +21,13 @@ describe('VoidTransactionResponse', function() {
 
   it('should create an instance of VoidTransactionResponse', function() {
     // uncomment below and update the code to test VoidTransactionResponse
-    //var instane = new SquareConnect.VoidTransactionResponse();
+    //var instance = new SquareConnect.VoidTransactionResponse();
     //expect(instance).to.be.a(SquareConnect.VoidTransactionResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.VoidTransactionResponse();
+    //var instance = new SquareConnect.VoidTransactionResponse();
     //expect(instance).to.be();
   });
 });

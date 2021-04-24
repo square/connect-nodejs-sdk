@@ -19,7 +19,7 @@ describe('SubscriptionEventSubscriptionEventType', function() {
 
   it('should create an instance of SubscriptionEventSubscriptionEventType', function() {
     // uncomment below and update the code to test SubscriptionEventSubscriptionEventType
-    //var instane = new SquareConnect.SubscriptionEventSubscriptionEventType();
+    //var instance = new SquareConnect.SubscriptionEventSubscriptionEventType();
     //expect(instance).to.be.a(SquareConnect.SubscriptionEventSubscriptionEventType);
   });
 

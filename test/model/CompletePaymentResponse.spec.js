@@ -20,18 +20,18 @@ describe('CompletePaymentResponse', function() {
 
   it('should create an instance of CompletePaymentResponse', function() {
     // uncomment below and update the code to test CompletePaymentResponse
-    //var instane = new SquareConnect.CompletePaymentResponse();
+    //var instance = new SquareConnect.CompletePaymentResponse();
     //expect(instance).to.be.a(SquareConnect.CompletePaymentResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CompletePaymentResponse();
+    //var instance = new SquareConnect.CompletePaymentResponse();
     //expect(instance).to.be();
   });
   it('should have the property payment (base name: "payment")', function() {
     // uncomment below and update the code to test the property payment
-    //var instane = new SquareConnect.CompletePaymentResponse();
+    //var instance = new SquareConnect.CompletePaymentResponse();
     //expect(instance).to.be();
   });
 });

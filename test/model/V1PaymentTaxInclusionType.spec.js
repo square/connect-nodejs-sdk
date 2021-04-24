@@ -19,7 +19,7 @@ describe('V1PaymentTaxInclusionType', function() {
 
   it('should create an instance of V1PaymentTaxInclusionType', function() {
     // uncomment below and update the code to test V1PaymentTaxInclusionType
-    //var instane = new SquareConnect.V1PaymentTaxInclusionType();
+    //var instance = new SquareConnect.V1PaymentTaxInclusionType();
     //expect(instance).to.be.a(SquareConnect.V1PaymentTaxInclusionType);
   });
 

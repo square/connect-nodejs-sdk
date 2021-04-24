@@ -20,23 +20,23 @@ describe('LoyaltyEventAdjustPoints', function() {
 
   it('should create an instance of LoyaltyEventAdjustPoints', function() {
     // uncomment below and update the code to test LoyaltyEventAdjustPoints
-    //var instane = new SquareConnect.LoyaltyEventAdjustPoints();
+    //var instance = new SquareConnect.LoyaltyEventAdjustPoints();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventAdjustPoints);
   });
 
   it('should have the property loyaltyProgramId (base name: "loyalty_program_id")', function() {
     // uncomment below and update the code to test the property loyaltyProgramId
-    //var instane = new SquareConnect.LoyaltyEventAdjustPoints();
+    //var instance = new SquareConnect.LoyaltyEventAdjustPoints();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyEventAdjustPoints();
+    //var instance = new SquareConnect.LoyaltyEventAdjustPoints();
     //expect(instance).to.be();
   });
   it('should have the property reason (base name: "reason")', function() {
     // uncomment below and update the code to test the property reason
-    //var instane = new SquareConnect.LoyaltyEventAdjustPoints();
+    //var instance = new SquareConnect.LoyaltyEventAdjustPoints();
     //expect(instance).to.be();
   });
 });

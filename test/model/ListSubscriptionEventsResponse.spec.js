@@ -20,23 +20,23 @@ describe('ListSubscriptionEventsResponse', function() {
 
   it('should create an instance of ListSubscriptionEventsResponse', function() {
     // uncomment below and update the code to test ListSubscriptionEventsResponse
-    //var instane = new SquareConnect.ListSubscriptionEventsResponse();
+    //var instance = new SquareConnect.ListSubscriptionEventsResponse();
     //expect(instance).to.be.a(SquareConnect.ListSubscriptionEventsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.ListSubscriptionEventsResponse();
+    //var instance = new SquareConnect.ListSubscriptionEventsResponse();
     //expect(instance).to.be();
   });
   it('should have the property subscriptionEvents (base name: "subscription_events")', function() {
     // uncomment below and update the code to test the property subscriptionEvents
-    //var instane = new SquareConnect.ListSubscriptionEventsResponse();
+    //var instance = new SquareConnect.ListSubscriptionEventsResponse();
     //expect(instance).to.be();
   });
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListSubscriptionEventsResponse();
+    //var instance = new SquareConnect.ListSubscriptionEventsResponse();
     //expect(instance).to.be();
   });
 });

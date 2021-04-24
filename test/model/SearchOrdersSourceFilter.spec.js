@@ -20,13 +20,13 @@ describe('SearchOrdersSourceFilter', function() {
 
   it('should create an instance of SearchOrdersSourceFilter', function() {
     // uncomment below and update the code to test SearchOrdersSourceFilter
-    //var instane = new SquareConnect.SearchOrdersSourceFilter();
+    //var instance = new SquareConnect.SearchOrdersSourceFilter();
     //expect(instance).to.be.a(SquareConnect.SearchOrdersSourceFilter);
   });
 
   it('should have the property sourceNames (base name: "source_names")', function() {
     // uncomment below and update the code to test the property sourceNames
-    //var instane = new SquareConnect.SearchOrdersSourceFilter();
+    //var instance = new SquareConnect.SearchOrdersSourceFilter();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('LoyaltyProgramTerminology', function() {
 
   it('should create an instance of LoyaltyProgramTerminology', function() {
     // uncomment below and update the code to test LoyaltyProgramTerminology
-    //var instane = new SquareConnect.LoyaltyProgramTerminology();
+    //var instance = new SquareConnect.LoyaltyProgramTerminology();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramTerminology);
   });
 
   it('should have the property one (base name: "one")', function() {
     // uncomment below and update the code to test the property one
-    //var instane = new SquareConnect.LoyaltyProgramTerminology();
+    //var instance = new SquareConnect.LoyaltyProgramTerminology();
     //expect(instance).to.be();
   });
   it('should have the property other (base name: "other")', function() {
     // uncomment below and update the code to test the property other
-    //var instane = new SquareConnect.LoyaltyProgramTerminology();
+    //var instance = new SquareConnect.LoyaltyProgramTerminology();
     //expect(instance).to.be();
   });
 });

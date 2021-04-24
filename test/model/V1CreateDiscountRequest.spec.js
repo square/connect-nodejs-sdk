@@ -20,13 +20,13 @@ describe('V1CreateDiscountRequest', function() {
 
   it('should create an instance of V1CreateDiscountRequest', function() {
     // uncomment below and update the code to test V1CreateDiscountRequest
-    //var instane = new SquareConnect.V1CreateDiscountRequest();
+    //var instance = new SquareConnect.V1CreateDiscountRequest();
     //expect(instance).to.be.a(SquareConnect.V1CreateDiscountRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1CreateDiscountRequest();
+    //var instance = new SquareConnect.V1CreateDiscountRequest();
     //expect(instance).to.be();
   });
 });

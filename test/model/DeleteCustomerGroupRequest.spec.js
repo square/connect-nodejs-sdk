@@ -20,7 +20,7 @@ describe('DeleteCustomerGroupRequest', function() {
 
   it('should create an instance of DeleteCustomerGroupRequest', function() {
     // uncomment below and update the code to test DeleteCustomerGroupRequest
-    //var instane = new SquareConnect.DeleteCustomerGroupRequest();
+    //var instance = new SquareConnect.DeleteCustomerGroupRequest();
     //expect(instance).to.be.a(SquareConnect.DeleteCustomerGroupRequest);
   });
 

@@ -19,7 +19,7 @@ describe('CardSquareProduct', function() {
 
   it('should create an instance of CardSquareProduct', function() {
     // uncomment below and update the code to test CardSquareProduct
-    //var instane = new SquareConnect.CardSquareProduct();
+    //var instance = new SquareConnect.CardSquareProduct();
     //expect(instance).to.be.a(SquareConnect.CardSquareProduct);
   });
 

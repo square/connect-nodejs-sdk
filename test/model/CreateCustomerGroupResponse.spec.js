@@ -20,18 +20,18 @@ describe('CreateCustomerGroupResponse', function() {
 
   it('should create an instance of CreateCustomerGroupResponse', function() {
     // uncomment below and update the code to test CreateCustomerGroupResponse
-    //var instane = new SquareConnect.CreateCustomerGroupResponse();
+    //var instance = new SquareConnect.CreateCustomerGroupResponse();
     //expect(instance).to.be.a(SquareConnect.CreateCustomerGroupResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CreateCustomerGroupResponse();
+    //var instance = new SquareConnect.CreateCustomerGroupResponse();
     //expect(instance).to.be();
   });
   it('should have the property group (base name: "group")', function() {
     // uncomment below and update the code to test the property group
-    //var instane = new SquareConnect.CreateCustomerGroupResponse();
+    //var instance = new SquareConnect.CreateCustomerGroupResponse();
     //expect(instance).to.be();
   });
 });

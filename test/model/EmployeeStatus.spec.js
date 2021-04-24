@@ -19,7 +19,7 @@ describe('EmployeeStatus', function() {
 
   it('should create an instance of EmployeeStatus', function() {
     // uncomment below and update the code to test EmployeeStatus
-    //var instane = new SquareConnect.EmployeeStatus();
+    //var instance = new SquareConnect.EmployeeStatus();
     //expect(instance).to.be.a(SquareConnect.EmployeeStatus);
   });
 

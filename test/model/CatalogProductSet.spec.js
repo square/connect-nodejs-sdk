@@ -20,43 +20,43 @@ describe('CatalogProductSet', function() {
 
   it('should create an instance of CatalogProductSet', function() {
     // uncomment below and update the code to test CatalogProductSet
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be.a(SquareConnect.CatalogProductSet);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property productIdsAny (base name: "product_ids_any")', function() {
     // uncomment below and update the code to test the property productIdsAny
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property productIdsAll (base name: "product_ids_all")', function() {
     // uncomment below and update the code to test the property productIdsAll
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property quantityExact (base name: "quantity_exact")', function() {
     // uncomment below and update the code to test the property quantityExact
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property quantityMin (base name: "quantity_min")', function() {
     // uncomment below and update the code to test the property quantityMin
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property quantityMax (base name: "quantity_max")', function() {
     // uncomment below and update the code to test the property quantityMax
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
   it('should have the property allProducts (base name: "all_products")', function() {
     // uncomment below and update the code to test the property allProducts
-    //var instane = new SquareConnect.CatalogProductSet();
+    //var instance = new SquareConnect.CatalogProductSet();
     //expect(instance).to.be();
   });
 });

@@ -20,18 +20,18 @@ describe('CustomerTextFilter', function() {
 
   it('should create an instance of CustomerTextFilter', function() {
     // uncomment below and update the code to test CustomerTextFilter
-    //var instane = new SquareConnect.CustomerTextFilter();
+    //var instance = new SquareConnect.CustomerTextFilter();
     //expect(instance).to.be.a(SquareConnect.CustomerTextFilter);
   });
 
   it('should have the property exact (base name: "exact")', function() {
     // uncomment below and update the code to test the property exact
-    //var instane = new SquareConnect.CustomerTextFilter();
+    //var instance = new SquareConnect.CustomerTextFilter();
     //expect(instance).to.be();
   });
   it('should have the property fuzzy (base name: "fuzzy")', function() {
     // uncomment below and update the code to test the property fuzzy
-    //var instane = new SquareConnect.CustomerTextFilter();
+    //var instance = new SquareConnect.CustomerTextFilter();
     //expect(instance).to.be();
   });
 });

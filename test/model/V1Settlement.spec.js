@@ -21,38 +21,38 @@ describe('V1Settlement', function() {
 
   it('should create an instance of V1Settlement', function() {
     // uncomment below and update the code to test V1Settlement
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be.a(SquareConnect.V1Settlement);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
   it('should have the property totalMoney (base name: "total_money")', function() {
     // uncomment below and update the code to test the property totalMoney
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
   it('should have the property initiatedAt (base name: "initiated_at")', function() {
     // uncomment below and update the code to test the property initiatedAt
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
   it('should have the property bankAccountId (base name: "bank_account_id")', function() {
     // uncomment below and update the code to test the property bankAccountId
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
   it('should have the property entries (base name: "entries")', function() {
     // uncomment below and update the code to test the property entries
-    //var instane = new SquareConnect.V1Settlement();
+    //var instance = new SquareConnect.V1Settlement();
     //expect(instance).to.be();
   });
 });

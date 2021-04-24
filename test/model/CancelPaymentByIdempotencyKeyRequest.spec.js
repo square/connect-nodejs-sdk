@@ -20,13 +20,13 @@ describe('CancelPaymentByIdempotencyKeyRequest', function() {
 
   it('should create an instance of CancelPaymentByIdempotencyKeyRequest', function() {
     // uncomment below and update the code to test CancelPaymentByIdempotencyKeyRequest
-    //var instane = new SquareConnect.CancelPaymentByIdempotencyKeyRequest();
+    //var instance = new SquareConnect.CancelPaymentByIdempotencyKeyRequest();
     //expect(instance).to.be.a(SquareConnect.CancelPaymentByIdempotencyKeyRequest);
   });
 
   it('should have the property idempotencyKey (base name: "idempotency_key")', function() {
     // uncomment below and update the code to test the property idempotencyKey
-    //var instane = new SquareConnect.CancelPaymentByIdempotencyKeyRequest();
+    //var instance = new SquareConnect.CancelPaymentByIdempotencyKeyRequest();
     //expect(instance).to.be();
   });
 });

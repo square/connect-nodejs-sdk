@@ -20,18 +20,18 @@ describe('CatalogMeasurementUnit', function() {
 
   it('should create an instance of CatalogMeasurementUnit', function() {
     // uncomment below and update the code to test CatalogMeasurementUnit
-    //var instane = new SquareConnect.CatalogMeasurementUnit();
+    //var instance = new SquareConnect.CatalogMeasurementUnit();
     //expect(instance).to.be.a(SquareConnect.CatalogMeasurementUnit);
   });
 
   it('should have the property measurementUnit (base name: "measurement_unit")', function() {
     // uncomment below and update the code to test the property measurementUnit
-    //var instane = new SquareConnect.CatalogMeasurementUnit();
+    //var instance = new SquareConnect.CatalogMeasurementUnit();
     //expect(instance).to.be();
   });
   it('should have the property precision (base name: "precision")', function() {
     // uncomment below and update the code to test the property precision
-    //var instane = new SquareConnect.CatalogMeasurementUnit();
+    //var instance = new SquareConnect.CatalogMeasurementUnit();
     //expect(instance).to.be();
   });
 });

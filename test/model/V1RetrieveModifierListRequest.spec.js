@@ -20,7 +20,7 @@ describe('V1RetrieveModifierListRequest', function() {
 
   it('should create an instance of V1RetrieveModifierListRequest', function() {
     // uncomment below and update the code to test V1RetrieveModifierListRequest
-    //var instane = new SquareConnect.V1RetrieveModifierListRequest();
+    //var instance = new SquareConnect.V1RetrieveModifierListRequest();
     //expect(instance).to.be.a(SquareConnect.V1RetrieveModifierListRequest);
   });
 

@@ -20,7 +20,7 @@ describe('TenderCardDetailsStatus', function() {
 
   it('should create an instance of TenderCardDetailsStatus', function() {
     // uncomment below and update the code to test TenderCardDetailsStatus
-    //var instane = new SquareConnect.TenderCardDetailsStatus();
+    //var instance = new SquareConnect.TenderCardDetailsStatus();
     //expect(instance).to.be.a(SquareConnect.TenderCardDetailsStatus);
   });
 

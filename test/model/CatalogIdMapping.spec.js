@@ -21,18 +21,18 @@ describe('CatalogIdMapping', function() {
 
   it('should create an instance of CatalogIdMapping', function() {
     // uncomment below and update the code to test CatalogIdMapping
-    //var instane = new SquareConnect.CatalogIdMapping();
+    //var instance = new SquareConnect.CatalogIdMapping();
     //expect(instance).to.be.a(SquareConnect.CatalogIdMapping);
   });
 
   it('should have the property clientObjectId (base name: "client_object_id")', function() {
     // uncomment below and update the code to test the property clientObjectId
-    //var instane = new SquareConnect.CatalogIdMapping();
+    //var instance = new SquareConnect.CatalogIdMapping();
     //expect(instance).to.be();
   });
   it('should have the property objectId (base name: "object_id")', function() {
     // uncomment below and update the code to test the property objectId
-    //var instane = new SquareConnect.CatalogIdMapping();
+    //var instance = new SquareConnect.CatalogIdMapping();
     //expect(instance).to.be();
   });
 });

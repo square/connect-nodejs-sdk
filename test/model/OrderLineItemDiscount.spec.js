@@ -21,43 +21,43 @@ describe('OrderLineItemDiscount', function() {
 
   it('should create an instance of OrderLineItemDiscount', function() {
     // uncomment below and update the code to test OrderLineItemDiscount
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be.a(SquareConnect.OrderLineItemDiscount);
   });
 
   it('should have the property catalogObjectId (base name: "catalog_object_id")', function() {
     // uncomment below and update the code to test the property catalogObjectId
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property percentage (base name: "percentage")', function() {
     // uncomment below and update the code to test the property percentage
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
   it('should have the property scope (base name: "scope")', function() {
     // uncomment below and update the code to test the property scope
-    //var instane = new SquareConnect.OrderLineItemDiscount();
+    //var instance = new SquareConnect.OrderLineItemDiscount();
     //expect(instance).to.be();
   });
 });

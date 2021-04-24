@@ -20,13 +20,13 @@ describe('V1ListItemsRequest', function() {
 
   it('should create an instance of V1ListItemsRequest', function() {
     // uncomment below and update the code to test V1ListItemsRequest
-    //var instane = new SquareConnect.V1ListItemsRequest();
+    //var instance = new SquareConnect.V1ListItemsRequest();
     //expect(instance).to.be.a(SquareConnect.V1ListItemsRequest);
   });
 
   it('should have the property batchToken (base name: "batch_token")', function() {
     // uncomment below and update the code to test the property batchToken
-    //var instane = new SquareConnect.V1ListItemsRequest();
+    //var instance = new SquareConnect.V1ListItemsRequest();
     //expect(instance).to.be();
   });
 });

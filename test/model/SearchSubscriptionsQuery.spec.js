@@ -20,13 +20,13 @@ describe('SearchSubscriptionsQuery', function() {
 
   it('should create an instance of SearchSubscriptionsQuery', function() {
     // uncomment below and update the code to test SearchSubscriptionsQuery
-    //var instane = new SquareConnect.SearchSubscriptionsQuery();
+    //var instance = new SquareConnect.SearchSubscriptionsQuery();
     //expect(instance).to.be.a(SquareConnect.SearchSubscriptionsQuery);
   });
 
   it('should have the property filter (base name: "filter")', function() {
     // uncomment below and update the code to test the property filter
-    //var instane = new SquareConnect.SearchSubscriptionsQuery();
+    //var instance = new SquareConnect.SearchSubscriptionsQuery();
     //expect(instance).to.be();
   });
 });

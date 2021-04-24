@@ -20,13 +20,13 @@ describe('CatalogQueryItemsForItemOptions', function() {
 
   it('should create an instance of CatalogQueryItemsForItemOptions', function() {
     // uncomment below and update the code to test CatalogQueryItemsForItemOptions
-    //var instane = new SquareConnect.CatalogQueryItemsForItemOptions();
+    //var instance = new SquareConnect.CatalogQueryItemsForItemOptions();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryItemsForItemOptions);
   });
 
   it('should have the property itemOptionIds (base name: "item_option_ids")', function() {
     // uncomment below and update the code to test the property itemOptionIds
-    //var instane = new SquareConnect.CatalogQueryItemsForItemOptions();
+    //var instance = new SquareConnect.CatalogQueryItemsForItemOptions();
     //expect(instance).to.be();
   });
 });

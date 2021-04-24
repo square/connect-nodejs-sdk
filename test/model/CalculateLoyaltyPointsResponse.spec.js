@@ -20,18 +20,18 @@ describe('CalculateLoyaltyPointsResponse', function() {
 
   it('should create an instance of CalculateLoyaltyPointsResponse', function() {
     // uncomment below and update the code to test CalculateLoyaltyPointsResponse
-    //var instane = new SquareConnect.CalculateLoyaltyPointsResponse();
+    //var instance = new SquareConnect.CalculateLoyaltyPointsResponse();
     //expect(instance).to.be.a(SquareConnect.CalculateLoyaltyPointsResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.CalculateLoyaltyPointsResponse();
+    //var instance = new SquareConnect.CalculateLoyaltyPointsResponse();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.CalculateLoyaltyPointsResponse();
+    //var instance = new SquareConnect.CalculateLoyaltyPointsResponse();
     //expect(instance).to.be();
   });
 });

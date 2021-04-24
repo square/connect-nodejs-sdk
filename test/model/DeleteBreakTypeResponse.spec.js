@@ -20,13 +20,13 @@ describe('DeleteBreakTypeResponse', function() {
 
   it('should create an instance of DeleteBreakTypeResponse', function() {
     // uncomment below and update the code to test DeleteBreakTypeResponse
-    //var instane = new SquareConnect.DeleteBreakTypeResponse();
+    //var instance = new SquareConnect.DeleteBreakTypeResponse();
     //expect(instance).to.be.a(SquareConnect.DeleteBreakTypeResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.DeleteBreakTypeResponse();
+    //var instance = new SquareConnect.DeleteBreakTypeResponse();
     //expect(instance).to.be();
   });
 });

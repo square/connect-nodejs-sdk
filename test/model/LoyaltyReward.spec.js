@@ -20,53 +20,53 @@ describe('LoyaltyReward', function() {
 
   it('should create an instance of LoyaltyReward', function() {
     // uncomment below and update the code to test LoyaltyReward
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be.a(SquareConnect.LoyaltyReward);
   });
 
   it('should have the property id (base name: "id")', function() {
     // uncomment below and update the code to test the property id
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property loyaltyAccountId (base name: "loyalty_account_id")', function() {
     // uncomment below and update the code to test the property loyaltyAccountId
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property rewardTierId (base name: "reward_tier_id")', function() {
     // uncomment below and update the code to test the property rewardTierId
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property points (base name: "points")', function() {
     // uncomment below and update the code to test the property points
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
   it('should have the property redeemedAt (base name: "redeemed_at")', function() {
     // uncomment below and update the code to test the property redeemedAt
-    //var instane = new SquareConnect.LoyaltyReward();
+    //var instance = new SquareConnect.LoyaltyReward();
     //expect(instance).to.be();
   });
 });

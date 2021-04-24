@@ -20,38 +20,38 @@ describe('CatalogQueryFilteredItemsCustomAttributeFilter', function() {
 
   it('should create an instance of CatalogQueryFilteredItemsCustomAttributeFilter', function() {
     // uncomment below and update the code to test CatalogQueryFilteredItemsCustomAttributeFilter
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be.a(SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter);
   });
 
   it('should have the property filterType (base name: "filter_type")', function() {
     // uncomment below and update the code to test the property filterType
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeDefinitionIds (base name: "custom_attribute_definition_ids")', function() {
     // uncomment below and update the code to test the property customAttributeDefinitionIds
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeValueExact (base name: "custom_attribute_value_exact")', function() {
     // uncomment below and update the code to test the property customAttributeValueExact
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeValuePrefix (base name: "custom_attribute_value_prefix")', function() {
     // uncomment below and update the code to test the property customAttributeValuePrefix
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeMinValue (base name: "custom_attribute_min_value")', function() {
     // uncomment below and update the code to test the property customAttributeMinValue
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
   it('should have the property customAttributeMaxValue (base name: "custom_attribute_max_value")', function() {
     // uncomment below and update the code to test the property customAttributeMaxValue
-    //var instane = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
+    //var instance = new SquareConnect.CatalogQueryFilteredItemsCustomAttributeFilter();
     //expect(instance).to.be();
   });
 });

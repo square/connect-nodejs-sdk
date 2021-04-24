@@ -21,13 +21,13 @@ describe('BatchRetrieveOrdersRequest', function() {
 
   it('should create an instance of BatchRetrieveOrdersRequest', function() {
     // uncomment below and update the code to test BatchRetrieveOrdersRequest
-    //var instane = new SquareConnect.BatchRetrieveOrdersRequest();
+    //var instance = new SquareConnect.BatchRetrieveOrdersRequest();
     //expect(instance).to.be.a(SquareConnect.BatchRetrieveOrdersRequest);
   });
 
   it('should have the property orderIds (base name: "order_ids")', function() {
     // uncomment below and update the code to test the property orderIds
-    //var instane = new SquareConnect.BatchRetrieveOrdersRequest();
+    //var instance = new SquareConnect.BatchRetrieveOrdersRequest();
     //expect(instance).to.be();
   });
 });

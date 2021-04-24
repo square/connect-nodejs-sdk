@@ -19,7 +19,7 @@ describe('V1DiscountColor', function() {
 
   it('should create an instance of V1DiscountColor', function() {
     // uncomment below and update the code to test V1DiscountColor
-    //var instane = new SquareConnect.V1DiscountColor();
+    //var instance = new SquareConnect.V1DiscountColor();
     //expect(instance).to.be.a(SquareConnect.V1DiscountColor);
   });
 

@@ -20,18 +20,18 @@ describe('DateRange', function() {
 
   it('should create an instance of DateRange', function() {
     // uncomment below and update the code to test DateRange
-    //var instane = new SquareConnect.DateRange();
+    //var instance = new SquareConnect.DateRange();
     //expect(instance).to.be.a(SquareConnect.DateRange);
   });
 
   it('should have the property startDate (base name: "start_date")', function() {
     // uncomment below and update the code to test the property startDate
-    //var instane = new SquareConnect.DateRange();
+    //var instance = new SquareConnect.DateRange();
     //expect(instance).to.be();
   });
   it('should have the property endDate (base name: "end_date")', function() {
     // uncomment below and update the code to test the property endDate
-    //var instane = new SquareConnect.DateRange();
+    //var instance = new SquareConnect.DateRange();
     //expect(instance).to.be();
   });
 });

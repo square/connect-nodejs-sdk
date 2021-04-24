@@ -20,18 +20,18 @@ describe('UpdateWageSettingResponse', function() {
 
   it('should create an instance of UpdateWageSettingResponse', function() {
     // uncomment below and update the code to test UpdateWageSettingResponse
-    //var instane = new SquareConnect.UpdateWageSettingResponse();
+    //var instance = new SquareConnect.UpdateWageSettingResponse();
     //expect(instance).to.be.a(SquareConnect.UpdateWageSettingResponse);
   });
 
   it('should have the property wageSetting (base name: "wage_setting")', function() {
     // uncomment below and update the code to test the property wageSetting
-    //var instane = new SquareConnect.UpdateWageSettingResponse();
+    //var instance = new SquareConnect.UpdateWageSettingResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.UpdateWageSettingResponse();
+    //var instance = new SquareConnect.UpdateWageSettingResponse();
     //expect(instance).to.be();
   });
 });

@@ -19,7 +19,7 @@ describe('LoyaltyProgramStatus', function() {
 
   it('should create an instance of LoyaltyProgramStatus', function() {
     // uncomment below and update the code to test LoyaltyProgramStatus
-    //var instane = new SquareConnect.LoyaltyProgramStatus();
+    //var instance = new SquareConnect.LoyaltyProgramStatus();
     //expect(instance).to.be.a(SquareConnect.LoyaltyProgramStatus);
   });
 

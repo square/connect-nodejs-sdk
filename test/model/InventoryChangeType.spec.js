@@ -19,7 +19,7 @@ describe('InventoryChangeType', function() {
 
   it('should create an instance of InventoryChangeType', function() {
     // uncomment below and update the code to test InventoryChangeType
-    //var instane = new SquareConnect.InventoryChangeType();
+    //var instance = new SquareConnect.InventoryChangeType();
     //expect(instance).to.be.a(SquareConnect.InventoryChangeType);
   });
 

@@ -21,18 +21,18 @@ describe('BatchRetrieveCatalogObjectsRequest', function() {
 
   it('should create an instance of BatchRetrieveCatalogObjectsRequest', function() {
     // uncomment below and update the code to test BatchRetrieveCatalogObjectsRequest
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
     //expect(instance).to.be.a(SquareConnect.BatchRetrieveCatalogObjectsRequest);
   });
 
   it('should have the property objectIds (base name: "object_ids")', function() {
     // uncomment below and update the code to test the property objectIds
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
     //expect(instance).to.be();
   });
   it('should have the property includeRelatedObjects (base name: "include_related_objects")', function() {
     // uncomment below and update the code to test the property includeRelatedObjects
-    //var instane = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
+    //var instance = new SquareConnect.BatchRetrieveCatalogObjectsRequest();
     //expect(instance).to.be();
   });
 });

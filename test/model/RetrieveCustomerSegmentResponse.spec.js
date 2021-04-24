@@ -20,18 +20,18 @@ describe('RetrieveCustomerSegmentResponse', function() {
 
   it('should create an instance of RetrieveCustomerSegmentResponse', function() {
     // uncomment below and update the code to test RetrieveCustomerSegmentResponse
-    //var instane = new SquareConnect.RetrieveCustomerSegmentResponse();
+    //var instance = new SquareConnect.RetrieveCustomerSegmentResponse();
     //expect(instance).to.be.a(SquareConnect.RetrieveCustomerSegmentResponse);
   });
 
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.RetrieveCustomerSegmentResponse();
+    //var instance = new SquareConnect.RetrieveCustomerSegmentResponse();
     //expect(instance).to.be();
   });
   it('should have the property segment (base name: "segment")', function() {
     // uncomment below and update the code to test the property segment
-    //var instane = new SquareConnect.RetrieveCustomerSegmentResponse();
+    //var instance = new SquareConnect.RetrieveCustomerSegmentResponse();
     //expect(instance).to.be();
   });
 });

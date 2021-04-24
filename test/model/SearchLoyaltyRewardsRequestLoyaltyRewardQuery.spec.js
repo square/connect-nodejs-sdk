@@ -20,18 +20,18 @@ describe('SearchLoyaltyRewardsRequestLoyaltyRewardQuery', function() {
 
   it('should create an instance of SearchLoyaltyRewardsRequestLoyaltyRewardQuery', function() {
     // uncomment below and update the code to test SearchLoyaltyRewardsRequestLoyaltyRewardQuery
-    //var instane = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
     //expect(instance).to.be.a(SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery);
   });
 
   it('should have the property loyaltyAccountId (base name: "loyalty_account_id")', function() {
     // uncomment below and update the code to test the property loyaltyAccountId
-    //var instane = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
     //expect(instance).to.be();
   });
   it('should have the property status (base name: "status")', function() {
     // uncomment below and update the code to test the property status
-    //var instane = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
+    //var instance = new SquareConnect.SearchLoyaltyRewardsRequestLoyaltyRewardQuery();
     //expect(instance).to.be();
   });
 });

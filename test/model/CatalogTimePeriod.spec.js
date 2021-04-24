@@ -20,13 +20,13 @@ describe('CatalogTimePeriod', function() {
 
   it('should create an instance of CatalogTimePeriod', function() {
     // uncomment below and update the code to test CatalogTimePeriod
-    //var instane = new SquareConnect.CatalogTimePeriod();
+    //var instance = new SquareConnect.CatalogTimePeriod();
     //expect(instance).to.be.a(SquareConnect.CatalogTimePeriod);
   });
 
   it('should have the property event (base name: "event")', function() {
     // uncomment below and update the code to test the property event
-    //var instane = new SquareConnect.CatalogTimePeriod();
+    //var instance = new SquareConnect.CatalogTimePeriod();
     //expect(instance).to.be();
   });
 });

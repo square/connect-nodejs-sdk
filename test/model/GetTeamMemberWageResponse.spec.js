@@ -20,18 +20,18 @@ describe('GetTeamMemberWageResponse', function() {
 
   it('should create an instance of GetTeamMemberWageResponse', function() {
     // uncomment below and update the code to test GetTeamMemberWageResponse
-    //var instane = new SquareConnect.GetTeamMemberWageResponse();
+    //var instance = new SquareConnect.GetTeamMemberWageResponse();
     //expect(instance).to.be.a(SquareConnect.GetTeamMemberWageResponse);
   });
 
   it('should have the property teamMemberWage (base name: "team_member_wage")', function() {
     // uncomment below and update the code to test the property teamMemberWage
-    //var instane = new SquareConnect.GetTeamMemberWageResponse();
+    //var instance = new SquareConnect.GetTeamMemberWageResponse();
     //expect(instance).to.be();
   });
   it('should have the property errors (base name: "errors")', function() {
     // uncomment below and update the code to test the property errors
-    //var instane = new SquareConnect.GetTeamMemberWageResponse();
+    //var instance = new SquareConnect.GetTeamMemberWageResponse();
     //expect(instance).to.be();
   });
 });

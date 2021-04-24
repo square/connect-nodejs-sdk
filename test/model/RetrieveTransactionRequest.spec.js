@@ -21,7 +21,7 @@ describe('RetrieveTransactionRequest', function() {
 
   it('should create an instance of RetrieveTransactionRequest', function() {
     // uncomment below and update the code to test RetrieveTransactionRequest
-    //var instane = new SquareConnect.RetrieveTransactionRequest();
+    //var instance = new SquareConnect.RetrieveTransactionRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveTransactionRequest);
   });
 

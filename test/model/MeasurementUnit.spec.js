@@ -20,33 +20,33 @@ describe('MeasurementUnit', function() {
 
   it('should create an instance of MeasurementUnit', function() {
     // uncomment below and update the code to test MeasurementUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be.a(SquareConnect.MeasurementUnit);
   });
 
   it('should have the property customUnit (base name: "custom_unit")', function() {
     // uncomment below and update the code to test the property customUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be();
   });
   it('should have the property areaUnit (base name: "area_unit")', function() {
     // uncomment below and update the code to test the property areaUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be();
   });
   it('should have the property lengthUnit (base name: "length_unit")', function() {
     // uncomment below and update the code to test the property lengthUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be();
   });
   it('should have the property volumeUnit (base name: "volume_unit")', function() {
     // uncomment below and update the code to test the property volumeUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be();
   });
   it('should have the property weightUnit (base name: "weight_unit")', function() {
     // uncomment below and update the code to test the property weightUnit
-    //var instane = new SquareConnect.MeasurementUnit();
+    //var instance = new SquareConnect.MeasurementUnit();
     //expect(instance).to.be();
   });
 });

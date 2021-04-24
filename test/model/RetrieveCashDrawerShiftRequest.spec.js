@@ -20,13 +20,13 @@ describe('RetrieveCashDrawerShiftRequest', function() {
 
   it('should create an instance of RetrieveCashDrawerShiftRequest', function() {
     // uncomment below and update the code to test RetrieveCashDrawerShiftRequest
-    //var instane = new SquareConnect.RetrieveCashDrawerShiftRequest();
+    //var instance = new SquareConnect.RetrieveCashDrawerShiftRequest();
     //expect(instance).to.be.a(SquareConnect.RetrieveCashDrawerShiftRequest);
   });
 
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.RetrieveCashDrawerShiftRequest();
+    //var instance = new SquareConnect.RetrieveCashDrawerShiftRequest();
     //expect(instance).to.be();
   });
 });

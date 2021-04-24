@@ -20,48 +20,48 @@ describe('V1PaymentSurcharge', function() {
 
   it('should create an instance of V1PaymentSurcharge', function() {
     // uncomment below and update the code to test V1PaymentSurcharge
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be.a(SquareConnect.V1PaymentSurcharge);
   });
 
   it('should have the property name (base name: "name")', function() {
     // uncomment below and update the code to test the property name
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property appliedMoney (base name: "applied_money")', function() {
     // uncomment below and update the code to test the property appliedMoney
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property rate (base name: "rate")', function() {
     // uncomment below and update the code to test the property rate
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property amountMoney (base name: "amount_money")', function() {
     // uncomment below and update the code to test the property amountMoney
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property type (base name: "type")', function() {
     // uncomment below and update the code to test the property type
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property taxable (base name: "taxable")', function() {
     // uncomment below and update the code to test the property taxable
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property taxes (base name: "taxes")', function() {
     // uncomment below and update the code to test the property taxes
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
   it('should have the property surchargeId (base name: "surcharge_id")', function() {
     // uncomment below and update the code to test the property surchargeId
-    //var instane = new SquareConnect.V1PaymentSurcharge();
+    //var instance = new SquareConnect.V1PaymentSurcharge();
     //expect(instance).to.be();
   });
 });

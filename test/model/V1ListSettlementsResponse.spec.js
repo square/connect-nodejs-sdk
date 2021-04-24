@@ -20,13 +20,13 @@ describe('V1ListSettlementsResponse', function() {
 
   it('should create an instance of V1ListSettlementsResponse', function() {
     // uncomment below and update the code to test V1ListSettlementsResponse
-    //var instane = new SquareConnect.V1ListSettlementsResponse();
+    //var instance = new SquareConnect.V1ListSettlementsResponse();
     //expect(instance).to.be.a(SquareConnect.V1ListSettlementsResponse);
   });
 
   it('should have the property items (base name: "items")', function() {
     // uncomment below and update the code to test the property items
-    //var instane = new SquareConnect.V1ListSettlementsResponse();
+    //var instance = new SquareConnect.V1ListSettlementsResponse();
     //expect(instance).to.be();
   });
 });

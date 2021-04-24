@@ -20,13 +20,13 @@ describe('V1UpdateModifierOptionRequest', function() {
 
   it('should create an instance of V1UpdateModifierOptionRequest', function() {
     // uncomment below and update the code to test V1UpdateModifierOptionRequest
-    //var instane = new SquareConnect.V1UpdateModifierOptionRequest();
+    //var instance = new SquareConnect.V1UpdateModifierOptionRequest();
     //expect(instance).to.be.a(SquareConnect.V1UpdateModifierOptionRequest);
   });
 
   it('should have the property body (base name: "body")', function() {
     // uncomment below and update the code to test the property body
-    //var instane = new SquareConnect.V1UpdateModifierOptionRequest();
+    //var instance = new SquareConnect.V1UpdateModifierOptionRequest();
     //expect(instance).to.be();
   });
 });

@@ -21,18 +21,18 @@ describe('Money', function() {
 
   it('should create an instance of Money', function() {
     // uncomment below and update the code to test Money
-    //var instane = new SquareConnect.Money();
+    //var instance = new SquareConnect.Money();
     //expect(instance).to.be.a(SquareConnect.Money);
   });
 
   it('should have the property amount (base name: "amount")', function() {
     // uncomment below and update the code to test the property amount
-    //var instane = new SquareConnect.Money();
+    //var instance = new SquareConnect.Money();
     //expect(instance).to.be();
   });
   it('should have the property currency (base name: "currency")', function() {
     // uncomment below and update the code to test the property currency
-    //var instane = new SquareConnect.Money();
+    //var instance = new SquareConnect.Money();
     //expect(instance).to.be();
   });
 });

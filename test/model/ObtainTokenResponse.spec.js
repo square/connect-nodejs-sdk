@@ -20,43 +20,43 @@ describe('ObtainTokenResponse', function() {
 
   it('should create an instance of ObtainTokenResponse', function() {
     // uncomment below and update the code to test ObtainTokenResponse
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be.a(SquareConnect.ObtainTokenResponse);
   });
 
   it('should have the property accessToken (base name: "access_token")', function() {
     // uncomment below and update the code to test the property accessToken
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property tokenType (base name: "token_type")', function() {
     // uncomment below and update the code to test the property tokenType
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property expiresAt (base name: "expires_at")', function() {
     // uncomment below and update the code to test the property expiresAt
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property merchantId (base name: "merchant_id")', function() {
     // uncomment below and update the code to test the property merchantId
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property subscriptionId (base name: "subscription_id")', function() {
     // uncomment below and update the code to test the property subscriptionId
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property planId (base name: "plan_id")', function() {
     // uncomment below and update the code to test the property planId
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
   it('should have the property idToken (base name: "id_token")', function() {
     // uncomment below and update the code to test the property idToken
-    //var instane = new SquareConnect.ObtainTokenResponse();
+    //var instance = new SquareConnect.ObtainTokenResponse();
     //expect(instance).to.be();
   });
 });

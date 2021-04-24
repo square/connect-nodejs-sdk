@@ -20,18 +20,18 @@ describe('StandardUnitDescriptionGroup', function() {
 
   it('should create an instance of StandardUnitDescriptionGroup', function() {
     // uncomment below and update the code to test StandardUnitDescriptionGroup
-    //var instane = new SquareConnect.StandardUnitDescriptionGroup();
+    //var instance = new SquareConnect.StandardUnitDescriptionGroup();
     //expect(instance).to.be.a(SquareConnect.StandardUnitDescriptionGroup);
   });
 
   it('should have the property standardUnitDescriptions (base name: "standard_unit_descriptions")', function() {
     // uncomment below and update the code to test the property standardUnitDescriptions
-    //var instane = new SquareConnect.StandardUnitDescriptionGroup();
+    //var instance = new SquareConnect.StandardUnitDescriptionGroup();
     //expect(instance).to.be();
   });
   it('should have the property languageCode (base name: "language_code")', function() {
     // uncomment below and update the code to test the property languageCode
-    //var instane = new SquareConnect.StandardUnitDescriptionGroup();
+    //var instance = new SquareConnect.StandardUnitDescriptionGroup();
     //expect(instance).to.be();
   });
 });

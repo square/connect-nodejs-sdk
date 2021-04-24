@@ -21,13 +21,13 @@ describe('ListCustomersRequest', function() {
 
   it('should create an instance of ListCustomersRequest', function() {
     // uncomment below and update the code to test ListCustomersRequest
-    //var instane = new SquareConnect.ListCustomersRequest();
+    //var instance = new SquareConnect.ListCustomersRequest();
     //expect(instance).to.be.a(SquareConnect.ListCustomersRequest);
   });
 
   it('should have the property cursor (base name: "cursor")', function() {
     // uncomment below and update the code to test the property cursor
-    //var instane = new SquareConnect.ListCustomersRequest();
+    //var instance = new SquareConnect.ListCustomersRequest();
     //expect(instance).to.be();
   });
 });

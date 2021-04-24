@@ -20,18 +20,18 @@ describe('CatalogItemOptionValueForItemVariation', function() {
 
   it('should create an instance of CatalogItemOptionValueForItemVariation', function() {
     // uncomment below and update the code to test CatalogItemOptionValueForItemVariation
-    //var instane = new SquareConnect.CatalogItemOptionValueForItemVariation();
+    //var instance = new SquareConnect.CatalogItemOptionValueForItemVariation();
     //expect(instance).to.be.a(SquareConnect.CatalogItemOptionValueForItemVariation);
   });
 
   it('should have the property itemOptionId (base name: "item_option_id")', function() {
     // uncomment below and update the code to test the property itemOptionId
-    //var instane = new SquareConnect.CatalogItemOptionValueForItemVariation();
+    //var instance = new SquareConnect.CatalogItemOptionValueForItemVariation();
     //expect(instance).to.be();
   });
   it('should have the property itemOptionValueId (base name: "item_option_value_id")', function() {
     // uncomment below and update the code to test the property itemOptionValueId
-    //var instane = new SquareConnect.CatalogItemOptionValueForItemVariation();
+    //var instance = new SquareConnect.CatalogItemOptionValueForItemVariation();
     //expect(instance).to.be();
   });
 });

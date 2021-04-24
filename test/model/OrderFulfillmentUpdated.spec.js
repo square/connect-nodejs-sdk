@@ -20,43 +20,43 @@ describe('OrderFulfillmentUpdated', function() {
 
   it('should create an instance of OrderFulfillmentUpdated', function() {
     // uncomment below and update the code to test OrderFulfillmentUpdated
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be.a(SquareConnect.OrderFulfillmentUpdated);
   });
 
   it('should have the property orderId (base name: "order_id")', function() {
     // uncomment below and update the code to test the property orderId
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property version (base name: "version")', function() {
     // uncomment below and update the code to test the property version
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property locationId (base name: "location_id")', function() {
     // uncomment below and update the code to test the property locationId
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property state (base name: "state")', function() {
     // uncomment below and update the code to test the property state
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property createdAt (base name: "created_at")', function() {
     // uncomment below and update the code to test the property createdAt
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property updatedAt (base name: "updated_at")', function() {
     // uncomment below and update the code to test the property updatedAt
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
   it('should have the property fulfillmentUpdate (base name: "fulfillment_update")', function() {
     // uncomment below and update the code to test the property fulfillmentUpdate
-    //var instane = new SquareConnect.OrderFulfillmentUpdated();
+    //var instance = new SquareConnect.OrderFulfillmentUpdated();
     //expect(instance).to.be();
   });
 });

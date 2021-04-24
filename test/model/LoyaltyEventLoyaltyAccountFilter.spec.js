@@ -20,13 +20,13 @@ describe('LoyaltyEventLoyaltyAccountFilter', function() {
 
   it('should create an instance of LoyaltyEventLoyaltyAccountFilter', function() {
     // uncomment below and update the code to test LoyaltyEventLoyaltyAccountFilter
-    //var instane = new SquareConnect.LoyaltyEventLoyaltyAccountFilter();
+    //var instance = new SquareConnect.LoyaltyEventLoyaltyAccountFilter();
     //expect(instance).to.be.a(SquareConnect.LoyaltyEventLoyaltyAccountFilter);
   });
 
   it('should have the property loyaltyAccountId (base name: "loyalty_account_id")', function() {
     // uncomment below and update the code to test the property loyaltyAccountId
-    //var instane = new SquareConnect.LoyaltyEventLoyaltyAccountFilter();
+    //var instance = new SquareConnect.LoyaltyEventLoyaltyAccountFilter();
     //expect(instance).to.be();
   });
 });
